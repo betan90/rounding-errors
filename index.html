@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Exhibit 001: Ireland — Rounding Errors</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#EDEEE8;
+    --paper-2:#E4E5DE;
+    --ink:#17181A;
+    --ink-soft:#5A5C55;
+    --red:#B0201F;
+    --red-line:#C22B24;
+    --red-fill:rgba(176,32,31,0.10);
+    --rule:#C6C7BF;
+    --rule-strong:#9A9B92;
+    --mono:'IBM Plex Mono',ui-monospace,Menlo,Consolas,monospace;
+    --serif:'Source Serif 4',Georgia,'Times New Roman',serif;
+  }
+  *{box-sizing:border-box;}
+  html{-webkit-text-size-adjust:100%;}
+  body{
+    margin:0;background:var(--paper);color:var(--ink);
+    font-family:var(--serif);font-size:18px;line-height:1.62;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:720px;margin:0 auto;padding:0 22px 96px;}
+
+  /* ---- masthead ---- */
+  .masthead{
+    display:flex;justify-content:space-between;align-items:center;
+    border-bottom:2px solid var(--ink);
+    padding:20px 0 10px;margin-bottom:26px;
+    font-family:var(--mono);font-size:12px;letter-spacing:.14em;
+    text-transform:uppercase;
+  }
+  .masthead .brand{font-weight:700;}
+  .masthead .meta{color:var(--ink-soft);letter-spacing:.1em;}
+
+  /* ---- filing header ---- */
+  .filing{
+    font-family:var(--mono);font-size:12.5px;letter-spacing:.08em;
+    text-transform:uppercase;color:var(--ink-soft);
+    display:flex;flex-wrap:wrap;gap:6px 20px;margin-bottom:18px;
+  }
+  .filing b{color:var(--ink);font-weight:600;}
+  .filing .cat b{color:var(--red);}
+
+  h1{
+    font-family:var(--mono);font-weight:700;
+    font-size:clamp(27px,6.2vw,50px);line-height:1.04;
+    letter-spacing:-0.02em;margin:6px 0 14px;
+  }
+  .dek{
+    font-family:var(--mono);font-size:12.5px;letter-spacing:.06em;
+    text-transform:uppercase;color:var(--ink-soft);
+    border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);
+    padding:9px 0;margin:0 0 34px;
+  }
+
+  /* ---- chart ---- */
+  .chart-block{margin:0 0 40px;}
+  figure{margin:0;}
+  svg{display:block;width:100%;height:auto;}
+  .cap{
+    font-family:var(--mono);font-size:12px;color:var(--ink-soft);
+    line-height:1.5;margin-top:12px;letter-spacing:.02em;
+  }
+  .legend{
+    display:flex;gap:20px;font-family:var(--mono);font-size:12px;
+    letter-spacing:.04em;margin:0 0 10px;flex-wrap:wrap;
+  }
+  .legend span{display:inline-flex;align-items:center;gap:7px;}
+  .swatch{width:16px;height:3px;display:inline-block;}
+
+  /* ---- ledger table ---- */
+  .ledger{
+    border:1px solid var(--rule-strong);background:var(--paper-2);
+    padding:18px 18px 14px;margin:0 0 12px;
+  }
+  .ledger-title{
+    font-family:var(--mono);font-size:11.5px;letter-spacing:.14em;
+    text-transform:uppercase;color:var(--ink-soft);margin-bottom:12px;
+  }
+  .row{
+    display:flex;align-items:baseline;gap:8px;
+    font-family:var(--mono);font-size:14px;padding:7px 0;
+    border-bottom:1px dotted var(--rule);
+  }
+  .row:last-child{border-bottom:none;}
+  .row .lab{flex:0 1 auto;}
+  .row .dots{flex:1 1 auto;border-bottom:1px dotted var(--rule-strong);transform:translateY(-3px);min-width:16px;}
+  .row .val{flex:0 0 auto;font-weight:600;}
+  .row.gap .lab,.row.gap .val{color:var(--red);font-weight:700;}
+  .undertable{
+    font-family:var(--mono);font-size:12px;color:var(--ink-soft);
+    margin:2px 0 40px;line-height:1.55;
+  }
+
+  /* ---- prose sections ---- */
+  section{margin:0 0 34px;}
+  h2{
+    font-family:var(--mono);font-weight:600;font-size:14px;
+    letter-spacing:.06em;text-transform:uppercase;
+    border-top:1px solid var(--rule);padding-top:16px;margin:0 0 12px;
+    display:flex;align-items:center;gap:10px;
+  }
+  h2::before{
+    content:"";width:9px;height:9px;background:var(--red);
+    display:inline-block;flex:0 0 auto;transform:translateY(1px);
+  }
+  p{margin:0 0 16px;}
+  p:last-child{margin-bottom:0;}
+  .lede{font-size:19px;}
+
+  /* ---- verdict scoreboard ---- */
+  .verdict{
+    border:2px solid var(--ink);margin:6px 0 22px;
+  }
+  .verdict .vhead{
+    background:var(--ink);color:var(--paper);
+    font-family:var(--mono);font-size:11.5px;letter-spacing:.16em;
+    text-transform:uppercase;padding:8px 16px;
+  }
+  .verdict .vrow{
+    display:flex;justify-content:space-between;gap:16px;
+    font-family:var(--mono);font-size:13.5px;
+    padding:11px 16px;border-bottom:1px solid var(--rule);
+  }
+  .verdict .vrow:last-child{border-bottom:none;}
+  .verdict .vrow .k{color:var(--ink-soft);text-transform:uppercase;letter-spacing:.06em;font-size:12px;}
+  .verdict .vrow .v{font-weight:700;text-align:right;}
+  .verdict .vrow.long{flex-direction:column;gap:5px;}
+  .verdict .vrow.long .v{text-align:left;font-weight:600;}
+
+  /* ---- receipts (below fold) ---- */
+  .receipts{border-top:2px solid var(--ink);margin-top:56px;padding-top:20px;}
+  .receipts h3{
+    font-family:var(--mono);font-size:11.5px;letter-spacing:.16em;
+    text-transform:uppercase;color:var(--ink-soft);margin:0 0 16px;
+  }
+  ol.src{margin:0 0 26px;padding:0;list-style:none;counter-reset:s;}
+  ol.src li{
+    counter-increment:s;font-family:var(--mono);font-size:12px;
+    line-height:1.55;color:var(--ink-soft);
+    padding:8px 0 8px 30px;position:relative;border-bottom:1px dotted var(--rule);
+  }
+  ol.src li::before{
+    content:counter(s,decimal-leading-zero);position:absolute;left:0;top:8px;
+    color:var(--red);font-weight:600;
+  }
+  ol.src li b{color:var(--ink);font-weight:600;}
+  ol.src a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--rule-strong);word-break:break-all;}
+  ol.src a:hover{color:var(--red);border-color:var(--red);}
+  .disclosure{
+    font-family:var(--mono);font-size:12px;line-height:1.6;color:var(--ink-soft);
+    background:var(--paper-2);border:1px solid var(--rule);padding:14px 16px;
+  }
+  .disclosure b{color:var(--ink);}
+
+  a.inline{color:var(--red);text-decoration:none;border-bottom:1px solid rgba(176,32,31,.35);}
+  a.inline:hover{border-color:var(--red);}
+
+  @media (max-width:520px){
+    body{font-size:17px;}
+    .masthead{flex-direction:column;align-items:flex-start;gap:4px;}
+    .row{flex-wrap:wrap;}
+    .row .dots{display:none;}
+    .row .val{margin-left:auto;}
+  }
+  @media (prefers-reduced-motion:no-preference){
+    .draw{stroke-dasharray:var(--len);stroke-dashoffset:var(--len);
+      animation:draw 1.5s ease-out forwards;}
+    .fade{opacity:0;animation:fade .8s ease-out .9s forwards;}
+    @keyframes draw{to{stroke-dashoffset:0;}}
+    @keyframes fade{to{opacity:1;}}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="masthead">
+    <span class="brand">Rounding Errors</span>
+    <span class="meta">A museum of statistical discrepancies</span>
+  </div>
+
+  <div class="filing">
+    <span>Exhibit <b>001</b></span>
+    <span>Subject <b>Republic of Ireland</b></span>
+    <span>Status <b>ongoing (11 yrs)</b></span>
+    <span class="cat">Category <b>nobody lied</b></span>
+  </div>
+
+  <h1>The economy that grew 26% while you were at lunch</h1>
+  <div class="dek">National accounts · GDP vs the number Ireland actually uses</div>
+
+  <!-- ============ CHART (signature) ============ -->
+  <div class="chart-block">
+    <div class="legend">
+      <span><i class="swatch" style="background:var(--red-line)"></i> GDP (the headline)</span>
+      <span><i class="swatch" style="background:var(--ink)"></i> GNI* (what Ireland trusts)</span>
+    </div>
+    <figure>
+      <svg id="chart" viewBox="0 0 760 470" role="img"
+        aria-label="Two-line chart of Ireland's GDP and GNI* at current prices, 2013 to 2025. GDP diverges sharply upward after 2015 while GNI* rises gently, opening a large gap.">
+      </svg>
+      <figcaption class="cap">Both lines are published by the same statistics office. Neither is wrong. One is useful.<br>
+      Current prices, &euro;bn. 2020&ndash;2025 figures from CSO; 2013&ndash;2019 approximate, pending a single-vintage pull.</figcaption>
+    </figure>
+  </div>
+
+  <!-- ============ LEDGER ============ -->
+  <div class="ledger">
+    <div class="ledger-title">The numbers — 2024</div>
+    <div class="row"><span class="lab">Ireland's GDP</span><span class="dots"></span><span class="val">&euro;562.8bn</span></div>
+    <div class="row"><span class="lab">Ireland's GNI* (the number Ireland uses)</span><span class="dots"></span><span class="val">&euro;321.1bn</span></div>
+    <div class="row gap"><span class="lab">The gap</span><span class="dots"></span><span class="val">&euro;241.7bn</span></div>
+  </div>
+  <p class="undertable">Roughly one (1) entire Greece. GNI* is not a typo. The asterisk is load-bearing. We'll get there.</p>
+
+  <!-- ============ PROSE ============ -->
+  <section>
+    <h2>The incident</h2>
+    <p>In March 2016, Ireland's Central Statistics Office estimated the economy had grown 7.8% in 2015. Fastest in Europe. Pints, presumably.</p>
+    <p>In July 2016, the CSO revised it to 26.3%, in a single year, at a pace no advanced economy has ever recorded. No oil was discovered. No war ended. The population did not triple. Paul Krugman needed 24 minutes to coin &ldquo;leprechaun economics&rdquo;, and it stuck like a court order.</p>
+    <p>What actually happened: roughly &euro;300 billion of intangible assets, most of it Apple's IP, changed tax address to Ireland. Under the accounting rules every EU country must follow, when the IP moves, the production it generates moves with it, on paper. The factories didn't move. The workers didn't move. The <em>idea of the iPhone</em> moved, and it turns out the idea of the iPhone is worth more than most countries.</p>
+  </section>
+
+  <section>
+    <h2>Who lied</h2>
+    <p class="lede">Nobody. The CSO followed the rulebook exactly, Eurostat checked the maths and signed off, and the output was a number that no serious person, including the people who published it, believed.</p>
+    <p>&ldquo;Everyone followed the process and the result was nonsense&rdquo; is a sentence with tremendous cross-industry applicability, and you are invited to sit with it.</p>
+  </section>
+
+  <section>
+    <h2>The fix: just publish a second economy</h2>
+    <p>In 2017, Ireland invented a new statistic: modified gross national income, written GNI*, pronounced &ldquo;GNI star&rdquo;, which is what you name a metric once you've accepted that your life is different now. It strips out the foreign-owned IP, the leased aircraft, and the profits of companies that exist in Ireland mostly as a brass plaque. What's left is the economy Irish people are actually in. It was 30% smaller.</p>
+    <p>Ireland now runs two sets of books, on purpose, in public, and files both. In most contexts that is a crime. In this context it is best practice, endorsed by the IMF.</p>
+  </section>
+
+  <section>
+    <h2>The bit continues</h2>
+    <p><b>2025:</b> GDP grows 12.3%, the standout number in the developed world. Cause, per the Central Bank: 95% of the increase in goods exports came from one product group, polypeptide hormones. GLP-1s. Ireland's 2025 economic boom was, at the molecular level, Ozempic, shipped to America in a panic to front-run tariffs (&euro;25.4bn in March alone). The de-leprechauned measure of what Irish households and firms actually did grew 4.9%.</p>
+    <p><b>2026:</b> it unwound. The Q1 flash estimate said &minus;2.0%; the full accounts said &minus;12.1%. Four consecutive quarters of shrinking GDP, and essentially no economist will call it a recession, because the professional consensus on headline Irish GDP is: do not look directly at it.</p>
+  </section>
+
+  <section>
+    <h2>Verdict</h2>
+    <div class="verdict">
+      <div class="vhead">Findings</div>
+      <div class="vrow"><span class="k">Fraud detected</span><span class="v">none</span></div>
+      <div class="vrow"><span class="k">Rules broken</span><span class="v">zero</span></div>
+      <div class="vrow long"><span class="k">Usefulness of headline figure</span><span class="v">the office that publishes it politely suggests you use a different one</span></div>
+    </div>
+    <p>Every organisation has a GNI*. There's the dashboard number that's technically correct, and there's the shadow tab everyone actually trusts. Ireland published its shadow tab, with a methodology page.</p>
+  </section>
+
+  <!-- ============ RECEIPTS (below fold) ============ -->
+  <div class="receipts">
+    <h3>Receipts — every figure was checked against one of these</h3>
+    <ol class="src">
+      <li><b>CSO</b>, Annual National Accounts 2025, GNI* and De-Globalised Results (Jul 2026): 2025 GNI* &euro;334bn, 55.4% of GDP. <a href="https://www.cso.ie/en/releasesandpublications/ep/p-ana/annualnationalaccounts2025/gniandde-globalisedresults/">cso.ie</a></li>
+      <li><b>CSO</b>, Annual National Accounts 2024, Key Findings (Jul 2025): GDP &euro;562.8bn, GNI* &euro;321.1bn. <a href="https://www.cso.ie/en/releasesandpublications/ep/p-ana/annualnationalaccounts2024/keyfindings/">cso.ie</a></li>
+      <li><b>CSO</b>, Modified GNI explainer: the definition, and the aircraft. <a href="https://www.cso.ie/en/interactivezone/statisticsexplained/nationalaccountsexplained/modifiedgni/">cso.ie</a></li>
+      <li><b>CSO</b>, Information Notice: Modified GNI at Current and Constant Market Prices: the 2015 level shift and the review group. <a href="https://www.cso.ie/en/releasesandpublications/in/nie/in-mgnicp/">cso.ie</a></li>
+      <li><b>Euronews</b> (May 2026): 12.3%, MDD 4.9%, 95% polypeptide hormones, &euro;25.4bn in March, flash &minus;2.0%. <a href="https://www.euronews.com/business/2026/05/04/irish-economic-miracle-explained-why-all-that-glitters-isnt-gold">euronews.com</a></li>
+      <li><b>Irish Examiner</b> (Jun 2026): Q1 2026 &minus;12.1%, four consecutive negative quarters. <a href="https://www.irishexaminer.com/business/companies/arid-41856822.html">irishexaminer.com</a></li>
+      <li><b>European Commission</b>, Spring 2026 Economic Forecast, Ireland: 12.3% in 2025. <a href="https://economy-finance.ec.europa.eu/economic-surveillance-eu-member-states/country-pages-including-country-reports/ireland/economic-forecast-ireland_en">ec.europa.eu</a></li>
+      <li><b>Bank of Ireland</b> economics (Mar 2026): Q4 2025 quarterly decline. <a href="https://corporate-economy.bankofireland.com/irish-gdp-expands-by-12-in-2025/">bankofireland.com</a></li>
+      <li>Background: Wikipedia, Leprechaun economics &amp; Modified gross national income: the 2016 first reading and the timeline.</li>
+    </ol>
+    <div class="disclosure">
+      <b>Disclosure.</b> This entry was drafted with AI (Claude did the research sweeps, data pulls and first draft). The editorial voice, the opinions, and any surviving errors are mine. Every figure was checked against the linked primary source before publishing. No leprechauns were consulted.
+    </div>
+  </div>
+
+</div>
+
+<script>
+(function(){
+  // ---- DATA (current prices, EUR bn) ----
+  // VERIFIED from CSO releases: 2020-2025.
+  // APPROXIMATE (replace from a single-vintage XLS before publishing): 2013-2019.
+  var years = [2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025];
+  var gdp   = [180, 195, 262, 275, 302, 324, 356, 373, 426, 521, 510, 563, 603];
+  var gnis  = [145, 152, 162, 190, 197, 208, 219, 200, 234, 267, 291, 322, 334];
+
+  var W=760, H=470, m={t:24,r:20,b:40,l:52};
+  var pw=W-m.l-m.r, ph=H-m.t-m.b;
+  var yMax=650;
+  var xN=years.length-1;
+  function X(i){return m.l + (i/xN)*pw;}
+  function Y(v){return m.t + (1-v/yMax)*ph;}
+
+  var svg=document.getElementById('chart');
+  var NS='http://www.w3.org/2000/svg';
+  function el(t,a){var e=document.createElementNS(NS,t);for(var k in a)e.setAttribute(k,a[k]);return e;}
+  function len(pts){var d=0;for(var i=1;i<pts.length;i++){var dx=pts[i][0]-pts[i-1][0],dy=pts[i][1]-pts[i-1][1];d+=Math.sqrt(dx*dx+dy*dy);}return d;}
+
+  // gridlines + y labels
+  for(var g=0; g<=600; g+=100){
+    svg.appendChild(el('line',{x1:m.l,y1:Y(g),x2:W-m.r,y2:Y(g),stroke:'#C6C7BF','stroke-width':1}));
+    var yl=el('text',{x:m.l-8,y:Y(g)+4,'text-anchor':'end','font-family':"'IBM Plex Mono',monospace",'font-size':11,fill:'#5A5C55'});
+    yl.textContent=g; svg.appendChild(yl);
+  }
+  // y axis title
+  var yt=el('text',{x:m.l-8,y:Y(650)-8,'text-anchor':'end','font-family':"'IBM Plex Mono',monospace",'font-size':10.5,fill:'#5A5C55'});
+  yt.textContent='€bn'; svg.appendChild(yt);
+
+  // x labels (every other year)
+  for(var i=0;i<years.length;i++){
+    if(i%2===0){
+      var xl=el('text',{x:X(i),y:H-m.b+20,'text-anchor':'middle','font-family':"'IBM Plex Mono',monospace",'font-size':11,fill:'#5A5C55'});
+      xl.textContent=years[i]; svg.appendChild(xl);
+    }
+  }
+
+  // build point arrays
+  var pg=[],pn=[];
+  for(var i=0;i<years.length;i++){pg.push([X(i),Y(gdp[i])]);pn.push([X(i),Y(gnis[i])]);}
+
+  // shaded gap (area between the two lines)
+  var dArea='M'+pg.map(function(p){return p[0]+' '+p[1];}).join(' L ');
+  for(var i=pn.length-1;i>=0;i--){dArea+=' L '+pn[i][0]+' '+pn[i][1];}
+  dArea+=' Z';
+  svg.appendChild(el('path',{d:dArea,fill:'rgba(176,32,31,0.10)',class:'fade'}));
+
+  // GNI* line (ink)
+  var dN='M'+pn.map(function(p){return p[0]+' '+p[1];}).join(' L ');
+  var pathN=el('path',{d:dN,fill:'none',stroke:'#17181A','stroke-width':2.5,'stroke-linejoin':'round','stroke-linecap':'round',class:'draw'});
+  pathN.style.setProperty('--len',len(pn)); svg.appendChild(pathN);
+
+  // GDP line (red)
+  var dG='M'+pg.map(function(p){return p[0]+' '+p[1];}).join(' L ');
+  var pathG=el('path',{d:dG,fill:'none',stroke:'#C22B24','stroke-width':2.5,'stroke-linejoin':'round','stroke-linecap':'round',class:'draw'});
+  pathG.style.setProperty('--len',len(pg)); svg.appendChild(pathG);
+
+  // ---- annotations ----
+  function note(xi, yv, dx, dy, lines, anchor, color){
+    var x=X(xi), y=Y(yv);
+    svg.appendChild(el('line',{x1:x,y1:y,x2:x+dx,y2:y+dy,stroke:(color||'#5A5C55'),'stroke-width':1,class:'fade'}));
+    svg.appendChild(el('circle',{cx:x,cy:y,r:3,fill:(color||'#5A5C55'),class:'fade'}));
+    var tx=x+dx+(anchor==='end'?-6:6);
+    var ty=y+dy;
+    for(var k=0;k<lines.length;k++){
+      var t=el('text',{x:tx,y:ty+k*13,'text-anchor':anchor,'font-family':"'IBM Plex Mono',monospace",'font-size':11,fill:(color||'#5A5C55'),class:'fade'});
+      t.textContent=lines[k]; svg.appendChild(t);
+    }
+  }
+  // 2015 spike on GDP
+  note(2, gdp[2], 10, -34, ['2015: ≈ €300bn of','IP changes address'], 'start', '#C22B24');
+  // 2017 GNI* invented
+  note(4, gnis[4], -6, 40, ['2017: Ireland invents','GNI* in self-defense'], 'start', '#17181A');
+  // 2025 Ozempic on GDP
+  note(12, gdp[12], -12, 26, ['the Ozempic','quarter'], 'end', '#C22B24');
+
+  // ---- gap bracket + label "≈ one Greece" (at 2024) ----
+  var gi=11; var gx=X(gi);
+  svg.appendChild(el('line',{x1:gx,y1:Y(gdp[gi]),x2:gx,y2:Y(gnis[gi]),stroke:'#B0201F','stroke-width':1,'stroke-dasharray':'3 3',class:'fade'}));
+  var midY=(Y(gdp[gi])+Y(gnis[gi]))/2;
+  var gl=el('text',{x:gx-8,y:midY,'text-anchor':'end','font-family':"'IBM Plex Mono',monospace",'font-size':11.5,fill:'#B0201F','font-weight':600,class:'fade'});
+  gl.textContent='≈ one Greece'; svg.appendChild(gl);
+})();
+</script>
+</body>
+</html>

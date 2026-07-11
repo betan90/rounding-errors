@@ -1,0 +1,21 @@
+# OS junk
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# Env / secrets (for later pipeline work)
+.env
+.env.*
+
+# Node (v0.2+)
+node_modules/
+
+# Data working files (raw pulls; keep processed/ if you add it later)
+data/raw/
+*.xlsx
+*.xls
