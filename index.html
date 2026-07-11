@@ -41,6 +41,16 @@
   .masthead .brand{font-weight:700;}
   .masthead .meta{color:var(--ink-soft);letter-spacing:.1em;}
 
+  /* ---- exhibit nav ---- */
+  .exnav{
+    font-family:var(--mono);font-size:11.5px;letter-spacing:.1em;
+    text-transform:uppercase;color:var(--ink-soft);
+    display:flex;gap:16px;flex-wrap:wrap;margin:0 0 22px;
+  }
+  .exnav a{color:var(--ink-soft);text-decoration:none;border-bottom:1px solid var(--rule-strong);}
+  .exnav a:hover{color:var(--red);border-color:var(--red);}
+  .exnav .current{color:var(--ink);font-weight:600;border-bottom:1px solid var(--ink);}
+
   /* ---- filing header ---- */
   .filing{
     font-family:var(--mono);font-size:12.5px;letter-spacing:.08em;
@@ -187,6 +197,11 @@
   <div class="masthead">
     <span class="brand">Rounding Errors</span>
     <span class="meta">A museum of statistical discrepancies</span>
+  </div>
+
+  <div class="exnav">
+    <span class="current">001 Ireland</span>
+    <a href="exhibit-002-argentina.html">002 Argentina</a>
   </div>
 
   <div class="filing">
