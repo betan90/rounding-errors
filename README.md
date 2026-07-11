@@ -1,5 +1,7 @@
 # Rounding Errors
 
+**Live:** [betan90.github.io/rounding-errors](https://betan90.github.io/rounding-errors/)
+
 A museum of statistical discrepancies. One country per exhibit. The recurring question is always the same: whose number do you believe, and can you prove it?
 
 **Exhibit 001 — Ireland.** The economy that grew 26% while everyone was at lunch, and the second economy Ireland had to invent to explain the first.
