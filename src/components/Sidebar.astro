@@ -1,0 +1,22 @@
+---
+import { getCollection } from 'astro:content';
+import SidebarContent from './SidebarContent.astro';
+
+const exhibits = await getCollection('exhibits');
+
+const countries = [...new Set(exhibits.map((e) => e.data.country))].sort();
+const tags = [...new Set(exhibits.flatMap((e) => e.data.tags))].sort();
+---
+
+<details class="sidebar sidebar-mobile">
+  <summary>Menu</summary>
+  <div class="sidebar-body">
+    <SidebarContent countries={countries} tags={tags} />
+  </div>
+</details>
+
+<aside class="sidebar sidebar-desktop">
+  <div class="sidebar-body">
+    <SidebarContent countries={countries} tags={tags} />
+  </div>
+</aside>

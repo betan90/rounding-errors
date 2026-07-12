@@ -1,0 +1,30 @@
+---
+interface Row {
+  key: string;
+  value: string;
+  long?: boolean;
+}
+
+interface Props {
+  rows: Row[];
+  note: string;
+}
+
+const { rows, note } = Astro.props;
+---
+
+<section>
+  <h2>Verdict</h2>
+  <div class="verdict">
+    <div class="vhead">Findings</div>
+    {
+      rows.map((row) => (
+        <div class:list={['vrow', { long: row.long }]}>
+          <span class="k">{row.key}</span>
+          <span class="v">{row.value}</span>
+        </div>
+      ))
+    }
+  </div>
+  <p>{note}</p>
+</section>

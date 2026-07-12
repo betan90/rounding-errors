@@ -1,0 +1,281 @@
+:root{
+  --paper:#EDEEE8;
+  --paper-2:#E4E5DE;
+  --ink:#17181A;
+  --ink-soft:#5A5C55;
+  --red:#B0201F;
+  --red-line:#C22B24;
+  --red-fill:rgba(176,32,31,0.10);
+  --rule:#C6C7BF;
+  --rule-strong:#9A9B92;
+  --mono:'IBM Plex Mono',ui-monospace,Menlo,Consolas,monospace;
+  --serif:'Source Serif 4',Georgia,'Times New Roman',serif;
+}
+*{box-sizing:border-box;}
+html{-webkit-text-size-adjust:100%;}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:var(--serif);font-size:18px;line-height:1.62;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit;}
+
+/* ---- masthead ---- */
+.masthead{
+  display:flex;justify-content:space-between;align-items:center;
+  border-bottom:2px solid var(--ink);
+  padding:20px 0 10px;margin-bottom:26px;
+  font-family:var(--mono);font-size:12px;letter-spacing:.14em;
+  text-transform:uppercase;
+}
+.masthead a{text-decoration:none;color:inherit;}
+.masthead .brand{font-weight:700;}
+.masthead .meta{color:var(--ink-soft);letter-spacing:.1em;}
+
+/* ---- filing header ---- */
+.filing{
+  font-family:var(--mono);font-size:12.5px;letter-spacing:.08em;
+  text-transform:uppercase;color:var(--ink-soft);
+  display:flex;flex-wrap:wrap;gap:6px 20px;margin-bottom:18px;
+}
+.filing b{color:var(--ink);font-weight:600;}
+.filing .cat b{color:var(--red);}
+
+h1{
+  font-family:var(--mono);font-weight:700;
+  font-size:clamp(27px,6.2vw,50px);line-height:1.04;
+  letter-spacing:-0.02em;margin:6px 0 14px;
+}
+.dek{
+  font-family:var(--mono);font-size:12.5px;letter-spacing:.06em;
+  text-transform:uppercase;color:var(--ink-soft);
+  border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);
+  padding:9px 0;margin:0 0 34px;
+}
+
+/* ---- chart ---- */
+.chart-block{margin:0 0 40px;}
+figure{margin:0;}
+svg{display:block;width:100%;height:auto;}
+.cap{
+  font-family:var(--mono);font-size:12px;color:var(--ink-soft);
+  line-height:1.5;margin-top:12px;letter-spacing:.02em;
+}
+.legend{
+  display:flex;gap:20px;font-family:var(--mono);font-size:12px;
+  letter-spacing:.04em;margin:0 0 10px;flex-wrap:wrap;
+}
+.legend span{display:inline-flex;align-items:center;gap:7px;}
+.swatch{width:16px;height:3px;display:inline-block;}
+
+/* ---- ledger table ---- */
+.ledger{
+  border:1px solid var(--rule-strong);background:var(--paper-2);
+  padding:18px 18px 14px;margin:0 0 12px;
+}
+.ledger-title{
+  font-family:var(--mono);font-size:11.5px;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--ink-soft);margin-bottom:12px;
+}
+.row{
+  display:flex;align-items:baseline;gap:8px;
+  font-family:var(--mono);font-size:14px;padding:7px 0;
+  border-bottom:1px dotted var(--rule);
+}
+.row:last-child{border-bottom:none;}
+.row .lab{flex:0 1 auto;}
+.row .dots{flex:1 1 auto;border-bottom:1px dotted var(--rule-strong);transform:translateY(-3px);min-width:16px;}
+.row .val{flex:0 0 auto;font-weight:600;}
+.row.gap .lab,.row.gap .val{color:var(--red);font-weight:700;}
+.undertable{
+  font-family:var(--mono);font-size:12px;color:var(--ink-soft);
+  margin:2px 0 40px;line-height:1.55;
+}
+
+/* ---- prose sections (scoped to exhibit body copy) ---- */
+.exhibit-body section{margin:0 0 34px;}
+.exhibit-body h2{
+  font-family:var(--mono);font-weight:600;font-size:14px;
+  letter-spacing:.06em;text-transform:uppercase;
+  border-top:1px solid var(--rule);padding-top:16px;margin:0 0 12px;
+  display:flex;align-items:center;gap:10px;
+}
+.exhibit-body h2::before{
+  content:"";width:9px;height:9px;background:var(--red);
+  display:inline-block;flex:0 0 auto;transform:translateY(1px);
+}
+p{margin:0 0 16px;}
+p:last-child{margin-bottom:0;}
+.lede{font-size:19px;}
+
+/* ---- verdict scoreboard ---- */
+.verdict{
+  border:2px solid var(--ink);margin:6px 0 22px;
+}
+.verdict .vhead{
+  background:var(--ink);color:var(--paper);
+  font-family:var(--mono);font-size:11.5px;letter-spacing:.16em;
+  text-transform:uppercase;padding:8px 16px;
+}
+.verdict .vrow{
+  display:flex;justify-content:space-between;gap:16px;
+  font-family:var(--mono);font-size:13.5px;
+  padding:11px 16px;border-bottom:1px solid var(--rule);
+}
+.verdict .vrow:last-child{border-bottom:none;}
+.verdict .vrow .k{color:var(--ink-soft);text-transform:uppercase;letter-spacing:.06em;font-size:12px;}
+.verdict .vrow .v{font-weight:700;text-align:right;}
+.verdict .vrow.long{flex-direction:column;gap:5px;}
+.verdict .vrow.long .v{text-align:left;font-weight:600;}
+
+/* ---- receipts (below fold) ---- */
+.receipts{border-top:2px solid var(--ink);margin-top:56px;padding-top:20px;}
+.receipts h3{
+  font-family:var(--mono);font-size:11.5px;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--ink-soft);margin:0 0 16px;
+}
+ol.src{margin:0 0 26px;padding:0;list-style:none;counter-reset:s;}
+ol.src li{
+  counter-increment:s;font-family:var(--mono);font-size:12px;
+  line-height:1.55;color:var(--ink-soft);
+  padding:8px 0 8px 30px;position:relative;border-bottom:1px dotted var(--rule);
+}
+ol.src li::before{
+  content:counter(s,decimal-leading-zero);position:absolute;left:0;top:8px;
+  color:var(--red);font-weight:600;
+}
+ol.src li b{color:var(--ink);font-weight:600;}
+ol.src a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--rule-strong);word-break:break-all;}
+ol.src a:hover{color:var(--red);border-color:var(--red);}
+.disclosure{
+  font-family:var(--mono);font-size:12px;line-height:1.6;color:var(--ink-soft);
+  background:var(--paper-2);border:1px solid var(--rule);padding:14px 16px;
+}
+.disclosure b{color:var(--ink);}
+
+a.inline{color:var(--red);text-decoration:none;border-bottom:1px solid rgba(176,32,31,.35);}
+a.inline:hover{border-color:var(--red);}
+
+@media (max-width:520px){
+  body{font-size:17px;}
+  .masthead{flex-direction:column;align-items:flex-start;gap:4px;}
+  .row{flex-wrap:wrap;}
+  .row .dots{display:none;}
+  .row .val{margin-left:auto;}
+}
+@media (prefers-reduced-motion:no-preference){
+  .draw{stroke-dasharray:var(--len);stroke-dashoffset:var(--len);
+    animation:draw 1.5s ease-out forwards;}
+  .fade{opacity:0;animation:fade .8s ease-out .9s forwards;}
+  @keyframes draw{to{stroke-dashoffset:0;}}
+  @keyframes fade{to{opacity:1;}}
+}
+
+/* =====================================================================
+   Site shell added for the Astro restructure: page grid, sidebar,
+   exhibit cards, chart-pending note. Same fonts/palette/components as
+   the original one-page-per-exhibit build above; nothing in that block
+   was changed.
+   ===================================================================== */
+
+.site{max-width:960px;margin:0 auto;padding:0 22px 96px;}
+.layout{display:block;}
+
+/* ---- sidebar ----
+   Two independent elements, one shown at a time via display — not a single
+   <details> forced open with CSS (closed-<details> content is skipped via
+   content-visibility on modern Chromium/Edge, which a child's own
+   `display: block !important` cannot override).
+   - .sidebar-mobile: a real <details>, native collapse/expand, below 820px.
+   - .sidebar-desktop: a plain always-visible <aside>, at/above 820px.
+*/
+.sidebar{
+  margin:0 0 30px;border:1px solid var(--rule-strong);background:var(--paper-2);
+}
+.sidebar-mobile > summary{
+  cursor:pointer;list-style:none;
+  font-family:var(--mono);font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;
+  padding:12px 16px;background:var(--ink);color:var(--paper);
+}
+.sidebar-mobile > summary::-webkit-details-marker{display:none;}
+.sidebar-mobile > summary::after{content:" \25BE";}
+.sidebar-mobile[open] > summary::after{content:" \25B4";}
+.sidebar-desktop{display:none;}
+.sidebar-body{padding:18px;}
+.sidebar-section{margin:0 0 22px;}
+.sidebar-section:last-child{margin-bottom:0;}
+.sidebar-section h3{
+  font-family:var(--mono);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--ink-soft);margin:0 0 10px;
+}
+.sidebar-section p{
+  font-family:var(--serif);font-size:15px;line-height:1.55;margin:0 0 12px;
+}
+.sidebar-section p:last-child{margin-bottom:0;}
+.sidebar details.sub{border-top:1px dotted var(--rule);padding-top:12px;margin-top:12px;}
+.sidebar details.sub:first-child{border-top:none;padding-top:0;margin-top:0;}
+.sidebar details.sub > summary{
+  cursor:pointer;list-style:none;
+  font-family:var(--mono);font-weight:600;font-size:13px;letter-spacing:.04em;
+  text-transform:uppercase;color:var(--ink);
+}
+.sidebar details.sub > summary::-webkit-details-marker{display:none;}
+.filter-list{display:flex;flex-direction:column;gap:2px;margin:0;padding:0;list-style:none;}
+.filter-list a{
+  display:block;font-family:var(--mono);font-size:13px;color:var(--ink-soft);
+  text-decoration:none;padding:5px 0;border-bottom:1px dotted var(--rule);
+}
+.filter-list a:hover{color:var(--red);}
+.filter-list li:last-child a{border-bottom:none;}
+
+@media (min-width:820px){
+  .layout{display:grid;grid-template-columns:240px 1fr;gap:40px;align-items:start;}
+  .sidebar-mobile{display:none;}
+  .sidebar-desktop{display:block;position:sticky;top:20px;margin:0;}
+}
+
+/* ---- exhibit feed / cards ---- */
+.feed{display:flex;flex-direction:column;gap:0;}
+.card{
+  display:block;text-decoration:none;color:inherit;
+  padding:26px 0;border-bottom:1px solid var(--rule);
+}
+.feed .card:first-child{padding-top:0;}
+.card:hover .card-title{color:var(--red);}
+.card-filing{
+  font-family:var(--mono);font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--ink-soft);display:flex;flex-wrap:wrap;gap:6px 16px;margin-bottom:8px;
+}
+.card-filing b{color:var(--ink);font-weight:600;}
+.card-filing .cat b{color:var(--red);}
+.card-title{
+  font-family:var(--mono);font-weight:700;font-size:22px;line-height:1.2;
+  margin:0 0 8px;transition:color .1s ease;
+}
+.card-teaser{
+  font-family:var(--serif);font-size:16px;color:var(--ink-soft);line-height:1.5;margin:0 0 8px;
+}
+.card-date{
+  font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;
+  color:var(--ink-soft);
+}
+
+/* ---- listing page headers (country / tag) ---- */
+.listing-head{margin:0 0 30px;}
+.listing-head .kicker{
+  font-family:var(--mono);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--ink-soft);margin-bottom:6px;
+}
+.listing-head h1{margin:0;}
+
+/* ---- chart-pending note ---- */
+.chart-pending{
+  font-family:var(--mono);font-size:12.5px;color:var(--ink-soft);
+  border:1px dashed var(--rule-strong);padding:14px 16px;margin:0 0 40px;
+  line-height:1.5;
+}
+.chart-pending b{color:var(--ink);}
+
+@media (max-width:520px){
+  .card-title{font-size:19px;}
+}

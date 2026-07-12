@@ -1,0 +1,105 @@
+---
+---
+
+<div class="chart-block">
+  <div class="legend">
+    <span><i class="swatch" style="background:var(--red-line)"></i> GDP (the headline)</span>
+    <span><i class="swatch" style="background:var(--ink)"></i> GNI* (what Ireland trusts)</span>
+  </div>
+  <figure>
+    <svg
+      id="chart"
+      viewBox="0 0 760 470"
+      role="img"
+      aria-label="Two-line chart of Ireland's GDP and GNI* at current prices, 2013 to 2025. GDP diverges sharply upward after 2015 while GNI* rises gently, opening a large gap."
+    ></svg>
+    <figcaption class="cap">Both lines are published by the same statistics office. Neither is wrong. One is useful.</figcaption>
+  </figure>
+</div>
+
+<script is:inline>
+(function(){
+  // ---- DATA (current prices, EUR bn) ----
+  // VERIFIED from CSO releases: 2020-2025.
+  // APPROXIMATE (replace from a single-vintage XLS before publishing): 2013-2019.
+  var years = [2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025];
+  var gdp   = [180, 195, 262, 275, 302, 324, 356, 373, 426, 521, 510, 563, 603];
+  var gnis  = [145, 152, 162, 190, 197, 208, 219, 200, 234, 267, 291, 322, 334];
+
+  var W=760, H=470, m={t:24,r:20,b:40,l:52};
+  var pw=W-m.l-m.r, ph=H-m.t-m.b;
+  var yMax=650;
+  var xN=years.length-1;
+  function X(i){return m.l + (i/xN)*pw;}
+  function Y(v){return m.t + (1-v/yMax)*ph;}
+
+  var svg=document.getElementById('chart');
+  var NS='http://www.w3.org/2000/svg';
+  function el(t,a){var e=document.createElementNS(NS,t);for(var k in a)e.setAttribute(k,a[k]);return e;}
+  function len(pts){var d=0;for(var i=1;i<pts.length;i++){var dx=pts[i][0]-pts[i-1][0],dy=pts[i][1]-pts[i-1][1];d+=Math.sqrt(dx*dx+dy*dy);}return d;}
+
+  // gridlines + y labels
+  for(var g=0; g<=600; g+=100){
+    svg.appendChild(el('line',{x1:m.l,y1:Y(g),x2:W-m.r,y2:Y(g),stroke:'#C6C7BF','stroke-width':1}));
+    var yl=el('text',{x:m.l-8,y:Y(g)+4,'text-anchor':'end','font-family':"'IBM Plex Mono',monospace",'font-size':11,fill:'#5A5C55'});
+    yl.textContent=g; svg.appendChild(yl);
+  }
+  // y axis title
+  var yt=el('text',{x:m.l-8,y:Y(650)-8,'text-anchor':'end','font-family':"'IBM Plex Mono',monospace",'font-size':10.5,fill:'#5A5C55'});
+  yt.textContent='€bn'; svg.appendChild(yt);
+
+  // x labels (every other year)
+  for(var i=0;i<years.length;i++){
+    if(i%2===0){
+      var xl=el('text',{x:X(i),y:H-m.b+20,'text-anchor':'middle','font-family':"'IBM Plex Mono',monospace",'font-size':11,fill:'#5A5C55'});
+      xl.textContent=years[i]; svg.appendChild(xl);
+    }
+  }
+
+  // build point arrays
+  var pg=[],pn=[];
+  for(var i=0;i<years.length;i++){pg.push([X(i),Y(gdp[i])]);pn.push([X(i),Y(gnis[i])]);}
+
+  // shaded gap (area between the two lines)
+  var dArea='M'+pg.map(function(p){return p[0]+' '+p[1];}).join(' L ');
+  for(var i=pn.length-1;i>=0;i--){dArea+=' L '+pn[i][0]+' '+pn[i][1];}
+  dArea+=' Z';
+  svg.appendChild(el('path',{d:dArea,fill:'rgba(176,32,31,0.10)',class:'fade'}));
+
+  // GNI* line (ink)
+  var dN='M'+pn.map(function(p){return p[0]+' '+p[1];}).join(' L ');
+  var pathN=el('path',{d:dN,fill:'none',stroke:'#17181A','stroke-width':2.5,'stroke-linejoin':'round','stroke-linecap':'round',class:'draw'});
+  pathN.style.setProperty('--len',len(pn)); svg.appendChild(pathN);
+
+  // GDP line (red)
+  var dG='M'+pg.map(function(p){return p[0]+' '+p[1];}).join(' L ');
+  var pathG=el('path',{d:dG,fill:'none',stroke:'#C22B24','stroke-width':2.5,'stroke-linejoin':'round','stroke-linecap':'round',class:'draw'});
+  pathG.style.setProperty('--len',len(pg)); svg.appendChild(pathG);
+
+  // ---- annotations ----
+  function note(xi, yv, dx, dy, lines, anchor, color){
+    var x=X(xi), y=Y(yv);
+    svg.appendChild(el('line',{x1:x,y1:y,x2:x+dx,y2:y+dy,stroke:(color||'#5A5C55'),'stroke-width':1,class:'fade'}));
+    svg.appendChild(el('circle',{cx:x,cy:y,r:3,fill:(color||'#5A5C55'),class:'fade'}));
+    var tx=x+dx+(anchor==='end'?-6:6);
+    var ty=y+dy;
+    for(var k=0;k<lines.length;k++){
+      var t=el('text',{x:tx,y:ty+k*13,'text-anchor':anchor,'font-family':"'IBM Plex Mono',monospace",'font-size':11,fill:(color||'#5A5C55'),class:'fade'});
+      t.textContent=lines[k]; svg.appendChild(t);
+    }
+  }
+  // 2015 spike on GDP
+  note(2, gdp[2], 10, -34, ['2015: ≈ €300bn of','IP changes address'], 'start', '#C22B24');
+  // 2017 GNI* invented
+  note(4, gnis[4], -6, 40, ['2017: Ireland invents','GNI* in self-defense'], 'start', '#17181A');
+  // 2025 Ozempic on GDP
+  note(12, gdp[12], -12, 26, ['the Ozempic','quarter'], 'end', '#C22B24');
+
+  // ---- gap bracket + label "≈ one Greece" (at 2024) ----
+  var gi=11; var gx=X(gi);
+  svg.appendChild(el('line',{x1:gx,y1:Y(gdp[gi]),x2:gx,y2:Y(gnis[gi]),stroke:'#B0201F','stroke-width':1,'stroke-dasharray':'3 3',class:'fade'}));
+  var midY=(Y(gdp[gi])+Y(gnis[gi]))/2;
+  var gl=el('text',{x:gx-8,y:midY,'text-anchor':'end','font-family':"'IBM Plex Mono',monospace",'font-size':11.5,fill:'#B0201F','font-weight':600,class:'fade'});
+  gl.textContent='≈ one Greece'; svg.appendChild(gl);
+})();
+</script>

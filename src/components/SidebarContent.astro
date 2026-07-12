@@ -1,0 +1,50 @@
+---
+import AboutMe from './AboutMe.astro';
+import AboutBlog from './AboutBlog.astro';
+import { withBase, slugify } from '../lib/paths';
+
+interface Props {
+  countries: string[];
+  tags: string[];
+}
+
+const { countries, tags } = Astro.props;
+---
+
+<div class="sidebar-section">
+  <h3>About</h3>
+  <details class="sub" open>
+    <summary>About me</summary>
+    <AboutMe />
+  </details>
+  <details class="sub">
+    <summary>About this blog</summary>
+    <AboutBlog />
+  </details>
+</div>
+
+<div class="sidebar-section">
+  <h3>Filter by country</h3>
+  <ul class="filter-list">
+    {
+      countries.map((country) => (
+        <li>
+          <a href={withBase(`/country/${slugify(country)}/`)}>{country}</a>
+        </li>
+      ))
+    }
+  </ul>
+</div>
+
+<div class="sidebar-section">
+  <h3>Filter by tag</h3>
+  <ul class="filter-list">
+    {
+      tags.map((tag) => (
+        <li>
+          <a href={withBase(`/tag/${tag}/`)}>{tag}</a>
+        </li>
+      ))
+    }
+  </ul>
+</div>

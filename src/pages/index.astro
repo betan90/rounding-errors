@@ -1,0 +1,30 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ExhibitCard from '../components/ExhibitCard.astro';
+import { withBase } from '../lib/paths';
+
+const exhibits = (await getCollection('exhibits')).sort((a, b) => {
+  const byDate = b.data.date.valueOf() - a.data.date.valueOf();
+  if (byDate !== 0) return byDate;
+  return b.data.exhibit.localeCompare(a.data.exhibit);
+});
+---
+
+<BaseLayout title="Rounding Errors — A museum of statistical discrepancies">
+  <div class="feed">
+    {
+      exhibits.map((entry) => (
+        <ExhibitCard
+          exhibit={entry.data.exhibit}
+          country={entry.data.country}
+          title={entry.data.title}
+          category={entry.data.category}
+          teaser={entry.data.teaser}
+          date={entry.data.date}
+          href={withBase(`/exhibits/${entry.slug}/`)}
+        />
+      ))
+    }
+  </div>
+</BaseLayout>

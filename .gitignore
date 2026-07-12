@@ -15,6 +15,10 @@ desktop.ini
 # Node (v0.2+)
 node_modules/
 
+# Astro build output
+dist/
+.astro/
+
 # Data working files (raw pulls; keep processed/ if you add it later)
 data/raw/
 *.xlsx

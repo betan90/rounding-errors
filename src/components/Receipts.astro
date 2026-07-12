@@ -1,0 +1,39 @@
+---
+interface Source {
+  name?: string;
+  text: string;
+  url?: string;
+  urlLabel?: string;
+}
+
+interface Props {
+  sources: Source[];
+  disclosure: string;
+}
+
+const { sources, disclosure } = Astro.props;
+---
+
+<div class="receipts">
+  <h3>Receipts — every figure was checked against one of these</h3>
+  <ol class="src">
+    {
+      sources.map((source) => (
+        <li>
+          {source.name && <b>{source.name}</b>}
+          {source.name && ', '}
+          {source.text}
+          {source.url && (
+            <>
+              {' '}
+              <a href={source.url}>{source.urlLabel ?? source.url}</a>
+            </>
+          )}
+        </li>
+      ))
+    }
+  </ol>
+  <div class="disclosure">
+    <b>Disclosure.</b> {disclosure}
+  </div>
+</div>

@@ -14,11 +14,18 @@ Built openly with AI: the research sweeps, data extraction, and first drafts are
 
 ## Build
 
-Static site, no framework, no build step. Each exhibit is a single self-contained HTML file with an inline SVG chart, so it hosts anywhere (currently Cloudflare Pages) and loads on a phone. Data lives in a small array at the bottom of each page; sources are linked inline.
+Astro static site, deployed to GitHub Pages via GitHub Actions on every push to `main` (see `.github/workflows/deploy.yml`). Each exhibit is a markdown content entry under `src/content/exhibits/`, with structured data (the ledger, verdict scoreboard, sources) in frontmatter and the narrative prose as the body. Charts are hand-built inline SVG, no charting library.
+
+```
+npm install
+npm run dev       # local dev server
+npm run build     # static build to dist/
+npm run preview   # preview the production build
+```
 
 ## Status
 
 - [x] Exhibit 001 — Ireland (live)
-- [ ] Exhibit 002 — Argentina (the IMF's only censure for statistics)
-- [ ] Exhibit 003 — the trade-data mirror problem (nobody's exports match anybody's imports)
+- [x] Exhibit 002 — Argentina (the IMF's only censure for statistics)
+- [x] Exhibit 003 — China (thirty-one provinces vs. the national GDP total)
 - [ ] Revision tracker — the same official number, as reported over time

@@ -1,0 +1,29 @@
+---
+interface Row {
+  label: string;
+  value: string;
+  gap?: boolean;
+}
+
+interface Props {
+  title: string;
+  rows: Row[];
+  note?: string;
+}
+
+const { title, rows, note } = Astro.props;
+---
+
+<div class="ledger">
+  <div class="ledger-title">{title}</div>
+  {
+    rows.map((row) => (
+      <div class:list={['row', { gap: row.gap }]}>
+        <span class="lab">{row.label}</span>
+        <span class="dots" />
+        <span class="val">{row.value}</span>
+      </div>
+    ))
+  }
+</div>
+{note && <p class="undertable">{note}</p>}

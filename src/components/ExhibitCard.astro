@@ -1,0 +1,30 @@
+---
+interface Props {
+  exhibit: string;
+  country: string;
+  title: string;
+  category: string;
+  teaser: string;
+  date: Date;
+  href: string;
+}
+
+const { exhibit, country, title, category, teaser, date, href } = Astro.props;
+
+const formattedDate = date.toLocaleDateString('en-US', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+});
+---
+
+<a class="card" href={href}>
+  <div class="card-filing">
+    <span>Exhibit <b>{exhibit}</b></span>
+    <span>Subject <b>{country}</b></span>
+    <span class="cat">Category <b>{category}</b></span>
+  </div>
+  <h2 class="card-title">{title}</h2>
+  <p class="card-teaser">{teaser}</p>
+  <div class="card-date">{formattedDate}</div>
+</a>

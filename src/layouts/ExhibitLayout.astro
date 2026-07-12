@@ -1,0 +1,43 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import BaseLayout from './BaseLayout.astro';
+import Ledger from '../components/Ledger.astro';
+import Verdict from '../components/Verdict.astro';
+import Receipts from '../components/Receipts.astro';
+import IrelandChart from '../components/IrelandChart.astro';
+import ArgentinaChart from '../components/ArgentinaChart.astro';
+import ChartPending from '../components/ChartPending.astro';
+
+interface Props {
+  entry: CollectionEntry<'exhibits'>;
+}
+
+const { entry } = Astro.props;
+const { data } = entry;
+const { Content } = await entry.render();
+---
+
+<BaseLayout title={`Exhibit ${data.exhibit}: ${data.country} — Rounding Errors`} description={data.teaser}>
+  <div class="filing">
+    <span>Exhibit <b>{data.exhibit}</b></span>
+    <span>Subject <b>{data.country}</b></span>
+    <span>Status <b>{data.status}</b></span>
+    <span class="cat">Category <b>{data.category}</b></span>
+  </div>
+
+  <h1>{data.title}</h1>
+  <div class="dek">{data.teaser}</div>
+
+  {data.exhibit === '001' && <IrelandChart />}
+  {data.exhibit === '002' && <ArgentinaChart />}
+  {data.exhibit === '003' && data.chartNote && <ChartPending note={data.chartNote} />}
+
+  <Ledger title={data.ledgerTitle} rows={data.ledger} note={data.ledgerNote} />
+
+  <div class="exhibit-body">
+    <Content />
+    <Verdict rows={data.verdict} note={data.verdictNote} />
+  </div>
+
+  <Receipts sources={data.sources} disclosure={data.disclosure} />
+</BaseLayout>
