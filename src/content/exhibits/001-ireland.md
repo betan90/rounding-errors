@@ -7,7 +7,7 @@ category: "nobody lied"
 tags: ["gdp", "national-accounts", "europe"]
 date: 2026-07-11
 teaser: "National accounts · GDP vs the number Ireland actually uses"
-ledgerTitle: "The numbers — 2024"
+ledgerTitle: "The numbers: 2024"
 ledger:
   - label: "Ireland's GDP"
     value: "€562.8bn"

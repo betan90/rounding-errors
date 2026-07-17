@@ -7,7 +7,7 @@ category: "the evidence was a highlight reel"
 tags: ["outlived-the-evidence", "crime"]
 date: 2026-07-17
 teaser: "Juvenile justice · the claimed success rate vs the trial that checked"
-ledgerTitle: "The numbers — Finckenauer 1982"
+ledgerTitle: "The numbers: Finckenauer 1982"
 ledger:
   - label: "Success rate claimed by the film"
     value: "80 to 90%"
@@ -30,8 +30,8 @@ sources:
   - name: "Petrosino et al."
     text: "\"Scared Straight\" and Other Juvenile Awareness Programs, Campbell/Cochrane systematic review (2013): nine randomized trials, OR 1.68 (95% CI 1.20 to 2.36), crime increased 1% to 28%, harm robust to removing the Finckenauer study; the 41% vs 11% figures as reported."
   - name: "US National Institute of Justice"
-    text: "CrimeSolutions practice profile, Juvenile Awareness Programs (Scared Straight): rated \"No Effects\"; two meta-analyses found participation increases the odds of future offending."
-    url: "https://crimesolutions.ojp.gov"
+    text: "CrimeSolutions practice profile, Juvenile Awareness Programs (Scared Straight): rated \"Ineffective\"; the evaluation found participation increases the odds of future offending."
+    url: "https://crimesolutions.ojp.gov/ratedpractices/juvenile-awareness-programs-scared-straight"
     urlLabel: "crimesolutions.ojp.gov"
   - name: "Office of Justice Programs"
     text: "abstracts, Scared Straight: The Myth That Roared and Scared Straight! and the Panacea Phenomenon (Finckenauer): the 80 to 90% claim, the Lifers'-Group-and-county-judge survey with no follow-up or record of non-replies, the 38-state spread."
@@ -54,7 +54,7 @@ The success figure had a provenance problem. It traced to a survey conducted by 
 
 Nobody had to. The camera did the persuading, and no one checked the math until a Rutgers criminologist named James Finckenauer ran the first randomized test of the Rahway program, published in 1982. The result: 41% of the kids sent through the program committed new offenses, against 11% of the controls, and the program group's new offenses were more serious. His own randomization had integrity problems, which he disclosed, so researchers later reran the numbers without his study. The harm finding survived.
 
-The full accounting came from the Campbell and Cochrane reviews: nine randomized trials, roughly a thousand juveniles, and a combined conclusion that programs like Scared Straight increase delinquency relative to doing nothing at all, raising crime by somewhere between 1% and 28%. The US National Institute of Justice's own evidence clearinghouse now rates the practice "No Effects" and notes that the meta-analyses found it increases the odds of future offending. The UK College of Policing concurs. In 2011, two Justice Department officials put it in a newspaper op-ed: ineffective, and potentially harmful.
+The full accounting came from the Campbell and Cochrane reviews: nine randomized trials, roughly a thousand juveniles, and a combined conclusion that programs like Scared Straight increase delinquency relative to doing nothing at all, raising crime by somewhere between 1% and 28%. The US National Institute of Justice's own evidence clearinghouse now rates the practice "Ineffective" and notes that participation increases the odds of future offending. The UK College of Policing concurs. In 2011, two Justice Department officials put it in a newspaper op-ed: ineffective, and potentially harmful.
 
 ## The bit continues
 

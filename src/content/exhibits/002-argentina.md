@@ -7,7 +7,7 @@ category: "the IMF's only censure"
 tags: ["inflation", "imf", "latin-america"]
 date: 2026-07-11
 teaser: "Consumer prices · Official inflation vs the private-sector estimate"
-ledgerTitle: "The numbers — 2012"
+ledgerTitle: "The numbers: 2012"
 ledger:
   - label: "Official inflation (INDEC)"
     value: "10.8%"

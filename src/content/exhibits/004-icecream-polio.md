@@ -7,7 +7,7 @@ category: "the summer did it"
 tags: ["correlation-someone-believed", "healthcare", "epidemiology"]
 date: 2026-07-13
 teaser: "Public health · sugar intake vs polio incidence"
-ledgerTitle: "The numbers — 1948–49"
+ledgerTitle: "The numbers: 1948-49"
 ledger:
   - label: "Polio cases, 1948 (NC State Health Department)"
     value: "2,498"

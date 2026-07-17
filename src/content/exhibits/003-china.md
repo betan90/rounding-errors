@@ -7,7 +7,7 @@ category: "the parts exceeded the whole"
 tags: ["gdp", "provincial-data", "asia"]
 date: 2026-07-12
 teaser: "Provincial accounts · the sum of 31 provinces vs the national total"
-ledgerTitle: "The numbers — 2015"
+ledgerTitle: "The numbers: 2015"
 ledger:
   - label: "National GDP (NBS)"
     value: "67.7 trillion yuan"
