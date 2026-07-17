@@ -22,7 +22,7 @@ export async function getStaticPaths() {
 const { tag, exhibits } = Astro.props;
 ---
 
-<BaseLayout title={`#${tag} — Rounding Errors`} description={`Exhibits tagged ${tag}.`}>
+<BaseLayout title={`#${tag} · Rounding Errors`} description={`Exhibits tagged ${tag}.`}>
   <div class="listing-head">
     <div class="kicker">Filtered by tag</div>
     <h1>{tag}</h1>
