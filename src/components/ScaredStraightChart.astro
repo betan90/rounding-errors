@@ -1,0 +1,75 @@
+---
+---
+
+<div class="chart-block">
+  <div class="legend">
+    <span><i class="swatch" style="background:var(--red-line)"></i> Program group, reoffended</span>
+    <span><i class="swatch" style="background:var(--ink)"></i> Control group, reoffended</span>
+  </div>
+  <figure>
+    <svg
+      id="chart"
+      viewBox="0 0 760 470"
+      role="img"
+      aria-label="Bar chart comparing reoffense rates from the 1982 Finckenauer randomized trial: 41 percent for the group that went through the Scared Straight program versus 11 percent for the control group left alone, against a dashed reference line for the film's claimed 80 to 90 percent success rate."
+    ></svg>
+    <figcaption class="cap">The group that was left alone did almost four times better. The film's figure came from a questionnaire with no record of who didn't answer.</figcaption>
+  </figure>
+</div>
+
+<script is:inline>
+(function(){
+  // ---- DATA (percent) ----
+  var program = 41;
+  var control = 11;
+  var claimedLo = 80;
+  var claimedHi = 90;
+
+  var W=760, H=470, m={t:24,r:20,b:50,l:52};
+  var pw=W-m.l-m.r, ph=H-m.t-m.b;
+  var yMax=100;
+  function Y(v){return m.t + (1-v/yMax)*ph;}
+
+  var svg=document.getElementById('chart');
+  var NS='http://www.w3.org/2000/svg';
+  function el(t,a){var e=document.createElementNS(NS,t);for(var k in a)e.setAttribute(k,a[k]);return e;}
+
+  // gridlines + y labels
+  for(var g=0; g<=100; g+=20){
+    svg.appendChild(el('line',{x1:m.l,y1:Y(g),x2:W-m.r,y2:Y(g),stroke:'#C6C7BF','stroke-width':1}));
+    var yl=el('text',{x:m.l-8,y:Y(g)+4,'text-anchor':'end','font-family':"'IBM Plex Mono',monospace",'font-size':11,fill:'#5A5C55'});
+    yl.textContent=g; svg.appendChild(yl);
+  }
+  // y axis title
+  var yt=el('text',{x:m.l-8,y:Y(100)-8,'text-anchor':'end','font-family':"'IBM Plex Mono',monospace",'font-size':10.5,fill:'#5A5C55'});
+  yt.textContent='%'; svg.appendChild(yt);
+
+  // dashed reference band for the film's claimed success rate
+  var yLo = Y(claimedLo), yHi = Y(claimedHi);
+  svg.appendChild(el('line',{x1:m.l,y1:yHi,x2:W-m.r,y2:yHi,stroke:'#5A5C55','stroke-width':1.5,'stroke-dasharray':'6,5'}));
+  var rl=el('text',{x:W-m.r,y:yHi-8,'text-anchor':'end','font-family':"'IBM Plex Mono',monospace",'font-size':11,'font-weight':700,fill:'#5A5C55'});
+  rl.textContent="FILM'S CLAIMED SUCCESS RATE: 80–90%"; svg.appendChild(rl);
+
+  // bar geometry
+  var c1 = m.l + pw*0.28;
+  var c2 = m.l + pw*0.72;
+  var barWidth = 140;
+  var base = Y(0);
+
+  // program group bar (red)
+  var b1 = Y(program);
+  svg.appendChild(el('rect',{x:c1-barWidth/2,y:b1,width:barWidth,height:base-b1,fill:'#C22B24',class:'fade'}));
+  var v1=el('text',{x:c1,y:b1-10,'text-anchor':'middle','font-family':"'IBM Plex Mono',monospace",'font-size':15,'font-weight':700,fill:'#C22B24'});
+  v1.textContent=program+'%'; svg.appendChild(v1);
+  var l1=el('text',{x:c1,y:H-m.b+22,'text-anchor':'middle','font-family':"'IBM Plex Mono',monospace",'font-size':11,fill:'#5A5C55'});
+  l1.textContent='PROGRAM GROUP'; svg.appendChild(l1);
+
+  // control group bar (ink)
+  var b2 = Y(control);
+  svg.appendChild(el('rect',{x:c2-barWidth/2,y:b2,width:barWidth,height:base-b2,fill:'#17181A',class:'fade'}));
+  var v2=el('text',{x:c2,y:b2-10,'text-anchor':'middle','font-family':"'IBM Plex Mono',monospace",'font-size':15,'font-weight':700,fill:'#17181A'});
+  v2.textContent=control+'%'; svg.appendChild(v2);
+  var l2=el('text',{x:c2,y:H-m.b+22,'text-anchor':'middle','font-family':"'IBM Plex Mono',monospace",'font-size':11,fill:'#5A5C55'});
+  l2.textContent='CONTROL GROUP'; svg.appendChild(l2);
+})();
+</script>

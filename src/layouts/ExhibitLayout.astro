@@ -7,6 +7,7 @@ import Receipts from '../components/Receipts.astro';
 import IrelandChart from '../components/IrelandChart.astro';
 import ArgentinaChart from '../components/ArgentinaChart.astro';
 import IceCreamChart from '../components/IceCreamChart.astro';
+import ScaredStraightChart from '../components/ScaredStraightChart.astro';
 import ChartPending from '../components/ChartPending.astro';
 
 interface Props {
@@ -33,6 +34,7 @@ const { Content } = await entry.render();
   {data.exhibit === '002' && <ArgentinaChart />}
   {data.exhibit === '003' && data.chartNote && <ChartPending note={data.chartNote} />}
   {data.exhibit === '004' && <IceCreamChart />}
+  {data.exhibit === '005' && <ScaredStraightChart />}
 
   <Ledger title={data.ledgerTitle} rows={data.ledger} note={data.ledgerNote} />
 

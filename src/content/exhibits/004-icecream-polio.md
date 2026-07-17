@@ -9,13 +9,16 @@ date: 2026-07-13
 teaser: "Public health · sugar intake vs polio incidence"
 ledgerTitle: "The numbers — 1948–49"
 ledger:
-  - label: "Polio cases, 1948"
+  - label: "Polio cases, 1948 (NC State Health Department)"
     value: "2,498"
-  - label: "Polio cases, 1949"
+  - label: "Polio cases, 1949 (NC State Health Department)"
     value: "229"
-  - label: "The drop"
+  - label: "The drop in cases"
     value: "91%"
     gap: true
+  - label: "Sugar consumption drop (Sandler's self-report, no independent measurement)"
+    value: "~90%"
+ledgerNote: "The case counts are official state health records. The sugar figure has exactly one source: Sandler himself. No independent measurement of statewide sugar consumption in 1949 has ever been produced."
 verdict:
   - key: "Fraud detected"
     value: "none. A sincere doctor and a genuine correlation."
@@ -35,7 +38,7 @@ sources:
   - name: "Sandler"
     text: "Diet Prevents Polio (Lee Foundation for Nutritional Research, 1951): the source of the diet campaign and the \"90% reduction\" claim, i.e. Sandler's own account."
   - text: "North Carolina State Health Department case figures (2,498 in 1948; 229 in 1949), as cited in contemporary and later accounts."
-disclosure: "This entry was drafted with AI (Claude did the research sweeps and first draft). The editorial voice, the opinions, and any surviving errors are mine. A provenance note, because this exhibit is partly about provenance: the \"90% drop in sugar consumption\" and the 2,498-to-229 case figures trace to Sandler's own account and its later repetition, much of it by anti-sugar and anti-vaccine advocates, rather than to an independent audit. That the central \"proof\" was self-reported, with no control group, is not a footnote to this story. It is the story. Polio was ended by sanitation-era immunity dynamics and, decisively, the 1955 vaccine. It was not ended by dessert."
+disclosure: "This entry was drafted with AI (Claude did the research sweeps and first draft). The editorial voice, the opinions, and any surviving errors are mine. Every figure was checked against the linked primary source before publishing, with one asymmetry worth stating outright rather than burying at the bottom: the 2,498-to-229 case figures are North Carolina State Health Department records, independently documented. The \"90% drop in sugar consumption\" has exactly one source, Sandler's own account, repeated since largely by anti-sugar and anti-vaccine advocates, and has never been independently audited. That the central \"proof\" was self-reported, with no control group, is not a footnote to this story. It is the story. Polio was ended by sanitation-era immunity dynamics and, decisively, the 1955 vaccine. It was not ended by dessert."
 ---
 
 ## The incident
