@@ -5,7 +5,7 @@ country: "United States"
 status: "curriculum finally replaced; the t-shirts remain iconic"
 category: "indistinguishable from nothing"
 tags: ["outlived-the-evidence", "education"]
-date: 2026-07-14
+date: 2026-07-25
 teaser: "Drug prevention · the biggest program in America vs its own error bars"
 ledgerTitle: "The numbers: West and O'Neal 2004"
 ledger:
