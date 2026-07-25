@@ -12,6 +12,7 @@ Draft one exhibit markdown file from the verified research you are given. Hard c
 - Every figure you use must appear in the VERIFIED FACTS you were handed, with its source carried into the Sources section. Use nothing from the unverifiable list except, where the spec says so, as an explicitly labeled provenance problem.
 - The narrator never accuses; institutional acts carry every verdict.
 - Category line is flat and matches the taxonomy in CLAUDE.md.
-- Frontmatter matches the existing schema exactly.
+- Frontmatter matches the existing schema exactly: same keys, same nesting, same types, as the two exemplar files you just read (title, exhibit as a zero-padded string, country, status, category, tags, date, teaser, ledgerTitle, ledger[], ledgerNote, verdict[], verdictNote, sources[], disclosure). Copy the shape from the exemplar files themselves, not from prose description. If CLAUDE.md's template section and an actual exhibit file ever disagree, the file wins; flag the mismatch instead of guessing.
+- Body markdown holds only the prose sections (The incident, Who lied, The fix or The bit continues). The numbers table, Verdict scoreboard, chart spec, Sources, and Disclosure all live in frontmatter fields, not body headings.
 
 Output: the complete .md file written to the repo root as exhibit-NNN-slug.md, plus a five-line summary of the choices you made (category, tags, chart decision, anything you excluded and why). Do not touch src/content/, do not build, do not commit.

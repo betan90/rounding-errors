@@ -17,11 +17,25 @@ This is a museum of statistical discrepancies: cases where institutions publishe
 
 ## Exhibit template
 
-Frontmatter fields: title, exhibit (number), country, category, tags (array), date, teaser, chart (component key).
+This is the schema `src/content/config.ts` actually enforces. It supersedes any other description of exhibit structure; if a draft doesn't match this, fix the draft, not the schema.
 
-Body sections, in order: The numbers (a small table stating the discrepancy raw) · The incident · Who lied (recurring section; the answer varies per exhibit) · The fix (when one exists) · The bit continues (when the story is live) · Verdict (scoreboard: Fraud detected / Rules broken / Usefulness of headline figure, then one closing paragraph).
+Frontmatter fields (all required unless marked optional):
+- `title`, `country`, `status`, `category`, `teaser`: strings.
+- `exhibit`: string, zero-padded to match the file name (`"006"`, not `6`).
+- `tags`: array of strings, from the vocabulary below.
+- `date`: YAML date.
+- `ledgerTitle`: string, e.g. `"The numbers: West and O'Neal 2004"`.
+- `ledger`: array of `{ label, value, gap? }` rows — this is "The numbers" table. Set `gap: true` on the one row that is the discrepancy.
+- `ledgerNote` (optional): one line under the table.
+- `verdict`: array of `{ key, value, long? }` — the scoreboard. Always exactly three rows: `Fraud detected`, `Rules broken`, `Usefulness of headline metric` (or `...claimed figure`, match the exhibit's phrasing). Set `long: true` on any row whose value runs past a few words.
+- `verdictNote`: string, the closing paragraph that follows the scoreboard.
+- `chartNote` (optional): use only when there is deliberately no chart (see exhibit 003); renders a `ChartPending` note instead of a chart component.
+- `sources`: array of `{ name?, text, url?, urlLabel? }`. Only set `url`/`urlLabel` for a source you have an actual link for; never fabricate one to fill the field.
+- `disclosure`: string. Must state the file was drafted with AI (Claude), that editorial voice and errors are the author's, and that every figure was checked against the linked primary source.
 
-Below the fold, in order: Chart spec · Sources · Disclosure.
+Body (markdown, rendered between the ledger and the verdict), sections in order: `## The incident` · `## Who lied` (recurring; the answer varies per exhibit) · `## The fix` (when one exists) · `## The bit continues` (when the story is live, use instead of The fix). Nothing else goes in the body — no numbers table, no verdict, no chart spec, no sources, no disclosure. Those all live in frontmatter above and render through `Ledger.astro` / `Verdict.astro` / `Receipts.astro`. Body length: 500 words maximum across these sections.
+
+Chart wiring is not a frontmatter field. Each exhibit's chart component (e.g. `src/components/DareChart.astro`) is built separately and switched in by exhibit number inside `src/layouts/ExhibitLayout.astro` (`{data.exhibit === '006' && <DareChart />}`). Adding a new exhibit with a chart means both writing the component and adding that line.
 
 - Body length: 500 words maximum, a two-minute read ending at the verdict.
 - Disclosure always includes: drafted with AI (Claude), editorial voice and errors mine, every figure checked against the linked primary source.
