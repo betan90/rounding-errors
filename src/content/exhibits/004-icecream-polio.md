@@ -30,11 +30,15 @@ verdict:
 verdictNote: "Ireland's numbers disagreed. Argentina's were disputed. China's didn't add up. This one is different, and worse in an instructive way: every number here is real. Polio really fell 91%. Sugar sales really dropped. The correlation was genuine. It just wasn't the reason, which is the most expensive number there is, the true one that means nothing."
 sources:
   - name: "Wikipedia"
-    text: "Benjamin P. Sandler: the 1938 rabbit experiments, the failed 1941 University of Michigan replication, the Buncombe County Medical Society's \"absolutely without foundation,\" and that his results were never reproduced. en.wikipedia.org"
+    text: "Benjamin P. Sandler: the failed 1941 University of Michigan replication, and that his results were never reproduced. en.wikipedia.org"
   - name: "Mountain Xpress"
-    text: "Asheville Archives: Sugar-free theory for curing polio elicits harsh criticism, 1948: the Asheville shutdown, Sandler's August 1948 newspaper appeal and direct quotes, the rabbit-and-blood-sugar basis, the 1979 NYT obituary. mountainx.com"
+    text: "Asheville Archives: Sugar-free theory for curing polio elicits harsh criticism, 1948, confirmed by direct quotation: on Aug. 8, 1948, The Asheville Citizen reported Dr. James H. Cherry, president of the Buncombe County Medical Society and chief of staff of the Asheville Orthopedic Home, calling Sandler's theory \"ridiculous\" in an official statement on behalf of both organizations: \"We feel Dr. Sandler's theory is absolutely without foundation. We do not feel that reducing the intake of soft drinks, pastries, and other sweets has been proved to have any effect on the immunity of the human body against polio.\""
+    url: "https://mountainx.com/news/asheville-archives-sugar-free-theory-for-curing-polio-elicits-harsh-criticism-1948/"
+    urlLabel: "mountainx.com"
   - name: "Tina Dupuy"
-    text: "Vaccinations and the ice cream scare (2015): the flush-toilet / lost-infant-immunity explanation attributed to Dr. John F. Modlin (Dartmouth-Hitchcock), and Sandler's American Journal of Pathology rabbit paper. news-daily.com"
+    text: "Vaccinations and the ice cream scare (2015): the flush-toilet / lost-infant-immunity explanation attributed to Dr. John F. Modlin (Dartmouth-Hitchcock), and Sandler's 1940 American Journal of Pathology rabbit paper, confirmed by direct fetch (\"The production of neuronal injury and necrosis with the virus of poliomyelitis in rabbits during insulin hypoglycemia\")."
+    url: "https://www.news-daily.com/news/vaccinations-and-the-ice-cream-scare---tina-dupuy/article_0d0d1ec1-0246-5a0c-b5df-e39f6c29bad8.html"
+    urlLabel: "news-daily.com"
   - name: "Sandler"
     text: "Diet Prevents Polio (Lee Foundation for Nutritional Research, 1951): the source of the diet campaign and the \"90% reduction\" claim, i.e. Sandler's own account."
   - text: "North Carolina State Health Department case figures (2,498 in 1948; 229 in 1949), as cited in contemporary and later accounts."
@@ -51,7 +55,7 @@ Sandler had his proof. He published a book, *Diet Prevents Polio*, in 1951.
 
 ## Who lied
 
-Nobody, and the medical establishment said so at the time. The University of Michigan had already tried to reproduce Sandler's rabbit results in 1941 and failed. The president of the Buncombe County Medical Society, asked about the theory during the 1948 outbreak, called it "absolutely without foundation" and said reducing sweets had never been shown to affect immunity to polio at all.
+Nobody, and the medical establishment said so at the time. The University of Michigan had already tried to reproduce Sandler's rabbit results in 1941 and failed. On August 8, 1948, Dr. James H. Cherry, president of the Buncombe County Medical Society and chief of staff of the Asheville Orthopedic Home, called it "ridiculous" in a statement on behalf of both institutions: "We feel Dr. Sandler's theory is absolutely without foundation. We do not feel that reducing the intake of soft drinks, pastries, and other sweets has been proved to have any effect on the immunity of the human body against polio."
 
 They were right, for a reason that makes the episode worse. Polio is seasonal, which is exactly why it tracked ice cream. And a severe epidemic year is followed by a mild one almost regardless of what anyone does, because most of the population that could be infected already has been. North Carolina's 91% drop is simply what a bad polio year followed by an ordinary one looks like. The sugar was irrelevant. The two numbers fell together because summer drives both, and 1948 was always going to be worse than 1949.
 

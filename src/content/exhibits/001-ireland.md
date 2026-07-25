@@ -59,7 +59,6 @@ sources:
     text: "economics (March 2026): Q4 2025 quarterly decline."
     url: "https://corporate-economy.bankofireland.com/irish-gdp-expands-by-12-in-2025/"
     urlLabel: "bankofireland.com"
-  - text: "Background: Wikipedia, Leprechaun economics and Modified gross national income: the 2016 first reading and the timeline."
 disclosure: "This entry was drafted with AI (Claude did the research sweeps, data pulls and first draft). The editorial voice, the opinions, and any surviving errors are mine. Every figure was checked against the linked primary source before publishing. No leprechauns were consulted."
 ---
 
@@ -67,7 +66,7 @@ disclosure: "This entry was drafted with AI (Claude did the research sweeps, dat
 
 In March 2016, Ireland's Central Statistics Office estimated the economy had grown 7.8% in 2015. Fastest in Europe. Pints, presumably.
 
-In July 2016, the CSO revised it to **26.3%**, in a single year, at a pace no advanced economy has ever recorded. No oil was discovered. No war ended. The population did not triple. Paul Krugman needed 24 minutes to coin "leprechaun economics", and it stuck like a court order.
+In July 2016, the CSO revised it to **26.3%**, in a single year, at a pace no advanced economy has ever recorded. No oil was discovered. No war ended. The population did not triple. Paul Krugman coined "leprechaun economics," and it stuck like a court order.
 
 What actually happened: roughly €300 billion of intangible assets, most of it Apple's IP, changed tax address to Ireland. Under the accounting rules every EU country must follow, when the IP moves, the production it generates moves with it, on paper. The factories didn't move. The workers didn't move. The *idea of the iPhone* moved, and it turns out the idea of the iPhone is worth more than most countries.
 

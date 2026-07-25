@@ -41,15 +41,22 @@ sources:
     urlLabel: "bloomberg.com"
   - name: "Taipei Times / Bretton Woods Project"
     text: "(Feb 2013): 10.8% official vs 25.6% private, the unnamed economists and fines, the US$6.8bn saving estimate."
-  - text: "Wikipedia, National Institute of Statistics and Census of Argentina: the Bevacqua removal, the 1.1% vs ~2.0% January 2007 figure, provincial CPI divergence."
+  - name: "Buenos Aires Times"
+    text: "INDEC case coverage, confirmed by direct fetch: Bevacqua, CPI director, was replaced by Paglieri after refusing to supply inflation data \"according to [Moreno's] criteria\"; tampering with INDEC's figures is dated \"as from January 2007.\""
+    url: "https://www.batimes.com.ar/news/argentina/indec-case-guillermo-moreno-sentenced-to-3-years-imprisonment-and-6-year-disqualification-from-public-office.phtml"
+    urlLabel: "batimes.com.ar"
+  - name: "American Statistical Association, Chicago Chapter"
+    text: "Update on Argentina! (2013), confirmed by direct fetch: Judge Claudio Bonadio charged Commerce Secretary Guillermo Moreno, who \"prosecuted former INDEC CPI director Graciela Bevacqua and others,\" with abuse of power for fining and pursuing legal action against people who published independent inflation data, calling it \"nothing other than an effort to silence\" them."
+    url: "https://community.amstat.org/chicagochapter/resources1/updateonargentina"
+    urlLabel: "community.amstat.org"
 disclosure: "This entry was drafted with AI (Claude did the research sweeps and first draft). The editorial voice, the opinions, and any surviving errors are mine. Every figure was checked against the linked primary source before publishing."
 ---
 
 ## The incident
 
-In January 2007, an economist named Graciela Bevacqua was quietly moved off the job of calculating Argentina's consumer price index. She'd held it for six years. Her replacement arrived after months of pressure from officials at the Commerce Secretariat to report friendlier numbers, pressure that hadn't produced the numbers they wanted.
+In January 2007, Graciela Bevacqua, the economist who calculated Argentina's consumer price index, was replaced. Her boss, Commerce Secretary Guillermo Moreno, wanted the numbers reported to his own criteria; she wouldn't, so he found an economist who would.
 
-From there the official inflation rate and the one everyone actually experienced went their separate ways and stayed separated for the better part of a decade. By 2012, INDEC said prices had risen 10.8% for the year. Private forecasters said 25.6%. Provincial statistical offices, which Buenos Aires didn't control, quietly published their own inflation numbers running two to three times higher than the national one.
+From there the official inflation rate and the one everyone actually experienced went their separate ways and stayed separated for the better part of a decade. By 2012, INDEC said prices had risen 10.8% for the year. Private forecasters said 25.6%. Provincial statistical offices, which Buenos Aires didn't control, quietly published their own, higher inflation numbers.
 
 The gap wasn't cosmetic. Argentina had billions in inflation-linked bonds outstanding, and a lower official rate meant a lower bill. Research estimated the discrepancy saved the government about US$6.8 billion in reduced payouts since 2007.
 
@@ -62,6 +69,8 @@ That is a serious accusation, but it came from the institution whose job is to m
 ## The fix, eventually
 
 Argentina didn't fix it under the government that built the problem. The remedial deadline came and went. INDEC kept reporting the lower official figure, the one the private estimates and provincial offices had been contradicting for years. The censure stayed on the books for three more years.
+
+A domestic reckoning arrived before the international one did. In 2013, a judge charged Moreno himself with abuse of power, over the fines and legal action he'd brought against economists who published independent inflation estimates, calling it "nothing other than an effort to silence" them.
 
 It lifted in November 2016, after a change of government installed a new INDEC leadership and let the IMF run technical missions to check the methodology directly. The Fund's managing director credited the turnaround to what she called extraordinary efforts to rebuild the agency and called Argentina's CPI and GDP data, for the first time since 2011, consistent with its obligations as a member.
 

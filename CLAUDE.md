@@ -45,6 +45,7 @@ Chart wiring is not a frontmatter field. Each exhibit's chart component (e.g. `s
 - Every figure is verified against a primary source before publishing. Sources are listed with what each one supports.
 - Self-reported or unverifiable figures are labeled as such in the body or disclosure. Sometimes the provenance problem is the exhibit.
 - Never fabricate or interpolate a data series. If clean chartable data does not exist, the chart section says so and the exhibit runs without one. The missing chart can be the point.
+- Wikipedia is never cited as a source. It may be used to find primary sources, which are then verified and cited directly. If a claim cannot be traced to a primary source, the claim is cut.
 
 ## Category vocabulary (do not blur)
 
