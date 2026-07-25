@@ -1,0 +1,75 @@
+---
+---
+
+<div class="chart-block">
+  <div class="legend">
+    <span><i class="swatch" style="background:var(--red-line)"></i> Measured effect (d = 0.023), 95% CI</span>
+    <span><i class="swatch" style="background:var(--ink-soft)"></i> Zero, no measurable effect</span>
+  </div>
+  <figure>
+    <svg
+      id="chart"
+      viewBox="0 0 760 380"
+      role="img"
+      aria-label="Single-point effect-size plot. One dot at d equals 0.023 with a 95 percent confidence interval spanning negative 0.04 to 0.08, plotted against a reference line at zero. The confidence interval crosses the zero line."
+    ></svg>
+    <figcaption class="cap">The measured effect of America's largest drug prevention program. The error bars cross zero. This is the whole chart.</figcaption>
+  </figure>
+</div>
+
+<script is:inline>
+(function(){
+  // ---- DATA (West and O'Neal, 2004 meta-analysis) ----
+  var effect = 0.023;
+  var ciLo = -0.04;
+  var ciHi = 0.08;
+
+  var W=760, H=380, m={t:56,r:60,b:70,l:60};
+  var pw=W-m.l-m.r, ph=H-m.t-m.b;
+  var xMin=-0.12, xMax=0.12;
+  function X(v){return m.l + ((v-xMin)/(xMax-xMin))*pw;}
+  var y0 = m.t + ph/2;
+
+  var svg=document.getElementById('chart');
+  var NS='http://www.w3.org/2000/svg';
+  function el(t,a){var e=document.createElementNS(NS,t);for(var k in a)e.setAttribute(k,a[k]);return e;}
+
+  // ---- axis ticks ----
+  var ticks=[-0.10,-0.05,0,0.05,0.10];
+  for(var i=0;i<ticks.length;i++){
+    var tx=X(ticks[i]);
+    if(ticks[i]!==0){
+      svg.appendChild(el('line',{x1:tx,y1:m.t,x2:tx,y2:H-m.b,stroke:'#C6C7BF','stroke-width':1}));
+    }
+    svg.appendChild(el('line',{x1:tx,y1:H-m.b,x2:tx,y2:H-m.b+6,stroke:'#5A5C55','stroke-width':1}));
+    var tl=el('text',{x:tx,y:H-m.b+22,'text-anchor':'middle','font-family':"'IBM Plex Mono',monospace",'font-size':11,fill:'#5A5C55'});
+    tl.textContent=(ticks[i]>0?'+':'')+ticks[i].toFixed(2); svg.appendChild(tl);
+  }
+  var axisTitle=el('text',{x:(m.l+W-m.r)/2,y:H-m.b+44,'text-anchor':'middle','font-family':"'IBM Plex Mono',monospace",'font-size':10.5,fill:'#5A5C55','letter-spacing':'0.06em'});
+  axisTitle.textContent='EFFECT ON DRUG USE (COHEN’S D)'; svg.appendChild(axisTitle);
+
+  // baseline
+  svg.appendChild(el('line',{x1:m.l,y1:H-m.b,x2:W-m.r,y2:H-m.b,stroke:'#5A5C55','stroke-width':1}));
+
+  // ---- zero reference line ----
+  var xz=X(0);
+  svg.appendChild(el('line',{x1:xz,y1:m.t-16,x2:xz,y2:H-m.b,stroke:'#5A5C55','stroke-width':1.5,'stroke-dasharray':'6,5'}));
+  var zl=el('text',{x:xz,y:m.t-24,'text-anchor':'middle','font-family':"'IBM Plex Mono',monospace",'font-size':11,'font-weight':700,fill:'#5A5C55'});
+  zl.textContent='ZERO — NO MEASURABLE EFFECT'; svg.appendChild(zl);
+
+  // ---- confidence interval whisker ----
+  var xLo=X(ciLo), xHi=X(ciHi), xPt=X(effect);
+  svg.appendChild(el('line',{x1:xLo,y1:y0,x2:xHi,y2:y0,stroke:'#C22B24','stroke-width':2.5,class:'fade'}));
+  svg.appendChild(el('line',{x1:xLo,y1:y0-10,x2:xLo,y2:y0+10,stroke:'#C22B24','stroke-width':2.5,class:'fade'}));
+  svg.appendChild(el('line',{x1:xHi,y1:y0-10,x2:xHi,y2:y0+10,stroke:'#C22B24','stroke-width':2.5,class:'fade'}));
+
+  // point estimate
+  svg.appendChild(el('circle',{cx:xPt,cy:y0,r:7,fill:'#C22B24',stroke:'#FBF9F4','stroke-width':2,class:'fade'}));
+
+  // labels
+  var lbl=el('text',{x:xPt,y:y0-24,'text-anchor':'middle','font-family':"'IBM Plex Mono',monospace",'font-size':15,'font-weight':700,fill:'#C22B24'});
+  lbl.textContent='d = 0.023'; svg.appendChild(lbl);
+  var ci=el('text',{x:(xLo+xHi)/2,y:y0+30,'text-anchor':'middle','font-family':"'IBM Plex Mono',monospace",'font-size':11,fill:'#5A5C55'});
+  ci.textContent='95% CI: −0.04 to 0.08'; svg.appendChild(ci);
+})();
+</script>
