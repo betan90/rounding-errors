@@ -1,0 +1,75 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { withBase } from '../lib/paths';
+import { correctionsByDateDesc } from '../data/corrections';
+
+const exhibits = await getCollection('exhibits');
+const corrections = correctionsByDateDesc();
+
+function exhibitHref(exhibitNumber: string): string | null {
+  const entry = exhibits.find((e) => e.data.exhibit === exhibitNumber);
+  return entry ? withBase(`/exhibits/${entry.slug}/`) : null;
+}
+
+const rows: Array<[string, string]> = [
+  ['What it said', 'whatItSaid'],
+  ['What was wrong', 'whatWasWrong'],
+  ['How it got here', 'howItGotHere'],
+  ['What it says now', 'whatItSaysNow'],
+  ['Caught by', 'caughtBy'],
+];
+---
+
+<BaseLayout
+  title="Corrections · Rounding Errors"
+  description="A museum of statistical discrepancies keeps a record of its own."
+>
+  <div class="listing-head">
+    <div class="kicker">The record</div>
+    <h1>Corrections</h1>
+  </div>
+  <p class="corrections-framing">
+    A museum about institutions correcting themselves runs on the same rule. Every fix made to a published exhibit is logged here, not folded quietly into an edit.
+  </p>
+
+  <div class="corrections-log">
+    {
+      corrections.map((c) => {
+        const href = exhibitHref(c.exhibit);
+        const formattedDate = c.dateCorrected.toLocaleDateString('en-US', {
+          year: 'numeric',
+          month: 'long',
+          day: 'numeric',
+        });
+        return (
+          <article class="correction">
+            <div class="correction-head">
+              <span>
+                Exhibit{' '}
+                {href ? (
+                  <a class="inline" href={href}>
+                    <b>{c.exhibit}</b>
+                  </a>
+                ) : (
+                  <b>{c.exhibit}</b>
+                )}
+              </span>
+              <span>
+                Date corrected <b>{formattedDate}</b>
+              </span>
+            </div>
+            <dl class="correction-body">
+              {rows.map(([label, key]) => (
+                <div class="correction-row">
+                  <dt>{label}</dt>
+                  <dd>{c[key as keyof typeof c] as string}</dd>
+                </div>
+              ))}
+            </dl>
+          </article>
+        );
+      })
+    }
+  </div>
+</BaseLayout>

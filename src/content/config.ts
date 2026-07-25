@@ -38,6 +38,7 @@ const exhibits = defineCollection({
       })
     ),
     disclosure: z.string(),
+    correctionNote: z.string().optional(),
   }),
 });
 

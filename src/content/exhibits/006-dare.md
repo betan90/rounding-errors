@@ -44,6 +44,7 @@ sources:
   - name: "Boston University Law Review"
     text: "Truth or DARE note: the 2007 decision to seek a new curriculum."
 disclosure: "This entry was drafted with AI (Claude did the research sweeps and first draft). The editorial voice, the opinions, and any surviving errors are mine. Every figure was checked against the linked primary source before publishing. Fairness note kept on purpose: DARE is the rare institution in this museum that eventually acted on its own null results and replaced its curriculum. The exhibit is about the twenty years before that."
+correctionNote: "This exhibit was corrected on 2026-07-25. Details on the corrections page."
 ---
 
 ## The incident

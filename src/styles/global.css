@@ -279,3 +279,40 @@ a.inline:hover{border-color:var(--red);}
 @media (max-width:520px){
   .card-title{font-size:19px;}
 }
+
+/* ---- corrections log ---- */
+.corrections-framing{
+  font-family:var(--serif);font-size:17px;color:var(--ink-soft);
+  line-height:1.55;margin:0 0 34px;max-width:56ch;
+}
+.corrections-log{display:flex;flex-direction:column;gap:0;}
+.correction{
+  border:1px solid var(--rule-strong);background:var(--paper-2);
+  padding:18px 20px 20px;margin:0 0 26px;
+}
+.correction-head{
+  display:flex;flex-wrap:wrap;justify-content:space-between;gap:6px 20px;
+  font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;
+  color:var(--ink-soft);border-bottom:1px solid var(--rule);padding-bottom:12px;margin-bottom:14px;
+}
+.correction-head b{color:var(--red);font-weight:700;}
+.correction-body{margin:0;}
+.correction-row{
+  padding:10px 0;border-bottom:1px dotted var(--rule);
+}
+.correction-row:last-child{border-bottom:none;}
+.correction-row dt{
+  font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--ink-soft);margin:0 0 5px;
+}
+.correction-row dd{
+  font-family:var(--mono);font-size:13.5px;line-height:1.6;color:var(--ink);margin:0;
+}
+
+/* ---- correction notice on an exhibit page ---- */
+.correction-notice{
+  font-family:var(--mono);font-size:12px;color:var(--ink-soft);
+  border:1px dashed var(--rule-strong);padding:12px 16px;margin:20px 0 0;
+  line-height:1.5;
+}
+.correction-notice b{color:var(--red);}

@@ -10,6 +10,7 @@ import IceCreamChart from '../components/IceCreamChart.astro';
 import ScaredStraightChart from '../components/ScaredStraightChart.astro';
 import DareChart from '../components/DareChart.astro';
 import ChartPending from '../components/ChartPending.astro';
+import { withBase } from '../lib/paths';
 
 interface Props {
   entry: CollectionEntry<'exhibits'>;
@@ -46,4 +47,13 @@ const { Content } = await entry.render();
   </div>
 
   <Receipts sources={data.sources} disclosure={data.disclosure} />
+
+  {
+    data.correctionNote && (
+      <div class="correction-notice">
+        <b>Corrected.</b> {data.correctionNote}{' '}
+        <a class="inline" href={withBase('/corrections/')}>See the corrections page.</a>
+      </div>
+    )
+  }
 </BaseLayout>
