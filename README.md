@@ -14,7 +14,7 @@ Built openly with AI: the research sweeps, data extraction, and first drafts are
 
 ## Build
 
-Astro static site, deployed to GitHub Pages via GitHub Actions on every push to `main` (see `.github/workflows/deploy.yml`). Each exhibit is a markdown content entry under `src/content/exhibits/`, with structured data (the ledger, verdict scoreboard, sources) in frontmatter and the narrative prose as the body. Charts are hand-built inline SVG, no charting library.
+Astro static site, deployed to GitHub Pages via GitHub Actions (see `.github/workflows/deploy.yml`). Deploys are manual: pushing to `main` publishes nothing until a human runs the Deploy workflow from the Actions tab. Each exhibit is a markdown content entry under `src/content/exhibits/`, with structured data (the ledger, verdict scoreboard, sources) in frontmatter and the narrative prose as the body. Charts are hand-built inline SVG, no charting library.
 
 ```
 npm install
@@ -28,4 +28,7 @@ npm run preview   # preview the production build
 - [x] Exhibit 001 — Ireland (live)
 - [x] Exhibit 002 — Argentina (the IMF's only censure for statistics)
 - [x] Exhibit 003 — China (thirty-one provinces vs. the national GDP total)
+- [x] Exhibit 004 — United States (ice cream, polio, and the summer that did it)
+- [x] Exhibit 005 — United States (Scared Straight, the evidence was a highlight reel)
+- [x] Exhibit 006 — United States (DARE, indistinguishable from nothing)
 - [ ] Revision tracker — the same official number, as reported over time

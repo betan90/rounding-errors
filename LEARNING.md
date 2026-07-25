@@ -12,11 +12,11 @@ A running log of which Claude features got used to build this, what they were ac
 
 **What worked:** search-for-freshness was the standout. The tone rules only got right through several rejection rounds — worth capturing them in a CLAUDE.md so they don't have to be relearned per exhibit.
 
-**What I'd change / open:** the 2013–2019 chart values are approximate placeholders; the real single-vintage GNI\* back-series lives only in a CSO spreadsheet and needs a local pull (session 2).
+**What I'd change / open:** the 2013–2019 chart values are approximate placeholders; the real single-vintage GNI\* back-series lives only in a CSO spreadsheet and needs a local pull (session 2). *[Resolved 2026-07-25, during a full repo audit: the chart now uses the single-vintage CSO PxStat NA001 series, all 13 years, pulled via the ws.cso.ie API.]*
 
 ---
 
-## Session 2 — repo, deploy, exact data (Claude Code) — UPCOMING
+## Session 2 — repo, deploy, exact data (Claude Code) — happened; notes pending
 
 **Planned features:** Claude Code plan mode, git handling, local file/spreadsheet reading, Cloudflare Pages deploy.
 
@@ -24,6 +24,6 @@ A running log of which Claude features got used to build this, what they were ac
 
 ---
 
-## Session 3+ — templating (CLAUDE.md, custom /new-exhibit command) — LATER
+## Session 3+ — templating (CLAUDE.md, custom /new-exhibit command) — happened (as CLAUDE.md + the agent kit); notes pending
 
 To fill in when exhibit 002 exists and the workflow gets codified.
