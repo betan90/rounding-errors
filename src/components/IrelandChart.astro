@@ -20,11 +20,12 @@
 <script is:inline>
 (function(){
   // ---- DATA (current prices, EUR bn) ----
-  // VERIFIED from CSO releases: 2020-2025.
-  // APPROXIMATE (replace from a single-vintage XLS before publishing): 2013-2019.
+  // Single vintage: CSO PxStat table NA001 (Modified Gross National Income at
+  // Current Market Prices), 2025 Annual National Accounts release, pulled
+  // 2026-07-25 via ws.cso.ie API. GDP = item 01, GNI* = item 10.
   var years = [2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025];
-  var gdp   = [180, 195, 262, 275, 302, 324, 356, 373, 426, 521, 510, 563, 603];
-  var gnis  = [145, 152, 162, 190, 197, 208, 219, 200, 234, 267, 291, 322, 334];
+  var gdp   = [182.7, 200.4, 272.1, 275.8, 308.2, 334.9, 363.6, 380.7, 448.5, 523.2, 520.8, 561.9, 602.4];
+  var gnis  = [137.8, 150.5, 167.8, 173.1, 184.6, 190.6, 205.4, 194.3, 226.3, 265.3, 289.1, 321.6, 334.0];
 
   var W=760, H=470, m={t:24,r:20,b:40,l:52};
   var pw=W-m.l-m.r, ph=H-m.t-m.b;

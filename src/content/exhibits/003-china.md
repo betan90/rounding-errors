@@ -30,7 +30,7 @@ chartNote: "chart pending a single-vintage data pull"
 sources:
   - name: "SinoInsider"
     text: "Risk Watch: two provinces admit to faking data: the 2015 figure, 67.7tn vs 72.5tn, the Jiangsu comparison."
-    url: "https://sinoinsider.com"
+    url: "https://sinoinsider.com/2018/01/risk-watch-what-it-means-when-two-chinese-provinces-admit-to-faking-data/"
     urlLabel: "sinoinsider.com"
   - name: "Caixin Global"
     text: "(Jan 18, 2017), Liaoning Government Admits False Growth Data from 2011-14: the confession, the punished former party secretary, the fiscal-revenue exaggeration figures."
@@ -42,9 +42,9 @@ sources:
     text: "(Oct 30, 2017): the NBS's 2019 plan to take over provincial data collection directly."
   - name: "Chen, Chen, Hsieh and Song"
     text: "A Forensic Examination of China's National Accounts, Brookings Papers on Economic Activity (2019): the independent re-estimate, growth overstated ~1.7 points a year 2008-2016 even after NBS adjustment."
-    url: "https://www.brookings.edu"
+    url: "https://www.brookings.edu/articles/a-forensic-examination-of-chinas-national-accounts"
     urlLabel: "brookings.edu"
-disclosure: "This entry was drafted with AI (Claude did the research sweeps and first draft). The editorial voice, the opinions, and any surviving errors are mine. The Liaoning admission and subsequent disciplinary action are drawn from Chinese state media (Xinhua, People's Daily) as reported by international outlets; this entry treats the confession and the punishment as institutional fact because both were announced by Chinese authorities themselves, not alleged by outside parties."
+disclosure: "This entry was drafted with AI (Claude did the research sweeps and first draft). The editorial voice, the opinions, and any surviving errors are mine. Every figure was checked against the linked primary source before publishing. The Liaoning admission and subsequent disciplinary action are drawn from Chinese state media (Xinhua, People's Daily) as reported by international outlets; this entry treats the confession and the punishment as institutional fact because both were announced by Chinese authorities themselves, not alleged by outside parties."
 ---
 
 ## The incident
