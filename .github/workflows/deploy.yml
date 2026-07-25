@@ -1,8 +1,8 @@
 name: Deploy to GitHub Pages
 
+# Deploys are human-gated by design (see CLAUDE.md build conventions):
+# no push trigger. Publish by running this workflow from the Actions tab.
 on:
-  push:
-    branches: [main]
   workflow_dispatch:
 
 permissions:
