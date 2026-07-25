@@ -33,8 +33,12 @@ sources:
     urlLabel: "pmc.ncbi.nlm.nih.gov"
   - name: "US General Accounting Office"
     text: "Youth Illicit Drug Use Prevention: DARE Long-Term Evaluations (GAO-03-172R, 2003): six evaluations, no statistically significant differences in illicit drug use."
+  - name: "Rosenbaum and Hanson"
+    text: "Assessing the Effects of School-Based Drug Education: A Six-Year Multilevel Analysis of Project D.A.R.E., Journal of Research in Crime and Delinquency 35(4) (1998): urban and rural students showed some benefit; suburban DARE graduates showed small but significant increases in drug use versus suburban controls, the so-called boomerang effect."
+    url: "https://journals.sagepub.com/doi/10.1177/0022427898035004002"
+    urlLabel: "journals.sagepub.com"
   - name: "Wikipedia"
-    text: "Drug Abuse Resistance Education: Surgeon General David Satcher's 2001 \"Ineffective Primary Prevention Programs\" categorization; the GAO boomerang-effect note."
+    text: "Drug Abuse Resistance Education: Surgeon General David Satcher's 2001 \"Ineffective Primary Prevention Programs\" categorization."
   - name: "Priceonomics"
     text: "DARE: The Anti-Drug Program That Never Actually Worked: the 2000 Department of Education evidence audit; the Surgeon General's observation that DARE's popularity persisted despite evaluations consistently showing little or no deterrent effect."
   - name: "Boston University Law Review"
@@ -50,9 +54,9 @@ It felt unimprovable. Police and children, together, saying no. Nobody involved 
 
 ## Who lied
 
-Nobody, which is the pattern with the expensive ones. The evaluations just kept coming back empty, and the institutions eventually said so in their own voices. In 2001, the US Surgeon General placed DARE in the category of Ineffective Primary Prevention Programs. In 2003, the General Accounting Office reviewed six long-term evaluations and found no statistically significant differences in illicit drug use between kids who got DARE in fifth or sixth grade and kids who didn't, and noted the program was sometimes counterproductive in some populations, with DARE graduates showing higher rates of drug use, the so-called boomerang effect. In 2000, the Department of Education had already audited its drug-education funding and made programs prove effectiveness to qualify. DARE didn't make the cut.
+Nobody, which is the pattern with the expensive ones. The evaluations just kept coming back empty, and the institutions eventually said so in their own voices. A six-year randomized study led by Dennis Rosenbaum and Gordon Hanson, published in 1998, found DARE had no lasting effect on drug use for most students, except among suburban graduates, who showed small but significant increases in drug use compared to suburban students who never took the class: the so-called boomerang effect. In 2001, the US Surgeon General placed DARE in the category of Ineffective Primary Prevention Programs. In 2003, the General Accounting Office reviewed six long-term evaluations and found no statistically significant differences in illicit drug use between kids who got DARE in fifth or sixth grade and kids who didn't. In 2000, the Department of Education had already audited its drug-education funding and made programs prove effectiveness to qualify. DARE didn't make the cut.
 
-The definitive arithmetic arrived in a 2004 meta-analysis in the *American Journal of Public Health*: across the published evaluations, the overall effect of DARE on drug use was d = 0.023, confidence interval −0.04 to 0.08, nonsignificant. Not harmful, like the last exhibit. Just, to the limits of measurement, nothing.
+The definitive arithmetic arrived in a 2004 meta-analysis in the *American Journal of Public Health*: across the published evaluations, the overall effect of DARE on drug use was d = 0.023, confidence interval −0.04 to 0.08, nonsignificant. This one isn't harmful, like the last exhibit. It is, to the limits of measurement, nothing at all.
 
 ## The fix
 
