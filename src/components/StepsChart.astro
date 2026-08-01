@@ -1,0 +1,72 @@
+---
+---
+
+<div class="chart-block">
+  <div class="legend">
+    <span><i class="swatch" style="background:var(--red-line)"></i> The tracker goal (Manpo-kei, 1965)</span>
+    <span><i class="swatch" style="background:var(--ink)"></i> Where mortality benefit plateaus (Lee 2019)</span>
+  </div>
+  <figure>
+    <svg
+      id="chart"
+      viewBox="0 0 760 300"
+      role="img"
+      aria-label="Single horizontal step-count axis from 0 to 12,000. A shaded band from 0 to about 7,500 steps marks where mortality benefit accrues, with a dashed line at the 7,500-step plateau. A separate red marker sits at 10,000 steps, past the plateau, labeled as the marketing figure."
+    ></svg>
+    <figcaption class="cap">One number is where the evidence levels off. The other is on your watch. They are not the same number, and only one of them came from a study.</figcaption>
+  </figure>
+</div>
+
+<script is:inline>
+(function(){
+  // ---- DATA ----
+  // Plateau: Lee IM et al., JAMA Internal Medicine (2019), ~17,000 older women,
+  // mortality risk levels off at roughly 7,500 steps/day.
+  // Marketing figure: Yamasa Tokei Keiki's Manpo-kei pedometer, launched 1965,
+  // "10,000 steps meter."
+  var plateau = 7500;
+  var goal = 10000;
+
+  var W=760, H=300, m={t:70,r:60,b:60,l:60};
+  var pw=W-m.l-m.r, ph=H-m.t-m.b;
+  var xMin=0, xMax=12000;
+  function X(v){return m.l + ((v-xMin)/(xMax-xMin))*pw;}
+  var y0 = m.t + ph/2;
+
+  var svg=document.getElementById('chart');
+  var NS='http://www.w3.org/2000/svg';
+  function el(t,a){var e=document.createElementNS(NS,t);for(var k in a)e.setAttribute(k,a[k]);return e;}
+
+  // ---- benefit-accrual band, 0 to plateau ----
+  svg.appendChild(el('rect',{x:X(0),y:y0-16,width:X(plateau)-X(0),height:32,fill:'#5A5C55','fill-opacity':0.14}));
+
+  // ---- axis ticks ----
+  var ticks=[0,2000,4000,6000,8000,10000,12000];
+  for(var i=0;i<ticks.length;i++){
+    var tx=X(ticks[i]);
+    svg.appendChild(el('line',{x1:tx,y1:H-m.b,x2:tx,y2:H-m.b+6,stroke:'#5A5C55','stroke-width':1}));
+    var tl=el('text',{x:tx,y:H-m.b+22,'text-anchor':'middle','font-family':"'IBM Plex Mono',monospace",'font-size':11,fill:'#5A5C55'});
+    tl.textContent=ticks[i].toLocaleString(); svg.appendChild(tl);
+  }
+  var axisTitle=el('text',{x:(m.l+W-m.r)/2,y:H-m.b+42,'text-anchor':'middle','font-family':"'IBM Plex Mono',monospace",'font-size':10.5,fill:'#5A5C55','letter-spacing':'0.06em'});
+  axisTitle.textContent='STEPS PER DAY'; svg.appendChild(axisTitle);
+
+  // baseline
+  svg.appendChild(el('line',{x1:m.l,y1:H-m.b,x2:W-m.r,y2:H-m.b,stroke:'#5A5C55','stroke-width':1}));
+
+  // ---- plateau reference line, ~7,500 ----
+  var xp=X(plateau);
+  svg.appendChild(el('line',{x1:xp,y1:m.t-4,x2:xp,y2:H-m.b,stroke:'#17181A','stroke-width':1.5,'stroke-dasharray':'6,5'}));
+  var pl=el('text',{x:xp,y:m.t-14,'text-anchor':'middle','font-family':"'IBM Plex Mono',monospace",'font-size':11,'font-weight':700,fill:'#17181A'});
+  pl.textContent='~7,500 — PLATEAU'; svg.appendChild(pl);
+
+  // ---- marketing-figure marker, 10,000 ----
+  var xg=X(goal);
+  svg.appendChild(el('line',{x1:xg,y1:y0-24,x2:xg,y2:y0+24,stroke:'#C22B24','stroke-width':2.5,class:'fade'}));
+  svg.appendChild(el('circle',{cx:xg,cy:y0,r:7,fill:'#C22B24',stroke:'#FBF9F4','stroke-width':2,class:'fade'}));
+  var gl=el('text',{x:xg,y:y0-34,'text-anchor':'middle','font-family':"'IBM Plex Mono',monospace",'font-size':15,'font-weight':700,fill:'#C22B24'});
+  gl.textContent='10,000'; svg.appendChild(gl);
+  var gl2=el('text',{x:xg,y:y0+44,'text-anchor':'middle','font-family':"'IBM Plex Mono',monospace",'font-size':11,fill:'#C22B24'});
+  gl2.textContent='MARKETING FIGURE, 1965'; svg.appendChild(gl2);
+})();
+</script>

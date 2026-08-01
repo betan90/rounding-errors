@@ -9,6 +9,7 @@ import ArgentinaChart from '../components/ArgentinaChart.astro';
 import IceCreamChart from '../components/IceCreamChart.astro';
 import ScaredStraightChart from '../components/ScaredStraightChart.astro';
 import DareChart from '../components/DareChart.astro';
+import StepsChart from '../components/StepsChart.astro';
 import ChartPending from '../components/ChartPending.astro';
 import { withBase } from '../lib/paths';
 
@@ -38,6 +39,7 @@ const { Content } = await entry.render();
   {data.exhibit === '004' && <IceCreamChart />}
   {data.exhibit === '005' && <ScaredStraightChart />}
   {data.exhibit === '006' && <DareChart />}
+  {data.exhibit === '007' && <StepsChart />}
 
   <Ledger title={data.ledgerTitle} rows={data.ledger} note={data.ledgerNote} />
 
