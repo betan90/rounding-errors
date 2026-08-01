@@ -23,3 +23,8 @@ dist/
 data/raw/
 *.xlsx
 *.xls
+
+# Fact-checker / second-opinion report artifacts (regenerated per run)
+fact-check-output.json
+second-opinion.json
+reports/
