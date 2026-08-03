@@ -23,7 +23,7 @@ Frontmatter fields (all required unless marked optional):
 - `title`, `country`, `status`, `category`, `teaser`: strings.
 - `exhibit`: string, zero-padded to match the file name (`"006"`, not `6`).
 - `tags`: array of strings, from the vocabulary below.
-- `date`: YAML date.
+- `date`: YAML date. Must be the exhibit's actual publish day (the day it's built into the site), not a draft or research date. The homepage and tag/country pages sort newest-first by this field (ties broken by exhibit number, descending), so a stale draft date pushes a newer exhibit below an older one.
 - `ledgerTitle`: string, e.g. `"The numbers: West and O'Neal 2004"`.
 - `ledger`: array of `{ label, value, gap? }` rows — this is "The numbers" table. Set `gap: true` on the one row that is the discrepancy.
 - `ledgerNote` (optional): one line under the table.
