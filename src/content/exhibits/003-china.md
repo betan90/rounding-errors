@@ -19,7 +19,7 @@ ledger:
 ledgerNote: "Jiangsu is China's second-largest provincial economy. The rounding error was bigger than a G20-sized region."
 verdict:
   - key: "Fraud detected"
-    value: "confirmed, confessed to, and punished, by China's own party disciplinary body."
+    value: "in Liaoning, confirmed, confessed to on the provincial record, and punished by China's own party disciplinary body."
   - key: "Rules broken"
     value: "provincial-national accounting consistency, for at least a decade."
   - key: "Usefulness of headline figure"
@@ -59,7 +59,7 @@ Liaoning did, on the record, and China's own institutions were the ones who said
 
 The consequences were real and are documented by China's own Communist Party disciplinary process: the province's former party secretary, who held the post while the fabrication occurred, was removed from every public position and expelled from the party. [Full case summary via Caixin Global.](https://www.caixinglobal.com/2017-01-18/liaoning-government-admits-false-growth-data-from-2011-14-101046468.html)
 
-Liaoning was not unique, it was just the one that confessed on camera. Within weeks, Inner Mongolia admitted its 2016 industrial output had been overstated by 40%, and a district of Tianjin admitted its GDP was a third smaller than reported. The head of China's National Bureau of Statistics used the word "zero tolerance" the same year and announced the bureau had punished more than ten people in each of fifteen major fraud cases the year before.
+Liaoning was not unique, it was just the one that confessed first. About a year later, in January 2018, Inner Mongolia admitted its 2016 industrial output had been overstated by 40%, and a district of Tianjin admitted its GDP was a third smaller than reported. The head of China's National Bureau of Statistics used the word "zero tolerance" in 2017 and announced the bureau had punished more than ten people in each of fifteen major fraud cases the year before.
 
 ## The fix
 

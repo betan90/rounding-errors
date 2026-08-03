@@ -14,7 +14,7 @@ ledger:
   - label: "Ireland's GNI* (the number Ireland actually uses)"
     value: "€321.1bn"
   - label: "The gap"
-    value: "€241.7bn, or roughly one (1) entire Greece"
+    value: "€241.7bn, or close to one (1) entire Greece"
     gap: true
 ledgerNote: "GNI* is not a typo. The asterisk is load-bearing. We'll get there."
 verdict:
@@ -28,13 +28,25 @@ verdict:
 verdictNote: "Every organisation has a GNI*. There's the dashboard number that's technically correct, and there's the shadow tab everyone actually trusts. Ireland published its shadow tab, with a methodology page."
 sources:
   - name: "CSO"
-    text: "Annual National Accounts 2025, GNI* and De-Globalised Results (July 2026): 2025 GNI* €334bn, 55.4% of GDP."
-    url: "https://www.cso.ie/en/releasesandpublications/ep/p-ana/annualnationalaccounts2025/gniandde-globalisedresults/"
+    text: "Quarterly National Accounts Quarter 4 2015 (10 March 2016): preliminary estimate, GDP up 7.8% for 2015."
+    url: "https://www.cso.ie/en/releasesandpublications/er/na/quarterlynationalaccountsquarter42015/"
     urlLabel: "cso.ie"
   - name: "CSO"
-    text: "Annual National Accounts 2024, Key Findings (July 2025): GDP €562.8bn, GNI* €321.1bn."
-    url: "https://www.cso.ie/en/releasesandpublications/ep/p-ana/annualnationalaccounts2024/keyfindings/"
+    text: "National Income and Expenditure Annual Results 2015 (12 July 2016): revised GDP growth, 26.3% for 2015."
+    url: "https://www.cso.ie/en/releasesandpublications/er/nie/nationalincomeandexpenditureannualresults2015/"
     urlLabel: "cso.ie"
+  - name: "Paul Krugman"
+    text: "\"Leprechaun economics: Ireland reports 26 percent growth! But it doesn't make sense. Why are these in GDP?\" (12 July 2016), the tweet that coined the term the same day the CSO published the revision."
+    url: "https://x.com/paulkrugman/status/752841032870551552"
+    urlLabel: "x.com/paulkrugman"
+  - name: "CSO"
+    text: "NIE 2016 Frequently Asked Questions: \"the scale of the relocations in 2015 was substantial and added €300 billion to Ireland's capital stocks,\" attributed to relocated intellectual property. (CSO confidentiality rules bar it from naming the company; the Apple attribution is independently documented in Apple's own 2018 restructuring disclosures.)"
+    url: "https://www.cso.ie/en/media/csoie/methods/nationalincomeandexpenditureannualresults/NIE_2016_FAQS.pdf"
+    urlLabel: "cso.ie (PDF)"
+  - name: "Eurostat"
+    text: "Irish GDP revision statement (21 July 2016, updated 12 December 2016): called the revision \"plausible\" based on preliminary CSO information and committed to examining the methodology in more detail by September 2016, as part of the standard GNI Regulation review applied to all member states."
+    url: "https://www.cso.ie/en/media/csoie/newsevents/documents/EurostatIrishGDPcommunication.pdf"
+    urlLabel: "cso.ie (PDF, mirrored from Eurostat)"
   - name: "CSO"
     text: "Modified GNI explainer: the definition, and the aircraft."
     url: "https://www.cso.ie/en/interactivezone/statisticsexplained/nationalaccountsexplained/modifiedgni/"
@@ -43,9 +55,25 @@ sources:
     text: "Information Notice: Modified GNI at Current and Constant Market Prices: the 2015 level shift and the review group."
     url: "https://www.cso.ie/en/releasesandpublications/in/nie/in-mgnicp/"
     urlLabel: "cso.ie"
+  - name: "IMF"
+    text: "Ireland: 2017 Article IV Consultation (CR17171): GNI* strips out MNE retained earnings and foreign-owned IP depreciation to give \"a more stable and prudent measure\" of the Irish economy; 2015 GNI* found roughly 30% below nominal GDP."
+    url: "https://www.imf.org/-/media/files/publications/cr/2017/cr17171.pdf"
+    urlLabel: "imf.org (PDF)"
+  - name: "CSO"
+    text: "Annual National Accounts 2025, GNI* and De-Globalised Results (July 2026): 2025 GNI* €334bn, 55.4% of GDP."
+    url: "https://www.cso.ie/en/releasesandpublications/ep/p-ana/annualnationalaccounts2025/gniandde-globalisedresults/"
+    urlLabel: "cso.ie"
+  - name: "CSO"
+    text: "Annual National Accounts 2024, Key Findings (July 2025): GDP €562.8bn, GNI* €321.1bn."
+    url: "https://www.cso.ie/en/releasesandpublications/ep/p-ana/annualnationalaccounts2024/keyfindings/"
+    urlLabel: "cso.ie"
+  - name: "Eurostat"
+    text: "GDP and main components (tec00001), Greece, current prices: 2024 nominal GDP €236.7bn (provisional)."
+    url: "https://ec.europa.eu/eurostat/databrowser/view/tec00001/default/table?lang=en"
+    urlLabel: "ec.europa.eu"
   - name: "Euronews"
     text: "\"Irish economic miracle explained\" (May 2026): the 12.3%, MDD 4.9%, the 95% polypeptide hormones, €25.4bn in March, flash estimate of minus 2.0%."
-    url: "https://www.euronews.com/business/2026/05/04/irish-economic-miracle-explained-why-all-that-glitters-isnt-gold"
+    url: "https://www.euronews.com/business/2026/05/04/irish-economic-miracle-explained-why-all-that-glitter-isnt-gold"
     urlLabel: "euronews.com"
   - name: "Irish Examiner"
     text: "(June 2026): Q1 2026 at minus 12.1%, four consecutive negative quarters."
@@ -72,7 +100,7 @@ What actually happened: roughly €300 billion of intangible assets, most of it 
 
 ## Who lied
 
-Nobody. The CSO followed the rulebook exactly, Eurostat checked the maths and signed off, and the output was a number that no serious person, including the people who published it, believed. "Everyone followed the process and the result was nonsense" is a sentence with tremendous cross-industry applicability, and you are invited to sit with it.
+Nobody. The CSO followed the rulebook exactly, Eurostat called the revision "plausible" and opened its standard methodology review, and the output was a number that no serious person, including the people who published it, believed. "Everyone followed the process and the result was nonsense" is a sentence with tremendous cross-industry applicability, and you are invited to sit with it.
 
 ## The fix: just publish a second economy
 

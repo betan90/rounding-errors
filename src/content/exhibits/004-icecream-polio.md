@@ -29,8 +29,6 @@ verdict:
     long: true
 verdictNote: "Ireland's numbers disagreed. Argentina's were disputed. China's didn't add up. This one is different, and worse in an instructive way: every number here is real. Polio really fell 91%. Sugar sales really dropped. The correlation was genuine. It just wasn't the reason, which is the most expensive number there is, the true one that means nothing."
 sources:
-  - name: "Wikipedia"
-    text: "Benjamin P. Sandler: the failed 1941 University of Michigan replication, and that his results were never reproduced. en.wikipedia.org"
   - name: "Mountain Xpress"
     text: "Asheville Archives: Sugar-free theory for curing polio elicits harsh criticism, 1948, confirmed by direct quotation: on Aug. 8, 1948, The Asheville Citizen reported Dr. James H. Cherry, president of the Buncombe County Medical Society and chief of staff of the Asheville Orthopedic Home, calling Sandler's theory \"ridiculous\" in an official statement on behalf of both organizations: \"We feel Dr. Sandler's theory is absolutely without foundation. We do not feel that reducing the intake of soft drinks, pastries, and other sweets has been proved to have any effect on the immunity of the human body against polio.\""
     url: "https://mountainx.com/news/asheville-archives-sugar-free-theory-for-curing-polio-elicits-harsh-criticism-1948/"
@@ -55,7 +53,7 @@ Sandler had his proof. He published a book, *Diet Prevents Polio*, in 1951.
 
 ## Who lied
 
-Nobody, and the medical establishment said so at the time. The University of Michigan had already tried to reproduce Sandler's rabbit results in 1941 and failed. On August 8, 1948, Dr. James H. Cherry, president of the Buncombe County Medical Society and chief of staff of the Asheville Orthopedic Home, called it "ridiculous" in a statement on behalf of both institutions: "We feel Dr. Sandler's theory is absolutely without foundation. We do not feel that reducing the intake of soft drinks, pastries, and other sweets has been proved to have any effect on the immunity of the human body against polio."
+Nobody, and the medical establishment said so at the time. On August 8, 1948, Dr. James H. Cherry, president of the Buncombe County Medical Society and chief of staff of the Asheville Orthopedic Home, called it "ridiculous" in a statement on behalf of both institutions: "We feel Dr. Sandler's theory is absolutely without foundation. We do not feel that reducing the intake of soft drinks, pastries, and other sweets has been proved to have any effect on the immunity of the human body against polio."
 
 They were right, for a reason that makes the episode worse. Polio is seasonal, which is exactly why it tracked ice cream. And a severe epidemic year is followed by a mild one almost regardless of what anyone does, because most of the population that could be infected already has been. North Carolina's 91% drop is simply what a bad polio year followed by an ordinary one looks like. The sugar was irrelevant. The two numbers fell together because summer drives both, and 1948 was always going to be worse than 1949.
 
