@@ -1,0 +1,42 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import BaseLayout from './BaseLayout.astro';
+
+interface Props {
+  entry: CollectionEntry<'notes'>;
+}
+
+const { entry } = Astro.props;
+const { data } = entry;
+const { Content } = await entry.render();
+
+const formattedDate = data.date.toLocaleDateString('en-US', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+});
+---
+
+<BaseLayout title={`${data.title} · Rounding Errors`} description={data.teaser}>
+  <div class="filing">
+    <span>Notes</span>
+    <span>Filed <b>{formattedDate}</b></span>
+  </div>
+
+  <h1>{data.title}</h1>
+  <div class="dek">{data.teaser}</div>
+
+  <div class="exhibit-body">
+    <Content />
+  </div>
+
+  {
+    data.disclosure && (
+      <div class="receipts">
+        <div class="disclosure">
+          <b>Disclosure.</b> {data.disclosure}
+        </div>
+      </div>
+    )
+  }
+</BaseLayout>

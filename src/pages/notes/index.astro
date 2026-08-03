@@ -1,0 +1,36 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import NoteCard from '../../components/NoteCard.astro';
+import { withBase } from '../../lib/paths';
+
+const notes = (await getCollection('notes')).sort(
+  (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
+);
+---
+
+<BaseLayout
+  title="Notes · Rounding Errors"
+  description="Shorter, behind-the-scenes pieces about how the museum itself is built and checked."
+>
+  <div class="listing-head">
+    <div class="kicker">Notes</div>
+    <h1>Notes</h1>
+  </div>
+  <p class="corrections-framing">
+    Not exhibits. Shorter pieces about the museum's own plumbing, the research, the tooling, the checks that check the checks.
+  </p>
+
+  <div class="feed">
+    {
+      notes.map((entry) => (
+        <NoteCard
+          title={entry.data.title}
+          teaser={entry.data.teaser}
+          date={entry.data.date}
+          href={withBase(`/notes/${entry.slug}/`)}
+        />
+      ))
+    }
+  </div>
+</BaseLayout>

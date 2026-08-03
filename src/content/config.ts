@@ -42,4 +42,14 @@ const exhibits = defineCollection({
   }),
 });
 
-export const collections = { exhibits };
+const notes = defineCollection({
+  type: 'content',
+  schema: z.object({
+    title: z.string(),
+    date: z.date(),
+    teaser: z.string(),
+    disclosure: z.string().optional(),
+  }),
+});
+
+export const collections = { exhibits, notes };
