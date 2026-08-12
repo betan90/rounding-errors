@@ -11,6 +11,7 @@ import ScaredStraightChart from '../components/ScaredStraightChart.astro';
 import DareChart from '../components/DareChart.astro';
 import StepsChart from '../components/StepsChart.astro';
 import DeforestationChart from '../components/DeforestationChart.astro';
+import RebasingChart from '../components/RebasingChart.astro';
 import ChartPending from '../components/ChartPending.astro';
 import { withBase } from '../lib/paths';
 
@@ -42,6 +43,7 @@ const { Content } = await entry.render();
   {data.exhibit === '006' && <DareChart />}
   {data.exhibit === '007' && <StepsChart />}
   {data.exhibit === '008' && <DeforestationChart />}
+  {data.exhibit === '009' && <RebasingChart />}
 
   <Ledger title={data.ledgerTitle} rows={data.ledger} note={data.ledgerNote} />
 

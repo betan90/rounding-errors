@@ -61,7 +61,7 @@ Evidence-failure taxonomy. Diagnostic: go looking for the source and see what yo
 
 Cross-cutting threads: correlation-someone-believed, outlived-the-evidence, measurement-definitions.
 Domain tags: healthcare, crime, education, epidemiology, gdp, national-accounts, inflation, imf, provincial-data, environment.
-Region tags: europe, asia, latin-america.
+Region tags: europe, asia, latin-america, africa.
 Country is its own frontmatter field and is never a tag. This list is the live vocabulary as of exhibit 006; before inventing a tag, check what the existing exhibits actually use (`grep "^tags:" src/content/exhibits/*.md`), because a near-duplicate of a live tag (eu next to europe) is worse than no tag.
 
 ## Build conventions
