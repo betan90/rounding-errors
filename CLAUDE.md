@@ -69,4 +69,4 @@ Country is its own frontmatter field and is never a tag. This list is the live v
 - Static Astro site, GitHub Pages via Actions, base path configured in astro.config.mjs.
 - Each exhibit's chart is a small Astro component with inline SVG, wired by the frontmatter chart key. Match the existing components' style.
 - Exhibit prose is never altered during build. Schema mismatches get flagged, not silently fixed.
-- Publishing is always gated by a human. Nothing auto-deploys.
+- Publishing is always gated by a human. Nothing auto-deploys: the deploy workflow (`deploy.yml`) is `workflow_dispatch`-only, never triggered by a `push` event, so no commit reaching `main` by any path deploys on its own. The one exception is the human command itself: when a human tells the committer agent "commit and push," that instruction is the gate, and the agent dispatches the deploy workflow as its last step and confirms it goes green. A `git push` from any other source (a person pushing directly, a different agent, CI) does not deploy.
