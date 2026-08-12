@@ -1,0 +1,87 @@
+---
+---
+
+<div class="chart-block">
+  <div class="legend">
+    <span><i class="swatch" style="background:var(--red-line)"></i> Indonesian government, 2015-2021</span>
+    <span><i class="swatch" style="background:var(--ink)"></i> Global Forest Watch, 2016-2023</span>
+    <span><i class="swatch" style="background:var(--ink-soft)"></i> Range across all datasets (NMBU)</span>
+  </div>
+  <figure>
+    <svg
+      id="chart"
+      viewBox="0 0 760 300"
+      role="img"
+      aria-label="Single horizontal axis from 0 to 100 percent decline in deforestation. A shaded band spans 40 to 90 percent, the range NMBU found across datasets, with a dashed line at 50 percent marking their robust estimate. A red marker sits at 90 percent, the Indonesian government figure. A dark marker sits at 69 percent, the Global Forest Watch figure."
+    ></svg>
+    <figcaption class="cap">Five ways of measuring the same forests. Each is correct under its own definition. The answer ranges from 40% to 90%.</figcaption>
+  </figure>
+</div>
+
+<script is:inline>
+(function(){
+  // ---- DATA ----
+  // Government figure: Indonesian forestry ministry, deforestation decline 2015-2021, 90%.
+  //   Reported in Mongabay, May 2025.
+  // Global Forest Watch: tree cover loss decline 2016-2023, 69%.
+  //   Reported in Mongabay, May 2025.
+  // Dataset range and robust estimate: Norwegian University of Life Sciences (NMBU),
+  //   Centre for Land Tenure Studies report, "Explaining the recent reduction of
+  //   Indonesia's deforestation" (2025): range across datasets 40% to 90%,
+  //   robust estimate "at least 50%".
+  var govt = 90;
+  var gfw = 69;
+  var rangeLo = 40;
+  var rangeHi = 90;
+  var robust = 50;
+
+  var W=760, H=300, m={t:70,r:60,b:60,l:60};
+  var pw=W-m.l-m.r, ph=H-m.t-m.b;
+  var xMin=0, xMax=100;
+  function X(v){return m.l + ((v-xMin)/(xMax-xMin))*pw;}
+  var y0 = m.t + ph/2;
+
+  var svg=document.getElementById('chart');
+  var NS='http://www.w3.org/2000/svg';
+  function el(t,a){var e=document.createElementNS(NS,t);for(var k in a)e.setAttribute(k,a[k]);return e;}
+
+  // ---- NMBU range band, 40 to 90 ----
+  svg.appendChild(el('rect',{x:X(rangeLo),y:y0-16,width:X(rangeHi)-X(rangeLo),height:32,fill:'#5A5C55','fill-opacity':0.14}));
+  var rl=el('text',{x:(X(rangeLo)+X(rangeHi))/2,y:y0+50,'text-anchor':'middle','font-family':"'IBM Plex Mono',monospace",'font-size':11,fill:'#5A5C55'});
+  rl.textContent='40%–90%, RANGE ACROSS DATASETS'; svg.appendChild(rl);
+
+  // ---- axis ticks ----
+  var ticks=[0,20,40,60,80,100];
+  for(var i=0;i<ticks.length;i++){
+    var tx=X(ticks[i]);
+    svg.appendChild(el('line',{x1:tx,y1:H-m.b,x2:tx,y2:H-m.b+6,stroke:'#5A5C55','stroke-width':1}));
+    var tl=el('text',{x:tx,y:H-m.b+22,'text-anchor':'middle','font-family':"'IBM Plex Mono',monospace",'font-size':11,fill:'#5A5C55'});
+    tl.textContent=ticks[i]+'%'; svg.appendChild(tl);
+  }
+  var axisTitle=el('text',{x:(m.l+W-m.r)/2,y:H-m.b+42,'text-anchor':'middle','font-family':"'IBM Plex Mono',monospace",'font-size':10.5,fill:'#5A5C55','letter-spacing':'0.06em'});
+  axisTitle.textContent='CLAIMED DECLINE IN DEFORESTATION'; svg.appendChild(axisTitle);
+
+  // baseline
+  svg.appendChild(el('line',{x1:m.l,y1:H-m.b,x2:W-m.r,y2:H-m.b,stroke:'#5A5C55','stroke-width':1}));
+
+  // ---- robust-estimate reference line, 50% ----
+  var xr=X(robust);
+  svg.appendChild(el('line',{x1:xr,y1:m.t-4,x2:xr,y2:H-m.b,stroke:'#17181A','stroke-width':1.5,'stroke-dasharray':'6,5'}));
+  var rbl=el('text',{x:xr,y:m.t-14,'text-anchor':'middle','font-family':"'IBM Plex Mono',monospace",'font-size':11,'font-weight':700,fill:'#17181A'});
+  rbl.textContent='≥50%, NMBU ROBUST ESTIMATE'; svg.appendChild(rbl);
+
+  // ---- Global Forest Watch marker, 69% ----
+  var xg=X(gfw);
+  svg.appendChild(el('line',{x1:xg,y1:y0-24,x2:xg,y2:y0+24,stroke:'#17181A','stroke-width':2.5}));
+  svg.appendChild(el('circle',{cx:xg,cy:y0,r:7,fill:'#17181A',stroke:'#FBF9F4','stroke-width':2}));
+  var gl=el('text',{x:xg,y:y0-34,'text-anchor':'middle','font-family':"'IBM Plex Mono',monospace",'font-size':15,'font-weight':700,fill:'#17181A'});
+  gl.textContent='69%'; svg.appendChild(gl);
+
+  // ---- government marker, 90% ----
+  var xv=X(govt);
+  svg.appendChild(el('line',{x1:xv,y1:y0-24,x2:xv,y2:y0+24,stroke:'#C22B24','stroke-width':2.5,class:'fade'}));
+  svg.appendChild(el('circle',{cx:xv,cy:y0,r:7,fill:'#C22B24',stroke:'#FBF9F4','stroke-width':2,class:'fade'}));
+  var vl=el('text',{x:xv,y:y0-34,'text-anchor':'middle','font-family':"'IBM Plex Mono',monospace",'font-size':15,'font-weight':700,fill:'#C22B24'});
+  vl.textContent='90%'; svg.appendChild(vl);
+})();
+</script>
