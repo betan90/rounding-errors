@@ -3,6 +3,7 @@ import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import ExhibitCard from '../../components/ExhibitCard.astro';
 import { withBase, slugify } from '../../lib/paths';
+import { sortExhibits } from '../../lib/sortExhibits';
 
 export async function getStaticPaths() {
   const exhibits = await getCollection('exhibits');
@@ -10,9 +11,7 @@ export async function getStaticPaths() {
 
   return countries.map((country) => {
     const slug = slugify(country);
-    const matches = exhibits
-      .filter((e) => e.data.country === country)
-      .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+    const matches = sortExhibits(exhibits.filter((e) => e.data.country === country));
     return {
       params: { country: slug },
       props: { country, exhibits: matches },

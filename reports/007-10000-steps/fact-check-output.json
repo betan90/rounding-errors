@@ -1,0 +1,110 @@
+{
+  "exhibit": "007",
+  "checkedAt": "2026-08-01T00:00:00Z",
+  "claims": [
+    {
+      "id": 1,
+      "claim": "The daily goal on your tracker: 10,000 steps (ledger row)",
+      "source": "CBC Radio, The Sunday Edition (2018)",
+      "passage": "",
+      "verdict": "PARTIALLY SUPPORTED",
+      "notes": "Direct fetch of the cbc.ca URL returned HTTP 403; independent web search corroborated the same Manpo-kei/10,000-step-meter framing but I could not pull a verbatim passage from the cited page itself."
+    },
+    {
+      "id": 2,
+      "claim": "Where the mortality benefit plateaus (older women): ~7,500 steps (ledger row)",
+      "source": "Lee IM et al., JAMA Internal Medicine (2019)",
+      "passage": "mortality rates progressively decreased before leveling at approximately 7500 steps/d.",
+      "verdict": "SUPPORTED",
+      "notes": "Directly fetched jamanetwork.com fulltext confirms the ~7,500-step plateau."
+    },
+    {
+      "id": 3,
+      "claim": "Peer-reviewed studies behind \"10,000\" when it launched: 0 (ledger row, gap)",
+      "source": "Popular Science, quoting I-Min Lee",
+      "passage": "There were no actual studies that had looked at '10,000 steps,' at the time the Yamasa pedometer was developed, I-Min Lee, an epidemiologist at Harvard Medical School, tells Popular Science. 'It was a made-up number in the sense that 10,000 sounds good, it's easy to remember.'",
+      "verdict": "SUPPORTED",
+      "notes": "Directly fetched popsci.com confirms the quote and the zero-studies claim verbatim."
+    },
+    {
+      "id": 4,
+      "claim": "In 1965, Yamasa Tokei Keiki released a pedometer called the Manpo-kei after a post-1964-Tokyo-Olympics fitness wave.",
+      "source": "CBC Radio, The Sunday Edition (2018)",
+      "passage": "",
+      "verdict": "PARTIALLY SUPPORTED",
+      "notes": "Direct fetch of the cited CBC URL failed (403 Forbidden). Independent web search of other outlets covering the same Tudor-Locke research corroborates the 1965/Yamasa/Manpo-kei/Tokyo Olympics facts, but not from the exact cited page."
+    },
+    {
+      "id": 5,
+      "claim": "I-Min Lee quote: \"There were no actual studies that had looked at '10,000 steps.'\"",
+      "source": "Popular Science, 'No, you don't need 10,000 steps a day'",
+      "passage": "There were no actual studies that had looked at '10,000 steps,' at the time the Yamasa pedometer was developed, I-Min Lee, an epidemiologist at Harvard Medical School, tells Popular Science.",
+      "verdict": "SUPPORTED",
+      "notes": "Verbatim match confirmed by direct fetch; attribution to a named, quoted, institutionally-affiliated researcher is sound."
+    },
+    {
+      "id": 6,
+      "claim": "Lee's 2019 study in JAMA Internal Medicine tracked roughly 17,000 older women.",
+      "source": "Lee IM et al., JAMA Internal Medicine (2019)",
+      "passage": "Of the 16 741 women who met inclusion criteria, the mean (SD) age was 72.0 (5.7) years.",
+      "verdict": "SUPPORTED",
+      "notes": "Actual n = 16,741; \"roughly 17,000\" is a fair rounding, not a misrepresentation."
+    },
+    {
+      "id": 7,
+      "claim": "Mortality risk fell steadily as daily steps rose, then flattened at about 7,500.",
+      "source": "Lee IM et al., JAMA Internal Medicine (2019)",
+      "passage": "mortality rates progressively decreased before leveling at approximately 7500 steps/d.",
+      "verdict": "SUPPORTED",
+      "notes": "Directly confirmed by fetched fulltext."
+    },
+    {
+      "id": 8,
+      "claim": "Women who took 7,500 steps had the same mortality risk as women who took 10,000.",
+      "source": "Lee IM et al., JAMA Internal Medicine (2019)",
+      "passage": "mortality rates progressively decreased before leveling at approximately 7500 steps/d.",
+      "verdict": "PARTIALLY SUPPORTED",
+      "notes": "The paper documents a plateau at ~7,500 steps but the fetched text does not explicitly state that 7,500 and 10,000 steps carry identical mortality risk; the exhibit's phrasing is a reasonable but slightly stronger inference than the source states outright."
+    },
+    {
+      "id": 9,
+      "claim": "A 2022 Lancet Public Health meta-analysis of 15 cohorts found the same plateau, roughly 6,000 to 8,000 steps for older adults.",
+      "source": "Paluch AE et al., The Lancet Public Health (2022)",
+      "passage": "",
+      "verdict": "PARTIALLY SUPPORTED",
+      "notes": "Direct fetch of thelancet.com (fulltext and PDF) returned 403 both times. Independent web search surfaced text extracted from the same PDF stating a plateau of '6000-8000 steps per day' for adults 60+, which matches the exhibit, but I could not personally retrieve a verbatim passage from the source page."
+    },
+    {
+      "id": 10,
+      "claim": "CARDIA study: participants at ≥7,000 steps had 50-70% lower mortality than those below.",
+      "source": "Paluch AE et al., JAMA Network Open (2021)",
+      "passage": "participants taking at least 7000 steps/d, compared with those taking fewer than 7000 steps/d, had a 50% to 70% lower risk of mortality",
+      "verdict": "SUPPORTED",
+      "notes": "Verbatim match confirmed by direct fetch of jamanetwork.com."
+    },
+    {
+      "id": 11,
+      "claim": "From there it laundered upward, promoted in the United States by a former Surgeon General in the 1990s.",
+      "source": "Uncited entry: \"Contemporary reporting on the 1990s US promotion of the 10,000 figure by a former Surgeon General.\" (no URL, no name given)",
+      "passage": "",
+      "verdict": "NOT SUPPORTED",
+      "notes": "The listed source has no URL and names no individual; independent search found no primary documentation of a 1990s Surgeon General promotion of the '10,000 steps' figure specifically, and the one well-documented Surgeon General walking initiative (\"Step It Up!\") dates to 2015, which cuts against the claim as stated."
+    },
+    {
+      "id": 12,
+      "claim": "\"Nobody. A brand name is not a claim made under oath, and Yamasa never pretended it was running a clinical trial.\"",
+      "source": "Narrator framing, not a sourced factual claim",
+      "passage": "",
+      "verdict": "PARTIALLY SUPPORTED",
+      "notes": "Complies with the attribution rule (institutional, non-accusatory framing) but is an editorial judgment rather than a claim traceable to a primary source."
+    },
+    {
+      "id": 13,
+      "claim": "\"I-Min Lee, a Harvard epidemiologist who studies steps and mortality, put the provenance plainly\" (attribution of quote to named individual).",
+      "source": "Popular Science, quoting I-Min Lee",
+      "passage": "I-Min Lee, an epidemiologist at Harvard Medical School, tells Popular Science.",
+      "verdict": "SUPPORTED",
+      "notes": "Named individual is quoted directly by a named outlet with an institutional affiliation; paper trail is sound."
+    }
+  ]
+}

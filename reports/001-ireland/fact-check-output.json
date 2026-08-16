@@ -1,0 +1,166 @@
+{
+  "exhibit": "001",
+  "checkedAt": "2026-08-01T00:00:00Z",
+  "claims": [
+    {
+      "id": 1,
+      "claim": "Ireland's GDP (2024): €562.8bn",
+      "source": "CSO — Annual National Accounts 2024, Key Findings",
+      "passage": "GDP reached €562.8 billion.",
+      "verdict": "SUPPORTED",
+      "notes": "Matches CSO Key Findings page for 2024 exactly."
+    },
+    {
+      "id": 2,
+      "claim": "Ireland's GNI* (2024): €321.1bn",
+      "source": "CSO — Annual National Accounts 2024, Key Findings",
+      "passage": "In current prices, GNI* stood at €321.1 billion in 2024.",
+      "verdict": "SUPPORTED",
+      "notes": "Matches CSO Key Findings page for 2024 exactly."
+    },
+    {
+      "id": 3,
+      "claim": "The gap: €241.7bn, or roughly one (1) entire Greece",
+      "source": "CSO — Annual National Accounts 2024, Key Findings (arithmetic); no source for the Greece comparison",
+      "passage": "",
+      "verdict": "PARTIALLY SUPPORTED",
+      "notes": "562.8 - 321.1 = 241.7 checks out arithmetically; Greece's 2024 nominal GDP (~€236.7bn per independent search) is close but not sourced anywhere in the exhibit's list, and off by about 2%."
+    },
+    {
+      "id": 4,
+      "claim": "In March 2016, Ireland's CSO estimated the economy had grown 7.8% in 2015.",
+      "source": "None listed (closest candidate: CSO Information Notice on the 2015 level shift)",
+      "passage": "",
+      "verdict": "NOT SUPPORTED",
+      "notes": "Verified true via independent web search (RTE, Fox News archives), but no source in the exhibit's list contains this figure; the listed 2015-level-shift notice does not mention it."
+    },
+    {
+      "id": 5,
+      "claim": "In July 2016, the CSO revised [2015 GDP growth] to 26.3%.",
+      "source": "CSO — Information Notice: Modified GNI at Current and Constant Market Prices (the 2015 level shift and the review group)",
+      "passage": "Real GNI and Real GNI* are quite similar except in 2015, where GNI grew 13.7% while GNI* declined 0.4%. [Table 3, constant-price GDP 2014-2015: 25.2%]",
+      "verdict": "NOT SUPPORTED",
+      "notes": "The cited source was fetched directly and contains neither '26.3%' nor a matching GDP growth figure for 2015; the widely reported 26.3% figure is real but comes from a different CSO release not in this exhibit's source list."
+    },
+    {
+      "id": 6,
+      "claim": "Paul Krugman coined \"leprechaun economics,\" and it stuck like a court order.",
+      "source": "None listed",
+      "passage": "",
+      "verdict": "NOT SUPPORTED",
+      "notes": "Independently verifiable (Krugman's July 2016 column, widely reported), but no source in the exhibit's list documents this attribution."
+    },
+    {
+      "id": 7,
+      "claim": "Roughly €300 billion of intangible assets, most of it Apple's IP, changed tax address to Ireland.",
+      "source": "None listed",
+      "passage": "",
+      "verdict": "NOT SUPPORTED",
+      "notes": "Independent search corroborates a figure in this range tied to Apple's 2015 IP onshoring (ICIJ Paradise Papers reporting, various press), but nothing in the exhibit's source list backs this specific, named claim about Apple."
+    },
+    {
+      "id": 8,
+      "claim": "The CSO followed the rulebook exactly, Eurostat checked the maths and signed off.",
+      "source": "None listed",
+      "passage": "",
+      "verdict": "NOT SUPPORTED",
+      "notes": "Plausible institutional fact (Eurostat validates EU national accounts) but no source in the list documents this specific sign-off for Ireland's 2015/2016 revision."
+    },
+    {
+      "id": 9,
+      "claim": "Ireland runs two sets of books... best practice, endorsed by the IMF.",
+      "source": "None listed",
+      "passage": "",
+      "verdict": "NOT SUPPORTED",
+      "notes": "IMF Article IV consultations do use GNI* as the preferred domestic measure (confirmed via independent search of IMF press releases), but no IMF document is in this exhibit's source list."
+    },
+    {
+      "id": 10,
+      "claim": "GNI* (2017 introduction): 'It was 30% smaller.'",
+      "source": "None listed",
+      "passage": "",
+      "verdict": "NOT SUPPORTED",
+      "notes": "Independent search (Irish Times 2017) confirms 'about one-third smaller,' consistent with the claim, but no source in the exhibit's list contains this comparison."
+    },
+    {
+      "id": 11,
+      "claim": "2025: GDP grows 12.3%, the standout number in the developed world.",
+      "source": "European Commission Spring 2026 Economic Forecast; Euronews",
+      "passage": "GDP growth (%, yoy) 2025: 12.3",
+      "verdict": "SUPPORTED",
+      "notes": "Confirmed directly on the EC forecast page and independently on Euronews."
+    },
+    {
+      "id": 12,
+      "claim": "95% of the increase in goods exports came from one product group, polypeptide hormones.",
+      "source": "Euronews",
+      "passage": "According to the Central Bank of Ireland, \"95% of the increase in goods exports in 2025 was attributable to a single product group, polypeptide hormones.\"",
+      "verdict": "SUPPORTED",
+      "notes": "Matches body text exactly."
+    },
+    {
+      "id": 13,
+      "claim": "€25.4bn in March alone.",
+      "source": "Euronews",
+      "passage": "\"In March, the figure surged to €25.4 billion in a single month.\"",
+      "verdict": "SUPPORTED",
+      "notes": "Matches body text exactly."
+    },
+    {
+      "id": 14,
+      "claim": "The de-leprechauned measure... grew 4.9%.",
+      "source": "Euronews",
+      "passage": "The alternative metric showed significantly slower growth at 4.9% for 2025, stripping out multinational distortions.",
+      "verdict": "SUPPORTED",
+      "notes": "Matches body text exactly (Modified Domestic Demand)."
+    },
+    {
+      "id": 15,
+      "claim": "The Q1 flash estimate said -2.0%.",
+      "source": "Euronews",
+      "passage": "\"a contraction of 2.0% quarter on quarter,\" driven by \"a decrease in the multinational dominated sector of Industry.\"",
+      "verdict": "SUPPORTED",
+      "notes": "Confirmed, also cross-checked against CSO preliminary GDP estimate coverage via search."
+    },
+    {
+      "id": 16,
+      "claim": "The full accounts said -12.1%.",
+      "source": "Irish Examiner",
+      "passage": "Ireland's gross domestic product fell by 12.1% in the first quarter of 2026 compared to the final quarter of 2025.",
+      "verdict": "SUPPORTED",
+      "notes": "Matches body text exactly."
+    },
+    {
+      "id": 17,
+      "claim": "Four consecutive quarters of shrinking GDP.",
+      "source": "Irish Examiner",
+      "passage": "\"the fall in GDP means that growth has been negative for four consecutive quarters now.\"",
+      "verdict": "SUPPORTED",
+      "notes": "Direct quote from economist Thomas Pugh via Irish Examiner."
+    },
+    {
+      "id": 18,
+      "claim": "Source list text: '2025 GNI* €334bn, 55.4% of GDP.'",
+      "source": "CSO — Annual National Accounts 2025, GNI* and De-Globalised Results",
+      "passage": "Modified Gross National Income (GNI*) at current market prices increased from €322bn in 2024, to €334bn in 2025 or expressed as a share of GDP, from 57.2% to 55.4%.",
+      "verdict": "SUPPORTED",
+      "notes": "Source's own summary text is accurate to the underlying CSO page."
+    },
+    {
+      "id": 19,
+      "claim": "Euronews source URL as published in frontmatter resolves and is fetchable.",
+      "source": "Euronews (URL as given: .../why-all-that-glitters-isnt-gold)",
+      "passage": "",
+      "verdict": "NOT SUPPORTED",
+      "notes": "That exact URL returns HTTP 404; the correct live URL uses 'glitter' not 'glitters' in the slug, meaning the published citation link is broken."
+    },
+    {
+      "id": 20,
+      "claim": "Bank of Ireland source text: 'Q4 2025 quarterly decline.'",
+      "source": "Bank of Ireland economics",
+      "passage": "Irish GDP contracted by 3.8% in Q4 2025.",
+      "verdict": "SUPPORTED",
+      "notes": "Confirms a Q4 2025 quarterly decline as the source text summarizes, with the specific figure (3.8%) not stated in the exhibit body itself."
+    }
+  ]
+}

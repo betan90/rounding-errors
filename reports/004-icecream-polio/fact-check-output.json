@@ -1,0 +1,86 @@
+{
+  "exhibit": "004",
+  "checkedAt": "2026-08-01T00:00:00Z",
+  "claims": [
+    {
+      "id": 1,
+      "claim": "Polio cases, 1948 (NC State Health Department): 2,498",
+      "source": "North Carolina State Health Department case figures (no url; cited as text-only source)",
+      "passage": "The worst year for polio in the state was 1948, a year in which 2,516 cases and 143 deaths were reported.",
+      "verdict": "PARTIALLY SUPPORTED",
+      "notes": "Independent state-history source (northcarolinahistory.org) gives 2,516, not 2,498; close but not an exact digit match, and the listed source has no URL to verify directly."
+    },
+    {
+      "id": 2,
+      "claim": "Polio cases, 1949 (NC State Health Department): 229",
+      "source": "North Carolina State Health Department case figures (no url; cited as text-only source)",
+      "passage": "In 1949, there was about one-twelfth the number of cases in 1948.",
+      "verdict": "PARTIALLY SUPPORTED",
+      "notes": "Sandler's own book text (fetched via Selene River Press) is directionally consistent (2,498/12 ~ 208, close to 229) but no independently fetched source states '229' verbatim."
+    },
+    {
+      "id": 3,
+      "claim": "The drop in cases: 91%",
+      "source": "Derived from the ledger's own 1948/1949 case figures",
+      "passage": "",
+      "verdict": "SUPPORTED",
+      "notes": "(2498-229)/2498 = 90.8%, rounds correctly to 91% given the ledger's own stated inputs; internally consistent arithmetic."
+    },
+    {
+      "id": 4,
+      "claim": "Sugar consumption drop ~90% (Sandler's self-report, no independent measurement)",
+      "source": "Sandler, Diet Prevents Polio (1951)",
+      "passage": "The National Foundation for Infantile Paralysis has informed me that there was a sharp and significant drop in the sales of soft drinks and ice cream in North and adjoining states.",
+      "verdict": "PARTIALLY SUPPORTED",
+      "notes": "Confirms a drop was claimed by Sandler via NFIP information, but no independently fetched source gives an exact 90% figure; exhibit correctly labels this as self-reported and unverified."
+    },
+    {
+      "id": 5,
+      "claim": "Dr. James H. Cherry called Sandler's theory 'ridiculous' and stated: 'We feel Dr. Sandler's theory is absolutely without foundation. We do not feel that reducing the intake of soft drinks, pastries, and other sweets has been proved to have any effect on the immunity of the human body against polio.'",
+      "source": "Mountain Xpress, Asheville Archives (mountainx.com)",
+      "passage": "Cherry stated \"We feel Dr. Sandler's theory is absolutely without foundation,\" and argued \"We do not feel that reducing the intake of soft drinks, pastries, and other sweets has been proved to have any effect on the immunity of the human body against polio.\"",
+      "verdict": "SUPPORTED",
+      "notes": "Direct fetch of mountainx.com returned HTTP 403; verbatim confirmation came from a WebSearch cache of the same article matching the exhibit's quoted text exactly."
+    },
+    {
+      "id": 6,
+      "claim": "The University of Michigan had already tried to reproduce Sandler's rabbit results in 1941 and failed.",
+      "source": "Wikipedia, Benjamin P. Sandler (en.wikipedia.org)",
+      "passage": "In 1941, the University of Michigan attempted to duplicate Sandler's findings without success.",
+      "verdict": "SUPPORTED",
+      "notes": "Fact confirmed by direct fetch, but the citation is to Wikipedia itself, which is a BLOCKING house-rule violation under SOURCING regardless of the claim's truth."
+    },
+    {
+      "id": 7,
+      "claim": "Sandler's 1940 American Journal of Pathology rabbit paper: 'The production of neuronal injury and necrosis with the virus of poliomyelitis in rabbits during insulin hypoglycemia'",
+      "source": "Tina Dupuy, 'Vaccinations and the ice cream scare' (news-daily.com)",
+      "passage": "In 1940, Dr. Benjamin Sandler published a paper titled \"The production of neuronal injury and necrosis with the virus of poliomyelitis in rabbits during insulin hypoglycemia\" in The American Journal of Pathology.",
+      "verdict": "SUPPORTED",
+      "notes": "Direct fetch of news-daily.com returned HTTP 403; verbatim confirmation came from a WebSearch cache of the same article, exact title match."
+    },
+    {
+      "id": 8,
+      "claim": "The flush-toilet / lost-infant-immunity explanation, attributed to Dr. John F. Modlin (Dartmouth-Hitchcock)",
+      "source": "Tina Dupuy, 'Vaccinations and the ice cream scare' (news-daily.com)",
+      "passage": "according to Dr. John F. Modlin, current chairman of the Department of Pediatrics at Dartmouth-Hitchcock Medical Center, it was the lack of harmless immunizing infections during infancy due to better sanitation that attributed to the epidemic.",
+      "verdict": "SUPPORTED",
+      "notes": "Confirmed via WebSearch cache of the same article after direct fetch was blocked (403)."
+    },
+    {
+      "id": 9,
+      "claim": "He said so, in the paper, 'without reserve.'",
+      "source": "Mountain Xpress, Asheville Archives (mountainx.com)",
+      "passage": "Sandler proclaimed \"without reserve\" the discovery that a controlled diet would immunize a person within twenty-four hours from the polio virus.",
+      "verdict": "SUPPORTED",
+      "notes": "Phrase traces to the Mountain Xpress account of the same 1948 episode, confirmed via WebSearch cache."
+    },
+    {
+      "id": 10,
+      "claim": "'Who lied' verdict: Nobody, and the medical establishment said so at the time.",
+      "source": "Mountain Xpress (Cherry's institutional statement) and Wikipedia (Michigan replication failure)",
+      "passage": "We feel Dr. Sandler's theory is absolutely without foundation.",
+      "verdict": "SUPPORTED",
+      "notes": "Institutional rebuttal at the time is documented; the exhibit correctly avoids accusing Sandler personally of lying, attributing skepticism to institutions (Buncombe County Medical Society, Asheville Orthopedic Home)."
+    }
+  ]
+}

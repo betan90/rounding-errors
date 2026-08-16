@@ -1,0 +1,92 @@
+{
+  "exhibit": "009",
+  "reviewedAt": "2026-08-12T03:21:07.413Z",
+  "model": "deepseek-chat",
+  "claims": [
+    {
+      "id": 1,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage is empty, so it cannot support the claim."
+    },
+    {
+      "id": 2,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "No passage was provided to evaluate the claim against."
+    },
+    {
+      "id": 3,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage is empty, so it cannot support the claim about GDP per capita figures."
+    },
+    {
+      "id": 4,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage is empty, so it cannot support the claim."
+    },
+    {
+      "id": 5,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states Nigeria jumped 10 places to 26th in global GDP rankings and its GDP exceeded South Africa's, which supports the claim."
+    },
+    {
+      "id": 6,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage mentions the rebasing exercise began in early 2012, but does not state that it involved a \"two-year preparation\" for the 2014 rebasing."
+    },
+    {
+      "id": 7,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage directly states that the United Nations Statistical Commission advises rebasing GDP every 5 years."
+    },
+    {
+      "id": 8,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage directly states that the African Development Bank reported approximately 18 African nations with outdated GDP base years exceeding a decade, and specifically names the DRC and Equatorial Guinea as having base years spanning more than 30 years."
+    },
+    {
+      "id": 9,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "No passage was provided to evaluate the claim against."
+    },
+    {
+      "id": 10,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage is empty, so it cannot support the claim."
+    },
+    {
+      "id": 11,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "There is no passage provided to evaluate the claim against."
+    },
+    {
+      "id": 12,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage directly states that 2019 was chosen as the base year for pre-pandemic stability, covers 46 industries and 217 product groups, and mentions the informal economy's share at 42.5%."
+    },
+    {
+      "id": 13,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "No passage was provided to evaluate the claim against."
+    },
+    {
+      "id": 14,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "No passage was provided to evaluate the claim against."
+    },
+    {
+      "id": 15,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "No passage was provided to evaluate the claim against."
+    },
+    {
+      "id": 16,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage directly states \"Nobody\" and characterizes the situation as \"overdue homework\" rather than deception, matching the claim's framing of the gap as an institutional/measurement artifact."
+    },
+    {
+      "id": 17,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage is empty, so it cannot support the claim about the Africa Check source citation."
+    }
+  ]
+}

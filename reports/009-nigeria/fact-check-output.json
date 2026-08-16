@@ -1,0 +1,142 @@
+{
+  "exhibit": "009",
+  "checkedAt": "2026-08-12T18:00:00Z",
+  "claims": [
+    {
+      "id": 1,
+      "claim": "2013 GDP as reported before April 2014: $285.6bn (ledger); $285.56bn in AfDB source text.",
+      "source": "African Development Bank press release, 4 April 2014",
+      "passage": "",
+      "verdict": "PARTIALLY SUPPORTED",
+      "notes": "Direct fetch of the archive.org mirror failed (tool refuses web.archive.org outright) and the live afdb.org URL returned 403 Forbidden; WebSearch independently and repeatedly returned the same figure ($285.56bn to $509.9bn, 89.2%) tied to afdb.org and an allafrica.com mirror, with no contradiction, but this is secondhand corroboration, not a verbatim fetched passage."
+    },
+    {
+      "id": 2,
+      "claim": "2013 GDP as reported after April 2014: $509.9bn, an 89.2% increase.",
+      "source": "African Development Bank press release, 4 April 2014",
+      "passage": "",
+      "verdict": "PARTIALLY SUPPORTED",
+      "notes": "Same fetch limitation as claim 1; multiple independent WebSearch queries consistently returned $509.9bn / 89.2% tied to the afdb.org press release."
+    },
+    {
+      "id": 3,
+      "claim": "GDP per capita went from $1,437 to $2,688.",
+      "source": "African Development Bank press release, 4 April 2014",
+      "passage": "",
+      "verdict": "PARTIALLY SUPPORTED",
+      "notes": "Not directly fetched (archive.org blocked by tool, live afdb.org 403); WebSearch corroborated the exact figures twice from independent queries with no contradiction."
+    },
+    {
+      "id": 4,
+      "claim": "Nigeria's finance minister at the time stated that international best practice had been followed in the exercise.",
+      "source": "African Development Bank press release (quoting Ngozi Okonjo-Iweala)",
+      "passage": "",
+      "verdict": "PARTIALLY SUPPORTED",
+      "notes": "Not directly fetched; WebSearch corroboration ('Ngozi Okonjo-Iweala... confirmed that the highest global best practices were followed') matches the exhibit's paraphrase, and the claim is properly hedged in the body as reported speech, not narrator assertion."
+    },
+    {
+      "id": 5,
+      "claim": "Nigeria passed South Africa to become the largest economy in Africa and climbed ten places in the world rankings to 26th.",
+      "source": "Oxford Business Group, \"Questions raised by Nigeria's recalibrated GDP figures\"",
+      "passage": "\"jump[ed] 10 places in global GDP rankings to 26th,\" surpassing several major economies in nominal output. Nigeria's recalibrated GDP of $509.97 billion exceeded South Africa's $354 billion.",
+      "verdict": "SUPPORTED",
+      "notes": "Directly fetched and confirmed on both the rank jump and the South Africa comparison."
+    },
+    {
+      "id": 6,
+      "claim": "Sources text: \"the two-year preparation\" for the 2014 rebasing.",
+      "source": "Oxford Business Group",
+      "passage": "The National Bureau of Statistics launched Nigeria's first rebasing exercise in early 2012... first rebasing exercise in 20 years.",
+      "verdict": "SUPPORTED",
+      "notes": "Early-2012 launch to the April 2014 announcement is consistent with a roughly two-year preparation window as the source text claims."
+    },
+    {
+      "id": 7,
+      "claim": "The UN Statistical Commission recommends rebasing every five years.",
+      "source": "Aluko & Oyebode, \"How Sustainable is the Effect of Nigeria's GDP Rebasing\"",
+      "passage": "The United Nations Statistical Commission advises that \"GDP be rebased every 5 years\" to maintain statistical accuracy standards.",
+      "verdict": "SUPPORTED",
+      "notes": "Directly fetched and confirmed."
+    },
+    {
+      "id": 8,
+      "claim": "The African Development Bank reported that 18 other African countries had base years more than a decade old, with the DRC and Equatorial Guinea using base years more than thirty years old.",
+      "source": "Aluko & Oyebode",
+      "passage": "According to the African Development Bank, approximately 18 African nations operate with outdated GDP base years exceeding a decade... the Democratic Republic of Congo and Equatorial Guinea have base years spanning more than 30 years.",
+      "verdict": "SUPPORTED",
+      "notes": "Directly fetched and confirmed."
+    },
+    {
+      "id": 9,
+      "claim": "2025 rebasing: nominal GDP for 2024 rose 34.4%, from about $188bn to about $243bn (N372.8 trillion).",
+      "source": "Africa Check factsheet, 15 August 2025",
+      "passage": "",
+      "verdict": "PARTIALLY SUPPORTED",
+      "notes": "africacheck.org returned 403 Forbidden to the fetch tool (bot-blocked, consistent with the prior audit's finding); WebSearch independently returned the identical figures (N372.8tn / $243.3bn / 34.4% / $188bn) attributed to this factsheet, with no contradiction across several queries."
+    },
+    {
+      "id": 10,
+      "claim": "An economics professor at the University of Benin told a fact-checking organisation the exercise was an abuse of statistics driven by political motives.",
+      "source": "Africa Check factsheet",
+      "passage": "",
+      "verdict": "PARTIALLY SUPPORTED",
+      "notes": "Not directly fetched (403); WebSearch corroboration names Hassan Oaikhenan, professor of international economics at the University of Benin, with a matching quote. Claim is properly hedged in the body as reported speech per the attribution rule."
+    },
+    {
+      "id": 11,
+      "claim": "Nigeria remains Africa's fourth largest economy, behind South Africa, Egypt and Algeria.",
+      "source": "Africa Check (fourth-in-Africa figure is in the source's listed text; the specific three-country ordering is not)",
+      "passage": "",
+      "verdict": "PARTIALLY SUPPORTED",
+      "notes": "The 'fourth in Africa' figure is in the Africa Check source's text field; the specific ordering (South Africa, Egypt, Algeria) is corroborated by WebSearch (a Daily Trust headline reads 'Nigeria Ranks Africa's Fourth Largest Economy Despite Rebasing') but is not explicitly attributed to any single listed source's text field, a minor sourcing looseness rather than a factual error."
+    },
+    {
+      "id": 12,
+      "claim": "The 2019 base year was chosen because it was the last stable, pre-pandemic year; the Supply and Use Table covered 46 industries and 217 product groups; the informal economy has a 42.5% share.",
+      "source": "Finance in Africa, \"Inside Nigeria's GDP rebasing\"",
+      "passage": "The National Bureau of Statistics chose 2019 as the new base year because it represented a period of macroeconomic stability before the global COVID-19 pandemic... captured 46 industries and 217 product groups... \"The informal economy's share rose to 42.5%.\"",
+      "verdict": "SUPPORTED",
+      "notes": "financeinafrica.com 301-redirects to businessfront.com; the redirected page was fetched directly and confirms the claim verbatim."
+    },
+    {
+      "id": 13,
+      "claim": "The debt-to-GDP ratio fell from 52.9% to 39.4% (ledgerNote/source text cite 52.90% to 39.37%) after the 2025 rebasing.",
+      "source": "Daily Trust, \"Rebasing Nigeria's GDP: New Numbers, Old Problems\"",
+      "passage": "",
+      "verdict": "PARTIALLY SUPPORTED",
+      "notes": "dailytrust.com returned 403 Forbidden to the fetch tool; WebSearch returned the exact figures '52.90% to 39.37%' attributed to this reporting. A different outlet (agusto.com, republishing a similarly titled piece) gives slightly different figures (52.13% to 39.4%), suggesting more than one vintage of the same debt/GDP recalculation circulated in August 2025, but nothing contradicts the exhibit's specific cited figures."
+    },
+    {
+      "id": 14,
+      "claim": "[Prior BLOCKING #1, now fixed] 'Analysts had expected the revision to add 40% to 60%. It added 89%.'",
+      "source": "none (previously untraceable to any listed source)",
+      "passage": "",
+      "verdict": "NOT SUPPORTED",
+      "notes": "Confirmed removed from the current body text (grep for 'Analysts', 'expected', '40% to 60%' returns zero matches in the file). Correctly cut per CLAUDE.md's rule that an untraceable claim is cut, not kept. Retained here for audit continuity only; the claim no longer appears in the exhibit."
+    },
+    {
+      "id": 15,
+      "claim": "[Prior BLOCKING #2, now fixed] Daily Trust source previously dated '22 July 2025'.",
+      "source": "Daily Trust",
+      "passage": "",
+      "verdict": "NOT SUPPORTED",
+      "notes": "Confirmed the sources list now reads '(August 2025)' with no specific day, matching the original approved draft. The specific '22 July 2025' date no longer appears anywhere in the file. WebSearch suggests the article's actual publish date is around 5 August 2025, so the current unspecific 'August 2025' label is safe and supported, unlike the previous specific date."
+    },
+    {
+      "id": 16,
+      "claim": "Attribution: the 'Who lied' section states 'Nobody,' framing the gap as an institutional/measurement artifact rather than an accusation against Nigeria or any individual.",
+      "source": "exhibit body, 'Who lied' section",
+      "passage": "Nobody, and the exercise was closer to overdue homework than to sleight of hand.",
+      "verdict": "SUPPORTED",
+      "notes": "Matches the CLAUDE.md attribution rule: no country or person is accused of lying, and the two named-individual-adjacent claims (finance minister, professor) are both reported speech with an institutional paper trail (AfDB press release, Africa Check factsheet)."
+    },
+    {
+      "id": 17,
+      "claim": "Africa Check source is cited via the live africacheck.org URL, with no archive.org fallback like the AfDB source has.",
+      "source": "exhibit sources list",
+      "passage": "",
+      "verdict": "PARTIALLY SUPPORTED",
+      "notes": "Confirmed unchanged from the prior audit: africacheck.org returns 403 to automated fetchers with no Wayback fallback in the sources list, while AfDB does have one. Treated as advisory, not blocking, since the URL is live and presumed accessible to human readers, matching the prior pass's judgment; the Daily Trust URL has the identical bot-block problem and was not previously flagged for a fallback either."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "exhibit": "002",
+  "reviewedAt": "2026-08-01T03:48:32.225Z",
+  "model": "deepseek-chat",
+  "claims": [
+    {
+      "id": 1,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states that the government's national statistics institute (INDEC) reported consumer prices rose 10.8 percent, which matches the claim's figure for 2012."
+    },
+    {
+      "id": 2,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states that private forecasters estimate inflation accelerated last year to 25.6 percent, which directly matches the claim's private-sector estimate of 25.6% for 2012."
+    },
+    {
+      "id": 3,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage is empty, so it cannot support the claim about a 14.8-point gap."
+    },
+    {
+      "id": 4,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states the private economists are not identified because they risk being fined for releasing calculations that differ from official data, which directly supports the claim."
+    },
+    {
+      "id": 5,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states that the gap between official and private inflation rates enabled the country to save about US$6.8 billion since 2007, which matches the claim's description of the discrepancy saving the government that amount."
+    },
+    {
+      "id": 6,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states that Moreno replaced Bevacqua with Paglieri because Bevacqua refused to provide information according to his criteria, matching the claim's details about the January 2007 replacement and the reason for it."
+    },
+    {
+      "id": 7,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage is empty, so it cannot support the claim."
+    },
+    {
+      "id": 8,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states that Argentina was the first country censured by the IMF for inaccurate data, and that the declaration was adopted by the board in February 2013, matching the claim."
+    },
+    {
+      "id": 9,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states a deadline of September 29, 2013, and mentions the possibility of further sanctions, including expulsion, which aligns with the claim's \"until September\" and \"tougher measures... technically ends in expulsion.\""
+    },
+    {
+      "id": 10,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage confirms the lifting of the censure in November 2016, which aligns with the claim's timing and action, though it does not mention the change of government or IMF technical missions."
+    },
+    {
+      "id": 11,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states Lagarde commended the authorities for their commitment to transparency and improving data accuracy, which aligns with the claim's mention of her crediting extraordinary efforts and the data being consistent with obligations."
+    },
+    {
+      "id": 12,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states that Judge Claudio Bonadio charged Commerce Secretary Guillermo Moreno with abuse of power for fining and pursuing legal action against people who published independent inflation data, calling it \"nothing other than an effort to silence\" them, which matches the claim's details."
+    }
+  ]
+}

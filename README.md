@@ -31,4 +31,7 @@ npm run preview   # preview the production build
 - [x] Exhibit 004 — United States (ice cream, polio, and the summer that did it)
 - [x] Exhibit 005 — United States (Scared Straight, the evidence was a highlight reel)
 - [x] Exhibit 006 — United States (DARE, indistinguishable from nothing)
+- [x] Exhibit 007 — Japan (10,000 steps, the goal that started as ad copy)
+- [x] Exhibit 008 — Indonesia (deforestation, the baseline did the work)
+- [x] Exhibit 009 — Nigeria (GDP rebasing, the economy that doubled by arithmetic)
 - [ ] Revision tracker — the same official number, as reported over time

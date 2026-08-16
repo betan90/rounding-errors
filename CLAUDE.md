@@ -27,9 +27,10 @@ Frontmatter fields (all required unless marked optional):
 - `ledgerTitle`: string, e.g. `"The numbers: West and O'Neal 2004"`.
 - `ledger`: array of `{ label, value, gap? }` rows — this is "The numbers" table. Set `gap: true` on the one row that is the discrepancy.
 - `ledgerNote` (optional): one line under the table.
-- `verdict`: array of `{ key, value, long? }` — the scoreboard. Always exactly three rows: `Fraud detected`, `Rules broken`, `Usefulness of headline metric` (or `...claimed figure`, match the exhibit's phrasing). Set `long: true` on any row whose value runs past a few words.
+- `verdict`: array of `{ key, value, long? }` — the scoreboard. Always exactly three rows: `Fraud detected`, `Rules broken`, and a `Usefulness of ...` row. The usual third key is `Usefulness of the headline figure`; live variants are `...of headline figure` (001, 002, 003), `...of the claimed figure` (005), and `...of headline metric` (006). Match the exhibit's phrasing; prefer `Usefulness of the headline figure` for new exhibits. Set `long: true` on any row whose value runs past a few words.
 - `verdictNote`: string, the closing paragraph that follows the scoreboard.
-- `chartNote` (optional): use only when there is deliberately no chart (see exhibit 003); renders a `ChartPending` note instead of a chart component.
+- `chartNote` (optional): use only when there is deliberately no chart (see exhibit 003); any exhibit with a `chartNote` renders a `ChartPending` note in place of a chart component, automatically. The note must state the reason there is no chart, never a TODO ("pending" is a marker the audit greps for).
+- `correctionNote` (optional): one line describing a published correction; renders a "Corrected." notice linking to `/corrections/` (see exhibit 006).
 - `sources`: array of `{ name?, text, url?, urlLabel? }`. Only set `url`/`urlLabel` for a source you have an actual link for; never fabricate one to fill the field.
 - `disclosure`: string. Must state the file was drafted with AI (Claude), that editorial voice and errors are the author's, and that every figure was checked against the linked primary source.
 
@@ -49,7 +50,7 @@ Chart wiring is not a frontmatter field. Each exhibit's chart component (e.g. `s
 
 ## Category vocabulary (do not blur)
 
-Structural categories describe the gap's shape: "nobody lied" (001), "the IMF's only censure" (002), "the parts exceeded the whole" (003), "the summer did it" (004), "the evidence was a highlight reel" (005), "indistinguishable from nothing" (006), "the baseline did the work" (008).
+Structural categories describe the gap's shape: "nobody lied" (001, reused by 009), "the IMF's only censure" (002), "the parts exceeded the whole" (003), "the summer did it" (004), "the evidence was a highlight reel" (005), "indistinguishable from nothing" (006), "parroting" (007, drawn from the taxonomy below), "the baseline did the work" (008). Reuse is allowed when the shape genuinely repeats, and a taxonomy item may serve as a category when the evidence failure is the shape.
 
 Evidence-failure taxonomy. Diagnostic: go looking for the source and see what you find.
 1. trust me, bro: no source was ever offered; pure confident assertion.
@@ -63,6 +64,11 @@ Cross-cutting threads: correlation-someone-believed, outlived-the-evidence, meas
 Domain tags: healthcare, crime, education, epidemiology, gdp, national-accounts, inflation, imf, provincial-data, environment.
 Region tags: europe, asia, latin-america, africa.
 Country is its own frontmatter field and is never a tag. This list is the live vocabulary as of exhibit 006; before inventing a tag, check what the existing exhibits actually use (`grep "^tags:" src/content/exhibits/*.md`), because a near-duplicate of a live tag (eu next to europe) is worse than no tag.
+
+## Notes and the review pipeline
+
+- There is a second content collection, `notes` (`src/content/notes/`, schema in `config.ts`: `title`, `date`, `teaser`, optional `disclosure`). Notes are behind-the-scenes entries, rendered at `/notes/`. Same evidence rules as exhibits: if a note cites the repo's own files, those files must be tracked in the repo.
+- Every exhibit gets a fact-check pass (fact-checker agent, writes `fact-check-output.json` at the repo root) and a DeepSeek second opinion (`scripts/second-opinion.mjs`, reads that JSON, needs `DEEPSEEK_API_KEY` in `.env`; `scripts/compare-reviews.mjs` diffs the two verdict sets). The root JSON working copies are gitignored; the archived per-exhibit copies under `reports/NNN-slug/` are tracked, because published notes cite them.
 
 ## Build conventions
 

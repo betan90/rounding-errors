@@ -1,0 +1,77 @@
+{
+  "exhibit": "006",
+  "reviewedAt": "2026-08-01T08:10:30.430Z",
+  "model": "deepseek-chat",
+  "claims": [
+    {
+      "id": 1,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage explicitly states that the overall Cohen's d value was 0.023."
+    },
+    {
+      "id": 2,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states a 95% confidence interval of −0.04 to 0.08 and explicitly notes the result is not statistically significant, matching the claim."
+    },
+    {
+      "id": 3,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states an average of three quarters of a billion dollars, which is equivalent to US$750 million, spent annually."
+    },
+    {
+      "id": 4,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage directly states that the program is the country's largest single school-based prevention program in terms of federal expenditures, which matches the claim."
+    },
+    {
+      "id": 5,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage directly states that suburban students experienced small but significant increases in drug use after participation in D.A.R.E., which matches the claim's description of a boomerang effect."
+    },
+    {
+      "id": 6,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage directly states that urban and rural students showed some benefits."
+    },
+    {
+      "id": 7,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states that DARE meets the criteria for \"Does Not Work,\" which aligns with the claim's description of it being placed under an ineffective prevention category, though it does not explicitly mention the Surgeon General or the year 2001."
+    },
+    {
+      "id": 8,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage directly states that numerous well-designed evaluations and meta-analyses consistently show little or no deterrent effects on substance use, which matches the claim."
+    },
+    {
+      "id": 9,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states that all evaluations found DARE had no statistically significant long-term effect on preventing youth illicit drug use, which aligns with the claim's finding of no significant differences in drug use between DARE recipients and non-recipients."
+    },
+    {
+      "id": 10,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states that in 2000, the Department of Education audited drug education programs, required evidence-based programs for funding, and DARE did not qualify."
+    },
+    {
+      "id": 11,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage directly states the Surgeon General's conclusion that D.A.R.E.'s popularity persists despite evaluations showing little or no deterrent effects, matching the claim."
+    },
+    {
+      "id": 12,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states DARE was developed in 1983 as a joint effort involving the Los Angeles Police Department and was founded in Los Angeles under the LAPD chief."
+    },
+    {
+      "id": 13,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage is empty, so it cannot support the claim."
+    },
+    {
+      "id": 14,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage does not mention Dennis Rosenbaum, Gordon Hanson, a six-year randomized study, or a 1998 publication."
+    }
+  ]
+}

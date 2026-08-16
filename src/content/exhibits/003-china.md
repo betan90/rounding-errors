@@ -26,7 +26,7 @@ verdict:
     value: "improved considerably since 2019, and still worth checking against a proxy or two."
     long: true
 verdictNote: "Ireland's exhibit was two honest numbers that couldn't agree. Argentina's was one official number that stopped matching reality. This one is thirty-one local governments independently deciding, in the same direction, that reality could wait until the promotion came through, and a national government that eventually took the calculator away from all of them at once."
-chartNote: "chart pending a single-vintage data pull"
+chartNote: "none. The series would need all 31 provincial totals and the national total drawn from one NBS vintage, and the NBS revises history; no single-vintage series has been verified. Splicing vintages would manufacture exactly the kind of number this museum collects"
 sources:
   - name: "SinoInsider"
     text: "Risk Watch: two provinces admit to faking data: the 2015 figure, 67.7tn vs 72.5tn, the Jiangsu comparison."

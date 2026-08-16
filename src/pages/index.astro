@@ -3,12 +3,9 @@ import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import ExhibitCard from '../components/ExhibitCard.astro';
 import { withBase } from '../lib/paths';
+import { sortExhibits } from '../lib/sortExhibits';
 
-const exhibits = (await getCollection('exhibits')).sort((a, b) => {
-  const byDate = b.data.date.valueOf() - a.data.date.valueOf();
-  if (byDate !== 0) return byDate;
-  return b.data.exhibit.localeCompare(a.data.exhibit);
-});
+const exhibits = sortExhibits(await getCollection('exhibits'));
 ---
 
 <BaseLayout title="Rounding Errors · A museum of statistical discrepancies">

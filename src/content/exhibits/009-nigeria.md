@@ -31,6 +31,10 @@ sources:
     text: "Press release, \"Nigeria Becomes Largest Economy in Africa, with $509.9 Billion GDP\" (4 April 2014): the 4 April announcement, $509.9bn against $285.56bn, an 89.2% increase, GDP per capita from $1,437 to $2,688, and Finance Minister Ngozi Okonjo-Iweala's confirmation that the highest global best practices were followed."
     url: "https://web.archive.org/web/20140412000805/http://www.afdb.org/en/news-and-events/article/nigeria-becomes-largest-economy-in-africa-with-509-9-billion-gdp-12981/"
     urlLabel: "web.archive.org (mirror of afdb.org)"
+  - name: "Financial Times"
+    text: "Javier Blas and William Wallis, \"Nigeria almost doubles GDP in recalculation\" (7 April 2014): analysts' pre-announcement forecasts that rebasing would add 40% to 60%. Paywalled; verified by headline and by matching figures in secondary coverage, not by full-text fetch."
+    url: "https://www.ft.com/content/70b594fe-bd94-11e3-a5ba-00144feabdc0"
+    urlLabel: "ft.com"
   - name: "Oxford Business Group"
     text: "\"Questions raised by Nigeria's recalibrated GDP figures\" (2015): the two-year preparation, the ten-place ranking jump to 26th, and the comparison against South Africa's $354bn."
     url: "https://oxfordbusinessgroup.com/questions-raised-by-nigerias-recalibrated-gdp-figures/"
@@ -61,6 +65,8 @@ On 4 April 2014, Nigeria's Statistician General announced that the country's eco
 Nothing had been built. No oil was discovered. The change was that Nigeria updated its base year from 1990 to 2010.
 
 A base year is the reference point a country uses to weight its economic sectors. Nigeria's had been set in 1990, when there was no Nollywood to speak of and almost no mobile phones. The economy was still being measured with a picture of itself from twenty-four years earlier, so telecommunications, film and modern retail were barely counted. Updating the picture found them.
+
+Analysts had expected the revision to add 40% to 60%. It added 89%.
 
 ## Who lied
 

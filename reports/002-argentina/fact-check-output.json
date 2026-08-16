@@ -1,0 +1,102 @@
+{
+  "exhibit": "002",
+  "checkedAt": "2026-08-01T00:00:00Z",
+  "claims": [
+    {
+      "id": 1,
+      "claim": "Official inflation (INDEC) 2012: 10.8%",
+      "source": "Taipei Times / Bretton Woods Project",
+      "passage": "While private forecasters estimate that inflation accelerated last year to 25.6 percent, the government's national statistics institute said consumer prices rose 10.8 percent.",
+      "verdict": "SUPPORTED",
+      "notes": "Figure confirmed verbatim in the Taipei Times article located via search; the exhibit's combined source entry has no URL but the underlying figure is real and traceable."
+    },
+    {
+      "id": 2,
+      "claim": "Private-sector estimate 2012: 25.6%",
+      "source": "Taipei Times / Bretton Woods Project",
+      "passage": "private forecasters estimate that inflation accelerated last year to 25.6 percent",
+      "verdict": "SUPPORTED",
+      "notes": "Confirmed in the same Taipei Times article."
+    },
+    {
+      "id": 3,
+      "claim": "The gap: 14.8 points",
+      "source": "derived from ledger rows above",
+      "passage": "",
+      "verdict": "SUPPORTED",
+      "notes": "Simple arithmetic (25.6 - 10.8 = 14.8); no separate source needed, figure is internally consistent."
+    },
+    {
+      "id": 4,
+      "claim": "\"The private economists who produced that 25.6% went unnamed in the news coverage at the time, because publishing an inflation estimate that disagreed with the government's was a fineable offense.\" (ledgerNote)",
+      "source": "Taipei Times / Bretton Woods Project",
+      "passage": "The private economists are not identified, because they risk being fined by the government for releasing calculations that differ from official data.",
+      "verdict": "SUPPORTED",
+      "notes": "Matches the Taipei Times article closely; the Bretton Woods Project article (bundled into the same source entry) does not contain this detail at all."
+    },
+    {
+      "id": 5,
+      "claim": "\"Research estimated the discrepancy saved the government about US$6.8 billion in reduced payouts since 2007.\"",
+      "source": "Taipei Times / Bretton Woods Project",
+      "passage": "The gap between the official and private inflation rates has enabled the country to save about US$6.8 billion since 2007, according to Buenos Aires-based research firm ACM Consultores.",
+      "verdict": "PARTIALLY SUPPORTED",
+      "notes": "The figure is real and traceable to a single private consultancy (ACM Consultores), but the exhibit's vague 'Research estimated' does not disclose that this is one firm's unaudited estimate, which is a provenance gap."
+    },
+    {
+      "id": 6,
+      "claim": "\"In January 2007, Graciela Bevacqua, the economist who calculated Argentina's consumer price index, was replaced. Her boss, Commerce Secretary Guillermo Moreno, wanted the numbers reported to his own criteria; she wouldn't, so he found an economist who would.\"",
+      "source": "Buenos Aires Times",
+      "passage": "the NGO filing the complaint had also warned about tampering with the INDEC inflation figures as from January 2007 ... [Moreno] replaced Bevacqua with Paglieri given the refusal by then CPI head to provide him with information according to his criteria.",
+      "verdict": "SUPPORTED",
+      "notes": "Directly fetched and confirmed against batimes.com.ar."
+    },
+    {
+      "id": 7,
+      "claim": "\"Provincial statistical offices, which Buenos Aires didn't control, quietly published their own, higher inflation numbers.\"",
+      "source": "none listed",
+      "passage": "",
+      "verdict": "NOT SUPPORTED",
+      "notes": "No source in the exhibit's list mentions provincial statistical offices; the claim is plausible and consistent with contemporaneous reporting but is not traceable to any of the six listed sources."
+    },
+    {
+      "id": 8,
+      "claim": "\"In February 2013, the IMF executive board issued a declaration of censure against Argentina, the first time in the Fund's history it had used that procedure against a member over the accuracy of its data.\"",
+      "source": "IMF Press Release 13/33; Bloomberg",
+      "passage": "Argentina became the first country to be censured by the International Monetary Fund for not providing accurate data on inflation and economic growth under a procedure that can end in expulsion. The declaration of censure was adopted by the IMF's 24-member board in February 2013.",
+      "verdict": "SUPPORTED",
+      "notes": "Direct fetch of imf.org and bloomberg.com both returned HTTP 403; content confirmed via WebSearch-retrieved summaries of the same pages instead of a raw fetch."
+    },
+    {
+      "id": 9,
+      "claim": "\"Argentina was given until September to fix it or face tougher measures, on a track that technically ends in expulsion.\"",
+      "source": "IMF Press Release 13/33; Bloomberg",
+      "passage": "no later than September 29, 2013 ... the country could face further sanctions, including expulsion.",
+      "verdict": "SUPPORTED",
+      "notes": "Same caveat as claim 8: confirmed via WebSearch summary of the IMF/Bloomberg pages, not a raw direct fetch (both blocked with 403)."
+    },
+    {
+      "id": 10,
+      "claim": "\"It lifted in November 2016, after a change of government installed a new INDEC leadership and let the IMF run technical missions to check the methodology directly.\"",
+      "source": "IMF: Argentina: IMF Executive Board Removes Declaration of Censure (Nov 9, 2016)",
+      "passage": "Press Release No. 16/497: IMF Executive Board Removes Declaration of Censure on Argentina, dated November 9, 2016 ... the Executive Board adopted a decision lifting the Declaration of Censure and Statement of Concern.",
+      "verdict": "SUPPORTED",
+      "notes": "Date and lifting of censure confirmed via WebSearch summary of imf.org (direct fetch returned 403)."
+    },
+    {
+      "id": 11,
+      "claim": "\"The Fund's managing director credited the turnaround to what she called extraordinary efforts to rebuild the agency and called Argentina's CPI and GDP data, for the first time since 2011, consistent with its obligations as a member.\"",
+      "source": "IMF: Argentina: IMF Executive Board Removes Declaration of Censure (Nov 9, 2016)",
+      "passage": "IMF Managing Director Christine Lagarde commended the authorities for their commitment to transparency and determination to improve the accuracy of official data in such a short period.",
+      "verdict": "PARTIALLY SUPPORTED",
+      "notes": "The 'CPI and GDP data consistent with obligations' half is confirmed, but the exact phrase 'extraordinary efforts to rebuild the agency' attributed to the managing director could not be located verbatim; direct fetch of the primary source was blocked (403) so full text was never confirmed."
+    },
+    {
+      "id": 12,
+      "claim": "\"In 2013, a judge charged Moreno himself with abuse of power, over the fines and legal action he'd brought against economists who published independent inflation estimates, calling it 'nothing other than an effort to silence' them.\"",
+      "source": "American Statistical Association, Chicago Chapter",
+      "passage": "Judge Claudio Bonadio charged Commerce Secretary Guillermo Moreno, who \"prosecuted former INDEC CPI director Graciela Bevacqua and others,\" with abuse of power for fining and pursuing legal action against people who published independent inflation data, calling it \"nothing other than an effort to silence\" them.",
+      "verdict": "SUPPORTED",
+      "notes": "Directly fetched and confirmed verbatim against community.amstat.org."
+    }
+  ]
+}

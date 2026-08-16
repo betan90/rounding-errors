@@ -3,15 +3,14 @@ import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import ExhibitCard from '../../components/ExhibitCard.astro';
 import { withBase } from '../../lib/paths';
+import { sortExhibits } from '../../lib/sortExhibits';
 
 export async function getStaticPaths() {
   const exhibits = await getCollection('exhibits');
   const tags = [...new Set(exhibits.flatMap((e) => e.data.tags))];
 
   return tags.map((tag) => {
-    const matches = exhibits
-      .filter((e) => e.data.tags.includes(tag))
-      .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+    const matches = sortExhibits(exhibits.filter((e) => e.data.tags.includes(tag)));
     return {
       params: { tag },
       props: { tag, exhibits: matches },

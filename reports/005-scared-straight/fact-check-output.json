@@ -1,0 +1,94 @@
+{
+  "exhibit": "005",
+  "checkedAt": "2026-08-01T00:00:00Z",
+  "claims": [
+    {
+      "id": 1,
+      "claim": "It won an Academy Award.",
+      "source": "Hollywood Reporter, Hollywood Flashback (2018)",
+      "passage": "The documentary won the Oscar for Best Documentary of 1978.",
+      "verdict": "SUPPORTED",
+      "notes": "Direct fetch of the Hollywood Reporter URL returned 403/402 errors, but independent web search corroborated the same claim, including from the same article."
+    },
+    {
+      "id": 2,
+      "claim": "It reported that thousands of juveniles had been through the program and that 80 to 90% of them went straight afterward.",
+      "source": "Office of Justice Programs abstracts (Finckenauer)",
+      "passage": "of 10,000 juveniles taken through the program, only 10 percent had later arrest records, and this figure was based upon a study done by the Lifers' Group and a county judge, with no provision for individual followup or record of nonreplies.",
+      "verdict": "SUPPORTED",
+      "notes": "90% (10% arrest rate) matches the top of the claimed range; other contemporary press cited 80%, consistent with the exhibit's 80-90% framing; provenance problem confirmed."
+    },
+    {
+      "id": 3,
+      "claim": "Some 38 states and foreign countries set up copies",
+      "source": "Office of Justice Programs abstracts (Finckenauer)",
+      "passage": "an effort in some 38 states and foreign countries to create, mandate, and legislate \"Scared Straight\" similar programs in everything from local jails to state prisons.",
+      "verdict": "SUPPORTED",
+      "notes": "Some secondary sources say 37 states and two countries instead of 38; minor historical variance across retellings, but the 38-state figure traces directly to Finckenauer's own writing as cited by the exhibit."
+    },
+    {
+      "id": 4,
+      "claim": "41% of the kids sent through the program committed new offenses, against 11% of the controls",
+      "source": "Finckenauer 1982 (via Petrosino et al. systematic-review lineage)",
+      "passage": "Finckenauer reported that 41% of the children and young people who attended the 'Scared Straight' program in New Jersey committed new offenses, while only 11% of the control group did.",
+      "verdict": "SUPPORTED",
+      "notes": "Confirmed via independent secondary summary of the 1982 study; matches the ledger and chart exactly."
+    },
+    {
+      "id": 5,
+      "claim": "His own randomization had integrity problems, which he disclosed, so researchers later reran the numbers without his study. The harm finding survived.",
+      "source": "Petrosino et al., Campbell Systematic Reviews",
+      "passage": "The Finckenauer study was excluded from sensitivity analyses because of its randomization problems... the results remain negative in direction with an odds ratio of 1.47, and statistically significant (CI 1.03-2.11)",
+      "verdict": "SUPPORTED",
+      "notes": "Sensitivity analysis excluding Finckenauer still shows significant harm, confirming the robustness claim."
+    },
+    {
+      "id": 6,
+      "claim": "nine randomized trials, roughly a thousand juveniles, and ... raising crime by somewhere between 1% and 28%",
+      "source": "Petrosino et al., Campbell Systematic Reviews",
+      "passage": "A total of 946 juveniles or young adults participated in all nine experimental studies... increased crime between 1 and 28 percent in the treatment group when compared to the no-treatment group.",
+      "verdict": "SUPPORTED",
+      "notes": "946 rounds to 'roughly a thousand'; nine studies and the 1-28% range both confirmed via the Campbell Collaboration summary."
+    },
+    {
+      "id": 7,
+      "claim": "The US National Institute of Justice's own evidence clearinghouse now rates the practice \"Ineffective\" and notes that participation increases the odds of future offending.",
+      "source": "US National Institute of Justice, CrimeSolutions practice profile",
+      "passage": "The results suggest that not only are juvenile awareness programs ineffective at deterring youth from committing crime, but the programs increase the odds that youth exposed to them will commit offenses in the future.",
+      "verdict": "SUPPORTED",
+      "notes": "Directly fetched crimesolutions.ojp.gov page confirms both the 'Ineffective' rating and the increased-odds finding."
+    },
+    {
+      "id": 8,
+      "claim": "The UK College of Policing's crime-reduction toolkit rates the evidence for a rise in crime \"very strong\": accounting for bias, reoffending ran 68% higher among participants than non-participants... net cost to the taxpayer... came to $14,667 per participant.",
+      "source": "UK College of Policing, Crime Reduction Toolkit",
+      "passage": "After accounting for bias, Review one estimated that reoffending was 68% higher among those juveniles who participated in the programme compared to those who did not... the net cost to the tax-payer was estimated to be $14,667 per participant (in 2006).",
+      "verdict": "SUPPORTED",
+      "notes": "Direct fetch of college.police.uk returned 403; confirmed instead via search-engine snippets quoting the same page verbatim, including the 'very strong' rating and 'seven of the nine studies' detail."
+    },
+    {
+      "id": 9,
+      "claim": "In 2011, two Justice Department officials, Laurie Robinson and Jeff Slowikowski, put it in a Baltimore Sun op-ed: \"scared straight is not only ineffective but is potentially harmful.\"",
+      "source": "Robinson and Slowikowski, Baltimore Sun op-ed (Jan 31, 2011)",
+      "passage": "scared straight is not only ineffective but is potentially harmful; the study strongly suggested the program caused harm.",
+      "verdict": "SUPPORTED",
+      "notes": "Directly fetched baltimoresun.com; titles (Assistant Attorney General, Office of Justice Programs; Acting Administrator, OJJDP) and quote both confirmed."
+    },
+    {
+      "id": 10,
+      "claim": "On January 13, 2011... A&E launched Beyond Scared Straight... produced by Arnold Shapiro, who also produced the original film.",
+      "source": "Variety, Beyond Scared Straight review",
+      "passage": "premiered Thursday, Jan. 13, 2011, 10 p.m., 90 minutes; produced by Arnold Shapiro Prods., the original 1978 film's own producer.",
+      "verdict": "SUPPORTED",
+      "notes": "Direct fetch of variety.com redirected to a paywalled tollbit.variety.com host (402); date and producer detail independently corroborated by search results describing Shapiro as director/producer of the 1978 film."
+    },
+    {
+      "id": 11,
+      "claim": "Won an Academy Award for feature documentary, unusual since it lacked the theatrical release the Academy then preferred.",
+      "source": "Hollywood Reporter, Hollywood Flashback (2018)",
+      "passage": "",
+      "verdict": "PARTIALLY SUPPORTED",
+      "notes": "The Oscar win itself is independently confirmed, but the specific 'unusual, lacked theatrical release' detail could not be verified because both direct fetches of the Hollywood Reporter URL failed (403 then 402 paywall) and search snippets did not reproduce that specific line."
+    }
+  ]
+}

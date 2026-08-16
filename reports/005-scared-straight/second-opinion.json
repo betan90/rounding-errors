@@ -1,0 +1,62 @@
+{
+  "exhibit": "005",
+  "reviewedAt": "2026-08-01T07:40:19.888Z",
+  "model": "deepseek-chat",
+  "claims": [
+    {
+      "id": 1,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states the documentary won the Oscar for Best Documentary of 1978, which is an Academy Award."
+    },
+    {
+      "id": 2,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage states only 10 percent had later arrest records, which contradicts the claim's 80 to 90% going straight, and does not mention thousands or the specific percentage range."
+    },
+    {
+      "id": 3,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states that an effort was made in some 38 states and foreign countries to create similar programs, which directly supports the claim that copies were set up."
+    },
+    {
+      "id": 4,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage directly states that 41% of program attendees committed new offenses versus 11% of the control group, matching the claim."
+    },
+    {
+      "id": 5,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states the Finckenauer study was excluded due to randomization problems and that the negative results remained statistically significant, matching the claim's description of disclosure, exclusion, and surviving harm finding."
+    },
+    {
+      "id": 6,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states that nine experimental studies with 946 juveniles or young adults showed increased crime between 1 and 28 percent in the treatment group, matching the claim's details."
+    },
+    {
+      "id": 7,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states that juvenile awareness programs are ineffective and increase the odds of future offending, which aligns with the claim's description of the practice being rated \"Ineffective\" and increasing future offending odds."
+    },
+    {
+      "id": 8,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage does not mention the UK College of Policing's crime-reduction toolkit or its rating of the evidence as \"very strong.\""
+    },
+    {
+      "id": 9,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage directly contains the quoted statement \"scared straight is not only ineffective but is potentially harmful,\" which matches the claim's wording."
+    },
+    {
+      "id": 10,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage confirms the January 13, 2011 premiere and that it was produced by Arnold Shapiro, the same producer as the original 1978 film."
+    },
+    {
+      "id": 11,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage is empty and provides no information to support the claim."
+    }
+  ]
+}

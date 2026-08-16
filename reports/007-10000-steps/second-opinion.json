@@ -1,0 +1,72 @@
+{
+  "exhibit": "007",
+  "reviewedAt": "2026-08-01T08:18:36.160Z",
+  "model": "deepseek-chat",
+  "claims": [
+    {
+      "id": 1,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage is empty and provides no information about the daily goal of 10,000 steps."
+    },
+    {
+      "id": 2,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states that mortality rates level at approximately 7500 steps/d, which matches the claim's description of a mortality benefit plateau at that step count."
+    },
+    {
+      "id": 3,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states there were no actual studies that had looked at '10,000 steps' at the time the pedometer was developed, which supports the claim of zero peer-reviewed studies behind the number."
+    },
+    {
+      "id": 4,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage is empty and provides no information about Yamasa Tokei Keiki, the Manpo-kei, or the 1965 release."
+    },
+    {
+      "id": 5,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage directly quotes I-Min Lee stating that no actual studies had looked at '10,000 steps' at the time the pedometer was developed."
+    },
+    {
+      "id": 6,
+      "verdict": "PARTIALLY SUPPORTED",
+      "reasoning": "The passage mentions 16,741 women, which is roughly 17,000, but does not specify the study year, author, or journal."
+    },
+    {
+      "id": 7,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states that mortality rates progressively decreased before leveling at approximately 7500 steps/d, which directly matches the claim's description of a steady decline followed by a plateau at about 7,500 steps."
+    },
+    {
+      "id": 8,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states that mortality rates leveled off at approximately 7500 steps/d, implying that the risk at 7500 steps is the same as at higher step counts like 10,000."
+    },
+    {
+      "id": 9,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage is empty and provides no information to support the claim."
+    },
+    {
+      "id": 10,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage directly states that participants taking at least 7000 steps/d had a 50% to 70% lower risk of mortality compared to those taking fewer than 7000 steps/d, which matches the claim."
+    },
+    {
+      "id": 11,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage is empty and provides no information to support the claim."
+    },
+    {
+      "id": 12,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage is empty, so it cannot support the claim."
+    },
+    {
+      "id": 13,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage identifies I-Min Lee as an epidemiologist at Harvard Medical School but does not include the quoted statement about provenance or attribute that specific quote to her."
+    }
+  ]
+}

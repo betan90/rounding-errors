@@ -1,0 +1,118 @@
+{
+  "exhibit": "003",
+  "checkedAt": "2026-08-01T00:00:00Z",
+  "claims": [
+    {
+      "id": 1,
+      "claim": "National GDP (NBS), 2015: 67.7 trillion yuan",
+      "source": "SinoInsider",
+      "passage": "In 2015 for example, the National Bureau of Statistics announced a national GDP of 67.7 trillion yuan, but summing up the individual GDP of China's 31 provinces results in a total GDP of 72.5 trillion yuan.",
+      "verdict": "SUPPORTED",
+      "notes": "Figure matches the source exactly."
+    },
+    {
+      "id": 2,
+      "claim": "Sum of all 31 provincial GDPs, 2015: 72.5 trillion yuan",
+      "source": "SinoInsider",
+      "passage": "In 2015 for example, the National Bureau of Statistics announced a national GDP of 67.7 trillion yuan, but summing up the individual GDP of China's 31 provinces results in a total GDP of 72.5 trillion yuan.",
+      "verdict": "SUPPORTED",
+      "notes": "Figure matches the source exactly."
+    },
+    {
+      "id": 3,
+      "claim": "The gap: 4.8 trillion yuan, or about one entire Jiangsu province",
+      "source": "SinoInsider",
+      "passage": "The 4.8 trillion yuan difference between the two figures is equivalent to Jiangsu Province's nominal GDP in 2015.",
+      "verdict": "SUPPORTED",
+      "notes": "Both the gap figure and the Jiangsu comparison are confirmed verbatim in the source."
+    },
+    {
+      "id": 4,
+      "claim": "Li Keqiang, while party chief of Liaoning in 2007, told the American ambassador via leaked US diplomatic cables that GDP figures were essentially \"man-made\" and unreliable",
+      "source": "not listed in the exhibit's sources array",
+      "passage": "",
+      "verdict": "PARTIALLY SUPPORTED",
+      "notes": "The claim is true and independently verifiable (WikiLeaks cable 07BEIJING1760_a, reported by CNBC/VOA/Bloomberg), but the exhibit's sources list contains no citation for it at all, so within the exhibit's own paper trail this claim is uncited."
+    },
+    {
+      "id": 5,
+      "claim": "In January 2017 Liaoning's governor admitted economic data from Liaoning's cities and counties had been falsified from 2011 to 2014",
+      "source": "Caixin Global",
+      "passage": "City and county officials in Liaoning made false claims about fiscal revenues and other data from 2011 to 2014, said Chen Qiufa, who became head of the provincial government in 2015.",
+      "verdict": "SUPPORTED",
+      "notes": "Direct match to source."
+    },
+    {
+      "id": 6,
+      "claim": "Fiscal revenue in one county was reported at 2.4 billion yuan for 2013; a national audit later corrected it to 1.1 billion",
+      "source": "CNN",
+      "passage": "",
+      "verdict": "PARTIALLY SUPPORTED",
+      "notes": "CNN's page returned HTTP 503 on two direct fetch attempts and could not be verified verbatim; a search-engine summary of the same article corroborates the figures but this is not a direct-fetch confirmation."
+    },
+    {
+      "id": 7,
+      "claim": "Some local figures were overstated by more than 100%",
+      "source": "Caixin Global",
+      "passage": "Fiscal revenues over the three years were exaggerated by around 20% overall. In some counties, the reported numbers were more than double the actual income.",
+      "verdict": "SUPPORTED",
+      "notes": "\"More than double\" matches \"more than 100%.\""
+    },
+    {
+      "id": 8,
+      "claim": "The province's former party secretary, who held the post while the fabrication occurred, was removed from every public position and expelled from the party",
+      "source": "Caixin Global",
+      "passage": "The case also directly led Wang, former Liaoning Party secretary and head of the provincial legislature, to be removed from all public posts and stripped of party membership last year.",
+      "verdict": "SUPPORTED",
+      "notes": "Direct match to source."
+    },
+    {
+      "id": 9,
+      "claim": "Within weeks [of Liaoning's Jan 2017 confession], Inner Mongolia admitted its 2016 industrial output had been overstated by 40%",
+      "source": "SinoInsider (implied; no explicit inline citation)",
+      "passage": "Inner Mongolia - January 7, 2018: Authorities disclosed that industrial data for 2016 was inflated by 40 percent (290 billion yuan, or about $45 billion).",
+      "verdict": "NOT SUPPORTED",
+      "notes": "The 40% figure is correct, but the timing is wrong: Inner Mongolia's admission came in January 2018, about a year after Liaoning's, not 'within weeks.'"
+    },
+    {
+      "id": 10,
+      "claim": "[Within weeks,] a district of Tianjin admitted its GDP was a third smaller than reported",
+      "source": "SinoInsider / Caixin Global (implied; no explicit inline citation)",
+      "passage": "The new area has revised its 2016 gross domestic product (GDP) down 33.5% to 665.4 billion yuan ($102.3 billion).",
+      "verdict": "NOT SUPPORTED",
+      "notes": "The one-third figure is correct, but this admission was made in January 2018, not within weeks of the January 2017 Liaoning confession."
+    },
+    {
+      "id": 11,
+      "claim": "The head of China's NBS used the word \"zero tolerance\" and announced the bureau had punished more than ten people in each of fifteen major fraud cases the year before",
+      "source": "China Daily",
+      "passage": "",
+      "verdict": "PARTIALLY SUPPORTED",
+      "notes": "No URL is provided for this source and independent searches only corroborate the general 'zero tolerance' theme, not the specific 15-case/10-person figures; could not be fetched or verified verbatim."
+    },
+    {
+      "id": 12,
+      "claim": "In 2019 the NBS stopped letting provinces calculate their own GDP and took the job in-house",
+      "source": "South China Morning Post",
+      "passage": "China's National Bureau of Statistics will take over data collection at the regional level from 2019, replacing the current system in which the combined economic output of the nation's provinces has long exceeded the official total for the country as a whole.",
+      "verdict": "SUPPORTED",
+      "notes": "Confirmed via an independently located SCMP article matching the exhibit's uncited source description (Oct 30, 2017)."
+    },
+    {
+      "id": 13,
+      "claim": "National growth from 2008 to 2016 was still overstated by an estimated 1.7 percentage points a year, even after the NBS's own adjustments",
+      "source": "Chen, Chen, Hsieh and Song, Brookings Papers on Economic Activity (2019)",
+      "passage": "Relative to the official numbers, we estimate that GDP growth from 2008-2016 is 1.7 percentage points lower...",
+      "verdict": "SUPPORTED",
+      "notes": "Matches the paper's abstract."
+    },
+    {
+      "id": 14,
+      "claim": "The provincial-sum-versus-national-total gap that used to run in the trillions has since narrowed close to zero",
+      "source": "not explicitly cited in the exhibit's sources array",
+      "passage": "",
+      "verdict": "PARTIALLY SUPPORTED",
+      "notes": "Independent reporting shows the gap did narrow substantially post-reform (e.g., ~1.44tn yuan in 2018) but the exhibit provides no direct citation for the 'close to zero' claim, and its own chartNote admits no clean single-vintage data pull exists to verify this precisely."
+    }
+  ]
+}

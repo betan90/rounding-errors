@@ -1,0 +1,134 @@
+{
+  "exhibit": "008",
+  "checkedAt": "2026-08-12T00:00:00Z",
+  "claims": [
+    {
+      "id": 1,
+      "claim": "Indonesian government, 2015 to 2021: 90% decline in deforestation",
+      "source": "Mongabay (May 2025)",
+      "passage": "The Indonesian government claims a 90% deforestation reduction from 2015-2021",
+      "verdict": "SUPPORTED",
+      "notes": "Figure confirmed directly on the fetched Mongabay page, now that a working url/urlLabel is present in the sources list."
+    },
+    {
+      "id": 2,
+      "claim": "Global Forest Watch, 2016 to 2023: 69% decline",
+      "source": "Mongabay (May 2025)",
+      "passage": "Global Forest Watch data shows a 69% decline for 2016-2023",
+      "verdict": "SUPPORTED",
+      "notes": "Figure confirmed directly on the fetched Mongabay page."
+    },
+    {
+      "id": 3,
+      "claim": "Range across all available datasets: 40% to 90%",
+      "source": "Norwegian University of Life Sciences (NMBU)",
+      "passage": "The exact extent of the reduction in deforestation depends on the data set used, and the years or time periods compared, varying between 40% and 90%.",
+      "verdict": "SUPPORTED",
+      "notes": "Verbatim match to the NMBU report page as fetched via the now-present url."
+    },
+    {
+      "id": 4,
+      "claim": "NMBU's own robust estimate: deforestation has fallen by at least 50% since around 2016",
+      "source": "Norwegian University of Life Sciences (NMBU)",
+      "passage": "A conservative figure is offered: deforestation has declined by at least 50 percent since approximately 2016.",
+      "verdict": "SUPPORTED",
+      "notes": "Matches the report content as fetched."
+    },
+    {
+      "id": 5,
+      "claim": "2015 was an extreme El Nino year with the worst forest/peat fires on record, used as the official baseline",
+      "source": "Mongabay (May 2025)",
+      "passage": "The year 2015 represented an extreme El Nino event with severe forest fires—approximately 2.6 million hectares burned, over 1 million being forest loss.",
+      "verdict": "SUPPORTED",
+      "notes": "Confirmed on fetched Mongabay page; exhibit's characterization of the baseline year is consistent with the source."
+    },
+    {
+      "id": 6,
+      "claim": "2015 is 'not necessarily incorrect' as a baseline, one of the NMBU co-authors noted, because it was also the first full year of the Jokowi administration",
+      "source": "Mongabay (May 2025)",
+      "passage": "Yet that baseline also is 'not necessarily incorrect,' Ahmad said, given that it was the first full year of then-president Joko Widodo's first term in office. ... 'So it might be the case that 2015 was used because it marks the beginning of the Jokowi administration,' he said",
+      "verdict": "SUPPORTED",
+      "notes": "Quote and attribution (Ahmad Dermawan, described in the article as an NMBU postdoctoral researcher and report co-author) both confirmed on the fetched page; attribution is reported speech, consistent with the house attribution rule against asserting what a named individual thinks."
+    },
+    {
+      "id": 7,
+      "claim": "Indonesia's forestry ministry counts deforestation as permanent conversion of forest to non-forest, minimum 6.25 hectares, identified by manual visual inspection, on a July-to-June year (SIMONTANA)",
+      "source": "Global Forest Watch",
+      "passage": "SIMONTANA's Approach: Focuses on 'conversion of primary, secondary or plantation forest to non-forest'; Applies a 6.25 hectare minimum threshold; Relies on 'manual visual inspection of satellite imagery'; Uses a July-June observation window rather than calendar years",
+      "verdict": "SUPPORTED",
+      "notes": "Confirmed on the Global Forest Watch methodology page (which now 301-redirects to globalnaturewatch.org but resolves to the same content)."
+    },
+    {
+      "id": 8,
+      "claim": "Global Forest Watch measures tree cover loss on a calendar year against a fixed baseline, includes plantations, and excludes young secondary forest",
+      "source": "Global Forest Watch",
+      "passage": "The tree cover loss data from UMD captures disturbances ... for the calendar years between 2001 and 2024. ... This includes mortality or removal of trees in natural forests as well as in wood fiber or tree crop plantations. ... The humid tropical primary forest data 'excludes plantations, tree crops and young secondary forests'... The page does not explicitly mention a 'fixed baseline' for tree cover loss data.",
+      "verdict": "PARTIALLY SUPPORTED",
+      "notes": "Calendar-year and plantation-inclusion are confirmed for the UMD/GFW tree cover loss product, but 'excludes young secondary forest' is a property of GFW's separate primary-forest-loss filter layer, not the base tree cover loss dataset being described, and 'fixed baseline' is not explicitly stated for that product; the sentence conflates two GFW data products, a real but minor accuracy slip that does not affect any headline number."
+    },
+    {
+      "id": 9,
+      "claim": "Indonesia's official definition of 'forest' includes commercial acacia plantations grown expressly to be cut down for pulp",
+      "source": "Mongabay (May 2025)",
+      "passage": "Indonesia's official forest definition includes commercial tree plantations like acacia. ... 'a pulpwood company can clear a forest, which the government records as deforestation, and then plant the land with acacia, which then counts as reforestation.'",
+      "verdict": "SUPPORTED",
+      "notes": "Confirmed on the fetched Mongabay page."
+    },
+    {
+      "id": 10,
+      "claim": "Auriga Nusantara: all the data are valid as long as each adheres to its own methodology",
+      "source": "Mongabay (April 2026)",
+      "passage": "\"All data are valid, as long as they adhere to their respective methodologies.\"",
+      "verdict": "SUPPORTED",
+      "notes": "Body paraphrases rather than directly quotes (no quotation marks used), and the paraphrase is accurate."
+    },
+    {
+      "id": 11,
+      "claim": "In 2025, Indonesian deforestation rose 66%, reversing years of decline",
+      "source": "Mongabay (April 2026)",
+      "passage": "The article reports a 66% surge in Indonesian deforestation during 2025 compared to the previous year, with an estimated 433,751 hectares lost—the highest level in eight years.",
+      "verdict": "SUPPORTED",
+      "notes": "Confirmed on the fetched Mongabay page."
+    },
+    {
+      "id": 12,
+      "claim": "Nickel mining for electric vehicle batteries among the drivers of the 2025 rise",
+      "source": "Mongabay (April 2026)",
+      "passage": "The piece identifies Indonesia's push to become a global EV production hub as a significant driver. Nickel mining and processing have expanded rapidly, particularly in Sulawesi and North Maluku.",
+      "verdict": "SUPPORTED",
+      "notes": "Confirmed on the fetched Mongabay page."
+    },
+    {
+      "id": 13,
+      "claim": "verdictNote: 'five organisations measuring the same trees'",
+      "source": "Mongabay (May 2025) / NMBU report",
+      "passage": "1. Official Indonesian government data ... 2. Global Forest Watch (GFW) ... 3. Nusantara Atlas ... 4. MapBiomas ... 5. NMBU (Norwegian University of Life Sciences) researchers' analysis",
+      "verdict": "SUPPORTED",
+      "notes": "The Mongabay article names five distinct data sources/organizations discussed, matching the count used in the verdict note and the chart's 'Five ways of measuring the same forests' caption."
+    },
+    {
+      "id": 14,
+      "claim": "'Who lied' section: nobody, and the researchers who raised the discrepancy went out of their way to say so",
+      "source": "Norwegian University of Life Sciences (NMBU); Mongabay (May 2025)",
+      "passage": "Full transparency on definition and data transformations is needed to enable better comparison and detect underlying trends.",
+      "verdict": "SUPPORTED",
+      "notes": "The NMBU report frames the gap as a definitional/methodological transparency issue rather than fraud; no accusation of lying is made against Indonesia or any named person anywhere in the body, satisfying the attribution rule."
+    },
+    {
+      "id": 15,
+      "claim": "Disclosure: 'Every figure was checked against the linked primary source before publishing.'",
+      "source": "n/a (exhibit's own disclosure field, checked against the sources list)",
+      "passage": "",
+      "verdict": "SUPPORTED",
+      "notes": "All four sources entries now carry working url and urlLabel fields, and every headline figure in the body/ledger was independently re-verified against those exact URLs in this pass, so the disclosure's claim is now true as published; this was the prior run's top BLOCKING finding and is now resolved."
+    },
+    {
+      "id": 16,
+      "claim": "Government figure of 90% is a self-reported figure, distinguished in the ledger from independently measured datasets",
+      "source": "ledger label attribution (Indonesian government) vs Global Forest Watch",
+      "passage": "",
+      "verdict": "PARTIALLY SUPPORTED",
+      "notes": "The ledger label ('Indonesian government, 2015 to 2021') flags the figure's self-reported provenance by naming the source and contrasting it with GFW's independently measured figure, but no explicit word like 'self-reported' or 'unverifiable' is used anywhere in the body or disclosure."
+    }
+  ]
+}

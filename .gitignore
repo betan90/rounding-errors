@@ -24,7 +24,8 @@ data/raw/
 *.xlsx
 *.xls
 
-# Fact-checker / second-opinion report artifacts (regenerated per run)
-fact-check-output.json
-second-opinion.json
-reports/
+# Fact-checker / second-opinion working copies at the repo root (regenerated per run).
+# The archived per-exhibit reports under reports/ ARE tracked: the notes section
+# cites them as checkable evidence, so they must exist in the repository.
+/fact-check-output.json
+/second-opinion.json

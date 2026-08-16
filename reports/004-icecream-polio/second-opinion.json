@@ -1,0 +1,57 @@
+{
+  "exhibit": "004",
+  "reviewedAt": "2026-08-01T07:09:04.789Z",
+  "model": "deepseek-chat",
+  "claims": [
+    {
+      "id": 1,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage states 2,516 cases in 1948, not 2,498 as claimed."
+    },
+    {
+      "id": 2,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage only states a relative comparison to 1948, not the specific number of 229 cases."
+    },
+    {
+      "id": 3,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "There is no passage provided to evaluate the claim against."
+    },
+    {
+      "id": 4,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage mentions a drop in soft drink and ice cream sales, but does not quantify it as ~90%, nor does it attribute it to Sandler's self-report or specify a lack of independent measurement."
+    },
+    {
+      "id": 5,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage directly quotes Cherry using the same language as the claim, including the statement that the theory is \"absolutely without foundation\" and the argument about reducing sweets having no proven effect on polio immunity."
+    },
+    {
+      "id": 6,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage directly states that in 1941, the University of Michigan attempted to duplicate Sandler's findings without success, which matches the claim."
+    },
+    {
+      "id": 7,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage directly states that Dr. Benjamin Sandler published a paper with that exact title in The American Journal of Pathology in 1940."
+    },
+    {
+      "id": 8,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage attributes the explanation of lost infant immunity due to better sanitation to Dr. John F. Modlin, matching the claim's core elements."
+    },
+    {
+      "id": 9,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage directly states that Sandler proclaimed \"without reserve\" the discovery about the diet and polio virus, matching the claim's assertion that he said so in the paper."
+    },
+    {
+      "id": 10,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage only denies the foundation of Dr. Sandler's theory, but does not address who lied or what the medical establishment said about lying."
+    }
+  ]
+}

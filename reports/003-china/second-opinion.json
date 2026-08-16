@@ -1,0 +1,77 @@
+{
+  "exhibit": "003",
+  "reviewedAt": "2026-08-01T05:06:00.986Z",
+  "model": "deepseek-chat",
+  "claims": [
+    {
+      "id": 1,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage explicitly states that the National Bureau of Statistics announced a national GDP of 67.7 trillion yuan in 2015."
+    },
+    {
+      "id": 2,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage explicitly states that summing the individual GDP of China's 31 provinces in 2015 results in a total of 72.5 trillion yuan."
+    },
+    {
+      "id": 3,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states that the 4.8 trillion yuan difference is equivalent to Jiangsu Province's nominal GDP in 2015, which directly supports the claim that the gap is about one entire Jiangsu province."
+    },
+    {
+      "id": 4,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage is empty and provides no information to support the claim."
+    },
+    {
+      "id": 5,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states that Chen Qiufa, the head of Liaoning's provincial government, said city and county officials made false claims about data from 2011 to 2014, which aligns with the claim that the governor admitted to falsified economic data during that period."
+    },
+    {
+      "id": 6,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage is empty and provides no information about the county's fiscal revenue or any audit correction."
+    },
+    {
+      "id": 7,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states that in some counties, reported numbers were more than double the actual income, which means those figures were overstated by more than 100%."
+    },
+    {
+      "id": 8,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states that Wang, the former Liaoning Party secretary, was removed from all public posts and stripped of party membership, which matches the claim's description of removal from every public position and expulsion from the party."
+    },
+    {
+      "id": 9,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage states Inner Mongolia disclosed the overstatement on January 7, 2018, not within weeks of Liaoning's January 2017 confession, and provides no temporal link between the two events."
+    },
+    {
+      "id": 10,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states the new area revised its 2016 GDP down 33.5%, which matches the claim of admitting a GDP a third smaller than reported, though it does not specify the timeframe of \"within weeks.\""
+    },
+    {
+      "id": 11,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage is empty and provides no information to support the claim."
+    },
+    {
+      "id": 12,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states that the NBS will take over regional data collection from 2019, replacing the provincial system, which matches the claim."
+    },
+    {
+      "id": 13,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states that GDP growth from 2008-2016 is estimated to be 1.7 percentage points lower than official numbers, which directly supports the claim that growth was overstated by that amount even after adjustments."
+    },
+    {
+      "id": 14,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage is empty and provides no information about the provincial-sum-versus-national-total gap."
+    }
+  ]
+}

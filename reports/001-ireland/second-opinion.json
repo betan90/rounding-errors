@@ -1,0 +1,107 @@
+{
+  "exhibit": "001",
+  "reviewedAt": "2026-08-01T00:27:11.949Z",
+  "model": "deepseek-chat",
+  "claims": [
+    {
+      "id": 1,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states that GDP reached €562.8 billion, which directly matches the claim's figure and context."
+    },
+    {
+      "id": 2,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage explicitly states that GNI* stood at €321.1 billion in 2024, which directly matches the claim."
+    },
+    {
+      "id": 3,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage is empty, so it cannot support the claim about a gap of €241.7bn or its comparison to Greece."
+    },
+    {
+      "id": 4,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage is empty and provides no information about Ireland's CSO estimate."
+    },
+    {
+      "id": 5,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage mentions a 25.2% GDP growth figure for 2014-2015, not a July 2016 revision to 26.3%, and provides no information about the CSO revising the 2015 GDP growth to 26.3%."
+    },
+    {
+      "id": 6,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage is empty, so it cannot support the claim."
+    },
+    {
+      "id": 7,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage is empty, so it cannot support the claim."
+    },
+    {
+      "id": 8,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage is empty, so it cannot support the claim."
+    },
+    {
+      "id": 9,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage is empty, so it cannot support the claim."
+    },
+    {
+      "id": 10,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage is empty, so it cannot support the claim."
+    },
+    {
+      "id": 11,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states GDP growth of 12.3% for 2025, which directly supports the claim's figure, though it does not mention the \"standout number in the developed world\" aspect."
+    },
+    {
+      "id": 12,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage directly states that 95% of the increase in goods exports in 2025 was attributable to polypeptide hormones, matching the claim."
+    },
+    {
+      "id": 13,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage directly states that the figure surged to €25.4 billion in March, matching the claim's amount and timeframe."
+    },
+    {
+      "id": 14,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states that the alternative metric, which strips out multinational distortions (i.e., de-leprechauned), grew at 4.9% for 2025."
+    },
+    {
+      "id": 15,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states \"a contraction of 2.0% quarter on quarter,\" which directly matches the claim's figure of -2.0%."
+    },
+    {
+      "id": 16,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states that Ireland's GDP fell by 12.1% in the first quarter of 2026 compared to the final quarter of 2025, which directly supports the claim that the full accounts said -12.1%."
+    },
+    {
+      "id": 17,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage explicitly states that GDP growth has been negative for four consecutive quarters, which directly supports the claim of four consecutive quarters of shrinking GDP."
+    },
+    {
+      "id": 18,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage explicitly states that GNI* increased to €334bn in 2025 and that its share of GDP was 55.4%, matching the claim."
+    },
+    {
+      "id": 19,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage is empty, so it cannot confirm that the Euronews source URL resolves or is fetchable."
+    },
+    {
+      "id": 20,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states Irish GDP contracted by 3.8% in Q4 2025, which directly supports the claim of a quarterly decline."
+    }
+  ]
+}

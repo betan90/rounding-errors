@@ -1,0 +1,118 @@
+{
+  "exhibit": "006",
+  "checkedAt": "2026-08-01T00:00:00Z",
+  "claims": [
+    {
+      "id": 1,
+      "claim": "d = 0.023",
+      "source": "West and O'Neal, American Journal of Public Health (2004)",
+      "passage": "The overall Cohen's d value was 0.023 with a 95% confidence interval of −0.04 to 0.08. This result is not statistically significant (z = 0.73, NS).",
+      "verdict": "SUPPORTED",
+      "notes": "Effect size and nonsignificance directly confirmed by fetching the PMC article."
+    },
+    {
+      "id": 2,
+      "claim": "95% confidence interval −0.04 to 0.08, nonsignificant",
+      "source": "West and O'Neal, American Journal of Public Health (2004)",
+      "passage": "The overall Cohen's d value was 0.023 with a 95% confidence interval of −0.04 to 0.08. This result is not statistically significant (z = 0.73, NS).",
+      "verdict": "SUPPORTED",
+      "notes": "Matches exhibit's ledger row exactly."
+    },
+    {
+      "id": 3,
+      "claim": "Average annual federal-era expenditure ~US$750 million",
+      "source": "West and O'Neal, American Journal of Public Health (2004)",
+      "passage": "an average of three quarters of a billion dollars spent on its provision annually",
+      "verdict": "SUPPORTED",
+      "notes": "Direct quote from the fetched paper matches the ledger figure."
+    },
+    {
+      "id": 4,
+      "claim": "the country's largest single school-based prevention program by federal expenditure",
+      "source": "West and O'Neal, American Journal of Public Health (2004)",
+      "passage": "the country's largest single school-based prevention program in terms of federal expenditures",
+      "verdict": "SUPPORTED",
+      "notes": "Near-verbatim match to the exhibit's phrasing."
+    },
+    {
+      "id": 5,
+      "claim": "suburban DARE graduates showed small but significant increases in drug use versus suburban controls (boomerang effect)",
+      "source": "Rosenbaum and Hanson, Journal of Research in Crime and Delinquency 35(4) (1998)",
+      "passage": "Urban and rural students showed some benefits, whereas suburban students experienced small but significant increases in drug use after participation in D.A.R.E.",
+      "verdict": "SUPPORTED",
+      "notes": "Abstract text confirms both the urban/rural benefit and the suburban boomerang effect as stated in the exhibit."
+    },
+    {
+      "id": 6,
+      "claim": "urban and rural students showed some benefit",
+      "source": "Rosenbaum and Hanson, Journal of Research in Crime and Delinquency 35(4) (1998)",
+      "passage": "Urban and rural students showed some benefits, whereas suburban students experienced small but significant increases in drug use after participation in D.A.R.E.",
+      "verdict": "SUPPORTED",
+      "notes": "Confirmed directly from abstract."
+    },
+    {
+      "id": 7,
+      "claim": "US Surgeon General (2001) placed DARE under the 'Ineffective Primary Prevention Programs' section heading, meeting the criteria for 'Does Not Work'",
+      "source": "US Surgeon General, Youth Violence report (2001), Chapter 5",
+      "passage": "One school-based universal prevention program meets the criteria for Does Not Work: Drug Abuse Resistance Education, or DARE.",
+      "verdict": "SUPPORTED",
+      "notes": "Confirmed exact section heading hierarchy: 'Ineffective Primary Prevention Programs' > 'School-Based Programs' > DARE meets 'Does Not Work' criteria."
+    },
+    {
+      "id": 8,
+      "claim": "evaluations consistently show little or no deterrent effects on substance use",
+      "source": "US Surgeon General, Youth Violence report (2001), Chapter 5",
+      "passage": "numerous well-designed evaluations and meta-analyses that consistently show little or no deterrent effects on substance use",
+      "verdict": "SUPPORTED",
+      "notes": "Verbatim quote confirmed in fetched document."
+    },
+    {
+      "id": 9,
+      "claim": "GAO (2003) reviewed six long-term evaluations and found no statistically significant differences in illicit drug use between kids who got DARE in fifth or sixth grade and kids who didn't",
+      "source": "US General Accounting Office, GAO-03-172R (2003)",
+      "passage": "All of the evaluations suggested that DARE had no statistically significant long-term effect on preventing youth illicit drug use.",
+      "verdict": "SUPPORTED",
+      "notes": "Primary GAO PDF did not render machine-readable text on fetch; corroborated via NORML's contemporaneous summary quoting the report directly and via independent search results describing the same six-evaluation finding."
+    },
+    {
+      "id": 10,
+      "claim": "In 2000, the Department of Education had already audited its drug-education funding and made programs prove effectiveness to qualify; DARE didn't make the cut",
+      "source": "Priceonomics, 'DARE: The Anti-Drug Program That Never Actually Worked'",
+      "passage": "In 2000, the Department of Education did an audit of drug education programs. Only evidenced-based programs would be eligible for funding out of the Department of Education's drug education budget. DARE did not make the cut.",
+      "verdict": "SUPPORTED",
+      "notes": "Near-verbatim match confirmed by fetching the Priceonomics article directly."
+    },
+    {
+      "id": 11,
+      "claim": "the Surgeon General's observation that DARE's popularity persisted despite evaluations consistently showing little or no deterrent effect",
+      "source": "Priceonomics, 'DARE: The Anti-Drug Program That Never Actually Worked'",
+      "passage": "The Surgeon General did its own evaluation, concluding, '[D.A.R.E.'s] popularity persists despite numerous well-designed evaluations and meta-analyses that consistently show little or no deterrent effects on substance use.'",
+      "verdict": "SUPPORTED",
+      "notes": "Confirmed verbatim in the fetched Priceonomics article, which itself quotes the Surgeon General report."
+    },
+    {
+      "id": 12,
+      "claim": "DARE launched out of the Los Angeles Police Department in 1983",
+      "source": "not listed in exhibit's sources array",
+      "passage": "DARE was developed in 1983 as a joint effort between the Los Angeles County School District and the Los Angeles Police Department... founded in Los Angeles in 1983 under the direction of LAPD Chief of Police Daryl Gates.",
+      "verdict": "PARTIALLY SUPPORTED",
+      "notes": "Confirmed true via independent web search (Britannica, CrimeSolutions/NIJ), but no entry in the exhibit's own sources list backs this specific date and origin, so it does not trace to a listed source as the FIGURES rule requires."
+    },
+    {
+      "id": 13,
+      "claim": "From 2007 it went looking for a new curriculum and ultimately replaced its original lecture-a-cop format with an externally developed, evidence-based program",
+      "source": "Boston University Law Review, 'Truth or DARE' note (2007)",
+      "passage": "",
+      "verdict": "PARTIALLY SUPPORTED",
+      "notes": "The linked BU Law Review PDF fetched as corrupted/garbled binary text and could not be verified directly; the general claim of a post-2000s curriculum overhaul is corroborated by the Priceonomics article and independent search results (NIJ CrimeSolutions), but not directly from this specific listed source."
+    },
+    {
+      "id": 14,
+      "claim": "A six-year randomized study led by Dennis Rosenbaum and Gordon Hanson, published in 1998 (named individuals, attribution)",
+      "source": "Rosenbaum and Hanson, Journal of Research in Crime and Delinquency 35(4) (1998)",
+      "passage": "Urban and rural students showed some benefits, whereas suburban students experienced small but significant increases in drug use after participation in D.A.R.E.",
+      "verdict": "SUPPORTED",
+      "notes": "Named individuals are credited only for authorship of a real, verifiable published study; this is an institutional paper trail, not an accusation, satisfying the ATTRIBUTION rule."
+    }
+  ]
+}

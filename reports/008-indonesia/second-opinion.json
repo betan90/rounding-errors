@@ -1,0 +1,87 @@
+{
+  "exhibit": "008",
+  "reviewedAt": "2026-08-11T23:41:45.816Z",
+  "model": "deepseek-chat",
+  "claims": [
+    {
+      "id": 1,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states that the Indonesian government claims a 90% deforestation reduction from 2015-2021, which directly supports the claim."
+    },
+    {
+      "id": 2,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage directly states that Global Forest Watch data shows a 69% decline for 2016-2023, matching the claim exactly."
+    },
+    {
+      "id": 3,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states the reduction varies between 40% and 90%, which matches the claim's range."
+    },
+    {
+      "id": 4,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states that deforestation has declined by at least 50 percent since approximately 2016, which directly matches the claim."
+    },
+    {
+      "id": 5,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage confirms 2015 was an extreme El Nino year with severe forest fires, though it does not explicitly state it was used as an official baseline."
+    },
+    {
+      "id": 6,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states that the baseline is \"not necessarily incorrect\" because 2015 was the first full year of Joko Widodo's first term, and that it \"marks the beginning of the Jokowi administration,\" matching the claim."
+    },
+    {
+      "id": 7,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage directly confirms each element of the claim: permanent conversion to non-forest, a 6.25 hectare minimum, manual visual inspection, and a July-June observation window."
+    },
+    {
+      "id": 8,
+      "verdict": "PARTIALLY SUPPORTED",
+      "reasoning": "The passage confirms calendar-year measurement and inclusion of plantations, but does not mention a fixed baseline or exclusion of young secondary forest for the tree cover loss data."
+    },
+    {
+      "id": 9,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage explicitly states that Indonesia's official forest definition includes commercial tree plantations like acacia, which are grown for pulp."
+    },
+    {
+      "id": 10,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage directly states that all data are valid as long as they adhere to their respective methodologies, which matches the claim."
+    },
+    {
+      "id": 11,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage directly states that Indonesian deforestation surged 66% in 2025 compared to the previous year, matching the claim's figures and timeframe."
+    },
+    {
+      "id": 12,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage directly states that nickel mining and processing have expanded rapidly in Indonesia, which is identified as a significant driver of the EV production hub push."
+    },
+    {
+      "id": 13,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage lists five distinct organizations or sources that measure or analyze trees/forest data, matching the claim's description."
+    },
+    {
+      "id": 14,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage discusses transparency in data but does not mention anyone lying or researchers addressing a discrepancy."
+    },
+    {
+      "id": 15,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage is empty, so it cannot support the claim."
+    },
+    {
+      "id": 16,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage is empty, so it cannot support the claim."
+    }
+  ]
+}
