@@ -27,7 +27,7 @@ npm run preview   # preview the production build
 
 - [x] Exhibit 001 — Ireland (live)
 - [x] Exhibit 002 — Argentina (the IMF's only censure for statistics)
-- [x] Exhibit 003 — China (thirty-one provinces vs. the national GDP total)
+- [x] Exhibit 003 — China (31 provinces vs. the national GDP total)
 - [x] Exhibit 004 — United States (ice cream, polio, and the summer that did it)
 - [x] Exhibit 005 — United States (Scared Straight, the evidence was a highlight reel)
 - [x] Exhibit 006 — United States (DARE, indistinguishable from nothing)

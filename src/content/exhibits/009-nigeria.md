@@ -21,11 +21,11 @@ verdict:
   - key: "Fraud detected"
     value: "none."
   - key: "Rules broken"
-    value: "one UN recommendation, by nineteen years."
+    value: "1 UN recommendation, by 19 years."
   - key: "Usefulness of the headline figure"
     value: "it was the most accurate number Nigeria had published in a generation, and it changed nothing about anyone's life."
     long: true
-verdictNote: "Ireland invented a second economy because its first one had stopped describing the country. Nigeria's problem was the opposite: the description was fine, it was just twenty-four years out of date, and updating it moved 89% of an economy into existence overnight. Every organisation running a report off a segmentation nobody has revisited since the last reorganisation is running Nigeria's 1990 base year. The numbers are all correct. They are answering a question about a company that no longer exists."
+verdictNote: "Ireland invented a second economy because its first one had stopped describing the country. Nigeria's problem was the opposite: the description was fine, it was just 24 years out of date, and updating it moved 89% of an economy into existence overnight. Every organisation running a report off a segmentation nobody has revisited since the last reorganisation is running Nigeria's 1990 base year. The numbers are all correct. They are answering a question about a company that no longer exists."
 sources:
   - name: "African Development Bank"
     text: "Press release, \"Nigeria Becomes Largest Economy in Africa, with $509.9 Billion GDP\" (4 April 2014): the 4 April announcement, $509.9bn against $285.56bn, an 89.2% increase, GDP per capita from $1,437 to $2,688, and Finance Minister Ngozi Okonjo-Iweala's confirmation that the highest global best practices were followed."
@@ -36,11 +36,11 @@ sources:
     url: "https://www.ft.com/content/70b594fe-bd94-11e3-a5ba-00144feabdc0"
     urlLabel: "ft.com"
   - name: "Oxford Business Group"
-    text: "\"Questions raised by Nigeria's recalibrated GDP figures\" (2015): the two-year preparation, the ten-place ranking jump to 26th, and the comparison against South Africa's $354bn."
+    text: "\"Questions raised by Nigeria's recalibrated GDP figures\" (2015): the 2-year preparation, the 10-place ranking jump to 26th, and the comparison against South Africa's $354bn."
     url: "https://oxfordbusinessgroup.com/questions-raised-by-nigerias-recalibrated-gdp-figures/"
     urlLabel: "oxfordbusinessgroup.com"
   - name: "Aluko & Oyebode"
-    text: "\"How Sustainable is the Effect of Nigeria's GDP Rebasing\": the UN Statistical Commission's five-year recommendation, and the African Development Bank finding on 18 other African countries with base years over a decade old, including the DRC and Equatorial Guinea at over thirty years."
+    text: "\"How Sustainable is the Effect of Nigeria's GDP Rebasing\": the UN Statistical Commission's 5-year recommendation, and the African Development Bank finding on 18 other African countries with base years over a decade old, including the DRC and Equatorial Guinea at over 30 years."
     url: "https://www.aluko-oyebode.com/insights/how-sustainable-is-the-effect-of-nigerias-gdp-rebasing/"
     urlLabel: "aluko-oyebode.com"
   - name: "Africa Check"
@@ -60,19 +60,19 @@ disclosure: "This entry was drafted with AI (Claude did the research sweeps and 
 
 ## The incident
 
-On 4 April 2014, Nigeria's Statistician General announced that the country's economy was roughly twice as large as previously stated. GDP per capita went from $1,437 to $2,688. Nigeria passed South Africa to become the largest economy in Africa and climbed ten places in the world rankings to 26th.
+On 4 April 2014, Nigeria's Statistician General announced that the country's economy was roughly twice as large as previously stated. GDP per capita went from $1,437 to $2,688. Nigeria passed South Africa to become the largest economy in Africa and climbed 10 places in the world rankings to 26th.
 
 Nothing had been built. No oil was discovered. The change was that Nigeria updated its base year from 1990 to 2010.
 
-A base year is the reference point a country uses to weight its economic sectors. Nigeria's had been set in 1990, when there was no Nollywood to speak of and almost no mobile phones. The economy was still being measured with a picture of itself from twenty-four years earlier, so telecommunications, film and modern retail were barely counted. Updating the picture found them.
+A base year is the reference point a country uses to weight its economic sectors. Nigeria's had been set in 1990, when there was no Nollywood to speak of and almost no mobile phones. The economy was still being measured with a picture of itself from 24 years earlier, so telecommunications, film and modern retail were barely counted. Updating the picture found them.
 
 Analysts had expected the revision to add 40% to 60%. It added 89%.
 
 ## Who lied
 
-Nobody, and the exercise was closer to overdue homework than to sleight of hand. The UN Statistical Commission recommends rebasing every five years, and Nigeria's finance minister at the time stated that international best practice had been followed in the exercise itself.
+Nobody, and the exercise was closer to overdue homework than to sleight of hand. The UN Statistical Commission recommends rebasing every 5 years, and Nigeria's finance minister at the time stated that international best practice had been followed in the exercise itself.
 
-Nigeria was also not unusual. The African Development Bank reported that 18 other African countries had base years more than a decade old, with the Democratic Republic of Congo and Equatorial Guinea using base years more than thirty years old. A continent's worth of economies were being measured against pictures of themselves from another era, which means the size of any given African economy depended substantially on when its statisticians last updated the reference.
+Nigeria was also not unusual. The African Development Bank reported that 18 other African countries had base years more than a decade old, with the Democratic Republic of Congo and Equatorial Guinea using base years more than 30 years old. A continent's worth of economies were being measured against pictures of themselves from another era, which means the size of any given African economy depended substantially on when its statisticians last updated the reference.
 
 ## The bit continues
 

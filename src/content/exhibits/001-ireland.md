@@ -76,7 +76,7 @@ sources:
     url: "https://www.euronews.com/business/2026/05/04/irish-economic-miracle-explained-why-all-that-glitter-isnt-gold"
     urlLabel: "euronews.com"
   - name: "Irish Examiner"
-    text: "(June 2026): Q1 2026 at minus 12.1%, four consecutive negative quarters."
+    text: "(June 2026): Q1 2026 at minus 12.1%, 4 consecutive negative quarters."
     url: "https://www.irishexaminer.com/business/companies/arid-41856822.html"
     urlLabel: "irishexaminer.com"
   - name: "European Commission"
@@ -106,10 +106,10 @@ Nobody. The CSO followed the rulebook exactly, Eurostat called the revision "pla
 
 In 2017, Ireland invented a new statistic: **modified gross national income**, written GNI\*, pronounced "GNI star", which is what you name a metric once you've accepted that your life is different now. It strips out the foreign-owned IP, the leased aircraft, and the profits of companies that exist in Ireland mostly as a brass plaque. What's left is the economy Irish people are actually in. It was 30% smaller.
 
-Ireland now runs two sets of books, on purpose, in public, and files both. In most contexts that is a crime. In this context it is best practice, endorsed by the IMF.
+Ireland now runs 2 sets of books, on purpose, in public, and files both. In most contexts that is a crime. In this context it is best practice, endorsed by the IMF.
 
 ## The bit continues
 
-**2025:** GDP grows 12.3%, the standout number in the developed world. Cause, per the Central Bank: 95% of the increase in goods exports came from one product group, polypeptide hormones. GLP-1s. Ireland's 2025 economic boom was, at the molecular level, Ozempic, shipped to America in a panic to front-run tariffs (€25.4bn in March alone). The de-leprechauned measure of what Irish households and firms actually did grew 4.9%.
+**2025:** GDP grows 12.3%, the standout number in the developed world. Cause, per the Central Bank: 95% of the increase in goods exports came from 1 product group, polypeptide hormones. GLP-1s. Ireland's 2025 economic boom was, at the molecular level, Ozempic, shipped to America in a panic to front-run tariffs (€25.4bn in March alone). The de-leprechauned measure of what Irish households and firms actually did grew 4.9%.
 
-**2026:** it unwound. The Q1 flash estimate said −2.0%; the full accounts said **−12.1%**. Four consecutive quarters of shrinking GDP, and essentially no economist will call it a recession, because the professional consensus on headline Irish GDP is: do not look directly at it.
+**2026:** it unwound. The Q1 flash estimate said −2.0%; the full accounts said **−12.1%**. 4 consecutive quarters of shrinking GDP, and essentially no economist will call it a recession, because the professional consensus on headline Irish GDP is: do not look directly at it.

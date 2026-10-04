@@ -18,7 +18,7 @@ ledger:
     gap: true
   - label: "Sugar consumption drop (Sandler's self-report, no independent measurement)"
     value: "~90%"
-ledgerNote: "The case counts are official state health records. The sugar figure has exactly one source: Sandler himself. No independent measurement of statewide sugar consumption in 1949 has ever been produced."
+ledgerNote: "The case counts are official state health records. The sugar figure has exactly 1 source: Sandler himself. No independent measurement of statewide sugar consumption in 1949 has ever been produced."
 verdict:
   - key: "Fraud detected"
     value: "none. A sincere doctor and a genuine correlation."
@@ -40,7 +40,7 @@ sources:
   - name: "Sandler"
     text: "Diet Prevents Polio (Lee Foundation for Nutritional Research, 1951): the source of the diet campaign and the \"90% reduction\" claim, i.e. Sandler's own account."
   - text: "North Carolina State Health Department case figures (2,498 in 1948; 229 in 1949), as cited in contemporary and later accounts."
-disclosure: "This entry was drafted with AI (Claude did the research sweeps and first draft). The editorial voice, the opinions, and any surviving errors are mine. Every figure was checked against the linked primary source before publishing, with one asymmetry worth stating outright rather than burying at the bottom: the 2,498-to-229 case figures are North Carolina State Health Department records, independently documented. The \"90% drop in sugar consumption\" has exactly one source, Sandler's own account, repeated since largely by anti-sugar and anti-vaccine advocates, and has never been independently audited. That the central \"proof\" was self-reported, with no control group, is not a footnote to this story. It is the story. Polio was ended by sanitation-era immunity dynamics and, decisively, the 1955 vaccine. It was not ended by dessert."
+disclosure: "This entry was drafted with AI (Claude did the research sweeps and first draft). The editorial voice, the opinions, and any surviving errors are mine. Every figure was checked against the linked primary source before publishing, with 1 asymmetry worth stating outright rather than burying at the bottom: the 2,498-to-229 case figures are North Carolina State Health Department records, independently documented. The \"90% drop in sugar consumption\" has exactly 1 source, Sandler's own account, repeated since largely by anti-sugar and anti-vaccine advocates, and has never been independently audited. That the central \"proof\" was self-reported, with no control group, is not a footnote to this story. It is the story. Polio was ended by sanitation-era immunity dynamics and, decisively, the 1955 vaccine. It was not ended by dessert."
 ---
 
 ## The incident
@@ -55,7 +55,7 @@ Sandler had his proof. He published a book, *Diet Prevents Polio*, in 1951.
 
 Nobody, and the medical establishment said so at the time. On August 8, 1948, Dr. James H. Cherry, president of the Buncombe County Medical Society and chief of staff of the Asheville Orthopedic Home, called it "ridiculous" in a statement on behalf of both institutions: "We feel Dr. Sandler's theory is absolutely without foundation. We do not feel that reducing the intake of soft drinks, pastries, and other sweets has been proved to have any effect on the immunity of the human body against polio."
 
-They were right, for a reason that makes the episode worse. Polio is seasonal, which is exactly why it tracked ice cream. And a severe epidemic year is followed by a mild one almost regardless of what anyone does, because most of the population that could be infected already has been. North Carolina's 91% drop is simply what a bad polio year followed by an ordinary one looks like. The sugar was irrelevant. The two numbers fell together because summer drives both, and 1948 was always going to be worse than 1949.
+They were right, for a reason that makes the episode worse. Polio is seasonal, which is exactly why it tracked ice cream. And a severe epidemic year is followed by a mild one almost regardless of what anyone does, because most of the population that could be infected already has been. North Carolina's 91% drop is simply what a bad polio year followed by an ordinary one looks like. The sugar was irrelevant. The 2 numbers fell together because summer drives both, and 1948 was always going to be worse than 1949.
 
 ## The bit continues
 

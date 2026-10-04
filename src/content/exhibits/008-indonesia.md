@@ -23,9 +23,9 @@ verdict:
   - key: "Rules broken"
     value: "none. Every number is correctly calculated under its own definition."
   - key: "Usefulness of the headline figure"
-    value: "it is precise, defensible, and fifty points wide."
+    value: "it is precise, defensible, and 50 points wide."
     long: true
-verdictNote: "Ireland published two economies because one number was useless. Indonesia has the opposite problem: five organisations measuring the same trees, each correct, producing a decline anywhere between 40% and 90%. Nobody has to lie when the definitions do it for them. Every analyst who has watched two dashboards report the same KPI and disagree already knows how this ends, and it ends with someone choosing which one to show."
+verdictNote: "Ireland published 2 economies because 1 number was useless. Indonesia has the opposite problem: 5 organisations measuring the same trees, each correct, producing a decline anywhere between 40% and 90%. Nobody has to lie when the definitions do it for them. Every analyst who has watched 2 dashboards report the same KPI and disagree already knows how this ends, and it ends with someone choosing which one to show."
 sources:
   - name: "Norwegian University of Life Sciences (NMBU)"
     text: "Centre for Land Tenure Studies report, Explaining the recent reduction of Indonesia's deforestation: the 40% to 90% range across datasets, the \"at least 50%\" robust estimate, and the finding that differing definitions create a wide range of figures open to selective use."
@@ -43,12 +43,12 @@ sources:
     text: "The 66% rise in 2025 deforestation, nickel mining as a driver, and Auriga Nusantara's statement that all datasets are valid under their own methodologies."
     url: "https://news.mongabay.com/2026/04/indonesias-deforestation-surges-66-in-2025-reversing-years-of-decline/"
     urlLabel: "news.mongabay.com"
-disclosure: "This entry was drafted with AI (Claude did the research sweeps and first draft). The editorial voice, the opinions, and any surviving errors are mine. Every figure was checked against the linked primary source before publishing. One thing this exhibit is not: a claim that Indonesia's deforestation decline is fake. Every independent dataset agrees the decline is real, and the most conservative credible estimate still puts it at half. The exhibit is about the gap between 40% and 90%, and about what it means that the gap is produced by definitions rather than by anyone being wrong."
+disclosure: "This entry was drafted with AI (Claude did the research sweeps and first draft). The editorial voice, the opinions, and any surviving errors are mine. Every figure was checked against the linked primary source before publishing. 1 thing this exhibit is not: a claim that Indonesia's deforestation decline is fake. Every independent dataset agrees the decline is real, and the most conservative credible estimate still puts it at half. The exhibit is about the gap between 40% and 90%, and about what it means that the gap is produced by definitions rather than by anyone being wrong."
 ---
 
 ## The incident
 
-Indonesian deforestation really did fall after 2015, and nobody serious disputes it. What varies is by how much, and the honest answer turns out to be a shrug of about fifty percentage points wide.
+Indonesian deforestation really did fall after 2015, and nobody serious disputes it. What varies is by how much, and the honest answer turns out to be a shrug of about 50 percentage points wide.
 
 The government's figure is 90%. Researchers at the Norwegian University of Life Sciences went looking for that number in the independent satellite datasets and found declines, but smaller ones: Global Forest Watch showed 69%. Across every dataset they examined, the measured reduction ranged from 40% to 90% depending entirely on which data you used and which years you compared. Their own robust estimate: deforestation has fallen by at least 50% since around 2016.
 

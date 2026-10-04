@@ -1,5 +1,5 @@
 ---
-title: "Thirty-one provinces, each doing slightly better than the whole"
+title: "31 provinces, each doing slightly better than the whole"
 exhibit: "003"
 country: "China"
 status: "officially fixed in 2019, informally an open question"
@@ -14,7 +14,7 @@ ledger:
   - label: "Sum of all 31 provincial GDPs"
     value: "72.5 trillion yuan"
   - label: "The gap"
-    value: "4.8 trillion yuan, or about one entire Jiangsu province"
+    value: "4.8 trillion yuan, or about 1 entire Jiangsu province"
     gap: true
 ledgerNote: "Jiangsu is China's second-largest provincial economy. The rounding error was bigger than a G20-sized region."
 verdict:
@@ -23,10 +23,10 @@ verdict:
   - key: "Rules broken"
     value: "provincial-national accounting consistency, for at least a decade."
   - key: "Usefulness of headline figure"
-    value: "improved considerably since 2019, and still worth checking against a proxy or two."
+    value: "improved considerably since 2019, and still worth checking against a proxy or 2."
     long: true
-verdictNote: "Ireland's exhibit was two honest numbers that couldn't agree. Argentina's was one official number that stopped matching reality. This one is thirty-one local governments independently deciding, in the same direction, that reality could wait until the promotion came through, and a national government that eventually took the calculator away from all of them at once."
-chartNote: "none. The series would need all 31 provincial totals and the national total drawn from one NBS vintage, and the NBS revises history; no single-vintage series has been verified. Splicing vintages would manufacture exactly the kind of number this museum collects"
+verdictNote: "Ireland's exhibit was 2 honest numbers that couldn't agree. Argentina's was 1 official number that stopped matching reality. This one is 31 local governments independently deciding, in the same direction, that reality could wait until the promotion came through, and a national government that eventually took the calculator away from all of them at once."
+chartNote: "none. The series would need all 31 provincial totals and the national total drawn from 1 NBS vintage, and the NBS revises history; no single-vintage series has been verified. Splicing vintages would manufacture exactly the kind of number this museum collects"
 sources:
   - name: "SinoInsider"
     text: "Risk Watch: two provinces admit to faking data: the 2015 figure, 67.7tn vs 72.5tn, the Jiangsu comparison."
@@ -55,11 +55,11 @@ The mechanism was well understood inside China before it was outside it. Provinc
 
 ## Who lied
 
-Liaoning did, on the record, and China's own institutions were the ones who said so. In January 2017, the province's governor stood in front of the provincial legislature and admitted that economic data from Liaoning's cities and counties had been falsified from 2011 to 2014. Fiscal revenue in one county was reported at 2.4 billion yuan for 2013; a national audit later corrected it to 1.1 billion. Some local figures were overstated by more than 100%.
+Liaoning did, on the record, and China's own institutions were the ones who said so. In January 2017, the province's governor stood in front of the provincial legislature and admitted that economic data from Liaoning's cities and counties had been falsified from 2011 to 2014. Fiscal revenue in 1 county was reported at 2.4 billion yuan for 2013; a national audit later corrected it to 1.1 billion. Some local figures were overstated by more than 100%.
 
 The consequences were real and are documented by China's own Communist Party disciplinary process: the province's former party secretary, who held the post while the fabrication occurred, was removed from every public position and expelled from the party. [Full case summary via Caixin Global.](https://www.caixinglobal.com/2017-01-18/liaoning-government-admits-false-growth-data-from-2011-14-101046468.html)
 
-Liaoning was not unique, it was just the one that confessed first. About a year later, in January 2018, Inner Mongolia admitted its 2016 industrial output had been overstated by 40%, and a district of Tianjin admitted its GDP was a third smaller than reported. The head of China's National Bureau of Statistics used the word "zero tolerance" in 2017 and announced the bureau had punished more than ten people in each of fifteen major fraud cases the year before.
+Liaoning was not unique, it was just the one that confessed first. About a year later, in January 2018, Inner Mongolia admitted its 2016 industrial output had been overstated by 40%, and a district of Tianjin admitted its GDP was a third smaller than reported. The head of China's National Bureau of Statistics used the word "zero tolerance" in 2017 and announced the bureau had punished more than 10 people in each of 15 major fraud cases the year before.
 
 ## The fix
 

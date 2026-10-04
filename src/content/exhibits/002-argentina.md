@@ -21,11 +21,11 @@ verdict:
   - key: "Fraud detected"
     value: "disputed by no one at this point, including Argentina's own later government."
   - key: "Rules broken"
-    value: "one IMF Article of Agreement, formally."
+    value: "1 IMF Article of Agreement, formally."
   - key: "Usefulness of headline figure"
     value: "the government being asked about it was fining people for publishing a different one."
     long: true
-verdictNote: "Ireland's exhibit was two correct answers that couldn't agree. This one is a single number that a private citizen went to prison-length trial over. Different failure mode, same underlying problem: the number on the dashboard and the number people actually lived through were never the same thing, and somebody had to decide which one counted."
+verdictNote: "Ireland's exhibit was 2 correct answers that couldn't agree. This one is a single number that a private citizen went to prison-length trial over. Different failure mode, same underlying problem: the number on the dashboard and the number people actually lived through were never the same thing, and somebody had to decide which one counted."
 sources:
   - name: "IMF"
     text: "Press Release 13/33: Statement by the IMF Executive Board on Argentina (Feb 1, 2013): the censure itself."
@@ -68,7 +68,7 @@ That is a serious accusation, but it came from the institution whose job is to m
 
 ## The fix, eventually
 
-Argentina didn't fix it under the government that built the problem. The remedial deadline came and went. INDEC kept reporting the lower official figure, the one the private estimates and provincial offices had been contradicting for years. The censure stayed on the books for three more years.
+Argentina didn't fix it under the government that built the problem. The remedial deadline came and went. INDEC kept reporting the lower official figure, the one the private estimates and provincial offices had been contradicting for years. The censure stayed on the books for 3 more years.
 
 A domestic reckoning arrived before the international one did. In 2013, a judge charged Moreno himself with abuse of power, over the fines and legal action he'd brought against economists who published independent inflation estimates, calling it "nothing other than an effort to silence" them.
 
