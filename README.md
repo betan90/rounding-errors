@@ -35,4 +35,5 @@ npm run preview   # preview the production build
 - [x] Exhibit 008 — Indonesia (deforestation, the baseline did the work)
 - [x] Exhibit 009 — Nigeria (GDP rebasing, the economy that doubled by arithmetic)
 - [x] Exhibit 010 — This museum (self-audit, the citations were somewhere else)
+- [x] Exhibit 011 — Greece (the 2009 deficit, published 4 times)
 - [ ] Revision tracker — the same official number, as reported over time

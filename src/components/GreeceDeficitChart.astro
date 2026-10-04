@@ -1,0 +1,115 @@
+---
+---
+
+<div class="chart-block">
+  <div class="legend">
+    <span><i class="swatch" style="background:var(--ink)"></i> Deficit as published, % of GDP</span>
+    <span><i class="swatch" style="background:var(--ink-soft)"></i> Where April 2010's reservation said it would land</span>
+    <span><i class="swatch" style="background:var(--red-line)"></i> Where it landed</span>
+  </div>
+  <figure>
+    <svg
+      id="chart"
+      viewBox="0 0 760 320"
+      role="img"
+      aria-label="Greece's 2009 government deficit as published on four dates, rising left to right. April 2009 plan: 3.7 percent of GDP, just above the 3 percent reference value. 21 October 2009 plan: 12.5 percent. Eurostat 22 April 2010 outturn: 13.6 percent. Eurostat 15 November 2010 outturn: 15.4 percent. A narrow shaded band at 13.9 to 14.1 percent marks the revision April's reservation predicted, 0.3 to 0.5 percentage points. The final figure sits well above that band."
+    ></svg>
+    <figcaption class="cap">The same year, published 4 times. The first 2 figures are plans for a year still running; the last 2 are outturns, 7 months apart, from the same office. The shaded sliver is where Eurostat's April 2010 reservation said the number would end up.</figcaption>
+  </figure>
+</div>
+
+<script is:inline>
+(function(){
+  // ---- DATA ----
+  // Greece, general government deficit, % of GDP, as published on each date.
+  //   3.7  planned, April 2009 EDP notification      [COM(2010) 1 final, 8 Jan 2010]
+  //   12.5 planned, 21 October 2009 notification     [COM(2010) 1 final]
+  //   13.6 outturn, Eurostat NR 55/2010, 22 Apr 2010 [Eurostat news release 55/2010]
+  //   15.4 outturn, Eurostat, 15 November 2010       [Eurostat news release 15 Nov 2010]
+  // April 2010's reservation estimated the pending revision at 0.3 to 0.5 points,
+  // i.e. a final figure of 13.9% to 14.1%. The actual move was 1.8 points.
+  var pts = [
+    { v: 3.7,  date: '  APR 2009', kind: 'PLAN',    plan: true  },
+    { v: 12.5, date: '21 OCT 2009', kind: 'PLAN',    plan: true  },
+    { v: 13.6, date: '22 APR 2010', kind: 'OUTTURN', plan: false },
+    { v: 15.4, date: '15 NOV 2010', kind: 'OUTTURN', plan: false }
+  ];
+  var bandLo = 13.9, bandHi = 14.1;   // 13.6 + 0.3 to 0.5
+  var refValue = 3;                   // EDP reference value
+
+  var INK='#17181A', SOFT='#5A5C55', RED='#C22B24', PAPER='#FBF9F4';
+  var MONO="'IBM Plex Mono',monospace";
+
+  var W=760, H=320, m={t:56,r:90,b:72,l:62};
+  var pw=W-m.l-m.r, ph=H-m.t-m.b;
+  var yMax=16;
+  function X(i){return m.l + i*(pw/(pts.length-1));}
+  function Y(v){return m.t + (1 - v/yMax)*ph;}
+
+  var svg=document.getElementById('chart');
+  var NS='http://www.w3.org/2000/svg';
+  function el(t,a){var e=document.createElementNS(NS,t);for(var k in a)e.setAttribute(k,a[k]);return e;}
+  function text(x,y,s,o){
+    o=o||{};
+    var e=el('text',{x:x,y:y,'text-anchor':o.anchor||'start','font-family':MONO,
+                     'font-size':o.size||11,fill:o.fill||SOFT});
+    if(o.weight) e.setAttribute('font-weight',o.weight);
+    if(o.spacing) e.setAttribute('letter-spacing',o.spacing);
+    e.textContent=s; svg.appendChild(e); return e;
+  }
+
+  // ---- y gridlines ----
+  var ticks=[0,5,10,15];
+  for(var i=0;i<ticks.length;i++){
+    var ty=Y(ticks[i]);
+    svg.appendChild(el('line',{x1:m.l,y1:ty,x2:W-m.r,y2:ty,stroke:SOFT,'stroke-width':1,
+                               'stroke-opacity':ticks[i]===0?0.55:0.14}));
+    text(m.l-10,ty+4,ticks[i]+'%',{anchor:'end'});
+  }
+
+  // ---- 3% reference value ----
+  var yr=Y(refValue);
+  svg.appendChild(el('line',{x1:m.l,y1:yr,x2:W-m.r,y2:yr,stroke:SOFT,'stroke-width':1,
+                             'stroke-dasharray':'5,4','stroke-opacity':0.8}));
+  text(W-m.r-4,yr+16,'3% REFERENCE VALUE',{anchor:'end',size:10,spacing:'0.06em'});
+
+  // ---- predicted landing band, 13.9% to 14.1% ----
+  svg.appendChild(el('rect',{x:m.l,y:Y(bandHi),width:pw,height:Y(bandLo)-Y(bandHi),
+                             fill:SOFT,'fill-opacity':0.55}));
+  text(m.l+6,Y(bandHi)-9,'SUPPOSED TO LAND AT 13.9% TO 14.1%',{size:10,spacing:'0.06em',fill:SOFT});
+
+  // ---- the published path ----
+  for(var i=0;i<pts.length-1;i++){
+    var seg=el('line',{x1:X(i),y1:Y(pts[i].v),x2:X(i+1),y2:Y(pts[i+1].v),
+                       stroke:INK,'stroke-width':2});
+    // the leg into the final figure is the one that broke the band
+    if(i===pts.length-2) seg.setAttribute('stroke',RED);
+    svg.appendChild(seg);
+  }
+
+  // ---- markers and labels ----
+  var labelBelow=[false,true,true,false];
+  for(var i=0;i<pts.length;i++){
+    var p=pts[i], x=X(i), y=Y(p.v);
+    var last=(i===pts.length-1);
+    var col=last?RED:INK;
+
+    // hollow marker for a plan, filled for an outturn
+    svg.appendChild(el('circle',{cx:x,cy:y,r:6,fill:p.plan?PAPER:col,
+                                 stroke:col,'stroke-width':2.5}));
+
+    var ly=labelBelow[i] ? y+24 : y-14;
+    text(x,ly,p.v+'%',{anchor:'middle',size:15,weight:700,fill:col});
+
+    // x axis labels
+    text(x,H-m.b+22,p.date,{anchor:'middle',size:10.5});
+    text(x,H-m.b+37,p.kind,{anchor:'middle',size:9.5,spacing:'0.08em',
+                            fill:p.plan?SOFT:INK,weight:p.plan?400:700});
+  }
+
+  // baseline
+  svg.appendChild(el('line',{x1:m.l,y1:Y(0),x2:W-m.r,y2:Y(0),stroke:SOFT,'stroke-width':1}));
+  text((m.l+W-m.r)/2,H-m.b+56,'GREECE, GENERAL GOVERNMENT DEFICIT FOR 2009, AS PUBLISHED',
+       {anchor:'middle',size:10.5,spacing:'0.06em'});
+})();
+</script>

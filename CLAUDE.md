@@ -51,7 +51,7 @@ Chart wiring is not a frontmatter field. Each exhibit's chart component (e.g. `s
 
 ## Category vocabulary (do not blur)
 
-Structural categories describe the gap's shape: "nobody lied" (001, reused by 009), "the IMF's only censure" (002), "the parts exceeded the whole" (003), "the summer did it" (004), "the evidence was a highlight reel" (005), "indistinguishable from nothing" (006), "parroting" (007, drawn from the taxonomy below), "the baseline did the work" (008). Reuse is allowed when the shape genuinely repeats, and a taxonomy item may serve as a category when the evidence failure is the shape.
+Structural categories describe the gap's shape: "nobody lied" (001, reused by 009), "the IMF's only censure" (002), "the parts exceeded the whole" (003), "the summer did it" (004), "the evidence was a highlight reel" (005), "indistinguishable from nothing" (006), "parroting" (007, drawn from the taxonomy below), "the baseline did the work" (008), "the citations were somewhere else" (010), "the correction needed a correction" (011). Reuse is allowed when the shape genuinely repeats, and a taxonomy item may serve as a category when the evidence failure is the shape.
 
 Evidence-failure taxonomy. Diagnostic: go looking for the source and see what you find.
 1. trust me, bro: no source was ever offered; pure confident assertion.
@@ -65,7 +65,7 @@ Cross-cutting threads: correlation-someone-believed, outlived-the-evidence, meas
 Domain tags: healthcare, crime, education, epidemiology, gdp, national-accounts, inflation, imf, provincial-data, environment.
 Region tags: europe, asia, latin-america, africa.
 Meta tags: self-audit (010, the only exhibit whose subject is this site).
-Country is its own frontmatter field and is never a tag. This list is the live vocabulary as of exhibit 010; before inventing a tag, check what the existing exhibits actually use (`grep "^tags:" src/content/exhibits/*.md`), because a near-duplicate of a live tag (eu next to europe) is worse than no tag.
+Country is its own frontmatter field and is never a tag. This list is the live vocabulary as of exhibit 011; before inventing a tag, check what the existing exhibits actually use (`grep "^tags:" src/content/exhibits/*.md`), because a near-duplicate of a live tag (eu next to europe) is worse than no tag.
 
 ## Notes and the review pipeline
 
