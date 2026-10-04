@@ -15,6 +15,20 @@ export interface Correction {
 
 export const corrections: Correction[] = [
   {
+    exhibit: '011',
+    dateCorrected: new Date('2026-10-04'),
+    whatItSaid:
+      "Two claims had no backing in the exhibit's own source list. The body said '1999, the year assessed against the 3% reference value for euro entry, became 3.4% instead of 1.8%', and the verdict scoreboard said 'the 1999 figure that cleared the 3% reference value for euro entry was restated at 3.4%, 5 years after the decision it supported.' The body also introduced Andreas Georgiou as 'a 20-year IMF official'. Separately, the ledger's 3.7% to 15.4% staircase sat beside a Fraud detected row reading 'deliberate misreporting' with no mention of the other causes the cited report gives.",
+    whatWasWrong:
+      "None of the 5 listed sources mentions euro entry, the convergence assessment, or which year it was assessed on; the November 2004 Eurostat report discusses the deficit reference value only generically. The claim is true as history and was not checked against the list before publishing. The 20-year IMF tenure is likewise absent from the International Statistical Institute chronology that is cited for Georgiou, and reached the draft from secondary news coverage surfaced during search. The omission was worse than either: COM(2010) 1 final attributes the 2009 revision to 'the impact of the economic crisis, budgetary slippages in an electoral year and accounting decisions', so presenting the full 11.7-point move next to a fraud finding invited a reading the cited source does not support.",
+    howItGotHere:
+      "The exhibit was published without the fact-check pass CLAUDE.md requires for every exhibit. The pass was skipped on the reasoning that the project-scoped fact-checker agent was not loaded in the working directory, which was true and was not a good reason: the agent definition could have been read and its criteria applied directly, which is what eventually happened. Exhibit 010, published the same day, is specifically about this failure mode, and counted 8 instances of a true figure cited to nothing in its own source list.",
+    whatItSaysNow:
+      "The body states only the restatement and the threshold, both traceable: '1999 became 3.4% instead of 1.8%, which moved it from inside the Treaty protocol's 3% deficit reference value to outside it', with the 3% figure now resting on the November 2004 report's own sentence specifying the protocol's reference values. The verdict row makes the same narrowed claim. Georgiou is introduced without the IMF tenure, and the IMF connection survives only inside the quoted felony charge, where it is sourced. The incident section now carries the Commission's stated causes for the 2009 revision. A closing sentence asserting that 'No court found the number wrong' was also narrowed to the acquittal that is actually on the record.",
+    caughtBy:
+      'The fact-check pass, run inline after the reader asked why exhibit 011 did not have one. Criterion 1 (FIGURES) caught both untraceable claims, criterion 7 (hostile read) caught the omission. The pass was not independent, since it was run by the session that wrote the exhibit; the DeepSeek second opinion, which sees only claim and passage, independently returned NOT SUPPORTED on all 3 findings, and flagged the closing sentence that was then narrowed. Archived at reports/011-greece/.',
+  },
+  {
     exhibit: '006',
     dateCorrected: new Date('2026-07-25'),
     whatItSaid:

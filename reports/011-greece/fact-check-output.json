@@ -1,0 +1,239 @@
+{
+  "exhibit": "011",
+  "checkedAt": "2026-10-04T10:05:00Z",
+  "independence": "NOT INDEPENDENT. The fact-checker agent definition requires a checker who did not write the exhibit. This pass was run inline by the same session that drafted it, because the project-scoped agents were not loaded in the working directory. Treat the DeepSeek second opinion as the only independent read on this run.",
+  "claims": [
+    {
+      "id": 1,
+      "claim": "2009 planned deficit notified at 3.7% of GDP in April 2009, revised to 12.5% on 21 October 2009",
+      "source": "European Commission, COM(2010) 1 final, 8 January 2010",
+      "passage": "the Greek authorities also revised the planned deficit ratio for 2009 from 3.7% of GDP (the figure reported in spring) to 12.5% of GDP",
+      "verdict": "SUPPORTED",
+      "notes": "Both ledger rows confirmed verbatim in locally extracted text of the Commission report; note the source calls both figures planned, which the ledger labels match."
+    },
+    {
+      "id": 2,
+      "claim": "2008 deficit revised from 5.0% of GDP, already published and validated by Eurostat in April 2009, to 7.7%",
+      "source": "European Commission, COM(2010) 1 final",
+      "passage": "In the 21 October notification, the Greek government deficit for 2008 was revised from 5.0% of GDP (the ratio reported by Greece, and published and validated by Eurostat in April 2009) to 7.7% of GDP.",
+      "verdict": "SUPPORTED",
+      "notes": "Verbatim match including the validation detail the ledgerNote relies on."
+    },
+    {
+      "id": 3,
+      "claim": "Greece notified twice in October 2009, on 2 October and 21 October",
+      "source": "European Commission, COM(2010) 1 final",
+      "passage": "the Greek authorities reported twice in October: on 2 October and 21 October, with data in the second notification including a significant revision.",
+      "verdict": "SUPPORTED",
+      "notes": "Verbatim."
+    },
+    {
+      "id": 4,
+      "claim": "The Commission attributes the 2009 revision to the economic crisis, budgetary slippages in an electoral year, and accounting decisions",
+      "source": "European Commission, COM(2010) 1 final",
+      "passage": "reflecting a number of factors (the impact of the economic crisis, budgetary slippages in an electoral year and accounting decisions)",
+      "verdict": "SUPPORTED",
+      "notes": "Added during this pass. Its absence was the hostile-read finding: see claim 21."
+    },
+    {
+      "id": 5,
+      "claim": "Eurostat News Release 55/2010, 22 April 2010, put Greece's 2009 deficit at 13.6% of GDP",
+      "source": "Eurostat News Release 55/2010",
+      "passage": "In 2009 the largest government deficits in percentage of GDP were recorded by Ireland (-14.3%), Greece (-13.6%)",
+      "verdict": "SUPPORTED",
+      "notes": "Release number and date confirmed on the document header, 55/2010 - 22 April 2010."
+    },
+    {
+      "id": 6,
+      "claim": "April 2010 debt figure 115.1% of GDP",
+      "source": "Eurostat News Release 55/2010",
+      "passage": "Member States had government debt ratios higher than 60% of GDP in 2009: Italy (115.8%), Greece (115.1%),",
+      "verdict": "SUPPORTED",
+      "notes": "Verbatim; supports the ledgerNote debt comparison."
+    },
+    {
+      "id": 7,
+      "claim": "The April 2010 reservation named social security funds, the classification of some public entities, and off-market swaps",
+      "source": "Eurostat News Release 55/2010",
+      "passage": "Eurostat is expressing a reservation on the quality of the data reported by Greece, due to uncertainties on the surplus of social security funds for 2009, on the classification of some public entities and on the recording of off-market swaps.",
+      "verdict": "SUPPORTED",
+      "notes": "Verbatim. An earlier automated summary of a different release had paraphrased a reservation into wording that does not appear in any source; that paraphrase was discarded and never used."
+    },
+    {
+      "id": 8,
+      "claim": "The reservation estimated the pending revision at 0.3 to 0.5 percentage points for the deficit and 5 to 7 for the debt",
+      "source": "Eurostat News Release 55/2010",
+      "passage": "this could lead to a revision for the year 2009 of the order of 0.3 to 0.5 percentage points of GDP for the deficit and 5 to 7 percentage points of GDP for the debt.",
+      "verdict": "SUPPORTED",
+      "notes": "Verbatim. This is the exhibit's central beat and the chart's shaded band."
+    },
+    {
+      "id": 9,
+      "claim": "Eurostat's 15 November 2010 release put the 2009 deficit at 15.4% and debt at 126.8% of GDP",
+      "source": "Eurostat News Release, 15 November 2010",
+      "passage": "In 2009 the largest government deficits in percentage of GDP were recorded in Greece (-15.4%), Ireland (-14.4%),",
+      "verdict": "SUPPORTED",
+      "notes": "Deficit verbatim; debt confirmed separately at \"Greece (126.8%)\" in the debt paragraph of the same release."
+    },
+    {
+      "id": 10,
+      "claim": "The reservation was lifted in November 2010 after a series of EDP methodological visits",
+      "source": "Eurostat News Release, 15 November 2010",
+      "passage": "Eurostat is lifting the reservation on Greek data expressed in its News Release 55/2010 of 22 April 2010. Eurostat and the Hellenic Statistical Authority have addressed all of the issues identified in the last reservation during a series of EDP methodological visits.",
+      "verdict": "SUPPORTED",
+      "notes": "Verbatim."
+    },
+    {
+      "id": 11,
+      "claim": "The deficit moved 1.8 percentage points and the debt 11.7 between the April and November 2010 releases",
+      "source": "Eurostat News Releases 55/2010 and 15 November 2010",
+      "passage": "Greece (-13.6%) ... Greece (115.1%) / Greece (-15.4%) ... Greece (126.8%)",
+      "verdict": "SUPPORTED",
+      "notes": "Arithmetic on the two fetched releases: 15.4 minus 13.6 is 1.8; 126.8 minus 115.1 is 11.7. Both exceed the April estimate of 0.3 to 0.5 and 5 to 7 respectively."
+    },
+    {
+      "id": 12,
+      "claim": "The Commission's report records specific filings as cases of deliberate misreporting by the General Accounting Office and by the statistical service, and names the notifications",
+      "source": "European Commission, COM(2010) 1 final",
+      "passage": "This is to be considered as a case of deliberate misreporting of figures by the GAO in the April and 2[009 October notifications] ... This is to be considered as a case of deliberate misreporting of figures by the NSSG in the 2 October",
+      "verdict": "SUPPORTED",
+      "notes": "The sentence recurs at five separate findings in the report, attributed to the GAO in three, to the NSSG in one, and to the 2007, 2008 and 2009 notifications in another; each names its notification, which is what the verdict row claims."
+    },
+    {
+      "id": 13,
+      "claim": "The report concludes the framework cannot prevent deliberate misreporting",
+      "source": "European Commission, COM(2010) 1 final",
+      "passage": "it cannot prevent deliberate misreporting of data",
+      "verdict": "SUPPORTED",
+      "notes": "Verbatim, in section 5 Conclusions, supporting the verdictNote's claim that the concession is the report's own."
+    },
+    {
+      "id": 14,
+      "claim": "A November 2004 Eurostat report restated the figures for the years preceding 2004, involving no less than 11 separate issues",
+      "source": "European Commission, COM(2010) 1 final",
+      "passage": "in November 2004 a Report on the revision of Greek government deficit and debt figures was released by Eurostat, which showed that figures had been misreported in the years preceding 2004 involving no less than 11 separate issues.",
+      "verdict": "SUPPORTED",
+      "notes": "Verbatim; the quoted fragment in the body matches."
+    },
+    {
+      "id": 15,
+      "claim": "Eurostat expressed reservations on Greek data on five occasions between 2005 and 2009",
+      "source": "European Commission, COM(2010) 1 final",
+      "passage": "On five occasions between 2005 and 2009 Eurostat expressed reservations on the Greek data in the biannual press release on deficit and debt data.",
+      "verdict": "SUPPORTED",
+      "notes": "Verbatim."
+    },
+    {
+      "id": 16,
+      "claim": "When Greek data was published without reservations, that was usually the result of Eurostat intervening first, with the result of increasing the notified deficit",
+      "source": "European Commission, COM(2010) 1 final",
+      "passage": "When the Greek EDP data have been published without reservations, this has been the result of Eurostat interventions before or during the notification period in order to correct mistakes or inappropriate recording, with the result of increasing the notified deficit.",
+      "verdict": "SUPPORTED",
+      "notes": "Verbatim from the conclusions. The body hedges with \"usually\", which is weaker than the source's unqualified phrasing, so the exhibit understates rather than overstates."
+    },
+    {
+      "id": 17,
+      "claim": "1997 restated to 6.6% of GDP instead of 4.0%, 1998 to 4.3% instead of 2.5%, 1999 to 3.4% instead of 1.8%",
+      "source": "Eurostat, Report on the revision of the Greek government deficit and debt figures, November 2004",
+      "passage": "1997: 6,6 % of GDP instead of 4,0 %; 1998: 4,3 % of GDP instead of 2,5 %; 1999: 3,4 % of GDP instead of 1,8 %",
+      "verdict": "SUPPORTED",
+      "notes": "Verbatim, with comma decimal separators in the original."
+    },
+    {
+      "id": 18,
+      "claim": "The Treaty protocol sets a 3% deficit reference value",
+      "source": "Eurostat, November 2004 report",
+      "passage": "The reference values are specified in the protocol on the excessive deficit procedure, annexed to the Treaty (3% for the deficit and 60% for the debt).",
+      "verdict": "SUPPORTED",
+      "notes": "Confirms the 3% threshold is traceable to a listed source, which the replacement wording for claim 20 relies on."
+    },
+    {
+      "id": 19,
+      "claim": "ELSTAT was created as an independent authority by a 2010 law and Andreas Georgiou was appointed its president in August 2010; Eurostat validated every subsequent Greek submission for 9 years",
+      "source": "International Statistical Institute, Background and chronology of court proceedings against Andreas Georgiou",
+      "passage": "August 2010: Appointed President of ELSTAT under Hellenic Statistical Law 3832 ... in November 2010 Eurostat published the statistics lifting all reservations on them - something it has continued to do in respect of all subsequent annual EDP submissions over the following nine years.",
+      "verdict": "SUPPORTED",
+      "notes": "Appointment, statute and the 9-year validation run all confirmed."
+    },
+    {
+      "id": 20,
+      "claim": "[FINDING, FIXED] 1999 was \"the year assessed against the 3% reference value for euro entry\" and the restatement came \"5 years after the decision it supported\"",
+      "source": "not backed by any source in the exhibit's list",
+      "passage": "",
+      "verdict": "NOT SUPPORTED",
+      "notes": "BLOCKING under criterion 1. The claim is true as history, but no listed source mentions euro entry, the convergence assessment, or which year it used; the 2004 report discusses the reference value only generically. Council Decision 2000/427/EC would have supported it, but EUR-Lex returned empty content to the fetcher on three attempts in HTML and PDF, so per CLAUDE.md the claim was cut rather than cited to a source that was never retrieved. Body and verdict row now assert only the restatement and the 3% threshold, both traceable to claims 17 and 18."
+    },
+    {
+      "id": 21,
+      "claim": "[FINDING, FIXED] The ledger's 3.7% to 15.4% staircase presented alongside \"deliberate misreporting\" with no mention of the Commission's other stated causes",
+      "source": "European Commission, COM(2010) 1 final",
+      "passage": "reflecting a number of factors (the impact of the economic crisis, budgetary slippages in an electoral year and accounting decisions)",
+      "verdict": "NOT SUPPORTED",
+      "notes": "BLOCKING under criterion 7, hostile read. A screenshot of the ledger next to the Fraud detected row implied the entire 11.7-point move was fraud, when the cited source attributes the 2009 revision partly to a real recession and to electoral-year slippage. The exhibit now states those causes in The incident. The two outturn revisions, 13.6% to 15.4%, remain unexplained by crisis effects and are what the exhibit's argument actually rests on."
+    },
+    {
+      "id": 22,
+      "claim": "[FINDING, FIXED] Georgiou described as \"a 20-year IMF official\"",
+      "source": "not backed by any source in the exhibit's list",
+      "passage": "",
+      "verdict": "NOT SUPPORTED",
+      "notes": "BLOCKING under criterion 1. The ISI chronology confirms the ELSTAT appointment and term but says nothing about a 20-year IMF tenure; that detail reached the draft from secondary news coverage surfaced during search and never entered the sources list. Removed. The IMF connection survives where it is sourced, inside the quoted felony charge."
+    },
+    {
+      "id": 23,
+      "claim": "The felony charge alleged the defendants conspired with Eurostat and the IMF to artificially inflate the deficit, with damage put at EUR 171 billion and later over EUR 200 billion",
+      "source": "International Statistical Institute chronology",
+      "passage": "conspired among themselves, and with international agencies (i.e. Eurostat and the IMF), to artificially inflate the public deficit figures ... EUR 171 billion ... over 200 billion euro",
+      "verdict": "SUPPORTED",
+      "notes": "Quoted charge verbatim; both damage figures appear, the second as a later amendment."
+    },
+    {
+      "id": 24,
+      "claim": "Prosecutors spent 8 years on the case: investigation opened 2011, closed April 2019 with full acquittal",
+      "source": "International Statistical Institute chronology",
+      "passage": "September 2011: Investigation initiated by Prosecutor of Economic Crimes ... the case is formally deemed to be closed with the full acquittal of the defendants",
+      "verdict": "SUPPORTED",
+      "notes": "September 2011 to April 2019 is 7 years 7 months, which the body rounds to 8 years; the chronology also records charges first pressed in January 2013, so the 8-year figure is the generous reading of the longer span and is stated as the duration of the prosecution, not of a trial."
+    },
+    {
+      "id": 25,
+      "claim": "In August 2017 an appeals court convicted him of not putting the 2009 figures to ELSTAT's board for approval, with a 2-year suspended sentence, made irreversible by the Supreme Court in June 2018",
+      "source": "International Statistical Institute chronology",
+      "passage": "The Court, however, convicted him on the third count of not putting up the 2009 EDP figures for approval by the former ELSTAT Board and imposed a two-year suspended prison sentence. ... This decision by the Supreme Court rendered the conviction and prison sentence irreversible.",
+      "verdict": "SUPPORTED",
+      "notes": "Both the count and the sentence verbatim; the body's characterisation of it as procedural matches the count as described."
+    },
+    {
+      "id": 26,
+      "claim": "No court found the number wrong, and Eurostat has never withdrawn it",
+      "source": "International Statistical Institute chronology; Eurostat News Release 15 November 2010",
+      "passage": "the case is formally deemed to be closed with the full acquittal of the defendants ... something it has continued to do in respect of all subsequent annual EDP submissions over the following nine years",
+      "verdict": "PARTIALLY SUPPORTED",
+      "notes": "[FINDING, FIXED] An absence claim. The record shows acquittal on the charge of inflating the figures and a conviction confined to procedure, and Eurostat's continued validation is documented, but no source affirmatively states that no court assessed the figure's accuracy. The DeepSeek second opinion independently returned NOT SUPPORTED on the same sentence. The body now reads \"The charge that the figures had been inflated ended in acquittal, and Eurostat has never withdrawn them\", which claims only what the record carries."
+    },
+    {
+      "id": 27,
+      "claim": "Criterion 2, SOURCING: no source in the list is Wikipedia under any name or text field",
+      "source": "src/content/exhibits/011-greece.md",
+      "passage": "",
+      "verdict": "SUPPORTED",
+      "notes": "Grep for wikipedia and wikimedia across the file returns nothing. All 5 sources are institutional primaries: 3 Eurostat releases or reports, 1 European Commission report, 1 International Statistical Institute chronology."
+    },
+    {
+      "id": 28,
+      "claim": "Criterion 3, ATTRIBUTION: the narrator never accuses, and the named individual has a paper trail",
+      "source": "src/content/exhibits/011-greece.md",
+      "passage": "",
+      "verdict": "SUPPORTED",
+      "notes": "Every misreporting characterisation is quoted and attributed to the Commission, and the disclosure states so explicitly. Georgiou is named only against court outcomes compiled by the ISI, and the exhibit asserts nothing about his intent. The felony allegation is reported as a charge, not as fact, and its acquittal is stated."
+    },
+    {
+      "id": 29,
+      "claim": "Criterion 5, VOICE: no em dashes, body under 500 words",
+      "source": "src/content/exhibits/011-greece.md",
+      "passage": "",
+      "verdict": "SUPPORTED",
+      "notes": "Zero em dashes. Body 488 words after this pass, down from 500 at its peak during the fixes. Numerals rule holds; the only remaining spelled numbers are pronouns."
+    }
+  ]
+}

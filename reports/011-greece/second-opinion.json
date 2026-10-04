@@ -1,0 +1,152 @@
+{
+  "exhibit": "011",
+  "reviewedAt": "2026-10-04T10:02:16.571Z",
+  "model": "deepseek-chat",
+  "claims": [
+    {
+      "id": 1,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states the 2009 planned deficit ratio was revised from 3.7% of GDP (reported in spring) to 12.5% of GDP, matching the claim's figures and timing."
+    },
+    {
+      "id": 2,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states the 2008 deficit was revised from 5.0% of GDP, which was reported by Greece and published and validated by Eurostat in April 2009, to 7.7% of GDP, matching the claim."
+    },
+    {
+      "id": 3,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states the Greek authorities reported twice in October, on 2 October and 21 October, matching the claim."
+    },
+    {
+      "id": 4,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage lists the same three factors—economic crisis, budgetary slippages in an electoral year, and accounting decisions—as the reasons reflected in the revision."
+    },
+    {
+      "id": 5,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states Greece's 2009 government deficit was -13.6% of GDP, matching the claim's figure."
+    },
+    {
+      "id": 6,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage attributes 115.1% to Greece in 2009, not to April 2010 or to the claimed figure."
+    },
+    {
+      "id": 7,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage attributes the reservation to Eurostat regarding Greek data quality, not to an April 2010 reservation, and does not mention April 2010."
+    },
+    {
+      "id": 8,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states the revision for 2009 is of the order of 0.3 to 0.5 percentage points of GDP for the deficit and 5 to 7 percentage points of GDP for the debt, matching the claim's figures."
+    },
+    {
+      "id": 9,
+      "verdict": "PARTIALLY SUPPORTED",
+      "reasoning": "The passage confirms the 15.4% deficit figure for Greece in 2009 but does not mention Eurostat's 15 November 2010 release or the 126.8% debt-to-GDP figure."
+    },
+    {
+      "id": 10,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage says Eurostat is lifting the reservation and mentions EDP methodological visits, but it does not state the reservation was lifted in November 2010."
+    },
+    {
+      "id": 11,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage shows Greece's deficit changing from -13.6% to -15.4% (a 1.8 percentage point move) and debt from 115.1% to 126.8% (an 11.7 point move) between the two releases."
+    },
+    {
+      "id": 12,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage explicitly records specific filings (April and October notifications) as cases of deliberate misreporting by the GAO and by the NSSG (statistical service), naming the notifications."
+    },
+    {
+      "id": 13,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage directly states that \"it cannot prevent deliberate misreporting of data,\" which matches the claim that the framework cannot prevent deliberate misreporting."
+    },
+    {
+      "id": 14,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states that a November 2004 Eurostat report showed figures were misreported in years preceding 2004 involving no less than 11 separate issues, matching the claim."
+    },
+    {
+      "id": 15,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states exactly that Eurostat expressed reservations on Greek data on five occasions between 2005 and 2009."
+    },
+    {
+      "id": 16,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states that publishing Greek EDP data without reservations resulted from Eurostat interventions that increased the notified deficit, matching the claim."
+    },
+    {
+      "id": 17,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage lists exactly the same years and percentage figures as the claim, using commas instead of decimal points."
+    },
+    {
+      "id": 18,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states the protocol annexed to the Treaty specifies a 3% reference value for the deficit."
+    },
+    {
+      "id": 19,
+      "verdict": "PARTIALLY SUPPORTED",
+      "reasoning": "The passage confirms Georgiou's August 2010 appointment and Eurostat's validation of subsequent submissions for nine years, but it does not state that ELSTAT was created as an independent authority by a 2010 law."
+    },
+    {
+      "id": 20,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "No passage was provided, so there is no text to support the claim."
+    },
+    {
+      "id": 21,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage mentions multiple causes for the figures but does not reference a 3.7% to 15.4% staircase, \"deliberate misreporting,\" or the Commission's other stated causes."
+    },
+    {
+      "id": 22,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "No passage was provided, so there is no text to support the claim."
+    },
+    {
+      "id": 23,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states the defendants conspired with Eurostat and the IMF to artificially inflate the deficit, with figures of EUR 171 billion and over 200 billion euro mentioned."
+    },
+    {
+      "id": 24,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states the investigation was initiated in September 2011 and formally closed with full acquittal of the defendants, matching the claim's timeline and outcome."
+    },
+    {
+      "id": 25,
+      "verdict": "PARTIALLY SUPPORTED",
+      "reasoning": "The passage confirms the conviction, two-year suspended sentence, and Supreme Court irreversibility, but does not specify the August 2017 date or June 2018 timing."
+    },
+    {
+      "id": 26,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage mentions acquittal and continued submissions but never states that no court found the number wrong or that Eurostat never withdrew it."
+    },
+    {
+      "id": 27,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "No passage was provided, so there is no text to support the claim."
+    },
+    {
+      "id": 28,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "No passage was provided, so there is no text to support the claim."
+    },
+    {
+      "id": 29,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "No passage was provided, so there is no text to support the claim."
+    }
+  ]
+}

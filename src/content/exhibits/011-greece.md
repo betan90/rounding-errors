@@ -27,7 +27,7 @@ verdict:
     value: "ESA 95 recording rules, repeatedly, across 11 separate issues in the years to 2003 and 5 Eurostat reservations between 2005 and 2009."
     long: true
   - key: "Usefulness of the headline figure"
-    value: "the 1999 figure that cleared the 3% reference value for euro entry was restated at 3.4%, 5 years after the decision it supported."
+    value: "1999 was reported at 1.8% of GDP and restated at 3.4%, which moved it from inside the Treaty's 3% reference value to outside it, 5 years later."
     long: true
 verdictNote: "Every other exhibit here ends with an institution declining to say what went wrong. This one ends with the Commission writing it down: 11 separate issues to 2003, 5 reservations to 2009, and specific filings recorded as deliberate misreporting. The framework worked exactly as designed and could not prevent any of it, which the report concedes in its own conclusions. Then the correction got corrected, because Eurostat's estimate of how wrong the number still was came in at 0.3 to 0.5 points and the answer was 1.8. The last number is the one nobody has had to revise. The office that produced it spent the next 8 years answering a charge of having made the deficit too large, and its president came out of that with a conviction for not circulating the figures to a board first."
 sources:
@@ -52,13 +52,14 @@ sources:
     url: "https://isi-web.org/statement/background-and-chronology-court-proceedings-against-andreas-georgiou"
     urlLabel: "isi-web.org"
 disclosure: "This entry was drafted with AI (Claude did the research sweeps and first draft). The editorial voice, the opinions, and any surviving errors are mine. Every figure was checked against the linked primary source before publishing. The 4 EU documents are PDFs that return unreadable binary to automated fetchers, so each was downloaded and converted to text locally and read directly, rather than taken from a summary or from press coverage of it. On attribution: the words deliberate misreporting are the European Commission's, quoted from its own report, and the characterisation is its own, not this site's. The court outcomes are the record of the Greek courts as compiled by the International Statistical Institute. No figure here rests on any claim about what anyone intended."
+correctionNote: "This exhibit was corrected on 2026-10-04, hours after publishing, when the fact-check pass it should have had first was finally run. Details on the corrections page."
 ---
 
 ## The incident
 
-In April 2009 Greece notified the European Commission that its deficit for the year would be 3.7% of GDP. In October it notified twice, on 2 October and again on 21 October. The second filing put 2009 at 12.5%. It also revised 2008 up to 7.7%, from a 5.0% that Eurostat had published and validated 6 months earlier.
+In April 2009 Greece notified the European Commission that its deficit for the year would be 3.7% of GDP. In October it notified twice, on 2 October and again on 21 October. The second filing put 2009 at 12.5%. The Commission attributes that move to the economic crisis, budgetary slippages in an electoral year, and accounting decisions. The same filing revised 2008 up to 7.7%, from a 5.0% that Eurostat had published and validated 6 months earlier.
 
-Eurostat published its own outturn in April 2010: 13.6%, with a reservation attached naming social security funds, the classification of some public entities, and off-market swaps. The reservation estimated that finishing those investigations could move the deficit by 0.3 to 0.5 percentage points and the debt by 5 to 7.
+Eurostat published its own outturn in April 2010: 13.6%, with a reservation naming social security funds, the classification of some public entities, and off-market swaps. The reservation estimated that finishing those investigations could move the deficit by 0.3 to 0.5 percentage points and the debt by 5 to 7.
 
 In November 2010 it published 15.4% and lifted the reservation. The deficit had moved 1.8 points and the debt 11.7.
 
@@ -66,14 +67,14 @@ In November 2010 it published 15.4% and lifted the reservation. The deficit had 
 
 Unusually for this museum, the answer is written down. The Commission's January 2010 report records specific filings as "a case of deliberate misreporting of figures", attributing them to the General Accounting Office and to the national statistical service, and names the notifications in which each occurred.
 
-It was also not new. A Eurostat report from November 2004 had already restated the deficit for the years to 2003, "involving no less than 11 separate issues". 1997 became 6.6% of GDP instead of 4.0%. 1998 became 4.3% instead of 2.5%. 1999, the year assessed against the 3% reference value for euro entry, became 3.4% instead of 1.8%.
+It was also not new. A Eurostat report from November 2004 had already restated the deficit for the years to 2003, "involving no less than 11 separate issues". 1997 became 6.6% of GDP instead of 4.0%. 1998 became 4.3% instead of 2.5%. 1999 became 3.4% instead of 1.8%, which moved it from inside the Treaty protocol's 3% deficit reference value to outside it.
 
 Between 2005 and 2009 Eurostat attached reservations to Greek data 5 times. The report adds that when the data went out without one, that was usually because Eurostat had intervened first, "with the result of increasing the notified deficit."
 
 ## The fix
 
-Greece rebuilt the office. A 2010 law made the statistical service an independent authority, ELSTAT, and in August 2010 appointed Andreas Georgiou, a 20-year IMF official, as its president. The 15.4% in the table above is the figure his office produced. Eurostat examined it, lifted the last reservation that November, and validated every Greek submission for the next 9 years.
+Greece rebuilt the office. A 2010 law made the statistical service an independent authority, ELSTAT, and in August 2010 appointed Andreas Georgiou as its president. The 15.4% in the table above is the figure his office produced. Eurostat examined it, lifted the last reservation that November, and validated every Greek submission for the next 9 years.
 
 Greek prosecutors then spent 8 years on the opposite theory: that the deficit had been made too large, not too small. An investigation opened in 2011. The felony charge was that the defendants "conspired among themselves, and with international agencies (i.e. Eurostat and the IMF), to artificially inflate the public deficit figures", with damage to the state put at €171 billion and later over €200 billion. The case was filed, dismissed, revived and dismissed again before closing in April 2019 with full acquittal.
 
-1 charge stuck, and it was procedural. In August 2017 an appeals court convicted him of not putting the 2009 figures to ELSTAT's board for approval before sending them to Eurostat. In June 2018 the Supreme Court made the 2-year suspended sentence irreversible. No court found the number wrong, and Eurostat has never withdrawn it.
+1 charge stuck, and it was procedural. In August 2017 an appeals court convicted him of not putting the 2009 figures to ELSTAT's board for approval before sending them to Eurostat. In June 2018 the Supreme Court made the 2-year suspended sentence irreversible. The charge that the figures had been inflated ended in acquittal, and Eurostat has never withdrawn them.
