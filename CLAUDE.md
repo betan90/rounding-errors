@@ -8,6 +8,7 @@ This is a museum of statistical discrepancies: cases where institutions publishe
 - Terminally serious delivery. Never wink. The funniest available line is usually the most literal one ("indistinguishable from nothing" is the accurate statistical description). If a line is trying to be funny, it fails.
 - Every clause names something, quantifies something, or lands a joke. Hedged winks and unquantified asides get cut: say Apple, not "a certain fruit-themed company". A parenthetical must carry a figure to live.
 - When compressing, kill whole beats rather than miniaturizing them.
+- Numbers are numerals, never spelled out: 84 not eighty-four, 43 not forty-three, 3 not three. This covers every cardinal count in frontmatter and body, including one that opens a sentence. The exceptions are words that are not counts: the pronoun "this one", the adverb "twice", ordinals ("the tenth case"), and distributive "one per exhibit". Exhibits 001 to 009 predate this rule and still spell some numbers out; published prose is not rewritten to match, because changes to published exhibits are logged as corrections.
 
 ## Attribution rule (non-negotiable)
 
@@ -63,7 +64,8 @@ Evidence-failure taxonomy. Diagnostic: go looking for the source and see what yo
 Cross-cutting threads: correlation-someone-believed, outlived-the-evidence, measurement-definitions.
 Domain tags: healthcare, crime, education, epidemiology, gdp, national-accounts, inflation, imf, provincial-data, environment.
 Region tags: europe, asia, latin-america, africa.
-Country is its own frontmatter field and is never a tag. This list is the live vocabulary as of exhibit 006; before inventing a tag, check what the existing exhibits actually use (`grep "^tags:" src/content/exhibits/*.md`), because a near-duplicate of a live tag (eu next to europe) is worse than no tag.
+Meta tags: self-audit (010, the only exhibit whose subject is this site).
+Country is its own frontmatter field and is never a tag. This list is the live vocabulary as of exhibit 010; before inventing a tag, check what the existing exhibits actually use (`grep "^tags:" src/content/exhibits/*.md`), because a near-duplicate of a live tag (eu next to europe) is worse than no tag.
 
 ## Notes and the review pipeline
 

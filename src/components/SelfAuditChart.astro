@@ -1,0 +1,102 @@
+---
+---
+
+<div class="chart-block">
+  <div class="legend">
+    <span><i class="swatch" style="background:var(--ink)"></i> Supported (84)</span>
+    <span><i class="swatch" style="background:var(--ink-soft)"></i> Partially supported (29)</span>
+    <span><i class="swatch" style="background:var(--red-line)"></i> Not supported (14)</span>
+  </div>
+  <figure>
+    <svg
+      id="chart"
+      viewBox="0 0 760 360"
+      role="img"
+      aria-label="9 horizontal stacked bars, one per exhibit, showing claim-check verdicts. Exhibit 001 is the longest at 20 claims, of which 11 are supported, 1 partially supported and 8 not supported. Exhibit 009 has 17 claims, of which 6 are supported, 9 partially supported and 2 not supported. Exhibits 004, 005, 006 and 008 have no unsupported claims. Totals across all 9 bars are 84 supported, 29 partially supported and 14 not supported, out of 127."
+    ></svg>
+    <figcaption class="cap">127 claim checks, 9 separate audits. Exhibits 001 to 007 were checked on 2026-08-01, exhibits 008 and 009 on 2026-08-12. Each bar is its own audit, not a point in a series, so the 2 dates are not spliced.</figcaption>
+  </figure>
+</div>
+
+<script is:inline>
+(function(){
+  // ---- DATA ----
+  // Counted by parsing reports/NNN-slug/fact-check-output.json in this repository,
+  // grouping each file's claims[] by its verdict field.
+  //   [exhibit, SUPPORTED, PARTIALLY SUPPORTED, NOT SUPPORTED]
+  // Totals: 84 supported, 29 partially supported, 14 not supported, 127 claims.
+  var rows = [
+    ['001', 11, 1, 8],
+    ['002',  9, 2, 1],
+    ['003',  8, 4, 2],
+    ['004',  7, 3, 0],
+    ['005', 10, 1, 0],
+    ['006', 12, 2, 0],
+    ['007',  7, 5, 1],
+    ['008', 14, 2, 0],
+    ['009',  6, 9, 2]
+  ];
+
+  var INK='#17181A', SOFT='#5A5C55', RED='#C22B24', PAPER='#FBF9F4';
+  var MONO="'IBM Plex Mono',monospace";
+
+  var W=760, m={t:46,r:76,b:58,l:62};
+  var pw=W-m.l-m.r;
+  var xMax=20;
+  function X(v){return m.l + (v/xMax)*pw;}
+
+  var barH=20, gap=8;
+
+  var svg=document.getElementById('chart');
+  var NS='http://www.w3.org/2000/svg';
+  function el(t,a){var e=document.createElementNS(NS,t);for(var k in a)e.setAttribute(k,a[k]);return e;}
+  function text(x,y,s,o){
+    o=o||{};
+    var e=el('text',{x:x,y:y,'text-anchor':o.anchor||'start','font-family':MONO,'font-size':o.size||11,fill:o.fill||SOFT});
+    if(o.weight) e.setAttribute('font-weight',o.weight);
+    if(o.spacing) e.setAttribute('letter-spacing',o.spacing);
+    e.textContent=s; svg.appendChild(e); return e;
+  }
+
+  // ---- vertical gridlines at 0, 5, 10, 15, 20 ----
+  var ticks=[0,5,10,15,20];
+  var plotBottom=m.t+rows.length*(barH+gap)-gap;
+  for(var i=0;i<ticks.length;i++){
+    var tx=X(ticks[i]);
+    svg.appendChild(el('line',{x1:tx,y1:m.t-10,x2:tx,y2:plotBottom+8,stroke:SOFT,'stroke-width':1,'stroke-opacity':ticks[i]===0?0.55:0.16}));
+    text(tx,plotBottom+26,String(ticks[i]),{anchor:'middle'});
+  }
+  text((m.l+W-m.r)/2,plotBottom+46,'CLAIMS CHECKED',{anchor:'middle',size:10.5,spacing:'0.06em'});
+
+  // ---- bars ----
+  for(var r=0;r<rows.length;r++){
+    var ex=rows[r][0], sup=rows[r][1], part=rows[r][2], no=rows[r][3];
+    var y=m.t+r*(barH+gap);
+    var total=sup+part+no;
+
+    // exhibit label
+    text(m.l-14,y+barH/2+4,ex,{anchor:'end',size:12,weight:700,fill:INK});
+
+    var x=X(0);
+    var segs=[[sup,INK,1],[part,SOFT,0.42],[no,RED,1]];
+    for(var s=0;s<segs.length;s++){
+      var n=segs[s][0];
+      if(n<=0) continue;
+      var w=X(n)-X(0);
+      svg.appendChild(el('rect',{x:x,y:y,width:w,height:barH,fill:segs[s][1],'fill-opacity':segs[s][2]}));
+      if(n>=3){
+        text(x+w/2,y+barH/2+4,String(n),{anchor:'middle',size:11,weight:700,fill:segs[s][1]===SOFT?INK:PAPER});
+      }
+      x+=w;
+    }
+
+    // hairline separating the unsupported tail
+    if(no>0){
+      svg.appendChild(el('line',{x1:X(sup+part),y1:y-2,x2:X(sup+part),y2:y+barH+2,stroke:PAPER,'stroke-width':1.5}));
+    }
+
+    // row total
+    text(x+12,y+barH/2+4,'/'+total,{size:11,fill:SOFT});
+  }
+})();
+</script>

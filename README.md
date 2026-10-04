@@ -34,4 +34,5 @@ npm run preview   # preview the production build
 - [x] Exhibit 007 — Japan (10,000 steps, the goal that started as ad copy)
 - [x] Exhibit 008 — Indonesia (deforestation, the baseline did the work)
 - [x] Exhibit 009 — Nigeria (GDP rebasing, the economy that doubled by arithmetic)
+- [x] Exhibit 010 — This museum (self-audit, the citations were somewhere else)
 - [ ] Revision tracker — the same official number, as reported over time
