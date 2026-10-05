@@ -15,6 +15,20 @@ export interface Correction {
 
 export const corrections: Correction[] = [
   {
+    exhibit: '010',
+    dateCorrected: new Date('2026-10-05'),
+    whatItSaid:
+      "'1 exhibit has been corrected since publishing. Exhibit 006 attributed a finding to a 2003 GAO report that does not contain it.'",
+    whatWasWrong:
+      "Exhibit 003 had also been corrected after publishing, in commit f0c49f4 on 2026-08-03, for placing 2 provincial admissions 'within weeks' of Liaoning's when its own source dated them about a year later. That fix had no entry on this page, and exhibit 010 counted the entries on this page rather than the fixes in the repository.",
+    howItGotHere:
+      "A self-audit that trusted the corrections log as its source of truth inherited the log's omission. The exhibit counted what was filed, which is the same gap between filing and counting that its own Who lied section describes.",
+    whatItSaysNow:
+      "'2 exhibits have been corrected since publishing.' It names both 006 and 003. The 003 correction now has its own entry below.",
+    caughtBy:
+      'A review of the About page on 2026-10-05, which checked its claims against the deploy log and the commit history and found the 003 fix missing from this page.',
+  },
+  {
     exhibit: '011',
     dateCorrected: new Date('2026-10-04'),
     whatItSaid:
@@ -27,6 +41,20 @@ export const corrections: Correction[] = [
       "The body states only the restatement and the threshold, both traceable: '1999 became 3.4% instead of 1.8%, which moved it from inside the Treaty protocol's 3% deficit reference value to outside it', with the 3% figure now resting on the November 2004 report's own sentence specifying the protocol's reference values. The verdict row makes the same narrowed claim. Georgiou is introduced without the IMF tenure, and the IMF connection survives only inside the quoted felony charge, where it is sourced. The incident section now carries the Commission's stated causes for the 2009 revision. A closing sentence asserting that 'No court found the number wrong' was also narrowed to the acquittal that is actually on the record.",
     caughtBy:
       'The fact-check pass, run inline after the reader asked why exhibit 011 did not have one. Criterion 1 (FIGURES) caught both untraceable claims, criterion 7 (hostile read) caught the omission. The pass was not independent, since it was run by the session that wrote the exhibit; the DeepSeek second opinion, which sees only claim and passage, independently returned NOT SUPPORTED on all 3 findings, and flagged the closing sentence that was then narrowed. Archived at reports/011-greece/.',
+  },
+  {
+    exhibit: '003',
+    dateCorrected: new Date('2026-08-03'),
+    whatItSaid:
+      "The body said: 'Liaoning was not unique, it was just the one that confessed on camera. Within weeks, Inner Mongolia admitted its 2016 industrial output had been overstated by 40%, and a district of Tianjin admitted its GDP was a third smaller than reported.' The verdict row read 'Fraud detected: confirmed, confessed to, and punished, by China's own party disciplinary body.'",
+    whatWasWrong:
+      "The exhibit's own SinoInsider source, published January 2018, dates the Inner Mongolia disclosure to 7 January 2018. Liaoning's admission was January 2017. The gap was about a year, not weeks. Both figures, 40% and a third, were correct.",
+    howItGotHere:
+      "The timeline compression was not caught at drafting. The fix was made in commit f0c49f4 without an entry here, and this entry was added on 2026-10-05, when a review of the About page found the gap. The same commit also narrowed the verdict row to Liaoning, as a precaution against a hostile read rather than because any fact-check finding called it wrong.",
+    whatItSaysNow:
+      "'Liaoning was not unique, it was just the one that confessed first. About a year later, in January 2018, Inner Mongolia admitted...' The verdict row is scoped: 'in Liaoning, confirmed, confessed to on the provincial record, and punished by China's own party disciplinary body.'",
+    caughtBy:
+      'The fact-checker subagent, in the full pass of 2026-08-01, which marked both "within weeks" claims NOT SUPPORTED. The DeepSeek second opinion, which sees only claim and passage, independently returned the Inner Mongolia timing claim as NOT SUPPORTED. Archived at reports/003-china/.',
   },
   {
     exhibit: '006',

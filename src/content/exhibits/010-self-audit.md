@@ -40,6 +40,7 @@ sources:
     text: "\"Fix fact-checker findings across exhibits 001, 003, 004, 007.\" The fixes were applied after the archived reports were written, which is why 43 describes first drafts and not the current text."
   - name: "Rounding Errors repository, src/content/exhibits/001-ireland.md through 009-nigeria.md"
     text: "The 9 verdict blocks. \"Fraud detected\" records a finding in 002 (Argentina, no longer disputed by Argentina's own later government) and 003 (Liaoning, confessed on the provincial record and punished by China's party disciplinary body), and records none in the other 7."
+correctionNote: "This exhibit was corrected on 2026-10-05. Details on the corrections page."
 disclosure: "This entry was drafted with AI (Claude did the counting and the first draft). The editorial voice, the opinions, and any surviving errors are mine. Every figure was checked against the primary source, which in this exhibit means the repository's own tracked files rather than an outside institution: the counts come from parsing reports/*/fact-check-output.json and reports/*/second-opinion.json directly, not from recollection of what they said. 1 limitation is load-bearing and is stated in the body. Those reports are dated 2026-08-01 and 2026-08-12, several findings were fixed afterwards, so 43 is a first-draft count and this exhibit makes no claim about the error rate of the text currently on the site."
 ---
 
@@ -63,6 +64,6 @@ A reader who followed a citation to the end would have failed to reach the sourc
 
 ## The bit continues
 
-1 exhibit has been corrected since publishing. Exhibit 006 attributed a finding to a 2003 GAO report that does not contain it. The claim traced to an uncited sentence on Wikipedia, which the exhibit's own source list had already routed it through, and the fact-checker caught it on a hostile read.
+2 exhibits have been corrected since publishing. Exhibit 006 attributed a finding to a 2003 GAO report that does not contain it. The claim traced to an uncited sentence on Wikipedia, which the exhibit's own source list had already routed it through, and the fact-checker caught it on a hostile read. Exhibit 003 placed 2 provincial admissions "within weeks" of Liaoning's, when its own source dated them about a year later.
 
 The reports have a vintage problem of their own. 7 were written on 2026-08-01 and 2 on 2026-08-12, and findings in exhibits 001, 003, 004 and 007 were fixed in commit f0c49f4 after the fact. So 43 counts first-draft claims, not the text on the site today. Measuring the current exhibits against the August reports would mean splicing 2 vintages, which is the exact error exhibit 003 declined to put in a chart.

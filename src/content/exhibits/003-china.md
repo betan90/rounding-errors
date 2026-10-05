@@ -44,6 +44,7 @@ sources:
     text: "A Forensic Examination of China's National Accounts, Brookings Papers on Economic Activity (2019): the independent re-estimate, growth overstated ~1.7 points a year 2008-2016 even after NBS adjustment."
     url: "https://www.brookings.edu/articles/a-forensic-examination-of-chinas-national-accounts"
     urlLabel: "brookings.edu"
+correctionNote: "This exhibit was corrected on 2026-08-03. Details on the corrections page."
 disclosure: "This entry was drafted with AI (Claude did the research sweeps and first draft). The editorial voice, the opinions, and any surviving errors are mine. Every figure was checked against the linked primary source before publishing. The Liaoning admission and subsequent disciplinary action are drawn from Chinese state media (Xinhua, People's Daily) as reported by international outlets; this entry treats the confession and the punishment as institutional fact because both were announced by Chinese authorities themselves, not alleged by outside parties."
 ---
 
