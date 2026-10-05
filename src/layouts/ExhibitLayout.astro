@@ -14,6 +14,7 @@ import DeforestationChart from '../components/DeforestationChart.astro';
 import RebasingChart from '../components/RebasingChart.astro';
 import SelfAuditChart from '../components/SelfAuditChart.astro';
 import GreeceDeficitChart from '../components/GreeceDeficitChart.astro';
+import DebtGrowthChart from '../components/DebtGrowthChart.astro';
 import ChartPending from '../components/ChartPending.astro';
 import { withBase } from '../lib/paths';
 
@@ -47,6 +48,7 @@ const { Content } = await entry.render();
   {data.exhibit === '009' && <RebasingChart />}
   {data.exhibit === '010' && <SelfAuditChart />}
   {data.exhibit === '011' && <GreeceDeficitChart />}
+  {data.exhibit === '012' && <DebtGrowthChart />}
   {data.chartNote && <ChartPending note={data.chartNote} />}
 
   <Ledger title={data.ledgerTitle} rows={data.ledger} note={data.ledgerNote} />

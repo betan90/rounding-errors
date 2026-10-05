@@ -1,0 +1,172 @@
+{
+  "exhibit": "012",
+  "reviewedAt": "2026-10-05T07:37:51.081Z",
+  "model": "deepseek-chat",
+  "claims": [
+    {
+      "id": 1,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage lists -0.1 as the final value in the average real GDP growth series, matching the claim's figure."
+    },
+    {
+      "id": 2,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage quotes the exact statement attributed to the 2010 finding, matching the claim's wording."
+    },
+    {
+      "id": 3,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage confirms the authors, journal, volume, issue, date, and page range matching the claim."
+    },
+    {
+      "id": 4,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage explicitly states \"20 advanced economies, 1946-2009,\" matching the claim's figures and range."
+    },
+    {
+      "id": 5,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage states the website lists 76 high-profile features but does not specify that this was the case by April 2013."
+    },
+    {
+      "id": 6,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage only states that 538 Google Scholar results were yielded on a date, without mentioning citations or excluding the authors' own works."
+    },
+    {
+      "id": 7,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage attributes the citation to \"RR 2010a,\" not to HAP, so it does not support the claim that HAP reported this."
+    },
+    {
+      "id": 8,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states the study found conclusive empirical evidence that gross debt exceeding 90 percent of the economy has a significant negative effect on economic growth, matching the claim's assertion."
+    },
+    {
+      "id": 9,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states they were unable to replicate the RR results from the publicly available country spreadsheet data and that Reinhart and Rogoff provided the working spreadsheet."
+    },
+    {
+      "id": 10,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states they approximated the published results with the spreadsheet, then identified coding errors and other issues, matching the claim's sequence of first matching then correcting."
+    },
+    {
+      "id": 11,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage lists the value 2.2 in the data sequence, which matches the claim that HAP got 2.2%."
+    },
+    {
+      "id": 12,
+      "verdict": "PARTIALLY SUPPORTED",
+      "reasoning": "The passage confirms the averaging error (lines 30–44 instead of 30–49) and the alphabetical selection of omitted countries, but it does not name Australia, Austria, Belgium, Canada and Denmark."
+    },
+    {
+      "id": 13,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states that data for Australia, New Zealand, and Canada were excluded for the early years 1946-1950, which matches the claim that available early years were left out for these countries."
+    },
+    {
+      "id": 14,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states the excluded years had growth rates of 7.7, 11.9, -9.9, and 10.8 percent, and that after exclusion New Zealand contributes only 1951 with a growth rate of -7.6 percent, matching the claim."
+    },
+    {
+      "id": 15,
+      "verdict": "PARTIALLY SUPPORTED",
+      "reasoning": "The passage confirms the UK's 19 years at 2.4%, New Zealand's one-seventh (14.3%) weight among seven countries, and the transcription error to -7.9%, but it states the error moved the value from -7.6 to -7.9, not that the one year \"carried\" 14.3% in the way the claim implies."
+    },
+    {
+      "id": 16,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states RR reports 96 country-years, the corrected analysis finds 110, and RR estimated growth with only 71 country-years, matching all three figures in the claim."
+    },
+    {
+      "id": 17,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage lists error scenarios with numeric values but does not state that any single error moves the result 0.3 of a point to 1.9%."
+    },
+    {
+      "id": 18,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage lists combinations of two errors with values including 0.3 and 1.7, matching the claim's range for any 2 of the 3 errors."
+    },
+    {
+      "id": 19,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage shows a transcription error of -0.1, not that all three items take it to 0.0% with the transcription error supplying the last 0.1."
+    },
+    {
+      "id": 20,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage only lists four numbers without any mention of \"Ledger,\" \"corrected,\" or a \"transcription slip,\" so it cannot confirm the claim's specific attribution."
+    },
+    {
+      "id": 21,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage only states that some errors have strong interactive effects, without mentioning the specific numbers 0.3, 2.2, or the claim about their combined cost."
+    },
+    {
+      "id": 22,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states verbatim the quoted sentence in the claim."
+    },
+    {
+      "id": 23,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states that equal country weighting assigns 14.3 percent (1/7) of the weight to the single remaining year for New Zealand, which directly matches the claim that the weighting amplified the exclusion so that NZ's 1 remaining year carried a seventh of the result."
+    },
+    {
+      "id": 24,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage thanks HAP for pointing out an important correction but does not mention an erratum or the date 5 May 2013."
+    },
+    {
+      "id": 25,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage explicitly describes \"a coding error that causes the first five countries in the alphabet to be omitted,\" matching the claim's wording."
+    },
+    {
+      "id": 26,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states that Spain's GDP growth was excluded for 1959-1980 and that this data is now included, which supports the claim that an erratum adds missing years for Spain."
+    },
+    {
+      "id": 27,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage confirms a coding correction including 1948 and 1949, and states the GDP growth series was replaced while the Maddison series is retained, matching the claim's elements."
+    },
+    {
+      "id": 28,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage lists a postwar mean of 2.0 for the NZ Historical Statistics GDP series and 1.0 for the Maddison GDP series, matching the claim's figures."
+    },
+    {
+      "id": 29,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage directly states the paper is silent on the longer 1800s sample and emerging markets, and that it fails to mention the median estimates being close in magnitude to the averages presented."
+    },
+    {
+      "id": 30,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage mentions the authors' assertions and agreement with commentary but never states that an erratum disputes \"the rest,\" so the claim is not supported by the given text."
+    },
+    {
+      "id": 31,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage lists the exact published values (4.1, 2.8, 2.8, -0.1) and corrected values (4.2, 3.1, 3.2, 2.2) matching the claim."
+    },
+    {
+      "id": 32,
+      "verdict": "PARTIALLY SUPPORTED",
+      "reasoning": "The passage confirms coding errors, selective exclusion, and unconventional weighting, but does not mention fraud being detected or an erratum conceding the coding error."
+    },
+    {
+      "id": 33,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage attributes the working spreadsheet to RR, not to the authors, and does not mention HAP's corrected figures."
+    }
+  ]
+}

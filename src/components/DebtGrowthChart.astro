@@ -1,0 +1,81 @@
+---
+---
+
+<div class="chart-block">
+  <div class="legend">
+    <span><i class="swatch" style="background:var(--ink)"></i> Reinhart and Rogoff, as published (working-paper table)</span>
+    <span><i class="swatch" style="background:var(--red-line)"></i> Herndon, Ash and Pollin, corrected</span>
+  </div>
+  <figure>
+    <svg
+      id="chart"
+      viewBox="0 0 760 360"
+      role="img"
+      aria-label="Grouped bar chart of average real GDP growth in percent, 1946 to 2009, 20 advanced economies, by public debt as a share of GDP. Reinhart and Rogoff as published: below 30 percent, 4.1; 30 to 60 percent, 2.8; 60 to 90 percent, 2.8; 90 percent and above, negative 0.1. Herndon, Ash and Pollin corrected: 4.2, 3.1, 3.2 and 2.2. The published 90 percent and above bar falls below the zero line. The corrected bar sits above it."
+    ></svg>
+    <figcaption class="cap">Average real GDP growth by public debt/GDP, 1946 to 2009, 20 advanced economies. The first 3 buckets barely move. The last one crosses zero. Published values are the authors' working-paper table as reproduced by HAP; the AER paper shows them as a bar chart. HAP's values come from the authors' working spreadsheet. Source: Herndon, Ash and Pollin (2013), PERI Working Paper 322, Tables 1 and 3.</figcaption>
+  </figure>
+</div>
+
+<script is:inline>
+(function(){
+  // ---- DATA ----
+  // Average real GDP growth, %, 1946 to 2009, 20 advanced economies,
+  // by public debt/GDP bucket. Source: Herndon, Ash and Pollin (2013),
+  // PERI Working Paper 322.
+  //   Published: Table 1 and Table 3 row "RR 2010b Appendix Table 1"
+  //   Corrected: Table 3 row "Country-year weighting, all data"
+  var buckets   = ['Below 30%', '30 to 60%', '60 to 90%', '90% and above'];
+  var published = [4.1, 2.8, 2.8, -0.1];
+  var corrected = [4.2, 3.1, 3.2, 2.2];
+
+  var INK='#17181A', SOFT='#5A5C55', RED='#C22B24';
+  var MONO="'IBM Plex Mono',monospace";
+
+  var W=760, H=360, m={t:36,r:40,b:70,l:62};
+  var pw=W-m.l-m.r, ph=H-m.t-m.b;
+  var yMin=-1, yMax=5;
+  function Y(v){return m.t + (1 - (v-yMin)/(yMax-yMin))*ph;}
+
+  var svg=document.getElementById('chart');
+  var NS='http://www.w3.org/2000/svg';
+  function el(t,a){var e=document.createElementNS(NS,t);for(var k in a)e.setAttribute(k,a[k]);return e;}
+  function text(x,y,s,o){
+    o=o||{};
+    var e=el('text',{x:x,y:y,'text-anchor':o.anchor||'start','font-family':MONO,
+                     'font-size':o.size||11,fill:o.fill||SOFT});
+    if(o.weight) e.setAttribute('font-weight',o.weight);
+    if(o.spacing) e.setAttribute('letter-spacing',o.spacing);
+    e.textContent=s; svg.appendChild(e); return e;
+  }
+  function fmt(v){return (v<0?'-':'')+Math.abs(v).toFixed(1)+'%';}
+
+  // ---- y gridlines ----
+  for(var t=yMin;t<=yMax;t++){
+    svg.appendChild(el('line',{x1:m.l,y1:Y(t),x2:W-m.r,y2:Y(t),stroke:SOFT,'stroke-width':1,
+                               'stroke-opacity':0.14}));
+    text(m.l-10,Y(t)+4,t+'%',{anchor:'end'});
+  }
+
+  // ---- grouped bars ----
+  var gw=pw/buckets.length, bw=48, gap=6;
+  for(var i=0;i<buckets.length;i++){
+    var cx=m.l+gw*i+gw/2;
+    var series=[{v:published[i],x:cx-gap/2-bw,col:INK},{v:corrected[i],x:cx+gap/2,col:RED}];
+    for(var s=0;s<2;s++){
+      var d=series[s], top=Y(Math.max(d.v,0)), bot=Y(Math.min(d.v,0));
+      svg.appendChild(el('rect',{x:d.x,y:top,width:bw,height:bot-top,fill:d.col}));
+      var ly=d.v<0 ? bot+16 : top-7;
+      text(d.x+bw/2,ly,fmt(d.v),{anchor:'middle',size:13,weight:700,fill:d.col});
+    }
+    text(cx,H-m.b+24,buckets[i],{anchor:'middle',size:11,weight:i===buckets.length-1?700:400,
+                                 fill:i===buckets.length-1?INK:SOFT});
+  }
+
+  // ---- zero line, drawn over the bars ----
+  svg.appendChild(el('line',{x1:m.l,y1:Y(0),x2:W-m.r,y2:Y(0),stroke:INK,'stroke-width':1.5}));
+
+  text((m.l+W-m.r)/2,H-m.b+50,'PUBLIC DEBT AS A SHARE OF GDP  |  AVERAGE REAL GDP GROWTH, %',
+       {anchor:'middle',size:10.5,spacing:'0.06em'});
+})();
+</script>

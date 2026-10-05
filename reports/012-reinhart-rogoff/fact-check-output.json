@@ -1,0 +1,270 @@
+{
+  "exhibit": "012",
+  "checkedAt": "2026-10-05T12:00:00Z",
+  "claims": [
+    {
+      "id": 1,
+      "claim": "Published average above 90% was -0.1% (body, ledger, chart)",
+      "source": "Herndon, Ash and Pollin (2013)",
+      "passage": "Average real GDP growth 4.1     2.8  2.8  -0.1",
+      "verdict": "SUPPORTED",
+      "notes": "HAP Table 1 gives the published bucket values 4.1, 2.8, 2.8, -0.1, matching the chart DATA."
+    },
+    {
+      "id": 2,
+      "claim": "Quoted 2010 finding: \"median growth rates for countries with public debt over roughly 90 percent of GDP are about one percent lower than otherwise; (mean) growth rates are several percent lower.\"",
+      "source": "Herndon, Ash and Pollin (2013)",
+      "passage": "median growth rates for countries with public debt over roughly 90 percent of GDP are about one percent lower than otherwise; (mean) growth rates are several percent lower\" (RR 2010a p. 573).",
+      "verdict": "SUPPORTED",
+      "notes": "Verbatim as quoted by HAP from RR 2010a p. 573; AEA page confirms the paper's journal, volume and pages."
+    },
+    {
+      "id": 3,
+      "claim": "Reinhart and Rogoff (2010), AER Papers and Proceedings 100(2), May 2010, pp. 573-78",
+      "source": "Reinhart and Rogoff (2010) (aeaweb.org)",
+      "passage": "Title: Growth in a Time of Debt; Journal: American Economic Review; Vol. 100, No. 2; May 2010; Pages: 573-78; Authors: Carmen M. Reinhart and Kenneth S. Rogoff",
+      "verdict": "SUPPORTED",
+      "notes": "AEA page fetched; citation details match."
+    },
+    {
+      "id": 4,
+      "claim": "20 advanced economies, 1946 to 2009",
+      "source": "Herndon, Ash and Pollin (2013)",
+      "passage": "Table 1: Real GDP Growth as the Level of Public Debt Varies 20 advanced economies, 1946-2009",
+      "verdict": "SUPPORTED",
+      "notes": "Matches."
+    },
+    {
+      "id": 5,
+      "claim": "By April 2013 the authors' website listed 76 high-profile media features",
+      "source": "Herndon, Ash and Pollin (2013)",
+      "passage": "Reinhart's and Rogoff's website lists 76 high-profile features, including The Economist, Wall Street Journal",
+      "verdict": "SUPPORTED",
+      "notes": "HAP footnote: visited 7 April 2013; counts are HAP's report of the website, labeled as such."
+    },
+    {
+      "id": 6,
+      "claim": "Google Scholar returned 538 results citing it, excluding the authors' own",
+      "source": "Herndon, Ash and Pollin (2013)",
+      "passage": "yielded 538 Google Scholar results on 7 April 2013",
+      "verdict": "PARTIALLY SUPPORTED",
+      "notes": "538 and date trace; HAP's search was for the title excluding the authors, so 'citing it' is slightly stronger than 'results'."
+    },
+    {
+      "id": 7,
+      "claim": "HAP reported it was the only evidence cited on debt and growth in the 'Paul Ryan Budget'",
+      "source": "Herndon, Ash and Pollin (2013)",
+      "passage": "RR 2010a is the only evidence cited in the \"Paul Ryan Budget\" on the consequences of high public debt for economic growth.",
+      "verdict": "SUPPORTED",
+      "notes": "Reported as HAP's claim; Ryan document itself not fetched, disclosed."
+    },
+    {
+      "id": 8,
+      "claim": "Path to Prosperity called it \"conclusive empirical evidence\" that debt over 90% \"has a significant negative effect on economic growth.\"",
+      "source": "Herndon, Ash and Pollin (2013)",
+      "passage": "The study found conclusive empirical evidence that gross debt (meaning all debt that a government owes, including debt held in government trust funds) exceeding 90 percent of the economy has a significant negative eect on economic growth. (Ryan 2013 p. 78)",
+      "verdict": "SUPPORTED",
+      "notes": "Quote as reproduced by HAP (extraction drops the ff ligature in 'effect'); secondhand and disclosed as such."
+    },
+    {
+      "id": 9,
+      "claim": "HAP could not reproduce the result from the public data; the authors sent the working spreadsheet",
+      "source": "Herndon, Ash and Pollin (2013)",
+      "passage": "We were unable to replicate the RR results from the publicly available country spreadsheet data although our initial results from the publicly available data closely resemble the results we ultimately present as correct. Reinhart and Rogoff kindly provided us with the working spreadsheet from the RR analysis.",
+      "verdict": "SUPPORTED",
+      "notes": "Matches; HAP's own account, labeled."
+    },
+    {
+      "id": 10,
+      "claim": "With the spreadsheet HAP first matched the published result, then corrected it",
+      "source": "Herndon, Ash and Pollin (2013)",
+      "passage": "With the working spreadsheet, we were able to approximate closely the published RR results. While using RR's working spreadsheet, we identified coding errors, selective exclusion of available data, and unconventional weighting of summary statistics.",
+      "verdict": "PARTIALLY SUPPORTED",
+      "notes": "Replication step is now present (Round 2 fix resolved); 'matched' is slightly stronger than HAP's 'approximate closely', though Table 3's final row reaches -0.1 exactly."
+    },
+    {
+      "id": 11,
+      "claim": "HAP got 2.2%",
+      "source": "Herndon, Ash and Pollin (2013)",
+      "passage": "Country-year weighting, all data  4.2   3.1  3.2  2.2",
+      "verdict": "SUPPORTED",
+      "notes": "Table 3 corrected row; also abstract."
+    },
+    {
+      "id": 12,
+      "claim": "Coding error: a formula averaged lines 30 to 44 instead of 30 to 49, dropping Australia, Austria, Belgium, Canada and Denmark; 'The omitted countries are selected alphabetically.'",
+      "source": "Herndon, Ash and Pollin (2013)",
+      "passage": "RR averaged cells in lines 30 to 44 instead of lines 30 to 49. / The omitted countries are selected alphabetically and, hence, likely randomly with respect to economic relationships.",
+      "verdict": "SUPPORTED",
+      "notes": "Quote is a fragment of a longer HAP sentence, accurately truncated at the sentence's first clause."
+    },
+    {
+      "id": 13,
+      "claim": "Exclusion: available early years left out for Australia, Canada and New Zealand",
+      "source": "Herndon, Ash and Pollin (2013)",
+      "passage": "RR's data exclusions with three other countries: Australia (1946-1950), New Zealand (1946-1949), and Canada (1946-1950).",
+      "verdict": "SUPPORTED",
+      "notes": "Stated as HAP's finding under HAP's section."
+    },
+    {
+      "id": 14,
+      "claim": "New Zealand's excluded high-debt years grew 7.7, 11.9, -9.9 and 10.8 percent; remaining year 1951 at -7.6%",
+      "source": "Herndon, Ash and Pollin (2013)",
+      "passage": "Real GDP growth rates in those years were 7.7, 11.9, -9.9, and 10.8 percent. After the exclusion of these years, New Zealand contributes only one year to the highest public debt/GDP category, 1951, with a real GDP growth rate of -7.6 percent.",
+      "verdict": "SUPPORTED",
+      "notes": "Matches exactly."
+    },
+    {
+      "id": 15,
+      "claim": "Britain contributed 19 years averaging 2.4%; NZ's 1 year carried 14.3% of the weight with 7 countries; transcription error moved it to -7.9%",
+      "source": "Herndon, Ash and Pollin (2013)",
+      "passage": "real GDP growth in the UK averaged 2.4 percent per year during the 19 years that the UK appeared in the highest public debt/GDP category ... An apparent transcription error in transferring the country average from the country-specific sheets to the summary sheet reduced New Zealand's average growth in the highest public debt category from -7.6 to -7.9 percent per year. With only seven countries ... / ... for a full 14.3 percent (one-seventh)",
+      "verdict": "PARTIALLY SUPPORTED",
+      "notes": "All figures trace; HAP says 'apparent' transcription error while the body asserts it flatly (advisory)."
+    },
+    {
+      "id": 16,
+      "claim": "The paper reported 96 country-years above 90%. HAP found 110. The calculation used 71.",
+      "source": "Herndon, Ash and Pollin (2013)",
+      "passage": "RR reports 96 country-years in the highest public debt/GDP category. Our corrected analysis finds 110 country-years ... RR in fact estimated GDP growth in the highest public debt/GDP category with only 71 country-years of data",
+      "verdict": "SUPPORTED",
+      "notes": "Text gives 71 (110-14-25=71); HAP's Table 2 extraction shows 75 in the Spreadsheet column, an internal HAP inconsistency the exhibit does not use. The 96 is HAP's report of RR, not independently checked."
+    },
+    {
+      "id": 17,
+      "claim": "Table 3: starting from correct data, any 1 error alone moves the result 0.3 of a point, to 1.9%",
+      "source": "Herndon, Ash and Pollin (2013)",
+      "passage": "Spreadsheet error only 4.2 3.0 3.2 1.9 / Selective years exclusion only 4.2 3.1 3.2 1.9 / Country weights only 4.0 3.0 3.0 1.9 / Country-year weighting, all data 4.2 3.1 3.2 2.2",
+      "verdict": "SUPPORTED",
+      "notes": "2.2 minus 1.9 is 0.3 for each of the 3 single-error rows; direction (error added to correct data) now stated correctly (Round 2 fix resolved)."
+    },
+    {
+      "id": 18,
+      "claim": "Ledger: Any 2 of the 3 errors left in: 0.3% to 1.7%",
+      "source": "Herndon, Ash and Pollin (2013)",
+      "passage": "Spreadsheet error + Selective years exclusion 4.2 3.0 3.2 1.7 / Spreadsheet error + Country weights 4.1 2.9 3.4 1.4 / Selective years exclusion + Country weights 4.0 3.0 3.0 0.3",
+      "verdict": "SUPPORTED",
+      "notes": "Pairs give 1.7, 1.4, 0.3; range 0.3 to 1.7 holds."
+    },
+    {
+      "id": 19,
+      "claim": "All 3 take it to 0.0%; the transcription error supplies the last 0.1",
+      "source": "Herndon, Ash and Pollin (2013)",
+      "passage": "Spreadsheet error + Selective years exclusion + Country weights 4.1 2.9 3.4 0.0 / ... + Transcription error 4.1 2.9 3.4 -0.1",
+      "verdict": "SUPPORTED",
+      "notes": "0.0 to -0.1 is 0.1; matches footnote 6."
+    },
+    {
+      "id": 20,
+      "claim": "Ledger: All 3 corrected, plus the transcription slip: 2.2%",
+      "source": "Herndon, Ash and Pollin (2013)",
+      "passage": "Country-year weighting, all data  4.2   3.1  3.2  2.2",
+      "verdict": "SUPPORTED",
+      "notes": "2.2 is the corrected row; label wording is awkward (all 4 problems corrected) but not wrong."
+    },
+    {
+      "id": 21,
+      "claim": "Title: 3 errors worth 0.3 each, 2.2 together; verdictNote: each alone cost 0.3, together 2.2, more than twice the sum of their parts",
+      "source": "Herndon, Ash and Pollin (2013)",
+      "passage": "Some of the errors have strong interactive effects.",
+      "verdict": "SUPPORTED",
+      "notes": "Sum of parts is 0.9; 2.2 is 2.4 times that, so 'more than twice' holds; 2.2 from 3 errors (2.2 to 0.0) is correct; the transcription adds 0.1 more (2.3 total vs published), which the title does not claim."
+    },
+    {
+      "id": 22,
+      "claim": "Quote: \"Some of the errors have strong interactive effects.\"",
+      "source": "Herndon, Ash and Pollin (2013)",
+      "passage": "Some of the errors have strong interactive effects.",
+      "verdict": "SUPPORTED",
+      "notes": "Verbatim."
+    },
+    {
+      "id": 23,
+      "claim": "The weighting amplified the exclusion so that NZ's 1 remaining year, at -7.6%, carried a seventh of the result",
+      "source": "Herndon, Ash and Pollin (2013)",
+      "passage": "the impact of the excluded years for New Zealand is greatly amplified when equal country weighting assigns 14.3 percent (1/7) of the weight for the average to the single year",
+      "verdict": "SUPPORTED",
+      "notes": "Matches."
+    },
+    {
+      "id": 24,
+      "claim": "Erratum dated 5 May 2013 thanks HAP \"for pointing out an important correction\"",
+      "source": "Reinhart and Rogoff (2013)",
+      "passage": "The authors wish to thank Thomas Herndon, Michael Ash, and Robert Pollin (HAP) for the careful attention and for pointing out an important correction to our original Growth in a Time of Debt.",
+      "verdict": "SUPPORTED",
+      "notes": "Matches."
+    },
+    {
+      "id": 25,
+      "claim": "Erratum fixes \"a coding error that causes the first five countries in the alphabet to be omitted\"",
+      "source": "Reinhart and Rogoff (2013)",
+      "passage": "(i) a coding error that causes the first five countries in the alphabet to be omitted in forming averages for the 1946-2009 period in one figure",
+      "verdict": "PARTIALLY SUPPORTED",
+      "notes": "The quoted words appear in the erratum's paraphrase of HAP's claim ('The authors assert...'), not the authors' own concession; the authors' own concession is in 'Guide to changes' ('The coding error pointed out to us by HAP excluded ... Australia, Austria, Belgium, Canada, and Denmark'). Attribution of the quoted phrase is loose but the concession itself is supported."
+    },
+    {
+      "id": 26,
+      "claim": "Erratum adds missing years for Spain",
+      "source": "Reinhart and Rogoff (2013)",
+      "passage": "GDP growth for Spain was excluded for the years 1959-1980 ... The inclusion of this data is shown in the third panel of Table 1.",
+      "verdict": "SUPPORTED",
+      "notes": "Matches."
+    },
+    {
+      "id": 27,
+      "claim": "Erratum includes NZ 1948 and 1949, which it describes as \"a coding correction\"; adds a second NZ GDP series beside Maddison",
+      "source": "Reinhart and Rogoff (2013)",
+      "passage": "First, a coding correction that includes 1948, 1949 in the postwar sample ... Second, the GDP growth series was itself replaced. ... We also retain the Maddison series.",
+      "verdict": "SUPPORTED",
+      "notes": "Matches."
+    },
+    {
+      "id": 28,
+      "claim": "Final postwar average above 90% is 2.0% (NZ Historical Statistics) and 1.0% (Maddison)",
+      "source": "Reinhart and Rogoff (2013)",
+      "passage": "Final including New Zealand (NZ Historical Statistics GDP) ... Post war Mean 4.2 3.0 2.4 2.0 ... Final including New Zealand (Maddison GDP) ... Post war Mean 4.2 3.0 2.5 1.0",
+      "verdict": "SUPPORTED",
+      "notes": "Both Table 1 post-war mean cells match."
+    },
+    {
+      "id": 29,
+      "claim": "Erratum notes HAP is silent on the longer sample back to the 1800s and emerging markets, and HAP \"fails to mention that our median estimates for the postwar sample are very close in magnitude to the averages that they present.\"",
+      "source": "Reinhart and Rogoff (2013)",
+      "passage": "Their paper is silent on the results of the longer sample dating back to the 1800s ... and the exercise on emerging markets ... It also fails to mention that our median estimates for the postwar sample are very close in magnitude to the averages that they present.",
+      "verdict": "SUPPORTED",
+      "notes": "Quote verbatim apart from the subject; body's 'HAP' substitution is outside the quotation marks."
+    },
+    {
+      "id": 30,
+      "claim": "\"The erratum disputes the rest\" (body) / status: \"disputed the rest\"",
+      "source": "Reinhart and Rogoff (2013)",
+      "passage": "The authors assert that there are three problems ... (ii) \"selective exclusion\" of 1946-1950 for New Zealand, and (iii) \"unconventional weighting of summary statistics.\" ... we fully agree with much of the HAP commentary on the volatile and irregular experience of growth in the aftermath of World War II",
+      "verdict": "PARTIALLY SUPPORTED",
+      "notes": "The erratum puts HAP's terms in scare quotes and says HAP omits the long sample and medians, but it never directly rebuts the weighting or the Australia/Canada exclusions and says it agrees with much of HAP's commentary; 'disputes the rest' is a mild overstatement."
+    },
+    {
+      "id": 31,
+      "claim": "Chart DATA: published 4.1, 2.8, 2.8, -0.1; corrected 4.2, 3.1, 3.2, 2.2",
+      "source": "Herndon, Ash and Pollin (2013)",
+      "passage": "Table 1: 4.1 2.8 2.8 -0.1 / Table 3: Country-year weighting, all data 4.2 3.1 3.2 2.2",
+      "verdict": "SUPPORTED",
+      "notes": "All 8 values trace; the DATA comment names the right Table 3 row. Caption 'first 3 buckets barely move' is HAP's own characterization (relatively small effects)."
+    },
+    {
+      "id": 32,
+      "claim": "Fraud detected: none alleged; HAP describe coding errors, selective exclusion and unconventional weighting; erratum concedes the coding error",
+      "source": "Herndon, Ash and Pollin (2013); Reinhart and Rogoff (2013)",
+      "passage": "coding errors, selective exclusion of available data, and unconventional weighting of summary statistics lead to serious errors",
+      "verdict": "SUPPORTED",
+      "notes": "Terms are HAP's; the concession is the authors' erratum; HAP allege no intent."
+    },
+    {
+      "id": 33,
+      "claim": "Provenance: HAP's corrected figures rest on the authors' non-public working spreadsheet",
+      "source": "Herndon, Ash and Pollin (2013)",
+      "passage": "Source: Authors' calculations from working spreadsheet provided by RR.",
+      "verdict": "SUPPORTED",
+      "notes": "Labeled in ledgerNote, chart caption and disclosure; HAP say they will post a simplified version, so 'not public' is as of the paper."
+    }
+  ]
+}
