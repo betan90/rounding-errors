@@ -51,7 +51,7 @@ Chart wiring is not a frontmatter field. Each exhibit's chart component (e.g. `s
 
 ## Category vocabulary (do not blur)
 
-Structural categories describe the gap's shape: "nobody lied" (001, reused by 009), "the IMF's only censure" (002), "the parts exceeded the whole" (003), "the summer did it" (004), "the evidence was a highlight reel" (005), "indistinguishable from nothing" (006), "parroting" (007, drawn from the taxonomy below), "the baseline did the work" (008), "the citations were somewhere else" (010), "the correction needed a correction" (011), "the errors compounded" (012). Reuse is allowed when the shape genuinely repeats, and a taxonomy item may serve as a category when the evidence failure is the shape.
+Structural categories describe the gap's shape: "nobody lied" (001, reused by 009), "the IMF's only censure" (002), "the parts exceeded the whole" (003), "the summer did it" (004), "the evidence was a highlight reel" (005), "indistinguishable from nothing" (006), "parroting" (007, drawn from the taxonomy below), "the baseline did the work" (008), "the citations were somewhere else" (010), "the correction needed a correction" (011), "the errors compounded" (012), "the file was too big" (014). Reuse is allowed when the shape genuinely repeats, and a taxonomy item may serve as a category when the evidence failure is the shape.
 
 Evidence-failure taxonomy. Diagnostic: go looking for the source and see what you find.
 1. trust me, bro: no source was ever offered; pure confident assertion.
@@ -65,12 +65,12 @@ Cross-cutting threads: correlation-someone-believed, outlived-the-evidence, meas
 Domain tags: healthcare, crime, education, epidemiology, gdp, national-accounts, inflation, imf, provincial-data, environment.
 Region tags: europe, asia, latin-america, africa.
 Meta tags: self-audit (010, the only exhibit whose subject is this site).
-Country is its own frontmatter field and is never a tag. This list is the live vocabulary as of exhibit 013 (mirrored in the `TAGS` set in `scripts/check-house-rules.mjs`); before inventing a tag, check what the existing exhibits actually use (`grep "^tags:" src/content/exhibits/*.md`), because a near-duplicate of a live tag (eu next to europe) is worse than no tag.
+Country is its own frontmatter field and is never a tag. This list is the live vocabulary as of exhibit 014 (mirrored in the `TAGS` set in `scripts/check-house-rules.mjs`); before inventing a tag, check what the existing exhibits actually use (`grep "^tags:" src/content/exhibits/*.md`), because a near-duplicate of a live tag (eu next to europe) is worse than no tag.
 
 ## Notes and the review pipeline
 
 - There is a second content collection, `notes` (`src/content/notes/`, schema in `config.ts`: `title`, `date`, `teaser`, optional `disclosure`). Notes are behind-the-scenes entries, rendered at `/notes/`. Same evidence rules as exhibits: if a note cites the repo's own files, those files must be tracked in the repo.
-- Every exhibit gets a fact-check pass (fact-checker agent, writes `fact-check-output.json` at the repo root) and a DeepSeek second opinion (`scripts/second-opinion.mjs`, reads that JSON, needs `DEEPSEEK_API_KEY` in `.env`; `scripts/compare-reviews.mjs` diffs the two verdict sets). The root JSON working copies are gitignored; the archived per-exhibit copies under `reports/NNN-slug/` are tracked, because published notes cite them.
+- Every exhibit gets a fact-check pass (fact-checker agent, writes `fact-check-output.json` at the repo root) and a DeepSeek second opinion (`bash scripts/second-opinion.sh`, which loads `DEEPSEEK_API_KEY` from `.env` and runs `second-opinion.mjs` on that JSON; the `.mjs` alone does not read `.env`; `scripts/compare-reviews.mjs` diffs the two verdict sets). The root JSON working copies are gitignored; the archived per-exhibit copies under `reports/NNN-slug/` are tracked, because published notes cite them.
 
 ## Build conventions
 

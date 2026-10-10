@@ -1,0 +1,255 @@
+{
+  "exhibit": "014",
+  "checkedAt": "2026-10-10T02:24:58.575Z",
+  "claims": [
+    {
+      "id": 1,
+      "claim": "15,841 positive results not included in reported daily cases, 25 September to 2 October (PHE)",
+      "source": "Public Health England",
+      "passage": "After rapid investigation, 15,841 cases were identified between 25 September and 2 October",
+      "verdict": "SUPPORTED",
+      "notes": "PHE statement (live fetch, summarised by fetcher) and DHSC weekly statistics give the same figure and date range."
+    },
+    {
+      "id": 2,
+      "claim": "11,968, over 75%, due between 30 September and 2 October",
+      "source": "Public Health England",
+      "passage": "Of these, over 75% (11,968) relate to cases that should have been reported between 30 September and 2 October.",
+      "verdict": "SUPPORTED",
+      "notes": "Matches the PHE statement as returned by the fetcher."
+    },
+    {
+      "id": 3,
+      "claim": "Identified overnight on Friday 2 October; data load process that transfers COVID-19 positive lab results into reporting dashboards",
+      "source": "Public Health England",
+      "passage": "A technical issue was identified overnight on Friday 2 October in the data load process that transfers COVID-19 positive lab results into reporting dashboards.",
+      "verdict": "SUPPORTED",
+      "notes": "Quoted phrase present verbatim."
+    },
+    {
+      "id": 4,
+      "claim": "\"some files containing positive test results exceeded the maximum file size\"; mitigation \"splits large files\"",
+      "source": "Public Health England",
+      "passage": "some files containing positive test results exceeded the maximum file size",
+      "verdict": "SUPPORTED",
+      "notes": "Fetcher quoted both phrases; 'splits large files' also appears in the Harding reply extract."
+    },
+    {
+      "id": 5,
+      "claim": "All outstanding cases transferred to contact tracing \"by 1am on 3 October\"; everyone affected received result as normal",
+      "source": "Public Health England",
+      "passage": "All outstanding cases were immediately transferred to the contact tracing system by 1am on 3 October.",
+      "verdict": "SUPPORTED",
+      "notes": "Also 'Every one of these cases received their COVID-19 test result as normal'; exhibit's quoted fragment is a verbatim substring."
+    },
+    {
+      "id": 6,
+      "claim": "The PHE statement does not use the words Excel, XLS, rows or columns",
+      "source": "Public Health England",
+      "passage": "No, none of the words Excel, XLS, rows, or columns appear in the content.",
+      "verdict": "SUPPORTED",
+      "notes": "Confirmed by targeted fetch of the page; the passage is the fetcher's report, not page text."
+    },
+    {
+      "id": 7,
+      "claim": "PHE statement published 4 Oct 2020, updated 5 Oct 2020, Michael Brodie, Interim Chief Executive",
+      "source": "Public Health England",
+      "passage": "a news story published 4 October 2020 and last updated 5 October 2020. Interim Chief Executive Michael Brodie and Joint Medical Advisor Susan Hopkins issued statements.",
+      "verdict": "SUPPORTED",
+      "notes": "Fetcher summary, consistent with the exhibit."
+    },
+    {
+      "id": 8,
+      "claim": "Health Secretary: 15,841 over the previous 8 days; failure in the automated transfer of files",
+      "source": "Hansard, House of Commons",
+      "passage": "Public Health England identified that over the previous eight days, 15,841 positive test results were not included in the reported daily cases. This was due to a failure in the automated transfer of files from the labs to PHE’s data systems.",
+      "verdict": "SUPPORTED",
+      "notes": "Verified from local extract, not a live fetch."
+    },
+    {
+      "id": 9,
+      "claim": "6,500 hours of extra contact tracing; 51% contacted a second time as of 9am",
+      "source": "Hansard, House of Commons",
+      "passage": "We brought in 6,500 hours of extra contact tracing over the weekend. I can report to the House that, as of 9 am today, 51% of the cases have now been contacted a second time for contact tracing purposes.",
+      "verdict": "SUPPORTED",
+      "notes": "Verified from local extract."
+    },
+    {
+      "id": 10,
+      "claim": "\"This incident should never have happened\"",
+      "source": "Hansard, House of Commons",
+      "passage": "This incident should never have happened, but the team have acted swiftly to minimise its impact.",
+      "verdict": "SUPPORTED",
+      "notes": "Verbatim; Health Secretary's own statement, framed as reported speech and not an accusation."
+    },
+    {
+      "id": 11,
+      "claim": "Problem \"emerged in a PHE legacy system\"; decision in July to replace; contracts \"awarded in August\"",
+      "source": "Hansard, House of Commons",
+      "passage": "The problem emerged in a PHE legacy system. We had already decided in July to replace this system, and I commissioned a new data system to replace the legacy one. Contracts were awarded in August",
+      "verdict": "SUPPORTED",
+      "notes": "Verbatim in extract."
+    },
+    {
+      "id": 12,
+      "claim": "\"a maximum file size error\" spoken by the Health Secretary",
+      "source": "Hansard, House of Commons",
+      "passage": "However, the challenge of a maximum file size error is that it would not necessarily have appeared on that sort of flow chart",
+      "verdict": "SUPPORTED",
+      "notes": "Phrase present in a later reply by the Health Secretary (contribution 61); extract does not show the speaker header adjacent, attribution inferred from context and exhibit's earlier statement."
+    },
+    {
+      "id": 13,
+      "claim": "Health Secretary said \"Excel\" 0 times; the word appears only in questions from Ashworth and Coyle",
+      "source": "Hansard, House of Commons",
+      "passage": "Can the Secretary of State confirm that the data could not be handed over to PHE because of the size of the Excel spreadsheet files? ... Why are critical databases in a national pandemic being hosted on Excel spreadsheets?",
+      "verdict": "SUPPORTED",
+      "notes": "Case-insensitive search found 3 'Excel' hits as a word (2 in Ashworth contribution 6, 1 in Coyle contribution 101: 'problems with Excel spreadsheets'); other hits are 'excellent'/'Excellence'; Health Secretary never says Excel or spreadsheet."
+    },
+    {
+      "id": 14,
+      "claim": "Quoted Ashworth question: \"Why are critical databases in a national pandemic being hosted on Excel spreadsheets?\"",
+      "source": "Hansard, House of Commons",
+      "passage": "Why are critical databases in a national pandemic being hosted on Excel spreadsheets?",
+      "verdict": "SUPPORTED",
+      "notes": "Verbatim, speaker Jonathan Ashworth (Leicester South)."
+    },
+    {
+      "id": 15,
+      "claim": "Clark letter, 8 Oct: Secretary of State told the House issue related to PHE legacy system \"which included the use of Microsoft Excel\"",
+      "source": "Science and Technology Committee",
+      "passage": "The Secretary of State for Health and Social Care told the House on Monday 5 October that the issue was related to a Public Health England (PHE) legacy system, which included the use of Microsoft Excel.",
+      "verdict": "SUPPORTED",
+      "notes": "Verbatim from local extract; Hansard shows no such statement, which is the exhibit's gap."
+    },
+    {
+      "id": 16,
+      "claim": "\"It is reported that PHE developers used an old format of the software, XLS, which had a set number of rows to log data that was incompatible with the volume of data being generated.\"",
+      "source": "Science and Technology Committee",
+      "passage": "It is reported that PHE developers used an old format of the software, XLS, which had a set number of rows to log data that was incompatible with the volume of data being generated.",
+      "verdict": "SUPPORTED",
+      "notes": "Verbatim; exhibit presents it only as reported."
+    },
+    {
+      "id": 17,
+      "claim": "Letter asks about certification of \"the Microsoft Excel-based system\"",
+      "source": "Science and Technology Committee",
+      "passage": "What certification took place of the Microsoft Excel-based system",
+      "verdict": "SUPPORTED",
+      "notes": "Verbatim."
+    },
+    {
+      "id": 18,
+      "claim": "Harding: \"The technical issue was not caused by the use of an old format.\"",
+      "source": "Baroness Harding, National Institute for Health Protection",
+      "passage": "The technical issue was not caused by the use of an old format.",
+      "verdict": "SUPPORTED",
+      "notes": "Verbatim; reply dated 12 October 2020, 4 days after 8 October."
+    },
+    {
+      "id": 19,
+      "claim": "Excel files \"exceeded their file size threshold and so were not uploaded\" as Pillar 2 volumes rose",
+      "source": "Baroness Harding, National Institute for Health Protection",
+      "passage": "Increased testing volumes from Pillar 2 meant that some Excel files used in the transfer process exceeded their file size threshold and so were not uploaded.",
+      "verdict": "SUPPORTED",
+      "notes": "Verbatim."
+    },
+    {
+      "id": 20,
+      "claim": "Reply dates cases 24 September to 1 October; 6,000 hours of extra contact tracing; \"(75% / 11,968)\"",
+      "source": "Baroness Harding, National Institute for Health Protection",
+      "passage": "The delayed reports are all positive cases identified via Pillar 2 testing between 24 September and 1 October. ... (75% / 11,968) ... we brought in 6,000 hours of extra contact tracing",
+      "verdict": "SUPPORTED",
+      "notes": "Verbatim from local extract; 1 day earlier than PHE is correct arithmetic; 6,500 vs 6,000 correct."
+    },
+    {
+      "id": 21,
+      "claim": "\"As of the morning of 12 October, 79% of people testing positive have been reached and asked for details of their contacts.\"",
+      "source": "Baroness Harding, National Institute for Health Protection",
+      "passage": "As of the morning of 12 October, 79% of people testing positive have been reached and asked for details of their contacts.",
+      "verdict": "SUPPORTED",
+      "notes": "Verbatim; exhibit declines to tie it to the 15,841 only."
+    },
+    {
+      "id": 22,
+      "claim": "\"A full wash-up of the incident is ongoing\"",
+      "source": "Baroness Harding, National Institute for Health Protection",
+      "passage": "A full wash-up of the incident is ongoing.",
+      "verdict": "SUPPORTED",
+      "notes": "Verbatim."
+    },
+    {
+      "id": 23,
+      "claim": "Reply \"splits large files\" mitigation",
+      "source": "Baroness Harding, National Institute for Health Protection",
+      "passage": "A rapid mitigation has been put in place by PHE working together with NHS Test and Trace that splits large files",
+      "verdict": "SUPPORTED",
+      "notes": "Verbatim."
+    },
+    {
+      "id": 24,
+      "claim": "DHSC weekly statistics (updated 22 Oct 2020): 15,841 cases identified between 25 September and 2 October; no separate reach rate for delayed cases",
+      "source": "Department of Health and Social Care",
+      "passage": "After rapid investigation, 15,841 cases were identified between 25 September and 2 October",
+      "verdict": "SUPPORTED",
+      "notes": "Updated date 22 October 2020 confirmed; fetcher found no separate reach rate for delayed cases."
+    },
+    {
+      "id": 25,
+      "claim": "OSR blog 15 Oct 2020: error \"was not directly part of official statistics production\"; review of reproducible analytical pipelines",
+      "source": "Office for Statistics Regulation",
+      "passage": "Published: 15 October 2020 ... was not directly part of official statistics production.",
+      "verdict": "SUPPORTED",
+      "notes": "Fetcher reports a review of how RAP is used across government statistics; no figures on page."
+    },
+    {
+      "id": 26,
+      "claim": "Wash-up: \"this site found none published\" / \"No published wash-up of the incident was found\"",
+      "source": "Baroness Harding, National Institute for Health Protection",
+      "passage": "",
+      "verdict": "SUPPORTED",
+      "notes": "Two web searches (general and gov.uk/parliament.uk/NAO/OSR-restricted) found no published PHE/UKHSA/DHSC wash-up; absence claim is labelled as the site's own search, which is accurate."
+    },
+    {
+      "id": 27,
+      "claim": "chartNote: coronavirus.data.gov.uk is retired and now redirects to the UKHSA dashboard",
+      "source": "none listed in sources",
+      "passage": "You can download all the historic data from the decommissioned Coronavirus (COVID-19) in the UK dashboard on this page",
+      "verdict": "PARTIALLY SUPPORTED",
+      "notes": "Fetch of coronavirus.data.gov.uk returned a 301 to https://ukhsa-dashboard.data.gov.uk/ and the archive page says 'decommissioned', but neither page is in the exhibit's sources list."
+    },
+    {
+      "id": 28,
+      "claim": "chartNote: the UKHSA series dates every case to its specimen day, so the 15,841 are distributed back onto the days they were tested",
+      "source": "none listed in sources",
+      "passage": "This metric shows the number of reported new cases for each day.",
+      "verdict": "NOT SUPPORTED",
+      "notes": "UKHSA metrics documentation for COVID-19_cases_casesByDay says only 'reported new cases for each day' with no specimen-date statement; specimen-date basis was found only in a secondary source (Our World in Data), and no UKHSA source is listed."
+    },
+    {
+      "id": 29,
+      "claim": "chartNote: the daily spike figures that survive come from press coverage",
+      "source": "none listed in sources",
+      "passage": "",
+      "verdict": "NOT SUPPORTED",
+      "notes": "No listed source; asserted as a negative claim about surviving data."
+    },
+    {
+      "id": 30,
+      "claim": "Hansard record is vol 681; Ashworth (Leicester South), Coyle (Bermondsey and Old Southwark)",
+      "source": "Hansard, House of Commons",
+      "passage": "Jonathan Ashworth (Leicester South) (Lab/Co-op) ... Neil Coyle (Bermondsey and Old Southwark) (Lab)",
+      "verdict": "PARTIALLY SUPPORTED",
+      "notes": "Constituencies verified; 'vol 681' not present in the extract and not checked."
+    },
+    {
+      "id": 31,
+      "claim": "Provenance: old-format row-limit mechanism is reported, not verified",
+      "source": "Science and Technology Committee",
+      "passage": "It is reported that PHE developers used an old format of the software, XLS",
+      "verdict": "SUPPORTED",
+      "notes": "Labelled correctly in body, verdictNote and disclosure."
+    }
+  ],
+  "round": 1
+}

@@ -38,4 +38,5 @@ npm run preview   # preview the production build
 - [x] Exhibit 011 — Greece (the 2009 deficit, published 4 times)
 - [x] Exhibit 012 — Reinhart-Rogoff (the errors compounded)
 - [x] Exhibit 013 — United States (8 glasses of water, citation needed)
+- [x] Exhibit 014 — United Kingdom (15,841 cases, the file was too big)
 - [ ] Revision tracker — the same official number, as reported over time

@@ -1,0 +1,197 @@
+{
+  "exhibit": "014",
+  "reviewedAt": "2026-10-10T02:31:54.695Z",
+  "model": "deepseek-chat",
+  "claims": [
+    {
+      "id": 1,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states that 15,841 cases between 25 September and 2 October were not included, matching the claim's figures and date range."
+    },
+    {
+      "id": 2,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states that over 75% (11,968) relate to cases that should have been reported between 30 September and 2 October, matching the claim exactly."
+    },
+    {
+      "id": 3,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states the technical issue was identified overnight on Friday 2 October, matching the claim's timing and identification, though it does not explicitly name PHE."
+    },
+    {
+      "id": 4,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states that every one of these cases received their COVID-19 test result as normal, which directly matches the claim."
+    },
+    {
+      "id": 5,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states outstanding cases reached the contact tracing system by 1am on 3 October, which directly matches the claim."
+    },
+    {
+      "id": 6,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states verbatim that some files containing positive test results exceeded the maximum file size, directly matching the claim."
+    },
+    {
+      "id": 7,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage directly quotes the exact phrase from the claim, confirming the data load process described."
+    },
+    {
+      "id": 8,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage explicitly states that none of the terms Excel, XLS, rows, or columns appear on the page, directly confirming the claim."
+    },
+    {
+      "id": 9,
+      "verdict": "PARTIALLY SUPPORTED",
+      "reasoning": "The passage confirms the mitigation \"splits large files\" but provides no information about Michael Brodie or the publication dates."
+    },
+    {
+      "id": 10,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage confirms the Covid-19 Update debate occurred in Volume 681 on Monday 5 October 2020, matching the claim's citation."
+    },
+    {
+      "id": 11,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states that 15,841 positive test results over the previous eight days were not included due to a failure in the automated transfer of files, matching the claim."
+    },
+    {
+      "id": 12,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states the problem emerged in a PHE legacy system, that they decided in July to replace it, and that contracts were awarded in August."
+    },
+    {
+      "id": 13,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage explicitly refers to \"a maximum file size error,\" confirming the topic of the claim."
+    },
+    {
+      "id": 14,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage directly states both the 6,500 hours of extra contact tracing and the 51% figure as of 9am, matching the claim exactly."
+    },
+    {
+      "id": 15,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage directly states the claim verbatim as its opening clause."
+    },
+    {
+      "id": 16,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage only asks why pandemic databases are hosted on Excel and why other governments lack such problems, without mentioning Hansard, opposition MPs Ashworth or Coyle, or the Health Secretary's usage count."
+    },
+    {
+      "id": 17,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage contains the exact quoted question from the claim verbatim."
+    },
+    {
+      "id": 18,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage says the statement was made on Monday 5 October, not 8 October as the claim asserts."
+    },
+    {
+      "id": 19,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states verbatim the claim that PHE developers used the old XLS format with a set number of rows incompatible with the data volume."
+    },
+    {
+      "id": 20,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage identifies Greg Clark as Chair, dates the letter 8 October 2020, and references a question about \"the Microsoft Excel-based system,\" though it does not explicitly name the Science and Technology Committee."
+    },
+    {
+      "id": 21,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states verbatim that the technical issue was not caused by the use of an old format, directly supporting the claim."
+    },
+    {
+      "id": 22,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states verbatim that increased Pillar 2 testing volumes caused some Excel files in the transfer process to exceed their file size threshold and not be uploaded."
+    },
+    {
+      "id": 23,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage only states that the delayed reports are positive cases identified between 24 September and 1 October, without mentioning reply dates or PHE."
+    },
+    {
+      "id": 24,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage directly states \"6,000 hours of extra contact tracing\" and includes the exact figure \"(75% / 11,968)\" referenced in the claim."
+    },
+    {
+      "id": 25,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states verbatim the same statistic and date as the claim."
+    },
+    {
+      "id": 26,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage directly states that a full wash-up of the incident is ongoing, matching the claim's quoted text."
+    },
+    {
+      "id": 27,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states that 15,841 cases were identified between 25 September and 2 October and is marked \"Updated 22 October 2020,\" matching the claim."
+    },
+    {
+      "id": 28,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage directly states that the error with the Excel spreadsheet was not directly part of official statistics production, matching the claim."
+    },
+    {
+      "id": 29,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states that OSR launched a review to explore the use of RAP (reproducible analytical pipelines) across government statistics."
+    },
+    {
+      "id": 30,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage explicitly states that data by publish date \"may include the publication of a backlog of data,\" directly matching the claim."
+    },
+    {
+      "id": 31,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states verbatim the claim that it has not been possible to fully validate these archived datasets against the latest version of the decommissioned Coronavirus (COVID-19) in the UK dashboard."
+    },
+    {
+      "id": 32,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage explicitly states the last updated date as 1 May 2025, matching the claim."
+    },
+    {
+      "id": 33,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "No passage was provided, so there is no text to support the claim."
+    },
+    {
+      "id": 34,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage lists England newCasesByPublishDate values of 10806.0 for 2020-10-03 and 21309.0 for 2020-10-04, matching the claim's dates and figures."
+    },
+    {
+      "id": 35,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage lists England newCasesBySpecimenDate data points dated 2020-09-18 through 2020-10-12, matching the claim's England specimen-date series from 18 Sep to 12 Oct."
+    },
+    {
+      "id": 36,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "No passage was provided, so there is no text to support the claim."
+    },
+    {
+      "id": 37,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "No passage was provided, so there is no text to support the claim."
+    },
+    {
+      "id": 38,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "No passage was retrieved, so there is no text to support the claim."
+    }
+  ]
+}
