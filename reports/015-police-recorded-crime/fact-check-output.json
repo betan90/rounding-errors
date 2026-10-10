@@ -1,0 +1,430 @@
+{
+  "exhibit": "015",
+  "checkedAt": "2026-10-10T15:00:00Z",
+  "claims": [
+    {
+      "id": 1,
+      "claim": "title: \"Over 800,000 crimes a year, 0 records\"",
+      "source": "HM Inspectorate of Constabulary, Crime-recording: making the victim count (web.archive.org copy; not retrieved live, checked against main-session extraction hmic2014.txt)",
+      "passage": "Over 800,000 crimes reported to the police have gone unrecorded each year.7 This represents an under-recording of 19 percent.",
+      "verdict": "SUPPORTED",
+      "notes": "Fair compression of para 1.16; the title does not say 'estimated', but the ledger label and the HMIC source entry now do."
+    },
+    {
+      "id": 2,
+      "claim": "status: \"the designation removed in January 2014 has not come back\"",
+      "source": "ONS, Crime in England and Wales: year ending March 2026 (fetched live)",
+      "passage": "Police recorded crime data and recorded fraud and computer misuse are not designated as accredited official statistics and are published as official statistics. Their accreditation was removed by the Office for Statistics Regulation (OSR) in January 2014 following an assessment that found evidence that the quality and consistency of the underlying data may not be reliable.",
+      "verdict": "SUPPORTED",
+      "notes": "ONS's own July 2026 bulletin states the January 2014 removal and the current non-accredited status; a web search found no later reaccreditation."
+    },
+    {
+      "id": 3,
+      "claim": "status: \"the survey's accreditation did, in October 2024\"",
+      "source": "OSR letter, Ed Humpherson to Jen Woolford, 17 October 2024 (fetched live)",
+      "passage": "You asked us to consider reinstating the accreditation of the CSEW estimates following the temporary suspension of the accreditation in July 2022 due to quality concerns. We are pleased to confirm the reaccreditation of the CSEW estimates, starting from the next release of the statistics on 24 October 2024.",
+      "verdict": "SUPPORTED",
+      "notes": "'Came back' is right because the letter itself describes a suspension and a reinstatement."
+    },
+    {
+      "id": 4,
+      "claim": "teaser: \"2 official counts, and the 19% of reported crime 1 of them never recorded\"",
+      "source": "HMIC 2014 para 1.16 (extraction)",
+      "passage": "This represents an under-recording of 19 percent.",
+      "verdict": "SUPPORTED",
+      "notes": "19% matches, and ONS's 2026 bulletin says 'Crime statistics are based on the Crime Survey for England and Wales (CSEW) and police recorded crime.'"
+    },
+    {
+      "id": 5,
+      "claim": "ledger: National Statistics designation removed from police-recorded crime (UK Statistics Authority), January 2014",
+      "source": "UK Statistics Authority, Assessment Report 268 (extraction ar268.txt); OSR publication page (fetched live)",
+      "passage": "Assessment Report 268  January 2014 ... 1.2.5  Therefore, the Authority has removed the National Statistics designation from statistics based on recorded crime data",
+      "verdict": "SUPPORTED",
+      "notes": "Cover date and para 1.2.5 agree; the live OSR landing page gives '15 January 2014' but does not itself carry the removal wording."
+    },
+    {
+      "id": 6,
+      "claim": "ledger: Reported crimes unrecorded each year, estimated (HMIC, November 2014): over 800,000",
+      "source": "HMIC 2014 para 1.16 and footnote 7 (extraction)",
+      "passage": "7 This estimate has been calculated by applying our audit finding that 81 percent of reported crime is being recorded to police-recorded crime figures for the 12-month period ending July 2014.",
+      "verdict": "SUPPORTED",
+      "notes": "Figure verbatim and now labelled as an estimate, matching footnote 7."
+    },
+    {
+      "id": 7,
+      "claim": "ledger: Under-recording of reported crime (HMIC): 19%",
+      "source": "HMIC 2014 para 1.16 (extraction)",
+      "passage": "This represents an under-recording of 19 percent.",
+      "verdict": "SUPPORTED",
+      "notes": "Exact."
+    },
+    {
+      "id": 8,
+      "claim": "ledger: Under-recording, violence against the person / sexual offences: 33% / 26%",
+      "source": "HMIC 2014 para 1.16 (extraction)",
+      "passage": "The problem is greatest for victims of violence against the person and sexual offences, where the under-recording rates are 33 percent and 26 percent respectively.",
+      "verdict": "SUPPORTED",
+      "notes": "Exact, correct order."
+    },
+    {
+      "id": 9,
+      "claim": "ledger: No-crime decisions reviewed / incorrect: 3,246 / 664",
+      "source": "HMIC 2014 para 1.17 (extraction)",
+      "passage": "Of the 3,246 decisions to cancel, or no-crime8, a crime record that we reviewed, 664 were incorrect.",
+      "verdict": "SUPPORTED",
+      "notes": "Exact."
+    },
+    {
+      "id": 10,
+      "claim": "ledger: Crime records classified correctly (HMIC): 96%",
+      "source": "HMIC 2014 para 1.19 (extraction)",
+      "passage": "Our audit showed that 96 percent of crime records reviewed were classified correctly, either at the time of initial recording or subsequently.",
+      "verdict": "SUPPORTED",
+      "notes": "Exact."
+    },
+    {
+      "id": 11,
+      "claim": "ledger: Recording accuracy, 2014 / end of 2021 to 2022 inspections (OSR): 80.5% / 92.4%",
+      "source": "OSR, The quality of police recorded crime statistics for England and Wales, 16 May 2024 (fetched live)",
+      "passage": "from 80.5% (± 2.0%) of all crimes (excluding fraud) in 2014 to 92.4% (± 0.3%)",
+      "verdict": "SUPPORTED",
+      "notes": "Exact; the sentence continues 'at the end of the 2021 to 2022 inspection programme, a statistically significant change' (osr2024.txt)."
+    },
+    {
+      "id": 12,
+      "claim": "ledger: Accreditation in ONS's July 2026 bulletin: survey / police-recorded crime = accredited / not",
+      "source": "ONS, Crime in England and Wales: year ending March 2026 (fetched live)",
+      "passage": "Accredited official statistics using data from the Crime Survey for England and Wales (CSEW) and official statistics using data from police recorded crime.",
+      "verdict": "SUPPORTED",
+      "notes": "The bulletin's own description line, plus section 19: 'CSEW estimates are accredited official statistics'."
+    },
+    {
+      "id": 13,
+      "claim": "ledgerNote: \"HMIC's report gives the 2014 recording rate as 81%; the OSR gives the 2014 inspection estimate as 80.5% (± 2.0%).\"",
+      "source": "HMIC 2014 (extraction); OSR 2024 (fetched live)",
+      "passage": "provide a national rate for the accuracy of police recording of 81 percent.43 ... from 80.5% (± 2.0%) of all crimes (excluding fraud) in 2014",
+      "verdict": "SUPPORTED",
+      "notes": "Both figures stated as each source gives them; the round 1 inference that they are the same number rounded is gone."
+    },
+    {
+      "id": 14,
+      "claim": "verdict Fraud detected: \"relatively little. HMIC looked for \\\"hard evidence of improper practices (such as dishonest manipulation)\\\" and found \\\"relatively little\\\".\"",
+      "source": "HMIC 2014, summary and conclusions (extraction)",
+      "passage": "We looked for hard evidence of improper practices (such as dishonest manipulation) in crime-recording as a result of performance pressure, and approached those who told us that it was going on, but relatively little was found.",
+      "verdict": "SUPPORTED",
+      "notes": "Verbatim; the full object of the search is now quoted."
+    },
+    {
+      "id": 15,
+      "claim": "verdict Fraud detected: \"A number of forces accepted that \\\"the culture of chasing targets as ends in themselves had distorted crime-recording decisions\\\".\"",
+      "source": "HMIC 2014, summary and conclusions (extraction)",
+      "passage": "However, in and since the inspection, a number of forces accepted that undue performance pressure had adversely affected crime-recording in the past, and the culture of chasing targets as ends in themselves had distorted crime-recording decisions.",
+      "verdict": "SUPPORTED",
+      "notes": "The quoted clause is verbatim and the forces' acceptance is HMIC's report of it, an institutional act; the elided first clause does not change the meaning."
+    },
+    {
+      "id": 16,
+      "claim": "verdict Fraud detected: \"The under-recording, 19%, HMIC called \\\"wholly unacceptable\\\".\"",
+      "source": "HMIC 2014 para 1.16 (extraction)",
+      "passage": "This failure to record such a significant proportion of reported crime is wholly unacceptable.",
+      "verdict": "SUPPORTED",
+      "notes": "Verbatim."
+    },
+    {
+      "id": 17,
+      "claim": "verdict Rules broken: the Commons committee found misrecording \"ingrained, including within senior leadership\". The Statistics Authority removed the designation.",
+      "source": "PASC HC 760 summary (not retrieved live, 403 twice; checked against extraction pasc760.txt); AR268 para 1.2.5",
+      "passage": "The attitudes and behaviour which lead to the misrecording of crime have become ingrained, including within senior leadership.",
+      "verdict": "SUPPORTED",
+      "notes": "Verbatim and attributed to the committee."
+    },
+    {
+      "id": 18,
+      "claim": "verdict Usefulness: police-recorded crime is \"generally, not a reliable measure of trends in crime\"",
+      "source": "ONS, Crime in England and Wales: year ending March 2016 (fetched live)",
+      "passage": "Police recorded crime is, generally, not a reliable measure of trends in crime",
+      "verdict": "SUPPORTED",
+      "notes": "Verbatim."
+    },
+    {
+      "id": 19,
+      "claim": "verdictNote: The Statistics Authority set the condition for the designation's return in 2014: evidence that the underlying data and the audit procedures are sufficient.",
+      "source": "AR268 para 1.2.5 (extraction)",
+      "passage": "until such time that ONS, working with the Home Office, HMIC or other appropriate bodies, is able to demonstrate that the quality of the underlying data, and the robustness of the ongoing audit and quality assurance procedures, are sufficient to support its production of statistics based on recorded crime data",
+      "verdict": "SUPPORTED",
+      "notes": "Fair paraphrase."
+    },
+    {
+      "id": 20,
+      "claim": "verdictNote: The inspectorate's own figures put recording accuracy up from 80.5% to 92.4%.",
+      "source": "OSR 2024 (fetched live)",
+      "passage": "HMICFRS's inspections estimate that crime recording accuracy nationally has improved in the last ten years , from 80.5% ( ± 2.0% ) of all crimes (excluding fraud) in 2014 to 92. 4 % ( ± 0.3% )",
+      "verdict": "SUPPORTED",
+      "notes": "OSR attributes both estimates to HMICFRS inspections."
+    },
+    {
+      "id": 21,
+      "claim": "verdictNote: In May 2024, 10 years after the removal, the regulator called its review \"the first step towards the statistics being considered for reaccreditation\".",
+      "source": "OSR 2024 (fetched live)",
+      "passage": "This review is the first step towards the statistics being considered for reaccreditation.",
+      "verdict": "SUPPORTED",
+      "notes": "Verbatim; January 2014 to 16 May 2024 is 10 years 4 months, and the causal 'response' wording from round 1 is gone."
+    },
+    {
+      "id": 22,
+      "claim": "verdictNote: In October 2024 it reaccredited the other count, the survey.",
+      "source": "OSR letter, 17 October 2024 (fetched live)",
+      "passage": "We are pleased to confirm the reaccreditation of the CSEW estimates, starting from the next release of the statistics on 24 October 2024.",
+      "verdict": "SUPPORTED",
+      "notes": "Letter dated 17 October 2024 from OSR; the letter limits accreditation to wave 1 data, a nuance the line omits without misstating."
+    },
+    {
+      "id": 23,
+      "claim": "verdictNote: ONS's July 2026 bulletin describes accredited official statistics from the survey and official statistics from police-recorded crime.",
+      "source": "ONS, year ending March 2026 bulletin (fetched live)",
+      "passage": "Accredited official statistics using data from the Crime Survey for England and Wales (CSEW) and official statistics using data from police recorded crime.",
+      "verdict": "SUPPORTED",
+      "notes": "Release date confirmed as 23 July 2026."
+    },
+    {
+      "id": 24,
+      "claim": "verdictNote: \"12 years on, the survey has its accreditation back. The police count does not.\"",
+      "source": "AR268 (January 2014); ONS year ending March 2026 bulletin (fetched live)",
+      "passage": "Their accreditation was removed by the Office for Statistics Regulation (OSR) in January 2014 ... CSEW estimates are accredited official statistics and were independently reviewed by the Office for Statistics Regulation in October 2024.",
+      "verdict": "SUPPORTED",
+      "notes": "January 2014 to the 23 July 2026 bulletin is 12 years 6 months (12 years 9 months to publication); both halves match the bulletin."
+    },
+    {
+      "id": 25,
+      "claim": "body: ONS says the survey \"provides the better measure of trends\"",
+      "source": "ONS YE March 2016 bulletin (fetched live)",
+      "passage": "the CSEW provides the better measure of trends on a consistent basis over time.",
+      "verdict": "SUPPORTED",
+      "notes": "Verbatim fragment."
+    },
+    {
+      "id": 26,
+      "claim": "body: police-recorded crime \"is, generally, not a reliable measure of trends in crime\", being \"prone to changes in recording practices and police activity\"",
+      "source": "ONS YE March 2016 bulletin (fetched live; ons2016.txt)",
+      "passage": "Police recorded crime is, generally, not a reliable measure of trends in crime, since it is prone to changes in recording practices and police activity",
+      "verdict": "SUPPORTED",
+      "notes": "Verbatim."
+    },
+    {
+      "id": 27,
+      "claim": "body: In January 2014 the UKSA cited \"accumulating evidence that suggests the underlying data on crimes recorded by the police may not be reliable\"",
+      "source": "AR268 para 1.2.3 (extraction)",
+      "passage": "that there is accumulating evidence that suggests the underlying data on crimes recorded by the police may not be reliable.",
+      "verdict": "SUPPORTED",
+      "notes": "Verbatim."
+    },
+    {
+      "id": 28,
+      "claim": "body: removed the National Statistics designation from statistics based on recorded crime data ... until ONS could show the data and the audit procedures \"are sufficient\"",
+      "source": "AR268 para 1.2.5 (extraction)",
+      "passage": "the Authority has removed the National Statistics designation from statistics based on recorded crime data10 until such time that ONS ... is able to demonstrate that the quality of the underlying data, and the robustness of the ongoing audit and quality assurance procedures, are sufficient",
+      "verdict": "SUPPORTED",
+      "notes": "Accurate."
+    },
+    {
+      "id": 29,
+      "claim": "body: In November 2014 HMIC reported on its audit of every force.",
+      "source": "HMIC 2014 cover and para 2.7 (extraction)",
+      "passage": "Our in-force audit and inspection work was carried out between February and August 2014 and covered all 43 Home Office-funded police forces.",
+      "verdict": "SUPPORTED",
+      "notes": "Cover reads 'November 2014'."
+    },
+    {
+      "id": 30,
+      "claim": "body: It found 81% of reported crime being recorded.",
+      "source": "HMIC 2014 footnote 7 (extraction)",
+      "passage": "applying our audit finding that 81 percent of reported crime is being recorded",
+      "verdict": "SUPPORTED",
+      "notes": "Verbatim basis."
+    },
+    {
+      "id": 31,
+      "claim": "body quote: \"Over 800,000 crimes reported to the police have gone unrecorded each year. This represents an under-recording of 19 percent.\" plus 33% / 26%",
+      "source": "HMIC 2014 para 1.16 (extraction)",
+      "passage": "Over 800,000 crimes reported to the police have gone unrecorded each year.7 This represents an under-recording of 19 percent. The problem is greatest for victims of violence against the person and sexual offences, where the under-recording rates are 33 percent and 26 percent respectively.",
+      "verdict": "SUPPORTED",
+      "notes": "Verbatim, footnote marker dropped."
+    },
+    {
+      "id": 32,
+      "claim": "body: Of 3,246 decisions to cancel a crime record, 664 were incorrect, including over 200 rapes.",
+      "source": "HMIC 2014 para 1.17 (extraction)",
+      "passage": "Of the 3,246 decisions to cancel, or no-crime8, a crime record that we reviewed, 664 were incorrect. These included over 200 rapes and more than 250 crimes of violence against the person.",
+      "verdict": "SUPPORTED",
+      "notes": "Accurate."
+    },
+    {
+      "id": 33,
+      "claim": "body: 96% of the records it reviewed were classified correctly.",
+      "source": "HMIC 2014 para 1.19 (extraction)",
+      "passage": "Our audit showed that 96 percent of crime records reviewed were classified correctly",
+      "verdict": "SUPPORTED",
+      "notes": "Accurate."
+    },
+    {
+      "id": 34,
+      "claim": "body: \"Nobody, on the record. The record contains under-recording, and 3 institutions describing it.\"",
+      "source": "PASC HC 760; HMIC 2014; AR268 (extractions)",
+      "passage": "We looked for hard evidence of improper practices (such as dishonest manipulation) in crime-recording as a result of performance pressure, and approached those who told us that it was going on, but relatively little was found.",
+      "verdict": "PARTIALLY SUPPORTED",
+      "notes": "No listed source finds anyone lied, but '3' is the narrator's own count (UKSA, PASC, HMIC by implication; ONS and OSR also describe it) and 'on the record' can be read as insinuation."
+    },
+    {
+      "id": 35,
+      "claim": "body: The Commons Public Administration Select Committee reported in April 2014.",
+      "source": "PASC HC 760 (extraction)",
+      "passage": "HC 760 Published on 9 April 2014",
+      "verdict": "SUPPORTED",
+      "notes": "Matches title page."
+    },
+    {
+      "id": 36,
+      "claim": "body: Its chair had been contacted by \"a serving police officer, PC James Patrick, acting as a whistleblower, who had serious concerns about the validity of crime statistics.\"",
+      "source": "PASC HC 760 para 2 (extraction)",
+      "passage": "2. The Chair of PASC was contacted by a serving police officer, PC James Patrick, acting as a whistleblower, who had serious concerns about the validity of crime statistics.",
+      "verdict": "SUPPORTED",
+      "notes": "Verbatim; the named individual appears only through the committee's paper trail."
+    },
+    {
+      "id": 37,
+      "claim": "body: committee summary \"The attitudes and behaviour which lead to the misrecording of crime have become ingrained, including within senior leadership. This leads to the subordination of data integrity to target-chasing.\"",
+      "source": "PASC HC 760 summary (extraction)",
+      "passage": "The attitudes and behaviour which lead to the misrecording of crime have become ingrained, including within senior leadership. This leads to the subordination of data integrity to target-chasing.",
+      "verdict": "SUPPORTED",
+      "notes": "Verbatim."
+    },
+    {
+      "id": 38,
+      "claim": "body: It deprecated targets \"in the strongest possible terms\" and called the end of regular external audit in 2007 \"a mistake\".",
+      "source": "PASC HC 760 summary (extraction)",
+      "passage": "We deprecate the use of targets in the strongest possible terms. ... The cessation of regular external audit of police force crime recording in 2007 was a mistake.",
+      "verdict": "SUPPORTED",
+      "notes": "Verbatim."
+    },
+    {
+      "id": 39,
+      "claim": "body: HMIC called the failure to record \"wholly unacceptable\".",
+      "source": "HMIC 2014 para 1.16 (extraction)",
+      "passage": "This failure to record such a significant proportion of reported crime is wholly unacceptable.",
+      "verdict": "SUPPORTED",
+      "notes": "Verbatim."
+    },
+    {
+      "id": 40,
+      "claim": "body: It had looked for \"hard evidence of improper practices (such as dishonest manipulation)\", and \"relatively little was found.\" A number of forces, it added, accepted that \"the culture of chasing targets as ends in themselves had distorted crime-recording decisions\".",
+      "source": "HMIC 2014 summary and conclusions (extraction)",
+      "passage": "We looked for hard evidence of improper practices (such as dishonest manipulation) in crime-recording as a result of performance pressure, and approached those who told us that it was going on, but relatively little was found. However, in and since the inspection, a number of forces accepted that undue performance pressure had adversely affected crime-recording in the past, and the culture of chasing targets as ends in themselves had distorted crime-recording decisions.",
+      "verdict": "SUPPORTED",
+      "notes": "Both quotes verbatim and now presented together, as HMIC wrote them."
+    },
+    {
+      "id": 41,
+      "claim": "body: In the year ending March 2016 the survey fell 6% and police-recorded crime rose 8%.",
+      "source": "ONS YE March 2016 bulletin (fetched live)",
+      "passage": "showed a 6% fall in the number of incidents against adults for the survey year ending March 2016 (6.3 million, compared with 6.8 million in the previous survey year). ... The police recorded 4.5 million offences in the year ending March 2016, an annual rise of 8%.",
+      "verdict": "SUPPORTED",
+      "notes": "Both stated directly by ONS."
+    },
+    {
+      "id": 42,
+      "claim": "body and source: ONS said \"most of the latest rise is thought to be due to improved crime recording practices and processes\"",
+      "source": "ONS YE March 2016 bulletin (fetched live)",
+      "passage": "However, this series is not considered a reliable indicator of trends in crime; most of the latest rise is thought to be due to improved crime recording practices and processes",
+      "verdict": "SUPPORTED",
+      "notes": "Verbatim."
+    },
+    {
+      "id": 43,
+      "claim": "body: Inspections later put recording accuracy at 80.5% in 2014 and 92.4% at the end of the 2021 to 2022 programme, \"a statistically significant change\".",
+      "source": "OSR 2024 (fetched live; osr2024.txt)",
+      "passage": "from 80.5% ( ± 2.0% ) of all crimes (excluding fraud) in 2014 to 92. 4 % ( ± 0.3% ) at the end of the 2021 to 20 22 inspection programme, a statistically significant change.",
+      "verdict": "SUPPORTED",
+      "notes": "Verbatim."
+    },
+    {
+      "id": 44,
+      "claim": "body: In May 2024 OSR still listed police-recorded crime as \"official statistics, not accredited official statistics\", and called its review \"the first step towards the statistics being considered for reaccreditation.\"",
+      "source": "OSR 2024 (fetched live)",
+      "passage": "published as official statistics, not accredited official statistics ... This review is the first step towards the statistics being considered for reaccreditation.",
+      "verdict": "SUPPORTED",
+      "notes": "Verbatim; page dated 16 May 2024."
+    },
+    {
+      "id": 45,
+      "claim": "body: The same review noted that the survey was not accredited either, \"due to challenges with response rates\".",
+      "source": "OSR 2024 (fetched live)",
+      "passage": "Currently, the CSEW statistics are published as official statistics, not accredited official statistics, due to challenges with response rates that affect the quality of the estimates.",
+      "verdict": "SUPPORTED",
+      "notes": "'Noted' replaces round 1's 'gave', which fixes the misattribution."
+    },
+    {
+      "id": 46,
+      "claim": "body: The regulator reaccredited the survey in October 2024. ONS's July 2026 bulletin still describes the police figures as \"official statistics\", not accredited ones.",
+      "source": "OSR letter 17 October 2024; ONS YE March 2026 bulletin (both fetched live)",
+      "passage": "We are pleased to confirm the reaccreditation of the CSEW estimates ... Police recorded crime data and recorded fraud and computer misuse are not designated as accredited official statistics and are published as official statistics.",
+      "verdict": "SUPPORTED",
+      "notes": "Both halves verbatim-supported."
+    },
+    {
+      "id": 47,
+      "claim": "HMIC source entry: the 800,000 as an estimate, made by applying the audit's 81% recording rate to police-recorded crime for the 12 months ending July 2014 (footnote 7)",
+      "source": "HMIC 2014 footnote 7 (extraction)",
+      "passage": "7 This estimate has been calculated by applying our audit finding that 81 percent of reported crime is being recorded to police-recorded crime figures for the 12-month period ending July 2014.",
+      "verdict": "SUPPORTED",
+      "notes": "Now matches footnote 7 exactly; HMIC's own footnote 33 says 'ending March 2014', an inconsistency inside the source, but the entry cites footnote 7 by number."
+    },
+    {
+      "id": 48,
+      "claim": "HMIC source entry: the inspection covered all 43 Home Office-funded police forces",
+      "source": "HMIC 2014 para 2.7 (extraction)",
+      "passage": "Our in-force audit and inspection work was carried out between February and August 2014 and covered all 43 Home Office-funded police forces.",
+      "verdict": "SUPPORTED",
+      "notes": "Verbatim."
+    },
+    {
+      "id": 49,
+      "claim": "UKSA source entry: Assessment Report 268, January 2014 (published 15 January 2014)",
+      "source": "OSR publication page (fetched live); ar268.txt",
+      "passage": "15 January 2014",
+      "verdict": "SUPPORTED",
+      "notes": "Live page date; PASC footnote 47 also cites 'Assessment Report 268, Statistics on Crime in England and Wales, 15 January 2014'."
+    },
+    {
+      "id": 50,
+      "claim": "PASC source entry: Thirteenth Report of Session 2013-14, HC 760, 9 April 2014; para 1 January 2014 removal",
+      "source": "PASC HC 760 (extraction)",
+      "passage": "As a result of this inquiry and the evidence we have exposed, the UK Statistics Authority (UKSA) decided in January 2014 to strip PRC data of its designation as National Statistics.",
+      "verdict": "SUPPORTED",
+      "notes": "Title page reads 'Thirteenth Report of Session 2013-14 ... HC 760 Published on 9 April 2014'."
+    },
+    {
+      "id": 51,
+      "claim": "OSR letter source entry: Letter, Ed Humpherson to Jen Woolford, 17 October 2024",
+      "source": "OSR correspondence page (fetched live)",
+      "passage": "Published: 17 October 2024 Sent from: Office for Statistics Regulation Sent to: Office for National Statistics",
+      "verdict": "SUPPORTED",
+      "notes": "Named individuals appear as signatory and addressee of an institutional letter."
+    },
+    {
+      "id": 52,
+      "claim": "ONS Figure 1 source entry: CSEW 6,764 to 6,334 (down 6%), police-recorded crime 4,174 to 4,514 (up 8%)",
+      "source": "ONS Figure 1 xls (fetched, binary); ONS YE March 2016 bulletin tables (ons2016.txt)",
+      "passage": "ALL CSEW CRIME 6 .. 6,334 -67 * -40 * -33 * -6 * ... TOTAL RECORDED CRIME - ALL OFFENCES INCLUDING FRAUD 7 79 4,513,964 -19 9 8",
+      "verdict": "PARTIALLY SUPPORTED",
+      "notes": "The 2016 endpoints and both percentage changes trace to the bulletin tables; the 2015 values (6,764; 4,174) rest on the main-session extraction of the binary xls, and are consistent with ONS's '6.8 million' and +8% (4,513,964 / 4,174,239 = +8.1%)."
+    },
+    {
+      "id": 53,
+      "claim": "ONS Figure 1 source entry: title \"Trends in Crime Survey for England and Wales and police recorded crime...\" and footnote \"Police recorded crime data are not designated as National Statistics.\"",
+      "source": "ONS Figure 1 xls (fetched live, binary; string search of saved bytes)",
+      "passage": "Police recorded crime data are not designated as National Statistics",
+      "verdict": "SUPPORTED",
+      "notes": "Both strings occur verbatim in the fetched xls bytes (1 match each)."
+    }
+  ]
+}

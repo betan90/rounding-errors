@@ -1,0 +1,272 @@
+{
+  "exhibit": "015",
+  "reviewedAt": "2026-10-10T15:51:20.226Z",
+  "model": "deepseek-chat",
+  "claims": [
+    {
+      "id": 1,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states that over 800,000 crimes reported to police go unrecorded each year, directly matching the claim's figures of \"800,000 crimes\" and \"0 records.\""
+    },
+    {
+      "id": 2,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage states accreditation was removed in January 2014 but says nothing about whether the designation has come back."
+    },
+    {
+      "id": 3,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage confirms the reaccreditation of the CSEW estimates starting from the release on 24 October 2024, which matches the claim that the survey's accreditation did occur in October 2024."
+    },
+    {
+      "id": 4,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage only states there is a 19 percent under-recording, but does not mention two official counts or that one of them was never recorded."
+    },
+    {
+      "id": 5,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states that in January 2014 the Authority removed the National Statistics designation from statistics based on recorded crime data, matching the claim."
+    },
+    {
+      "id": 6,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage describes how an estimate was calculated but does not state the figure of over 800,000 unrecorded crimes per year."
+    },
+    {
+      "id": 7,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage directly states there is an under-recording of 19 percent, matching the claim's figure."
+    },
+    {
+      "id": 8,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage explicitly states under-recording rates of 33 percent for violence against the person and 26 percent for sexual offences, matching the claim."
+    },
+    {
+      "id": 9,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states that of 3,246 no-crime decisions reviewed, 664 were incorrect, matching the claim's figures."
+    },
+    {
+      "id": 10,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states that 96 percent of crime records reviewed were classified correctly, matching the claim's figure and classification criterion."
+    },
+    {
+      "id": 11,
+      "verdict": "PARTIALLY SUPPORTED",
+      "reasoning": "The passage confirms the 80.5% (2014) and 92.4% figures but does not mention the ledger, recording accuracy, or the end of 2021 to 2022 inspections (OSR)."
+    },
+    {
+      "id": 12,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage mentions accredited official statistics for CSEW and official statistics for police recorded crime, but does not reference ONS's July 2026 bulletin or state that police-recorded crime is not accredited."
+    },
+    {
+      "id": 13,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states a national police recording accuracy rate of 81 percent and an 80.5% (± 2.0%) figure for all crimes excluding fraud in 2014, matching the claim's figures."
+    },
+    {
+      "id": 14,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage confirms that a search for hard evidence of improper practices like dishonest manipulation found relatively little, matching the claim's quoted finding."
+    },
+    {
+      "id": 15,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage directly states that a number of forces accepted that the culture of chasing targets as ends in themselves had distorted crime-recording decisions, matching the claim."
+    },
+    {
+      "id": 16,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage calls the failure to record crime \"wholly unacceptable\" but does not mention the 19% figure, HMIC, or a fraud verdict."
+    },
+    {
+      "id": 17,
+      "verdict": "PARTIALLY SUPPORTED",
+      "reasoning": "The passage supports the first part of the claim about ingrained misrecording including within senior leadership, but says nothing about the Statistics Authority removing the designation."
+    },
+    {
+      "id": 18,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states verbatim that police recorded crime is \"generally, not a reliable measure of trends in crime,\" directly matching the claim."
+    },
+    {
+      "id": 19,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states the condition for the designation's return is demonstrating sufficient quality of underlying data and robustness of audit and quality assurance procedures, matching the claim."
+    },
+    {
+      "id": 20,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states HMICFRS inspections estimate crime recording accuracy improved from 80.5% in 2014 to 92.4%, matching the claim's figures."
+    },
+    {
+      "id": 21,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage states the review is the first step towards reaccreditation but does not mention May 2024, 10 years after removal, or that the regulator made this call."
+    },
+    {
+      "id": 22,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage confirms reaccreditation of CSEW estimates starting 24 October 2024, but does not mention \"the other count, the survey\" as stated in the claim."
+    },
+    {
+      "id": 23,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage describes the statistics and data sources but does not mention ONS, a July 2026 bulletin, or any verdict note."
+    },
+    {
+      "id": 24,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage states accreditation was removed in 2014 and that CSEW estimates are accredited official statistics reviewed in October 2024, but it does not mention \"12 years\" or any police count, so the claim's specific assertions are not supported."
+    },
+    {
+      "id": 25,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage attributes the statement to the CSEW itself, not to ONS, so it does not support the claim that ONS says this."
+    },
+    {
+      "id": 26,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states verbatim that police recorded crime is generally not a reliable measure of trends in crime because it is prone to changes in recording practices and police activity, directly matching the claim."
+    },
+    {
+      "id": 27,
+      "verdict": "PARTIALLY SUPPORTED",
+      "reasoning": "The passage contains the quoted phrase about accumulating evidence on police-recorded crime data, but it does not mention the UKSA or the January 2014 date."
+    },
+    {
+      "id": 28,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states the Authority removed the National Statistics designation from recorded crime data statistics until ONS can demonstrate the underlying data quality and audit procedures are sufficient, matching the claim."
+    },
+    {
+      "id": 29,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage states the audit work occurred between February and August 2014, not that HMIC reported on it in November 2014."
+    },
+    {
+      "id": 30,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states the audit finding that 81 percent of reported crime is being recorded, matching the claim."
+    },
+    {
+      "id": 31,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage directly contains the quoted sentence about 800,000 unrecorded crimes and 19 percent under-recording, and also states the 33 percent and 26 percent rates for violence and sexual offences."
+    },
+    {
+      "id": 32,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states that of 3,246 decisions to cancel a crime record, 664 were incorrect, including over 200 rapes, matching the claim."
+    },
+    {
+      "id": 33,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states that 96 percent of crime records reviewed were classified correctly, matching the claim's figure."
+    },
+    {
+      "id": 34,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage says relatively little evidence was found, which does not support the claim that the record contains under-recording described by three institutions."
+    },
+    {
+      "id": 35,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage only gives a publication date and reference number, with no mention of the Commons Public Administration Select Committee or any report by it."
+    },
+    {
+      "id": 36,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states verbatim that the Chair of PASC was contacted by PC James Patrick, a serving police officer acting as a whistleblower with serious concerns about the validity of crime statistics, matching the claim."
+    },
+    {
+      "id": 37,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage reproduces the claim's text verbatim, directly supporting it."
+    },
+    {
+      "id": 38,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage directly states it deprecates targets \"in the strongest possible terms\" and calls the 2007 cessation of regular external audit \"a mistake,\" matching the claim."
+    },
+    {
+      "id": 39,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage states the failure to record is \"wholly unacceptable\" but does not attribute this statement to HMIC."
+    },
+    {
+      "id": 40,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage confirms both that relatively little hard evidence of improper practices was found and that a number of forces accepted the culture of chasing targets distorted crime-recording decisions."
+    },
+    {
+      "id": 41,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states a 6% fall in survey incidents and an 8% rise in police-recorded offences for the year ending March 2016, matching the claim."
+    },
+    {
+      "id": 42,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage contains the exact quoted statement about the latest rise being due to improved crime recording practices and processes, matching the claim's attribution to ONS."
+    },
+    {
+      "id": 43,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states the recording accuracy rose from 80.5% in 2014 to 92.4% at the end of the 2021 to 2022 inspection programme, calling it a statistically significant change, matching the claim."
+    },
+    {
+      "id": 44,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage directly states the statistics are published as official statistics, not accredited official statistics, and that the review is the first step towards reaccreditation, matching the claim's content."
+    },
+    {
+      "id": 45,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states the survey is not accredited official statistics due to challenges with response rates, matching the claim's content."
+    },
+    {
+      "id": 46,
+      "verdict": "PARTIALLY SUPPORTED",
+      "reasoning": "The passage confirms reaccreditation of CSEW estimates and that police recorded crime is published as official statistics rather than accredited, but it does not mention October 2024 or a July 2026 ONS bulletin."
+    },
+    {
+      "id": 47,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states the estimate was calculated by applying the 81 percent audit finding to police-recorded crime figures for the 12 months ending July 2014, matching the claim."
+    },
+    {
+      "id": 48,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage explicitly states the inspection covered all 43 Home Office-funded police forces."
+    },
+    {
+      "id": 49,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage only gives the date \"15 January 2014\" and does not mention UKSA, Assessment Report 268, or any source entry."
+    },
+    {
+      "id": 50,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage mentions a January 2014 removal of National Statistics designation but does not reference the Thirteenth Report of Session 2013-14, HC 760, or 9 April 2014."
+    },
+    {
+      "id": 51,
+      "verdict": "PARTIALLY SUPPORTED",
+      "reasoning": "The passage confirms the date and the sender (Office for Statistics Regulation) but does not name Ed Humpherson or Jen Woolford, nor does it explicitly identify the item as a letter."
+    },
+    {
+      "id": 52,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage contains some matching numbers (6,334 and 4,513) but does not present the CSEW figure of 6,764, the police-recorded figure of 4,174, or the stated percentage changes, so it does not support the claim as given."
+    },
+    {
+      "id": 53,
+      "verdict": "PARTIALLY SUPPORTED",
+      "reasoning": "The passage confirms the footnote about police recorded crime data not being designated as National Statistics, but it does not contain the title \"Trends in Crime Survey for England and Wales and police recorded crime...\" from the claim."
+    }
+  ]
+}

@@ -1,0 +1,136 @@
+---
+---
+
+<div class="chart-block">
+  <div class="legend">
+    <span><i class="swatch" style="background:var(--red-line)"></i> Police recorded crime</span>
+    <span><i class="swatch" style="background:var(--ink)"></i> Crime Survey for England and Wales (CSEW)</span>
+  </div>
+  <figure>
+    <svg
+      id="chart"
+      viewBox="0 0 760 450"
+      role="img"
+      aria-label="Chart of the Crime Survey for England and Wales (CSEW) and police recorded crime, England and Wales, 1981 to year ending March 2016, in millions. The survey stands at 11.1 million in 1981, peaks at 19.1 million in 1995 and falls to 6.3 million in the year ending March 2016, with 23 data points; it was not run every year before 2001. Police recorded crime rises from 3.0 million in 1981 to 6.0 million in 2004, falls to 4.0 million in 2014, then rises to 4.5 million in the year ending March 2016, with 35 data points and no value for 1998. Dashed markers show 2002, when the survey changed its reference period, 2012, when police recorded crime began to include additional fraud data, and January 2014, when the National Statistics designation was removed from police recorded crime."
+    ></svg>
+    <figcaption class="cap">The 2 series cover different offence sets and are compared by direction, not level. The survey was not run every year before 2001, so its early points are not joined; police recorded crime has no value for 1998, when the series moves from calendar years to years ending March. From the year ending March 2002 the survey's reference period is the 12 months before interview, not a calendar year. Police recorded crime is not designated National Statistics. Source: ONS, Crime in England and Wales: year ending March 2016, Figure 1.</figcaption>
+  </figure>
+</div>
+
+<script is:inline>
+(function(){
+  // ---- DATA ----
+  // Source: ONS, "Crime in England and Wales: year ending March 2016", Figure 1,
+  //   "Trends in Crime Survey for England and Wales and police recorded crime,
+  //   year ending December 1981 to year ending March 2016", England and Wales, thousands.
+  //   https://www.ons.gov.uk/peoplepopulationandcommunity/crimeandjustice/bulletins/crimeinenglandandwales/yearendingmar2016
+  // Values are as published, in thousands; the chart divides by 1000 for millions.
+  // Nothing is interpolated or filled. Labels are calendar years to 1997 and years
+  // ending March after (CSEW from 2000, police from 1999); from 2002 the CSEW
+  // labels are years ending March.
+  // CSEW: 23 points. The survey was not run every year before 2001.
+  var csew = [
+    [1981,11066],[1983,11901],[1987,13313],[1991,15111],[1993,18355],[1995,19109],[1997,16469],
+    [2000,14762],[2002,12366],[2003,12018],[2004,11417],[2005,10550],[2006,10581],[2007,10942],
+    [2008,9842],[2009,10283],[2010,9344],[2011,9446],[2012,9345],[2013,8487],[2014,7318],
+    [2015,6764],[2016,6334]
+  ];
+  // Police recorded crime: 35 points. No value for 1998 (calendar 1997 is followed
+  // by year ending March 1999).
+  var police = [
+    [1981,2963.76],[1982,3262.422],[1983,3247.032],[1984,3499.06],[1985,3611.837],[1986,3847.41],
+    [1987,3892.201],[1988,3715.767],[1989,3870.748],[1990,4543.611],[1991,5276.173],[1992,5591.717],
+    [1993,5526.255],[1994,5252.98],[1995,5100.241],[1996,5036.552],[1997,4598.327],
+    [1999,5109.089],[2000,5301.187],[2001,5170.843],[2002,5525.024],[2003,5974.96],[2004,6013.759],
+    [2005,5637.511],[2006,5555.172],[2007,5427.558],[2008,4952.277],[2009,4702.697],[2010,4338.295],
+    [2011,4150.916],[2012,4379.984],[2013,4063.571],[2014,4028.463],[2015,4174.239],[2016,4513.964]
+  ];
+
+  var INK='#17181A', SOFT='#5A5C55', RED='#C22B24', PAPER='#FBF9F4';
+  var MONO="'IBM Plex Mono',monospace";
+
+  var W=760, H=450, m={t:78,r:24,b:62,l:52};
+  var pw=W-m.l-m.r, ph=H-m.t-m.b;
+  var yMax=20, x0=1981, x1=2016;
+  function X(yr){return m.l + ((yr-x0)/(x1-x0))*pw;}
+  function Y(v){return m.t + (1 - v/yMax)*ph;}
+
+  var svg=document.getElementById('chart');
+  var NS='http://www.w3.org/2000/svg';
+  function el(t,a){var e=document.createElementNS(NS,t);for(var k in a)e.setAttribute(k,a[k]);return e;}
+  function text(x,y,s,o){
+    o=o||{};
+    var e=el('text',{x:x,y:y,'text-anchor':o.anchor||'start','font-family':MONO,
+                     'font-size':o.size||11,fill:o.fill||SOFT});
+    if(o.weight) e.setAttribute('font-weight',o.weight);
+    if(o.spacing) e.setAttribute('letter-spacing',o.spacing);
+    e.textContent=s; svg.appendChild(e); return e;
+  }
+  // Joins only consecutive years; a missing year breaks the line.
+  function line(arr,color){
+    var segs=[], cur=[];
+    for(var i=0;i<arr.length;i++){
+      if(cur.length && arr[i][0]-cur[cur.length-1][0]!==1){ segs.push(cur); cur=[]; }
+      cur.push(arr[i]);
+    }
+    segs.push(cur);
+    segs.forEach(function(s){
+      if(s.length<2) return;
+      var d='M'+s.map(function(p){return X(p[0])+' '+Y(p[1]/1000);}).join(' L ');
+      svg.appendChild(el('path',{d:d,fill:'none',stroke:color,'stroke-width':2.5,
+                                 'stroke-linejoin':'round','stroke-linecap':'round'}));
+    });
+  }
+  function dots(arr,color,cls,hollow){
+    arr.forEach(function(p){
+      svg.appendChild(el('circle',{cx:X(p[0]),cy:Y(p[1]/1000),r:hollow?3.2:2.6,
+        fill:hollow?PAPER:color,stroke:color,'stroke-width':hollow?1.8:0,'class':cls}));
+    });
+  }
+
+  // ---- gridlines + y labels ----
+  for(var g=0; g<=20; g+=5){
+    svg.appendChild(el('line',{x1:m.l,y1:Y(g),x2:W-m.r,y2:Y(g),stroke:SOFT,'stroke-width':1,
+                               'stroke-opacity':g===0?0.55:0.14}));
+    text(m.l-8,Y(g)+4,g,{anchor:'end'});
+  }
+  text(4,Y(20)-14,'millions',{anchor:'start',size:10.5});
+
+  // ---- x labels ----
+  [1981,1986,1991,1996,2001,2006,2011,2016].forEach(function(yr){
+    svg.appendChild(el('line',{x1:X(yr),y1:Y(0),x2:X(yr),y2:Y(0)+5,stroke:SOFT,'stroke-width':1}));
+    text(X(yr),Y(0)+20,yr,{anchor:'middle',size:10.5});
+  });
+
+  // ---- ONS footnote markers ----
+  function marker(yr,row,anchor,label){
+    var ty=14+row*13;
+    svg.appendChild(el('line',{x1:X(yr),y1:ty+4,x2:X(yr),y2:Y(0),stroke:SOFT,'stroke-width':1,
+                               'stroke-dasharray':'3 3','stroke-opacity':0.7}));
+    text(X(yr)+(anchor==='end'?-5:5),ty,label,{anchor:anchor,size:10,spacing:'0.04em'});
+  }
+  marker(2002,0,'start','2002: CSEW PERIOD CHANGED');
+  marker(2014,1,'end','JAN 2014: DESIGNATION REMOVED');
+  marker(2012,2,'end','2012: FRAUD DATA ADDED');
+
+  // ---- series ----
+  line(csew,INK);
+  line(police,RED);
+  dots(csew,INK,'pt-csew',true);
+  dots(police,RED,'pt-police',false);
+
+  // ---- end-point labels ----
+  function halo(e){e.setAttribute('stroke',PAPER);e.setAttribute('stroke-width','4');e.setAttribute('paint-order','stroke');e.setAttribute('stroke-linejoin','round');}
+  halo(text(X(1995),Y(19.109)-10,'19.1',{anchor:'middle',size:11,fill:INK,weight:700}));
+  halo(text(X(2016)-6,Y(6.334)-10,'6.3',{anchor:'end',size:11,fill:INK,weight:700}));
+  halo(text(X(2016)-6,Y(4.514)+19,'4.5',{anchor:'end',size:11,fill:RED,weight:700}));
+  halo(text(X(2004),Y(6.014)-10,'6.0',{anchor:'middle',size:11,fill:RED,weight:700}));
+
+  // baseline + title
+  svg.appendChild(el('line',{x1:m.l,y1:Y(0),x2:W-m.r,y2:Y(0),stroke:SOFT,'stroke-width':1}));
+  text((m.l+W-m.r)/2,H-26,'ENGLAND AND WALES, 1981 TO YEAR ENDING MARCH 2016',
+       {anchor:'middle',size:10.5,spacing:'0.06em'});
+  text((m.l+W-m.r)/2,H-10,'CALENDAR YEARS TO 1997, YEARS ENDING MARCH AFTER',
+       {anchor:'middle',size:10.5,spacing:'0.06em'});
+})();
+</script>
