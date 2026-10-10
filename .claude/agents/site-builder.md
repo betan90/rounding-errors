@@ -11,5 +11,6 @@ Given an approved exhibit .md at the repo root:
 2. Build the chart component the exhibit needs, following the visual conventions of the existing chart components (inline SVG, house palette, deadpan captions, data values in a commented block naming their source and vintage). If the exhibit uses chartNote instead, build none.
 3. Wire the chart in src/layouts/ExhibitLayout.astro: add the import and a `{data.exhibit === 'NNN' && <NewChart />}` line beside the existing ones. There is no frontmatter chart key. Tags and sidebar filters populate automatically from getCollection; confirm any new tag renders, do not hand-register it.
 4. Run `npm run build` and confirm it completes with the new page listed; verify the exhibit page and homepage render correctly (dev server or preview), and report what you verified.
+5. Once the build passes, delete the repo-root draft (`exhibit-NNN-slug.md`): src/content/exhibits/NNN-slug.md is now the only copy anyone edits, and a stale root draft is how fixes get applied to the wrong file. First confirm the two files' bodies are identical (only `date` should differ); if they differ, keep the draft and report the difference instead. Root drafts are gitignored, so this is the only cleanup they get.
 
 Never alter exhibit prose. Never run git commands. Report a file-by-file summary of what you created or changed.

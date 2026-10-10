@@ -4,6 +4,19 @@
 //   2. exhibit body 500 words max across its prose sections (BLOCKING)
 //   3. counts written as numerals, not words (WARNING: the rule has exceptions
 //      a regex can't judge, like verbatim source titles, so a human decides)
+// And the exhibit-template rules config.ts's zod schema can't express
+// (zod checks types; these check house conventions):
+//   4. verdict is exactly 3 rows: Fraud detected, Rules broken, Usefulness of ...
+//   5. exactly 1 ledger row has gap: true
+//   6. exhibit is 3 digits and matches the file name
+//   7. disclosure names Claude, the errors, and the figure check
+//   8. chartNote states a reason: no "pending"/TODO, no trailing period
+//      (ChartPending.astro appends one)
+//   9. a chart wired in ExhibitLayout.astro or a chartNote, exactly one
+//      (BLOCKING in --all/prebuild; a WARNING in hook mode, because the
+//      site-builder writes the exhibit before it wires the chart)
+//  10. tags come from the CLAUDE.md vocabulary (WARNING: new tags are allowed,
+//      near-duplicates are not, and only a human can tell which this is)
 //
 // Three ways to run it:
 //   node scripts/check-house-rules.mjs src/content/exhibits/*.md   (manual audit)
@@ -19,8 +32,77 @@ import { readFileSync, existsSync, readdirSync } from 'node:fs';
 import path from 'node:path';
 import yaml from 'js-yaml';
 
+// Published content, plus the drafter's repo-root drafts (exhibit-NNN-slug.md),
+// so a draft gets checked when it is written, not first at build time.
 const CONTENT = /[\\/]src[\\/]content[\\/](exhibits|notes)[\\/][^\\/]+\.md$/;
 const MAX_BODY_WORDS = 500;
+const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname.replace(/^\/(\w:)/, '$1')), '..');
+const LAYOUT = path.join(ROOT, 'src', 'layouts', 'ExhibitLayout.astro');
+const isDraft = (file) =>
+  path.resolve(path.dirname(file)).toLowerCase() === ROOT.toLowerCase() &&
+  /^exhibit-\d{3}-.+\.md$/.test(path.basename(file));
+
+// Live vocabulary from CLAUDE.md's Tags section. Update both together.
+const TAGS = new Set([
+  'correlation-someone-believed', 'outlived-the-evidence', 'measurement-definitions',
+  'healthcare', 'crime', 'education', 'epidemiology', 'gdp', 'national-accounts',
+  'inflation', 'imf', 'provincial-data', 'environment',
+  'europe', 'asia', 'latin-america', 'africa',
+  'self-audit',
+]);
+
+function wiredCharts() {
+  if (!existsSync(LAYOUT)) return new Set();
+  return new Set([...readFileSync(LAYOUT, 'utf8').matchAll(/data\.exhibit === '(\d{3})'/g)].map((m) => m[1]));
+}
+
+function checkSchema(data, file, { strictChart }) {
+  const blocking = [];
+  const warnings = [];
+
+  const keys = (data.verdict ?? []).map((v) => v.key);
+  if (keys.length !== 3 || keys[0] !== 'Fraud detected' || keys[1] !== 'Rules broken' || !/^Usefulness of /.test(keys[2] ?? '')) {
+    blocking.push(`verdict keys are [${keys.join(' | ')}]; need exactly [Fraud detected | Rules broken | Usefulness of ...]`);
+  }
+
+  const gaps = (data.ledger ?? []).filter((r) => r.gap === true).length;
+  if (gaps !== 1) blocking.push(`ledger has ${gaps} rows with gap: true; need exactly 1`);
+
+  const num = path.basename(file).replace(/^exhibit-/, '').match(/^(\d{3})-/)?.[1];
+  if (typeof data.exhibit !== 'string' || !/^\d{3}$/.test(data.exhibit)) {
+    blocking.push(`exhibit is ${JSON.stringify(data.exhibit)}; need a 3-digit string like "006"`);
+  } else if (num && num !== data.exhibit) {
+    blocking.push(`exhibit "${data.exhibit}" does not match the file name's "${num}"`);
+  }
+
+  const d = data.disclosure ?? '';
+  if (!/Claude/.test(d) || !/errors/i.test(d) || !/checked/i.test(d)) {
+    blocking.push('disclosure must state: drafted with AI (Claude), errors are the author\'s, every figure checked against the linked primary source');
+  }
+
+  if (data.chartNote != null) {
+    if (/\bpending\b|\bTODO\b|\bTBD\b/i.test(data.chartNote)) blocking.push('chartNote reads like a TODO; it must state why there is no chart');
+    if (/\.\s*$/.test(data.chartNote)) blocking.push('chartNote ends with a period; ChartPending.astro adds one');
+  }
+
+  // Only published exhibits can be wired; a root draft isn't built yet.
+  if (CONTENT.test(file) && /^\d{3}$/.test(data.exhibit ?? '')) {
+    const wired = wiredCharts().has(data.exhibit);
+    const noted = data.chartNote != null;
+    const problem = wired && noted
+      ? 'has both a wired chart and a chartNote; pick one'
+      : !wired && !noted
+        ? `has no chart wired in ExhibitLayout.astro and no chartNote`
+        : null;
+    if (problem) (strictChart ? blocking : warnings).push(`exhibit ${data.exhibit} ${problem}`);
+  }
+
+  for (const t of data.tags ?? []) {
+    if (!TAGS.has(t)) warnings.push(`tag "${t}" is not in the CLAUDE.md vocabulary; add it there if it is genuinely new, or use the existing tag it duplicates`);
+  }
+
+  return { blocking, warnings };
+}
 
 // Cardinal number words. "one" is left out on purpose: "this one", "one per
 // exhibit" and "one origin" are all allowed by CLAUDE.md, and a regex can't
@@ -73,7 +155,8 @@ function bodyWordCount(body) {
     .filter((w) => /[A-Za-z0-9]/.test(w)).length;
 }
 
-export function checkFile(file) {
+export function checkFile(file, { strictChart = true } = {}) {
+  file = path.resolve(file);
   const text = readFileSync(file, 'utf8');
   const blocking = [];
   const warnings = [];
@@ -83,11 +166,19 @@ export function checkFile(file) {
   });
 
   const { fm, body } = splitFrontmatter(text);
-  const isExhibit = /[\\/]exhibits[\\/]/.test(file);
+  const isExhibit = /[\\/]exhibits[\\/]/.test(file) || isDraft(file);
 
   if (isExhibit) {
     const words = bodyWordCount(body);
     if (words > MAX_BODY_WORDS) blocking.push(`body is ${words} words; the limit is ${MAX_BODY_WORDS}`);
+
+    let data = null;
+    try { data = yaml.load(fm); } catch (e) { blocking.push(`frontmatter is not valid YAML: ${e.message.split('\n')[0]}`); }
+    if (data && typeof data === 'object') {
+      const s = checkSchema(data, file, { strictChart });
+      blocking.push(...s.blocking);
+      warnings.push(...s.warnings);
+    }
   }
 
   const spots = [
@@ -117,9 +208,8 @@ async function readStdin() {
 
 let args = process.argv.slice(2);
 if (args[0] === '--all') {
-  const root = path.resolve(path.dirname(new URL(import.meta.url).pathname.replace(/^\/(\w:)/, '$1')), '..');
   args = ['exhibits', 'notes'].flatMap((dir) => {
-    const d = path.join(root, 'src', 'content', dir);
+    const d = path.join(ROOT, 'src', 'content', dir);
     return existsSync(d) ? readdirSync(d).filter((f) => f.endsWith('.md')).map((f) => path.join(d, f)) : [];
   });
 }
@@ -140,7 +230,7 @@ if (args.length) {
   // drains, and Claude would see nothing.
   const input = JSON.parse((await readStdin()) || '{}');
   const file = input.tool_input?.file_path ?? input.tool_response?.filePath ?? '';
-  const r = CONTENT.test(file) && existsSync(file) ? checkFile(file) : null;
+  const r = (CONTENT.test(file) || isDraft(file)) && existsSync(file) ? checkFile(file, { strictChart: false }) : null;
   const msg = r ? format(r) : '';
 
   if (msg) {

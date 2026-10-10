@@ -29,3 +29,7 @@ data/raw/
 # cites them as checkable evidence, so they must exist in the repository.
 /fact-check-output.json
 /second-opinion.json
+
+# Drafter output at the repo root. The site-builder copies it into
+# src/content/exhibits/ and deletes it; ignored so a stray draft never ships.
+/exhibit-*.md
