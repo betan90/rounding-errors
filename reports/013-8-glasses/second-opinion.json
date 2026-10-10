@@ -1,0 +1,152 @@
+{
+  "exhibit": "013",
+  "reviewedAt": "2026-10-09T02:42:26.853Z",
+  "model": "deepseek-chat",
+  "claims": [
+    {
+      "id": 1,
+      "verdict": "PARTIALLY SUPPORTED",
+      "reasoning": "The passage contains the quoted sentence but omits the attribution to Vreeman and Carroll in the BMJ in 2007."
+    },
+    {
+      "id": 2,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage provides conversion factors but does not state that the standard version is 8 glasses of 8 ounces, 64 ounces, or about 1.9 litres."
+    },
+    {
+      "id": 3,
+      "verdict": "PARTIALLY SUPPORTED",
+      "reasoning": "The passage confirms the reminder that caffeinated and alcoholic beverages do not count, but it does not mention Heinz Valtin or an amendment recorded in 2002."
+    },
+    {
+      "id": 4,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage directly states that one origin may be a 1945 recommendation, matching the claim's assertion about Vreeman and Carroll offering this explanation."
+    },
+    {
+      "id": 5,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage states the Food and Nutrition Board issued the guideline but does not mention the American Physiological Society's magazine attributing anything to it."
+    },
+    {
+      "id": 6,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage contains the exact quoted sentences about the 2.5 litres daily water allowance and most of the quantity being contained in prepared foods."
+    },
+    {
+      "id": 7,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states verbatim the sentence attributed as their reading in the claim."
+    },
+    {
+      "id": 8,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage provides conversion factors but does not state that 2.5 litres equals about 10.6 8-ounce glasses or that most of it is already in food."
+    },
+    {
+      "id": 9,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage directly states that Frederick Stare recommended, without references, \"around 6 to 8 glasses per 24 hours,\" which could be \"in the form of coffee, tea, milk, soft drinks, beer, etc.\""
+    },
+    {
+      "id": 10,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage mentions that beverages containing caffeine do not count, but it never mentions \"Stare\" or any counting of coffee by that entity."
+    },
+    {
+      "id": 11,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage confirms Valtin's search included electronic modes, a cursory examination of older literature, and consultation with nutritionists specializing in thirst."
+    },
+    {
+      "id": 12,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage directly states that no scientific studies were found in support of 8 x 8 and limits the conclusion to healthy, sedentary adults in a temperate climate, matching the claim."
+    },
+    {
+      "id": 13,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states that published studies show caffeinated drinks and, to a lesser extent, beer in moderation may be counted toward the daily total, which directly matches the claim."
+    },
+    {
+      "id": 14,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states that because it is difficult or impossible to prove a negative, the author invites communications from readers aware of pertinent publications, which directly matches the claim."
+    },
+    {
+      "id": 15,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states no scientific studies were found in support of 8 x 8, which directly matches the claim that the search found 0 studies."
+    },
+    {
+      "id": 16,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states the AI for total water intake for young men and women aged 19 to 30 is 3.7 L and 2.7 L/day respectively, matching the claim's figures."
+    },
+    {
+      "id": 17,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage explicitly states that the values correspond to median intakes for this age group in the NHANES III survey."
+    },
+    {
+      "id": 18,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states that the other 20 percent of total water is derived from food, directly matching the claim."
+    },
+    {
+      "id": 19,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage directly states \"there is no single daily total water requirement for a given person,\" matching the claim."
+    },
+    {
+      "id": 20,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage directly quotes Lawrence Appel, chair of the panel, stating they don't offer any rule of thumb based on how many glasses of water people should drink each day."
+    },
+    {
+      "id": 21,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage directly quotes the report's finding that the vast majority of healthy people meet their daily hydration needs by letting thirst be their guide."
+    },
+    {
+      "id": 22,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage mentions Valtin's review cataloguing the lack of evidence but says nothing about a 2007 BMJ paper or a list of 7 medical myths."
+    },
+    {
+      "id": 23,
+      "verdict": "PARTIALLY SUPPORTED",
+      "reasoning": "The passage confirms the government recommends 6 to 8 cups or glasses of fluid a day, but it does not mention the NHS page or a May 2023 review date."
+    },
+    {
+      "id": 24,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage confirms the drinks count toward daily intake but does not state or imply that \"this is just a guide.\""
+    },
+    {
+      "id": 25,
+      "verdict": "PARTIALLY SUPPORTED",
+      "reasoning": "The passage supports the 6 to 8 cups/glasses and tea/coffee inclusion, but attributes the recommendation to the Eatwell Guide rather than an NHS page."
+    },
+    {
+      "id": 26,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage directly states that those who are very physically active or live in hot climates may need to consume more water, matching the claim's content."
+    },
+    {
+      "id": 27,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage only defines total water and does not mention ledgerNote, chartNote, the 1945 allowance, or glasses, so it cannot support the claim that these are different quantities."
+    },
+    {
+      "id": 28,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage directly states both that large fluid intakes at or above 8 x 8 are advisable for treating or preventing some diseases and called for in vigorous work and exercise especially in hot climates, and that drinking excess water can cause water intoxication, hyponatraemia, and even death."
+    },
+    {
+      "id": 29,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage only mentions a possible 1945 recommendation and a nutritionist endorsement, but says nothing about provenance, Stare's book, retrieval status, BMJ reproduction, or hypotheses in both papers."
+    }
+  ]
+}

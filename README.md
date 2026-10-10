@@ -36,4 +36,6 @@ npm run preview   # preview the production build
 - [x] Exhibit 009 — Nigeria (GDP rebasing, the economy that doubled by arithmetic)
 - [x] Exhibit 010 — This museum (self-audit, the citations were somewhere else)
 - [x] Exhibit 011 — Greece (the 2009 deficit, published 4 times)
+- [x] Exhibit 012 — Reinhart-Rogoff (the errors compounded)
+- [x] Exhibit 013 — United States (8 glasses of water, citation needed)
 - [ ] Revision tracker — the same official number, as reported over time

@@ -1,0 +1,238 @@
+{
+  "exhibit": "013",
+  "checkedAt": "2026-10-09T12:00:00Z",
+  "claims": [
+    {
+      "id": 1,
+      "claim": "\"The advice to drink at least eight glasses of water a day can be found throughout the popular press,\" Vreeman and Carroll wrote in the BMJ in 2007.",
+      "source": "Vreeman RC, Carroll AE (BMJ 2007)",
+      "passage": "The advice to drink at least eight glasses of water a day can be found throughout the popular press.",
+      "verdict": "SUPPORTED",
+      "notes": "Verbatim (footnote markers omitted); BMJ 2007 Dec 22."
+    },
+    {
+      "id": 2,
+      "claim": "The standard version is 8 glasses of 8 ounces: 64 ounces, about 1.9 litres.",
+      "source": "Institute of Medicine (conversion 1 L = 33.8 fl oz); Valtin 2002",
+      "passage": "Conversion factors: 1 L = 33.8 fluid oz; 1 L = 1.06 qt; 1 cup = 8 fluid oz.",
+      "verdict": "SUPPORTED",
+      "notes": "8 x 8 = 64 oz; 64 / 33.8 = 1.89 L, rounds to 1.9; Valtin abstract gives 'eight 8-oz glasses'."
+    },
+    {
+      "id": 3,
+      "claim": "It usually arrives with an amendment, recorded by Heinz Valtin in 2002: beverages containing caffeine and alcohol do not count.",
+      "source": "Valtin H (2002)",
+      "passage": "Despite the seemingly ubiquitous admonition to \"drink at least eight 8-oz glasses of water a day\" (with an accompanying reminder that beverages containing caffeine and alcohol do not count), rigorous proof for this counsel appears to be lacking.",
+      "verdict": "SUPPORTED",
+      "notes": "Abstract describes the amendment as an 'accompanying reminder' to a 'seemingly ubiquitous' admonition; 'recorded' is fair and does not credit Valtin with originating it. 'Usually' slightly stronger than 'seemingly ubiquitous' but acceptable."
+    },
+    {
+      "id": 4,
+      "claim": "Vreeman and Carroll offer \"one origin\" that \"may\" explain the rule: a 1945 recommendation",
+      "source": "Vreeman RC, Carroll AE (BMJ 2007)",
+      "passage": "One origin may be a 1945 recommendation that stated:",
+      "verdict": "SUPPORTED",
+      "notes": "Both quoted words appear in this sentence."
+    },
+    {
+      "id": 5,
+      "claim": "...which the American Physiological Society's magazine attributes to the US Food and Nutrition Board.",
+      "source": "The Physiologist (American Physiological Society)",
+      "passage": "In 1945, the U.S. Food and Nutrition Board issued guidelines indicating that people should drink two and a half liters of fluid per day.",
+      "verdict": "SUPPORTED",
+      "notes": "Attribution is correctly credited to The Physiologist rather than asserted; the BMJ does not name the issuer (w5)."
+    },
+    {
+      "id": 6,
+      "claim": "As quoted in the BMJ: \"A suitable allowance of water for adults is 2.5 litres daily in most instances... Most of this quantity is contained in prepared foods.\"",
+      "source": "Vreeman RC, Carroll AE (BMJ 2007)",
+      "passage": "A suitable allowance of water for adults is 2.5 litres daily in most instances. An ordinary standard for diverse persons is 1 millilitre for each calorie of food. Most of this quantity is contained in prepared foods.",
+      "verdict": "SUPPORTED",
+      "notes": "Ellipsis honestly marks the omitted middle sentence."
+    },
+    {
+      "id": 7,
+      "claim": "Their reading: \"If the last, crucial sentence is ignored, the statement could be interpreted as instruction to drink eight glasses of water a day.\"",
+      "source": "Vreeman RC, Carroll AE (BMJ 2007)",
+      "passage": "If the last, crucial sentence is ignored, the statement could be interpreted as instruction to drink eight glasses of water a day.",
+      "verdict": "SUPPORTED",
+      "notes": "Verbatim."
+    },
+    {
+      "id": 8,
+      "claim": "2.5 litres is about 10.6 8-ounce glasses, most of it already in food.",
+      "source": "Institute of Medicine (conversion 1 L = 33.8 fl oz); Vreeman and Carroll",
+      "passage": "Conversion factors: 1 L = 33.8 fluid oz; 1 L = 1.06 qt; 1 cup = 8 fluid oz.",
+      "verdict": "SUPPORTED",
+      "notes": "2.5 x 33.8 = 84.5 oz; 84.5 / 8 = 10.56, rounds to 10.6. 'Most of this quantity is contained in prepared foods' supports 'most of it already in food'."
+    },
+    {
+      "id": 9,
+      "claim": "Frederick Stare, who recommended, \"without references,\" \"around 6 to 8 glasses per 24 hours,\" which could be \"in the form of coffee, tea, milk, soft drinks, beer, etc.\"",
+      "source": "Vreeman RC, Carroll AE (BMJ 2007)",
+      "passage": "Another endorsement may have come from a prominent nutritionist, Frederick Stare, who once recommended, without references, the consumption \"around 6 to 8 glasses per 24 hours,\" which could be \"in the form of coffee, tea, milk, soft drinks, beer, etc.\"",
+      "verdict": "SUPPORTED",
+      "notes": "'without references' is the BMJ authors' words, not Stare's, but the body attributes it to the BMJ's reporting; reported, with paper trail (BMJ w7)."
+    },
+    {
+      "id": 10,
+      "claim": "Stare counted beer. The modern rule excludes coffee.",
+      "source": "Vreeman RC, Carroll AE (BMJ 2007); Valtin H (2002)",
+      "passage": "which could be \"in the form of coffee, tea, milk, soft drinks, beer, etc.\" / (with an accompanying reminder that beverages containing caffeine and alcohol do not count)",
+      "verdict": "PARTIALLY SUPPORTED",
+      "notes": "Both halves are true, but Stare also counted coffee, so the contrast is cherry-picked toward beer; the punchline is also a stand-alone screenshot line; 'modern rule excludes coffee' is the folk amendment that Valtin and the IOM both reject, which the sentence does not say."
+    },
+    {
+      "id": 11,
+      "claim": "Valtin searched electronic databases and the older literature, and consulted nutritionists who specialize in thirst.",
+      "source": "Valtin H (2002)",
+      "passage": "The search included not only electronic modes but also a cursory examination of the older literature that is not covered in electronic databases and, most importantly and fruitfully, extensive consultation with several nutritionists who specialize in the field of thirst and drinking fluids.",
+      "verdict": "PARTIALLY SUPPORTED",
+      "notes": "Drops Valtin's own word 'cursory' for the older-literature search; that strengthens the negative finding beyond what the author claimed. Restore 'cursory'."
+    },
+    {
+      "id": 12,
+      "claim": "His finding, for healthy, sedentary adults in a temperate climate: \"No scientific studies were found in support of 8 x 8.\"",
+      "source": "Valtin H (2002)",
+      "passage": "No scientific studies were found in support of 8 x 8.",
+      "verdict": "SUPPORTED",
+      "notes": "Verbatim; scope 'healthy adults in a temperate climate leading a largely sedentary existence' is in the abstract."
+    },
+    {
+      "id": 13,
+      "claim": "Published studies also contradicted the amendment: caffeinated drinks, and to a lesser extent beer in moderation, may count.",
+      "source": "Valtin H (2002)",
+      "passage": "This conclusion is supported by published studies showing that caffeinated drinks (and, to a lesser extent, mild alcoholic beverages like beer in moderation) may indeed be counted toward the daily total",
+      "verdict": "SUPPORTED",
+      "notes": "Matches; 'mild alcoholic beverages like beer in moderation'."
+    },
+    {
+      "id": 14,
+      "claim": "Since it is \"difficult or impossible to prove a negative,\" he invited readers to send any pertinent publications.",
+      "source": "Valtin H (2002)",
+      "passage": "Since it is difficult or impossible to prove a negative-in this instance, the absence of scientific literature supporting the 8 x 8 recommendation-the author invites communications from readers who are aware of pertinent publications.",
+      "verdict": "SUPPORTED",
+      "notes": "Quoted phrase verbatim."
+    },
+    {
+      "id": 15,
+      "claim": "Ledger gap row: \"Scientific studies found in support of 8 x 8 (Valtin 2002): 0\"; verdict: \"the 2002 search for its evidence found 0 studies.\"",
+      "source": "Valtin H (2002)",
+      "passage": "No scientific studies were found in support of 8 x 8.",
+      "verdict": "PARTIALLY SUPPORTED",
+      "notes": "'0' is a numeral rendering of 'no studies found' and is a self-described unprovable negative from a 2002 search; the ledger row drops the healthy/sedentary/temperate scope and the 'cursory' qualifier."
+    },
+    {
+      "id": 16,
+      "claim": "In 2004 the Institute of Medicine set adequate intakes for adults aged 19 to 30 at 2.7 litres of total water for women and 3.7 for men",
+      "source": "Institute of Medicine DRI chapter 4; National Academies news release",
+      "passage": "The AI for total water intake for young men and women (19 to 30 years) is 3.7 L (131 oz) and 2.7 L (95 oz)/day, respectively",
+      "verdict": "SUPPORTED",
+      "notes": "Release dated 11 Feb 2004 gives 2.7 L women, 3.7 L men; IOM text confirms the 19 to 30 AI. Report citation year in the IOM chapter is 2005, release 2004; the body says 2004 for the release, acceptable."
+    },
+    {
+      "id": 17,
+      "claim": "...the median intakes in the NHANES III survey",
+      "source": "Institute of Medicine DRI chapter 4",
+      "passage": "which correspond to median intakes for this age group in the NHANES III survey (Appendix Table D-1)",
+      "verdict": "SUPPORTED",
+      "notes": "Matches the IOM text; the chapter also says the AI is 'set based on the median total water intake using data from NHANES III' and notes self-report bias."
+    },
+    {
+      "id": 18,
+      "claim": "...with about 20% coming from food.",
+      "source": "National Academies news release (11 Feb 2004)",
+      "passage": "About 80 percent of people's total water comes from drinking water and beverages -- including caffeinated beverages -- and the other 20 percent is derived from food.",
+      "verdict": "SUPPORTED",
+      "notes": "IOM chapter gives 'approximately 81 percent' from fluids for 19 to 30, so 'about 20%' holds."
+    },
+    {
+      "id": 19,
+      "claim": "The report states \"there is no single daily total water requirement for a given person.\"",
+      "source": "Institute of Medicine DRI chapter 4",
+      "passage": "Hence there is no single daily total water requirement for a given person, and need varies markedly depending primarily on physical activity and climate, but also based on diet.",
+      "verdict": "SUPPORTED",
+      "notes": "Verbatim."
+    },
+    {
+      "id": 20,
+      "claim": "The panel's chair, Lawrence Appel: \"We don't offer any rule of thumb based on how many glasses of water people should drink each day.\"",
+      "source": "National Academies news release (11 Feb 2004)",
+      "passage": "\"We don't offer any rule of thumb based on how many glasses of water people should drink each day because our hydration needs can be met through a variety of sources in addition to drinking water,\" said Lawrence Appel, chair of the panel that wrote the report",
+      "verdict": "SUPPORTED",
+      "notes": "Truncated before 'because'; the omitted clause is benign. Named person with institutional paper trail, reported not asserted."
+    },
+    {
+      "id": 21,
+      "claim": "The release opened with the panel's finding: \"The vast majority of healthy people adequately meet their daily hydration needs by letting thirst be their guide.\"",
+      "source": "National Academies news release (11 Feb 2004)",
+      "passage": "WASHINGTON -- The vast majority of healthy people adequately meet their daily hydration needs by letting thirst be their guide, says the newest report on nutrient recommendations from the Institute of Medicine of the National Academies.",
+      "verdict": "SUPPORTED",
+      "notes": "Quote verbatim and first sentence; strictly it is the release's sentence attributing the finding to the report, 'panel's finding' is a minor loosening ('report's' would be exact)."
+    },
+    {
+      "id": 22,
+      "claim": "The 2007 BMJ paper listed the rule as 1 of 7 medical myths, citing Valtin's review as an exhaustive catalogue of \"the complete lack of evidence.\"",
+      "source": "Vreeman RC, Carroll AE (BMJ 2007)",
+      "passage": "The complete lack of evidence supporting the recommendation to drink six to eight glasses of water a day is exhaustively catalogued in an invited review by Heinz Valtin in the American Journal of Physiology.",
+      "verdict": "SUPPORTED",
+      "notes": "We selected seven for critical review; 8 glasses is first. Quote verbatim from 'the complete lack of evidence'."
+    },
+    {
+      "id": 23,
+      "claim": "The NHS page on water, last reviewed in May 2023, says the UK government recommends that people \"aim to drink 6 to 8 cups or glasses of fluid a day.\"",
+      "source": "NHS, 'Water, drinks and nutrition'",
+      "passage": "In the Eatwell Guide, the government recommends that people should aim to drink 6 to 8 cups or glasses of fluid a day. This is just a guide and you may need to drink more fluids if you're:",
+      "verdict": "SUPPORTED",
+      "notes": "Fetched live (WebFetch) and from local extraction; page last reviewed 17 May 2023, next review was due 17 May 2026 (already past, so the page may change). Page title is now 'Water, drinks and hydration', not 'Water, drinks and nutrition' as the source list names it. The quote splices 'should aim to drink' into 'aim to drink' inside quotation marks, acceptable."
+    },
+    {
+      "id": 24,
+      "claim": "\"This is just a guide.\" Water, lower-fat milk, and lower-sugar drinks, including tea and coffee, all count.",
+      "source": "NHS, 'Water, drinks and nutrition'",
+      "passage": "Water, lower-fat milk and lower-sugar drinks, including tea and coffee, all count as part of your daily intake.",
+      "verdict": "SUPPORTED",
+      "notes": "Body says 'The next sentence'; the passage confirms. Verbatim except serial comma."
+    },
+    {
+      "id": 25,
+      "claim": "status: \"still on an NHS page, now with tea and coffee counted\"",
+      "source": "NHS, 'Water, drinks and nutrition'",
+      "passage": "Water, lower-fat milk and lower-sugar drinks, including tea and coffee, all count as part of your daily intake.",
+      "verdict": "NOT SUPPORTED",
+      "notes": "No earlier NHS version was fetched, so 'now' (implying a change) is unsupported; and the NHS page says 6 to 8 cups or glasses of fluid, not 8 glasses of water, so 'still' repeats the exhibit's headline rule only loosely."
+    },
+    {
+      "id": 26,
+      "claim": "IOM 2004 adequate intake ledger row and ledgerNote: total water 2.7 L / 3.7 L, 'glasses of drinking water, an allowance mostly met by food, and total water from all sources'",
+      "source": "Institute of Medicine DRI chapter 4; Vreeman and Carroll",
+      "passage": "Most of this quantity is contained in prepared foods.",
+      "verdict": "SUPPORTED",
+      "notes": "Descriptions of the three quantities match their sources."
+    },
+    {
+      "id": 27,
+      "claim": "disclosure: Valtin himself notes that large fluid intakes, at or above 8 x 8, are advisable for treating or preventing some diseases and are called for in vigorous work and exercise, especially in hot climates. The BMJ paper also notes that drinking excess amounts of water can be dangerous, causing water intoxication, hyponatraemia, and even death.",
+      "source": "Valtin H (2002); Vreeman RC, Carroll AE (BMJ 2007)",
+      "passage": "large intakes of fluid, equal to and greater than 8 x 8, are advisable for the treatment or prevention of some diseases and certainly are called for under special circumstances, such as vigorous work and exercise, especially in hot climates. / drinking excess amounts of water can be dangerous, resulting in water intoxication, hyponatraemia, and even death.",
+      "verdict": "SUPPORTED",
+      "notes": "Both accurate paraphrases."
+    },
+    {
+      "id": 28,
+      "claim": "Provenance: the 1945 Food and Nutrition Board document and Stare's book were not retrieved; both are quoted as reproduced in the BMJ; the origin story is a hypothesis in both papers.",
+      "source": "Vreeman RC, Carroll AE (BMJ 2007); The Physiologist",
+      "passage": "One origin may be a 1945 recommendation that stated: / Another endorsement may have come from a prominent nutritionist",
+      "verdict": "SUPPORTED",
+      "notes": "Both papers hedge ('may'), so labelling as hypothesis is accurate; the Physiologist is less hedged ('resulted in') but the exhibit credits it as attribution only. Provenance labelling is adequate."
+    },
+    {
+      "id": 29,
+      "claim": "Frontmatter chartNote: the only chartable values measure different things.",
+      "source": "Institute of Medicine DRI chapter 4",
+      "passage": "This report refers to total water, which includes the water contained in beverages and the moisture in foods, to avoid confusion with drinking water only.",
+      "verdict": "SUPPORTED",
+      "notes": "Claim is a reasoned editorial statement consistent with the sources; no chart DATA block exists yet (no data.exhibit === '013' line)."
+    }
+  ]
+}
