@@ -5,7 +5,7 @@ country: "United States"
 status: "6 to 8 cups or glasses of fluid on an NHS page, tea and coffee included"
 category: "citation needed"
 tags: ["healthcare", "measurement-definitions"]
-date: 2026-10-09
+date: 2026-10-10
 teaser: "Public health · a daily water rule vs the studies behind it"
 ledgerTitle: "The numbers: 1945, 2002, 2004"
 ledger:

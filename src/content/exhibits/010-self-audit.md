@@ -35,12 +35,12 @@ sources:
   - name: "Rounding Errors repository, reports/*/second-opinion.json"
     text: "The DeepSeek verdicts on the same 127 claims, used here only to establish that every claim was reviewed twice. Where the 2 reviewers disagree is the subject of note 001 and is not reopened here."
   - name: "Rounding Errors repository, src/data/corrections.ts"
-    text: "The single published correction: exhibit 006, dated 2026-07-25, a finding attributed to GAO-03-172R that the report does not contain, traced to an uncited Wikipedia sentence and caught by the fact-checker's criterion 6 hostile read."
+    text: "When this exhibit was published on 2026-10-04, the log held 1 entry: exhibit 006, dated 2026-07-25, a finding attributed to GAO-03-172R that the report does not contain, traced to an uncited Wikipedia sentence and caught by the fact-checker's criterion 6 hostile read. Exhibit 003 had also been corrected, in commit f0c49f4 on 2026-08-03, and had no entry until 2026-10-05. The body counts both."
   - name: "Rounding Errors repository, commit f0c49f4"
     text: "\"Fix fact-checker findings across exhibits 001, 003, 004, 007.\" The fixes were applied after the archived reports were written, which is why 43 describes first drafts and not the current text."
   - name: "Rounding Errors repository, src/content/exhibits/001-ireland.md through 009-nigeria.md"
     text: "The 9 verdict blocks. \"Fraud detected\" records a finding in 002 (Argentina, no longer disputed by Argentina's own later government) and 003 (Liaoning, confessed on the provincial record and punished by China's party disciplinary body), and records none in the other 7."
-correctionNote: "This exhibit was corrected on 2026-10-05. Details on the corrections page."
+correctionNote: "This exhibit was corrected on 2026-10-05 and again on 2026-10-10. Details on the corrections page."
 disclosure: "This entry was drafted with AI (Claude did the counting and the first draft). The editorial voice, the opinions, and any surviving errors are mine. Every figure was checked against the primary source, which in this exhibit means the repository's own tracked files rather than an outside institution: the counts come from parsing reports/*/fact-check-output.json and reports/*/second-opinion.json directly, not from recollection of what they said. 1 limitation is load-bearing and is stated in the body. Those reports are dated 2026-08-01 and 2026-08-12, several findings were fixed afterwards, so 43 is a first-draft count and this exhibit makes no claim about the error rate of the text currently on the site."
 ---
 

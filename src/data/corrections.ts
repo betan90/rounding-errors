@@ -16,6 +16,20 @@ export interface Correction {
 export const corrections: Correction[] = [
   {
     exhibit: '010',
+    dateCorrected: new Date('2026-10-10'),
+    whatItSaid:
+      "The source entry for src/data/corrections.ts read: 'The single published correction: exhibit 006, dated 2026-07-25...' The body, corrected on 2026-10-05, said: '2 exhibits have been corrected since publishing.'",
+    whatWasWrong:
+      'The source entry and the body disagreed on the count. The source entry described the log as it stood on 2026-10-04, when it did hold 1 entry, but it was written as a standing claim, and the body it supports counts 2 corrections, 006 and 003.',
+    howItGotHere:
+      'The 2026-10-05 correction fixed the count in the body and did not check the source entries that described the same record.',
+    whatItSaysNow:
+      "'When this exhibit was published on 2026-10-04, the log held 1 entry: exhibit 006... Exhibit 003 had also been corrected, in commit f0c49f4 on 2026-08-03, and had no entry until 2026-10-05. The body counts both.'",
+    caughtBy:
+      'A repo-wide consistency audit on 2026-10-10, which compared each exhibit\'s body against the text of its own source entries. The audit is archived at reports/audits/2026-10-10.md.',
+  },
+  {
+    exhibit: '010',
     dateCorrected: new Date('2026-10-05'),
     whatItSaid:
       "'1 exhibit has been corrected since publishing. Exhibit 006 attributed a finding to a 2003 GAO report that does not contain it.'",

@@ -38,6 +38,14 @@ export const entries = {
     why: 'Runs only when a human says "commit and push". The job is git, not judgment, so it runs on the smallest model.',
   },
 
+  'agent:auditor': {
+    role: 'Checks that the repo still agrees with itself: the house rules against the code, each exhibit against its own sources and the corrections log, the About copy against the agents, the deploy against HEAD. Writes a dated report to reports/audits/ and fixes nothing.',
+    why: 'The fact-checker checks 1 exhibit before it ships. Drift happens after: a fix that updates the body but not the source line, a doc that describes code since rewritten.',
+  },
+  'hook:SessionStart:audit-due.mjs': {
+    role: 'Runs audit-due.mjs at the start of every session.',
+    why: 'A hook can\'t launch an agent. It can put the instruction in front of the session that can.',
+  },
   'hook:PostToolUse:check-house-rules.mjs': {
     role: 'Runs check-house-rules.mjs after every file Claude writes or edits, and hands any broken rule back to Claude before it moves on.',
     why: 'A rule caught when the file is written costs 1 edit. The same rule caught at publish time costs a review round.',
@@ -50,6 +58,10 @@ export const entries = {
   'script:check-house-rules.mjs': {
     role: 'Checks the rules a script can judge: no em dashes, a 500-word body, numerals, 3 verdict rows, 1 gap row, the disclosure, a chart or a stated reason for none.',
     why: 'Runs twice: in the hook at write time, and before every build, which catches files that arrived some other way.',
+  },
+  'script:audit-due.mjs': {
+    role: 'Counts new sessions since the last audit report. At 4, if anything was committed since, it tells Claude to launch the auditor in the background.',
+    why: 'Counted in sessions, not days, because the site is built in bursts. A run of sessions that committed nothing triggers nothing.',
   },
   'script:check-links.mjs': {
     role: 'Fetches every source link. A dead link blocks the commit. A redirect or a bot wall is a warning to check in a browser.',
@@ -109,6 +121,7 @@ export const pipeline = [
   { step: 'Decide', text: 'A human reads the disagreements and decides what changes. Reports are archived in reports/ with each exhibit.', uses: [] },
   { step: 'Build', text: 'The site-builder wires the exhibit and its chart. The build runs every check first and fails on a blocking one.', uses: ['agent:site-builder', 'script:check-house-rules.mjs', 'script:check-methodology.mjs'] },
   { step: 'Publish', text: 'A human says "commit and push". The committer checks links, commits, and starts the deploy.', uses: ['agent:committer', 'script:check-links.mjs', 'workflow:deploy.yml'] },
+  { step: 'Audit', text: 'Every 4 sessions, the whole repo is checked against itself. Findings go to a dated report; a human decides what gets fixed, and wrong published claims go to the corrections page.', uses: ['hook:SessionStart:audit-due.mjs', 'agent:auditor'] },
 ];
 
 // Services and programs the repo depends on but can't discover as files.
