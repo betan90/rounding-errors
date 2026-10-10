@@ -1,0 +1,195 @@
+---
+// Built from the repo itself: scripts/lib/inventory.mjs discovers the tools,
+// src/data/methodology.mjs says what each is for, and
+// scripts/check-methodology.mjs fails the build when the 2 disagree.
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { discover, modelHistory, toolingTimeline, assertFullHistory } from '../../scripts/lib/inventory.mjs';
+import { REPO, entries, pipeline, external, offRepo, noneYet } from '../data/methodology.mjs';
+
+assertFullHistory();
+
+const tools = discover();
+const byKind = (k: string) => tools.filter((t: any) => t.kind === k);
+const nameOf = (id: string) => tools.find((t: any) => t.id === id)?.name ?? id;
+const fileUrl = (f: string) => `${REPO}/blob/main/${f}`;
+const commitUrl = (h: string) => `${REPO}/commit/${h}`;
+
+const none: Record<string, string> = noneYet;
+const desc: Record<string, { role: string; why: string }> = entries;
+const models = modelHistory();
+const timeline = toolingTimeline();
+
+// Rendered in this order. A kind with no tools shows its noneYet line, so
+// "no custom skills" is stated rather than implied.
+const sections: Array<{ kind: string; title: string }> = [
+  { kind: 'agent', title: 'Agents' },
+  { kind: 'hook', title: 'Hooks' },
+  { kind: 'skill', title: 'Skills' },
+  { kind: 'command', title: 'Slash commands' },
+  { kind: 'mcp', title: 'MCP servers' },
+  { kind: 'plugin', title: 'Plugins' },
+  { kind: 'script', title: 'Scripts' },
+  { kind: 'workflow', title: 'Workflows' },
+  { kind: 'dependency', title: 'Dependencies' },
+];
+
+const counts = sections
+  .map((s) => ({ ...s, n: byKind(s.kind).length }))
+  .filter((s) => s.n > 0)
+  .map((s) => `${s.n} ${s.n === 1 ? s.title.toLowerCase().replace(/s$/, '') : s.title.toLowerCase()}`);
+
+function facts(t: any): Array<[string, string]> {
+  switch (t.kind) {
+    case 'agent':
+      return [['Model', t.model], ['Tools', t.tools.join(', ')]];
+    case 'hook':
+      return [['Fires on', `${t.event}, ${t.matcher}`], ['Runs', t.command]];
+    case 'script':
+      return t.npm.length ? [['npm', t.npm.join(', ')]] : [];
+    case 'workflow':
+      return [['Trigger', t.triggers.join(', ')], ['Actions', t.actions.join(', ')]];
+    case 'dependency':
+      return [['Version', `${t.version}${t.dev ? ' (dev)' : ''}`]];
+    default:
+      return [];
+  }
+}
+---
+
+<BaseLayout
+  title="Methodology · Rounding Errors"
+  description="Every tool, model and check behind the museum, read from the repo at build time."
+>
+  <div class="listing-head">
+    <div class="kicker">The method</div>
+    <h1>How this is made</h1>
+  </div>
+  <p class="corrections-framing">
+    This page is built from the files it describes. The tools, their models and their history are read from the repo when the site builds. A tool the repo uses but this page doesn't describe fails the build.
+  </p>
+  <p class="method-counts">{counts.join(' · ')}</p>
+
+  <h2 class="method-h">The pipeline</h2>
+  <ol class="method-pipeline">
+    {
+      pipeline.map((s) => (
+        <li>
+          <b>{s.step}.</b> {s.text}
+          {s.uses.length > 0 && <span class="method-uses">{s.uses.map(nameOf).join(' · ')}</span>}
+        </li>
+      ))
+    }
+  </ol>
+
+  {
+    sections.map((s) => {
+      const items = byKind(s.kind);
+      if (!items.length && !none[s.kind]) return null;
+      return (
+        <section>
+          <h2 class="method-h">{s.title}</h2>
+          {items.length === 0 ? (
+            <p class="method-none">{none[s.kind]}</p>
+          ) : (
+            items.map((t: any) => {
+              const e = desc[t.id];
+              return (
+                <article class="correction method-item">
+                  <div class="correction-head">
+                    <span><b>{t.name}</b></span>
+                    <a class="inline" href={fileUrl(t.file)}>{t.file}</a>
+                  </div>
+                  <dl class="correction-body">
+                    {facts(t).map(([k, v]) => (
+                      <div class="correction-row">
+                        <dt>{k}</dt>
+                        <dd>{v}</dd>
+                      </div>
+                    ))}
+                    <div class="correction-row">
+                      <dt>What it does</dt>
+                      <dd>{e.role}</dd>
+                    </div>
+                    <div class="correction-row">
+                      <dt>Why</dt>
+                      <dd>{e.why}</dd>
+                    </div>
+                  </dl>
+                </article>
+              );
+            })
+          )}
+        </section>
+      );
+    })
+  }
+
+  <h2 class="method-h">Outside the repo, checked</h2>
+  <p class="method-none">Services and programs the repo depends on. Each claim below names a file that must still say so, or the build fails.</p>
+  <dl class="correction-body method-list">
+    {
+      external.map((x) => (
+        <div class="correction-row">
+          <dt>{x.name}</dt>
+          <dd>
+            {x.role}{' '}
+            <a class="inline" href={fileUrl(x.receipt.file)}>{x.receipt.file}</a>
+          </dd>
+        </div>
+      ))
+    }
+  </dl>
+
+  <h2 class="method-h">Outside the repo, not replicable from it</h2>
+  <dl class="correction-body method-list">
+    {
+      offRepo.map((x) => (
+        <div class="correction-row">
+          <dt>{x.name}</dt>
+          <dd>{x.role}</dd>
+        </div>
+      ))
+    }
+  </dl>
+
+  <h2 class="method-h">Model history</h2>
+  <p class="method-none">Every change to an agent's model line, from git.</p>
+  <dl class="correction-body method-list">
+    {
+      models.map((m: any) => (
+        <div class="correction-row">
+          <dt>
+            {m.date} · <a class="inline" href={commitUrl(m.hash)}>{m.hash}</a>
+          </dt>
+          <dd>
+            {m.agent}: {m.from ? `${m.from} → ${m.to}` : `set to ${m.to}`}
+          </dd>
+        </div>
+      ))
+    }
+  </dl>
+
+  <h2 class="method-h">Changelog</h2>
+  <p class="method-none">
+    Every commit that touched the house rules, the agents, the hooks, the scripts, the workflows or the dependencies, newest first. {timeline.length} so far.
+  </p>
+  <dl class="correction-body method-list">
+    {
+      timeline.map((c: any) => (
+        <div class="correction-row">
+          <dt>
+            {c.date} · <a class="inline" href={commitUrl(c.hash)}>{c.hash}</a>
+          </dt>
+          <dd>
+            {c.subject}
+            <span class="method-uses">{c.files.join(' · ')}</span>
+          </dd>
+        </div>
+      ))
+    }
+  </dl>
+
+  <p class="method-none method-foot">
+    To replicate the setup, start from <a class="inline" href={fileUrl('CLAUDE.md')}>CLAUDE.md</a> and the agent files above. Source: <a class="inline" href={REPO}>{REPO.replace('https://', '')}</a>.
+  </p>
+</BaseLayout>

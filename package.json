@@ -4,13 +4,14 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "prebuild": "node scripts/check-house-rules.mjs --all",
+    "prebuild": "node scripts/check-house-rules.mjs --all && node scripts/check-methodology.mjs",
     "dev": "astro dev",
     "build": "astro build",
     "check": "astro check",
     "preview": "astro preview",
     "astro": "astro",
-    "check:links": "node scripts/check-links.mjs"
+    "check:links": "node scripts/check-links.mjs",
+    "check:methodology": "node scripts/check-methodology.mjs"
   },
   "dependencies": {
     "astro": "^4.16.0"

@@ -20,6 +20,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          # /methodology renders the tooling's git history; a shallow clone
+          # would publish a timeline 1 commit long, so the build refuses it.
+          fetch-depth: 0
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
