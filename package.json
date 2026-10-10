@@ -4,6 +4,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "prebuild": "node scripts/check-house-rules.mjs --all",
     "dev": "astro dev",
     "build": "astro build",
     "check": "astro check",
