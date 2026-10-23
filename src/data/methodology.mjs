@@ -163,6 +163,66 @@ export const offRepo = [
   { name: 'curl and headless Chrome', role: 'Used by hand when needed: curl for sites that block the other fetchers, Chrome to check layouts. Not part of the scripted pipeline.' },
 ];
 
+// How the method got here, oldest first. The array order is the timeline, so
+// no dates. `commits` are the receipts, oldest first: check-methodology.mjs
+// fails the build if a hash doesn't exist or if any commit isn't an ancestor
+// of the next one across all eras. An era with no commits says why in
+// `selfReported`. `note` (optional) is the slug of a note in
+// src/content/notes/ that tells the longer story.
+// A tooling change that alters how exhibits get made adds a row here, or
+// extends the latest one, in the same commit.
+export const eras = [
+  {
+    name: 'In a chat window',
+    changed: 'Exhibit 001 was researched, written and built in claude.ai chat as 1 HTML file with a hand-coded SVG chart.',
+    why: 'The voice rules came out of several rejected drafts here: no em dashes, a 2-minute read, and a narrator who never says anyone lied.',
+    commits: [],
+    selfReported: 'This happened in claude.ai chat, outside the repo. Its chart used approximate values for 2013 to 2019 until an audit replaced them with the CSO series.',
+  },
+  {
+    name: 'In a repo',
+    changed: 'The work moved to Claude Code and git. The site became Astro, and an exhibit became a markdown file with frontmatter. Deploys ran on every push.',
+    why: 'Once an exhibit is data, adding one stops being a page-building job.',
+    commits: ['14d97cc', '639a858'],
+  },
+  {
+    name: 'The agent kit',
+    changed: 'The house rules went into CLAUDE.md, and the work split into 5 agents, each with only the tools its job needs. The researcher can\'t write files. The committer only gets git.',
+    why: 'A fact-checker that didn\'t write the draft has no reason to defend it. A planned /new-exhibit slash command was dropped, because each step wants its own tools and a fresh context.',
+    commits: ['5c0af29'],
+  },
+  {
+    name: 'The first live error',
+    changed: 'Deploys stopped running on push and became manual. The site gained a public corrections log. Every Wikipedia citation was re-cited to a primary source or cut.',
+    why: 'Exhibit 006 deployed on push and credited a finding to a 2003 GAO report that doesn\'t contain it. The fix was committed about 4.5 hours after the exhibit.',
+    commits: ['d6ac46c', '83af94f', 'fb14631', 'f1bb772'],
+  },
+  {
+    name: 'A second model',
+    changed: 'A DeepSeek reviewer reads each claim and its quoted passage, with no memory of who wrote it. A script diffs its verdicts against the fact-checker\'s.',
+    why: 'Agreement between 2 reviewers says little. Disagreement says where to look. Most of its dissents turn out to be about the excerpt, not the facts.',
+    commits: ['23984b4', '9f33e0a'],
+  },
+  {
+    name: 'One sentence to publish',
+    changed: '"Commit and push" became the only command that deploys: the committer pushes, dispatches the workflow and watches it go green. The review reports in reports/ became tracked.',
+    why: 'A sentence is easy to say and impossible to trigger by accident. The reports became tracked because a published note cited files that weren\'t in the repo.',
+    commits: ['0766f28', '7110404'],
+  },
+  {
+    name: 'The museum audits itself',
+    changed: 'Exhibit 010 turned the fact-check record on this site: 127 claims, 84 supported, 3 wrong on the facts. Exhibit 011 shipped without its fact-check pass, which then found 3 problems.',
+    why: 'The corrections log was missing the 003 fix, so 010\'s own count was wrong. A self-audit that trusts its own log inherits the log\'s omissions.',
+    commits: ['a998be4', '59a0e0a', 'bf727f6'],
+  },
+  {
+    name: 'Rules the harness enforces',
+    changed: 'The voice and template rules became scripts: a hook runs them after every file Claude writes, and the build runs them again. The fact-checker moved to Opus. This page started building itself from the repo. Audits run every 4 sessions.',
+    why: 'Rules written as requests kept getting broken. The hook catches a problem as it is written; the build catches anything that arrived another way. The fact-checker got the larger model after 006 and 3 rounds on 012.',
+    commits: ['d0602ca', '54c5864', 'c66225f', 'c2751cf', '6246d93'],
+  },
+];
+
 // Shown for a kind of tooling the repo doesn't use yet. When the first one
 // arrives, it is discovered automatically and needs an entry above.
 export const noneYet = {

@@ -8,6 +8,9 @@
 //   3. a receipt no longer holds: its file is gone or lost the quoted text
 //   4. a pipeline step names an id that doesn't exist
 //   5. the write-ups contain an em dash (house voice)
+//   6. an era's history doesn't hold: a commit hash doesn't exist, the
+//      commits across all eras aren't in git order, an era with no commits
+//      doesn't say why (selfReported), or its note doesn't exist
 //
 // Two ways to run it:
 //   node scripts/check-methodology.mjs   (npm's prebuild: any finding fails the build)
@@ -18,6 +21,7 @@
 // Exit codes: 0 clean, 1 findings (CLI mode).
 
 import { readFileSync, existsSync } from 'node:fs';
+import { execFileSync } from 'node:child_process';
 import path from 'node:path';
 import { pathToFileURL, fileURLToPath } from 'node:url';
 import { discover } from './lib/inventory.mjs';
@@ -49,8 +53,39 @@ async function check() {
   for (const s of reg.pipeline) {
     for (const id of s.uses) if (!ids.has(id)) problems.push(`pipeline step "${s.step}" uses '${id}', which does not exist`);
   }
+  problems.push(...checkEras(reg.eras ?? []));
   if (readFileSync(REGISTRY, 'utf8').includes('—')) problems.push('src/data/methodology.mjs contains an em dash');
 
+  return problems;
+}
+
+function gitOk(args) {
+  try {
+    execFileSync('git', args, { cwd: ROOT, stdio: 'ignore' });
+    return true;
+  } catch (err) {
+    // A nonzero git exit means "no". Anything else (git missing, a bug here)
+    // must not read as a missing commit.
+    if (typeof err.status === 'number') return false;
+    throw err;
+  }
+}
+
+function checkEras(eras) {
+  const problems = [];
+  let prev = null;
+  for (const era of eras) {
+    if (!era.commits.length && !era.selfReported) problems.push(`era "${era.name}" has no commits and no selfReported line saying why`);
+    if (era.note && !existsSync(path.join(ROOT, 'src', 'content', 'notes', `${era.note}.md`))) problems.push(`era "${era.name}" links note '${era.note}', which does not exist`);
+    for (const h of era.commits) {
+      if (!gitOk(['cat-file', '-e', `${h}^{commit}`])) {
+        problems.push(`era "${era.name}" cites commit ${h}, which does not exist`);
+        continue;
+      }
+      if (prev && !gitOk(['merge-base', '--is-ancestor', prev.hash, h])) problems.push(`era "${era.name}": commit ${h} is not after ${prev.hash} (era "${prev.era}"); eras and their commits go oldest first`);
+      prev = { hash: h, era: era.name };
+    }
+  }
   return problems;
 }
 

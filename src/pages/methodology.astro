@@ -3,8 +3,9 @@
 // src/data/methodology.mjs says what each is for, and
 // scripts/check-methodology.mjs fails the build when the 2 disagree.
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { withBase } from '../lib/paths';
 import { discover, modelHistory, toolingTimeline, assertFullHistory } from '../../scripts/lib/inventory.mjs';
-import { REPO, entries, pipeline, external, offRepo, noneYet } from '../data/methodology.mjs';
+import { REPO, entries, pipeline, external, offRepo, eras, noneYet } from '../data/methodology.mjs';
 
 assertFullHistory();
 
@@ -163,6 +164,41 @@ function facts(t: any): Array<[string, string]> {
           </dt>
           <dd>
             {m.agent}: {m.from ? `${m.from} → ${m.to}` : `set to ${m.to}`}
+          </dd>
+        </div>
+      ))
+    }
+  </dl>
+
+  <h2 class="method-h">How it got here</h2>
+  <p class="method-none">
+    Each row is a change to how exhibits get made, oldest first, with the commits that made it. A new tool is tried on 1 exhibit, then kept or dropped; either way it gets a row here in the same commit. The build fails if a listed commit doesn't exist or the rows are out of order.
+  </p>
+  <dl class="correction-body method-list">
+    {
+      eras.map((e: any, i: number) => (
+        <div class="correction-row">
+          <dt>
+            {i + 1}. {e.name}
+          </dt>
+          <dd>
+            {e.changed} {e.why}
+            {e.selfReported && <span class="method-uses">Self-reported. {e.selfReported}</span>}
+            {e.commits.length > 0 && (
+              <span class="method-uses">
+                {e.commits.map((h: string, j: number) => (
+                  <>
+                    {j > 0 && ' · '}
+                    <a class="inline" href={commitUrl(h)}>{h}</a>
+                  </>
+                ))}
+              </span>
+            )}
+            {e.note && (
+              <span class="method-uses">
+                <a class="inline" href={withBase(`/notes/${e.note}/`)}>The longer story</a>
+              </span>
+            )}
           </dd>
         </div>
       ))
