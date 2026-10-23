@@ -46,9 +46,13 @@ sources:
     url: "https://www.batimes.com.ar/news/argentina/indec-case-guillermo-moreno-sentenced-to-3-years-imprisonment-and-6-year-disqualification-from-public-office.phtml"
     urlLabel: "batimes.com.ar"
   - name: "American Statistical Association, Chicago Chapter"
-    text: "Update on Argentina! (2013), confirmed by direct fetch: Judge Claudio Bonadio charged Commerce Secretary Guillermo Moreno, who \"prosecuted former INDEC CPI director Graciela Bevacqua and others,\" with abuse of power for fining and pursuing legal action against people who published independent inflation data, calling it \"nothing other than an effort to silence\" them."
+    text: "Update on Argentina! (undated page), confirmed by direct fetch: Judge Claudio Bonadio charged Commerce Secretary Guillermo Moreno, who \"prosecuted former INDEC CPI director Graciela Bevacqua and others,\" with abuse of power for fining and pursuing legal action against people who published independent inflation data, calling it \"nothing other than an effort to silence\" them."
     url: "https://community.amstat.org/chicagochapter/resources1/updateonargentina"
     urlLabel: "community.amstat.org"
+  - name: "Página/12"
+    text: "\"Bonadío procesó a Moreno por 'innovar'\", 18 September 2013 (in Spanish): the date of the charge; Judge Bonadío charged Moreno with abuse of authority (\"abuso de autoridad\") over a 500,000-peso fine on the consultancy Finsoport, finding the aim was to \"silenciar\" consultancies whose price indices did not match INDEC's."
+    url: "https://www.pagina12.com.ar/diario/elpais/1-229270-2013-09-18.html"
+    urlLabel: "pagina12.com.ar, 18 Sep 2013"
 disclosure: "This entry was drafted with AI (Claude did the research sweeps and first draft). The editorial voice, the opinions, and any surviving errors are mine. Every figure was checked against the linked primary source before publishing."
 ---
 

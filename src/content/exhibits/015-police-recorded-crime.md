@@ -41,8 +41,8 @@ verdictNote: "The Statistics Authority set the condition for the designation's r
 sources:
   - name: "UK Statistics Authority"
     text: "Assessment Report 268, \"Statistics on Crime in England and Wales\", January 2014 (published 15 January 2014): \"there is accumulating evidence that suggests the underlying data on crimes recorded by the police may not be reliable\" (para 1.2.3); the removal of the National Statistics designation from statistics based on recorded crime data until ONS can demonstrate that the quality of the underlying data and the audit and quality assurance procedures \"are sufficient\" (para 1.2.5)."
-    url: "https://osr.statisticsauthority.gov.uk/publications/statistics-on-crime-in-england-and-wales/"
-    urlLabel: "osr.statisticsauthority.gov.uk, Jan 2014"
+    url: "https://osr.statisticsauthority.gov.uk/wp-content/uploads/sites/3/2015/12/images-assessmentreport268statisticsoncrimeinenglandandwale_tcm97-43508-1.pdf"
+    urlLabel: "osr.statisticsauthority.gov.uk, Assessment Report 268 (PDF)"
   - name: "House of Commons Public Administration Select Committee"
     text: "\"Caught red-handed: Why we can't count on Police Recorded Crime statistics\", Thirteenth Report of Session 2013-14, HC 760, 9 April 2014: the summary's finding that misrecording had become \"ingrained, including within senior leadership\" and led to \"the subordination of data integrity to target-chasing\"; \"We deprecate the use of targets in the strongest possible terms\"; the end of regular external audit in 2007 \"was a mistake\"; the January 2014 removal of the designation (para 1); the contact from PC James Patrick, \"acting as a whistleblower\" (para 2)."
     url: "https://publications.parliament.uk/pa/cm201314/cmselect/cmpubadm/760/760.pdf"
