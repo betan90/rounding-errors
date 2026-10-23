@@ -1,0 +1,46 @@
+{
+  "exhibit": "008",
+  "fetchedAt": "2026-10-23T13:12:32.604Z",
+  "sources": [
+    {
+      "id": "01",
+      "name": "Norwegian University of Life Sciences (NMBU)",
+      "text": "Centre for Land Tenure Studies report, Explaining the recent reduction of Indonesia's deforestation: the 40% to 90% range across datasets, the \"at least 50%\" robust estimate, and the finding that differing definitions create a wide range of figures open to selective use.",
+      "url": "https://www.nmbu.no/en/research/new-clts-report-explaining-recent-reduction-indonesias-deforestation",
+      "status": "fetched",
+      "kind": "html",
+      "chars": 9432,
+      "sha256": "4df9cc1d1055712dc7d517f9d1b7794a5b5f034979b4ee3069dfbbfdf5be3811"
+    },
+    {
+      "id": "02",
+      "name": "Mongabay (May 2025)",
+      "text": "Reporting on the NMBU findings: the 90% official figure for 2015-2021, GFW's 69% for 2016-2023, the 2015 El Nino baseline, Ahmad Dermawan's \"not necessarily incorrect\" qualification and the Jokowi-term explanation, and the inclusion of commercial acacia plantations in the official forest definition.",
+      "url": "https://news.mongabay.com/2025/05/indonesias-deforestation-claims-under-scrutiny-over-cherry-picked-data/",
+      "status": "fetched",
+      "kind": "html",
+      "chars": 19676,
+      "sha256": "61b0872a2dde0635aa66b407966b909671fc44f6a78db26e825beb8278670eb1"
+    },
+    {
+      "id": "03",
+      "name": "Global Forest Watch",
+      "text": "2024 Tree Cover Loss Data Explained: the SIMONTANA methodology (permanent conversion, 6.25 ha minimum, manual visual inspection, July-June observation year) against UMD/GFW tree cover loss (calendar year, fixed baseline, includes plantations).",
+      "url": "https://www.globalforestwatch.org/blog/data-and-tools/2024-tree-cover-loss-data-explained/",
+      "status": "fetched",
+      "kind": "html",
+      "chars": 19655,
+      "sha256": "fec9eea14ccae89e1a004931f0a21430d4163e16c89cc0ba363267c086c5dfd4"
+    },
+    {
+      "id": "04",
+      "name": "Mongabay (April 2026)",
+      "text": "The 66% rise in 2025 deforestation, nickel mining as a driver, and Auriga Nusantara's statement that all datasets are valid under their own methodologies.",
+      "url": "https://news.mongabay.com/2026/04/indonesias-deforestation-surges-66-in-2025-reversing-years-of-decline/",
+      "status": "fetched",
+      "kind": "html",
+      "chars": 18774,
+      "sha256": "3ec370dc072d48f0dc5f10e406bbcb7f6f0e2ab16dd8d65afd63c70e8ce0909b"
+    }
+  ]
+}

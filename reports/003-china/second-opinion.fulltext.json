@@ -1,0 +1,199 @@
+{
+  "exhibit": "003",
+  "reviewedAt": "2026-10-23T13:21:15.862Z",
+  "model": "deepseek-chat",
+  "servedBy": [
+    "deepseek-flash"
+  ],
+  "sourceCharacters": 30836,
+  "claims": [
+    {
+      "id": 1,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01",
+        "06"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "SUPPORTED",
+      "quote": "In 2015 for example, the National Bureau of Statistics announced a national GDP of 67.7 trillion yuan",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "Source 01 explicitly states the NBS announced a 2015 national GDP of 67.7 trillion yuan, matching the claim exactly.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 2,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01",
+        "06"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "SUPPORTED",
+      "quote": "In 2015 for example, the National Bureau of Statistics announced a national GDP of 67.7 trillion yuan, but summing up the individual GDP of China’s 31 provinces results in a total GDP of 72.5 trillion yuan.",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "The source explicitly states that summing the 31 provinces' GDPs in 2015 yields 72.5 trillion yuan, matching the claim exactly.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 3,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01",
+        "06"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "SUPPORTED",
+      "quote": "The 4.8 trillion yuan difference between the two figures is equivalent to Jiangsu Province’s nominal GDP in 2015.",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "The source states the 4.8 trillion yuan gap equals Jiangsu Province's nominal GDP in 2015, matching the claim's figure and comparison.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 4,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01",
+        "06"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "NOT SUPPORTED",
+      "quote": "And when premier Li Keqiang was Liaoning chief in 2007, he famously stated that China’s GDP figures were all “man-made.”",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "The source says Li was \"Liaoning chief\" (not specifically party chief) and that he \"famously stated\" GDP figures were \"man-made,\" but it never mentions the American ambassador or leaked US diplomatic cables, so the claim adds unsupported details.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 5,
+      "mode": "passage",
+      "notFetched": [
+        "02"
+      ],
+      "verdict": "PARTIALLY SUPPORTED",
+      "reasoning": "The passage confirms false data claims from 2011 to 2014 by city and county officials and identifies Chen Qiufa as provincial head, but does not state the admission occurred in January 2017 or explicitly call him governor.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 6,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01",
+        "06"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "NOT SUPPORTED",
+      "quote": "NONE",
+      "quoteFound": null,
+      "sourceComplete": true,
+      "reasoning": "Neither source mentions a county's fiscal revenue of 2.4 billion yuan for 2013 or a national audit correcting it to 1.1 billion yuan.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 7,
+      "mode": "passage",
+      "notFetched": [
+        "02"
+      ],
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states that in some counties reported numbers were more than double the actual income, which means those local figures were overstated by more than 100%.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 8,
+      "mode": "passage",
+      "notFetched": [
+        "02"
+      ],
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states that Wang, the former Liaoning Party secretary, was removed from all public posts and stripped of party membership, which matches the claim's assertions.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 9,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01",
+        "06"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "SUPPORTED",
+      "quote": "On Jan. 7, the Inner Mongolia authorities declared that its industrial data for 2016 was inflated by 40 percent (290 billion yuan, or about $45 billion)",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "The source states Inner Mongolia's Jan. 7, 2018 admission that 2016 industrial data was inflated by 40 percent, and separately notes Liaoning's January 2017 confession, consistent with \"within weeks\" (roughly a year later, though the claim's framing of timing is loose but the figures match).",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 10,
+      "mode": "passage",
+      "notFetched": [
+        "02"
+      ],
+      "verdict": "PARTIALLY SUPPORTED",
+      "reasoning": "The passage confirms a 33.5% downward GDP revision in a Tianjin area, but does not specify that it occurred \"within weeks\" or that the area is a \"district.\"",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 11,
+      "mode": "passage",
+      "notFetched": [
+        "04"
+      ],
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "No passage was provided, so there is no text to support the claim.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 12,
+      "mode": "passage",
+      "notFetched": [
+        "05"
+      ],
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states the NBS will take over regional data collection from 2019, replacing the system where provinces calculated their own output, which matches the claim.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 13,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01",
+        "06"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "SUPPORTED",
+      "quote": "Relative to the official numbers, we estimate that GDP growth from 2008-2016 is 1.7 percentage points lower",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "The abstract states the authors' revised estimates put GDP growth 1.7 percentage points lower than official numbers for 2008-2016, and that NBS adjustments were insufficient after 2008, matching the claim's \"even after the NBS's own adjustments.\"",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 14,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01",
+        "06"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "NOT SUPPORTED",
+      "quote": "In 2015 for example, the National Bureau of Statistics announced a national GDP of 67.7 trillion yuan, but summing up the individual GDP of China’s 31 provinces results in a total GDP of 72.5 trillion yuan.",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "The sources document a large provincial-versus-national GDP gap (4.8 trillion yuan in 2015) but never state that this gap has since narrowed close to zero.",
+      "servedBy": "deepseek-flash"
+    }
+  ]
+}

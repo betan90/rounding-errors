@@ -1,0 +1,572 @@
+{
+  "exhibit": "012",
+  "reviewedAt": "2026-10-23T14:00:51.780Z",
+  "model": "deepseek-chat",
+  "servedBy": [
+    "deepseek-flash"
+  ],
+  "sourceCharacters": 66792,
+  "claims": [
+    {
+      "id": 1,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01",
+        "02",
+        "03"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "SUPPORTED",
+      "quote": "RR 2010a Figure 2 (approximated) 4.1 2.9 3.4 −0.1",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "Herndon et al. Table 3 lists RR's published above-90% average as −0.1 for both RR 2010a Figure 2 and RR 2010b Appendix Table 1, and Reinhart-Rogoff's errata Table 1 confirms the postwar mean of −0.1 (0.0), so the figure appears consistently across body, table and chart.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 2,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01",
+        "02",
+        "03"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "SUPPORTED",
+      "quote": "RR’s “main result is that whereas the link between growth and debt seems relatively weak at ‘normal’ debt levels, median growth rates for countries with public debt over roughly 90 percent of GDP are about one percent lower than otherwise; (mean) growth rates are several percent lower” (RR 2010a p. 573).",
+      "quoteFound": false,
+      "sourceComplete": true,
+      "reasoning": "Source 02 quotes this exact passage from RR 2010a p. 573, matching the claim's wording character for character.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 3,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01",
+        "02",
+        "03"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "NOT SUPPORTED",
+      "quote": "NONE",
+      "quoteFound": null,
+      "sourceComplete": false,
+      "reasoning": "The claim is only a bibliographic citation with no assertion to verify, and Source 01 is merely a landing page with cookie notice and metadata, not the article's full text.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 4,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01",
+        "02",
+        "03"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "SUPPORTED",
+      "quote": "20 advanced economies, 1946–2009",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "The Herndon, Ash and Pollin source explicitly describes the sample as \"20 advanced economies, 1946–2009\" (Table 1 title), matching the claim's figures and dates.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 5,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01",
+        "02",
+        "03"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "SUPPORTED",
+      "quote": "Reinhart’s and Rogoﬀ’s website lists 76 high-proﬁle features, including The Economist, Wall Street Journal, New York Times, Washington Post, Fox News, National Public Radio, and MSNBC",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "The Herndon, Ash and Pollin (2013) paper, dated April 15, 2013, states that Reinhart and Rogoff's website lists 76 high-profile features, directly supporting the claim.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 6,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01",
+        "02",
+        "03"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "SUPPORTED",
+      "quote": "A search on [Reinhart Rogoff \"Growth in a Time of Debt\" -author:rogoff -author:reinhart] yielded 538 Google Scholar results on 7 April 2013).",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "Source 02 states a Google Scholar search excluding the authors' own pieces yielded 538 results, matching the claim's figure.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 7,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01",
+        "02",
+        "03"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "SUPPORTED",
+      "quote": "Furthermore, RR 2010a is the only evidence cited in the “Paul Ryan Budget” on the consequences of high public debt for economic growth.",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "Source 02 states verbatim that RR 2010a is the only evidence cited in the \"Paul Ryan Budget\" on the consequences of high public debt for economic growth, matching the claim.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 8,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01",
+        "02",
+        "03"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "SUPPORTED",
+      "quote": "The study found conclusive empirical evidence that gross debt (meaning all debt that a government owes, including debt held in government trust funds) exceeding 90 percent of the economy has a significant negative eect on economic growth.",
+      "quoteFound": false,
+      "sourceComplete": true,
+      "reasoning": "Source 02 quotes the Ryan \"Path to Prosperity\" budget report using exactly this language about the Reinhart-Rogoff study.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 9,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01",
+        "02",
+        "03"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "SUPPORTED",
+      "quote": "We were unable to replicate the RR results from the publicly available country spreadsheet data although our initial results from the publicly available data closely resemble the results we ultimately present as correct. Reinhart and Rogoff kindly provided us with the working spreadsheet from the RR analysis.",
+      "quoteFound": false,
+      "sourceComplete": true,
+      "reasoning": "The HAP paper states they could not replicate RR results from public data and that RR provided the working spreadsheet, matching the claim.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 10,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01",
+        "02",
+        "03"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "SUPPORTED",
+      "quote": "With the working spreadsheet, we were able to approximate closely the published RR results. While using RR’s working spreadsheet, we identiﬁed coding errors, selective exclusion of available data, and unconventional weighting of summary statistics.",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "HAP state they used RR's working spreadsheet to closely approximate the published results and then identified errors and corrected them, matching the claim.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 11,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01",
+        "02",
+        "03"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "SUPPORTED",
+      "quote": "when properly calculated, the average real GDP growth rate for countries carrying a public-debt-to-GDP ratio of over 90 percent is actually 2.2 percent, not −0.1 percent as published in Reinhart and Rogoff",
+      "quoteFound": false,
+      "sourceComplete": true,
+      "reasoning": "Source 02 (Herndon, Ash and Pollin) explicitly states their corrected figure of 2.2 percent for the over-90-percent debt category, and Source 03 confirms the correction.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 12,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01",
+        "02",
+        "03"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "SUPPORTED",
+      "quote": "A coding error in the RR working spreadsheet entirely excludes ﬁve countries, Australia, Austria, Belgium, Canada, and Denmark, from the analysis.5 The omitted countries are selected alphabetically and, hence, likely randomly with respect to economic relationships.",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "Source 02 states the coding error excludes those five countries and that they are selected alphabetically, and footnote 5 gives the formula detail (\"RR averaged cells in lines 30 to 44 instead of lines 30 to 49\"), matching the claim's figures and quotation.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 13,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01",
+        "02",
+        "03"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "SUPPORTED",
+      "quote": "The RR Exclusion column excludes available early years of data for Australia (1946–1950), Canada (1946–1950), and New Zealand (1946–1949).",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "Source 02 explicitly states that RR excluded available early years for exactly these three countries, matching the claim.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 14,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01",
+        "02",
+        "03"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "SUPPORTED",
+      "quote": "Real GDP growth rates in those years were 7.7, 11.9, −9.9, and 10.8 percent. After the exclusion of these years, New Zealand contributes only one year to the highest public debt/GDP category, 1951, with a real GDP growth rate of −7.6 percent.",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "Source 02 states exactly these four excluded growth rates and the remaining 1951 value of −7.6 percent.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 15,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01",
+        "02",
+        "03"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "SUPPORTED",
+      "quote": "The included countries are Greece (19 years in the highest category with average real GDP growth of 2.9 percent per year); Ireland (7 years with average growth of 2.4 percent); Italy (10 years with average growth of 1.0 percent); Japan (11 years with average growth of 0.7 percent); New Zealand (1 year with average growth of −7.6 percent), the UK (19 years with average growth of 2.4 percent), and the US (4 years with average growth of −2.0 percent).",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "Source 02 states the UK had 19 years averaging 2.4%, New Zealand's single year carried 14.3% (one-seventh) weight among seven countries, and a transcription error reduced NZ's average from −7.6 to −7.9 percent.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 16,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01",
+        "02",
+        "03"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "SUPPORTED",
+      "quote": "RR reports 96 country-years in the highest public debt/GDP category. Our corrected analysis ﬁnds 110 country-years in the highest, above-90-percent public debt/GDP, category. ... With the spreadsheet error discussed below, RR in fact estimated GDP growth in the highest public debt/GDP category with only 71 country-years of data",
+      "quoteFound": false,
+      "sourceComplete": true,
+      "reasoning": "Source 02 states all three figures exactly: 96 reported, 110 corrected, and 71 actually used due to the spreadsheet error.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 17,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01",
+        "02",
+        "03"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "NOT SUPPORTED",
+      "quote": "Spreadsheet error only 4.2 3.0 3.2 1.9",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "Table 3 shows the spreadsheet error alone yields 1.9% (a 0.3-point move from 2.2%), but the selective years exclusion alone also yields 1.9% while country weights alone yields 1.9% as well—yet the claim's framing that \"any 1 error alone moves the result 0.3 of a point\" is contradicted because the country-weights-only row shows 1.9% but the claim misstates the magnitude; more precisely, the claim's assertion that each single error moves the result by 0.3 points is not what the table shows (country weights alone moves it 0.3, but the claim's blanket \"any 1 error\" is imprecise), and the table does not state \"0.3 of a point\" as a general characterization.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 18,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01",
+        "02",
+        "03"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "NOT SUPPORTED",
+      "quote": "NONE",
+      "quoteFound": null,
+      "sourceComplete": true,
+      "reasoning": "The claim's \"0.3% to 1.7%\" range is not stated in any source; the sources give different figures (HAP's Table 3 shows 1.9% for individual errors and 0.3% for the combined exclusion+weighting, while RR's errata report a 0.3% postwar mean increase), and no source presents a \"0.3% to 1.7%\" range for any two of the three errors.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 19,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01",
+        "02",
+        "03"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "NOT SUPPORTED",
+      "quote": "Spreadsheet error + Selective years exclusion + Country weights + Transcription error 4.1 2.9 3.4 −0.1",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "The claim's figures are wrong: Herndon et al. show the combined spreadsheet, exclusion and weighting errors alone yield 0.0% (Table 3), with the transcription error supplying the final −0.1 to reach −0.1%, not \"all 3 take it to 0.0%\" with the transcription error adding 0.1.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 20,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01",
+        "02",
+        "03"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "SUPPORTED",
+      "quote": "Our finding is that when properly calculated, the average real GDP growth rate for countries carrying a public-debt-to-GDP ratio of over 90 percent is actually 2.2 percent, not −0.1 percent as published in Reinhart and Rogoff.",
+      "quoteFound": false,
+      "sourceComplete": true,
+      "reasoning": "Herndon, Ash and Pollin state that correcting the coding errors, selective exclusions, unconventional weighting, and transcription error yields 2.2 percent for the above-90-percent category, matching the claim's figure.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 21,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01",
+        "02",
+        "03"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "NOT SUPPORTED",
+      "quote": "The exclusion of the missing years is alone responsible for a reduction of −0.3 percentage points of estimated real GDP growth in the highest public debt/GDP category.",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "The sources attribute a −0.3 pp effect to the New Zealand year exclusion alone and a −0.3 pp effect to the spreadsheet error alone, but the combined effect of all errors is +2.2 vs −0.1 (a 2.3 pp gap), not \"2.2 together,\" and the claim's framing of \"3 errors worth 0.3 each\" misstates the figures.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 22,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01",
+        "02",
+        "03"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "SUPPORTED",
+      "quote": "Some of the errors have strong interactive eﬀects.",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "The exact sentence appears in Source 02 (Herndon, Ash and Pollin), matching the claim's quotation word for word.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 23,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01",
+        "02",
+        "03"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "SUPPORTED",
+      "quote": "the impact of the excluded years for New Zealand is greatly ampliﬁed when equal country weighting assigns 14.3 percent (1/7) of the weight for the average to the single year in which New Zealand is included in the above-90-percent public debt/GDP group. This one year is when GDP growth in New Zealand was −7.6 percent.",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "Source 02 explicitly states that equal country weighting amplifies the New Zealand exclusion so that its single remaining year at −7.6% growth receives 14.3% (1/7) of the weight in the above-90% category.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 24,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01",
+        "02",
+        "03"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "SUPPORTED",
+      "quote": "The authors wish to thank Thomas Herndon, Michael Ash, and Robert Pollin (HAP) for the careful attention and for pointing out an important correction to our original Growth in a Time of Debt.",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "The erratum is dated May 5, 2013 and explicitly thanks HAP for pointing out an important correction, matching the claim.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 25,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01",
+        "02",
+        "03"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "SUPPORTED",
+      "quote": "a coding error that causes the first five countries in the alphabet to be omitted in forming averages for the 1946-2009 period in one figure",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "Source 03 (the erratum) states verbatim that the coding error causes the first five countries in the alphabet to be omitted, matching the claim's quotation.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 26,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01",
+        "02",
+        "03"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "SUPPORTED",
+      "quote": "2. Exclusion of GDP growth for Spain 1959-1980",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "The erratum explicitly addresses the exclusion of Spain's 1959–1980 GDP growth data and shows the corrected figures including those years (\"Coding corrected + Spain filled, 1960-1980\"), confirming it adds the missing years for Spain.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 27,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01",
+        "02",
+        "03"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "SUPPORTED",
+      "quote": "First, a coding correction that includes 1948, 1949 in the postwar sample as stated in the summary table that accompanied our original spreadsheet sent to HAP.",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "The erratum explicitly calls the inclusion of NZ 1948–1949 \"a coding correction\" and states it retains the Maddison series while adding the NZ Historical Statistics series (NewZealand_New) alongside it.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 28,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01",
+        "02",
+        "03"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "SUPPORTED",
+      "quote": "Final including New Zealand (NZ Historical Statistics GDP) ... Post war ... Mean ... 2.0 ... Final including New Zealand (Maddison GDP) ... Post war ... Mean ... 1.0",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "Table 1 in the Reinhart-Rogoff errata lists postwar mean growth for the above-90% category as 2.0 under the NZ Historical Statistics series and 1.0 under the Maddison series, matching the claim's figures.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 29,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01",
+        "02",
+        "03"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "SUPPORTED",
+      "quote": "Their paper is silent on the results of the longer sample dating back to the 1800s for most of the advanced economies and the exercise on emerging markets that are part of our May 2010 paper. It also fails to mention that our median estimates for the postwar sample are very close in magnitude to the averages that they present.",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "The erratum states both points verbatim, matching the claim's wording and quotation.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 30,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01",
+        "02",
+        "03"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "SUPPORTED",
+      "quote": "The authors assert that there are three problems with our post –WWII averages and the paper itself: (i) a coding error that causes the first five countries in the alphabet to be omitted in forming averages for the 1946-2009 period in one figure, (ii) “selective exclusion” of 1946-1950 for New Zealand, and (iii) “unconventional weighting of summary statistics.”",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "The erratum acknowledges the coding error but disputes the selective-exclusion and unconventional-weighting critiques, so it disputes the rest of the three alleged problems.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 31,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01",
+        "02",
+        "03"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "SUPPORTED",
+      "quote": "RR 2010b Appendix Table 1 4.1 2.8 2.8 −0.1",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "Herndon et al.'s Table 3 lists the published RR values (4.1, 2.8, 2.8, −0.1) and the corrected country-year weighted values (4.2, 3.1, 3.2, 2.2), matching the claim exactly.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 32,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01",
+        "02",
+        "03"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "SUPPORTED",
+      "quote": "We replicate Reinhart and Rogoff (2010a and 2010b) and find that coding errors, selective exclusion of available data, and unconventional weighting of summary statistics lead to serious errors",
+      "quoteFound": false,
+      "sourceComplete": true,
+      "reasoning": "HAP's abstract names exactly the three issues (coding errors, selective exclusion, unconventional weighting) without alleging fraud, and RR's erratum states \"a coding error that causes the first five countries in the alphabet to be omitted\" and thanks HAP \"for pointing out an important correction.\"",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 33,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01",
+        "02",
+        "03"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "SUPPORTED",
+      "quote": "Reinhart and Rogoff kindly provided us with the working spreadsheet from the RR analysis. With the working spreadsheet, we were able to approximate closely the published RR results.",
+      "quoteFound": false,
+      "sourceComplete": true,
+      "reasoning": "HAP explicitly state their replication and corrections rely on the working spreadsheet that RR provided to them, which was not publicly available (the public spreadsheets lacked guidance and did not reproduce RR's results).",
+      "servedBy": "deepseek-flash"
+    }
+  ]
+}

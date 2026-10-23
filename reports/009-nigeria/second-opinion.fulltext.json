@@ -1,0 +1,309 @@
+{
+  "exhibit": "009",
+  "reviewedAt": "2026-10-23T13:21:44.203Z",
+  "model": "deepseek-chat",
+  "servedBy": [
+    "deepseek-flash"
+  ],
+  "sourceCharacters": 52975,
+  "claims": [
+    {
+      "id": 1,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01",
+        "03",
+        "04",
+        "06",
+        "07"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "PARTIALLY SUPPORTED",
+      "quote": "the country’s GDP emerged at $509.9 billion in 2013 up from $285.56 billion, an 89.2% increase",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "The AfDB source confirms $285.56bn as the pre-rebasing 2013 GDP, but no source mentions a \"$285.6bn (ledger)\" figure, so that part of the claim is unsupported.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 2,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01",
+        "03",
+        "04",
+        "06",
+        "07"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "SUPPORTED",
+      "quote": "the country’s GDP emerged at $509.9 billion in 2013 up from $285.56 billion, an 89.2% increase",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "Source 01 states the 2013 GDP was $509.9 billion with an 89.2% increase following the April 2014 rebasing announcement.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 3,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01",
+        "03",
+        "04",
+        "06",
+        "07"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "SUPPORTED",
+      "quote": "Accordingly, Nigeria’s GDP per capita has almost doubled from $1,437 to $2,688.",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "Source 01 states the exact figures for GDP per capita before and after rebasing, matching the claim.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 4,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01",
+        "03",
+        "04",
+        "06",
+        "07"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "SUPPORTED",
+      "quote": "The Coordinating Minister for the Economy and Minister of Finance, Ngozi Okonjo-Iweala, confirmed that the highest global best practices were followed in the exercise.",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "Source 01 identifies the finance minister and states she confirmed the highest global best practices were followed in the rebasing exercise.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 5,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01",
+        "03",
+        "04",
+        "06",
+        "07"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "SUPPORTED",
+      "quote": "allowing Nigeria to jump 10 places in global GDP rankings to 26th",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "Source 03 states Nigeria leapfrogged 10 places to 26th and passed South Africa ($354bn), and Source 01 confirms Nigeria became the largest economy in Africa.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 6,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01",
+        "03",
+        "04",
+        "06",
+        "07"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "SUPPORTED",
+      "quote": "The product of two years of work, recalibrated figures for Nigeria’s GDP, which shifted the base year from 1990 to 2010, were published in April 2014.",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "Source 03 explicitly describes the 2014 rebasing as \"the product of two years of work,\" supporting the claim of a two-year preparation.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 7,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01",
+        "03",
+        "04",
+        "06",
+        "07"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "SUPPORTED",
+      "quote": "This is contrary to the international standards for statistical accuracy, as recommended by the United Nations Statistical Commission (UNSC), which requires that GDP be rebased every 5 years.",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "Source 04 explicitly states the UN Statistical Commission recommends rebasing GDP every 5 years, matching the claim.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 8,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01",
+        "03",
+        "04",
+        "06",
+        "07"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "SUPPORTED",
+      "quote": "African Development Bank recently reported that there are 18 other African countries, whose GDP base years are more than a decade old and that it is even much older in at least 10 countries. For instance, it is reported that the Democratic Republic of Congo and Equatorial Guinea have base years of more than 30 years.",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "Source 04 attributes to the AfDB the figure of 18 other African countries with base years over a decade old and names the DRC and Equatorial Guinea as having base years of more than 30 years, matching the claim.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 9,
+      "mode": "passage",
+      "notFetched": [
+        "05"
+      ],
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "No passage was provided, so there is no text to support the claim.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 10,
+      "mode": "passage",
+      "notFetched": [
+        "05"
+      ],
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "No passage was provided, so there is no text to support the claim.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 11,
+      "mode": "passage",
+      "notFetched": [
+        "05"
+      ],
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "No passage was provided, so there is no text to support the claim.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 12,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01",
+        "03",
+        "04",
+        "06",
+        "07"
+      ],
+      "notFetched": [
+        "05"
+      ],
+      "truncated": false,
+      "verdict": "SUPPORTED",
+      "quote": "Notably, 2019 was a year of relative macroeconomic stability preceding the global COVID-19 shock. Using a pre-pandemic year avoids statistical distortions and provides a cleaner baseline for post-pandemic growth comparisons.",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "Source 06 states 2019 was chosen as a relatively stable pre-pandemic year, that the SUT captured 46 industries and 217 product groups, and that the informal economy's share rose to 42.5%, matching all three elements of the claim.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 13,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01",
+        "03",
+        "04",
+        "06",
+        "07"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "SUPPORTED",
+      "quote": "The government’s debt-to-GDP ratio has declined from 52.90% to 39.37%",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "Source 07 explicitly states the debt-to-GDP ratio declined from 52.90% to 39.37% following the 2025 rebasing, matching the claim's figures.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 14,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01",
+        "03",
+        "04",
+        "06",
+        "07"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "NOT SUPPORTED",
+      "quote": "NONE",
+      "quoteFound": null,
+      "sourceComplete": true,
+      "reasoning": "No source states that analysts expected a 40%–60% revision; the 89% increase appears in several sources, but the expectation figure is absent.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 15,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01",
+        "03",
+        "04",
+        "06",
+        "07"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "NOT SUPPORTED",
+      "quote": "Tue, 5 Aug 2025 1:19:18 WAT",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "The Daily Trust article is dated 5 August 2025, not 22 July 2025, so the claim's date is contradicted by the source.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 16,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01",
+        "03",
+        "04",
+        "06",
+        "07"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "NOT SUPPORTED",
+      "quote": "NONE",
+      "quoteFound": null,
+      "sourceComplete": true,
+      "reasoning": "None of the provided sources contain a \"Who lied\" section or the word \"Nobody\" used in that framing, so the claim cannot be verified against the given texts.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 17,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01",
+        "03",
+        "04",
+        "06",
+        "07"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "NOT SUPPORTED",
+      "quote": "NONE",
+      "quoteFound": null,
+      "sourceComplete": true,
+      "reasoning": "None of the provided sources mention Africa Check, its URL, or any archive.org fallback for it, so the claim about citation practice cannot be verified from these texts.",
+      "servedBy": "deepseek-flash"
+    }
+  ]
+}

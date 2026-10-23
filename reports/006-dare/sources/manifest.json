@@ -1,0 +1,53 @@
+{
+  "exhibit": "006",
+  "fetchedAt": "2026-10-23T13:12:27.606Z",
+  "sources": [
+    {
+      "id": "01",
+      "name": "West and O'Neal",
+      "text": "Project D.A.R.E. Outcome Effectiveness Revisited, American Journal of Public Health (2004): d = 0.023, 95% CI −0.04 to 0.08, nonsignificant; \"largest single school-based prevention program in terms of federal expenditures,\" averaging three quarters of a billion dollars a year.",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1448384",
+      "status": "fetched",
+      "kind": "html",
+      "chars": 20129,
+      "sha256": "1a0b21c5f587e44067aa8f87955dce1126813d993b28f9902115fe30e2f696b2"
+    },
+    {
+      "id": "02",
+      "name": "US General Accounting Office",
+      "text": "Youth Illicit Drug Use Prevention: DARE Long-Term Evaluations (GAO-03-172R, 2003): 6 evaluations, no statistically significant differences in illicit drug use.",
+      "url": null,
+      "status": "no-url"
+    },
+    {
+      "id": "03",
+      "name": "Rosenbaum and Hanson",
+      "text": "Assessing the Effects of School-Based Drug Education: A Six-Year Multilevel Analysis of Project D.A.R.E., Journal of Research in Crime and Delinquency 35(4) (1998): urban and rural students showed some benefit; suburban DARE graduates showed small but significant increases in drug use versus suburban controls, the so-called boomerang effect.",
+      "url": "https://journals.sagepub.com/doi/10.1177/0022427898035004002",
+      "status": "failed",
+      "error": "HTTP 403"
+    },
+    {
+      "id": "04",
+      "name": "US Surgeon General",
+      "text": "Youth Violence: A Report of the Surgeon General (2001), Chapter 5, \"Prevention and Intervention,\" confirmed by direct fetch: DARE is placed under the \"Ineffective Primary Prevention Programs\" section heading, meeting the criteria for \"Does Not Work\" despite being the most widely implemented youth drug prevention program in the country, given evaluations that \"consistently show little or no deterrent effects on substance use.\"",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK44295/",
+      "status": "failed",
+      "error": "only 169 characters of text"
+    },
+    {
+      "id": "05",
+      "name": "Priceonomics",
+      "text": "DARE: The Anti-Drug Program That Never Actually Worked: the 2000 Department of Education evidence audit; the Surgeon General's observation that DARE's popularity persisted despite evaluations consistently showing little or no deterrent effect.",
+      "url": null,
+      "status": "no-url"
+    },
+    {
+      "id": "06",
+      "name": "Boston University Law Review",
+      "text": "Truth or DARE note: the 2007 decision to seek a new curriculum.",
+      "url": null,
+      "status": "no-url"
+    }
+  ]
+}

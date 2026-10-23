@@ -36,3 +36,8 @@ data/raw/
 
 # Per-machine session counter for the audit trigger (scripts/audit-due.mjs).
 /.claude/audit-state.json
+
+# Full source texts fetched for the second opinion (scripts/fetch-sources.mjs).
+# They are other publishers' copyright, so only each folder's manifest.json is
+# tracked: what was fetched, when, its size and sha256.
+/reports/*/sources/*.txt

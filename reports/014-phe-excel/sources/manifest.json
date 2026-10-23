@@ -1,0 +1,76 @@
+{
+  "exhibit": "014",
+  "fetchedAt": "2026-10-23T13:13:23.114Z",
+  "sources": [
+    {
+      "id": "01",
+      "name": "Public Health England",
+      "text": "\"PHE statement on delayed reporting of COVID-19 cases\" (published 4 Oct 2020, updated 5 Oct 2020), Michael Brodie, Interim Chief Executive: 15,841 cases between 25 September and 2 October not included in reported daily cases; 11,968, over 75%, due between 30 September and 2 October; identified overnight on Friday 2 October; transferred to contact tracing by 1am on 3 October; files that \"exceeded the maximum file size\" in the data load process; the mitigation that \"splits large files\"; everyone affected received their result as normal. The statement does not use the words Excel, XLS, rows or columns.",
+      "url": "https://www.gov.uk/government/news/phe-statement-on-delayed-reporting-of-covid-19-cases",
+      "status": "fetched",
+      "kind": "html",
+      "chars": 6806,
+      "sha256": "503e419c3c4e5d532fe25704427c168d83c3a48b7e5b29fae514fcf5fbc59a27"
+    },
+    {
+      "id": "02",
+      "name": "Hansard, House of Commons",
+      "text": "\"Covid-19 Update\", 5 October 2020, vol 681: the Health Secretary's 15,841 over the previous 8 days; \"a failure in the automated transfer of files\"; \"a PHE legacy system\"; the July decision to replace it and contracts \"awarded in August\"; \"a maximum file size error\"; 6,500 hours of extra contact tracing; 51% contacted a second time as of 9am; \"This incident should never have happened\". Questions from 2 opposition MPs, Jonathan Ashworth (Leicester South) and Neil Coyle (Bermondsey and Old Southwark), are the only places \"Excel\" appears in the debate record.",
+      "url": "https://hansard.parliament.uk/Commons/2020-10-05/debates/3DFBFED6-4B2E-4E70-9658-9D66EFB1E5DF/Covid-19Update",
+      "status": "fetched",
+      "kind": "html",
+      "chars": 118955,
+      "sha256": "0145d9078006f0cc86105a9c5dc319149f45a46519d8c4282b3d21a4990afbe0"
+    },
+    {
+      "id": "03",
+      "name": "Science and Technology Committee",
+      "text": "Letter from Rt Hon Greg Clark MP, Chair, to Baroness Dido Harding, 8 October 2020: the statement that the Secretary of State told the House the legacy system \"included the use of Microsoft Excel\"; \"It is reported that PHE developers used an old format of the software, XLS\"; the question on certification of \"the Microsoft Excel-based system\".",
+      "url": "https://committees.parliament.uk/publications/2897/documents/28031/default/",
+      "status": "fetched",
+      "kind": "pdf",
+      "chars": 3060,
+      "sha256": "cc4e1fec4669314a65240a6242d70b1b643330ab82b242afbb3810fd86e1663c"
+    },
+    {
+      "id": "04",
+      "name": "Baroness Harding, National Institute for Health Protection",
+      "text": "Reply to Greg Clark, 12 October 2020: \"The technical issue was not caused by the use of an old format\"; Excel files that \"exceeded their file size threshold and so were not uploaded\" as Pillar 2 volumes rose; the 24 September to 1 October date range; 6,000 hours of extra contact tracing; \"(75% / 11,968)\"; the 79% reach figure as of 12 October, quoted as written; \"A full wash-up of the incident is ongoing\".",
+      "url": "https://committees.parliament.uk/publications/3065/documents/28783/default/",
+      "status": "fetched",
+      "kind": "pdf",
+      "chars": 5869,
+      "sha256": "194683ff8c05253cebbcfd8c7654b5ed749a979d8b00a6dbdb0440b0e318c8c4"
+    },
+    {
+      "id": "05",
+      "name": "Department of Health and Social Care",
+      "text": "\"Weekly statistics for NHS Test and Trace (England) and coronavirus testing (UK): 1 October to 7 October\" (updated 22 Oct 2020): 15,841 cases identified between 25 September and 2 October. Supports the ledger's first row; no separate reach rate for the delayed cases is published.",
+      "url": "https://www.gov.uk/government/publications/nhs-test-and-trace-england-and-coronavirus-testing-uk-statistics-1-october-to-7-october-2020/weekly-statistics-for-nhs-test-and-trace-england-and-coronavirus-testing-uk-1-october-to-7-october",
+      "status": "fetched",
+      "kind": "html",
+      "chars": 71696,
+      "sha256": "da3f811f2bd284d6450f822eeadcb9dde8c369b623d27d44d0a28ecf6fdf6ab7"
+    },
+    {
+      "id": "06",
+      "name": "Office for Statistics Regulation",
+      "text": "\"Now, about that Excel spreadsheet...\" (blog, 15 Oct 2020): the error \"was not directly part of official statistics production\"; the review of reproducible analytical pipelines. Gives no figures.",
+      "url": "https://osr.statisticsauthority.gov.uk/blog/now-about-that-excel-spreadsheet/",
+      "status": "fetched",
+      "kind": "html",
+      "chars": 4935,
+      "sha256": "abe188854b8114c800f5358dcf125ab2bb338e81d564cd0ef04b73e0ff044182"
+    },
+    {
+      "id": "07",
+      "name": "UK Health Security Agency",
+      "text": "\"COVID-19 Archive data download\" (last updated 1 May 2025), the archive of the decommissioned Coronavirus (COVID-19) in the UK dashboard: the chart's 2 series, England (E92000001), from Cases/nation_newCasesByPublishDate.csv and Cases/nation_newCasesBySpecimenDate.csv in cases.zip (downloaded 10 Oct 2026); \"Data presented by 'publish date' is not a reliable indicator of trends over time since this represents the date on which data was first published and may include the publication of a backlog of data or subsequent revisions to the data\"; \"It has not been possible to fully validate these archived datasets against the latest version of the decommissioned Coronavirus (COVID-19) in the UK dashboard.\"",
+      "url": "https://ukhsa-dashboard.data.gov.uk/covid-19-archive-data-download",
+      "status": "fetched",
+      "kind": "html",
+      "chars": 5737,
+      "sha256": "b7f1b3a5b1570d37a62081964b5680b456343d8d7948a0d708e2e53ea52d4bef"
+    }
+  ]
+}

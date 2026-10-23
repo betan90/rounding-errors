@@ -1,0 +1,54 @@
+{
+  "exhibit": "003",
+  "fetchedAt": "2026-10-23T13:12:20.816Z",
+  "sources": [
+    {
+      "id": "01",
+      "name": "SinoInsider",
+      "text": "Risk Watch: two provinces admit to faking data: the 2015 figure, 67.7tn vs 72.5tn, the Jiangsu comparison.",
+      "url": "https://sinoinsider.com/2018/01/risk-watch-what-it-means-when-two-chinese-provinces-admit-to-faking-data/",
+      "status": "fetched",
+      "kind": "html",
+      "chars": 24807,
+      "sha256": "0097d27ba9fce51ba4f07253710e26a9f9fad638d8b71c2043e2d3c96e318d55"
+    },
+    {
+      "id": "02",
+      "name": "Caixin Global",
+      "text": "(Jan 18, 2017), Liaoning Government Admits False Growth Data from 2011-14: the confession, the punished former party secretary, the fiscal-revenue exaggeration figures.",
+      "url": null,
+      "status": "no-url"
+    },
+    {
+      "id": "03",
+      "name": "CNN",
+      "text": "(Jan 18, 2017): the specific county revenue correction, 2.4bn to 1.1bn yuan; NBS chief's warning of \"heavy punishment.\"",
+      "url": null,
+      "status": "no-url"
+    },
+    {
+      "id": "04",
+      "name": "China Daily",
+      "text": "(Apr 25, 2017): \"zero tolerance,\" 15 major cases, over 10 people punished per case, the new NBS law enforcement unit.",
+      "url": null,
+      "status": "no-url"
+    },
+    {
+      "id": "05",
+      "name": "South China Morning Post",
+      "text": "(Oct 30, 2017): the NBS's 2019 plan to take over provincial data collection directly.",
+      "url": null,
+      "status": "no-url"
+    },
+    {
+      "id": "06",
+      "name": "Chen, Chen, Hsieh and Song",
+      "text": "A Forensic Examination of China's National Accounts, Brookings Papers on Economic Activity (2019): the independent re-estimate, growth overstated ~1.7 points a year 2008-2016 even after NBS adjustment.",
+      "url": "https://www.brookings.edu/articles/a-forensic-examination-of-chinas-national-accounts",
+      "status": "fetched",
+      "kind": "html",
+      "chars": 6029,
+      "sha256": "7b7feefd0f8fda5f0444b556ccff82b5fb626c4a2214232b325719af777d09dd"
+    }
+  ]
+}

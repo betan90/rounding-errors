@@ -1,0 +1,41 @@
+{
+  "exhibit": "010",
+  "fetchedAt": "2026-10-23T13:12:49.493Z",
+  "sources": [
+    {
+      "id": "01",
+      "name": "Rounding Errors repository, reports/001-ireland through reports/009-nigeria",
+      "text": "The 9 fact-check-output.json files: 127 claim checks, verdicts 84 SUPPORTED, 29 PARTIALLY SUPPORTED, 14 NOT SUPPORTED, counted by parsing the files directly. checkedAt timestamps are 2026-08-01 for exhibits 001 to 007, 2026-08-12 for 008 and 009. Individual findings quoted in the body: exhibit 001 claims 4 to 10 (true, but untraceable to any source the exhibit listed) and claim 19 (a published URL returning 404), exhibit 002 claim 7, exhibit 003 claims 9 and 10 (admissions dated January 2018, not within weeks of January 2017), exhibit 007 claim 11 (the Surgeon General attribution, against a documented 2015 initiative).",
+      "url": null,
+      "status": "no-url"
+    },
+    {
+      "id": "02",
+      "name": "Rounding Errors repository, reports/*/second-opinion.json",
+      "text": "The DeepSeek verdicts on the same 127 claims, used here only to establish that every claim was reviewed twice. Where the 2 reviewers disagree is the subject of note 001 and is not reopened here.",
+      "url": null,
+      "status": "no-url"
+    },
+    {
+      "id": "03",
+      "name": "Rounding Errors repository, src/data/corrections.ts",
+      "text": "When this exhibit was published on 2026-10-04, the log held 1 entry: exhibit 006, dated 2026-07-25, a finding attributed to GAO-03-172R that the report does not contain, traced to an uncited Wikipedia sentence and caught by the fact-checker's criterion 6 hostile read. Exhibit 003 had also been corrected, in commit f0c49f4 on 2026-08-03, and had no entry until 2026-10-05. The body counts both.",
+      "url": null,
+      "status": "no-url"
+    },
+    {
+      "id": "04",
+      "name": "Rounding Errors repository, commit f0c49f4",
+      "text": "\"Fix fact-checker findings across exhibits 001, 003, 004, 007.\" The fixes were applied after the archived reports were written, which is why 43 describes first drafts and not the current text.",
+      "url": null,
+      "status": "no-url"
+    },
+    {
+      "id": "05",
+      "name": "Rounding Errors repository, src/content/exhibits/001-ireland.md through 009-nigeria.md",
+      "text": "The 9 verdict blocks. \"Fraud detected\" records a finding in 002 (Argentina, no longer disputed by Argentina's own later government) and 003 (Liaoning, confessed on the provincial record and punished by China's party disciplinary body), and records none in the other 7.",
+      "url": null,
+      "status": "no-url"
+    }
+  ]
+}

@@ -1,0 +1,152 @@
+{
+  "exhibit": "001",
+  "fetchedAt": "2026-10-23T13:12:14.274Z",
+  "sources": [
+    {
+      "id": "01",
+      "name": "CSO",
+      "text": "Quarterly National Accounts Quarter 4 2015 (10 March 2016): preliminary estimate, GDP up 7.8% for 2015.",
+      "url": "https://www.cso.ie/en/releasesandpublications/er/na/quarterlynationalaccountsquarter42015/",
+      "status": "fetched",
+      "kind": "html",
+      "chars": 83848,
+      "sha256": "943982a7bb06ecaa8ab98a9c3e520c227c1e79521146f031ffd82a44158611e2"
+    },
+    {
+      "id": "02",
+      "name": "CSO",
+      "text": "National Income and Expenditure Annual Results 2015 (12 July 2016): revised GDP growth, 26.3% for 2015.",
+      "url": "https://www.cso.ie/en/releasesandpublications/er/nie/nationalincomeandexpenditureannualresults2015/",
+      "status": "fetched",
+      "kind": "html",
+      "chars": 85833,
+      "sha256": "ee8d8cc7fd2c3482ed464fcfc45932241f43ef7eefa8f4a0b424521828814f77"
+    },
+    {
+      "id": "03",
+      "name": "Paul Krugman",
+      "text": "\"Leprechaun economics: Ireland reports 26 percent growth! But it doesn't make sense. Why are these in GDP?\" (12 July 2016), the tweet that coined the term the same day the CSO published the revision.",
+      "url": "https://x.com/paulkrugman/status/752841032870551552",
+      "status": "fetched",
+      "kind": "html",
+      "chars": 1353,
+      "sha256": "17e446102e721d1c9c104c83b20359a263662e16e5b496fb47ec245ee1cd2d70"
+    },
+    {
+      "id": "04",
+      "name": "CSO",
+      "text": "NIE 2016 Frequently Asked Questions: \"the scale of the relocations in 2015 was substantial and added €300 billion to Ireland's capital stocks,\" attributed to relocated intellectual property. (CSO confidentiality rules bar it from naming the company; the Apple attribution is independently documented in Apple's own 2018 restructuring disclosures.)",
+      "url": "https://www.cso.ie/en/media/csoie/methods/nationalincomeandexpenditureannualresults/NIE_2016_FAQS.pdf",
+      "status": "fetched",
+      "kind": "pdf",
+      "chars": 27328,
+      "sha256": "fcdce47ecbf429d742619592e10e98862e11609ffa4d186064804089653ccd93"
+    },
+    {
+      "id": "05",
+      "name": "Eurostat",
+      "text": "Irish GDP revision statement (21 July 2016, updated 12 December 2016): called the revision \"plausible\" based on preliminary CSO information and committed to examining the methodology in more detail by September 2016, as part of the standard GNI Regulation review applied to all member states.",
+      "url": "https://www.cso.ie/en/media/csoie/newsevents/documents/EurostatIrishGDPcommunication.pdf",
+      "status": "fetched",
+      "kind": "pdf",
+      "chars": 4198,
+      "sha256": "d56cdbb3723d5801a453b06f24b693636fcf6a7000c40b9be2b7543ea1eb85db"
+    },
+    {
+      "id": "06",
+      "name": "CSO",
+      "text": "Modified GNI explainer: the definition, and the aircraft.",
+      "url": "https://www.cso.ie/en/interactivezone/statisticsexplained/nationalaccountsexplained/modifiedgni/",
+      "status": "fetched",
+      "kind": "html",
+      "chars": 6643,
+      "sha256": "ba75998d37af7781070c487730664e6d19be2ed9bed91c60fe41cda2e6fc4b0e"
+    },
+    {
+      "id": "07",
+      "name": "CSO",
+      "text": "Information Notice: Modified GNI at Current and Constant Market Prices: the 2015 level shift and the review group.",
+      "url": "https://www.cso.ie/en/releasesandpublications/in/nie/in-mgnicp/",
+      "status": "fetched",
+      "kind": "html",
+      "chars": 11897,
+      "sha256": "dfadbefce92e7c77f0e95409fc2fe183f49714950fa049f654f9cf72c569ae04"
+    },
+    {
+      "id": "08",
+      "name": "IMF",
+      "text": "Ireland: 2017 Article IV Consultation (CR17171): GNI* strips out MNE retained earnings and foreign-owned IP depreciation to give \"a more stable and prudent measure\" of the Irish economy; 2015 GNI* found roughly 30% below nominal GDP.",
+      "url": "https://www.imf.org/-/media/files/publications/cr/2017/cr17171.pdf",
+      "status": "failed",
+      "error": "HTTP 403"
+    },
+    {
+      "id": "09",
+      "name": "CSO",
+      "text": "Annual National Accounts 2025, GNI* and De-Globalised Results (July 2026): 2025 GNI* €334bn, 55.4% of GDP.",
+      "url": "https://www.cso.ie/en/releasesandpublications/ep/p-ana/annualnationalaccounts2025/gniandde-globalisedresults/",
+      "status": "fetched",
+      "kind": "html",
+      "chars": 10677,
+      "sha256": "cd4ed2c872c0e3ef2f100e489dd572d0fecda33180f2df4814507cc992a33db1"
+    },
+    {
+      "id": "10",
+      "name": "CSO",
+      "text": "Annual National Accounts 2024, Key Findings (July 2025): GDP €562.8bn, GNI* €321.1bn.",
+      "url": "https://www.cso.ie/en/releasesandpublications/ep/p-ana/annualnationalaccounts2024/keyfindings/",
+      "status": "fetched",
+      "kind": "html",
+      "chars": 6783,
+      "sha256": "a2c0531f9f818e4a9fe29d428ad39d05fbb2931a96db5a799d1ac2c8ae3d6957"
+    },
+    {
+      "id": "11",
+      "name": "Eurostat",
+      "text": "GDP and main components (tec00001), Greece, current prices: 2024 nominal GDP €236.7bn (provisional).",
+      "url": "https://ec.europa.eu/eurostat/databrowser/view/tec00001/default/table?lang=en",
+      "status": "failed",
+      "error": "only 90 characters of text"
+    },
+    {
+      "id": "12",
+      "name": "Euronews",
+      "text": "\"Irish economic miracle explained\" (May 2026): the 12.3%, MDD 4.9%, the 95% polypeptide hormones, €25.4bn in March, flash estimate of minus 2.0%.",
+      "url": "https://www.euronews.com/business/2026/05/04/irish-economic-miracle-explained-why-all-that-glitter-isnt-gold",
+      "status": "fetched",
+      "kind": "html",
+      "chars": 11039,
+      "sha256": "e53b6b6b1ab17edace62c04ccdc47d1d3daa843e664f2cfe206fb417eec74f13"
+    },
+    {
+      "id": "13",
+      "name": "Irish Examiner",
+      "text": "(June 2026): Q1 2026 at minus 12.1%, 4 consecutive negative quarters.",
+      "url": "https://www.irishexaminer.com/business/companies/arid-41856822.html",
+      "status": "fetched",
+      "kind": "html",
+      "chars": 7328,
+      "sha256": "11bb4e474f6527bb7a19cd6d52233b7c79fa955d571c3a4ff1bed5433faad635"
+    },
+    {
+      "id": "14",
+      "name": "European Commission",
+      "text": "Spring 2026 Economic Forecast, Ireland: 12.3% in 2025.",
+      "url": "https://economy-finance.ec.europa.eu/economic-surveillance-eu-member-states/country-pages-including-country-reports/ireland/economic-forecast-ireland_en",
+      "status": "fetched",
+      "kind": "html",
+      "chars": 6339,
+      "sha256": "a301ec76e49dd8f00aaff52111bc7bf9f7697f04eed1d96b0ee5765b7c63dae5"
+    },
+    {
+      "id": "15",
+      "name": "Bank of Ireland",
+      "text": "economics (March 2026): Q4 2025 quarterly decline.",
+      "url": "https://corporate-economy.bankofireland.com/irish-gdp-expands-by-12-in-2025/",
+      "status": "fetched",
+      "kind": "html",
+      "chars": 1839,
+      "sha256": "f4c5025b3bf7e71ae3349c6c641b88f051f590a2ddc6f1166ad440a6f65a2e1d"
+    }
+  ]
+}

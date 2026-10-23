@@ -1,0 +1,181 @@
+{
+  "exhibit": "005",
+  "reviewedAt": "2026-10-23T13:21:22.544Z",
+  "model": "deepseek-chat",
+  "servedBy": [
+    "deepseek-flash"
+  ],
+  "sourceCharacters": 38843,
+  "claims": [
+    {
+      "id": 1,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "02",
+        "04",
+        "05",
+        "06",
+        "07"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "SUPPORTED",
+      "quote": "The film went on to win an Academy Award for feature documentary",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "The Hollywood Reporter source explicitly states the 1978 film \"Scared Straight\" won an Academy Award for feature documentary, directly supporting the claim.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 2,
+      "mode": "passage",
+      "notFetched": [
+        "03",
+        "01",
+        "08"
+      ],
+      "verdict": "PARTIALLY SUPPORTED",
+      "reasoning": "The passage confirms thousands of juveniles went through the program (10,000) and reports a low recidivism figure, but it states 10 percent had later arrest records rather than 80 to 90% going straight, and it does not attribute this as a reported claim.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 3,
+      "mode": "passage",
+      "notFetched": [
+        "03",
+        "01",
+        "08"
+      ],
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states there was an effort in some 38 states and foreign countries to create similar programs, which supports the claim that copies were set up in those places.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 4,
+      "mode": "passage",
+      "notFetched": [
+        "01"
+      ],
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states that 41% of program attendees committed new offenses while only 11% of the control group did, matching the claim.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 5,
+      "mode": "passage",
+      "notFetched": [
+        "01"
+      ],
+      "verdict": "PARTIALLY SUPPORTED",
+      "reasoning": "The passage confirms the study was excluded from sensitivity analyses due to randomization problems and that results remained significant, but it does not state that he disclosed the problems or that the numbers were rerun without his study.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 6,
+      "mode": "passage",
+      "notFetched": [
+        "01"
+      ],
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states 946 juveniles participated in all nine experimental studies and that crime increased between 1 and 28 percent, matching the claim's figures.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 7,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "02",
+        "04",
+        "05",
+        "06",
+        "07"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "SUPPORTED",
+      "quote": "The practice is rated Ineffective. The evaluation found that participation in these types of programs increases the odds that youth will commit offenses in the future.",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "The NIJ CrimeSolutions practice profile explicitly rates the practice \"Ineffective\" and states participation increases the odds of future offending.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 8,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "02",
+        "04",
+        "05",
+        "06",
+        "07"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "SUPPORTED",
+      "quote": "After accounting for bias, Review one estimated that reoffending was 68% higher among those juveniles who participated in the programme compared to those who did not.",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "The College of Policing page states the effect is \"Overall rise\" with \"Very strong\" quality of evidence, the 68% higher reoffending figure, and a net cost to the taxpayer of $14,667 per participant.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 9,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "02",
+        "04",
+        "05",
+        "06",
+        "07"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "SUPPORTED",
+      "quote": "Unfortunately, the research tells us otherwise: “scared straight” is not only ineffective but is potentially harmful.",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "The Baltimore Sun op-ed by Laurie O. Robinson and Jeff Slowikowski (published January 31, 2011) contains the exact quoted sentence, and the byline identifies them as assistant attorney general for the federal Office of Justice Programs and acting administrator of the federal Office of Juvenile Justice and Delinquency Prevention.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 10,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "02",
+        "04",
+        "05",
+        "06",
+        "07"
+      ],
+      "notFetched": [
+        "01"
+      ],
+      "truncated": false,
+      "verdict": "SUPPORTED",
+      "quote": "A&E, Thurs. Jan. 13, 10 p.m.",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "Variety gives the Jan. 13, 2011 air date and states producer Arnold Shapiro revived his original documentary as an A&E series.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 11,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "02",
+        "04",
+        "05",
+        "06",
+        "07"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "SUPPORTED",
+      "quote": "The film went on to win an Academy Award for feature documentary, which was especially impressive since it lacked the theatrical release the Academy preferred but did not require then.",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "The Hollywood Reporter source states the film won an Academy Award for feature documentary despite lacking the theatrical release the Academy preferred, matching the claim's figures and wording.",
+      "servedBy": "deepseek-flash"
+    }
+  ]
+}

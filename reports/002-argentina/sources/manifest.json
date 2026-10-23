@@ -1,0 +1,67 @@
+{
+  "exhibit": "002",
+  "fetchedAt": "2026-10-23T13:59:57.685Z",
+  "sources": [
+    {
+      "id": "01",
+      "name": "IMF",
+      "text": "Press Release 13/33: Statement by the IMF Executive Board on Argentina (Feb 1, 2013): the censure itself.",
+      "url": "https://www.imf.org/en/News/Articles/2015/09/14/01/49/pr1333",
+      "status": "failed",
+      "error": "HTTP 403"
+    },
+    {
+      "id": "02",
+      "name": "IMF",
+      "text": "Argentina: IMF Executive Board Removes Declaration of Censure (Nov 9, 2016): the 2011 breach finding, the 2012 Statement of Concern, the 2016 lift.",
+      "url": "https://www.imf.org/en/news/articles/2016/11/09/pr16497-argentina-imf-executive-board-removes-declaration-of-censure",
+      "status": "failed",
+      "error": "HTTP 403"
+    },
+    {
+      "id": "03",
+      "name": "Bloomberg",
+      "text": "(Feb 1, 2013): \"first nation censured,\" the 24-member board, the expulsion pathway.",
+      "url": "https://www.bloomberg.com/news/articles/2013-02-01/argentina-becomes-first-nation-censured-by-imf-on-inflation-data",
+      "status": "failed",
+      "error": "HTTP 403"
+    },
+    {
+      "id": "04",
+      "name": "Taipei Times / Bretton Woods Project",
+      "text": "(Feb 2013): 10.8% official vs 25.6% private, the unnamed economists and fines, the US$6.8bn saving estimate.",
+      "url": null,
+      "status": "no-url"
+    },
+    {
+      "id": "05",
+      "name": "Buenos Aires Times",
+      "text": "INDEC case coverage, confirmed by direct fetch: Bevacqua, CPI director, was replaced by Paglieri after refusing to supply inflation data \"according to [Moreno's] criteria\"; tampering with INDEC's figures is dated \"as from January 2007.\"",
+      "url": "https://www.batimes.com.ar/news/argentina/indec-case-guillermo-moreno-sentenced-to-3-years-imprisonment-and-6-year-disqualification-from-public-office.phtml",
+      "status": "fetched",
+      "kind": "html",
+      "chars": 5845,
+      "sha256": "83b37564edb4d6702f18ae1c757c11bb5bde035993568cd21103e251ebae8203"
+    },
+    {
+      "id": "06",
+      "name": "American Statistical Association, Chicago Chapter",
+      "text": "Update on Argentina! (undated page), confirmed by direct fetch: Judge Claudio Bonadio charged Commerce Secretary Guillermo Moreno, who \"prosecuted former INDEC CPI director Graciela Bevacqua and others,\" with abuse of power for fining and pursuing legal action against people who published independent inflation data, calling it \"nothing other than an effort to silence\" them.",
+      "url": "https://community.amstat.org/chicagochapter/resources1/updateonargentina",
+      "status": "fetched",
+      "kind": "html",
+      "chars": 1139,
+      "sha256": "c7915b08b67de172855d86240a5ef2392d219a6485d3f25b25f1a8c4d03d2e8c"
+    },
+    {
+      "id": "07",
+      "name": "Página/12",
+      "text": "\"Bonadío procesó a Moreno por 'innovar'\", 18 September 2013 (in Spanish): the date of the charge; Judge Bonadío charged Moreno with abuse of authority (\"abuso de autoridad\") over a 500,000-peso fine on the consultancy Finsoport, finding the aim was to \"silenciar\" consultancies whose price indices did not match INDEC's.",
+      "url": "https://www.pagina12.com.ar/diario/elpais/1-229270-2013-09-18.html",
+      "status": "fetched",
+      "kind": "html",
+      "chars": 7408,
+      "sha256": "0385b42f1e22858b111890fc5f381fe3696c6ea51ca7eb8c63ee955096288d44"
+    }
+  ]
+}

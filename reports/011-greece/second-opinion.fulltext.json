@@ -1,0 +1,492 @@
+{
+  "exhibit": "011",
+  "reviewedAt": "2026-10-23T13:21:57.727Z",
+  "model": "deepseek-chat",
+  "servedBy": [
+    "deepseek-flash"
+  ],
+  "sourceCharacters": 349497,
+  "claims": [
+    {
+      "id": 1,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "SUPPORTED",
+      "quote": "the Greek authorities also revised the planned deficit ratio for 2009 from 3.7% of GDP (the figure reported in spring) to 12.5% of GDP",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "The executive summary states the 2009 planned deficit was revised from 3.7% of GDP (spring figure) to 12.5% of GDP in the 21 October 2009 notification, matching the claim's figures and dates.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 2,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "SUPPORTED",
+      "quote": "In the 21 October notification, the Greek government deficit for 2008 was revised from 5.0% of GDP (the ratio reported by Greece, and published and validated by Eurostat in April 2009) to 7.7% of GDP.",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "The source states verbatim that the 2008 deficit was revised from 5.0% of GDP, published and validated by Eurostat in April 2009, to 7.7% of GDP.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 3,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "SUPPORTED",
+      "quote": "In fact, the Greek authorities reported twice in October: on 2 October and 21 October, with data in the second notification including a significant revision.",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "The source explicitly states the Greek authorities reported twice in October, on 2 October and 21 October, matching the claim exactly.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 4,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "SUPPORTED",
+      "quote": "the Greek authorities also revised the planned deficit ratio for 2009 from 3.7% of GDP (the figure reported in spring) to 12.5% of GDP, reflecting a number of factors (the impact of the economic crisis, budgetary slippages in an electoral year and accounting decisions)",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "The source states the 2009 planned deficit revision reflected the economic crisis, budgetary slippages in an electoral year, and accounting decisions, matching the claim's three factors.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 5,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "02",
+        "03",
+        "01",
+        "05"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "SUPPORTED",
+      "quote": "Greece (-13.6%)",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "The April 2010 Eurostat release lists Greece's 2009 deficit at -13.6% of GDP in its largest-deficits list and country table.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 6,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "02",
+        "03",
+        "01",
+        "05"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "SUPPORTED",
+      "quote": "Greece (115.1%)",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "The April 2010 Eurostat release (55/2010) lists Greece's 2009 government debt at 115.1% of GDP, matching the claim.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 7,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "02",
+        "03",
+        "01",
+        "05"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "SUPPORTED",
+      "quote": "Greece: Eurostat is expressing a reservation on the quality of the data reported by Greece, due to uncertainties on the surplus of social security funds for 2009, on the classification of some public entities and on the recording of offmarket swaps.",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "The April 2010 Eurostat release (55/2010) explicitly lists these three grounds for its reservation on Greek data.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 8,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "02",
+        "03",
+        "01",
+        "05"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "SUPPORTED",
+      "quote": "this could lead to a revision for the year 2009 of the order of 0.3 to 0.5 percentage points of GDP for the deficit and 5 to 7 percentage points of GDP for the debt",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "Source 02's reservation on Greek data states exactly the 0.3–0.5 pp deficit and 5–7 pp debt revision figures cited in the claim.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 9,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "03",
+        "02",
+        "01"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "SUPPORTED",
+      "quote": "In 2009 the largest government deficits in percentage of GDP were recorded in Greece (-15.4%)",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "The 15 November 2010 release lists Greece's 2009 deficit at -15.4% of GDP and its debt ratio at 126.8% of GDP, matching the claim.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 10,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "03",
+        "02",
+        "01"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "SUPPORTED",
+      "quote": "Greece: Eurostat is lifting the reservation on Greek data expressed in its News Release 55/2010 of 22 April 2010. Eurostat and the Hellenic Statistical Authority have addressed all of the issues identified in the last reservation during a series of EDP methodological visits.",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "Source 03 (dated 15 November 2010) states Eurostat is lifting the reservation after a series of EDP methodological visits, matching the claim.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 11,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "03",
+        "01",
+        "02",
+        "04",
+        "05"
+      ],
+      "notFetched": [],
+      "truncated": true,
+      "verdict": "SUPPORTED",
+      "quote": "Revision in deficit/surplus and debt ratios -2.2 -1.3 -1.8 -1.8 8.3 9.3 11.1 11.7",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "The Eurostat revisions table shows Greece's 2009 deficit ratio revised by -1.8 and debt ratio by 11.7 between the April 2010 and October/November 2010 notifications, matching the claim's figures.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 12,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "SUPPORTED",
+      "quote": "This is to be considered as a case of deliberate misreporting of figures by the GAO in the April and 2 October 2009 EDP notifications.",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "The report repeatedly labels the April and 2 October 2009 EDP notifications as deliberate misreporting by the GAO (swaps write-offs, interest, extra-budgetary accounts) and by the NSSG (EU grants), naming the specific notifications.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 13,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "SUPPORTED",
+      "quote": "Even if the existing governance framework for fiscal statistics at EU level functions satisfactorily and enables improvements of a statistical and methodological nature, it cannot prevent deliberate misreporting of data.",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "The conclusions section states verbatim that the governance framework cannot prevent deliberate misreporting of data, matching the claim.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 14,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "SUPPORTED",
+      "quote": "in November 2004 a Report on the revision of Greek government deficit and debt figures was released by Eurostat, which showed that figures had been misreported in the years preceding 2004 involving no less than 11 separate issues.",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "The source states a November 2004 Eurostat report showed figures were misreported in years preceding 2004 involving no less than 11 separate issues, matching the claim.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 15,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "SUPPORTED",
+      "quote": "On five occasions between 2005 and 2009 Eurostat expressed reservations on the Greek data in the biannual press release on deficit and debt data.",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "The source states verbatim that Eurostat expressed reservations on Greek data on five occasions between 2005 and 2009.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 16,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "SUPPORTED",
+      "quote": "Over the last eight years, whenever the Greek EDP data have been published without reservations, this was very often the result of Eurostat interventions before or during the notification period in order to correct mistakes or inappropriate recording.",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "The source states that unreserved publications were \"very often\" the result of Eurostat interventions to correct mistakes, and elsewhere notes these interventions increased the notified deficit (e.g., 2007 deficit raised from 2.8% to 3.5% of GDP), matching the claim.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 17,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01",
+        "04"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "SUPPORTED",
+      "quote": "1997: 6,6 % of GDP instead of 4,0 %; 1998: 4,3 % of GDP instead of 2,5 %; 1999: 3,4 % of GDP instead of 1,8 %",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "Source 04 states exactly these revised deficit figures for 1997-1999 against the previous figures.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 18,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01",
+        "04",
+        "03"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "SUPPORTED",
+      "quote": "The reference values are specified in the protocol on the excessive deficit procedure, annexed to the Treaty (3% for the deficit and 60% for the debt).",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "Source 04 explicitly states the Treaty protocol sets a 3% deficit reference value.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 19,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "05"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "SUPPORTED",
+      "quote": "ELSTAT itself had just been established, under the same law, as an independent statistical authority... Andreas Georgiou took up his position as President of ELSTAT in August 2010... in November 2010 Eurostat published the statistics lifting all reservations on them – something it has continued to do in respect of all subsequent annual EDP submissions over the following nine years.",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "The source states ELSTAT was established as an independent authority under the 2010 law, Georgiou took office in August 2010, and Eurostat lifted all reservations and continued to do so for all subsequent annual EDP submissions over the following nine years.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 20,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01",
+        "02",
+        "03",
+        "04",
+        "05"
+      ],
+      "notFetched": [],
+      "truncated": true,
+      "verdict": "NOT SUPPORTED",
+      "quote": "NONE",
+      "quoteFound": null,
+      "sourceComplete": true,
+      "reasoning": "None of the sources state that 1999 was \"the year assessed against the 3% reference value for euro entry\" or that the restatement came \"5 years after the decision it supported\"; the 2004 report only gives revised 1999 deficit/debt figures without this framing.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 21,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "NOT SUPPORTED",
+      "quote": "the Greek authorities also revised the planned deficit ratio for 2009 from 3.7% of GDP (the figure reported in spring) to 12.5% of GDP, reflecting a number of factors (the impact of the economic crisis, budgetary slippages in an electoral year and accounting decisions)",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "The source gives 12.5%, not 15.4%, for the 2009 planned deficit revision, and it explicitly attributes the revision to multiple factors including the economic crisis and electoral-year slippages, not solely to deliberate misreporting.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 22,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01",
+        "02",
+        "03",
+        "04",
+        "05"
+      ],
+      "notFetched": [],
+      "truncated": true,
+      "verdict": "NOT SUPPORTED",
+      "quote": "NONE",
+      "quoteFound": null,
+      "sourceComplete": true,
+      "reasoning": "No source describes Georgiou as \"a 20-year IMF official\"; the ISI source only mentions his employment at the IMF ending in November 2010, without any such characterization.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 23,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "05"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "SUPPORTED",
+      "quote": "January 2013: The Prosecutor of Economic Crimes concluded that charges should be pressed against Mr Georgiou and his two senior managers for allegedly inflating the 2009 deficit, thereby causing damage amounting to €171 billion to the Greek economy",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "The source describes the conspiracy charge involving Eurostat and the IMF, the €171 billion damage figure, and its later upward revision to over €200 billion, matching every element of the claim.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 24,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "05"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "SUPPORTED",
+      "quote": "After almost eight years of detailed deliberations, the very serious criminal charge against Mr Georgiou and two senior staff of ELSTAT of falsifying the 2009 deficit (and debt) figures and thereby causing Greece extraordinary damage was finally dismissed by the Greek courts at the highest level in April 2019.",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "The source states the investigation began September 2011 and the case was formally closed with full acquittal in April 2019, spanning almost eight years.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 25,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "05"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "SUPPORTED",
+      "quote": "The Court, however, convicted him on the third count of not putting up the 2009 EDP figures for approval by the former ELSTAT Board and imposed a two-year suspended prison sentence.",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "The source states the Appeals Court convicted him on 1 August 2017 on that count with a two-year suspended sentence, and that the Supreme Court's June 2018 rejection of his appeal rendered the conviction and sentence irreversible.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 26,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "05",
+        "03",
+        "01",
+        "02"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "NOT SUPPORTED",
+      "quote": "The Court, however, convicted him on the third count of not putting up the 2009 EDP figures for approval by the former ELSTAT Board and imposed a two-year suspended prison sentence.",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "The sources never state that \"no court found the number wrong\" or that \"Eurostat has never withdrawn it,\" and the ISI source shows Georgiou was convicted on a count related to the 2009 EDP figures, so the claim's assertions are not supported by the texts.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 27,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01",
+        "02",
+        "03",
+        "04",
+        "05"
+      ],
+      "notFetched": [],
+      "truncated": true,
+      "verdict": "SUPPORTED",
+      "quote": "NONE",
+      "quoteFound": null,
+      "sourceComplete": true,
+      "reasoning": "None of the five sources is Wikipedia; they are European Commission, Eurostat (three releases/reports) and International Statistical Institute documents, so no source is Wikipedia under any name or text field.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 28,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01",
+        "02",
+        "03",
+        "04",
+        "05"
+      ],
+      "notFetched": [],
+      "truncated": true,
+      "verdict": "NOT SUPPORTED",
+      "quote": "NONE",
+      "quoteFound": null,
+      "sourceComplete": true,
+      "reasoning": "None of the sources contains any statement about a \"Criterion 3, ATTRIBUTION\" or about a narrator never accusing a named individual who has a paper trail; the claim's terms do not appear in the source texts.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 29,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01",
+        "02",
+        "03",
+        "04",
+        "05"
+      ],
+      "notFetched": [],
+      "truncated": true,
+      "verdict": "NOT SUPPORTED",
+      "quote": "NONE",
+      "quoteFound": null,
+      "sourceComplete": true,
+      "reasoning": "The claim is a style instruction about em dashes and word count, not a factual assertion, and none of the sources address it.",
+      "servedBy": "deepseek-flash"
+    }
+  ]
+}

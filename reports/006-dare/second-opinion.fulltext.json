@@ -1,0 +1,176 @@
+{
+  "exhibit": "006",
+  "reviewedAt": "2026-10-23T13:21:26.909Z",
+  "model": "deepseek-chat",
+  "servedBy": [
+    "deepseek-flash"
+  ],
+  "sourceCharacters": 20129,
+  "claims": [
+    {
+      "id": 1,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "SUPPORTED",
+      "quote": "The overall weighted effect size for the included D.A.R.E. studies was extremely small (correlation coefficient = 0.011; Cohen d = 0.023; 95% confidence interval = −0.04, 0.08)",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "The source explicitly reports Cohen d = 0.023 as the overall weighted effect size, matching the claim exactly.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 2,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "SUPPORTED",
+      "quote": "The overall weighted effect size for the included D.A.R.E. studies was extremely small (correlation coefficient = 0.011; Cohen d = 0.023; 95% confidence interval = −0.04, 0.08) and nonsignificant (z = 0.73, NS).",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "The abstract states the exact confidence interval (−0.04, 0.08) and that the result was nonsignificant, matching the claim precisely.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 3,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "SUPPORTED",
+      "quote": "with an average of three quarters of a billion dollars spent on its provision annually",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "The source states D.A.R.E. had \"an average of three quarters of a billion dollars spent on its provision annually,\" which equals roughly US$750 million per year.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 4,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "SUPPORTED",
+      "quote": "D.A.R.E. has been the country’s largest single school-based prevention program in terms of federal expenditures",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "The source states D.A.R.E. was the country's largest single school-based prevention program in terms of federal expenditures, matching the claim's wording.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 5,
+      "mode": "passage",
+      "notFetched": [
+        "03"
+      ],
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states suburban students experienced small but significant increases in drug use after D.A.R.E. participation, matching the claim's boomerang effect.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 6,
+      "mode": "passage",
+      "notFetched": [
+        "03"
+      ],
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage directly states that urban and rural students showed some benefits, matching the claim.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 7,
+      "mode": "passage",
+      "notFetched": [
+        "04"
+      ],
+      "verdict": "PARTIALLY SUPPORTED",
+      "reasoning": "The passage confirms DARE meets the criteria for \"Does Not Work,\" but does not mention the US Surgeon General (2001) or the \"Ineffective Primary Prevention Programs\" section heading.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 8,
+      "mode": "passage",
+      "notFetched": [
+        "04"
+      ],
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage directly states that numerous well-designed evaluations and meta-analyses consistently show little or no deterrent effects on substance use, matching the claim.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 9,
+      "mode": "passage",
+      "notFetched": [
+        "02"
+      ],
+      "verdict": "PARTIALLY SUPPORTED",
+      "reasoning": "The passage confirms the finding of no statistically significant long-term effect on illicit drug use, but does not mention GAO (2003), six evaluations, or fifth/sixth grade timing.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 10,
+      "mode": "passage",
+      "notFetched": [
+        "05"
+      ],
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states that in 2000 the Department of Education audited drug education programs, required evidence-based programs for funding eligibility, and that DARE did not qualify.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 11,
+      "mode": "passage",
+      "notFetched": [
+        "05"
+      ],
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage directly quotes the Surgeon General's evaluation stating that DARE's popularity persists despite well-designed evaluations consistently showing little or no deterrent effects.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 12,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "NOT SUPPORTED",
+      "quote": "NONE",
+      "quoteFound": null,
+      "sourceComplete": true,
+      "reasoning": "The source never mentions D.A.R.E.'s founding year or the Los Angeles Police Department, so the claim's origin details are unsupported by the text.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 13,
+      "mode": "passage",
+      "notFetched": [
+        "06"
+      ],
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "No passage was provided, so there is no text to support the claim.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 14,
+      "mode": "passage",
+      "notFetched": [
+        "03"
+      ],
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage mentions only student outcomes from D.A.R.E. and says nothing about a six-year randomized study, Dennis Rosenbaum, Gordon Hanson, or a 1998 publication.",
+      "servedBy": "deepseek-flash"
+    }
+  ]
+}

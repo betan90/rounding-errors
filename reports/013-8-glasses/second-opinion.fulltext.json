@@ -1,0 +1,436 @@
+{
+  "exhibit": "013",
+  "reviewedAt": "2026-10-23T13:22:20.956Z",
+  "model": "deepseek-chat",
+  "servedBy": [
+    "deepseek-flash"
+  ],
+  "sourceCharacters": 359477,
+  "claims": [
+    {
+      "id": 1,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "SUPPORTED",
+      "quote": "The advice to drink at least eight glasses of water a day can be found throughout the popular press.",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "The claim quotes the source verbatim and correctly attributes it to Vreeman and Carroll in the BMJ in 2007, matching the article's citation (BMJ 2007 Dec 22;335(7633):1288–1289).",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 2,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "05",
+        "04"
+      ],
+      "notFetched": [
+        "02"
+      ],
+      "truncated": true,
+      "verdict": "NOT SUPPORTED",
+      "quote": "NONE",
+      "quoteFound": null,
+      "sourceComplete": true,
+      "reasoning": "Neither source states the \"8 glasses of 8 ounces\" (64 oz, ~1.9 L) standard; the sources give AIs of 3.7 L and 2.7 L of total water per day and explicitly decline to offer a rule of thumb based on glasses.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 3,
+      "mode": "passage",
+      "notFetched": [
+        "02"
+      ],
+      "verdict": "PARTIALLY SUPPORTED",
+      "reasoning": "The passage confirms the reminder that caffeine and alcohol beverages do not count, but it does not mention Heinz Valtin or an amendment recorded in 2002.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 4,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "SUPPORTED",
+      "quote": "One origin may be a 1945 recommendation that stated",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "The source states \"One origin may be a 1945 recommendation,\" matching the claim's \"one origin\" that \"may\" explain the eight-glasses rule.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 5,
+      "mode": "passage",
+      "notFetched": [
+        "03"
+      ],
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage confirms the Food and Nutrition Board issued the guideline but says nothing about the American Physiological Society's magazine attributing it.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 6,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "SUPPORTED",
+      "quote": "One origin may be a 1945 recommendation that stated: A suitable allowance of water for adults is 2.5 litres daily in most instances. An ordinary standard for diverse persons is 1 millilitre for each calorie of food. Most of this quantity is contained in prepared foods.",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "The source reproduces the quoted 1945 recommendation with the exact figures and wording, though the claim's ellipsis omits the intervening sentence.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 7,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "SUPPORTED",
+      "quote": "If the last, crucial sentence is ignored, the statement could be interpreted as instruction to drink eight glasses of water a day.",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "The claim quotes the source verbatim, matching the wording exactly.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 8,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01",
+        "04",
+        "05"
+      ],
+      "notFetched": [],
+      "truncated": true,
+      "verdict": "SUPPORTED",
+      "quote": "A suitable allowance of water for adults is 2.5 litres daily in most instances. An ordinary standard for diverse persons is 1 millilitre for each calorie of food. Most of this quantity is contained in prepared foods.",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "The source states the 2.5 litres daily figure and that most of this quantity is contained in prepared foods, and 2.5 L ≈ 10.6 eight-ounce glasses (2.5 L = 84.5 fl oz ÷ 8 ≈ 10.6), consistent with the claim.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 9,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "SUPPORTED",
+      "quote": "Another endorsement may have come from a prominent nutritionist, Frederick Stare, who once recommended, without references, the consumption “around 6 to 8 glasses per 24 hours,” which could be “in the form of coffee, tea, milk, soft drinks, beer, etc.”",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "The source states exactly that Frederick Stare recommended, without references, \"around 6 to 8 glasses per 24 hours,\" which could be \"in the form of coffee, tea, milk, soft drinks, beer, etc.\"",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 10,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01",
+        "05"
+      ],
+      "notFetched": [
+        "02"
+      ],
+      "truncated": true,
+      "verdict": "SUPPORTED",
+      "quote": "Another endorsement may have come from a prominent nutritionist, Frederick Stare, who once recommended, without references, the consumption “around 6 to 8 glasses per 24 hours,” which could be “in the form of coffee, tea, milk, soft drinks, beer, etc.”",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "The source confirms Stare included coffee among the fluids, but it does not describe any \"modern version\" that excludes coffee, so the second sentence of the claim is unsupported.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 11,
+      "mode": "passage",
+      "notFetched": [
+        "02"
+      ],
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states the search included electronic modes, a cursory examination of older literature, and extensive consultation with nutritionists specializing in thirst.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 12,
+      "mode": "passage",
+      "notFetched": [
+        "02"
+      ],
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage directly states that no scientific studies were found in support of 8 x 8 and limits this conclusion to healthy adults in a temperate climate leading a largely sedentary existence, matching the claim.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 13,
+      "mode": "passage",
+      "notFetched": [
+        "02"
+      ],
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states that published studies show caffeinated drinks and, to a lesser extent, beer in moderation may be counted toward the daily total, matching the claim.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 14,
+      "mode": "passage",
+      "notFetched": [
+        "02"
+      ],
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states that because it is difficult or impossible to prove a negative, the author invites communications from readers aware of pertinent publications, matching the claim.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 15,
+      "mode": "passage",
+      "notFetched": [
+        "02"
+      ],
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states no scientific studies were found in support of 8 x 8, which directly matches the claim that the search found 0 studies.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 16,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "04",
+        "05"
+      ],
+      "notFetched": [],
+      "truncated": true,
+      "verdict": "SUPPORTED",
+      "quote": "The AI for total water intake for young men and women (ages 19 to 30 years) is 3.7 L and 2.7 L per day, respectively.",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "Source 05 states the AI for total water for ages 19–30 is 3.7 L for men and 2.7 L for women, and Source 04 (dated 2004) reports the same 2.7 L/3.7 L figures for women and men.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 17,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "05",
+        "04"
+      ],
+      "notFetched": [],
+      "truncated": true,
+      "verdict": "NOT SUPPORTED",
+      "quote": "The AI for total water (from a combination of drinking water, beverages, and food) is set based on the median total water intake from U.S. survey data.",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "The sources state the AI was based on median total water intake from U.S. survey data but never identify that survey as NHANES III (NHANES III is cited only for serum osmolality data), so the claim's attribution to NHANES III is unsupported.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 18,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "04"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "SUPPORTED",
+      "quote": "About 80 percent of people's total water comes from drinking water and beverages -- including caffeinated beverages -- and the other 20 percent is derived from food.",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "The source explicitly states that the remaining 20 percent of total water intake is derived from food, matching the claim.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 19,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "05",
+        "04"
+      ],
+      "notFetched": [],
+      "truncated": true,
+      "verdict": "NOT SUPPORTED",
+      "quote": "NONE",
+      "quoteFound": null,
+      "sourceComplete": true,
+      "reasoning": "Neither source contains the quoted sentence \"there is no single daily total water requirement for a given person\"; the closest wording is that the AI \"should not be interpreted as a specific requirement,\" which is not the same statement.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 20,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "04"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "SUPPORTED",
+      "quote": "We don't offer any rule of thumb based on how many glasses of water people should drink each day because our hydration needs can be met through a variety of sources in addition to drinking water,\" said Lawrence Appel, chair of the panel that wrote the report",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "The source directly quotes panel chair Lawrence Appel with the exact wording in the claim.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 21,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "04"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "SUPPORTED",
+      "quote": "The vast majority of healthy people adequately meet their daily hydration needs by letting thirst be their guide, says the newest report on nutrient recommendations from the Institute of Medicine of the National Academies.",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "The claim's quotation matches the source's opening sentence verbatim, and the source confirms this was the release's opening finding.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 22,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "SUPPORTED",
+      "quote": "The complete lack of evidence supporting the recommendation to drink six to eight glasses of water a day is exhaustively catalogued in an invited review by Heinz Valtin in the American Journal of Physiology.",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "The paper lists the eight-glasses rule as one of seven myths and states Valtin's review exhaustively catalogues the complete lack of evidence, matching the claim's quotation and figures.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 23,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "06"
+      ],
+      "notFetched": [
+        "02"
+      ],
+      "truncated": false,
+      "verdict": "SUPPORTED",
+      "quote": "In the Eatwell Guide , the government recommends that people should aim to drink 6 to 8 cups or glasses of fluid a day.",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "The page states the government recommends 6 to 8 cups/glasses of fluid daily and shows \"Page last reviewed: 17 May 2023,\" matching the claim's figures and date.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 24,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "06"
+      ],
+      "notFetched": [
+        "02"
+      ],
+      "truncated": false,
+      "verdict": "SUPPORTED",
+      "quote": "This is just a guide and you may need to drink more fluids if you're: ... Water, lower-fat milk and lower-sugar drinks, including tea and coffee, all count as part of your daily intake.",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "The source contains both the quoted phrase \"This is just a guide\" and the statement that water, lower-fat milk and lower-sugar drinks, including tea and coffee, all count as part of daily intake.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 25,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "06"
+      ],
+      "notFetched": [
+        "02"
+      ],
+      "truncated": false,
+      "verdict": "SUPPORTED",
+      "quote": "In the Eatwell Guide , the government recommends that people should aim to drink 6 to 8 cups or glasses of fluid a day.",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "The page states the 6 to 8 cups/glasses recommendation and lists tea and coffee among drinks that count toward daily intake.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 26,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "04",
+        "05"
+      ],
+      "notFetched": [
+        "02"
+      ],
+      "truncated": true,
+      "verdict": "SUPPORTED",
+      "quote": "These values represent adequate intake levels, the panel said; those who are very physically active or who live in hot climates may need to consume more water.",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "The 2004 news release states the intake values cover healthy sedentary people in temperate climates and that very active people or those in hot climates may need more water, matching the claim.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 27,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "05",
+        "01",
+        "04"
+      ],
+      "notFetched": [],
+      "truncated": true,
+      "verdict": "SUPPORTED",
+      "quote": "One origin may be a 1945 recommendation that stated: A suitable allowance of water for adults is 2.5 litres daily in most instances. An ordinary standard for diverse persons is 1 millilitre for each calorie of food. Most of this quantity is contained in prepared foods.",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "The sources distinguish the 1945 recommendation (2.5 L, mostly from prepared foods), the IOM total water AI (3.7 L men / 2.7 L women including food), and glasses of drinking water, confirming these are different quantities.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 28,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01",
+        "05"
+      ],
+      "notFetched": [
+        "02"
+      ],
+      "truncated": true,
+      "verdict": "PARTIALLY SUPPORTED",
+      "quote": "In contrast, drinking excess amounts of water can be dangerous, resulting in water intoxication, hyponatraemia, and even death.",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "The BMJ source supports the second sentence about excess water being dangerous, but neither source contains the Valtin statement about large intakes being advisable for disease treatment/prevention and vigorous work/exercise in hot climates.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 29,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "SUPPORTED",
+      "quote": "One origin may be a 1945 recommendation that stated: A suitable allowance of water for adults is 2.5 litres daily in most instances.",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "The source presents the 1945 recommendation and Stare's advice as possible origins (\"One origin may be,\" \"Another endorsement may have come from\") and quotes both secondhand, consistent with the claim that these are hypotheses and quotations reproduced in the BMJ rather than retrieved originals.",
+      "servedBy": "deepseek-flash"
+    }
+  ]
+}

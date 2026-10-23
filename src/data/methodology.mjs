@@ -71,9 +71,13 @@ export const entries = {
     role: 'Fails the build if this page is missing a tool the repo uses, describes one it no longer uses, or makes a claim its receipt no longer supports.',
     why: 'A hand-written list of tools goes stale the first time someone adds a tool and forgets the list.',
   },
+  'script:fetch-sources.mjs': {
+    role: 'Fetches the full text of every source an exhibit links to and records what it got in a manifest: fetched, failed, or placed by hand from a browser copy.',
+    why: 'The second opinion reads whole sources, not excerpts. The texts stay off the repo because they are other publishers\' work; the manifest, with each text\'s size and hash, is tracked.',
+  },
   'script:second-opinion.mjs': {
-    role: 'Sends each claim, with the source passage the fact-checker matched it to, to DeepSeek, a model from a different company. It answers 1 question: does the passage support the claim.',
-    why: '2 models from the same company can share a blind spot. It never sees the exhibit or the source URL, only the pair.',
+    role: 'Sends each claim, with the full text of its cited sources, to DeepSeek, a model from a different company. DeepSeek must quote the sentence it relied on, and the script checks the quote is really in the source. A claim whose source could not be fetched falls back to the fact-checker\'s passage.',
+    why: '2 models from the same company can share a blind spot. Given only the passage the fact-checker chose, DeepSeek could only check that choice, and through exhibit 017 it never caught an error the fact-checker missed.',
   },
   'script:second-opinion.sh': {
     role: 'Loads the DeepSeek key from .env and runs second-opinion.mjs.',
@@ -117,7 +121,7 @@ export const pipeline = [
   { step: 'Research', text: 'The researcher finds primary sources and checks each figure. PDFs it can\'t read are listed for conversion with pdftotext.', uses: ['agent:exhibit-researcher'] },
   { step: 'Draft', text: 'The drafter writes 1 file. A hook checks the voice and template rules as it lands.', uses: ['agent:exhibit-drafter', 'hook:PostToolUse:check-house-rules.mjs'] },
   { step: 'Check', text: 'The fact-checker checks every claim against every source and writes a JSON report.', uses: ['agent:fact-checker'] },
-  { step: 'Second opinion', text: 'DeepSeek reviews the same claim and passage pairs. The 2 verdict sets are compared.', uses: ['script:second-opinion.sh', 'script:compare-reviews.sh'] },
+  { step: 'Second opinion', text: 'The sources are fetched in full, and DeepSeek checks every claim against them, quoting what it relied on. The 2 verdict sets are compared.', uses: ['script:fetch-sources.mjs', 'script:second-opinion.sh', 'script:compare-reviews.sh'] },
   { step: 'Decide', text: 'A human reads the disagreements and decides what changes. Reports are archived in reports/ with each exhibit.', uses: [] },
   { step: 'Build', text: 'The site-builder wires the exhibit and its chart. The build runs every check first and fails on a blocking one.', uses: ['agent:site-builder', 'script:check-house-rules.mjs', 'script:check-methodology.mjs'] },
   { step: 'Publish', text: 'A human says "commit and push". The committer checks links, commits, and starts the deploy.', uses: ['agent:committer', 'script:check-links.mjs', 'workflow:deploy.yml'] },
@@ -135,7 +139,7 @@ export const external = [
   },
   {
     name: 'DeepSeek API',
-    role: 'The second-opinion model, deepseek-chat by default.',
+    role: 'The second-opinion model, deepseek-chat by default. Each report records the model that actually answered: in October 2026 the API served that name as deepseek-flash.',
     receipt: { file: 'scripts/second-opinion.mjs', contains: '"deepseek-chat"' },
   },
   {
@@ -159,6 +163,7 @@ export const external = [
 export const offRepo = [
   { name: 'Claude Code memory', role: 'Notes Claude keeps between sessions on 1 machine: open audit items, lessons from past mistakes. The public record of the same things is the git history, the corrections page, and reports/.' },
   { name: '.env', role: 'Holds the DeepSeek API key. Never committed.' },
+  { name: 'Source texts', role: 'The full source texts the second opinion reads, in reports/*/sources/. Gitignored as other publishers\' work; each folder\'s manifest.json records what was fetched, its size and its sha256.' },
   { name: '.claude/settings.local.json', role: 'Per-machine permission settings. Never committed, so never read for this page.' },
   { name: 'curl and headless Chrome', role: 'Used by hand when needed: curl for sites that block the other fetchers, Chrome to check layouts. Not part of the scripted pipeline.' },
 ];
@@ -170,7 +175,8 @@ export const offRepo = [
 // `selfReported`. `note` (optional) is the slug of a note in
 // src/content/notes/ that tells the longer story.
 // A tooling change that alters how exhibits get made adds a row here, or
-// extends the latest one, in the same commit.
+// extends the latest one, in the commit straight after it, pushed together:
+// a row cites the change's commit, and a commit can't contain its own hash.
 export const eras = [
   {
     name: 'In a chat window',

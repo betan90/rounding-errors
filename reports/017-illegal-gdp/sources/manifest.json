@@ -1,0 +1,56 @@
+{
+  "exhibit": "017",
+  "fetchedAt": "2026-10-23T13:18:24.685Z",
+  "sources": [
+    {
+      "id": "01",
+      "name": "Office for National Statistics",
+      "text": "Joshua Abramsky and Steve Drew, \"Changes to National Accounts: Inclusion of Illegal Drugs and Prostitution in the UK National Accounts\", 29 May 2014. The link is a mirror on the UN Statistical Institute for Asia and the Pacific training site; the ONS original URL no longer resolves. The PDF carries the ONS header, authors and date. Supports: GNI's use in EU budget contributions and the 2012 audit's areas for improvement due by 2014; ESA95 section 1.13 and the footnote \"There are no changes in this area between ESA95 and ESA10\"; the executive summary on \"significant limitations in the availability of data\" and assumptions on which the estimates are \"partly based\", \"especially\" for prostitution; Eaves' approx 7,000 off-street estimate for London in 2004 and how it was made; the Metropolitan Police's 115 on the street \"at any one time\"; scaling to \"c. 58,000\"; \"there is no time series\" and variation by the male population and the CPI for personal services; clients per week of 20, 25 and 30 following \"a Netherlands assumption\"; £55 in 2004 from Punternet, footnote 12 pointing to a Wikipedia page; the assumptions labelled \"weak\" and \"controversial\"; the drugs assumptions quoted in the body; \"probably false\" (4 occurrences).",
+      "url": "https://unsiap.or.jp/sites/default/files/pdf/e-learning_el_material_4_eco_4_1_eco_stat_1508_gdp_kor_reference_materialillegal_activities_in_the_uk_national_accounts.pdf",
+      "status": "fetched",
+      "kind": "pdf",
+      "chars": 59033,
+      "sha256": "7caeb554c9b23be633b32f1476eb62739637ccc4998f3cc7d3f480a4acb5d6dc"
+    },
+    {
+      "id": "02",
+      "name": "Peter Patterson, ONS Deputy Chief Economic Adviser",
+      "text": "\"Sex, Drugs and GDP\", Civil Service Quarterly blog, 15 October 2014: \"ONS desk research (please note the italics for emphasis!)\"; illegal activities contributing \"up to £10 billion a year to the level of GDP\"; \"legally mandated through the European System of Accounts 2010\"; \"Comparability between nations dictates that all countries include it in their GDP figures.\"",
+      "url": "https://quarterly.blog.gov.uk/2014/10/15/sex-drugs-and-gdp/",
+      "status": "fetched",
+      "kind": "html",
+      "chars": 8105,
+      "sha256": "5e279c45d200d27a94dd946312161a707b8cf4c8e3780ae20f570aeda025fdad"
+    },
+    {
+      "id": "03",
+      "name": "Office for National Statistics",
+      "text": "Freedom of information response, \"Illegal Production (N2)\", released 6 November 2015: total N2 for 2010 of £9,097 million; N2 as 0.58% of GDP, drugs 0.24%, prostitution 0.35%; prostitution in COICOP 12.2, \"The value for 2010 is £5.6bn (current prices), which is 0.4% of GDP.\"",
+      "url": "https://www.ons.gov.uk/aboutus/transparencyandgovernance/freedomofinformationfoi/illegalproductionn2",
+      "status": "fetched",
+      "kind": "html",
+      "chars": 1687,
+      "sha256": "1cacbc1fbb933eba78cd440711a2649bdca36c2b31db3dee3d1ce8728c94a9ce"
+    },
+    {
+      "id": "04",
+      "name": "Office for National Statistics",
+      "text": "\"Revisions to gross domestic product in Blue Book 2016\": the reduction of prostitution estimates \"by a factor to reflect the holiday taken by prostitutes\"; \"Statistics Netherlands have estimated the total holidays to be 12 weeks per year and the same factor has been applied to the UK estimates.\"",
+      "url": "https://www.ons.gov.uk/economy/nationalaccounts/uksectoraccounts/articles/nationalaccountsarticles/revisionstogrossdomesticproductinbluebook2016",
+      "status": "fetched",
+      "kind": "html",
+      "chars": 59858,
+      "sha256": "989a1a996fc6c59cdc802e8e6decd6c8a38cf58f15911e250e934e7bd288342a"
+    },
+    {
+      "id": "05",
+      "name": "Office for National Statistics",
+      "text": "Time series MNC8, \"12.2 Prostitution CP NSA £m\", dataset BB, released 31 October 2025: household final consumption expenditure on prostitution, current prices, 1985 to 2024. Supports the chart, the 2010 value of £4,370m, and 2019 £5,993m, 2020 £4,130m, 2024 £6,431m.",
+      "url": "https://www.ons.gov.uk/economy/nationalaccounts/satelliteaccounts/timeseries/mnc8/bb",
+      "status": "fetched",
+      "kind": "html",
+      "chars": 2685,
+      "sha256": "dac431eb30b107bbdbf392e098e50e670a9b9eb4d66005aee7aa2efb897ab72c"
+    }
+  ]
+}

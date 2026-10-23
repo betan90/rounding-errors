@@ -1,0 +1,299 @@
+{
+  "exhibit": "008",
+  "reviewedAt": "2026-10-23T13:21:37.967Z",
+  "model": "deepseek-chat",
+  "servedBy": [
+    "deepseek-flash"
+  ],
+  "sourceCharacters": 67537,
+  "claims": [
+    {
+      "id": 1,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01",
+        "02",
+        "03",
+        "04"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "SUPPORTED",
+      "quote": "these were lower than the 90% figure that the Indonesian government gives for the period 2015-2021",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "Source 02 explicitly attributes the 90% deforestation decline figure for 2015-2021 to the Indonesian government, matching the claim exactly.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 2,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01",
+        "02",
+        "03",
+        "04"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "SUPPORTED",
+      "quote": "GFW data, for instance, showed a decline of 69% from the period 2016-2023.",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "Source 02 explicitly attributes a 69% decline for 2016-2023 to GFW data, matching the claim's figures and period.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 3,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01",
+        "02",
+        "03",
+        "04"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "SUPPORTED",
+      "quote": "The exact extent of the reduction in deforestation depends on the data set used, and the years or time periods compared, varying between 40% and 90%.",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "Source 01 explicitly states the reduction varies between 40% and 90% depending on the dataset and time periods compared.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 4,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01",
+        "02",
+        "03",
+        "04"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "SUPPORTED",
+      "quote": "A robust estimate is that deforestation has fallen by at least 50% since ca. 2016.",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "Source 01 states this exact sentence, and Source 02 corroborates the researchers' conclusion of \"at least 50% since ca. 2016.\"",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 5,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01",
+        "02",
+        "03",
+        "04"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "PARTIALLY SUPPORTED",
+      "quote": "2015 marked an extreme case of El Niño, which in Indonesia results in hotter and drier conditions than usual. This, combined with burning by plantation companies to clear land, led to some of the worst forest and land fires on record across Indonesia.",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "The sources confirm 2015 was an extreme El Niño year with some of the worst fires on record and that the government used it as a baseline, but they explicitly state there is no official baseline year (\"Since there is no official baseline year, selecting 2015 as the benchmark...\"), so calling it the \"official baseline\" is not supported.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 6,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01",
+        "02",
+        "03",
+        "04"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "SUPPORTED",
+      "quote": "Yet that baseline also is “not necessarily incorrect,” Ahmad said, given that it was the first full year of then-president Joko Widodo’s first term in office.",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "Source 02 attributes to NMBU co-author Ahmad the statement that 2015 is \"not necessarily incorrect\" as a baseline because it was the first full year of Jokowi's first term.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 7,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01",
+        "02",
+        "03",
+        "04"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "SUPPORTED",
+      "quote": "SIMONTANA defines deforestation as the conversion of primary, secondary or plantation (e.g. pulp and paper) forest to non-forest, using a minimum area of 6.25 ha. The data is produced through manual visual inspection of satellite imagery. SIMONTANA uses an observation period of July- June",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "Source 03 explicitly attributes all four elements of the claim (permanent conversion to non-forest, 6.25 ha minimum, manual visual inspection, July–June period) to SIMONTANA, the Indonesian Ministry of Forestry's monitoring system.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 8,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01",
+        "02",
+        "03",
+        "04"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "SUPPORTED",
+      "quote": "Global Forest Watch tracks tree cover loss over time using a fixed baseline while excluding young secondary forests in its tropical forest analysis.",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "Source 04 states GFW uses a fixed baseline and excludes young secondary forests, and Source 03 confirms UMD/GFW tree cover loss includes plantations and uses calendar years (January–December).",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 9,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01",
+        "02",
+        "03",
+        "04"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "SUPPORTED",
+      "quote": "The official Indonesian definition of a forest includes commercial tree plantations such as acacia (grown and felled to make pulp and paper) and rubber.",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "Source 02 states directly that the official Indonesian forest definition includes commercial acacia plantations grown and felled for pulp and paper.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 10,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01",
+        "02",
+        "03",
+        "04"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "SUPPORTED",
+      "quote": "All data are valid, as long as they adhere to their respective methodologies,\" Timer said.",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "Source 04 attributes to Auriga's Timer Manurung the statement that all data are valid provided they adhere to their respective methodologies, matching the claim's wording.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 11,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01",
+        "02",
+        "03",
+        "04"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "SUPPORTED",
+      "quote": "Indonesia’s deforestation surged in 2025, rising 66% from the previous year, marking a sharp reversal after several years of decline",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "Source 04's headline and opening sentence state exactly that deforestation rose 66% in 2025, reversing years of decline.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 12,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01",
+        "02",
+        "03",
+        "04"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "SUPPORTED",
+      "quote": "Another driver of deforestation is Indonesia’s push to become a global hub for electric vehicle (EV) production, a policy closely tied to its vast nickel reserves.",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "Source 04 explicitly identifies nickel mining tied to EV battery demand as a driver of the 2025 deforestation surge, and Source 02 also notes nickel demand for EV batteries poses a threat to forests.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 13,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01",
+        "02",
+        "03",
+        "04"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "NOT SUPPORTED",
+      "quote": "NONE",
+      "quoteFound": null,
+      "sourceComplete": true,
+      "reasoning": "None of the four sources contains the phrase \"five organisations measuring the same trees\" or any statement about five organisations measuring the same trees; the sources discuss differing datasets and methodologies but never this formulation.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 14,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01",
+        "02",
+        "03",
+        "04"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "NOT SUPPORTED",
+      "quote": "NONE",
+      "quoteFound": null,
+      "sourceComplete": true,
+      "reasoning": "None of the sources contains a \"who lied\" section or any statement that the researchers went out of their way to say nobody lied; the sources only discuss differing methodologies and data definitions, not a denial of lying.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 15,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01",
+        "02",
+        "03",
+        "04"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "NOT SUPPORTED",
+      "quote": "NONE",
+      "quoteFound": null,
+      "sourceComplete": true,
+      "reasoning": "None of the four sources contains any disclosure statement about figures being checked against a primary source before publishing; the claim is a meta-statement absent from all provided texts.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 16,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01",
+        "02",
+        "03",
+        "04"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "SUPPORTED",
+      "quote": "Researchers have called out the Indonesian government’s claim of having reduced deforestation by 90% over the past decade, pointing to cherry-picked data and a skewed baseline that paint an incomplete picture of the reality on the ground.",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "The sources distinguish the government's 90% claim from independent satellite datasets (e.g., GFW's 69% decline), supporting that the 90% figure is a government/self-reported claim contrasted with independently measured data.",
+      "servedBy": "deepseek-flash"
+    }
+  ]
+}

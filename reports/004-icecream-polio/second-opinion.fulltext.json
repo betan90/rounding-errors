@@ -1,0 +1,81 @@
+{
+  "exhibit": "004",
+  "reviewedAt": "2026-10-23T13:21:18.620Z",
+  "model": "deepseek-chat",
+  "servedBy": [
+    "deepseek-flash"
+  ],
+  "sourceCharacters": 0,
+  "claims": [
+    {
+      "id": 1,
+      "mode": "passage",
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage states 2,516 cases in 1948, not the 2,498 figure in the claim.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 2,
+      "mode": "passage",
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage only states that 1949 had about one-twelfth the cases of 1948 and does not mention the number 229 or the NC State Health Department.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 3,
+      "mode": "passage",
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "No passage was provided, so there is no text to support the claim of a 91% drop in cases.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 4,
+      "mode": "passage",
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage reports a drop in soft drink and ice cream sales, not a ~90% drop in sugar consumption, and attributes it to the National Foundation for Infantile Paralysis rather than Sandler's self-report.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 5,
+      "mode": "passage",
+      "verdict": "PARTIALLY SUPPORTED",
+      "reasoning": "The passage supports the quoted statements and attribution to Cherry, but does not mention that Cherry called Sandler's theory \"ridiculous.\"",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 6,
+      "mode": "passage",
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states that in 1941 the University of Michigan attempted to duplicate Sandler's findings without success, which directly matches the claim.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 7,
+      "mode": "passage",
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage directly states that Sandler published this exact paper with this title in The American Journal of Pathology in 1940.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 8,
+      "mode": "passage",
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage attributes to Dr. John F. Modlin the explanation that lack of harmless immunizing infections in infancy due to better sanitation contributed to the epidemic, matching the claim's attribution.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 9,
+      "mode": "passage",
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states Sandler proclaimed \"without reserve\" the discovery, which directly supports the claim that he said so in the paper without reserve.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 10,
+      "mode": "passage",
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage only states that Dr. Sandler's theory lacks foundation and says nothing about a \"who lied\" verdict, nobody being responsible, or the medical establishment's position at the time.",
+      "servedBy": "deepseek-flash"
+    }
+  ]
+}

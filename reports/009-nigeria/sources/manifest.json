@@ -1,0 +1,72 @@
+{
+  "exhibit": "009",
+  "fetchedAt": "2026-10-23T13:17:21.972Z",
+  "sources": [
+    {
+      "id": "01",
+      "name": "African Development Bank",
+      "text": "Press release, \"Nigeria Becomes Largest Economy in Africa, with $509.9 Billion GDP\" (4 April 2014): the 4 April announcement, $509.9bn against $285.56bn, an 89.2% increase, GDP per capita from $1,437 to $2,688, and Finance Minister Ngozi Okonjo-Iweala's confirmation that the highest global best practices were followed.",
+      "url": "https://web.archive.org/web/20140412000805/http://www.afdb.org/en/news-and-events/article/nigeria-becomes-largest-economy-in-africa-with-509-9-billion-gdp-12981/",
+      "status": "fetched",
+      "kind": "html",
+      "chars": 8561,
+      "sha256": "a1d825e92cff8bd04ce31114a03d88b1fc0c8a3ad0d25d9e3ad79680762f1a11"
+    },
+    {
+      "id": "02",
+      "name": "Financial Times",
+      "text": "Javier Blas and William Wallis, \"Nigeria almost doubles GDP in recalculation\" (7 April 2014): analysts' pre-announcement forecasts that rebasing would add 40% to 60%. Paywalled; verified by headline and by matching figures in secondary coverage, not by full-text fetch.",
+      "url": "https://www.ft.com/content/70b594fe-bd94-11e3-a5ba-00144feabdc0",
+      "status": "failed",
+      "error": "paywall page"
+    },
+    {
+      "id": "03",
+      "name": "Oxford Business Group",
+      "text": "\"Questions raised by Nigeria's recalibrated GDP figures\" (2015): the 2-year preparation, the 10-place ranking jump to 26th, and the comparison against South Africa's $354bn.",
+      "url": "https://oxfordbusinessgroup.com/questions-raised-by-nigerias-recalibrated-gdp-figures/",
+      "status": "fetched",
+      "kind": "html",
+      "chars": 13412,
+      "sha256": "65f1106f1700e4464c60a6d23de7dd7b6270a3ecd78d1db7af0e6bea28c54316"
+    },
+    {
+      "id": "04",
+      "name": "Aluko & Oyebode",
+      "text": "\"How Sustainable is the Effect of Nigeria's GDP Rebasing\": the UN Statistical Commission's 5-year recommendation, and the African Development Bank finding on 18 other African countries with base years over a decade old, including the DRC and Equatorial Guinea at over 30 years.",
+      "url": "https://www.aluko-oyebode.com/insights/how-sustainable-is-the-effect-of-nigerias-gdp-rebasing/",
+      "status": "fetched",
+      "kind": "html",
+      "chars": 7394,
+      "sha256": "33908bcd2cc64ad24beb6fb1bf0881b3d46ef97950de4193fd9db4aab4d99606"
+    },
+    {
+      "id": "05",
+      "name": "Africa Check",
+      "text": "Factsheet, \"Nigeria rebases its economy again: here's what sets it apart\" (15 August 2025): the 2025 rebasing from 2010 to 2019, nominal GDP of N372.8 trillion (about $243.3bn) for 2024, a 34.4% increase from about $188bn, Nigeria remaining fourth in Africa, and the University of Benin economist's criticism.",
+      "url": "https://africacheck.org/fact-checks/factsheets/factsheet-nigeria-rebases-its-economy-again-heres-what-sets-it-apart",
+      "status": "failed",
+      "error": "HTTP 403"
+    },
+    {
+      "id": "06",
+      "name": "Finance in Africa",
+      "text": "\"Inside Nigeria's GDP rebasing\" (6 August 2025): the choice of 2019 as a pre-pandemic base year, the Supply and Use Table covering 46 industries and 217 product groups, and the informal economy's 42.5% share.",
+      "url": "https://financeinafrica.com/insights/inside-nigeria-gdp-rebasing/",
+      "status": "fetched",
+      "kind": "html",
+      "chars": 11705,
+      "sha256": "48f8b5943e438b261a230c8bab398e1f5bc8b62ddb70b7c94abbdfd34e501abd"
+    },
+    {
+      "id": "07",
+      "name": "Daily Trust",
+      "text": "\"Rebasing Nigeria's GDP: New Numbers, Old Problems\" (August 2025): the debt-to-GDP ratio falling from 52.90% to 39.37% after the 2025 rebasing.",
+      "url": "https://dailytrust.com/rebasing-nigerias-gdp-new-numbers-old-problems/",
+      "status": "fetched",
+      "kind": "html",
+      "chars": 11903,
+      "sha256": "89b09b8e3309b1422fec8979afa7baa5c31ed0825c4340122d9c0ff4aef6c5a9"
+    }
+  ]
+}

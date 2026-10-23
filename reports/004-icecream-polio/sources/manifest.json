@@ -1,0 +1,36 @@
+{
+  "exhibit": "004",
+  "fetchedAt": "2026-10-23T13:12:23.447Z",
+  "sources": [
+    {
+      "id": "01",
+      "name": "Mountain Xpress",
+      "text": "Asheville Archives: Sugar-free theory for curing polio elicits harsh criticism, 1948, confirmed by direct quotation: on Aug. 8, 1948, The Asheville Citizen reported Dr. James H. Cherry, president of the Buncombe County Medical Society and chief of staff of the Asheville Orthopedic Home, calling Sandler's theory \"ridiculous\" in an official statement on behalf of both organizations: \"We feel Dr. Sandler's theory is absolutely without foundation. We do not feel that reducing the intake of soft drinks, pastries, and other sweets has been proved to have any effect on the immunity of the human body against polio.\"",
+      "url": "https://mountainx.com/news/asheville-archives-sugar-free-theory-for-curing-polio-elicits-harsh-criticism-1948/",
+      "status": "failed",
+      "error": "HTTP 503"
+    },
+    {
+      "id": "02",
+      "name": "Tina Dupuy",
+      "text": "Vaccinations and the ice cream scare (2015): the flush-toilet / lost-infant-immunity explanation attributed to Dr. John F. Modlin (Dartmouth-Hitchcock), and Sandler's 1940 American Journal of Pathology rabbit paper, confirmed by direct fetch (\"The production of neuronal injury and necrosis with the virus of poliomyelitis in rabbits during insulin hypoglycemia\").",
+      "url": "https://www.news-daily.com/news/vaccinations-and-the-ice-cream-scare---tina-dupuy/article_0d0d1ec1-0246-5a0c-b5df-e39f6c29bad8.html",
+      "status": "failed",
+      "error": "HTTP 403"
+    },
+    {
+      "id": "03",
+      "name": "Sandler",
+      "text": "Diet Prevents Polio (Lee Foundation for Nutritional Research, 1951): the source of the diet campaign and the \"90% reduction\" claim, i.e. Sandler's own account.",
+      "url": null,
+      "status": "no-url"
+    },
+    {
+      "id": "04",
+      "name": null,
+      "text": "North Carolina State Health Department case figures (2,498 in 1948; 229 in 1949), as cited in contemporary and later accounts.",
+      "url": null,
+      "status": "no-url"
+    }
+  ]
+}

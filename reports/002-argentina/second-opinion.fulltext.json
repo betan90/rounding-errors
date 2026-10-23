@@ -1,0 +1,161 @@
+{
+  "exhibit": "002",
+  "reviewedAt": "2026-10-23T14:00:35.139Z",
+  "model": "deepseek-chat",
+  "servedBy": [
+    "deepseek-flash"
+  ],
+  "sourceCharacters": 14392,
+  "claims": [
+    {
+      "id": 1,
+      "mode": "passage",
+      "notFetched": [
+        "04"
+      ],
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states the government's national statistics institute reported consumer prices rose 10.8 percent, matching the claim's figure for official inflation.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 2,
+      "mode": "passage",
+      "notFetched": [
+        "04"
+      ],
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states private forecasters estimated inflation accelerated to 25.6 percent, matching the claim's private-sector estimate of 25.6%.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 3,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "05",
+        "06",
+        "07"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "NOT SUPPORTED",
+      "quote": "NONE",
+      "quoteFound": null,
+      "sourceComplete": true,
+      "reasoning": "None of the three sources contains the figure \"14.8 points\" or any comparable statistic, so the claim is unsupported by the provided texts.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 4,
+      "mode": "passage",
+      "notFetched": [
+        "04"
+      ],
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states the private economists are not identified because they risk government fines for releasing calculations differing from official data, which matches the claim's assertion about being unnamed due to fineable offense.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 5,
+      "mode": "passage",
+      "notFetched": [
+        "04"
+      ],
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states that the gap between inflation rates enabled savings of about US$6.8 billion since 2007, according to a research firm, matching the claim's figures and timeframe.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 6,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "05",
+        "06",
+        "07"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "SUPPORTED",
+      "quote": "the Peronist leader replaced Bevacqua with Paglieri given the refusal by then CPI head to provide him with information according to his criteria",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "Source 05 states Moreno replaced Bevacqua with Paglieri because Bevacqua refused to provide information according to his criteria, and that the NGO warned of tampering with INDEC inflation figures as from January 2007, matching the claim's substance.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 7,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "05",
+        "06",
+        "07"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "NOT SUPPORTED",
+      "quote": "NONE",
+      "quoteFound": null,
+      "sourceComplete": true,
+      "reasoning": "None of the three sources mentions provincial statistical offices or any alternative inflation figures published by them; the sources discuss INDEC data falsification, Moreno's prosecution of private consultants, and his sentencing, but not provincial offices.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 8,
+      "mode": "passage",
+      "notFetched": [
+        "01"
+      ],
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage confirms the February 2013 board censure of Argentina and states it was the first such censure for inaccurate data, matching the claim.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 9,
+      "mode": "passage",
+      "notFetched": [
+        "01"
+      ],
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states Argentina had a September 2013 deadline and could face further sanctions including expulsion, matching the claim's deadline and expulsion track.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 10,
+      "mode": "passage",
+      "notFetched": [
+        "02",
+        "01"
+      ],
+      "verdict": "PARTIALLY SUPPORTED",
+      "reasoning": "The passage confirms the censure was lifted in November 2016, but it does not mention a change of government, new INDEC leadership, or IMF technical missions, so those parts of the claim are unsupported.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 11,
+      "mode": "passage",
+      "notFetched": [
+        "02",
+        "01"
+      ],
+      "verdict": "PARTIALLY SUPPORTED",
+      "reasoning": "The passage confirms Lagarde credited the authorities' efforts to improve data accuracy, but it does not mention rebuilding the agency, CPI/GDP data, 2011, or obligations as a member.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 12,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "05",
+        "06",
+        "07"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "SUPPORTED",
+      "quote": "Judge Claudio Bonadio said Moreno’s actions was “nothing other than an effort to silence” experts who were releasing public information in the form of technical data that challenges the government’s official inflation rate.",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "Source 06 states Moreno was charged with abusing his power over fines and legal action against those publishing independent inflation data, with the judge's quoted phrase matching, and Source 07 (dated September 2013) confirms the 2013 charging by Judge Bonadío.",
+      "servedBy": "deepseek-flash"
+    }
+  ]
+}

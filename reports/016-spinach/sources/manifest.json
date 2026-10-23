@@ -1,0 +1,46 @@
+{
+  "exhibit": "016",
+  "fetchedAt": "2026-10-23T13:16:54.403Z",
+  "sources": [
+    {
+      "id": "01",
+      "name": "Hamblin TJ",
+      "text": "\"Fake!\", BMJ 1981;283(6307):1671-1674 (Christmas issue, 19 Dec 1981): the \"Frauds, hoaxes, fakes, and widely popularised mistakes\" framing; the spinach paragraph, including the 1930s German chemists, the \"tenfold overestimate\", and \"chewing the cans\"; no citation for the paragraph; the closing list of 13 publications Hamblin \"should particularly like to mention\". Also indexed on PubMed Central as PMC1507475.",
+      "url": "https://www.bmj.com/content/bmj/283/6307/1671.full.pdf",
+      "status": "fetched",
+      "kind": "pdf",
+      "chars": 24900,
+      "sha256": "843d19cafbd3c43b300bb5178b17992ddb40e2b03155aa155ed6a25ac874b5f2"
+    },
+    {
+      "id": "02",
+      "name": "Sutton M",
+      "text": "\"Spinach, Iron and Popeye: Ironic lessons from biochemistry and history on the importance of healthy eating, healthy scepticism and adequate citation\", Internet Journal of Criminology, 2010. The link is a mirror of the Internet Journal of Criminology paper; the journal's site refuses scripted requests. Supports: Sutton's affiliation (Reader in Criminology, Nottingham Trent University); that none of Hamblin's 13 references cites \"the source of the decimal error or 1930's Germans\"; Sutton's email exchange with Hamblin, as Sutton reports it (\"honestly cannot remember\", \"asked not to provide references\", \"sure that he had not made it up\"); his conclusion that, \"in the absence of references to prove otherwise\", Hamblin had invented the decimal error; the dried-spinach figure of 44.8 mg per 100 g (Jackson 1938); Coultate 2009 as quoted, giving von Bunge's 1890 figure of 35 mg per 100 g from dried spinach and the alternative von Wolf decimal version; the strip of 3 July 1932, which Sutton describes as Popeye \"explaining for the very first time why he eats spinach\", and \"Segar chose and promoted spinach for its vitamin A content alone.\"",
+      "url": "https://www.erwinmayer.com/wp-content/uploads/2010/10/Sutton_Spinach_Iron_and_Popeye_March_2010.pdf",
+      "status": "fetched",
+      "kind": "pdf",
+      "chars": 93226,
+      "sha256": "26b2633ebc12196c9c085b5fefca374f11d9a433264521920bbdd4cff47a5151"
+    },
+    {
+      "id": "03",
+      "name": "Rekdal OB",
+      "text": "\"Academic urban legends\", Social Studies of Science 2014;44(4):638-654, doi:10.1177/0306312714535679: \"In the past 30 years\" of retellings as fact; a reader pointing Sutton to Bender, and Sutton's follow-up (Sutton 2010b); Bender's 1972 inaugural lecture at Queen Elizabeth College, University of London (\"may well have grown from a misplaced decimal point\"); Hamblin \"accidentally turned Bender's suggestion into a piece of fact\"; Sutton 2010b on \"contamination during the analysis or the confusion between fresh and dried spinach\"; Hamblin's comment on Sutton 2010b (\"I thought it was in Reader's Digest\", \"very willing to admit that I was wrong\"); Kronick 1985 citing Hamblin with \"It has been suggested that\" and that such phrases \"tend to change or disappear\"; Larsson 1995, J Intern Med 238(5), \"The dissemination of false data through inadequate citation\", quoted at pp. 448-449, citing Hamblin; \"in quite a spectacular way\"; the dates 1870, the 1890s and the 1930s; the 5 ways to cite Larsson's sentence, including \"I have plagiarized the Hamblin reference from Larsson\"; \"doing the opposite of what they are preaching.\"",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4232290/",
+      "status": "fetched",
+      "kind": "html",
+      "chars": 56165,
+      "sha256": "1ad826494c18430aaa3d7fa6f95e931920aba70094aade074e166aa45296299e"
+    },
+    {
+      "id": "04",
+      "name": "US Department of Agriculture",
+      "text": "FoodData Central, \"Spinach, raw\" (SR Legacy, FDC ID 168462, published 1 April 2019): iron, 2.71 mg per 100 g. The link is the FoodData Central API record, because the site's food pages answer scripted requests with a 404.",
+      "url": "https://api.nal.usda.gov/fdc/v1/food/168462?api_key=DEMO_KEY&nutrients=303",
+      "status": "manual",
+      "error": "HTTP 429",
+      "chars": 2789,
+      "sha256": "6e17b47e78f2a9a36f05401871773bc4bcb80eb840fd89a2bad95e9fd56dee6e"
+    }
+  ]
+}

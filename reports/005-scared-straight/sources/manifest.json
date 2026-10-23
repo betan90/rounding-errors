@@ -1,0 +1,77 @@
+{
+  "exhibit": "005",
+  "fetchedAt": "2026-10-23T13:12:26.306Z",
+  "sources": [
+    {
+      "id": "01",
+      "name": "Petrosino et al.",
+      "text": "\"Scared Straight\" and Other Juvenile Awareness Programs, Campbell/Cochrane systematic review (2013): 9 randomized trials, OR 1.68 (95% CI 1.20 to 2.36), crime increased 1% to 28%, harm robust to removing the Finckenauer study; the 41% vs 11% figures as reported.",
+      "url": null,
+      "status": "no-url"
+    },
+    {
+      "id": "02",
+      "name": "US National Institute of Justice",
+      "text": "CrimeSolutions practice profile, Juvenile Awareness Programs (Scared Straight): rated \"Ineffective\"; the evaluation found participation increases the odds of future offending.",
+      "url": "https://crimesolutions.ojp.gov/ratedpractices/juvenile-awareness-programs-scared-straight",
+      "status": "fetched",
+      "kind": "html",
+      "chars": 13627,
+      "sha256": "2dac629ae2983789708d2bdb7742ffdb177555687db30b98cf9ca49237954ffe"
+    },
+    {
+      "id": "03",
+      "name": "Office of Justice Programs",
+      "text": "abstracts, Scared Straight: The Myth That Roared and Scared Straight! and the Panacea Phenomenon (Finckenauer): the 80 to 90% claim, the Lifers'-Group-and-county-judge survey with no follow-up or record of non-replies, the 38-state spread.",
+      "url": null,
+      "status": "no-url"
+    },
+    {
+      "id": "04",
+      "name": "UK College of Policing",
+      "text": "Crime Reduction Toolkit, \"Scared Straight programmes\" (first published 19 Feb 2015; PDF saved by the author and read directly): rates the effect \"very strong\" evidence of an overall rise in crime. Citing Petrosino et al. 2013 (9 studies): after accounting for bias, reoffending was 68% higher among participants than non-participants, higher in 7 of 9 studies. Citing Aos et al. 2006: net cost to the taxpayer of $14,667 per participant, after accounting for the cost of the additional crimes the programme caused. Conclusion: \"a backfire effect of the programme.\"",
+      "url": "https://www.college.police.uk/research/crime-reduction-toolkit/scared-straight",
+      "status": "fetched",
+      "kind": "html",
+      "chars": 7753,
+      "sha256": "4a89069b6babb3368b6e723149493511aa7873fb7647f142476be8c4f6aa1fc6"
+    },
+    {
+      "id": "05",
+      "name": "Variety",
+      "text": "Beyond Scared Straight review, confirmed by direct fetch: A&E, premiered Thursday, Jan. 13, 2011, 10 p.m., 90 minutes; produced by Arnold Shapiro Prods., the original 1978 film's own producer.",
+      "url": "https://variety.com/2011/tv/reviews/beyond-scared-straight-1117944288/",
+      "status": "fetched",
+      "kind": "html",
+      "chars": 5323,
+      "sha256": "cdc79e835dc13000834fd9da4a0b22e31d963606b2b132e312f600270f281b61"
+    },
+    {
+      "id": "06",
+      "name": "Hollywood Reporter",
+      "text": "Hollywood Flashback (2018), confirmed by direct fetch: Scared Straight! \"went on to win an Academy Award for feature documentary,\" unusual since it lacked the theatrical release the Academy then preferred.",
+      "url": "https://www.hollywoodreporter.com/movies/movie-news/hollywood-flashback-a-dire-message-1978s-scared-straight-led-oscar-1054793/",
+      "status": "fetched",
+      "kind": "html",
+      "chars": 5491,
+      "sha256": "7a1792e8d89db7b122e4391965b33a7a0e3aaa2db6e34e7b7d181163e6d424d0"
+    },
+    {
+      "id": "07",
+      "name": "Robinson and Slowikowski",
+      "text": "Baltimore Sun op-ed (Jan 31, 2011), confirmed by direct fetch: authors Laurie O. Robinson (Assistant Attorney General, Office of Justice Programs) and Jeff Slowikowski (Acting Administrator, Office of Juvenile Justice and Delinquency Prevention): \"scared straight is not only ineffective but is potentially harmful\"; \"the study strongly suggested the program caused harm.\"",
+      "url": "https://www.baltimoresun.com/opinion/bs-xpm-2011-01-31-bs-ed-scared-straight-20110131-story.html",
+      "status": "fetched",
+      "kind": "html",
+      "chars": 6649,
+      "sha256": "6cca7a2a33645dc9a0bd166b2806209e0dc285fdc96bea4695227d0de426bcf4"
+    },
+    {
+      "id": "08",
+      "name": "US DOJ COPS Office",
+      "text": "publication on juvenile awareness programs: the film's 9-of-10 claim, congressional hearings, randomization caveats in Finckenauer and Yarborough.",
+      "url": null,
+      "status": "no-url"
+    }
+  ]
+}

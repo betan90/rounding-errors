@@ -1,0 +1,190 @@
+{
+  "exhibit": "007",
+  "reviewedAt": "2026-10-23T13:21:31.344Z",
+  "model": "deepseek-chat",
+  "servedBy": [
+    "deepseek-flash"
+  ],
+  "sourceCharacters": 15655,
+  "claims": [
+    {
+      "id": 1,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01",
+        "02",
+        "06"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "NOT SUPPORTED",
+      "quote": "NONE",
+      "quoteFound": null,
+      "sourceComplete": true,
+      "reasoning": "The claim is a fragment with no verifiable assertion about figures, dates, names or quotations that can be checked against the sources.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 2,
+      "mode": "passage",
+      "notFetched": [
+        "03"
+      ],
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states mortality rates leveled at approximately 7500 steps/d, matching the claim's plateau figure.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 3,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01",
+        "02",
+        "06"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "SUPPORTED",
+      "quote": "“There were no actual studies that had looked at ‘10,000 steps,’” at the time the Yamasa pedometer was developed",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "Source 02 quotes I-Min Lee stating no actual studies had looked at 10,000 steps when the Yamasa pedometer was developed, and Source 01 likewise says the 10,000 goal \"is not based on science,\" supporting the claim of zero peer-reviewed studies at launch.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 4,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01",
+        "02",
+        "06"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "SUPPORTED",
+      "quote": "In 1965, Yamasa Tokei Keiki, a Japanese clock and instrument company, released the first consumer pedometer and fitness wearable. The launch came in the aftermath of the 1964 Tokyo Olympics",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "Source 02 states the 1965 release by Yamasa Tokei Keiki of the Manpo-kei (\"ten-thousand step-meter\") in the aftermath of the 1964 Tokyo Olympics, matching the claim's figures, names and context.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 5,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01",
+        "02",
+        "06"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "SUPPORTED",
+      "quote": "“There were no actual studies that had looked at ‘10,000 steps,’”",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "Source 02 attributes this exact quotation to I-Min Lee, matching the claim's wording.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 6,
+      "mode": "passage",
+      "notFetched": [
+        "03"
+      ],
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states 16,741 women met inclusion criteria, which is roughly 17,000 older women (mean age 72.0), consistent with the claim's description.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 7,
+      "mode": "passage",
+      "notFetched": [
+        "03"
+      ],
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states mortality rates progressively decreased before leveling at approximately 7500 steps/d, matching the claim's description of falling risk that flattens around 7,500 steps.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 8,
+      "mode": "passage",
+      "notFetched": [
+        "03"
+      ],
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states mortality rates leveled off at approximately 7,500 steps/day, implying no further reduction beyond that point, consistent with equal risk at 7,500 and 10,000 steps.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 9,
+      "mode": "passage",
+      "notFetched": [
+        "04"
+      ],
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "No passage was provided, so there is no text to support the claim.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 10,
+      "mode": "passage",
+      "notFetched": [
+        "05"
+      ],
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage directly states that participants taking at least 7000 steps/d had a 50% to 70% lower risk of mortality compared with those taking fewer than 7000 steps/d.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 11,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01",
+        "02",
+        "06"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "SUPPORTED",
+      "quote": "Shape Up America! is a program that was founded in 1994 by Dr. C Everett Koop (a former U.S. Surgeon General) and its goal was to (and still is to) promote a healthy lifestyle by providing such information for the American people to do so. This program introduced the 10,000 steps a day recommendation for proper weight and exercise management.",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "Source 06 states the 10,000 steps recommendation was introduced in the U.S. by Shape Up America!, founded in 1994 by former Surgeon General C. Everett Koop, matching the claim's \"former Surgeon General in the 1990s.\"",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 12,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01",
+        "02",
+        "06"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "NOT SUPPORTED",
+      "quote": "NONE",
+      "quoteFound": null,
+      "sourceComplete": true,
+      "reasoning": "Neither source contains the quoted sentence or any statement about a brand name, claims made under oath, or Yamasa pretending to run a clinical trial; the sources only describe the Manpo-kei pedometer's marketing origins.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 13,
+      "mode": "full-text",
+      "sourcesUsed": [
+        "01",
+        "02",
+        "06"
+      ],
+      "notFetched": [],
+      "truncated": false,
+      "verdict": "SUPPORTED",
+      "quote": "“There were no actual studies that had looked at ‘10,000 steps,’” at the time the Yamasa pedometer was developed, I-Min Lee , an epidemiologist at Harvard Medical School, tells Popular Science.",
+      "quoteFound": true,
+      "sourceComplete": true,
+      "reasoning": "Source 02 identifies I-Min Lee as a Harvard Medical School epidemiologist who studies steps and mortality and attributes the provenance quote to her, though the claim's paraphrase \"put the provenance plainly\" is a characterization rather than a direct quote.",
+      "servedBy": "deepseek-flash"
+    }
+  ]
+}

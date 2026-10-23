@@ -1,0 +1,62 @@
+{
+  "exhibit": "013",
+  "fetchedAt": "2026-10-23T13:13:16.706Z",
+  "sources": [
+    {
+      "id": "01",
+      "name": "Vreeman RC, Carroll AE",
+      "text": "\"Medical myths,\" BMJ 2007;335:1288-1289 (22 Dec 2007): 8 glasses as 1 of 7 myths; the \"popular press\" line; the 1945 recommendation as quoted, offered as \"one origin\" that \"may\" explain the rule; the \"last, crucial sentence\" reading; Frederick Stare's \"6 to 8 glasses\" recommendation, quoted as made \"without references\"; Valtin's review as the catalogue of \"complete lack of evidence\"; the hyponatraemia warning.",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2151163/",
+      "status": "fetched",
+      "kind": "html",
+      "chars": 16194,
+      "sha256": "1d4e77881bebbd4c155dda94ec8b4cd3b382cf198d630cfb8fef514defa2380c"
+    },
+    {
+      "id": "02",
+      "name": "Valtin H",
+      "text": "\"'Drink at least eight glasses of water a day.' Really? Is there scientific evidence for '8 x 8'?\" Am J Physiol Regul Integr Comp Physiol 2002;283:R993-R1004: the caffeine and alcohol amendment; the search method; \"No scientific studies were found in support of 8 x 8\"; caffeinated drinks and beer in moderation may count; scope (healthy, sedentary adults, temperate climate); the caveat on disease, exercise, and heat; \"difficult or impossible to prove a negative.\"",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/12376390/",
+      "status": "failed",
+      "error": "only 129 characters of text"
+    },
+    {
+      "id": "03",
+      "name": "The Physiologist (American Physiological Society)",
+      "text": "Marijke Vroomen Durning, \"The Science of Hydration\" (July 2021): attribution of the 1945 guideline to the US Food and Nutrition Board, and the \"added bit of information\" that \"seems to have been lost over the years.\"",
+      "url": "https://www.physiology.org/publications/news/the-physiologist-magazine/2021/july/the-science-of-hydration",
+      "status": "failed",
+      "error": "only 0 characters of text"
+    },
+    {
+      "id": "04",
+      "name": "National Academies",
+      "text": "News release (11 Feb 2004) on the Institute of Medicine's Dietary Reference Intakes for water: 2.7 L and 3.7 L of total water; about 80% from beverages including caffeinated ones, 20% from food; \"letting thirst be their guide\"; Lawrence Appel's \"We don't offer any rule of thumb\" quote.",
+      "url": "https://www.nationalacademies.org/news/report-sets-dietary-intake-levels-for-water-salt-and-potassium-to-maintain-health-and-reduce-chronic-disease-risk",
+      "status": "fetched",
+      "kind": "html",
+      "chars": 15843,
+      "sha256": "e552e0d5a6d1515b5340e6d5c7177e0abc275788e43e73a814c0d795361766d0"
+    },
+    {
+      "id": "05",
+      "name": "Institute of Medicine",
+      "text": "Dietary Reference Intakes for Water, Potassium, Sodium, Chloride, and Sulfate (released 2004, published 2005), chapter 4, \"Water\": the adequate intakes for ages 19 to 30 set at NHANES III median intakes; \"no single daily total water requirement for a given person\"; the 33.8 fl oz per litre conversion used for the ledger arithmetic (64 oz is about 1.9 L; 2.5 L is about 10.6 8-ounce glasses); Valtin 2002 in the reference list.",
+      "url": "https://www.nationalacademies.org/read/10925/chapter/6",
+      "status": "fetched",
+      "kind": "html",
+      "chars": 324269,
+      "sha256": "c041ca74dafa7eb613428e59c0a481c796fe7dd19453f848cc2bf2514468fac5"
+    },
+    {
+      "id": "06",
+      "name": "NHS",
+      "text": "\"Water, drinks and hydration\" (last reviewed 17 May 2023): the Eatwell Guide's \"6 to 8 cups or glasses of fluid a day\"; \"This is just a guide\"; tea and coffee count.",
+      "url": "https://www.nhs.uk/live-well/eat-well/food-guidelines-and-food-labels/water-drinks-nutrition/",
+      "status": "fetched",
+      "kind": "html",
+      "chars": 3171,
+      "sha256": "6420940a1a24f9bab500a6f2696c0be221f2b2022675c86229e856c1fa2de089"
+    }
+  ]
+}

@@ -172,7 +172,7 @@ function facts(t: any): Array<[string, string]> {
 
   <h2 class="method-h">How it got here</h2>
   <p class="method-none">
-    Each row is a change to how exhibits get made, oldest first, with the commits that made it. A new tool is tried on 1 exhibit, then kept or dropped; either way it gets a row here in the same commit. The build fails if a listed commit doesn't exist or the rows are out of order.
+    Each row is a change to how exhibits get made, oldest first, with the commits that made it. A new tool is tried on 1 exhibit, then kept or dropped; either way it gets a row here, in the commit straight after the change, because the row cites that change's commit. The build fails if a listed commit doesn't exist or the rows are out of order.
   </p>
   <dl class="correction-body method-list">
     {

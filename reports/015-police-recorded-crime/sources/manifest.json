@@ -1,0 +1,84 @@
+{
+  "exhibit": "015",
+  "fetchedAt": "2026-10-23T14:00:16.091Z",
+  "sources": [
+    {
+      "id": "01",
+      "name": "UK Statistics Authority",
+      "text": "Assessment Report 268, \"Statistics on Crime in England and Wales\", January 2014 (published 15 January 2014): \"there is accumulating evidence that suggests the underlying data on crimes recorded by the police may not be reliable\" (para 1.2.3); the removal of the National Statistics designation from statistics based on recorded crime data until ONS can demonstrate that the quality of the underlying data and the audit and quality assurance procedures \"are sufficient\" (para 1.2.5).",
+      "url": "https://osr.statisticsauthority.gov.uk/wp-content/uploads/sites/3/2015/12/images-assessmentreport268statisticsoncrimeinenglandandwale_tcm97-43508-1.pdf",
+      "status": "fetched",
+      "kind": "pdf",
+      "chars": 89512,
+      "sha256": "56604b14e95b2a5085e12ec947823676ade599ad7187dd9540e9dd81db5618a9"
+    },
+    {
+      "id": "02",
+      "name": "House of Commons Public Administration Select Committee",
+      "text": "\"Caught red-handed: Why we can't count on Police Recorded Crime statistics\", Thirteenth Report of Session 2013-14, HC 760, 9 April 2014: the summary's finding that misrecording had become \"ingrained, including within senior leadership\" and led to \"the subordination of data integrity to target-chasing\"; \"We deprecate the use of targets in the strongest possible terms\"; the end of regular external audit in 2007 \"was a mistake\"; the January 2014 removal of the designation (para 1); the contact from PC James Patrick, \"acting as a whistleblower\" (para 2).",
+      "url": "https://publications.parliament.uk/pa/cm201314/cmselect/cmpubadm/760/760.pdf",
+      "status": "fetched",
+      "kind": "pdf",
+      "chars": 138801,
+      "sha256": "3ed363e81fb4a9a5ca8ea00381b5b8876a7cec75b44cb643eb611310913c7f7e"
+    },
+    {
+      "id": "03",
+      "name": "HM Inspectorate of Constabulary",
+      "text": "\"Crime-recording: making the victim count\", November 2014: over 800,000 reported crimes unrecorded each year, an under-recording of 19%, with 33% for violence against the person and 26% for sexual offences, \"wholly unacceptable\" (para 1.16); the 800,000 as an estimate, made by applying the audit's 81% recording rate to police-recorded crime for the 12 months ending July 2014 (footnote 7); 664 incorrect of 3,246 no-crime decisions reviewed, including over 200 rapes (para 1.17); 96% of records classified correctly (para 1.19); \"We looked for hard evidence of improper practices (such as dishonest manipulation) in crime-recording as a result of performance pressure... but relatively little was found\", followed by \"a number of forces accepted that undue performance pressure had adversely affected crime-recording in the past, and the culture of chasing targets as ends in themselves had distorted crime-recording decisions\" (summary and conclusions); the inspection covered all 43 Home Office-funded police forces.",
+      "url": "https://web.archive.org/web/20160304205055/http://www.justiceinspectorates.gov.uk/hmic/wp-content/uploads/crime-recording-making-the-victim-count.pdf",
+      "status": "failed",
+      "error": "HTTP 429"
+    },
+    {
+      "id": "04",
+      "name": "Office for Statistics Regulation",
+      "text": "\"The quality of police recorded crime statistics for England and Wales\", 16 May 2024: police-recorded crime published as \"official statistics, not accredited official statistics\" since the 2014 removal; the review as \"the first step towards the statistics being considered for reaccreditation\"; the CSEW also not accredited \"due to challenges with response rates\"; recording accuracy from 80.5% (± 2.0%) in 2014 to 92.4% (± 0.3%) at the end of the 2021 to 2022 inspection programme, \"a statistically significant change\".",
+      "url": "https://osr.statisticsauthority.gov.uk/publications/the-quality-of-police-recorded-crime-statistics-for-england-and-wales/",
+      "status": "fetched",
+      "kind": "html",
+      "chars": 25161,
+      "sha256": "56b2d3f31709d8460d38019b2da4f179cba71901701e8e37426079e68ecad4ef"
+    },
+    {
+      "id": "05",
+      "name": "Office for Statistics Regulation",
+      "text": "Letter, Ed Humpherson to Jen Woolford, 17 October 2024: \"We are pleased to confirm the reaccreditation of the CSEW estimates, starting from the next release of the statistics on 24 October 2024.\"",
+      "url": "https://osr.statisticsauthority.gov.uk/correspondence/ed-humpherson-to-jen-woolford-accreditation-of-the-estimates-from-the-crime-survey-for-england-and-wales/",
+      "status": "fetched",
+      "kind": "html",
+      "chars": 5840,
+      "sha256": "22636dfcc5b6fa4cdfdf7a1f71e689f79ad7b2831fbbb6481f91786dcb93d153"
+    },
+    {
+      "id": "06",
+      "name": "Office for National Statistics",
+      "text": "\"Crime in England and Wales: year ending March 2026\", released 23 July 2026, describes itself as \"Accredited official statistics using data from the Crime Survey for England and Wales (CSEW) and official statistics using data from police recorded crime.\"",
+      "url": "https://www.ons.gov.uk/peoplepopulationandcommunity/crimeandjustice/bulletins/crimeinenglandandwales/yearendingmarch2026",
+      "status": "fetched",
+      "kind": "html",
+      "chars": 49677,
+      "sha256": "a6a63fe9f089146b6ec45a444083919be27e2bc5eb1ea3edeb60d22def622826"
+    },
+    {
+      "id": "07",
+      "name": "Office for National Statistics",
+      "text": "\"Crime in England and Wales: year ending March 2016\": the CSEW \"provides the better measure of trends\"; police-recorded crime \"is, generally, not a reliable measure of trends in crime\" and is \"prone to changes in recording practices and police activity\"; police-recorded crime up 8% in the year, of which \"most of the latest rise is thought to be due to improved crime recording practices and processes\".",
+      "url": "https://www.ons.gov.uk/peoplepopulationandcommunity/crimeandjustice/bulletins/crimeinenglandandwales/yearendingmar2016",
+      "status": "fetched",
+      "kind": "html",
+      "chars": 118087,
+      "sha256": "d0f4961fd768505ba112e29ed451d9b1284ecf8effa2dc04adf4dd8c8d0a6e24"
+    },
+    {
+      "id": "08",
+      "name": "Office for National Statistics",
+      "text": "Figure 1 data, same bulletin: \"Trends in Crime Survey for England and Wales and police recorded crime, year ending December 1981 to year ending March 2016\", thousands. Supports the chart and the year ending March 2016 movements: CSEW 6,764 to 6,334 (down 6%), police-recorded crime 4,174 to 4,514 (up 8%). The 2 series cover different offence sets; only directions are compared. ONS's own footnote: \"Police recorded crime data are not designated as National Statistics.\"",
+      "url": "https://www.ons.gov.uk/file?uri=/peoplepopulationandcommunity/crimeandjustice/bulletins/crimeinenglandandwales/yearendingmar2016/b80b6e16.xls",
+      "status": "fetched",
+      "kind": "text",
+      "chars": 223857,
+      "sha256": "89a687ea0ef0349be3303b5f27d3811f961f95469720318568860d4be1d7817c"
+    }
+  ]
+}
