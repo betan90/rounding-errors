@@ -227,6 +227,12 @@ export const eras = [
     why: 'Rules written as requests kept getting broken. The hook catches a problem as it is written; the build catches anything that arrived another way. The fact-checker got the larger model after 006 and 3 rounds on 012.',
     commits: ['d0602ca', '54c5864', 'c66225f', 'c2751cf', '6246d93'],
   },
+  {
+    name: 'A second opinion that reads the source',
+    changed: 'DeepSeek now gets the full text of each cited source, not the passage the fact-checker chose, and must quote the sentence it relied on; a script checks the quote is in the source. The texts are fetched by script and kept off the repo; a tracked manifest records each one.',
+    why: 'Given only the fact-checker\'s passage, it could only check that choice, and through exhibit 017 it never caught an error the fact-checker missed. Rerun on 407 claims, it found 1: exhibit 002 dated a charge on the strength of an undated page. It also missed exact sentences in long documents, so its "not supported" is a reason to look, not a verdict.',
+    commits: ['59f09ad', 'a8b9567'],
+  },
 ];
 
 // Shown for a kind of tooling the repo doesn't use yet. When the first one
