@@ -17,6 +17,7 @@ import GreeceDeficitChart from '../components/GreeceDeficitChart.astro';
 import DebtGrowthChart from '../components/DebtGrowthChart.astro';
 import PheBacklogChart from '../components/PheBacklogChart.astro';
 import PoliceCrimeChart from '../components/PoliceCrimeChart.astro';
+import IllegalGdpChart from '../components/IllegalGdpChart.astro';
 import ChartPending from '../components/ChartPending.astro';
 import { withBase } from '../lib/paths';
 
@@ -53,6 +54,7 @@ const { Content } = await entry.render();
   {data.exhibit === '012' && <DebtGrowthChart />}
   {data.exhibit === '014' && <PheBacklogChart />}
   {data.exhibit === '015' && <PoliceCrimeChart />}
+  {data.exhibit === '017' && <IllegalGdpChart />}
   {data.chartNote && <ChartPending note={data.chartNote} />}
 
   <Ledger title={data.ledgerTitle} rows={data.ledger} note={data.ledgerNote} />

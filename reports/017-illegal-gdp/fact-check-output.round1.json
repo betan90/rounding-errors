@@ -1,0 +1,350 @@
+{
+  "exhibit": "017",
+  "checkedAt": "2026-10-23T18:00:00Z",
+  "claims": [
+    {
+      "id": 1,
+      "claim": "title: \"c. 58,000 prostitutes, minus 12 weeks' holiday\"",
+      "source": "ONS 2014 (Abramsky & Drew, unsiap mirror; ons2014-flat.txt); ONS Blue Book 2016 revisions",
+      "passage": "Adding these and scaling up by UK population [Assumption 5] gives c. 58,000 prostitutes in the whole country. / As a further refinement, allowance was made to reduce the estimates made for prostitution in household final consumption expenditure by a factor to reflect the holiday taken by prostitutes. Statistics Netherlands have estimated the total holidays to be 12 weeks per year and the same factor has been applied to the UK estimates.",
+      "verdict": "SUPPORTED",
+      "notes": "Both numbers trace; the holiday cut weeks worked (spending), not the head count, but the title reads as 12 weeks per prostitute, which is what ONS applied, so it is compressed rather than wrong."
+    },
+    {
+      "id": 2,
+      "claim": "status: \"still published: ONS series MNC8 runs 1985 to 2024, last released 31 October 2025\"",
+      "source": "ONS time series MNC8 (CSV generator, fetched live; mnc8.csv)",
+      "passage": "\"Title\",\"12.2 Prostitution CP NSA £m\" \"CDID\",\"MNC8\" \"Release date\",\"31-10-2025\" ... \"1985\",\"1078\" ... \"2024\",\"6431\"",
+      "verdict": "SUPPORTED",
+      "notes": "The CSV's first year is 1985, its last is 2024, and its release date is 31-10-2025."
+    },
+    {
+      "id": 3,
+      "claim": "teaser: \"illegal drugs and prostitution in UK GDP, built on assumptions ONS called \\\"arbitrary\\\" and \\\"probably false\\\"\"",
+      "source": "ONS 2014 (ons2014-flat.txt)",
+      "passage": "We assume that half of cannabis sold in the UK is imported and half home-grown. This is an arbitrary assumption. / This assumption is probably false, but we have no data to challenge it.",
+      "verdict": "SUPPORTED",
+      "notes": "ONS applies both words to its own assumptions."
+    },
+    {
+      "id": 4,
+      "claim": "ledger: \"Illegal activity added to the level of GDP (Patterson, ONS, 2014): up to £10 billion a year\"",
+      "source": "Patterson, Civil Service Quarterly blog, 15 Oct 2014",
+      "passage": "ONS desk research (please note the italics for emphasis!) into the numbers of prostitutes and the price of drugs yielded the result that spending on these illegal activities in the UK contributes up to £10 billion a year to the level of GDP.",
+      "verdict": "SUPPORTED",
+      "notes": "This is Patterson's wording, and the row attributes it to him."
+    },
+    {
+      "id": 5,
+      "claim": "ledger: \"Prostitutes in the UK, scaled from 2004 London estimates (ONS 2014): c. 58,000\"; body: \"Scaled by population, that \\\"gives c. 58,000 prostitutes in the whole country.\\\"\"",
+      "source": "ONS 2014 (ons2014-flat.txt)",
+      "passage": "Adding these and scaling up by UK population [Assumption 5] gives c. 58,000 prostitutes in the whole country. ... London contains the same proportion of UK prostitutes as it does of UK population. This is used to scale up the London estimates of a study on prostitution.",
+      "verdict": "SUPPORTED",
+      "notes": "The scaling uses total UK population, not the 16+ male population (which only drives the time series), so 'scaled by population' is correct."
+    },
+    {
+      "id": 6,
+      "claim": "ledger and body: clients per week following \"a Netherlands assumption\", 20, 25 and 30",
+      "source": "ONS 2014 (ons2014-flat.txt)",
+      "passage": "Following a Netherlands assumption with some research support, quoted in Smekens and Verbruggen (2005), we calculate estimates based on 20, 25 and 30.",
+      "verdict": "SUPPORTED",
+      "notes": "The quote and all three figures match."
+    },
+    {
+      "id": 7,
+      "claim": "ledger and body: price per visit £55 in 2004, from Punternet",
+      "source": "ONS 2014 (ons2014-flat.txt)",
+      "passage": "The method is to calculate W following an estimate from Punternet supported by a 2004 journal article. This is �55 in 2004.",
+      "verdict": "SUPPORTED",
+      "notes": "The pound sign is mangled in the text extraction (�); the value is £55."
+    },
+    {
+      "id": 8,
+      "claim": "body: \"Footnote 12, for Punternet, is a Wikipedia URL.\"",
+      "source": "ONS 2014 (ons2014-flat.txt)",
+      "passage": "This was estimated based on research on Punternet12 ... 12 http://en.wikipedia.org/wiki/Punternet",
+      "verdict": "SUPPORTED",
+      "notes": "Footnote 12 is that Wikipedia URL, and the exhibit describes it without citing it."
+    },
+    {
+      "id": 9,
+      "claim": "ledger: \"Illegal production, 2010: drugs / prostitution / total, % of GDP (ONS FOI reply): 0.24% / 0.35% / 0.58%\"",
+      "source": "ONS FOI \"Illegal Production (N2)\" (fetched live; foi.txt)",
+      "passage": "Total N2 for 2010 = £9097 (million). Total GDP (Production) = £1555548 (million). N2 as % of GDP = 0.58% Drugs % of GDP = 0.24% Prostitution % of GDP = 0.35%",
+      "verdict": "SUPPORTED",
+      "notes": "All 3 percentages match; 9097/1555548 = 0.585%."
+    },
+    {
+      "id": 10,
+      "claim": "ledger (gap row) and body: prostitution 2010 \"£5.6bn (current prices)\" (FOI) vs £4,370m (MNC8 today)",
+      "source": "ONS FOI (foi.txt); ONS MNC8 CSV (fetched live)",
+      "passage": "Prostitution is accounted for in COICOP 12.2 in HHFCE. The value for 2010 is £5.6bn (current prices), which is 0.4% of GDP. / \"2010\",\"4370\"",
+      "verdict": "SUPPORTED",
+      "notes": "Both figures are COICOP 12.2 household spending, so the comparison is like for like; the FOI release date is 6 November 2015, which is before Blue Book 2016, and the exhibit does not state that date."
+    },
+    {
+      "id": 11,
+      "claim": "body: \"ONS does not attribute the difference. This site's arithmetic: £4,370m is 78% of £5.6bn, and 40 weeks is 77% of 52.\"",
+      "source": "derived from ONS FOI, MNC8, Blue Book 2016",
+      "passage": "The value for 2010 is £5.6bn (current prices) / \"2010\",\"4370\" / Statistics Netherlands have estimated the total holidays to be 12 weeks per year",
+      "verdict": "SUPPORTED",
+      "notes": "4370/5600 = 78.0% and 40/52 = 76.9%; the inputs trace, and the calculation is labelled as this site's in the body and the disclosure."
+    },
+    {
+      "id": 12,
+      "claim": "ledger: \"Holiday allowed per year, from Statistics Netherlands (ONS, Blue Book 2016): 12 weeks\"; body quotes on holiday",
+      "source": "ONS Revisions to GDP in Blue Book 2016 (fetched live; bb2016.txt)",
+      "passage": "As a further refinement, allowance was made to reduce the estimates made for prostitution in household final consumption expenditure by a factor to reflect the holiday taken by prostitutes. Statistics Netherlands have estimated the total holidays to be 12 weeks per year and the same factor has been applied to the UK estimates.",
+      "verdict": "SUPPORTED",
+      "notes": "Both quotes match the source character for character."
+    },
+    {
+      "id": 13,
+      "claim": "ledger: \"Prostitution spending, 2019 / 2020 / 2024 (MNC8): £5,993m / £4,130m / £6,431m\"; body same",
+      "source": "ONS MNC8 CSV (fetched live)",
+      "passage": "\"2019\",\"5993\" \"2020\",\"4130\" \"2024\",\"6431\"",
+      "verdict": "SUPPORTED",
+      "notes": "All 3 values match the CSV."
+    },
+    {
+      "id": 14,
+      "claim": "ledgerNote: \"MNC8 is modelled, not observed: ONS's method varies a 2004 point estimate by the 16+ male population and the CPI.\"",
+      "source": "ONS 2014 (ons2014-flat.txt); MNC8 CSV",
+      "passage": "As there is no time series, we vary the point estimates in time using the male population (Assumption 1). ... This is varied through time using the CPI for the personal services product (CPA: 96). / \"2019\",\"5993\" \"2020\",\"4130\"",
+      "verdict": "PARTIALLY SUPPORTED",
+      "notes": "This describes the 2014 method in the present tense as the method behind today's MNC8, but MNC8 falls 31% from 2019 to 2020, which neither the 16+ male population nor a price index can produce, Blue Book 2016 added a holiday factor, and no listed source documents the current method."
+    },
+    {
+      "id": 15,
+      "claim": "ledgerNote: \"ONS publishes both 2010 figures and does not attribute the difference between them.\"",
+      "source": "ONS FOI; MNC8; Blue Book 2016",
+      "passage": "The value for 2010 is £5.6bn (current prices) / \"2010\",\"4370\"",
+      "verdict": "SUPPORTED",
+      "notes": "Both figures are published, and none of the fetched ONS pages links them."
+    },
+    {
+      "id": 16,
+      "claim": "verdict Fraud detected: \"none. Every assumption was published, most with a grade from its authors: \\\"weak\\\", \\\"controversial\\\", \\\"arbitrary\\\", \\\"probably false\\\".\"",
+      "source": "ONS 2014 (ons2014-flat.txt)",
+      "passage": "This is a weak assumption based on the market for prostitutes' services. / This is a controversial assumption / This is an arbitrary assumption. / This assumption is probably false",
+      "verdict": "PARTIALLY SUPPORTED",
+      "notes": "All 4 words are ONS's own, and 'most' holds only if 'reasonable', 'self-evident' and 'intuition' count as grades; roughly 11 of about 26 assumptions get a negative grade, so the list of negative grades slightly overstates."
+    },
+    {
+      "id": 17,
+      "claim": "verdict Rules broken: \"none. The rule required the estimate: ESA95 included consensual illegal transactions in production, and ONS records \\\"no changes in this area\\\" in ESA 2010.\"",
+      "source": "ONS 2014 (ons2014-flat.txt)",
+      "passage": "states that illegal transactions to which all units involved consent are included within the production boundary ... 1 This is also the case within ESA95's successor, ESA 2010; see Eurostat (2010), section 1.79. There are no changes in this area between ESA95 and ESA10.",
+      "verdict": "SUPPORTED",
+      "notes": "Fair for the 2014 estimate, though Blue Book 2016 frames the change as 'addressing a GNI ESA 1995 reservation', which implies the UK had not complied before 2014."
+    },
+    {
+      "id": 18,
+      "claim": "verdict Usefulness: \"limited by ONS's own account: the estimates are \\\"partly based\\\" on assumptions, \\\"especially\\\" for prostitution. Required for comparability regardless.\"",
+      "source": "ONS 2014; Patterson blog",
+      "passage": "such calculation requires a number of assumptions on which the estimates are, therefore, partly based. This applies especially to the estimates of prostitution activity. / Comparability between nations dictates that all countries include it in their GDP figures.",
+      "verdict": "SUPPORTED",
+      "notes": "Both quoted words, and the comparability point, trace to the sources."
+    },
+    {
+      "id": 19,
+      "claim": "verdictNote: \"ONS's 2014 method says \\\"there is no time series\\\" for prostitution.\"",
+      "source": "ONS 2014 (ons2014-flat.txt)",
+      "passage": "As there is no time series, we vary the point estimates in time using the male population (Assumption 1).",
+      "verdict": "SUPPORTED",
+      "notes": "The quote matches the source."
+    },
+    {
+      "id": 20,
+      "claim": "verdictNote: \"Series MNC8 now runs from 1985, 29 years before the first estimate was published, varied from a 2004 point estimate by the male population and a price index.\"",
+      "source": "MNC8 CSV; ONS 2014",
+      "passage": "\"1985\",\"1078\" / The benchmark for extrapolation is set as 2004. / Volume is extrapolated using the male population aged 16+ (Census) / Price is extrapolated using CPI for Personal Services / \"2019\",\"5993\" \"2020\",\"4130\"",
+      "verdict": "PARTIALLY SUPPORTED",
+      "notes": "1985 and the 29 years (1985 to 2014) hold, but 'now ... varied ... by the male population and a price index' says today's series still uses the 2014 method, which the 2020 drop of 31%, the Blue Book 2016 holiday factor, and the lack of any current-method source all contradict or fail to support."
+    },
+    {
+      "id": 21,
+      "claim": "verdictNote: \"The chart above plots it.\"",
+      "source": "src/layouts/ExhibitLayout.astro",
+      "passage": "",
+      "verdict": "NOT SUPPORTED",
+      "notes": "No 017 chart is wired in ExhibitLayout.astro yet, so no DATA block could be checked; this is a build-state issue, not a factual error."
+    },
+    {
+      "id": 22,
+      "claim": "body: \"In 2014 the UK added illegal drugs and prostitution to its national accounts.\"",
+      "source": "ONS 2014; Patterson blog",
+      "passage": "ONS will therefore be including illegal drugs and prostitution activity within the estimates of UK GDP and its components, starting with the publication of Blue Book 2014 in September 2014. / The main national accounts dataset was published on 30 September",
+      "verdict": "SUPPORTED",
+      "notes": "Introduced with Blue Book 2014 figures in September 2014."
+    },
+    {
+      "id": 23,
+      "claim": "body: GNI \"is used in the calculation of a Member State's contribution to the EU budget\"",
+      "source": "ONS 2014",
+      "passage": "It is used in the calculation of a Member State's contribution to the EU budget.",
+      "verdict": "SUPPORTED",
+      "notes": "Verbatim."
+    },
+    {
+      "id": 24,
+      "claim": "body: \"a 2012 audit of EU methods had identified areas for improvement \\\"which Member States have to address by 2014.\\\"\"",
+      "source": "ONS 2014",
+      "passage": "In 2012, following a comprehensive audit of the methods used across EU countries, a number of areas for improvement were identified which Member States have to address by 2014.",
+      "verdict": "SUPPORTED",
+      "notes": "The quote is verbatim, and 'audit of EU methods' is a fair compression of 'audit of the methods used across EU countries' (a Eurostat audit)."
+    },
+    {
+      "id": 25,
+      "claim": "body: ESA95 section 1.13 \"states that illegal transactions to which all units involved consent are included within the production boundary\"",
+      "source": "ONS 2014",
+      "passage": "The European System of National Accounts 1995 (ESA95) - see Eurostat (1996), section 1.13 - states that illegal transactions to which all units involved consent are included within the production boundary",
+      "verdict": "SUPPORTED",
+      "notes": "Verbatim."
+    },
+    {
+      "id": 26,
+      "claim": "body: ONS added: \"There are no changes in this area between ESA95 and ESA10.\"",
+      "source": "ONS 2014",
+      "passage": "There are no changes in this area between ESA95 and ESA10.",
+      "verdict": "SUPPORTED",
+      "notes": "Verbatim, from footnote 1."
+    },
+    {
+      "id": 27,
+      "claim": "body: \"ONS published the method on 29 May 2014, by Joshua Abramsky and Steve Drew.\"",
+      "source": "ONS 2014 (unsiap mirror)",
+      "passage": "Authors: Joshua Abramsky & Steve Drew, Office for National Statistics Date: 29 May 2014",
+      "verdict": "SUPPORTED",
+      "notes": "The article date and authors match; the article says the figures were introduced in September 2014, which is consistent with the body's 'In 2014'."
+    },
+    {
+      "id": 28,
+      "claim": "body: warned of \"significant limitations in the availability of data\", assumptions on which estimates are \"partly based\". \"This applies especially to the estimates of prostitution activity.\"",
+      "source": "ONS 2014",
+      "passage": "The article concludes that there are significant limitations in the availability of data to calculate these estimates, and that this means that such calculation requires a number of assumptions on which the estimates are, therefore, partly based. This applies especially to the estimates of prostitution activity.",
+      "verdict": "SUPPORTED",
+      "notes": "All 3 quotes are verbatim."
+    },
+    {
+      "id": 29,
+      "claim": "body: Eaves, a charity, estimated about 7,000 off-street prostitutes in London in 2004, \"by calling numbers advertised in various media and asking how many prostitutes were in each place\"",
+      "source": "ONS 2014",
+      "passage": "A study in 2004 by Eaves (a charity helping prostitutes) estimated that there were approx 7000 off-street prostitutes in London in that year; this was done by calling numbers advertised in various media and asking how many prostitutes were in each place.",
+      "verdict": "SUPPORTED",
+      "notes": "Verbatim, and 'about' matches 'approx'."
+    },
+    {
+      "id": 30,
+      "claim": "body: \"The Metropolitan Police counted 115 on the street \\\"at any one time\\\".\"",
+      "source": "ONS 2014",
+      "passage": "In the same year the Metropolitan Police estimated 115 prostitutes on the street at any one time in London (Home Office (2004)).",
+      "verdict": "PARTIALLY SUPPORTED",
+      "notes": "The figure and quote match, but the source says 'estimated', not 'counted'."
+    },
+    {
+      "id": 31,
+      "claim": "body: Constant drug consumption per user: \"This assumption is probably false, but we have no data to challenge it.\"",
+      "source": "ONS 2014",
+      "passage": "We assume that the purity-adjusted amount of drugs consumed by the average user remains constant over time. This assumption is probably false, but we have no data to challenge it.",
+      "verdict": "SUPPORTED",
+      "notes": "Verbatim."
+    },
+    {
+      "id": 32,
+      "claim": "body: Half of cannabis imported, half home-grown: \"This is an arbitrary assumption.\"",
+      "source": "ONS 2014",
+      "passage": "We assume that half of cannabis sold in the UK is imported and half home-grown. This is an arbitrary assumption.",
+      "verdict": "SUPPORTED",
+      "notes": "Verbatim."
+    },
+    {
+      "id": 33,
+      "claim": "body: No government spending on drugs: \"reasonable because government units are very unlikely to spend money on illegal drugs.\"",
+      "source": "ONS 2014",
+      "passage": "The government final consumption expenditure assumption is reasonable because government units are very unlikely to spend money on illegal drugs.",
+      "verdict": "SUPPORTED",
+      "notes": "Verbatim."
+    },
+    {
+      "id": 34,
+      "claim": "body: \"\\\"Probably false\\\" appears 3 times in the article\" (also sources text: \"probably false\" (3 occurrences))",
+      "source": "ONS 2014 (ons2014-flat.txt)",
+      "passage": "This assumption is probably false, but we have no data to challenge it. / This is probably false, but it is impossible to distinguish salaried employees from self-employed individuals. / The change in inventories assumption is probably false, but there is an incentive not to hold drugs as inventories / We assume that no drugs other than cannabis are produced in the UK. While this is probably false, we do not have any evidence to the contrary.",
+      "verdict": "NOT SUPPORTED",
+      "notes": "The phrase appears 4 times; the fourth, on cannabis being the only UK-produced drug, breaks across a line ('probably / false') in the text extraction, which a single-line search would miss."
+    },
+    {
+      "id": 35,
+      "claim": "body: \"\\\"arbitrary\\\", twice\"",
+      "source": "ONS 2014",
+      "passage": "We believe that the data available are insufficient to support a balancing process that is anything more than arbitrary. / This is an arbitrary assumption.",
+      "verdict": "SUPPORTED",
+      "notes": "The word appears exactly twice, but only once to label an assumption; the other use is about a balancing method ONS rejected."
+    },
+    {
+      "id": 36,
+      "claim": "body: \"Every assumption was published, and most arrived labelled.\"",
+      "source": "ONS 2014",
+      "passage": "This is a weak assumption ... This is a controversial assumption ... This is self-evident ... This is based on an intuitive assessment ... This assumption is because there is no other data.",
+      "verdict": "PARTIALLY SUPPORTED",
+      "notes": "Nearly every assumption carries some characterization, so 'most arrived labelled' holds only if neutral or positive labels count; read next to the negative quotes, it implies more self-criticism than the annex contains."
+    },
+    {
+      "id": 37,
+      "claim": "body: tracking by 16+ male population is \"a weak assumption\", needed \"because we have no time series data for the number of prostitutes\"",
+      "source": "ONS 2014",
+      "passage": "We assume that the number of prostitutes has the same pattern through time as the 16+ male population. This is a weak assumption based on the market for prostitutes' services. It is necessary because we have no time series data for the number of prostitutes.",
+      "verdict": "SUPPORTED",
+      "notes": "Verbatim."
+    },
+    {
+      "id": 38,
+      "claim": "body: treating every prostitute and pimp as self-employed is \"a controversial assumption\"",
+      "source": "ONS 2014",
+      "passage": "3b. There is no employment in prostitution; all prostitutes and pimps are self-employed. This is a controversial assumption based on reasoning from two premises.",
+      "verdict": "SUPPORTED",
+      "notes": "Verbatim."
+    },
+    {
+      "id": 39,
+      "claim": "body: \"In October 2014 Peter Patterson, ONS Deputy Chief Economic Adviser, wrote on the Civil Service Quarterly blog that \\\"ONS desk research (please note the italics for emphasis!)\\\" put the contribution at \\\"up to £10 billion a year\\\".\"",
+      "source": "Patterson blog (fetched live)",
+      "passage": "Peter Patterson, the Deputy Chief Economic Advisor at the ONS ... Posted on: 15 October 2014 ... ONS desk research (please note the italics for emphasis!) into the numbers of prostitutes and the price of drugs yielded the result that spending on these illegal activities in the UK contributes up to £10 billion a year to the level of GDP.",
+      "verdict": "SUPPORTED",
+      "notes": "Name, role, date and both quotes match; the source spells it 'Advisor' and the exhibit 'Adviser', which is outside the quote marks."
+    },
+    {
+      "id": 40,
+      "claim": "body: \"The change was \\\"legally mandated\\\"\"",
+      "source": "Patterson blog",
+      "passage": "The latest version is legally mandated through the European System of Accounts 2010 and other statistical manuals (ESA2010). International consistency lies behind further requirements on EU members to improve and harmonise statistics in a number of areas. One of these - spending on illegal drugs and prostitution - particularly caught the media's attention.",
+      "verdict": "PARTIALLY SUPPORTED",
+      "notes": "Patterson uses 'legally mandated' for the new version of the accounting standards (ESA2010), and calls illegal activity one of the 'further requirements', so applying the phrase to 'the change' shifts what it refers to."
+    },
+    {
+      "id": 41,
+      "claim": "body: \"Comparability between nations dictates that all countries include it in their GDP figures.\"",
+      "source": "Patterson blog",
+      "passage": "Comparability between nations dictates that all countries include it in their GDP figures.",
+      "verdict": "SUPPORTED",
+      "notes": "Verbatim."
+    },
+    {
+      "id": 42,
+      "claim": "body: \"MNC8 was last released on 31 October 2025.\"",
+      "source": "ONS MNC8 page and CSV (fetched live)",
+      "passage": "\"Release date\",\"31-10-2025\"",
+      "verdict": "SUPPORTED",
+      "notes": "The series page and the CSV give the same date."
+    },
+    {
+      "id": 43,
+      "claim": "attribution: named individuals Joshua Abramsky, Steve Drew, Peter Patterson",
+      "source": "ONS 2014; Patterson blog",
+      "passage": "Authors: Joshua Abramsky & Steve Drew, Office for National Statistics / Posted by: Peter Patterson",
+      "verdict": "SUPPORTED",
+      "notes": "Each named person appears only as the author of an ONS publication or an official government blog post."
+    }
+  ]
+}

@@ -1,0 +1,222 @@
+{
+  "exhibit": "017",
+  "reviewedAt": "2026-10-23T12:43:40.921Z",
+  "model": "deepseek-chat",
+  "claims": [
+    {
+      "id": 1,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states the estimate of c. 58,000 prostitutes and that a 12-week holiday factor was applied to the estimates, matching the claim's figures."
+    },
+    {
+      "id": 2,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage lists CDID MNC8 with a release date of 31-10-2025 and data rows spanning 1985 through 2024, matching the claim's series, date range, and last release date."
+    },
+    {
+      "id": 3,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage explicitly labels the assumption about cannabis (part of illegal drugs) as \"arbitrary\" and \"probably false,\" matching the claim's characterization of ONS assumptions."
+    },
+    {
+      "id": 4,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states that spending on illegal activities contributes up to £10 billion a year to the level of GDP, matching the claim's substance."
+    },
+    {
+      "id": 5,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states that scaling up the London estimates by UK population gives c. 58,000 prostitutes in the whole country, matching the claim's figures and method."
+    },
+    {
+      "id": 6,
+      "verdict": "PARTIALLY SUPPORTED",
+      "reasoning": "The passage confirms the Netherlands assumption and the 20, 25, and 30 figures, but does not mention \"ledger and body\" or \"clients per week.\""
+    },
+    {
+      "id": 7,
+      "verdict": "PARTIALLY SUPPORTED",
+      "reasoning": "The passage confirms the £55 in 2004 figure from Punternet but does not specify it as \"price per visit\" or clearly attribute it to the ledger and body."
+    },
+    {
+      "id": 8,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage shows footnote 12 attached to \"Punternet\" and its content is a Wikipedia URL (http://en.wikipedia.org/wiki/Punternet)."
+    },
+    {
+      "id": 9,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage gives the same 2010 figures for drugs (0.24%), prostitution (0.35%), and total (0.58%) as percentages of GDP, matching the claim's values."
+    },
+    {
+      "id": 10,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage gives the 2010 prostitution value as £5.6bn (current prices) and lists \"2010\",\"4370\", matching both figures in the claim."
+    },
+    {
+      "id": 11,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage provides the figures £5.6bn and 4370 but does not state that ONS fails to attribute the difference, nor does it present the arithmetic showing 78% and 77%."
+    },
+    {
+      "id": 12,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states Statistics Netherlands estimated total holidays to be 12 weeks per year, matching the claim's quoted figure and source attribution."
+    },
+    {
+      "id": 13,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage lists the exact figures 5993, 4130, and 6431 for the years 2019, 2020, and 2024, matching the claim's values."
+    },
+    {
+      "id": 14,
+      "verdict": "PARTIALLY SUPPORTED",
+      "reasoning": "The passage confirms the method varies a 2004 point estimate by male population and CPI, but it does not explicitly state that MNC8 is modelled rather than observed."
+    },
+    {
+      "id": 15,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage only gives a single 2010 value (£5.6bn) and does not mention ONS publishing two 2010 figures or any difference between them."
+    },
+    {
+      "id": 16,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage lists assumptions graded as \"weak,\" \"controversial,\" \"arbitrary,\" and \"probably false,\" matching the claim's quoted grades."
+    },
+    {
+      "id": 17,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage confirms that consensual illegal transactions are included in production under ESA95 and that there are no changes in this area in ESA 2010, matching the claim."
+    },
+    {
+      "id": 18,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage confirms the estimates are partly based on assumptions, especially for prostitution, and that comparability requires all countries to include it."
+    },
+    {
+      "id": 19,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage states there is no time series but does not attribute this to ONS's 2014 method or mention prostitution."
+    },
+    {
+      "id": 20,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage gives 1985 and 2004 data points and extrapolation methods, but never mentions \"Series MNC8,\" \"29 years,\" or a first estimate publication, so the claim's specific assertions are not supported."
+    },
+    {
+      "id": 21,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "No passage was provided, so there is no text to support the claim."
+    },
+    {
+      "id": 22,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states that illegal drugs and prostitution activity will be included in UK GDP estimates starting with Blue Book 2014, published in September 2014, which supports the claim."
+    },
+    {
+      "id": 23,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage directly states that \"it\" is used in the calculation of a Member State's contribution to the EU budget, matching the claim."
+    },
+    {
+      "id": 24,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states that a 2012 audit identified areas for improvement that Member States must address by 2014, matching the claim."
+    },
+    {
+      "id": 25,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage directly states that ESA95 section 1.13 includes illegal transactions to which all units involved consent within the production boundary, matching the claim."
+    },
+    {
+      "id": 26,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states verbatim that there are no changes in this area between ESA95 and ESA10, directly matching the claim."
+    },
+    {
+      "id": 27,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage lists Joshua Abramsky and Steve Drew as authors from the Office for National Statistics with the date 29 May 2014, matching the claim."
+    },
+    {
+      "id": 28,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage directly states the significant data limitations, the assumptions on which estimates are partly based, and that this applies especially to prostitution activity estimates."
+    },
+    {
+      "id": 29,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states Eaves estimated about 7,000 off-street prostitutes in London in 2004 by calling numbers advertised in various media and asking how many prostitutes were in each place, matching the claim."
+    },
+    {
+      "id": 30,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states the Metropolitan Police estimated 115 prostitutes on the street at any one time, matching the claim's figures and attribution."
+    },
+    {
+      "id": 31,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states the assumption that the purity-adjusted amount consumed per average user remains constant and explicitly says it is probably false but there is no data to challenge it, matching the claim."
+    },
+    {
+      "id": 32,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states the assumption that half of cannabis is imported and half home-grown and explicitly calls it an arbitrary assumption, matching the claim."
+    },
+    {
+      "id": 33,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage directly states that the assumption is reasonable because government units are very unlikely to spend money on illegal drugs, matching the claim."
+    },
+    {
+      "id": 34,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage contains \"probably false\" four times, not three, so it contradicts the claim of 3 occurrences."
+    },
+    {
+      "id": 35,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage contains the word \"arbitrary\" twice, matching the claim."
+    },
+    {
+      "id": 36,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage lists various assumptions with labels like weak, controversial, and self-evident, but never states that every assumption was published or that most arrived labelled."
+    },
+    {
+      "id": 37,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage explicitly states the assumption is weak and necessary because there is no time series data for the number of prostitutes, matching the claim."
+    },
+    {
+      "id": 38,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage explicitly states that treating all prostitutes and pimps as self-employed is \"a controversial assumption.\""
+    },
+    {
+      "id": 39,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage confirms Patterson's role, the October 2014 date, the blog quote about ONS desk research with italics emphasis, and the \"up to £10 billion a year\" figure."
+    },
+    {
+      "id": 40,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states that \"The latest version is legally mandated through the European System of Accounts 2010,\" which directly supports the claim that the change was legally mandated."
+    },
+    {
+      "id": 41,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states the claim verbatim, directly supporting it."
+    },
+    {
+      "id": 42,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage gives the release date as 31-10-2025, which matches 31 October 2025."
+    },
+    {
+      "id": 43,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage names Joshua Abramsky, Steve Drew, and Peter Patterson as authors/poster, directly supporting the attribution claim."
+    }
+  ]
+}
