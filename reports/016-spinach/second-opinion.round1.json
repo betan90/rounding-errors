@@ -1,0 +1,207 @@
+{
+  "exhibit": "016",
+  "reviewedAt": "2026-10-23T08:49:47.793Z",
+  "model": "deepseek-chat",
+  "claims": [
+    {
+      "id": 1,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage says nothing indicates the decimal point error was ever made, so it does not support the claim that a misplaced decimal point occurred at an unknown location."
+    },
+    {
+      "id": 2,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage discusses possible causes of exaggerated figures and Hamblin admitting his mistake, but never states the error is still retold as classic and uncorrected or that the original measurement has not been found."
+    },
+    {
+      "id": 3,
+      "verdict": "PARTIALLY SUPPORTED",
+      "reasoning": "The passage confirms a tenfold spinach error involving a misplaced decimal point, but it does not mention a \"document\" the error was supposedly in, so the teaser's framing is only partly supported."
+    },
+    {
+      "id": 4,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage attributes to Bender (1972) the statement that spinach's fame \"may well have grown from a misplaced decimal point,\" matching the claim's earliest telling."
+    },
+    {
+      "id": 5,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage confirms Hamblin's 1981 article contains 13 references and that none cite the source of the decimal error, matching the claim's \"0 / 13\" citation figures."
+    },
+    {
+      "id": 6,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states that sources confirm a decimal point error occurred in 1870, the 1890s, or the 1930s, matching the claim's listed years."
+    },
+    {
+      "id": 7,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage cites Sutton and Rekdal for other points (no prior mention of a decimal error; alternative causes of exaggerated figures) but does not state that an original erroneous measurement was located in those sources."
+    },
+    {
+      "id": 8,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage lists raw spinach with an iron amount of 2.71 mg, matching the claim's value and food."
+    },
+    {
+      "id": 9,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states that Jackson (1938) found 44.8 mg iron per 100 g dried spinach, matching the claim's figure and attribution."
+    },
+    {
+      "id": 10,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states Segar chose spinach for Popeye's power due to its high vitamin A content and identifies the cartoon as appearing in print on July 3rd 1932."
+    },
+    {
+      "id": 11,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage only states that apocryphal errors lack adequate referencing and says nothing about fresh versus dried quantities or dried figures being read as fresh."
+    },
+    {
+      "id": 12,
+      "verdict": "PARTIALLY SUPPORTED",
+      "reasoning": "The passage confirms the 1981 paragraph called the propaganda \"fraudulent,\" but it does not address whether the described measurement has been located by anyone cited."
+    },
+    {
+      "id": 13,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage only says Larsson exemplifies the topic of his article's title and does not mention a paragraph stated as fact with zero references or any citation of it in a paper."
+    },
+    {
+      "id": 14,
+      "verdict": "PARTIALLY SUPPORTED",
+      "reasoning": "The passage supports the \"teaching example\" part by implying the error was never made, but it does not address the \"none as a measurement\" claim."
+    },
+    {
+      "id": 15,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage contains the exact quote attributed to Rekdal, confirming the claim's content."
+    },
+    {
+      "id": 16,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states the exhibit has no study and no confirmed origin, with a leading candidate origin, matching the claim of a candidate origin and no study."
+    },
+    {
+      "id": 17,
+      "verdict": "PARTIALLY SUPPORTED",
+      "reasoning": "The passage confirms the journal, date, volume, issue, and page range, but does not mention the author Hamblin, the title \"Fake!\", or the PMC identifier."
+    },
+    {
+      "id": 18,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage gives the same journal, year, volume, issue, pages, and DOI as the claim, confirming the citation details."
+    },
+    {
+      "id": 19,
+      "verdict": "PARTIALLY SUPPORTED",
+      "reasoning": "The passage contains a Larsson 1995 J Intern Med citation with volume 238, issue 5, and pages 445-450, but it also gives conflicting page numbers (448-449) and a conflicting volume (258) in the second entry, so the exact source text is only partly corroborated."
+    },
+    {
+      "id": 20,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage gives the same FDC ID (168462), data type (SR Legacy), and publication date (4/1/2019) cited in the claim."
+    },
+    {
+      "id": 21,
+      "verdict": "PARTIALLY SUPPORTED",
+      "reasoning": "The passage confirms Hamblin and the 1981 Christmas issue of the BMJ and mentions \"Frauds, hoaxes, fakes, and widely popularised mistakes,\" but it does not state that the piece was titled \"Fake!\" or that it was a survey."
+    },
+    {
+      "id": 22,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage reproduces the exact sentence quoted in the claim about German chemists and the spinach iron content overestimate."
+    },
+    {
+      "id": 23,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage contains the exact sentence the claim attributes as the closing line."
+    },
+    {
+      "id": 24,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage confirms the article ends with 13 publications it was \"derived from\" and states none of them cite the relevant source, supporting the claim that none is about spinach."
+    },
+    {
+      "id": 25,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states 2.71 mg (USDA) and 44.8 mg iron per 100 g dried spinach from Jackson (1938) cited by Sutton, matching the claim's figures and attribution."
+    },
+    {
+      "id": 26,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states von Bunge found 35mg per 100g in 1890 but had analysed dried spinach, and that von Wolf may have misplaced the decimal point about 20 years earlier, matching the claim."
+    },
+    {
+      "id": 27,
+      "verdict": "PARTIALLY SUPPORTED",
+      "reasoning": "The passage suggests the famous figure may stem from misinterpretation of a different measurement (dry vs. fresh weight), which aligns with the claim, but it frames this as one of several competing explanations rather than asserting it directly."
+    },
+    {
+      "id": 28,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states Bender's 1972 inaugural lecture at Queen Elizabeth College, London contained the exact quoted sentence, matching the claim's details."
+    },
+    {
+      "id": 29,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states Kronick in 1985 wrote \"It has been suggested\" with emphasis, and describes this as communicating reservations or doubt, matching the claim that he hedged with that phrase."
+    },
+    {
+      "id": 30,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states that Hamblin replaced Bender's hedged wording with an assertive statement and that Hamblin \"invented and added the rogue decimal place and the shadowy German scientists elements,\" which supports the claim that Hamblin's version dropped the hedge and added the German chemists."
+    },
+    {
+      "id": 31,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states the author is a Reader in Criminology at Nottingham Trent University and that they sent a personal email to Hamblin, which matches the claim's content."
+    },
+    {
+      "id": 32,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states Hamblin honestly cannot remember, was asked by the then BMJ editor for a humorous Christmas piece with a request not to provide references, and was sure he had not made it up."
+    },
+    {
+      "id": 33,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage quotes the same question about von Wolff and states that after two weeks of searching the author was unable to find answers, matching the claim."
+    },
+    {
+      "id": 34,
+      "verdict": "PARTIALLY SUPPORTED",
+      "reasoning": "The passage confirms reading of Thimble Theatre strips from 1928 to 1935 via bound volumes, but does not explicitly state \"he\" read them, only that the volumes facilitated research."
+    },
+    {
+      "id": 35,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage confirms the July 3, 1932 strip as the first where Popeye explains why he eats spinach, but it never mentions vitamin A or what he credits."
+    },
+    {
+      "id": 36,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage directly states that Segar chose and promoted spinach for its vitamin A content alone, matching the claim exactly."
+    },
+    {
+      "id": 37,
+      "verdict": "PARTIALLY SUPPORTED",
+      "reasoning": "The passage cites Larsson 1995 with pages 448–449 and mentions Hamblin 1981, but it does not state that the Journal of Internal Medicine published Larsson's article titled \"The dissemination of false data through inadequate citation,\" nor that Larsson repeated the spinach story citing Hamblin."
+    },
+    {
+      "id": 38,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage reproduces the exact statement attributed to Rekdal in the claim."
+    },
+    {
+      "id": 39,
+      "verdict": "PARTIALLY SUPPORTED",
+      "reasoning": "The passage contains the quoted sentence about plagiarizing the Hamblin reference from Larsson, but it does not mention Rekdal's 2014 paper, the title \"Academic urban legends,\" or that the demonstration was deliberate."
+    },
+    {
+      "id": 40,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage discusses Hamblin hearing about a decimal point error and misattributing a suggestion, but says nothing about who lied or about the record available."
+    }
+  ]
+}

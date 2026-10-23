@@ -1,0 +1,222 @@
+{
+  "exhibit": "016",
+  "reviewedAt": "2026-10-23T12:18:37.415Z",
+  "model": "deepseek-chat",
+  "claims": [
+    {
+      "id": 1,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage says nothing indicates the decimal point error was ever made, so it does not support the claim that a misplaced decimal point occurred at an unknown location."
+    },
+    {
+      "id": 2,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage confirms the claim was retold across 30 years by many sources and states nothing indicates the decimal error was ever made, supporting that it has never been documented."
+    },
+    {
+      "id": 3,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage confirms a tenfold overestimate of spinach's iron value caused by a misplaced decimal point in the original publication, matching the claim's \"tenfold spinach error vs the document it was supposedly in.\""
+    },
+    {
+      "id": 4,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states that Bender's 1972 lecture contained the phrase \"may well have grown from a misplaced decimal point,\" matching the claim's attribution and wording."
+    },
+    {
+      "id": 5,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage mentions Hamblin but provides no citation count or any statement about citations for a spinach paragraph, so it does not support the claim of zero citations."
+    },
+    {
+      "id": 6,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states that sources confirm the decimal point error occurred in 1870, the 1890s, or the 1930s, matching the claim's listed years."
+    },
+    {
+      "id": 7,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage states there is no evidence of a decimal-point error, which contradicts rather than supports the claim that a documented decimal-point error was found."
+    },
+    {
+      "id": 8,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage lists raw spinach with an Iron, Fe nutrient amount of 2.71 mg, matching the claim."
+    },
+    {
+      "id": 9,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states that Jackson (1938) found 44.8 mg iron per 100 g dried spinach, matching the claim's figure and attribution."
+    },
+    {
+      "id": 10,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states the cartoon appeared on July 3rd 1932 and that Segar's choice of spinach was due to its vitamin A content, matching the claim."
+    },
+    {
+      "id": 11,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states Sutton's argument that contamination or confusion between fresh and dried spinach caused the exaggerated 19th-century figures, matching the claim's attribution to Rekdal reporting Sutton's follow-up."
+    },
+    {
+      "id": 12,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage calls the propaganda fraudulent and describes the decimal point error as \"non-existent, or at least undocumented,\" matching the claim's assertion that the error has never been documented."
+    },
+    {
+      "id": 13,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage only says Larsson exemplifies the topic of his article's title; it does not state that a paragraph was asserted as fact with zero references or that it was later cited in that paper."
+    },
+    {
+      "id": 14,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage confirms the decimal error is undocumented and that it serves as a teaching example, though ironically not of the error it describes, matching the claim's assessment of its usefulness."
+    },
+    {
+      "id": 15,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage contains the exact quote attributed to Rekdal, matching the claim's quotation verbatim."
+    },
+    {
+      "id": 16,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage says this exhibit has no study and no confirmed origin, directly contradicting the claim that it has a study of the citations."
+    },
+    {
+      "id": 17,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states there is no evidence the decimal point error ever occurred, and it presents fresh and dried iron figures as separate measurements, matching the claim that no original/corrected pair exists and the two figures measure different things."
+    },
+    {
+      "id": 18,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage confirms the title \"Fake,\" the BMJ volume 283, issue 6307, pages 1671–1674, the 19 December 1981 date, and the PMC1507475 identifier."
+    },
+    {
+      "id": 19,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage provides the exact journal, year, volume, issue, page range, DOI, and PMC ID matching the claim's source citation."
+    },
+    {
+      "id": 20,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage gives the same author, year, journal, volume, issue, and article title, and the citation to pages 448–449 falls within the article's page range of 445–450."
+    },
+    {
+      "id": 21,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage contains the same FDC ID (168462), description (\"Spinach, raw\"), publication date (4/1/2019), and data type (SR Legacy) as the claim."
+    },
+    {
+      "id": 22,
+      "verdict": "PARTIALLY SUPPORTED",
+      "reasoning": "The passage confirms Hamblin and the 1981 Christmas issue of the BMJ and mentions the phrase \"Frauds, hoaxes, fakes, and widely popularised mistakes,\" but it does not state that the piece was titled \"Fake!\" or that Hamblin published it under that title."
+    },
+    {
+      "id": 23,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage reproduces the exact sentence quoted in the claim about German chemists and the spinach iron content overestimate."
+    },
+    {
+      "id": 24,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage contains the exact quoted sentence about Popeye and the cans, matching the claim's quotation."
+    },
+    {
+      "id": 25,
+      "verdict": "PARTIALLY SUPPORTED",
+      "reasoning": "The passage confirms the article mentions publications it derived from and ends with \"should particularly like to mention,\" but it does not show the paragraph lacks a citation or that there are 13 publications."
+    },
+    {
+      "id": 26,
+      "verdict": "PARTIALLY SUPPORTED",
+      "reasoning": "The passage confirms the author's title and that the references cite neither the decimal error source nor 1930's Germans, but it attributes the check to Hamblin's 1981 article rather than to Sutton in 2010."
+    },
+    {
+      "id": 27,
+      "verdict": "PARTIALLY SUPPORTED",
+      "reasoning": "The passage shows an amount of 2.71 mg for an iron nutrient entry, but it does not mention raw spinach, 100 g, or the USDA, so it only partially supports the claim."
+    },
+    {
+      "id": 28,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states that dried spinach contains 44.8 mg iron per 100gm as found by Jackson (1938), which matches the claim's assertion about a 1938 measurement of 44.8 mg."
+    },
+    {
+      "id": 29,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage presents the same two versions—von Bunge's 1890 finding of 35 mg per 100 g from dried spinach and von Wolf's decimal-point error about 20 years earlier—matching the claim's content."
+    },
+    {
+      "id": 30,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states Sutton argued the 19th-century exaggerated figures were caused by contamination during analysis or confusion between fresh and dried spinach, matching the claim's attribution."
+    },
+    {
+      "id": 31,
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage discusses Hamblin's decimal point error and his assurance he did not make it up, but never addresses who lied or states that nobody lied on the available record."
+    },
+    {
+      "id": 32,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage confirms Sutton emailed Hamblin and reports each quoted element: Hamblin \"honestly cannot remember,\" was asked by the BMJ's then editor \"not to provide references,\" and was \"sure that he had not made it up.\""
+    },
+    {
+      "id": 33,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states that \"in the absence of references to prove otherwise, Hamblin (1981) invented the decimal error,\" which directly matches the claim's assertion about the paper's conclusion."
+    },
+    {
+      "id": 34,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states a reader (Bonnie Taylor-Blake) made Sutton aware of Bender, and that Bender's 1972 inaugural lecture at Queen Elizabeth College, London contained the quoted statement about spinach's fame growing from a misplaced decimal point."
+    },
+    {
+      "id": 35,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states that Hamblin \"accidentally turned Bender's suggestion into a piece of fact,\" matching the claim's quoted content."
+    },
+    {
+      "id": 36,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage contains the quoted phrases \"I thought it was in Reader's Digest\" and \"very willing to admit that I was wrong,\" attributed to Sutton's comment, matching the claim's description."
+    },
+    {
+      "id": 37,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage confirms that the 3 July 1932 strip was the first in which Popeye explains why he eats spinach and that it credits vitamin A content, matching the claim's assertions."
+    },
+    {
+      "id": 38,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states Kronick (1985) cited Hamblin and used the hedge \"It has been suggested that,\" matching the claim."
+    },
+    {
+      "id": 39,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage contains the exact quoted phrase about such phrases tending to change or disappear when knowledge passes from one text to another, matching the claim's quotation."
+    },
+    {
+      "id": 40,
+      "verdict": "PARTIALLY SUPPORTED",
+      "reasoning": "The passage confirms Larsson published in the Journal of Internal Medicine in 1995 and repeated the spinach story citing Hamblin, but it does not give the article's title \"The dissemination of false data through inadequate citation.\""
+    },
+    {
+      "id": 41,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states verbatim that Larsson \"manages to do exactly what he is criticizing others for in quite a spectacular way,\" matching the claim's quoted content."
+    },
+    {
+      "id": 42,
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage confirms the fourth alternative is the \"In short, I have plagiarized the Hamblin reference from Larsson\" example and frames all four alternatives as \"academic shortcuts,\" supporting the claim that it demonstrates a shortcut rather than a confession."
+    },
+    {
+      "id": 43,
+      "verdict": "PARTIALLY SUPPORTED",
+      "reasoning": "The passage confirms the citations to Bender, Kronick, Larsson, Sutton, Coultate, and Jackson as reproduced by Rekdal and Sutton, but it does not mention Hamblin's 2010 comment, Hamblin's email, the Popeye reading, or a mirror source."
+    }
+  ]
+}
