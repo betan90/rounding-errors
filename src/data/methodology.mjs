@@ -242,6 +242,12 @@ export const eras = [
     why: 'Given only the fact-checker\'s passage, it could only check that choice, and through exhibit 017 it never caught an error the fact-checker missed. Rerun on 407 claims, it found 1: exhibit 002 dated a charge on the strength of an undated page. It also missed exact sentences in long documents, so its "not supported" is a reason to look, not a verdict.',
     commits: ['59f09ad', 'a8b9567'],
   },
+  {
+    name: 'A record of what ran',
+    changed: 'The agent files keep model aliases, so upgrades arrive without a commit, and a hook now logs the model the API actually served for every agent run, with its task and the Claude Code version.',
+    why: 'An alias moves on its own: the committer went from Haiku 4.5 to Haiku 5.5 between 5 and 10 October 2026, and git recorded nothing. The transcripts that did record it are deleted after 30 days; runs before 4 October were already gone.',
+    commits: ['0443d5a'],
+  },
 ];
 
 // Shown for a kind of tooling the repo doesn't use yet. When the first one
