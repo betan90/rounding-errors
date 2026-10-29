@@ -19,6 +19,18 @@
         ]
       }
     ],
+    "SubagentStop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"$CLAUDE_PROJECT_DIR/scripts/log-models.mjs\" --hook",
+            "timeout": 30,
+            "statusMessage": "Logging which model ran"
+          }
+        ]
+      }
+    ],
     "SessionStart": [
       {
         "hooks": [

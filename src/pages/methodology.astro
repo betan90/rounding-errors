@@ -4,7 +4,7 @@
 // scripts/check-methodology.mjs fails the build when the 2 disagree.
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { withBase } from '../lib/paths';
-import { discover, modelHistory, toolingTimeline, assertFullHistory } from '../../scripts/lib/inventory.mjs';
+import { discover, modelHistory, servedModels, toolingTimeline, assertFullHistory } from '../../scripts/lib/inventory.mjs';
 import { REPO, entries, pipeline, external, offRepo, eras, noneYet } from '../data/methodology.mjs';
 
 assertFullHistory();
@@ -19,6 +19,32 @@ const none: Record<string, string> = noneYet;
 const desc: Record<string, { role: string; why: string }> = entries;
 const models = modelHistory();
 const timeline = toolingTimeline();
+
+// What actually ran, per agent and model, and per exhibit, from the model log.
+const runs: any[] = servedModels();
+const servedFirst = runs[0]?.date;
+const served = Object.values(
+  runs.reduce((acc: Record<string, any>, r: any) => {
+    for (const model of r.models) {
+      const g = (acc[`${r.agent} ${model}`] ??= { agent: r.agent, model, n: 0, from: r.date, to: r.date, requested: 0 });
+      g.n += 1;
+      g.to = r.date;
+      if (r.requested) g.requested += 1;
+    }
+    return acc;
+  }, {}),
+).sort((a: any, b: any) => a.agent.localeCompare(b.agent) || a.from.localeCompare(b.from));
+const latestServed = (agent: string) => runs.filter((r) => r.agent === agent).at(-1);
+const byExhibit = Object.entries(
+  runs.reduce((acc: Record<string, Record<string, number>>, r: any) => {
+    if (!r.exhibit) return acc;
+    for (const model of r.models) {
+      const k = `${r.agent} on ${model}`;
+      (acc[r.exhibit] ??= {})[k] = ((acc[r.exhibit] ??= {})[k] ?? 0) + 1;
+    }
+    return acc;
+  }, {}),
+).sort(([a], [b]) => b.localeCompare(a));
 
 // Rendered in this order. A kind with no tools shows its noneYet line, so
 // "no custom skills" is stated rather than implied.
@@ -41,8 +67,14 @@ const counts = sections
 
 function facts(t: any): Array<[string, string]> {
   switch (t.kind) {
-    case 'agent':
-      return [['Model', t.model], ['Tools', t.tools.join(', ')]];
+    case 'agent': {
+      const last = latestServed(t.name);
+      return [
+        ['Model', t.model],
+        ...(last ? [['Last served', `${last.models.join(', ')} on ${last.date}`] as [string, string]] : []),
+        ['Tools', t.tools.join(', ')],
+      ];
+    }
     case 'hook':
       return [['Fires on', `${t.event}, ${t.matcher}`], ['Runs', t.command]];
     case 'script':
@@ -165,6 +197,34 @@ function facts(t: any): Array<[string, string]> {
           <dd>
             {m.agent}: {m.from ? `${m.from} → ${m.to}` : `set to ${m.to}`}
           </dd>
+        </div>
+      ))
+    }
+  </dl>
+
+  <h2 class="method-h">Models that actually ran</h2>
+  <p class="method-none">
+    An agent file names a model family, and the family follows its newest model without a commit. This is the model the API served, copied from Claude Code's transcripts each time an agent finishes, into <a class="inline" href={fileUrl('reports/model-log.jsonl')}>reports/model-log.jsonl</a>. {runs.length} runs since {servedFirst}; transcripts from before then had already been deleted.
+  </p>
+  <dl class="correction-body method-list">
+    {
+      served.map((g: any) => (
+        <div class="correction-row">
+          <dt>{g.agent}</dt>
+          <dd>
+            {g.model}: {g.n} {g.n === 1 ? 'run' : 'runs'}, {g.from === g.to ? g.from : `${g.from} to ${g.to}`}
+            {g.requested > 0 && <span class="method-uses">{g.requested} of these named the model when launched, which overrides the agent file.</span>}
+          </dd>
+        </div>
+      ))
+    }
+  </dl>
+  <dl class="correction-body method-list">
+    {
+      byExhibit.map(([exhibit, counts]) => (
+        <div class="correction-row">
+          <dt>Exhibit {exhibit}</dt>
+          <dd>{Object.entries(counts).map(([k, n]) => (n > 1 ? `${k} ×${n}` : k)).join(' · ')}</dd>
         </div>
       ))
     }

@@ -46,6 +46,10 @@ export const entries = {
     role: 'Runs audit-due.mjs at the start of every session.',
     why: 'A hook can\'t launch an agent. It can put the instruction in front of the session that can.',
   },
+  'hook:SubagentStop:log-models.mjs': {
+    role: 'Runs log-models.mjs each time an agent finishes.',
+    why: 'The record is made when the run ends, not rebuilt later from transcripts that may be gone.',
+  },
   'hook:PostToolUse:check-house-rules.mjs': {
     role: 'Runs check-house-rules.mjs after every file Claude writes or edits, and hands any broken rule back to Claude before it moves on.',
     why: 'A rule caught when the file is written costs 1 edit. The same rule caught at publish time costs a review round.',
@@ -62,6 +66,10 @@ export const entries = {
   'script:audit-due.mjs': {
     role: 'Counts new sessions since the last audit report. At 4, if anything was committed since, it tells Claude to launch the auditor in the background.',
     why: 'Counted in sessions, not days, because the site is built in bursts. A run of sessions that committed nothing triggers nothing.',
+  },
+  'script:log-models.mjs': {
+    role: 'Copies the model the API actually served for each agent run, with the task it was given and the Claude Code version, from Claude Code\'s transcripts into reports/model-log.jsonl.',
+    why: 'An agent file names a model family, and the family moves to its newest model with no commit: the committer went from Haiku 4.5 to Haiku 5.5 between 5 and 10 October 2026. The transcripts that recorded it are deleted after 30 days.',
   },
   'script:check-links.mjs': {
     role: 'Fetches every source link. A dead link blocks the commit. A redirect or a bot wall is a warning to check in a browser.',
@@ -163,6 +171,7 @@ export const external = [
 export const offRepo = [
   { name: 'Claude Code memory', role: 'Notes Claude keeps between sessions on 1 machine: open audit items, lessons from past mistakes. The public record of the same things is the git history, the corrections page, and reports/.' },
   { name: '.env', role: 'Holds the DeepSeek API key. Never committed.' },
+  { name: 'Claude Code transcripts', role: 'Every session and agent run, saved by Claude Code under ~/.claude/projects/ and deleted after 30 days by default. The source of the model log; only model ids, task descriptions and versions are copied out. Runs before 4 October 2026 were already deleted when logging began.' },
   { name: 'Source texts', role: 'The full source texts the second opinion reads, in reports/*/sources/. Gitignored as other publishers\' work; each folder\'s manifest.json records what was fetched, its size and its sha256.' },
   { name: '.claude/settings.local.json', role: 'Per-machine permission settings. Never committed, so never read for this page.' },
   { name: 'curl and headless Chrome', role: 'Used by hand when needed: curl for sites that block the other fetchers, Chrome to check layouts. Not part of the scripted pipeline.' },

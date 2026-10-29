@@ -204,6 +204,18 @@ export function toolingTimeline(root = process.cwd()) {
   return commits;
 }
 
+// What actually ran, 1 subagent run per line, oldest first. Written by
+// scripts/log-models.mjs from Claude Code's transcripts; the agent files only
+// name an alias, which follows the newest model in its family.
+export function servedModels(root = process.cwd()) {
+  const rel = 'reports/model-log.jsonl';
+  if (!exists(root, rel)) return [];
+  return read(root, rel)
+    .split(/\r?\n/)
+    .filter(Boolean)
+    .map((l) => JSON.parse(l));
+}
+
 // Every change of an agent's model line, oldest first.
 export function modelHistory(root = process.cwd()) {
   const changes = [];
