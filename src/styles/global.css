@@ -92,6 +92,24 @@ svg{display:block;width:100%;height:auto;}
   margin:2px 0 40px;line-height:1.55;
 }
 
+/* ---- markdown tables in body copy (notes; exhibit bodies carry none) ---- */
+/* display:block lets a wide table scroll sideways on its own at phone width
+   instead of widening the page. */
+.exhibit-body table{
+  display:block;max-width:100%;overflow-x:auto;border-collapse:collapse;
+  margin:0 0 14px;font-family:var(--mono);font-size:13px;line-height:1.45;
+  font-variant-numeric:tabular-nums;
+}
+.exhibit-body th,.exhibit-body td{
+  text-align:left;vertical-align:top;padding:7px 14px 7px 0;
+  border-bottom:1px dotted var(--rule);
+}
+.exhibit-body thead th{
+  font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--ink-soft);border-bottom:1px solid var(--rule-strong);white-space:nowrap;
+}
+.exhibit-body td:first-child{font-weight:600;}
+
 /* ---- prose sections (scoped to exhibit body copy) ---- */
 .exhibit-body section{margin:0 0 34px;}
 .exhibit-body h2{
@@ -229,7 +247,7 @@ a.inline:hover{border-color:var(--red);}
 .filter-list li:last-child a{border-bottom:none;}
 
 @media (min-width:820px){
-  .layout{display:grid;grid-template-columns:240px 1fr;gap:40px;align-items:start;}
+  .layout{display:grid;grid-template-columns:240px minmax(0,1fr);gap:40px;align-items:start;}
   .sidebar-mobile{display:none;}
   .sidebar-desktop{display:block;position:sticky;top:20px;margin:0;}
 }
