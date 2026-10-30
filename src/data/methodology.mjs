@@ -260,6 +260,13 @@ export const eras = [
     why: 'An alias moves on its own: the committer went from Haiku 4.5 to Haiku 5.5 between 5 and 10 October 2026, and git recorded nothing. The transcripts that did record it are deleted after 30 days; runs before 4 October were already gone.',
     commits: ['0443d5a'],
   },
+  {
+    name: 'What the settings change',
+    changed: 'The model log now records the effort level of every turn, a hook saves each drafter brief with every version of its draft, and a script redrafts an exhibit from its saved brief at chosen model and effort settings, in a checkout from before it shipped, then measures each draft.',
+    why: 'No agent file sets an effort, so every agent ran at whatever the session was set to, and the brief was the 1 input the repo never kept. Redrafting 017 at 11 settings changed the cost of a draft 172 times over and the wording far less; 8 of the 11 drafts repeated the brief\'s 1 wrong count, and the 2 runs asked for Fable 5.1 ran on Opus 5.5.',
+    commits: ['4fb4f2b'],
+    note: '002-model-and-effort',
+  },
 ];
 
 // Shown for a kind of tooling the repo doesn't use yet. When the first one
