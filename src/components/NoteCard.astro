@@ -1,12 +1,13 @@
 ---
 interface Props {
+  number?: string;
   title: string;
   teaser: string;
   date: Date;
   href: string;
 }
 
-const { title, teaser, date, href } = Astro.props;
+const { number, title, teaser, date, href } = Astro.props;
 
 const formattedDate = date.toLocaleDateString('en-US', {
   year: 'numeric',
@@ -17,7 +18,8 @@ const formattedDate = date.toLocaleDateString('en-US', {
 
 <a class="card" href={href}>
   <div class="card-filing">
-    <span>Notes</span>
+    <span>Note{number && <> <b>{number}</b></>}</span>
+    <span>Behind the scenes</span>
   </div>
   <h2 class="card-title">{title}</h2>
   <p class="card-teaser">{teaser}</p>

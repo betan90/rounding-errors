@@ -25,6 +25,7 @@ const notes = (await getCollection('notes')).sort(
     {
       notes.map((entry) => (
         <NoteCard
+          number={entry.slug.split('-')[0]}
           title={entry.data.title}
           teaser={entry.data.teaser}
           date={entry.data.date}
