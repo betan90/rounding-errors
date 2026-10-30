@@ -1,0 +1,28 @@
+{
+  "run": "ab1401e5828eebb34",
+  "date": "2026-10-09",
+  "task": "Draft exhibit 013 water",
+  "models": [
+    "claude-opus-5-5"
+  ],
+  "effort": [
+    "medium"
+  ],
+  "claudeCode": "2.1.289",
+  "brief": null,
+  "drafts": 2,
+  "editsNotApplied": [],
+  "opened": [
+    "src/content/exhibits/007-10000-steps.md",
+    "src/content/exhibits/003-china.md",
+    "exhibit-013-8-glasses.md"
+  ],
+  "searched": [
+    "Grep chartNote|note"
+  ],
+  "wrote": [
+    "Write exhibit-013-8-glasses.md",
+    "Write scratchpad-ignore.txt",
+    "Write exhibit-013-8-glasses.md"
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "name": "017-model-effort",
+  "exhibit": "017",
+  "base": "642dcbe",
+  "worktree": ".worktrees/017-model-effort",
+  "original": "reports/017-illegal-gdp/drafting/2026-10-23-ab27d08abf36de5b3",
+  "draftName": "exhibit-017-illegal-gdp.md",
+  "exemplars": [
+    ".worktrees/017-model-effort/src/content/exhibits/015-police-recorded-crime.md",
+    ".worktrees/017-model-effort/src/content/exhibits/016-spinach.md"
+  ],
+  "created": "2026-10-29T15:33:40.610Z",
+  "cells": [
+    {
+      "run": "r01",
+      "model": "fable",
+      "effort": "medium",
+      "prompt": "reports/comparisons/017-model-effort/prompts/r01.md",
+      "draft": "reports/comparisons/017-model-effort/drafts/r01/exhibit-017-illegal-gdp.md",
+      "description": "Compare: 017-model-effort r01"
+    },
+    {
+      "run": "r02",
+      "model": "opus",
+      "effort": "high",
+      "prompt": "reports/comparisons/017-model-effort/prompts/r02.md",
+      "draft": "reports/comparisons/017-model-effort/drafts/r02/exhibit-017-illegal-gdp.md",
+      "description": "Compare: 017-model-effort r02"
+    },
+    {
+      "run": "r03",
+      "model": "sonnet",
+      "effort": "medium",
+      "prompt": "reports/comparisons/017-model-effort/prompts/r03.md",
+      "draft": "reports/comparisons/017-model-effort/drafts/r03/exhibit-017-illegal-gdp.md",
+      "description": "Compare: 017-model-effort r03"
+    },
+    {
+      "run": "r04",
+      "model": "fable",
+      "effort": "low",
+      "prompt": "reports/comparisons/017-model-effort/prompts/r04.md",
+      "draft": "reports/comparisons/017-model-effort/drafts/r04/exhibit-017-illegal-gdp.md",
+      "description": "Compare: 017-model-effort r04"
+    },
+    {
+      "run": "r05",
+      "model": "opus",
+      "effort": "medium",
+      "prompt": "reports/comparisons/017-model-effort/prompts/r05.md",
+      "draft": "reports/comparisons/017-model-effort/drafts/r05/exhibit-017-illegal-gdp.md",
+      "description": "Compare: 017-model-effort r05"
+    },
+    {
+      "run": "r06",
+      "model": "haiku",
+      "effort": "medium",
+      "prompt": "reports/comparisons/017-model-effort/prompts/r06.md",
+      "draft": "reports/comparisons/017-model-effort/drafts/r06/exhibit-017-illegal-gdp.md",
+      "description": "Compare: 017-model-effort r06"
+    },
+    {
+      "run": "r07",
+      "model": "haiku",
+      "effort": "max",
+      "prompt": "reports/comparisons/017-model-effort/prompts/r07.md",
+      "draft": "reports/comparisons/017-model-effort/drafts/r07/exhibit-017-illegal-gdp.md",
+      "description": "Compare: 017-model-effort r07"
+    },
+    {
+      "run": "r08",
+      "model": "opus",
+      "effort": "low",
+      "prompt": "reports/comparisons/017-model-effort/prompts/r08.md",
+      "draft": "reports/comparisons/017-model-effort/drafts/r08/exhibit-017-illegal-gdp.md",
+      "description": "Compare: 017-model-effort r08"
+    },
+    {
+      "run": "r09",
+      "model": "opus",
+      "effort": "max",
+      "prompt": "reports/comparisons/017-model-effort/prompts/r09.md",
+      "draft": "reports/comparisons/017-model-effort/drafts/r09/exhibit-017-illegal-gdp.md",
+      "description": "Compare: 017-model-effort r09"
+    },
+    {
+      "run": "r10",
+      "model": "opus",
+      "effort": "xhigh",
+      "prompt": "reports/comparisons/017-model-effort/prompts/r10.md",
+      "draft": "reports/comparisons/017-model-effort/drafts/r10/exhibit-017-illegal-gdp.md",
+      "description": "Compare: 017-model-effort r10"
+    },
+    {
+      "run": "r11",
+      "model": "opus",
+      "effort": "medium",
+      "prompt": "reports/comparisons/017-model-effort/prompts/r11.md",
+      "draft": "reports/comparisons/017-model-effort/drafts/r11/exhibit-017-illegal-gdp.md",
+      "description": "Compare: 017-model-effort r11"
+    }
+  ],
+  "watch": [
+    {
+      "label": "States how many times \"probably false\" appears in the 2014 article (the brief says 3; the article has 4)",
+      "pattern": "probably false[^.\\n]{0,50}?(\\b[2-9]\\b|three|four|five)\\s*(times|occurrences|uses|instances)",
+      "flags": "i"
+    }
+  ]
+}

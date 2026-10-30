@@ -1,0 +1,37 @@
+{
+  "run": "ab4323ab7823646b5",
+  "date": "2026-10-05",
+  "task": "Draft exhibit 012 Reinhart-Rogoff",
+  "models": [
+    "claude-opus-5-5"
+  ],
+  "effort": [
+    "max"
+  ],
+  "claudeCode": "2.1.289",
+  "brief": null,
+  "drafts": 0,
+  "editsNotApplied": [],
+  "opened": [
+    "CLAUDE.md",
+    "src/content/exhibits/011-greece.md",
+    "src/content/exhibits/008-indonesia.md",
+    "src/content/config.ts",
+    "C:\\Users\\betan\\AppData\\Local\\Temp\\claude\\C--Users-betan-OneDrive-Desktop-rounding-errors\\eec6c25a-f16b-4ca8-8640-e73ed12807c1\\scratchpad\\012-sources\\hap-wp322.txt",
+    "C:\\Users\\betan\\AppData\\Local\\Temp\\claude\\C--Users-betan-OneDrive-Desktop-rounding-errors\\eec6c25a-f16b-4ca8-8640-e73ed12807c1\\scratchpad\\012-sources\\rr-errata.txt",
+    "C:\\Users\\betan\\AppData\\Local\\Temp\\claude\\C--Users-betan-OneDrive-Desktop-rounding-errors\\eec6c25a-f16b-4ca8-8640-e73ed12807c1\\scratchpad\\012-sources\\nber-w15639.txt",
+    "C:\\Users\\betan\\AppData\\Local\\Temp\\claude\\C--Users-betan-OneDrive-Desktop-rounding-errors\\eec6c25a-f16b-4ca8-8640-e73ed12807c1\\scratchpad\\012-sources\\pollin-2014.txt",
+    "C:\\Users\\betan\\AppData\\Local\\Temp\\claude\\C--Users-betan-OneDrive-Desktop-rounding-errors\\eec6c25a-f16b-4ca8-8640-e73ed12807c1\\scratchpad\\012-sources\\rr-errata.pdf",
+    "C:\\Users\\betan\\AppData\\Local\\Temp\\claude\\C--Users-betan-OneDrive-Desktop-rounding-errors\\eec6c25a-f16b-4ca8-8640-e73ed12807c1\\scratchpad\\012-sources\\rr-errata.pdf"
+  ],
+  "searched": [
+    "Glob src/content/exhibits/*.md",
+    "Glob src/content/config.*",
+    "Grep ^tags:",
+    "Grep ^(category|country|status|teaser|title|date):",
+    "Glob *",
+    "Grep ^  - key:|^    value:|^ledgerTitle:|^ledgerNote:|^verdictNote:",
+    "Grep chartNote|ChartPending|data\\.exhibit ==="
+  ],
+  "wrote": []
+}

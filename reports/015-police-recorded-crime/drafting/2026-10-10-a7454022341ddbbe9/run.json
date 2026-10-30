@@ -1,0 +1,27 @@
+{
+  "run": "a7454022341ddbbe9",
+  "date": "2026-10-10",
+  "task": "Draft exhibit 015",
+  "models": [
+    "claude-opus-5-5"
+  ],
+  "effort": [
+    "medium"
+  ],
+  "claudeCode": "2.1.296",
+  "brief": {
+    "from": "C:/Users/betan/AppData/Local/Temp/claude/C--Users-betan-OneDrive-Desktop-rounding-errors/d8c0547f-3103-4c90-bdbb-8e4c8deb3867/scratchpad/015-src/BRIEF.md",
+    "whole": true
+  },
+  "drafts": 1,
+  "editsNotApplied": [],
+  "opened": [
+    "C:/Users/betan/AppData/Local/Temp/claude/C--Users-betan-OneDrive-Desktop-rounding-errors/d8c0547f-3103-4c90-bdbb-8e4c8deb3867/scratchpad/015-src/BRIEF.md",
+    "src/content/exhibits/014-phe-excel.md",
+    "src/content/exhibits/011-greece.md"
+  ],
+  "searched": [],
+  "wrote": [
+    "Write exhibit-015-police-recorded-crime.md"
+  ]
+}

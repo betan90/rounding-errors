@@ -1,0 +1,478 @@
+<title>Exhibit 017 Drafting Grid</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+<style>
+/* Layout: a drawer of sealed drafts above a reading desk that lays 1 or 2 out as exhibits; the reveal turns the drawer into the model x effort grid. Palette and faces are the museum's own (src/styles/global.css). */
+:root{
+  --paper:#EDEEE8; --paper-2:#E4E5DE; --ink:#17181A; --ink-soft:#5A5C55;
+  --red:#B0201F; --red-fill:rgba(176,32,31,.10); --rule:#C6C7BF; --rule-strong:#9A9B92;
+  --mono:'IBM Plex Mono',ui-monospace,Menlo,Consolas,monospace;
+  --serif:'Source Serif 4',Georgia,'Times New Roman',serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#151613; --paper-2:#1D1E1A; --ink:#E6E7E0; --ink-soft:#A3A59B;
+  --red:#E5675E; --red-fill:rgba(229,103,94,.16); --rule:#34352F; --rule-strong:#5A5C54; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#151613; --paper-2:#1D1E1A; --ink:#E6E7E0; --ink-soft:#A3A59B;
+  --red:#E5675E; --red-fill:rgba(229,103,94,.16); --rule:#34352F; --rule-strong:#5A5C54; color-scheme:dark}
+
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:var(--serif);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1180px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:0 64px}
+button,select,textarea{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--red);outline-offset:2px}
+.mono{font-family:var(--mono)}
+
+.masthead{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;border-bottom:2px solid var(--ink);padding:20px 0 10px;margin-bottom:24px;font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase}
+.masthead b{font-weight:700}
+.masthead .state{color:var(--ink-soft);letter-spacing:.1em}
+.masthead .state.revealed{color:var(--red)}
+h1{font-family:var(--mono);font-weight:700;font-size:clamp(26px,5.4vw,46px);line-height:1.05;letter-spacing:-.02em;margin:4px 0 14px;text-wrap:balance}
+.dek{font-family:var(--mono);font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-soft);border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);padding:9px 0;margin:0 0 18px}
+.intro{max-width:68ch;color:var(--ink-soft);font-size:16px;margin:0 0 10px}
+.notice{font-family:var(--mono);font-size:12.5px;border:1px solid var(--red);color:var(--red);padding:8px 12px;margin:14px 0 0;max-width:68ch}
+.h2{font-family:var(--mono);font-size:12.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;margin:38px 0 12px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:baseline}
+.h2 span{font-weight:400;color:var(--ink-soft);letter-spacing:.08em}
+
+/* drawer */
+.drawer{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+.card{border:1px solid var(--rule-strong);background:var(--paper);padding:12px 12px 10px;display:flex;flex-direction:column;gap:8px;min-width:0}
+.card.open{border-color:var(--ink);box-shadow:inset 0 0 0 1px var(--ink)}
+.card .top{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+.card .id{font-family:var(--mono);font-weight:700;font-size:20px;letter-spacing:-.01em}
+.card .best{font-family:var(--mono);font-size:11px;color:var(--red);letter-spacing:.08em;text-transform:uppercase}
+.card .title{font-weight:600;font-size:15px;line-height:1.35;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.card .meta{font-family:var(--mono);font-size:11px;color:var(--ink-soft);letter-spacing:.04em}
+.card .setting{font-family:var(--mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--red)}
+.card .acts{display:flex;gap:6px;margin-top:auto}
+.btn{font-family:var(--mono);font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;border:1px solid var(--ink);background:transparent;padding:6px 10px;cursor:pointer}
+.btn:hover{background:var(--paper-2)}
+.btn.solid{background:var(--ink);color:var(--paper)}
+.btn.solid:hover{background:var(--ink-soft)}
+.btn.red{border-color:var(--red);color:var(--red)}
+.btn[disabled]{opacity:.45;cursor:default}
+.scale{display:inline-flex;gap:2px;vertical-align:middle}
+.scale i{display:block;width:9px;height:9px;border:1px solid var(--ink)}
+.scale i.on{background:var(--ink)}
+.stamp{display:inline-flex;align-items:center;gap:6px;font-family:var(--mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase}
+.stamp.none{color:var(--ink-soft)}
+
+/* desk */
+.desk{display:grid;grid-template-columns:minmax(0,1fr);gap:32px;align-items:start}
+@media (min-width:1000px){.desk.two{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}}
+.desk:not(.two) .slot{max-width:760px}
+.slot{min-width:0;border-top:2px solid var(--ink);padding-top:12px}
+.slot-head{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:16px}
+.slot-head select{font-family:var(--mono);font-size:13px;border:1px solid var(--ink);background:var(--paper);padding:5px 8px}
+.slot-head .spacer{flex:1}
+.facts{display:flex;flex-wrap:wrap;gap:4px 14px;font-family:var(--mono);font-size:11.5px;color:var(--ink-soft);letter-spacing:.03em;margin:-6px 0 16px}
+.facts b{color:var(--ink);font-weight:600}
+.facts .warn{color:var(--red)}
+
+.filing{font-family:var(--mono);font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft);display:flex;flex-wrap:wrap;gap:4px 16px;margin-bottom:10px}
+.filing .cat{color:var(--red);font-weight:600}
+.d-title{font-family:var(--mono);font-weight:700;font-size:clamp(21px,3.2vw,28px);line-height:1.12;letter-spacing:-.015em;margin:0 0 10px;text-wrap:balance}
+.d-dek{font-family:var(--mono);font-size:11.5px;letter-spacing:.05em;text-transform:uppercase;color:var(--ink-soft);border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);padding:8px 0;margin:0 0 20px}
+.ledger{margin:0 0 22px}
+.ledger figcaption,.verdict .label{font-family:var(--mono);font-size:11.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;margin-bottom:6px}
+.scroll{overflow-x:auto}
+table{border-collapse:collapse;width:100%}
+.ledger table,.verdict table{font-family:var(--mono);font-size:12.5px}
+.ledger th,.ledger td,.verdict th,.verdict td{text-align:left;vertical-align:top;padding:7px 8px;border-bottom:1px solid var(--rule)}
+.ledger th,.verdict th{font-weight:400;color:var(--ink-soft);width:52%}
+.ledger tr.gap th,.ledger tr.gap td{background:var(--red-fill)}
+.ledger tr.gap td{color:var(--red);font-weight:600}
+.note{font-family:var(--mono);font-size:11.5px;color:var(--ink-soft);margin:8px 0 0}
+.d-body h4{font-family:var(--mono);font-size:12.5px;letter-spacing:.12em;text-transform:uppercase;margin:24px 0 6px;padding-bottom:5px;border-bottom:1px solid var(--rule)}
+.d-body p{margin:0 0 14px}
+.d-body blockquote{margin:0 0 14px;padding-left:14px;border-left:2px solid var(--rule-strong);color:var(--ink-soft)}
+.verdict{margin:26px 0 18px;padding-top:12px;border-top:2px solid var(--ink)}
+.verdict p{margin:12px 0 0;font-size:16px}
+details{margin:12px 0;border-top:1px solid var(--rule);padding-top:8px}
+summary{font-family:var(--mono);font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;cursor:pointer}
+details ol{font-size:14px;padding-left:22px}
+details li{margin:0 0 8px}
+.url{font-family:var(--mono);font-size:11px;color:var(--ink-soft);word-break:break-all}
+.disclosure{font-size:14px;color:var(--ink-soft);font-style:italic}
+
+/* rating */
+.rate{margin-top:20px;border:1px solid var(--ink);padding:12px;display:grid;gap:10px;background:var(--paper-2)}
+.rate .lbl{font-family:var(--mono);font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;font-weight:700;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.rate .lbl span{font-weight:400;color:var(--ink-soft);letter-spacing:.04em;text-transform:none}
+.seg{display:flex;flex-wrap:wrap;gap:6px}
+.seg .btn[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+.seg .btn.best[aria-pressed="true"]{background:var(--red);border-color:var(--red);color:var(--paper)}
+.rate textarea{width:100%;min-height:58px;border:1px solid var(--rule-strong);background:var(--paper);padding:8px;font-size:15px;resize:vertical}
+.blindnote{font-family:var(--mono);font-size:11px;color:var(--ink-soft)}
+
+/* reveal */
+.reveal-box{border:1px dashed var(--rule-strong);padding:16px;display:grid;gap:10px;max-width:760px}
+.reveal-box p{margin:0}
+.confirm{border:1px solid var(--red);padding:12px;display:grid;gap:10px}
+.confirm .row{display:flex;gap:8px;flex-wrap:wrap}
+.grid{font-family:var(--mono);font-size:12px;min-width:860px}
+.grid th,.grid td{border:1px solid var(--rule);padding:8px;vertical-align:top;text-align:left}
+.grid thead th{font-size:11px;letter-spacing:.12em;text-transform:uppercase;background:var(--paper-2)}
+.grid tbody th{width:116px;font-size:12px}
+.grid tbody th small{display:block;font-weight:400;color:var(--ink-soft);letter-spacing:0;text-transform:none;font-size:11px;margin-top:4px}
+.grid td.empty{color:var(--ink-soft);background:repeating-linear-gradient(135deg,transparent 0 6px,var(--paper-2) 6px 7px)}
+.entry{display:grid;gap:2px;padding:6px 0;border-top:1px solid var(--rule)}
+.entry:first-child{border-top:0;padding-top:0}
+.entry .rid{font-weight:700;font-size:13px;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.entry .rid button{border:0;background:none;padding:0;text-decoration:underline;cursor:pointer;font-weight:700}
+.entry .m{color:var(--ink-soft)}
+.entry .flag{color:var(--red)}
+.callout{max-width:72ch;border-left:3px solid var(--red);padding:2px 0 2px 14px;margin:14px 0}
+.callout p{margin:0 0 8px}
+.heat{font-family:var(--mono);font-size:11px;border-collapse:collapse;width:auto}
+.heat th,.heat td{padding:5px 6px;text-align:center;border:1px solid var(--paper)}
+.heat thead th{writing-mode:vertical-rl;transform:rotate(180deg);height:92px;font-weight:600;white-space:nowrap}
+.heat tbody th{text-align:right;white-space:nowrap;font-weight:600}
+.choices{font-size:13.5px}
+.choices th,.choices td{border-bottom:1px solid var(--rule);padding:7px 8px;text-align:left;vertical-align:top}
+.choices thead th{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;border-bottom:2px solid var(--ink)}
+.choices td.flag{color:var(--red)}
+.small{font-size:14px;color:var(--ink-soft);max-width:72ch}
+footer{margin-top:48px;border-top:1px solid var(--rule);padding-top:12px;font-family:var(--mono);font-size:11.5px;color:var(--ink-soft);display:grid;gap:4px}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+</style>
+
+<div class="wrap">
+  <header class="masthead"><span><b>Rounding Errors</b> · comparison 017-model-effort</span><span class="state" id="state">Settings hidden</span></header>
+  <h1>Exhibit 017, drafted 11 times</h1>
+  <p class="dek">1 brief · 4 models asked for · 5 effort levels · the repo as it was before 017 shipped</p>
+  <p class="intro">Every draft got the same prompt, the same brief, the same 2 example exhibits and the same drafter instructions. Only the model and the effort level changed. Read them without knowing which is which, rate each one, then reveal the settings.</p>
+  <p class="intro" id="progress">Loading the drafts.</p>
+  <p class="notice" id="dbnotice" hidden></p>
+
+  <div class="h2">The drafts <span>sealed until the reveal</span></div>
+  <div class="drawer" id="drawer"></div>
+
+  <div class="h2">The desk <span id="deskhint">choose a draft above, or pick 1 in each column</span></div>
+  <div class="desk" id="desk"></div>
+
+  <div class="h2" id="revealhead">The settings</div>
+  <section id="reveal"></section>
+
+  <footer>
+    <span>Data: reports/comparisons/017-model-effort/results.json, built by scripts/compare-drafts.mjs from Claude Code's transcripts.</span>
+    <span>Ratings are saved with this page, where Claude can read them back. A rating given before the reveal is kept as the blind rating.</span>
+  </footer>
+</div>
+
+<script>
+(function () {
+  const RATINGS = [
+    { key: 'ship', label: 'Ship as is', n: 4 },
+    { key: 'light', label: 'Light edit', n: 3 },
+    { key: 'heavy', label: 'Heavy edit', n: 2 },
+    { key: 'redo', label: 'Start over', n: 1 },
+  ];
+  const MODEL_NAMES = { fable: 'Fable 5.1', opus: 'Opus 5.5', sonnet: 'Sonnet 5.5', haiku: 'Haiku 5.5' };
+  const MODELS = ['fable', 'opus', 'sonnet', 'haiku'];
+  const EFFORTS = ['low', 'medium', 'high', 'xhigh', 'max'];
+
+  const state = { data: null, runs: [], ratings: {}, revealed: false, revealedAt: null, db: null, dbOk: false, slots: [null, null], confirming: false };
+  const writes = {};
+  const $ = (id) => document.getElementById(id);
+
+  // ---- text ----
+  const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+  function inline(s) {
+    let t = esc(s);
+    t = t.replace(/\[([^\]]+)\]\((https?:[^)\s]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>');
+    t = t.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+    t = t.replace(/(^|[\s(])\*([^*\s][^*]*?)\*(?=[\s).,;:!?]|$)/g, '$1<em>$2</em>');
+    t = t.replace(/`([^`]+)`/g, '<code>$1</code>');
+    return t;
+  }
+  function md(src) {
+    return String(src || '').replace(/\r\n/g, '\n').split(/\n{2,}/).map((block) => {
+      const b = block.trim();
+      if (!b) return '';
+      if (/^#{2,4}\s/.test(b)) return '<h4>' + inline(b.replace(/^#{2,4}\s+/, '')) + '</h4>';
+      if (/^>\s?/.test(b)) return '<blockquote>' + inline(b.replace(/^>\s?/gm, '')) + '</blockquote>';
+      if (/^[-*]\s/.test(b)) return '<ul>' + b.split('\n').map((l) => '<li>' + inline(l.replace(/^[-*]\s+/, '')) + '</li>').join('') + '</ul>';
+      return '<p>' + inline(b.replace(/\n/g, ' ')) + '</p>';
+    }).join('');
+  }
+  const fmtTime = (s) => (s >= 60 ? Math.floor(s / 60) + 'm ' + String(s % 60).padStart(2, '0') + 's' : s + 's');
+  const fmtCost = (c) => (c == null ? 'n/a' : c < 0.1 ? '$' + c.toFixed(3) : '$' + c.toFixed(2));
+  const setting = (r) => (MODEL_NAMES[r.ran.model] || r.ran.model) + ' · ' + r.ran.effort;
+  const asked = (r) => (MODEL_NAMES[r.model] || r.model) + ' · ' + r.effort;
+  const substituted = (r) => r.ran && (r.ran.model !== r.model || r.ran.effort !== r.effort);
+  const byId = (id) => (id === 'original' ? state.data.original : state.runs.find((r) => r.run === id));
+  const ratingOf = (id) => state.ratings[id] || {};
+
+  function scale(n) {
+    return '<span class="scale" aria-hidden="true">' + [1, 2, 3, 4].map((i) => '<i class="' + (i <= n ? 'on' : '') + '"></i>').join('') + '</span>';
+  }
+  function stamp(id) {
+    const r = RATINGS.find((x) => x.key === ratingOf(id).rating);
+    return r ? '<span class="stamp">' + scale(r.n) + esc(r.label) + '</span>' : '<span class="stamp none">Not rated</span>';
+  }
+
+  // ---- drawer ----
+  function renderDrawer() {
+    const rated = state.runs.filter((r) => ratingOf(r.run).rating).length;
+    $('progress').textContent = 'Rated ' + rated + ' of ' + state.runs.length + '. ' + (state.revealed ? 'Settings revealed' + (state.revealedAt ? ' on ' + state.revealedAt.slice(0, 10) : '') + '.' : 'Settings hidden.');
+    $('state').textContent = state.revealed ? 'Settings revealed' : 'Settings hidden';
+    $('state').classList.toggle('revealed', state.revealed);
+    $('drawer').innerHTML = state.runs.map((r) => {
+      const open = state.slots.includes(r.run);
+      const rt = ratingOf(r.run);
+      return '<article class="card' + (open ? ' open' : '') + '">' +
+        '<div class="top"><span class="id">' + esc(r.run) + '</span>' + (rt.best ? '<span class="best">Best</span>' : '') + '</div>' +
+        '<div class="title">' + inline(r.choices.title || 'Untitled') + '</div>' +
+        '<div class="meta">' + r.words + ' words in the body</div>' +
+        (state.revealed ? '<div class="setting">' + esc(setting(r)) + '</div>' : '') +
+        stamp(r.run) +
+        '<div class="acts"><button class="btn" data-open="' + r.run + '" data-slot="0">Read</button><button class="btn" data-open="' + r.run + '" data-slot="1">Beside</button></div>' +
+        '</article>';
+    }).join('');
+  }
+
+  // ---- desk ----
+  function renderDraft(d) {
+    const c = d.choices;
+    const ledger = (c.ledger || []).map((r) => '<tr class="' + (r.gap ? 'gap' : '') + '"><th scope="row">' + inline(r.label) + '</th><td>' + inline(r.value) + '</td></tr>').join('');
+    const verdict = (c.verdict || []).map((v) => '<tr><th scope="row">' + inline(v.key) + '</th><td>' + inline(v.value) + '</td></tr>').join('');
+    const sources = (c.sources || []).map((s) => '<li>' + (s.name ? '<b>' + inline(s.name) + '</b> ' : '') + inline(s.text) + (s.url ? ' <span class="url">' + esc(s.url) + '</span>' : '') + '</li>').join('');
+    return '<div class="filing"><span class="cat">' + esc(c.category || 'no category') + '</span><span>' + esc(c.status || '') + '</span><span>' + esc((c.tags || []).join(' · ')) + '</span></div>' +
+      '<h3 class="d-title">' + inline(c.title || 'Untitled') + '</h3>' +
+      '<p class="d-dek">' + inline(c.teaser || '') + '</p>' +
+      '<figure class="ledger"><figcaption>' + inline(c.ledgerTitle || 'The numbers') + '</figcaption><div class="scroll"><table>' + ledger + '</table></div>' + (c.ledgerNote ? '<p class="note">' + inline(c.ledgerNote) + '</p>' : '') + '</figure>' +
+      '<div class="d-body">' + md(d.body) + '</div>' +
+      '<div class="verdict"><div class="label">Verdict</div><div class="scroll"><table>' + verdict + '</table></div>' + (c.verdictNote ? '<p>' + inline(c.verdictNote) + '</p>' : '') + '</div>' +
+      '<details><summary>Sources (' + (c.sources || []).length + ') and disclosure</summary><ol>' + sources + '</ol><p class="disclosure">' + inline(c.disclosure || '') + '</p></details>' +
+      (state.revealed && d.report ? '<details><summary>What the drafter reported back</summary><div class="d-body">' + md(d.report) + '</div></details>' : '');
+  }
+
+  function facts(d) {
+    if (!state.revealed) return '';
+    if (d.run === 'original') return '<div class="facts"><span><b>' + esc(d.model) + '</b> at ' + esc(d.effort) + '</span><span>' + d.words + ' words</span><span>' + esc(d.note) + '</span></div>';
+    const w = d.watched && d.watched[0];
+    return '<div class="facts"><span><b>' + esc(setting(d)) + '</b></span>' +
+      (substituted(d) ? '<span class="warn">asked for ' + esc(asked(d)) + '</span>' : '') +
+      '<span>' + fmtCost(d.costUsd) + ' est.</span><span>' + fmtTime(d.seconds) + '</span><span>' + d.words + ' words</span>' +
+      '<span>' + d.firstRules.blocking.length + ' rule breaks in its first version</span>' +
+      '<span' + (d.numbersNotInInputs.length ? ' class="warn"' : '') + '>numbers not in the brief: ' + (d.numbersNotInInputs.join(', ') || 'none') + '</span>' +
+      (d.outside.length ? '<span class="warn">opened outside its inputs: ' + esc(d.outside.join('; ')) + '</span>' : '') +
+      (w && w.found ? '<span class="warn">repeats the brief\'s count of "probably false"</span>' : '') +
+      '</div>';
+  }
+
+  function ratePanel(id) {
+    if (id === 'original') return '';
+    const rt = ratingOf(id);
+    const blind = rt.blindRating ? RATINGS.find((x) => x.key === rt.blindRating) : null;
+    return '<div class="rate" data-rate="' + id + '">' +
+      '<div class="lbl">Your rating of ' + esc(id) + '<span>' + (state.dbOk ? (rt.updatedAt ? 'Saved' : 'Not rated yet') : 'Not saved in this view') + '</span></div>' +
+      '<div class="seg">' + RATINGS.map((r) => '<button class="btn" data-rating="' + r.key + '" data-run="' + id + '" aria-pressed="' + (rt.rating === r.key) + '">' + esc(r.label) + '</button>').join('') +
+      '<button class="btn best" data-best="' + id + '" aria-pressed="' + (!!rt.best) + '">Best in the set</button></div>' +
+      '<label class="blindnote" for="note-' + id + '">A note on this draft (saved when you leave the box)</label>' +
+      '<textarea id="note-' + id + '" data-note="' + id + '" placeholder="The line you would keep, the line you would cut.">' + esc(rt.note || '') + '</textarea>' +
+      (state.revealed && blind ? '<div class="blindnote">Blind rating, given before the reveal: ' + esc(blind.label) + '</div>' : '') +
+      '</div>';
+  }
+
+  function options(selected) {
+    const ids = state.runs.map((r) => r.run).concat(state.revealed ? ['original'] : []);
+    return ids.map((id) => '<option value="' + id + '"' + (id === selected ? ' selected' : '') + '>' + (id === 'original' ? 'The original draft' : id) + '</option>').join('');
+  }
+
+  function renderDesk() {
+    const two = !!state.slots[1];
+    $('desk').classList.toggle('two', two);
+    $('desk').innerHTML = state.slots.map((id, i) => {
+      if (!id) return '';
+      const d = byId(id);
+      if (!d) return '';
+      return '<section class="slot" aria-label="Draft ' + esc(id) + '">' +
+        '<div class="slot-head"><label class="mono" for="pick-' + i + '" style="font-size:11.5px;letter-spacing:.1em;text-transform:uppercase">' + (i === 0 ? 'Reading' : 'Beside it') + '</label>' +
+        '<select id="pick-' + i + '" data-pick="' + i + '">' + options(id) + '</select><span class="spacer"></span>' +
+        (i === 1 || two ? '<button class="btn" data-close="' + i + '">Close</button>' : '<button class="btn" data-open="' + nextId(id) + '" data-slot="1">Add one beside it</button>') + '</div>' +
+        facts(d) + renderDraft(d) + ratePanel(id) + '</section>';
+    }).join('');
+  }
+  const nextId = (id) => { const i = state.runs.findIndex((r) => r.run === id); return state.runs[(i + 1) % state.runs.length].run; };
+  function renderRates() {
+    document.querySelectorAll('.rate[data-rate]').forEach((el) => {
+      const id = el.getAttribute('data-rate');
+      const focused = document.activeElement && document.activeElement.getAttribute('data-note') === id;
+      if (focused) return;
+      el.outerHTML = ratePanel(id);
+    });
+  }
+
+  // ---- reveal ----
+  function renderReveal() {
+    const box = $('reveal');
+    if (!state.revealed) {
+      const rated = state.runs.filter((r) => ratingOf(r.run).rating).length;
+      box.innerHTML = '<div class="reveal-box"><p>The grid of which model and effort level wrote each draft stays hidden until you ask for it. Rate first: a rating given before the reveal is kept as your blind rating, and a later change is saved beside it.</p>' +
+        (state.confirming
+          ? '<div class="confirm"><p>Reveal the settings now? You have rated ' + rated + ' of ' + state.runs.length + '. This cannot be hidden again.</p><div class="row"><button class="btn solid" id="doReveal">Reveal the settings</button><button class="btn" id="noReveal">Keep reading blind</button></div></div>'
+          : '<div><button class="btn red" id="askReveal">Reveal the settings</button></div>') + '</div>';
+      return;
+    }
+    const done = state.runs;
+    const subs = done.filter(substituted);
+    const groups = {};
+    done.forEach((r) => { (groups[r.ran.model + '|' + r.ran.effort] = groups[r.ran.model + '|' + r.ran.effort] || []).push(r); });
+    const D = state.data.distance;
+    const overlap = (a, b) => { const i = D.ids.indexOf(a), j = D.ids.indexOf(b); return i < 0 || j < 0 ? null : 1 - D.matrix[i][j]; };
+    const pct = (x) => (x == null ? 'n/a' : Math.round(x * 100) + '%');
+    const avgOverlap = (id) => { const o = D.ids.filter((x) => x !== id && x !== 'original').map((x) => overlap(id, x)); return o.reduce((s, x) => s + x, 0) / o.length; };
+
+    const same = [], diff = [];
+    for (let i = 0; i < done.length; i++) for (let j = i + 1; j < done.length; j++) {
+      const a = done[i], b = done[j], o = overlap(a.run, b.run);
+      (a.ran.model === b.ran.model && a.ran.effort === b.ran.effort ? same : diff).push({ a: a.run, b: b.run, o, s: setting(a) });
+    }
+    const mean = (xs) => xs.reduce((s, x) => s + x.o, 0) / (xs.length || 1);
+
+    const rows = MODELS.map((m) => {
+      const cells = EFFORTS.map((e) => {
+        const list = groups[m + '|' + e] || [];
+        if (!list.length) {
+          const askedHere = subs.filter((r) => r.model === m && r.effort === e);
+          return '<td class="empty">' + (askedHere.length ? 'Asked for in ' + askedHere.map((r) => esc(r.run)).join(', ') + '; ran on ' + esc(MODEL_NAMES[askedHere[0].ran.model]) + '.' : '') + '</td>';
+        }
+        return '<td>' + list.map((r) => '<div class="entry"><div class="rid"><button data-open="' + r.run + '" data-slot="0">' + esc(r.run) + '</button>' + stamp(r.run) + (ratingOf(r.run).best ? '<span class="flag">best</span>' : '') + '</div>' +
+          (substituted(r) ? '<div class="flag">asked for ' + esc(asked(r)) + '</div>' : '') +
+          '<div class="m">' + fmtCost(r.costUsd) + ' est. · ' + fmtTime(r.seconds) + ' · ' + r.words + ' words</div>' +
+          '<div class="m">' + r.firstRules.blocking.length + ' rule breaks first time · ' + r.numbersNotInInputs.length + ' numbers not in the brief</div>' +
+          '<div class="m">shares ' + pct(avgOverlap(r.run)) + ' of its phrases with the rest, on average</div>' +
+          (r.watched[0] && r.watched[0].found ? '<div class="flag">repeats "probably false" 3 times</div>' : '') +
+          (r.outside.length ? '<div class="flag">opened ' + r.outside.length + ' file(s) outside its inputs</div>' : '') +
+          '</div>').join('') + '</td>';
+      }).join('');
+      return '<tr><th scope="row">' + esc(MODEL_NAMES[m]) + '<small>' + esc(state.data.prices[m] ? '$' + state.data.prices[m].in + ' in / $' + state.data.prices[m].out + ' out per million tokens' : '') + '</small></th>' + cells + '</tr>';
+    }).join('');
+
+    const ids = D.ids;
+    const label = (id) => (id === 'original' ? 'original' : id + ' ' + byId(id).ran.model + ' ' + byId(id).ran.effort);
+    const heat = '<table class="heat"><thead><tr><th></th>' + ids.map((id) => '<th scope="col">' + esc(label(id)) + '</th>').join('') + '</tr></thead><tbody>' +
+      ids.map((a) => '<tr><th scope="row">' + esc(label(a)) + '</th>' + ids.map((b) => {
+        if (a === b) return '<td style="background:var(--paper-2)">·</td>';
+        const o = overlap(a, b), k = Math.round(Math.min(1, o / 0.5) * 70);
+        return '<td style="background:color-mix(in srgb,var(--red) ' + k + '%,var(--paper));color:' + (k > 45 ? 'var(--paper)' : 'var(--ink)') + '">' + Math.round(o * 100) + '</td>';
+      }).join('') + '</tr>').join('') + '</tbody></table>';
+
+    const choiceRows = done.concat([state.data.original]).map((d) => {
+      const c = d.choices, gap = (c.ledger || []).find((r) => r.gap), use = (c.verdict || [])[2];
+      const w = d.watched && d.watched[0];
+      return '<tr><td class="mono">' + esc(d.run) + '<br><small>' + esc(d.run === 'original' ? d.model + ' ' + d.effort : setting(d)) + '</small></td><td>' + inline(c.title) + '</td><td>' + inline(gap ? gap.label + ': ' + gap.value : 'none') + '</td><td>' + inline(use ? use.value : '') + '</td><td class="' + (w && w.found ? 'flag' : '') + '">' + (w && w.found ? '3 times' : 'not stated') + '</td></tr>';
+    }).join('');
+
+    box.innerHTML =
+      (subs.length ? '<div class="callout"><p><b>The label and the run disagreed.</b> ' + subs.length + ' runs were launched asking for ' + esc([...new Set(subs.map((r) => MODEL_NAMES[r.model]))].join(', ')) + '. Claude Code told each one "You are powered by the model named Fable 5.1", then sent every request as ' + esc([...new Set(subs.map((r) => MODEL_NAMES[r.ran.model]))].join(', ')) + '. They are placed below by what ran.</p></div>' : '') +
+      '<div class="scroll"><table class="grid"><thead><tr><th>Model</th>' + EFFORTS.map((e) => '<th scope="col">' + e + '</th>').join('') + '</tr></thead><tbody>' + rows + '</tbody></table></div>' +
+      '<div class="h2">The noise floor <span>how alike 2 drafts are, by shared 3-word phrases</span></div>' +
+      '<div class="callout"><p>2 runs at the same setting share ' + pct(mean(same)) + ' of their phrases on average (' + same.length + ' pairs: ' + same.map((p) => esc(p.a) + '/' + esc(p.b) + ' ' + pct(p.o)).join(', ') + '). 2 runs at different settings share ' + pct(mean(diff)) + ' (' + diff.length + ' pairs).</p><p class="small">If those 2 numbers are close, the setting changed the prose about as much as running it again did. The original draft is in the table for reference: same brief, written on 23 October with the hook checking each write.</p></div>' +
+      '<div class="scroll">' + heat + '</div>' +
+      '<div class="h2">The choices <span>what each draft decided</span></div>' +
+      '<div class="scroll"><table class="choices"><thead><tr><th>Draft</th><th>Title</th><th>The gap row</th><th>Usefulness verdict</th><th>"Probably false" count</th></tr></thead><tbody>' + choiceRows + '</tbody></table></div>' +
+      '<p class="small">The brief said "probably false" appears 3 times in the 2014 article. It appears 4 times; the fact-checker caught it before 017 shipped. No drafter could check it: none of them had the source.</p>';
+  }
+
+  function render() { renderDrawer(); renderDesk(); renderReveal(); }
+
+  // ---- saving ----
+  function queueWrite(path, body) {
+    if (!state.db) return;
+    writes[path] = (writes[path] || Promise.resolve()).then(() => state.db.doc(path).set(body)).catch((e) => {
+      $('dbnotice').hidden = false;
+      $('dbnotice').textContent = 'A rating could not be saved (' + (e && e.code ? e.code : 'error') + '). It is still shown here; reload to try again.';
+    });
+  }
+  function saveRating(id, patch) {
+    const cur = ratingOf(id);
+    const next = Object.assign({ rating: null, best: false, note: '' }, cur, patch, { updatedAt: new Date().toISOString() });
+    if (!state.revealed) { next.blindRating = next.rating; next.blindBest = next.best; }
+    state.ratings = Object.assign({}, state.ratings, { [id]: next });
+    queueWrite('ratings/' + id, next);
+  }
+
+  document.addEventListener('click', (ev) => {
+    const t = ev.target.closest('button');
+    if (!t) return;
+    if (t.dataset.open) {
+      const slot = Number(t.dataset.slot || 0);
+      state.slots[slot] = t.dataset.open;
+      if (slot === 1 && !state.slots[0]) state.slots[0] = t.dataset.open;
+      renderDrawer(); renderDesk();
+      $('desk').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    } else if (t.dataset.close) {
+      const i = Number(t.dataset.close);
+      state.slots[i] = null;
+      if (!state.slots[0]) { state.slots[0] = state.slots[1]; state.slots[1] = null; }
+      renderDrawer(); renderDesk();
+    } else if (t.dataset.rating) {
+      saveRating(t.dataset.run, { rating: t.dataset.rating });
+      renderDrawer(); renderRates(); if (state.revealed) renderReveal();
+    } else if (t.dataset.best) {
+      const id = t.dataset.best, on = !ratingOf(id).best;
+      if (on) Object.keys(state.ratings).filter((k) => k !== id && state.ratings[k].best).forEach((k) => saveRating(k, { best: false }));
+      saveRating(id, { best: on });
+      renderDrawer(); renderRates(); if (state.revealed) renderReveal();
+    } else if (t.id === 'askReveal') { state.confirming = true; renderReveal(); }
+    else if (t.id === 'noReveal') { state.confirming = false; renderReveal(); }
+    else if (t.id === 'doReveal') {
+      state.revealed = true; state.confirming = false; state.revealedAt = new Date().toISOString();
+      queueWrite('state/reveal', { revealed: true, at: state.revealedAt, ratedBeforeReveal: state.runs.filter((r) => ratingOf(r.run).rating).length });
+      render();
+    }
+  });
+  document.addEventListener('change', (ev) => {
+    const t = ev.target;
+    if (t.dataset && t.dataset.note) {
+      if ((ratingOf(t.dataset.note).note || '') !== t.value) saveRating(t.dataset.note, { note: t.value });
+    } else if (t.dataset && t.dataset.pick !== undefined) {
+      state.slots[Number(t.dataset.pick)] = t.value;
+      renderDrawer(); renderDesk();
+    }
+  });
+
+  // ---- boot ----
+  fetch('results.json').then((r) => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); }).then((data) => {
+    state.data = data;
+    state.runs = data.runs.filter((r) => r.status === 'done');
+    state.slots[0] = state.runs[0] && state.runs[0].run;
+    render();
+    connect();
+  }).catch((e) => {
+    $('progress').textContent = 'The drafts could not be loaded (' + e.message + ').';
+  });
+
+  async function connect() {
+    let db = null;
+    try { db = window.claude && window.claude.use ? await window.claude.use('db') : null; } catch (e) { db = null; }
+    if (!db) {
+      $('dbnotice').hidden = false;
+      $('dbnotice').textContent = 'Ratings are not being saved in this view. Open the page on claude.ai while signed in to keep them.';
+      return;
+    }
+    state.db = db; state.dbOk = true;
+    db.collection('ratings').onSnapshot((snap) => {
+      const next = {};
+      snap.docs.forEach((d) => { next[d.id] = d.data(); });
+      state.ratings = next;
+      renderDrawer(); renderRates(); if (state.revealed) renderReveal();
+    }, () => {
+      $('dbnotice').hidden = false;
+      $('dbnotice').textContent = 'Saved ratings stopped updating. Reload the page to reconnect.';
+    });
+    db.doc('state/reveal').onSnapshot((snap) => {
+      const v = snap.exists ? snap.data() : null;
+      const was = state.revealed;
+      state.revealed = !!(v && v.revealed);
+      state.revealedAt = v && v.at ? v.at : state.revealedAt;
+      if (was !== state.revealed) render(); else renderDrawer();
+    }, () => {});
+    renderRates();
+  }
+})();
+</script>

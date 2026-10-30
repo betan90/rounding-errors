@@ -1,0 +1,30 @@
+{
+  "run": "ab898647d806b0e33",
+  "date": "2026-10-23",
+  "task": "Draft exhibit 016 spinach",
+  "models": [
+    "claude-opus-5-5"
+  ],
+  "effort": [
+    "medium"
+  ],
+  "claudeCode": "2.1.296",
+  "brief": {
+    "from": "C:\\Users\\betan\\AppData\\Local\\Temp\\claude\\C--Users-betan-OneDrive-Desktop-rounding-errors\\d8734140-9db2-4d66-81da-48479fcbfdfb\\scratchpad\\exhibit-016-brief.md",
+    "whole": true
+  },
+  "drafts": 2,
+  "editsNotApplied": [],
+  "opened": [
+    "C:\\Users\\betan\\AppData\\Local\\Temp\\claude\\C--Users-betan-OneDrive-Desktop-rounding-errors\\d8734140-9db2-4d66-81da-48479fcbfdfb\\scratchpad\\exhibit-016-brief.md",
+    "src/content/exhibits/013-8-glasses.md",
+    "src/content/exhibits/015-police-recorded-crime.md"
+  ],
+  "searched": [
+    "Glob src/content/exhibits/*.md"
+  ],
+  "wrote": [
+    "Write exhibit-016-spinach.md",
+    "Write exhibit-016-spinach.md"
+  ]
+}

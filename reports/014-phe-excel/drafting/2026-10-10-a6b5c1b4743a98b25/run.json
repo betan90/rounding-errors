@@ -1,0 +1,25 @@
+{
+  "run": "a6b5c1b4743a98b25",
+  "date": "2026-10-10",
+  "task": "Draft exhibit 014 PHE files",
+  "models": [
+    "claude-opus-5-5"
+  ],
+  "effort": [
+    "medium"
+  ],
+  "claudeCode": "2.1.295",
+  "brief": null,
+  "drafts": 1,
+  "editsNotApplied": [],
+  "opened": [
+    "src/content/exhibits/013-8-glasses.md",
+    "src/content/exhibits/012-reinhart-rogoff.md"
+  ],
+  "searched": [
+    "Glob src/content/exhibits/*.md"
+  ],
+  "wrote": [
+    "Write exhibit-014-phe-excel.md"
+  ]
+}

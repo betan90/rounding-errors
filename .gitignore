@@ -41,3 +41,7 @@ data/raw/
 # They are other publishers' copyright, so only each folder's manifest.json is
 # tracked: what was fetched, when, its size and sha256.
 /reports/*/sources/*.txt
+
+# Repo checkouts at older commits for model-and-effort comparisons
+# (scripts/compare-drafts.mjs). Each is a full copy of the repo.
+/.worktrees/

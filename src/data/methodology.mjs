@@ -50,6 +50,10 @@ export const entries = {
     role: 'Runs log-models.mjs each time an agent finishes.',
     why: 'The record is made when the run ends, not rebuilt later from transcripts that may be gone.',
   },
+  'hook:SubagentStop:archive-drafts.mjs': {
+    role: 'Runs archive-drafts.mjs each time the drafter finishes.',
+    why: 'Saved when the run ends, a brief no longer depends on a temp file or on a transcript that is deleted after 30 days.',
+  },
   'hook:PostToolUse:check-house-rules.mjs': {
     role: 'Runs check-house-rules.mjs after every file Claude writes or edits, and hands any broken rule back to Claude before it moves on.',
     why: 'A rule caught when the file is written costs 1 edit. The same rule caught at publish time costs a review round.',
@@ -68,8 +72,16 @@ export const entries = {
     why: 'Counted in sessions, not days, because the site is built in bursts. A run of sessions that committed nothing triggers nothing.',
   },
   'script:log-models.mjs': {
-    role: 'Copies the model the API actually served for each agent run, with the task it was given and the Claude Code version, from Claude Code\'s transcripts into reports/model-log.jsonl.',
-    why: 'An agent file names a model family, and the family moves to its newest model with no commit: the committer went from Haiku 4.5 to Haiku 5.5 between 5 and 10 October 2026. The transcripts that recorded it are deleted after 30 days.',
+    role: 'Copies the model the API actually served for each agent run, the effort each turn ran at, the task it was given and the Claude Code version, from Claude Code\'s transcripts into reports/model-log.jsonl.',
+    why: 'An agent file names a model family, and the family moves to its newest model with no commit: the committer went from Haiku 4.5 to Haiku 5.5 between 5 and 10 October 2026. No agent file sets an effort, so effort follows the session; on 29 October a running committer switched from medium to max when the next message arrived. The transcripts that recorded both are deleted after 30 days.',
+  },
+  'script:archive-drafts.mjs': {
+    role: 'Saves what each drafter run was given and what it wrote into reports/NNN-slug/drafting/: the prompt, the brief exactly as the drafter read it, and every version of the draft, from Claude Code\'s transcripts.',
+    why: 'The brief is the drafter\'s entire input, and it was the 1 input the repo never kept. The 017 brief counted "probably false" 3 times in the ONS article; it appears 4 times, and the fact-checker caught it downstream. Backfilled for exhibits 012 to 017; earlier briefs had already been deleted.',
+  },
+  'script:compare-drafts.mjs': {
+    role: 'Drafts 1 exhibit from its original brief at several model and effort settings, in a checkout of the repo from before the exhibit shipped, then measures each draft: what ran, tokens, time, house rules, numbers and links not in the brief, its choices, and how far its prose is from the others.',
+    why: 'Model and effort are the 2 settings this pipeline changes without noticing. A repeated cell measures the noise, so a difference smaller than 2 runs of 1 setting counts as none.',
   },
   'script:check-links.mjs': {
     role: 'Fetches every source link. A dead link blocks the commit. A redirect or a bot wall is a warning to check in a browser.',
@@ -127,7 +139,7 @@ export const entries = {
 export const pipeline = [
   { step: 'Pick', text: 'A human picks the topic. Claude can propose one; the decision is the human\'s.', uses: [] },
   { step: 'Research', text: 'The researcher finds primary sources and checks each figure. PDFs it can\'t read are listed for conversion with pdftotext.', uses: ['agent:exhibit-researcher'] },
-  { step: 'Draft', text: 'The drafter writes 1 file. A hook checks the voice and template rules as it lands.', uses: ['agent:exhibit-drafter', 'hook:PostToolUse:check-house-rules.mjs'] },
+  { step: 'Draft', text: 'The drafter writes 1 file. A hook checks the voice and template rules as it lands, and another saves the brief and every version of the draft to reports/.', uses: ['agent:exhibit-drafter', 'hook:PostToolUse:check-house-rules.mjs', 'hook:SubagentStop:archive-drafts.mjs'] },
   { step: 'Check', text: 'The fact-checker checks every claim against every source and writes a JSON report.', uses: ['agent:fact-checker'] },
   { step: 'Second opinion', text: 'The sources are fetched in full, and DeepSeek checks every claim against them, quoting what it relied on. The 2 verdict sets are compared.', uses: ['script:fetch-sources.mjs', 'script:second-opinion.sh', 'script:compare-reviews.sh'] },
   { step: 'Decide', text: 'A human reads the disagreements and decides what changes. Reports are archived in reports/ with each exhibit.', uses: [] },

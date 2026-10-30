@@ -29,6 +29,17 @@
             "statusMessage": "Logging which model ran"
           }
         ]
+      },
+      {
+        "matcher": "exhibit-drafter",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"$CLAUDE_PROJECT_DIR/scripts/archive-drafts.mjs\" --hook",
+            "timeout": 30,
+            "statusMessage": "Archiving the brief and drafts"
+          }
+        ]
       }
     ],
     "SessionStart": [

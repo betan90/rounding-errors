@@ -1,0 +1,33 @@
+{
+  "run": "ab27d08abf36de5b3",
+  "date": "2026-10-23",
+  "task": "Draft exhibit 017 drugs in GDP",
+  "models": [
+    "claude-opus-5-5"
+  ],
+  "effort": [
+    "medium"
+  ],
+  "claudeCode": "2.1.296",
+  "brief": {
+    "from": "C:\\Users\\betan\\AppData\\Local\\Temp\\claude\\C--Users-betan-OneDrive-Desktop-rounding-errors\\d8734140-9db2-4d66-81da-48479fcbfdfb\\scratchpad\\exhibit-017-brief.md",
+    "whole": true
+  },
+  "drafts": 2,
+  "editsNotApplied": [],
+  "opened": [
+    "C:\\Users\\betan\\AppData\\Local\\Temp\\claude\\C--Users-betan-OneDrive-Desktop-rounding-errors\\d8734140-9db2-4d66-81da-48479fcbfdfb\\scratchpad\\exhibit-017-brief.md",
+    "src/content/exhibits/015-police-recorded-crime.md",
+    "src/content/exhibits/016-spinach.md",
+    "exhibit-017-illegal-gdp.md",
+    "scripts/check-house-rules.mjs"
+  ],
+  "searched": [
+    "Glob src/content/exhibits/*.md",
+    "Grep words|split\\("
+  ],
+  "wrote": [
+    "Write exhibit-017-illegal-gdp.md",
+    "Write exhibit-017-illegal-gdp.md"
+  ]
+}

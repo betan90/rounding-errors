@@ -1,0 +1,30 @@
+{
+  "run": "a8ae3158573f1084b",
+  "date": "2026-10-05",
+  "task": "Draft exhibit 012 Reinhart-Rogoff",
+  "models": [
+    "claude-opus-5-5"
+  ],
+  "effort": [
+    "medium"
+  ],
+  "claudeCode": "2.1.289",
+  "brief": null,
+  "drafts": 2,
+  "editsNotApplied": [],
+  "opened": [
+    "src/content/exhibits/011-greece.md",
+    "src/content/exhibits/008-indonesia.md",
+    "exhibit-012-reinhart-rogoff.md"
+  ],
+  "searched": [
+    "Grep ^(tags|category|country):",
+    "Grep alphabet|important correction|close in magnitude|factor of nearly|only evidence cited|conclusive empirical",
+    "Grep 0\\.4 |0\\.3 percentage|1\\.9 percentage|almost -2|14\\.3|Ryan"
+  ],
+  "wrote": [
+    "Write exhibit-012-reinhart-rogoff.md",
+    "Write C:\\Users\\betan\\AppData\\Local\\Temp\\claude\\C--Users-betan-OneDrive-Desktop-rounding-errors\\e90ee67d-ebc5-4316-a75e-fb8f35bc2eec\\scratchpad\\012\\noop.txt",
+    "Write exhibit-012-reinhart-rogoff.md"
+  ]
+}
