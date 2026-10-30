@@ -22,6 +22,7 @@
 // keeps those with their comparison.
 
 import { readFileSync, writeFileSync, existsSync, readdirSync, mkdirSync } from 'node:fs';
+import { createHash } from 'node:crypto';
 import os from 'node:os';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -52,7 +53,16 @@ export function readRun(sessionDir, file) {
   const dir = path.join(sessionDir, 'subagents');
   const metaFile = path.join(dir, file.replace(/\.jsonl$/, '.meta.json'));
   const meta = existsSync(metaFile) ? JSON.parse(readFileSync(metaFile, 'utf8')) : {};
-  const lines = jsonl(path.join(dir, file));
+  const r = readTranscript(path.join(dir, file));
+  return { meta, ...r, run: r.turns[0]?.agentId ?? file.replace(/^agent-|\.jsonl$/g, '') };
+}
+
+const sha = (s) => createHash('sha256').update(s).digest('hex').slice(0, 12);
+
+// The same, for any transcript: an agent run's, or a headless session's
+// (claude -p), which has no .meta.json.
+export function readTranscript(file) {
+  const lines = jsonl(file);
   const turns = lines.filter((x) => x.type === 'assistant' && x.message?.model && x.message.model !== '<synthetic>');
   const first = lines.find((x) => x.type === 'user');
   const prompt = typeof first?.message?.content === 'string' ? first.message.content : (first?.message?.content ?? []).filter((c) => c.type === 'text').map((c) => c.text).join('\n');
@@ -79,7 +89,17 @@ export function readRun(sessionDir, file) {
   // and from the model that answered.
   const told = [...new Set(lines.filter((x) => x.attachment?.type === 'model').map((x) => x.attachment.identity?.modelId).filter(Boolean))];
   const requested = [...new Set(lines.filter((x) => x.type === 'api-request').map((x) => x.params?.model).filter(Boolean))];
-  return { meta, turns, prompt, calls, reads, told, requested, run: turns[0]?.agentId ?? file.replace(/^agent-|\.jsonl$/g, '') };
+  // What the run was handed besides its prompt, as hashes: Claude Code adds
+  // the CLAUDE.md and memory index of the folder the session runs in, whatever
+  // checkout the prompt points to, and the system prompt comes from the agent file.
+  const handed = lines.find((x) => x.attachment?.type === 'instructions')?.attachment.files ?? [];
+  const system = lines.find((x) => x.attachment?.type === 'prompt_snapshot')?.attachment.systemPrompt ?? [];
+  const context = {
+    claudeCode: turns[0]?.version ?? null,
+    instructions: handed.map((f) => ({ type: f.type, file: path.basename(f.path), sha256: sha(f.content) })),
+    systemPrompt: system.length ? sha(system.join('\n')) : null,
+  };
+  return { turns, prompt, calls, reads, told, requested, context };
 }
 
 // Every version of the exhibit file, in order: each Write is a version, and

@@ -42,6 +42,10 @@ export const entries = {
     role: 'Checks that the repo still agrees with itself: the house rules against the code, each exhibit against its own sources and the corrections log, the About copy against the agents, the deploy against HEAD. Writes a dated report to reports/audits/ and fixes nothing.',
     why: 'The fact-checker checks 1 exhibit before it ships. Drift happens after: a fix that updates the body but not the source line, a doc that describes code since rewritten.',
   },
+  'command:benchmark': {
+    role: 'Reruns the drafting benchmark: exhibit 017\'s brief, drafted again at chosen models and efforts, set beside every earlier run, after a cost estimate the human approves.',
+    why: 'An alias moves to a new model with no commit. A brief held fixed turns "the new model is better" into numbers next to the old model\'s, and the old model can run the same day by its full id.',
+  },
   'hook:SessionStart:audit-due.mjs': {
     role: 'Runs audit-due.mjs at the start of every session.',
     why: 'A hook can\'t launch an agent. It can put the instruction in front of the session that can.',
@@ -80,8 +84,8 @@ export const entries = {
     why: 'The brief is the drafter\'s entire input, and it was the 1 input the repo never kept. The 017 brief counted "probably false" 3 times in the ONS article; it appears 4 times, and the fact-checker caught it downstream. Backfilled for exhibits 012 to 017; earlier briefs had already been deleted.',
   },
   'script:compare-drafts.mjs': {
-    role: 'Drafts 1 exhibit from its original brief at several model and effort settings, in a checkout of the repo from before the exhibit shipped, then measures each draft: what ran, tokens, time, house rules, numbers and links not in the brief, its choices, and how far its prose is from the others.',
-    why: 'Model and effort are the 2 settings this pipeline changes without noticing. A repeated cell measures the noise, so a difference smaller than 2 runs of 1 setting counts as none.',
+    role: 'Drafts 1 exhibit from its original brief at chosen model and effort settings, each as a headless Claude Code session in a plain copy of the repo from before the exhibit shipped, then measures each draft: what ran, what it was handed besides its prompt, tokens, time, house rules, numbers and links not in the brief, its choices, and how far its prose is from the others. Lines up every comparison of an exhibit by model and effort.',
+    why: 'Model and effort are the 2 settings this pipeline changes without noticing. A repeated cell measures the noise, so a difference smaller than 2 runs of 1 setting counts as none. Headless and outside this folder, because agents launched from a session here were handed its CLAUDE.md and memory index, whatever checkout they read.',
   },
   'script:check-links.mjs': {
     role: 'Fetches every source link. A dead link blocks the commit. A redirect or a bot wall is a warning to check in a browser.',

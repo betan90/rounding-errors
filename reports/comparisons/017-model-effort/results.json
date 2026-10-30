@@ -2,24 +2,25 @@
   "name": "017-model-effort",
   "exhibit": "017",
   "base": "642dcbe",
-  "collected": "2026-10-30T02:32:29.841Z",
+  "method": "agents",
+  "collected": "2026-10-30T06:54:05.493Z",
   "prices": {
-    "fable": {
+    "claude-fable-5-1": {
       "in": 10,
       "out": 50,
       "cacheRead": 0.25
     },
-    "opus": {
+    "claude-opus-5-5": {
       "in": 4,
       "out": 20,
       "cacheRead": 0.2
     },
-    "sonnet": {
+    "claude-sonnet-5-5": {
       "in": 2,
       "out": 10,
       "cacheRead": 0.2
     },
-    "haiku": {
+    "claude-haiku-5-5": {
       "in": 0.1,
       "out": 0.5,
       "cacheRead": 0.01
@@ -35,9 +36,11 @@
       "description": "Compare: 017-model-effort r01",
       "ran": {
         "model": "opus",
+        "id": "claude-opus-5-5",
         "effort": "medium"
       },
       "status": "done",
+      "ended": null,
       "report": "I wrote the draft, but I could not run check-house-rules.mjs because I had no shell tool in this run. Please run it before the site-builder takes the file. I checked the mechanical rules by hand instead:\n- **Dashes:** a grep found 0 em dashes and 0 en dashes.\n- **Word count:** the body is about 485 words, under the 500 limit. I counted by hand using the script's own method: headings excluded, words split on whitespace.\n- **Template rules:** exactly 1 ledger row has `gap: true`. There are exactly 3 verdict rows (Fraud detected, Rules broken, Usefulness of the headline figure). `exhibit` is \"017\". There is no `chartNote`, so the chart warning is expected until the chart is wired.\n- **Spelled-out numbers:** none outside quotes.\n\n**Path:** C:\\Users\\betan\\OneDrive\\Desktop\\rounding-errors\\reports\\comparisons\\017-model-effort\\drafts\\r01\\exhibit-017-illegal-gdp.md\n\n**Title:** \"58,000 prostitutes, by assumption, with 12 weeks' holiday\"\n\n**Judgment calls**\n1. **Category:** I used \"the assumptions were the data\". It describes the shape of the gap, not a verdict, so it fits the vocabulary rules. It is missing from the worktree CLAUDE.md category list (the main repo's copy already lists it at 017), and the brief says it has to be added there at build time.\n2. **Frontmatter:** copied from 015's shape. Tags are gdp, national-accounts, measurement-definitions and europe; country is \"United Kingdom\"; date is 2026-10-23. The status line is \"still published: ONS series MNC8, last released 31 October 2025\". The body ends with \"## The bit continues\".\n3. **Gap row:** a single ledger row, \"Prostitution, 2010: ONS FOI reply / series MNC8 today\", showing £5.6bn / £4,370m. The body gives them as 2 published figures. The 0.78 vs 0.77 comparison is labelled \"By this site's arithmetic\", followed by \"ONS does not say the holiday is the whole difference.\" The disclosure repeats that label.\n4. **2020 fall:** the body and ledger give 2019, 2020 and 2024 values only, with no cause and no percentage.\n5. **FOI date:** the brief says to confirm \"6 Nov 2015\" on the page, so I left the date out of the body and the source entry. If the fact-checker confirms it, add it to the FOI source entry. It strengthens the before/after-2016 reading.\n6. **Things I cut:**\n   - **Clothes and condoms figures:** cut because the currency symbol was lost in extraction.\n   - **Clients-per-week figure:** I never say which of 20, 25 or 30 ONS used; the brief says that isn't stated.\n   - **CUT list:** nothing from it is used.\n   - **Further cuts for length (all verified):**\n     - the 2012 audit's \"by 2014\" quote in the body (it stays in the verdict and sources);\n     - the purity-adjusted drug consumption quote;\n     - the self-employment \"controversial assumption\" quote in the body (it stays in the verdict);\n     - Patterson's £18bn R&D, his \"legally mandated through the European System of Accounts 2010\" (dropped so ESA 2010 isn't implied to have introduced the rule), and his comparability line;\n     - the \"illegally diluted\" alcohol analogy.\n7. **Attribution:** \"Who lied\" opens with \"Nobody. Every assumption was published, and several were graded by the people who made them.\" Abramsky and Drew appear only as the authors. Patterson's words are reported as written in his October 2014 Civil Service Quarterly blog, and I avoided the part of his quote that contains the en dash. The ESA95 rule is presented as older than the 2014 change, with ONS's footnote quoted, which says nothing changed between ESA95 and ESA 2010.\n8. **Sources and disclosure:** the source list is the 2014 ONS article (labelled as a mirror on the UN SIAP site because the original ONS URL no longer resolves), Patterson's blog, the ONS FOI page, the Blue Book 2016 revisions article, and the MNC8 series page, which supports the chart. Wikipedia is not cited. The footnote 12 Wikipedia URL is reported as ONS's own source, and the disclosure says so. The disclosure has the 3 required statements, plus the mirror and the fact that the Eaves, Metropolitan Police, Punternet and Statistics Netherlands figures are used as ONS reports them.\n9. **Quotes for the fact-checker:** I added no currency symbols inside quotes. Eaves' \"approx 7000\" is kept verbatim inside the quote; the ledger shows it as \"approx 7,000\".",
       "promptMatches": true,
       "served": {
@@ -56,15 +59,33 @@
           "claude-opus-5-5"
         ]
       },
+      "context": {
+        "claudeCode": "2.1.309",
+        "instructions": [
+          {
+            "type": "Project",
+            "file": "CLAUDE.md",
+            "sha256": "07f79ef86c44"
+          },
+          {
+            "type": "AutoMem",
+            "file": "MEMORY.md",
+            "sha256": "37eae8f607f2"
+          }
+        ],
+        "systemPrompt": "0c25d41a8f31"
+      },
       "toolCalls": 10,
       "tokens": {
         "input": 14,
         "cacheWrite": 55552,
+        "cacheWrite1h": 0,
         "cacheRead": 246254,
         "output": 17722,
         "responses": 7
       },
       "costUsd": 0.6815,
+      "claudeCodeCostUsd": null,
       "seconds": 149,
       "versions": 2,
       "firstRules": {
@@ -203,9 +224,11 @@
       "description": "Compare: 017-model-effort r02",
       "ran": {
         "model": "opus",
+        "id": "claude-opus-5-5",
         "effort": "high"
       },
       "status": "done",
+      "ended": null,
       "report": "The draft is written, but I could not run check-house-rules.mjs. This session gave me only Read, Write, Glob and Grep, with no Bash or PowerShell, so please run it yourself:\nnode C:\\Users\\betan\\OneDrive\\Desktop\\rounding-errors\\.worktrees\\017-model-effort\\scripts\\check-house-rules.mjs C:\\Users\\betan\\OneDrive\\Desktop\\rounding-errors\\reports\\comparisons\\017-model-effort\\drafts\\r02\\exhibit-017-illegal-gdp.md\n\nTo make up for that, I read the script's rules and checked the draft against them by hand. I counted words the way its bodyWordCount does, leaving out headings and tokens with no letters or digits. Nothing should block: no em dashes, exactly 3 verdict rows with the right keys, exactly 1 `gap: true` row, `exhibit: \"017\"` matches the file name, the disclosure contains \"Claude\", \"errors\" and \"checked\", and there is no chartNote. The only warning you should see is the expected one about the chart not being wired.\n\n**Path:** C:\\Users\\betan\\OneDrive\\Desktop\\rounding-errors\\reports\\comparisons\\017-model-effort\\drafts\\r02\\exhibit-017-illegal-gdp.md\n\n**Word count:** about 475 body words by my hand count (The incident about 256, Who lied about 98, The bit continues about 121). The script will give the exact figure.\n\n**Title:** \"About 58,000 prostitutes, 12 weeks' holiday\"\n\n**Summary of choices:**\n1. **Category:** \"the assumptions were the data\". It describes the shape of the gap, not a verdict, so it fits the rules. This worktree's CLAUDE.md category list stops at 015, so the line still has to be added there at build time, as the brief says.\n2. **Tags and country:** tags are gdp, national-accounts, measurement-definitions, europe, all in the live vocabulary. Country is \"United Kingdom\". Date is 2026-10-23.\n3. **Chart:** no chartNote. The MNC8 source entry says \"Supports the chart\". The ledgerNote and disclosure say the series is modelled, not observed, so the chart caption should say the same.\n4. **Excluded:** everything in CUT, plus 4 verified items:\n   - The clothes and condoms costs: the currency is unconfirmed, so I dropped the whole beat rather than print a bare number.\n   - Patterson's £18bn R&D figure.\n   - Patterson's £50bn / 4%: it is ambiguous which changes \"overall effect\" covers, and the quote contains an en dash.\n   - Patterson's \"legally mandated through ESA 2010\" line: it could read as ESA 2010 introducing the rule.\n   \n   Abramsky and Drew are named only in the source entry, to save body words.\n5. **Structure:** Who lied, then The bit continues. The 2020 fall is given as numbers only, with no cause.\n\n**Judgment calls:**\n- **The gap row** is one combined row: \"Prostitution, 2010: ONS FOI reply / series MNC8: £5.6bn / £4,370m\". The 78% vs 77% comparison (4,370 / 5,600 against 40 of 52 weeks) is labelled \"This site's arithmetic, not ONS's\", followed by \"None of the ONS sources here says the holiday is the whole difference.\"\n- **FOI date:** the brief says to confirm it on the page (\"6 Nov 2015 per researcher\"). Since it isn't confirmed, I left it out of the body, ledger and source entry. The fact-checker should confirm it and add it.\n- **Price per what:** the ledger row is just \"Price, 2004 ... £55\", because the brief doesn't say what the price is per.\n- **Words I chose:**\n  - Eaves's \"approx 7000\" is \"about 7,000\" in the body, with \"approx\" kept in the source text.\n  - \"c. 58,000\" is kept as ONS wrote it, and the title uses \"About 58,000\".\n  - The verdictNote calls Eaves's method \"a 2004 count made by telephoning advertised numbers\"; ONS's words are \"calling numbers advertised in various media\".\n- **Rules broken verdict:** it does not say who set the 2014 deadline. It says Member States had areas for improvement to address by 2014 after the 2012 audit, which is the article's wording.\n- **Patterson's \"(please note the italics for emphasis!)\"** is quoted verbatim, even though the italics don't survive in plain text. I didn't add a note saying which word was italic, because the brief doesn't say.\n- **The FOI's own rounding:** the reply gives prostitution as both 0.35% of GDP and \"£5.6bn ... 0.4% of GDP\". I used neither share. The ledger uses only the N2 total's 0.58%.\n\n**Files:** apart from the draft, I made 1 write outside your list by mistake: a placeholder file, C:\\Users\\betan\\AppData\\Local\\Temp\\claude\\C--Users-betan-OneDrive-Desktop-rounding-errors\\cc924be7-9db4-4675-8ac4-d290a8fdbf89\\scratchpad\\noop.txt, which contains only the word \"placeholder\". It is safe to delete. Nothing else was written, and nothing under src/ was touched.",
       "promptMatches": true,
       "served": {
@@ -224,15 +247,33 @@
           "claude-opus-5-5"
         ]
       },
+      "context": {
+        "claudeCode": "2.1.309",
+        "instructions": [
+          {
+            "type": "Project",
+            "file": "CLAUDE.md",
+            "sha256": "07f79ef86c44"
+          },
+          {
+            "type": "AutoMem",
+            "file": "MEMORY.md",
+            "sha256": "37eae8f607f2"
+          }
+        ],
+        "systemPrompt": "0c25d41a8f31"
+      },
       "toolCalls": 11,
       "tokens": {
         "input": 18,
         "cacheWrite": 70406,
+        "cacheWrite1h": 0,
         "cacheRead": 399448,
         "output": 34543,
         "responses": 9
       },
       "costUsd": 1.1229,
+      "claudeCodeCostUsd": null,
       "seconds": 290,
       "versions": 2,
       "firstRules": {
@@ -374,9 +415,11 @@
       "description": "Compare: 017-model-effort r03",
       "ran": {
         "model": "sonnet",
+        "id": "claude-sonnet-5-5",
         "effort": "medium"
       },
       "status": "done",
+      "ended": null,
       "report": "Drafted: C:\\Users\\betan\\OneDrive\\Desktop\\rounding-errors\\reports\\comparisons\\017-model-effort\\drafts\\r03\\exhibit-017-illegal-gdp.md\n\nNOT RUN: I had no shell tool in this session, so check-house-rules.mjs was not executed. Please run it. Body word count is my hand estimate, about 430 words (limit 500). Not machine-counted.\n\nTitle: \"£9,097 million of GDP, assumptions attached\"\n\nJudgment calls:\n1. Category \"the assumptions were the data\" is used as the brief recommends. It describes the gap's structure, not a verdict. CLAUDE.md in the worktree still lacks the line (its list stops at 015). The line needs adding to the category list at build time, as the brief says.\n2. Ledger gap row: 2010 prostitution, FOI reply £5.6bn vs MNC8 £4,370m, presented as 2 published figures. The 4,370/5,600 = 0.78 and 40/52 = 0.77 arithmetic appears in the body, labelled \"by this site's arithmetic\", and again in the disclosure and verdictNote. I did not state the cause of the 2020 fall (the disclosure says no ONS source was found). The ledgerNote says the MNC8 values are modelled, not observed.\n3. Cut or omitted:\n   - The 20/25/30 clients per week, because the chosen value is unstated.\n   - Intermediate-consumption figures (currency unconfirmed).\n   - Patterson's £50bn/4% and R&D lines.\n   - His \"legally mandated through ESA 2010\" line, which sits awkwardly with ONS's \"no changes ESA95 to ESA10\".\n   - The FOI date and the Blue Book 2016 release date (the FOI date is unconfirmed in the brief).\n   - Abramsky and Drew appear only as the article's authors.\n4. \"Probably false\" appears 3 times is stated as fact in the body. It comes from the brief's grep count, so the fact-checker should confirm it. The \"arbitrary\" count is not used.\n5. The Wikipedia footnote is reported as ONS's footnote 12 (\"a Wikipedia address\"), and Wikipedia is not cited. The ONS 2014 source entry says it is a UN SIAP mirror and the original URL is dead, and the disclosure repeats this.\n\nPossible flag: the \"weak\" in the Fraud detected row is the article's word for assumption 1. \"Probably false\" and \"arbitrary\" are quotes from the drug assumptions.",
       "promptMatches": true,
       "served": {
@@ -395,15 +438,33 @@
           "claude-sonnet-5-5"
         ]
       },
+      "context": {
+        "claudeCode": "2.1.309",
+        "instructions": [
+          {
+            "type": "Project",
+            "file": "CLAUDE.md",
+            "sha256": "07f79ef86c44"
+          },
+          {
+            "type": "AutoMem",
+            "file": "MEMORY.md",
+            "sha256": "37eae8f607f2"
+          }
+        ],
+        "systemPrompt": "0c25d41a8f31"
+      },
       "toolCalls": 7,
       "tokens": {
         "input": 8,
         "cacheWrite": 44480,
+        "cacheWrite1h": 0,
         "cacheRead": 90086,
         "output": 10717,
         "responses": 4
       },
       "costUsd": 0.2364,
+      "claudeCodeCostUsd": null,
       "seconds": 78,
       "versions": 2,
       "firstRules": {
@@ -535,9 +596,11 @@
       "description": "Compare: 017-model-effort r04",
       "ran": {
         "model": "opus",
+        "id": "claude-opus-5-5",
         "effort": "low"
       },
       "status": "done",
+      "ended": null,
       "report": "I wrote the exhibit 017 draft but could not run the house-rules check: I have no shell tool in this session. Please run `node C:\\Users\\betan\\OneDrive\\Desktop\\rounding-errors\\.worktrees\\017-model-effort\\scripts\\check-house-rules.mjs C:\\Users\\betan\\OneDrive\\Desktop\\rounding-errors\\reports\\comparisons\\017-model-effort\\drafts\\r04\\exhibit-017-illegal-gdp.md`. The chart rule should only warn, since the chart isn't wired yet.\n\n- **Path:** C:\\Users\\betan\\OneDrive\\Desktop\\rounding-errors\\reports\\comparisons\\017-model-effort\\drafts\\r04\\exhibit-017-illegal-gdp.md\n- **Title:** \"58,000 prostitutes, 12 weeks' holiday, 1 Wikipedia footnote\"\n- **Word count:** about 450 words of body prose, counted by hand. That is under the 500 limit, but the script has not confirmed it.\n\nJudgment calls:\n1. **Category and tags:** I used \"the assumptions were the data\". It describes how the gap is built, not a verdict, so it fits the vocabulary rules. It is not yet in the category list in the worktree's CLAUDE.md, so it needs adding at build time. Tags are gdp, national-accounts, measurement-definitions, europe. Country is \"United Kingdom\".\n2. **Chart:** there is no chartNote. The verdictNote says the MNC8 series is modelled, not observed: it starts in 1985, the first estimate came in 2014, and ONS says \"there is no time series\". The 2020 fall is given as figures only, with \"This site found no ONS explanation\".\n3. **Gap row:** `gap: true` sits on MNC8's 2010 figure (£4,370m). The FOI reply's £5.6bn is the row above it, so the 2 published figures sit side by side. The 78% vs 77% comparison is labelled \"This site's arithmetic, not ONS's\" in the body and repeated in the disclosure. The body only says \"ONS does not say what accounts for the difference\".\n4. **Left out:**\n   - Patterson's \"£50 billion... 4%\" line, because of the en dash in the quote and for length.\n   - The R&D £18bn figure.\n   - Which of 20, 25 or 30 clients a week ONS actually used. All 3 appear.\n   - The 125 per year clothes figure, because its currency isn't confirmed.\n   - The \"retailer selling alcohol\" analogy, for length.\n   - The FOI reply's date. The brief marks 6 November 2015 as unconfirmed, so the draft says only \"An ONS FOI reply\".\n   - Everything in the CUT list.\n5. **Attribution:**\n   - Abramsky and Drew are named only as the article's authors. Patterson's lines are reported as his blog.\n   - The ESA95 footnote is quoted, so the draft doesn't say ESA 2010 introduced the rule. The \"Rules broken\" verdict says inclusion was required under ESA95 and remains so under ESA 2010.\n   - The Eaves figure is written as \"about 7,000\" outside the quote; the quoted text says \"approx 7000\".\n   - The disclosure states the UN SIAP mirror and that the Wikipedia link is ONS's footnote, not a source.",
       "promptMatches": true,
       "served": {
@@ -556,15 +619,33 @@
           "claude-opus-5-5"
         ]
       },
+      "context": {
+        "claudeCode": "2.1.309",
+        "instructions": [
+          {
+            "type": "Project",
+            "file": "CLAUDE.md",
+            "sha256": "07f79ef86c44"
+          },
+          {
+            "type": "AutoMem",
+            "file": "MEMORY.md",
+            "sha256": "37eae8f607f2"
+          }
+        ],
+        "systemPrompt": "0c25d41a8f31"
+      },
       "toolCalls": 4,
       "tokens": {
         "input": 6,
         "cacheWrite": 39495,
+        "cacheWrite1h": 0,
         "cacheRead": 49197,
         "output": 6211,
         "responses": 3
       },
       "costUsd": 0.3316,
+      "claudeCodeCostUsd": null,
       "seconds": 52,
       "versions": 1,
       "firstRules": {
@@ -694,9 +775,11 @@
       "description": "Compare: 017-model-effort r05",
       "ran": {
         "model": "opus",
+        "id": "claude-opus-5-5",
         "effort": "medium"
       },
       "status": "done",
+      "ended": null,
       "report": "I've written the draft, but I could not run check-house-rules.mjs. This run had no shell tool, only Read, Write, Glob, Grep and the handback. Please run it yourself:\nnode C:\\Users\\betan\\OneDrive\\Desktop\\rounding-errors\\.worktrees\\017-model-effort\\scripts\\check-house-rules.mjs C:\\Users\\betan\\OneDrive\\Desktop\\rounding-errors\\reports\\comparisons\\017-model-effort\\drafts\\r05\\exhibit-017-illegal-gdp.md\nI checked the blocking rules by hand: no em or en dashes, 1 ledger row with gap: true, 3 verdict rows (Fraud detected / Rules broken / Usefulness of the headline figure), exhibit \"017\", no chartNote, and the disclosure has all 3 required statements. The chart rule should only warn, as you expected.\n\n**Path:** C:\\Users\\betan\\OneDrive\\Desktop\\rounding-errors\\reports\\comparisons\\017-model-effort\\drafts\\r05\\exhibit-017-illegal-gdp.md\n\n**Title:** \"58,000 prostitutes, no time series\"\n\n**Word count:** about 486 words of body including the 3 headings (about 476 without). I counted by hand, so it could be off by a few. The first version came to about 519, so I cut it down.\n\n**Judgment calls:**\n1. **Category:** \"the assumptions were the data\". It describes how the gap is built, not a moral verdict, so it passes the vocabulary rules. But the category list in the worktree CLAUDE.md stops at 015. Only the root CLAUDE.md lists this line (as 017), so the site-builder needs to add it to the worktree copy.\n2. **Gap row:** `Prostitution spending, 2010: ONS FOI reply / series MNC8, 2025 release` = \"£5.6bn / £4,370m\", shown as 2 published figures. The 78% vs 40/52 = 77% comparison appears once in \"The bit continues\", labelled \"This site's arithmetic, not ONS's\", followed by \"ONS does not say the holiday accounts for the whole difference.\" The disclosure repeats that it is this site's arithmetic.\n3. **Left out:**\n   - The intermediate-consumption beat (125 per year on clothes, 0.50 per client on condoms), because the euro basis is unconfirmed.\n   - The FOI reply's date: the brief marks 6 Nov 2015 as needing confirmation on the page, so no date appears anywhere.\n   - Which client rate ONS used: the ledgerNote says the article doesn't say.\n   - The 2020 fall: the figures are in the ledger and the chart, with no cause given. I cut the body line listing 2019, 2020 and 2024 for length.\n   - Patterson's \"legally mandated through ... ESA 2010\" and his £18bn and £50bn figures, partly for length and partly so nothing suggests ESA 2010 brought in the rule. The body says the rule dates from ESA95 and quotes ONS's \"There are no changes in this area between ESA95 and ESA10.\"\n   - The \"cutting drugs\" analogy, for length. Nothing from the CUT list is used.\n4. **Attribution:**\n   - \"Who lied\" says: \"Nobody. ONS published every assumption alongside its own assessment of it.\"\n   - Abramsky and Drew are named only as the article's authors.\n   - Patterson's quotes are reported as his Civil Service Quarterly piece.\n   - The Fraud and Rules verdict rows are \"none\", backed by ONS's own labels and ESA95 section 1.13.\n   - Usefulness is \"limited\", quoting ONS's \"This applies especially to the estimates of prostitution activity.\"\n5. **Wikipedia:** it appears only as where ONS's Punternet footnote points (in the body, the source text and the disclosure). It is never cited as a source.\n6. **Mirror:** the UN SIAP mirror for the 2014 article is flagged in the source text, the urlLabel and the disclosure, which notes the original ONS address no longer resolves.\n7. **verdictNote:** it lists every input behind the prostitution figure, from the London phone count to the Dutch holiday, and ends on ONS's own line that the method article \"does not include numerical impacts\".\n8. **Frontmatter:** same keys, nesting and types as 015, in the same order. Date is 2026-10-23. The teaser follows the \"Topic · ...\" pattern.\n\nTags: gdp, national-accounts, measurement-definitions, europe. Country: United Kingdom.",
       "promptMatches": true,
       "served": {
@@ -715,15 +798,33 @@
           "claude-opus-5-5"
         ]
       },
+      "context": {
+        "claudeCode": "2.1.309",
+        "instructions": [
+          {
+            "type": "Project",
+            "file": "CLAUDE.md",
+            "sha256": "07f79ef86c44"
+          },
+          {
+            "type": "AutoMem",
+            "file": "MEMORY.md",
+            "sha256": "37eae8f607f2"
+          }
+        ],
+        "systemPrompt": "0c25d41a8f31"
+      },
       "toolCalls": 10,
       "tokens": {
         "input": 16,
         "cacheWrite": 60118,
+        "cacheWrite1h": 0,
         "cacheRead": 291042,
         "output": 23041,
         "responses": 8
       },
       "costUsd": 0.8197,
+      "claudeCodeCostUsd": null,
       "seconds": 192,
       "versions": 3,
       "firstRules": {
@@ -865,9 +966,11 @@
       "description": "Compare: 017-model-effort r06",
       "ran": {
         "model": "haiku",
+        "id": "claude-haiku-5-5",
         "effort": "medium"
       },
       "status": "done",
+      "ended": null,
       "report": "Drafted exhibit 017. File: C:\\Users\\betan\\OneDrive\\Desktop\\rounding-errors\\reports\\comparisons\\017-model-effort\\drafts\\r06\\exhibit-017-illegal-gdp.md\n\nTitle: \"Sex, drugs and GDP, with 12 weeks' holiday\"\n\nWord count: about 480 body words including headings, counted by hand. I have no shell in this run, so I could not run check-house-rules.mjs. Grep confirms no em dashes or en dashes in the file. Please run the script before publishing.\n\nJudgment calls:\n1. Category \"the assumptions were the data\", as the brief recommended. It describes the gap's structure, not a verdict, so it passes the vocabulary rule. It is not yet in the CLAUDE.md list, which in this worktree stops at 015. Add it at build time as the brief says.\n2. Tags are gdp, national-accounts, measurement-definitions, europe. All four are live in the TAGS set in check-house-rules.mjs and used by existing exhibits. Chart: no chartNote, as instructed. The series is described as modelled, not observed. Body states the 1985 start, 2019 and 2020 values, and no cause for the 2020 fall.\n3. Date is 2026-10-23, as you specified. Today is 2026-10-29. If publication slips, the date must be updated at build time.\n4. The one gap row is 2010 prostitution: £5.6bn (FOI reply) vs £4,370m (MNC8). The 78% and 40/52 (77%) arithmetic is labelled in the body as this site's arithmetic. The body says ONS does not state the holiday is the whole difference. The 12-week holiday is attributed to the 2016 Blue Book revisions and Statistics Netherlands.\n5. Excluded: the FOI date (6 Nov 2015) is not in the text because it is unconfirmed, so the fact-checker needs to confirm it on the page. The \"text does not say which was used\" claim about the 20/25/30 clients is from the researcher's reading, so it needs a check. Also cut: the £5.3bn/£4.4bn split, 25 clients, 60,879, £67.16, 0.7%, the Italy and Ig Nobel items, the Eurostat item, Ireland, the 2020 cause, the euro amounts (currency unverified), and the £18bn R&D figure (unused). Wikipedia is named only as the ONS footnote target, never as a source. ESA 2010 is not said to introduce the rule. Patterson is reported as his blog's claims. Abramsky and Drew appear only as article authors.\n\nSources: the ONS 2014 article is cited via the UN SIAP mirror and labelled as a mirror in the source text and disclosure. Also Patterson's blog, the ONS FOI N2 page, the Blue Book 2016 revisions, and the MNC8 page. The MNC8 entry has no CSV url. Only one url per source is allowed, so I used the page.\n\nConcern for the fact-checker: the ledger row \"Price assumed in 2004, Punternet (ONS, 2014)\" reads £55 as the price. The source does not say what the £55 buys, so the label is kept generic. Check it.",
       "promptMatches": true,
       "served": {
@@ -886,15 +989,33 @@
           "claude-haiku-5-5"
         ]
       },
+      "context": {
+        "claudeCode": "2.1.309",
+        "instructions": [
+          {
+            "type": "Project",
+            "file": "CLAUDE.md",
+            "sha256": "07f79ef86c44"
+          },
+          {
+            "type": "AutoMem",
+            "file": "MEMORY.md",
+            "sha256": "37eae8f607f2"
+          }
+        ],
+        "systemPrompt": "0c25d41a8f31"
+      },
       "toolCalls": 8,
       "tokens": {
         "input": 10,
         "cacheWrite": 75069,
+        "cacheWrite1h": 0,
         "cacheRead": 179366,
         "output": 41198,
         "responses": 5
       },
       "costUsd": 0.0318,
+      "claudeCodeCostUsd": null,
       "seconds": 167,
       "versions": 1,
       "firstRules": {
@@ -1024,9 +1145,11 @@
       "description": "Compare: 017-model-effort r07",
       "ran": {
         "model": "haiku",
+        "id": "claude-haiku-5-5",
         "effort": "max"
       },
       "status": "done",
+      "ended": null,
       "report": "DRAFT WRITTEN\nPath: C:\\Users\\betan\\OneDrive\\Desktop\\rounding-errors\\reports\\comparisons\\017-model-effort\\drafts\\r07\\exhibit-017-illegal-gdp.md\nTitle: \"UK GDP's prostitution line, scaled up from London\"\nBody word count: 469 (manual count using the script's rule: headings excluded, whitespace tokens containing a letter or digit). Limit is 500.\nSections: ## The incident, ## Who lied, ## The bit continues. No chartNote.\nNothing written under src/content/, no build, no commit. The only write was the file above.\n\nCHOICES\n1. Category: \"the assumptions were the data\", as the brief recommended. It is not yet in CLAUDE.md's category list; add it at build time. I did not edit CLAUDE.md. I did not use 008's line because the point here is the published labels (\"probably false\", \"arbitrary\", \"weak\"), not one baseline choice.\n2. Tags: gdp, national-accounts, measurement-definitions, europe. All are in the TAGS set, so no new tags. Country: United Kingdom.\n3. Chart: no chartNote, because this exhibit has a chart. The site-builder builds the MNC8 chart (1985 to 2024) and wires it in ExhibitLayout.astro. The body says the series is \"modelled, not observed\", so the caption can match.\n4. Gap row: 2010 prostitution, FOI reply £5.6bn against current MNC8 £4,370m. Both are COICOP 12.2 at current prices, and the ledgerNote says so. No arithmetic is given. The body says ONS does not say the holiday factor is the whole difference. I gave the FOI reply no date because the brief's 6 Nov 2015 date is unconfirmed, and I did not state whether it came before the 2016 holiday factor.\n5. Verdicts: Fraud detected \"none\". Rules broken is the GNI ESA 1995 reservation that the Blue Book 2016 article says the 2014 changes were \"part of addressing\". This is a judgement call; \"none found\" is the alternative. Usefulness is \"low, on ONS's own description\".\n\nEXCLUDED, AND WHY\n- Everything in the brief's CUT section: 60,879; £67.16; \"25 clients\"; 0.7%; the 2009 split; Italy; Ig Nobel; Eurostat 2015; Ireland; any cause of the 2020 fall. The 2020 figures (4,130 against 5,993) are numbers only.\n- ESA 2010 is not presented as the origin of the rule. The body quotes ONS's \"no changes\" statement instead.\n- Patterson's \"please note the italics for emphasis!\" (a wink). The R&D £18bn (the \"R&D\" label is the brief's gloss, not in the quote). The \"P*C*52\" formula (the asterisk may be an extraction artifact for ×). The euro clothing and condom values (currency unconfirmed). The brief's phrase counts (probably false 3 times, arbitrary 2 times), because they were counted on line-joined PDF text. The 20/25/30 choice is given as the article's range only.\n- Wikipedia appears only in the body, as the target of ONS footnote 12, which is reported as ONS's source. It is not in Sources.\n- Patterson is named with his ONS title and reported as blog figures. Abramsky and Drew are named only as the article's authors, in the Sources text.\n- The headline £50bn and £10bn figures are labelled as blog figures in the body, the verdictNote, the Patterson source and the disclosure. The method article contains no numerical impacts.\n\nFLAGS (need a human or the next pass)\n1. Date: I used 2026-10-23 as you instructed. Today is 2026-10-29. CLAUDE.md requires the publish day, and 2026-10-23 is the brief's research date. It ties with 016, so 017 sorts above it. Change the date at build time if it publishes later.\n2. Output location: the drafter spec asks for a repo-root copy, but this run's task said to write only the drafts path. So no root copy exists. The house-rules hook and the site-builder will not see this file until it is copied.\n3. I could not run scripts/check-house-rules.mjs, because this session has no shell tool. I applied its rules by hand. No em or en dashes. No spelled-out number words. Verdict keys are exactly Fraud detected, Rules broken, Usefulness of the headline figure. Exactly 1 gap row. Exhibit \"017\" matches the filename. The disclosure contains Claude, errors and checked. All tags are in TAGS. No chartNote. A regex check found no invalid YAML escapes or unescaped inner quotes, but I did not parse the YAML.\n4. Tooling gap: the script's isExhibit test covers only src/content/exhibits and the repo root. For this drafts path it skips the schema, body-length, tag and chart checks, and runs only the em-dash and number-word checks. The chart warning you expected will not appear. This is worth fixing or knowing about.\n5. The disclosure's \"every figure was checked against the linked primary source before publishing\" is only true after the fact-checker and DeepSeek passes. Neither has run. I could not check the brief's quotes against primary text, because the local text copies are outside my permitted read paths. The fact-check should confirm every quote against the ONS PDF and page text, especially those from line-joined PDF extraction.\n6. The MNC8 values (5,993 in 2019, 4,130 in 2020, 6,142 in 2022, the 1985 to 2024 range) and the 31 October 2025 release date come from the brief's chart section, not its VERIFIED block. The fact-check should confirm them against the CSV.\n7. Read-scope note: all reads were inside the worktree (CLAUDE.md, the two exemplars, check-house-rules.mjs, config.ts, the brief). One Glob listed the drafts folder outside the worktree, only to check the output location.",
       "promptMatches": true,
       "served": {
@@ -1045,15 +1168,33 @@
           "claude-haiku-5-5"
         ]
       },
+      "context": {
+        "claudeCode": "2.1.309",
+        "instructions": [
+          {
+            "type": "Project",
+            "file": "CLAUDE.md",
+            "sha256": "07f79ef86c44"
+          },
+          {
+            "type": "AutoMem",
+            "file": "MEMORY.md",
+            "sha256": "37eae8f607f2"
+          }
+        ],
+        "systemPrompt": "0c25d41a8f31"
+      },
       "toolCalls": 15,
       "tokens": {
         "input": 16,
         "cacheWrite": 217817,
+        "cacheWrite1h": 0,
         "cacheRead": 940337,
         "output": 187134,
         "responses": 8
       },
       "costUsd": 0.1302,
+      "claudeCodeCostUsd": null,
       "seconds": 725,
       "versions": 1,
       "firstRules": {
@@ -1182,9 +1323,11 @@
       "description": "Compare: 017-model-effort r08",
       "ran": {
         "model": "opus",
+        "id": "claude-opus-5-5",
         "effort": "low"
       },
       "status": "done",
+      "ended": null,
       "report": "I wrote the draft, but I could not run check-house-rules.mjs: I have no shell tool in this session. Please run it before the file moves on.\n\n**Path:** C:\\Users\\betan\\OneDrive\\Desktop\\rounding-errors\\reports\\comparisons\\017-model-effort\\drafts\\r08\\exhibit-017-illegal-gdp.md\n\n**Title:** \"58,000 prostitutes, 12 weeks' holiday, 0 time series\"\n\n**Word count:** I counted the body by hand at about 450 words, under the 500 limit. The script will give the exact figure.\n\n**Shape:** The frontmatter keys follow 015. date is 2026-10-23 and there is no chartNote. The category is \"the assumptions were the data\", which describes the gap's structure, not a verdict, so it fits the vocabulary rules. The tags are gdp, national-accounts, measurement-definitions and europe, and country is \"United Kingdom\". The verdict has exactly 3 rows: Fraud detected (none), Rules broken (none, citing ESA95 1.13 and the ESA10 footnote) and Usefulness of the headline figure. The body sections are The incident, Who lied (\"Nobody\") and The bit continues.\n\n**Judgment calls:**\n1. **Gap row:** The one gap: true row is 2010 prostitution spending, £5.6bn in the FOI reply against £4,370m in MNC8 today. The body says the 78% vs 77% comparison is this site's arithmetic and that ONS does not say the holiday explains the whole difference. The disclosure says the same.\n2. **Left out:**\n   - The 125 per year on clothes and 0.50 per client on condoms, because the currency is uncertain.\n   - Patterson's £50bn / 4% line, because of the en dash in it, and the R&D £18bn, which is off-topic.\n   - The FOI page date, which still needs confirming.\n   - The 25 clients-per-week value, the 2020 cause and everything else in CUT.\n3. **Wikipedia:** It appears only as \"Footnote 12 for Punternet is a Wikipedia page\". The disclosure says it is ONS's footnote, not a source of this site.\n4. **ESA 2010:** The text never says ESA 2010 introduced the rule. Patterson's \"legally mandated through the European System of Accounts 2010\" is quoted in verdictNote as his blog's wording.\n5. **Quoted spellings:** The quotes keep the source's own forms, \"approx 7000\" and \"c. 58,000\", in both the body and the ledger. \"approx 7000\" may trigger a numeral or format warning.\n6. **People:** Abramsky and Drew are named only as the authors. Patterson's quotes are attributed to the Civil Service Quarterly blog.\n7. **verdictNote ending:** It closes on the article's own \"does not include numerical impacts\". This replaced a closing line I wrote that wasn't supported by the brief.\n8. **ledgerNote:** It states the series is modelled, not observed.",
       "promptMatches": true,
       "served": {
@@ -1203,15 +1346,33 @@
           "claude-opus-5-5"
         ]
       },
+      "context": {
+        "claudeCode": "2.1.309",
+        "instructions": [
+          {
+            "type": "Project",
+            "file": "CLAUDE.md",
+            "sha256": "07f79ef86c44"
+          },
+          {
+            "type": "AutoMem",
+            "file": "MEMORY.md",
+            "sha256": "37eae8f607f2"
+          }
+        ],
+        "systemPrompt": "0c25d41a8f31"
+      },
       "toolCalls": 5,
       "tokens": {
         "input": 8,
         "cacheWrite": 42358,
+        "cacheWrite1h": 0,
         "cacheRead": 87567,
         "output": 8986,
         "responses": 4
       },
       "costUsd": 0.4091,
+      "claudeCodeCostUsd": null,
       "seconds": 72,
       "versions": 2,
       "firstRules": {
@@ -1347,9 +1508,11 @@
       "description": "Compare: 017-model-effort r09",
       "ran": {
         "model": "opus",
+        "id": "claude-opus-5-5",
         "effort": "max"
       },
       "status": "done",
+      "ended": null,
       "report": "The draft of exhibit 017 is written, but I couldn't run `check-house-rules.mjs` because this session has no shell. Your planned command would also miss most of the checks: on this path it only runs the em-dash and number-word scans. The script treats a file as an exhibit only if it sits in an `exhibits` folder or at the worktree root (`isExhibit`/`isDraft`). This file is in neither, so the 500-word limit and the template checks are skipped and it would print \"ok\" regardless. For a real check, copy the file to the worktree root as `exhibit-017-illegal-gdp.md` and run the script on that copy. I did those checks by hand:\n- 0 em or en dashes, and 0 spelled-out number words.\n- Exactly 1 `gap: true` row.\n- Verdict keys are Fraud detected, Rules broken, Usefulness of the headline figure, in that order.\n- `exhibit: \"017\"` matches the file name.\n- The disclosure names Claude, the errors and the figure check.\n- There is no chartNote, and no frontmatter string has an unescaped quote.\n\n**Path:** `C:\\Users\\betan\\OneDrive\\Desktop\\rounding-errors\\reports\\comparisons\\017-model-effort\\drafts\\r09\\exhibit-017-illegal-gdp.md`\n**Word count:** 491, counted by hand the way the script does it (238 / 159 / 94 across The incident, Who lied, The bit continues).\n**Title:** \"No time series, 1985 to 2024\"\n\n**Five-line summary**\n1. Category: \"the assumptions were the data\". It describes the gap's structure (the series is ONS's own published assumptions), not a moral verdict, and it is a different shape from 008's choice of baseline. The worktree's CLAUDE.md category list stops at 015, so the line needs adding at build time; the main checkout's CLAUDE.md already lists it.\n2. Tags: gdp, national-accounts, measurement-definitions, europe, all in the vocabulary. Country: \"United Kingdom\".\n3. Chart: yes (MNC8, 1985 to 2024), so no chartNote. \"Modelled, not observed\" is in the ledgerNote and the MNC8 source entry, for the caption. Each source takes one URL, so the CSV link isn't in the frontmatter; the site-builder needs it from the brief.\n4. Excluded: everything in the brief's CUT list, plus the items listed under judgment calls below.\n5. Gap row: 2010 at £5.6bn (FOI reply) against £4,370m (MNC8 now), shown as 2 published figures. The link to the holiday appears only as \"By this site's arithmetic, not ONS's\" (78% against 40 of 52 weeks = 77%), and the disclosure repeats that label.\n\n**Judgment calls**\n- **Patterson's other lines are out.** I couldn't confirm what \"it\" refers to in \"Comparability between nations dictates that all countries include it\", because no source text is in the worktree. The brief lists it beside his R&D figures and his ESA 2010 line. I also dropped \"legally mandated through the European System of Accounts 2010\", since it invites the misreading that ESA 2010 brought in the rule. His \"around £50 billion a year\" line (en dash, unclear context) is out too.\n- **FOI date left out.** The brief marks \"6 Nov 2015\" as unconfirmed. As a result the body never says the FOI reply came before the 2016 holiday adjustment. If the fact-checker confirms the date, adding \"in November 2015\" to the body and the source makes the order explicit (+3 words, still under 500).\n- **FOI GDP shares dropped.** The reply gives prostitution as both 0.35% and 0.4% of 2010 GDP, which would read as a discrepancy I can't explain. I kept only the drugs-plus-prostitution total (£9,097m, 0.58%) in the ledger.\n- **Other cuts:**\n  - The clothes and condoms costs: the currency is unconfirmed.\n  - The analogy of a retailer diluting alcohol: it has a spaced hyphen and costs words.\n  - The self-employment assumption: kept only as \"controversial\" in the Fraud row and the sources.\n- **ESA95 quote attributed to ONS.** \"states that illegal transactions...\" is ONS's description, not the text of ESA95, so the body says \"Its article notes that...\". The Rules broken row says the rule was ESA95, with no change in ESA 2010.\n- **Smaller points:**\n  - All 3 client figures (20, 25 and 30) are shown, with no claim about which ONS used.\n  - The 2020 fall is given as numbers only, with no cause.\n  - \"Eaves, a charity\" comes from the brief's own note in brackets; worth confirming the ONS article says so.\n  - The quote \"(please note the italics for emphasis!)\" is kept, but the italics can't be shown because nobody knows which words they were.\n- **Formatting:** \"P*C*52\" is written as `P\\*C\\*52` in the body so markdown doesn't put the C in italics. In the frontmatter it's left plain, because the components show frontmatter as plain text.\n- **Title:** it sets up ONS's line \"As there is no time series\" against the 1985 to 2024 span, and the body pays it off. A more concrete alternative is \"About 58,000 prostitutes, 12 weeks' holiday\".\n- **Date:** 2026-10-23 as you instructed. My environment says today is 2026-10-29, and CLAUDE.md wants the actual build day if it's built later.\n\nI wrote only the one file, at the path you gave rather than the repo root. I didn't touch `src/content`, build or commit.",
       "promptMatches": true,
       "served": {
@@ -1368,15 +1531,33 @@
           "claude-opus-5-5"
         ]
       },
+      "context": {
+        "claudeCode": "2.1.309",
+        "instructions": [
+          {
+            "type": "Project",
+            "file": "CLAUDE.md",
+            "sha256": "07f79ef86c44"
+          },
+          {
+            "type": "AutoMem",
+            "file": "MEMORY.md",
+            "sha256": "37eae8f607f2"
+          }
+        ],
+        "systemPrompt": "0c25d41a8f31"
+      },
       "toolCalls": 25,
       "tokens": {
         "input": 28,
         "cacheWrite": 450610,
+        "cacheWrite1h": 0,
         "cacheRead": 984815,
         "output": 151687,
         "responses": 14
       },
       "costUsd": 5.4839,
+      "claudeCodeCostUsd": null,
       "seconds": 1303,
       "versions": 1,
       "firstRules": {
@@ -1511,9 +1692,11 @@
       "description": "Compare: 017-model-effort r10",
       "ran": {
         "model": "opus",
+        "id": "claude-opus-5-5",
         "effort": "xhigh"
       },
       "status": "done",
+      "ended": null,
       "report": "I've written the exhibit 017 draft, but I couldn't run `check-house-rules.mjs` because this session had no shell tool. Running it on this path wouldn't fully check the file anyway (point 2 below). I applied the checker's rules by hand and with Grep.\n\nFile: C:\\Users\\betan\\OneDrive\\Desktop\\rounding-errors\\reports\\comparisons\\017-model-effort\\drafts\\r10\\exhibit-017-illegal-gdp.md\nTitle: \"12 weeks' holiday, estimated in the Netherlands\"\nBody: 489 words by hand count, counted the way the checker counts (headings out, \"...\" not counted). Sections are The incident, Who lied, The bit continues.\n\n**What the manual checks found:** no em or en dashes, no spelled-out numbers, exactly 1 `gap: true` row, the 3 verdict keys in the right order, `exhibit: \"017\"` matching the file name, a disclosure with all 3 required statements, and no chartNote. The frontmatter keys follow 015's order and match `config.ts`.\n\n**Two problems you should know about:**\n1. **The worktree CLAUDE.md doesn't list the category.** Its category list stops at 015, so \"the assumptions were the data\" isn't in it (the root CLAUDE.md lists it as 017). It needs adding at build time. I used it because it describes the shape of the gap, not a verdict.\n2. **The checker skips most rules on this path.** It only treats a file as an exhibit if the path contains `\\exhibits\\` or the file sits at the worktree root named `exhibit-NNN-*.md`. A file under `reports\\...\\r10\\` gets only the em-dash and number-word checks: no word count, no schema rules, and not the chart warning you expected. For a real check, run it on a copy at the worktree root.\n\n**Judgment calls:**\n- **Gap row:** prostitution spending in 2010, £5.6bn in the FOI reply against £4,370m in series MNC8. The holiday comparison is labelled \"this site's arithmetic, not ONS's\" in the body and the disclosure.\n- **FOI date:** I used \"November 2015\" in the body, ledger and sources. The brief says \"confirm date on page\", and only its derived section gives Nov 2015. The order matters: the FOI figure must come before the Blue Book 2016 holiday cut for the comparison to make sense. The fact-checker should confirm the date.\n- **Patterson:** I dropped \"Comparability between nations dictates that all countries include it\". From the brief I can't tell whether \"it\" means illegal activity or R&D. I also dropped \"legally mandated through ... ESA 2010\", which could suggest ESA 2010 introduced the rule. His £10bn sentence is quoted in 2 verbatim pieces joined by my wording.\n- **ESA 2010:** the body attributes the rule to ESA95. ONS's \"no changes in this area\" line is in the Rules broken verdict.\n- **Cut:**\n  - the clothes and condom costs (currency not confirmed);\n  - the diluted-alcohol retailer analogy (it contains a spaced hyphen and cost words);\n  - the second drugs \"probably false\" quote (it repeats the first);\n  - the CPI-for-personal-services sentence;\n  - the R&D £18bn and overall £50bn figures;\n  - the 2020 fall, which I left to the chart with no cause stated anywhere.\n- **Clients per week:** shown as \"20, 25 and 30\". I don't say which value ONS used.\n- **Ledger:** shows \"approx 7,000\" with a comma; the body quote keeps \"7000\" exactly as written.\n- **Closing note:** puts ONS's \"As there is no time series\" next to the 1985 to 2024 series. It doesn't claim today's series still uses the 2014 method.\n- **Sources:** the 2014 article is labelled as the UN SIAP mirror, with the ONS original returning a 404. The MNC8 entry tells the site-builder the chart plots a modelled series, not observed counts. The Blue Book 2016 article has no date in the brief, so none is given.\n- **Output location:** I followed your path rather than the repo-root name in the standing drafter instructions, and wrote nothing else.\n\n**Five-line summary:**\n1. Category: \"the assumptions were the data\" (new; needs adding to the worktree CLAUDE.md list).\n2. Tags: gdp, national-accounts, measurement-definitions, europe. Country: United Kingdom. Date: 2026-10-23.\n3. Chart: yes (series MNC8, 1985 to 2024), so no chartNote; the site-builder still has to write the component and wire it in `ExhibitLayout.astro`.\n4. Excluded: everything in the brief's CUT section, Wikipedia as a source, any cause for the 2020 fall, Patterson's two ESA 2010 lines, and the beats listed under Cut above.\n5. Labelled: the holiday arithmetic as this site's; the mirror; the third-party estimates (Eaves, the Metropolitan Police figure, Punternet); the Wikipedia footnote as ONS's own source.",
       "promptMatches": true,
       "served": {
@@ -1532,15 +1715,33 @@
           "claude-opus-5-5"
         ]
       },
+      "context": {
+        "claudeCode": "2.1.309",
+        "instructions": [
+          {
+            "type": "Project",
+            "file": "CLAUDE.md",
+            "sha256": "07f79ef86c44"
+          },
+          {
+            "type": "AutoMem",
+            "file": "MEMORY.md",
+            "sha256": "37eae8f607f2"
+          }
+        ],
+        "systemPrompt": "0c25d41a8f31"
+      },
       "toolCalls": 16,
       "tokens": {
         "input": 22,
         "cacheWrite": 99074,
+        "cacheWrite1h": 0,
         "cacheRead": 443966,
         "output": 63125,
         "responses": 11
       },
       "costUsd": 1.8468,
+      "claudeCodeCostUsd": null,
       "seconds": 536,
       "versions": 1,
       "firstRules": {
@@ -1674,9 +1875,11 @@
       "description": "Compare: 017-model-effort r11",
       "ran": {
         "model": "opus",
+        "id": "claude-opus-5-5",
         "effort": "medium"
       },
       "status": "done",
+      "ended": null,
       "report": "I've written the draft for exhibit 017, but I couldn't run check-house-rules.mjs. This session had no shell, only Read, Write, Glob and Grep. Please run it yourself:\nnode C:\\Users\\betan\\OneDrive\\Desktop\\rounding-errors\\.worktrees\\017-model-effort\\scripts\\check-house-rules.mjs C:\\Users\\betan\\OneDrive\\Desktop\\rounding-errors\\reports\\comparisons\\017-model-effort\\drafts\\r11\\exhibit-017-illegal-gdp.md\n\n**Path:** C:\\Users\\betan\\OneDrive\\Desktop\\rounding-errors\\reports\\comparisons\\017-model-effort\\drafts\\r11\\exhibit-017-illegal-gdp.md\n\n**Title:** \"Prostitution in GDP, less 12 weeks' holiday\"\n\n**Word count:** I counted by hand, so this is an estimate: about 465 words of body prose, about 475 with headings. My first version came out near 507, so I cut it. Patterson's \"legally mandated\" line moved to verdictNote, and the 2019/2020/2024 values sentence came out of the body.\n\n**What I checked by eye:**\n- There are no em dashes. The ONS diluted-alcohol quote uses a spaced hyphen, and I left that quote out of the draft.\n- Exactly 1 ledger row has `gap: true`: \"Prostitution spending, 2010: ONS FOI reply / series MNC8 today\", value \"£5.6bn / £4,370m\".\n- The verdict has exactly 3 rows: Fraud detected, Rules broken, Usefulness of the headline figure.\n- There is no chartNote, and the date is 2026-10-23.\n- The frontmatter shape is copied from 015.\n\n**Judgment calls:**\n1. **Category:** \"the assumptions were the data\". It describes the gap's structure, not a verdict, so it passes the rules. It is missing from the worktree's CLAUDE.md category list, though; the root CLAUDE.md already lists it as 017. The worktree copy is behind, and the site-builder needs to confirm the list.\n2. **Tags and country:** tags are gdp, national-accounts, measurement-definitions, europe, all live vocabulary. Country is \"United Kingdom\".\n3. **Section:** I used \"The bit continues\", since the series is still published (last release 31 October 2025, which is also the status line).\n4. **The 2010 gap:** presented as 2 published figures. The 78% vs 77% comparison is labelled \"this site's arithmetic, not ONS's\" in both the body and the disclosure. The body adds: \"ONS does not say the holiday is the whole difference.\"\n5. **FOI date:** left undated in the body and sources. The brief says the 6 Nov 2015 date still needs confirming on the page. That also avoids implying an order between the FOI reply and the Blue Book 2016 change. A fact-checker could add the date once confirmed.\n6. **Excluded:**\n   - The 125-per-year clothes and 0.50-per-condom figures, because the euro basis is unconfirmed.\n   - Which client count was actually used. The draft only says \"estimates on 20, 25 and 30\".\n   - Everything on the brief's CUT list, and any cause for the 2020 fall. 2020 appears in neither the body nor the ledger.\n   - The R&D £18bn and the \"around £50 billion\" line (the latter has an en dash in the original), for length.\n   - The FOI's \"0.4% of GDP\" next to its own 0.35%. It's a small second inconsistency, left out for focus.\n7. **ESA wording:**\n   - The draft says the rule was \"older\" and quotes ONS that nothing changed between ESA95 and ESA10. It never says ESA 2010 introduced the rule.\n   - Patterson's \"legally mandated through the European System of Accounts 2010\" appears only as his reported quote, in verdictNote.\n   - Abramsky and Drew are named only as the article's authors.\n8. **Wikipedia:** the body states only that ONS's Punternet footnote is a Wikipedia URL. Wikipedia is never a source, and the disclosure says so.\n9. **Sources:** the 5 the brief named. The ONS 2014 article is cited through the UN SIAP mirror, and both its source text and the disclosure say it is a mirror and that the ONS original no longer resolves.\n10. **Verdict wording to check:** the \"Usefulness\" value is my framing. It says the figure serves \"the EU budget and comparability, the purposes ONS gave\". As a measurement it calls it \"a 2004 London count, scaled to the UK and moved with the male population\". Please check that this stays reported rather than editorial.",
       "promptMatches": true,
       "served": {
@@ -1695,15 +1898,33 @@
           "claude-opus-5-5"
         ]
       },
+      "context": {
+        "claudeCode": "2.1.309",
+        "instructions": [
+          {
+            "type": "Project",
+            "file": "CLAUDE.md",
+            "sha256": "07f79ef86c44"
+          },
+          {
+            "type": "AutoMem",
+            "file": "MEMORY.md",
+            "sha256": "37eae8f607f2"
+          }
+        ],
+        "systemPrompt": "0c25d41a8f31"
+      },
       "toolCalls": 7,
       "tokens": {
         "input": 10,
         "cacheWrite": 49116,
+        "cacheWrite1h": 0,
         "cacheRead": 136974,
         "output": 16028,
         "responses": 5
       },
       "costUsd": 0.5936,
+      "claudeCodeCostUsd": null,
       "seconds": 130,
       "versions": 2,
       "firstRules": {
