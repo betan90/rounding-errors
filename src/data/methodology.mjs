@@ -278,6 +278,13 @@ export const eras = [
     commits: ['0d263d5'],
     note: '002-model-and-effort',
   },
+  {
+    name: 'Runs with a size',
+    changed: 'The model log records how long every agent run took and its tool calls by type. The researcher and the drafter launch at medium effort unless the human asks for more, research prompts ask for the 4 or 5 facts an exhibit stands on, and a research run past 10 minutes gets checked.',
+    why: 'The research for exhibit 018 asked 9 questions at max effort, inherited from the session, and ran 39 minutes and 166 tool calls. The 6 research runs at medium since the fetching rules of 5 October took 1.8 to 5.0 minutes.',
+    commits: ['de2237d'],
+    note: '003-research-time',
+  },
 ];
 
 // Shown for a kind of tooling the repo doesn't use yet. When the first one
