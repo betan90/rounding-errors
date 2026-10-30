@@ -271,6 +271,13 @@ export const eras = [
     commits: ['4fb4f2b'],
     note: '002-model-and-effort',
   },
+  {
+    name: 'A benchmark that runs outside',
+    changed: 'Comparisons now run as headless Claude Code sessions, in a plain copy of the repo at the base commit kept outside this folder, with no settings, hooks, connectors or memory. A cell can name a full model id, so the model being replaced can run beside its successor on the same day. /benchmark reruns the 017 grid when an alias starts serving a new model, and a history view lines every run up by model and effort.',
+    why: 'Every agent in the 29 October grid was handed this folder\'s CLAUDE.md and memory index, whatever checkout it read, and 1 memory line about the 017 brief\'s count reached a draft: Haiku at max cited it. Outside this folder, a draft sees only the copy.',
+    commits: ['0d263d5'],
+    note: '002-model-and-effort',
+  },
 ];
 
 // Shown for a kind of tooling the repo doesn't use yet. When the first one
