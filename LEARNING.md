@@ -97,3 +97,21 @@ Sessions 2 onward were drafted with Claude from the git history, the archived re
 **What worked:** the 2-layer setup. The hook catches a problem the moment it's written; the build catches anything that arrived another way.
 
 **What I'd change / open:** 5 source URLs redirect to new addresses and still need a same-document check before updating.
+
+---
+
+## Session 9 (23 October): exhibits 016 and 017
+
+*Not written up yet. The commits are 642dcbe and 0fa5482 (the 2 exhibits), 59f09ad, a8b9567 and d596c66 (the second opinion reading full source texts), and df00590 ("How it got here" on /methodology).*
+
+---
+
+## Session 10 (29 to 30 October): what ran, and how long it took
+
+**Features used:** `SubagentStop` hooks, the Agent tool's model and effort overrides, headless Claude Code (`claude -p`), a custom slash command (`/benchmark`), messaging a running agent, Artifacts.
+
+**What happened:** The agent files name model aliases, so a hook now logs what actually served each agent run: the model id, the effort of every turn and, since this session, how long the run took and its tool calls by type. A second hook saves every drafter's brief and drafts. Exhibit 017's brief went back to the drafter 11 times at different models and efforts (note 002): on Opus, max effort cost $5.48 against $0.33 at low and ended with the same verdict and the same wrong count, and 8 of 11 drafts repeated the brief's 1 wrong count. Those agents turned out to have been handed this folder's CLAUDE.md and my Claude Code memory index, whatever checkout they were pointed at, so comparisons now run headless from a copy outside the repo, and `/benchmark` reruns them when a new model arrives. Then the research for exhibit 018 ran 39 minutes and 166 tool calls against a usual 2 to 5 minutes (note 003). I asked why. The model log answered: 9 questions in the prompt, sites that turn scripts away, and max effort inherited from the session.
+
+**What worked:** logging what actually ran instead of what was asked for. It caught 2 runs asked for Fable that ran on Opus, and it held the numbers that explained the slow research run.
+
+**What I'd change:** name the effort when launching an agent rather than letting it follow the session. This session ran at max, so every agent did. Ask the researcher for the 4 or 5 facts an exhibit stands on, not 9, and fetch pages that block scripts myself. Both are now in CLAUDE.md.

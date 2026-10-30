@@ -8,7 +8,8 @@
 // ~/.claude/projects/<project>/, and are deleted after a retention period
 // (cleanupPeriodDays, 30 by default), so this copies the facts that matter
 // into a tracked file before they go: reports/model-log.jsonl, 1 run per line.
-// Model ids and the spawn description only; no transcript text.
+// Model ids, efforts, the spawn description, how long the run took and how
+// many calls it made to each tool; no transcript text.
 //
 // Two ways to run it:
 //   as a Claude Code SubagentStop hook (--hook): logs the run that just ended.
@@ -68,6 +69,17 @@ function row(sessionDir, file) {
   if (!turns.length) return null;
   const task = info.description ?? '';
   const asked = launched(`${sessionDir}.jsonl`, info.toolUseId);
+  // How long the run took, launch to last line, and what it spent its turns on.
+  const times = lines.map((x) => Date.parse(x.timestamp)).filter(Number.isFinite);
+  const tools = {};
+  const seen = new Set();
+  for (const x of turns) {
+    for (const c of x.message.content ?? []) {
+      if (c.type !== 'tool_use' || seen.has(c.id) || c.name === 'SubagentHandback') continue;
+      seen.add(c.id);
+      tools[c.name] = (tools[c.name] ?? 0) + 1;
+    }
+  }
   return {
     date: turns[0].timestamp.slice(0, 10),
     agent: info.agentType ?? 'unknown',
@@ -81,6 +93,8 @@ function row(sessionDir, file) {
     requested: asked.model ?? null,
     requestedEffort: asked.effort ?? null,
     claudeCode: turns[0].version ?? null,
+    seconds: Math.round((Math.max(...times) - Math.min(...times)) / 1000),
+    tools,
     run: turns[0].agentId ?? file.replace(/^agent-|\.jsonl$/g, ''),
   };
 }

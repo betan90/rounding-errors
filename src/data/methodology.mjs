@@ -76,8 +76,8 @@ export const entries = {
     why: 'Counted in sessions, not days, because the site is built in bursts. A run of sessions that committed nothing triggers nothing.',
   },
   'script:log-models.mjs': {
-    role: 'Copies the model the API actually served for each agent run, the effort each turn ran at, the task it was given and the Claude Code version, from Claude Code\'s transcripts into reports/model-log.jsonl.',
-    why: 'An agent file names a model family, and the family moves to its newest model with no commit: the committer went from Haiku 4.5 to Haiku 5.5 between 5 and 10 October 2026. No agent file sets an effort, so effort follows the session; on 29 October a running committer switched from medium to max when the next message arrived. The transcripts that recorded both are deleted after 30 days.',
+    role: 'Copies the model the API actually served for each agent run, the effort each turn ran at, the task it was given, the Claude Code version, how long the run took and its tool calls by type, from Claude Code\'s transcripts into reports/model-log.jsonl.',
+    why: 'An agent file names a model family, and the family moves to its newest model with no commit: the committer went from Haiku 4.5 to Haiku 5.5 between 5 and 10 October 2026. No agent file sets an effort, so effort follows the session; on 29 October a running committer switched from medium to max when the next message arrived. Run time and tool calls came in on 30 October, after a research run took 39 minutes against a usual 2 to 5. The transcripts that record all of it are deleted after 30 days.',
   },
   'script:archive-drafts.mjs': {
     role: 'Saves what each drafter run was given and what it wrote into reports/NNN-slug/drafting/: the prompt, the brief exactly as the drafter read it, and every version of the draft, from Claude Code\'s transcripts.',
