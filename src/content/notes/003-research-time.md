@@ -2,7 +2,7 @@
 title: "Research takes 2 to 5 minutes. This one took 39"
 date: 2026-10-30
 teaser: "Method · the research for exhibit 018 asked 9 questions at max effort and ran 39 minutes and 166 tool calls. The log can't say which of the 2 mattered more"
-disclosure: "Drafted with AI (Claude, in Claude Code), from reports/model-log.jsonl, where scripts/log-models.mjs records each agent run's model, effort, duration and tool calls from Claude Code's transcripts, and from the 018 research run's prompt and report, saved in reports/018-pele-goals/research/. The researcher's fetching rules are in .claude/agents/exhibit-researcher.md, from commit 329bac9. Every figure in this note was checked against those files. Editorial voice and errors are mine."
+disclosure: "Drafted with AI (Claude, in Claude Code), from reports/model-log.jsonl, where scripts/log-models.mjs records each agent run's model, effort, duration and tool calls from Claude Code's transcripts, and from the 018 research run's prompt and report, saved in reports/018-pele-goals/research/. The researcher's fetching rules are in .claude/agents/exhibit-researcher.md, from commit 329bac9. Every figure in this note was checked against those files. Corrected on 30 October, the day it was published: the first 012 run was listed at 88.1 minutes, measured to the last line of its transcript, which was the run being interrupted by hand; it had stopped responding at 7.0 minutes. The log now measures every run to its last response, which also moved 013 from 3.1 to 3.0 minutes and 014 from 3.4 to 3.3. Editorial voice and errors are mine."
 ---
 
 ## The run
@@ -13,18 +13,18 @@ On 30 October the researcher went looking for Pelé's goal count, for exhibit 01
 
 | Exhibit | Date | Model | Effort | Minutes | Tool calls | Searches | Fetches |
 |---|---|---|---|---|---|---|---|
-| 012 | 4 Oct | Opus | medium | 88.1 | 51 | 14 | 36 |
+| 012 | 4 Oct | Opus | medium | 7.0 | 51 | 14 | 36 |
 | 012 | 4 Oct | Opus | max | 20.0 | 129 | 31 | 88 |
 | 012 | 4 Oct | Sonnet | max | 44.8 | 142 | 32 | 107 |
 | 012 | 5 Oct | Sonnet | medium | 1.8 | 24 | 9 | 15 |
-| 013 | 9 Oct | Sonnet | medium | 3.1 | 48 | 14 | 34 |
-| 014 | 10 Oct | Sonnet | medium | 3.4 | 39 | 14 | 25 |
+| 013 | 9 Oct | Sonnet | medium | 3.0 | 48 | 14 | 34 |
+| 014 | 10 Oct | Sonnet | medium | 3.3 | 39 | 14 | 25 |
 | 015 | 10 Oct | Sonnet | medium | 3.6 | 42 | 11 | 31 |
 | 016 | 23 Oct | Sonnet | medium | 2.9 | 27 | 11 | 16 |
 | 017 | 23 Oct | Sonnet | medium | 5.0 | 38 | 15 | 23 |
 | 018 | 30 Oct | Sonnet | max | 39.1 | 166 | 59 | 106 |
 
-Minutes run from launch to the last line of the run's transcript. Tool calls include file reads and searches of the repository, which is why some rows add up to more than searches and fetches. The 013 run is logged by its task, "Research 8x8 water exhibit".
+Minutes run from launch to the run's last response. The first 012 run stopped responding after 7.0 minutes, never reported back, and was later interrupted by hand. Tool calls include file reads and searches of the repository, which is why some rows add up to more than searches and fetches. The 013 run is logged by its task, "Research 8x8 water exhibit".
 
 On 5 October, between the 4 October runs and the next, the researcher's instructions gained fetching rules (commit 329bac9): prefer a web page to a PDF, hand PDFs to the main session, and give up on a source after 2 attempts. The 6 runs at medium effort since took 1.8 to 5.0 minutes.
 

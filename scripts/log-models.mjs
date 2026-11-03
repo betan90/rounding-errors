@@ -69,8 +69,11 @@ function row(sessionDir, file) {
   if (!turns.length) return null;
   const task = info.description ?? '';
   const asked = launched(`${sessionDir}.jsonl`, info.toolUseId);
-  // How long the run took, launch to last line, and what it spent its turns on.
-  const times = lines.map((x) => Date.parse(x.timestamp)).filter(Number.isFinite);
+  // How long the run took, launch to its last model response, and what it spent
+  // its turns on. Not to the last line: a stalled run's transcript keeps logging
+  // retried requests for hours after its last response.
+  const launch = Math.min(...lines.map((x) => Date.parse(x.timestamp)).filter(Number.isFinite));
+  const lastResponse = Math.max(...turns.map((x) => Date.parse(x.timestamp)).filter(Number.isFinite));
   const tools = {};
   const seen = new Set();
   for (const x of turns) {
@@ -93,7 +96,7 @@ function row(sessionDir, file) {
     requested: asked.model ?? null,
     requestedEffort: asked.effort ?? null,
     claudeCode: turns[0].version ?? null,
-    seconds: Math.round((Math.max(...times) - Math.min(...times)) / 1000),
+    seconds: Math.round((lastResponse - launch) / 1000),
     tools,
     run: turns[0].agentId ?? file.replace(/^agent-|\.jsonl$/g, ''),
   };

@@ -72,9 +72,18 @@ function pdfToText(buf) {
   }
 }
 
+// By byte-order mark first, then the declared charset. RSSSF serves some pages
+// as UTF-16, which read as UTF-8 come out with a NUL byte between letters.
+function decode(buf, type) {
+  if (buf[0] === 0xff && buf[1] === 0xfe) return buf.subarray(2).toString('utf16le');
+  if (buf[0] === 0xfe && buf[1] === 0xff) return Buffer.from(buf.subarray(2)).swap16().toString('utf16le');
+  if (/charset=utf-16/i.test(type)) return buf.toString('utf16le');
+  return buf.toString('utf8');
+}
+
 function toText(buf, type) {
   if (type.includes('pdf') || buf.subarray(0, 5).toString() === '%PDF-') return { kind: 'pdf', text: pdfToText(buf) };
-  const body = buf.toString('utf8');
+  const body = decode(buf, type);
   if (type.includes('html') || /^\s*</.test(body)) return { kind: 'html', text: htmlToText(body) };
   return { kind: 'text', text: body };
 }
