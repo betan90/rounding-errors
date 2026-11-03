@@ -1,0 +1,134 @@
+{
+  "exhibit": "018",
+  "fetchedAt": "2026-10-30T13:40:59.002Z",
+  "sources": [
+    {
+      "id": "01",
+      "name": "Guinness World Records",
+      "text": "\"Most career goals (football)\", record page, read 30 October 2026: 1,279 goals by Pelé \"from 7 Sep 1956 to 1 Oct 1977 in 1,363 games\"; best year 1959 \"with 126\"; the Milésimo on 19 Nov 1969 at the Maracanã; \"He later added two more goals in special appearances.\" The page does not say what the 1,363 games include. Pelé is still the listed holder.",
+      "url": "https://www.guinnessworldrecords.com/world-records/most-career-goals-football",
+      "status": "fetched",
+      "kind": "html",
+      "chars": 1807,
+      "sha256": "74514844bbc6ac80a2bbb7ac0756b71fd44951d2ecc28021e4b007abe342e737"
+    },
+    {
+      "id": "02",
+      "name": "Guinness World Records",
+      "text": "\"Pelé, Brazilian football legend, dies at 82\", 29 December 2022: \"during a playing career which stretched from 7 Sep 1956 to 1 Oct 1977, Pelé scored 1,283 goals\"; \"In 2013, Pelé was presented with his Guinness World Records certificates for Most Career Goals and Most World Cup Winners' Medals.\"",
+      "url": "https://www.guinnessworldrecords.com/news/2022/12/pele-brazilian-football-legend-dies-at-82-731330",
+      "status": "fetched",
+      "kind": "html",
+      "chars": 1649,
+      "sha256": "49f4aaed78382431d32d80e40316565937c1d9a141102dd759d64521aa0d834f"
+    },
+    {
+      "id": "03",
+      "name": "CONMEBOL",
+      "text": "\"80 años de Pelé: ¡Sigue siendo el Rey!\", 23 October 2020: \"Un total de 1363 partidos oficiales disputados, 1281 goles convertidos y 24 títulos de clubes\"; credit line \"Datos: OPTA\".",
+      "url": "https://www.conmebol.com/es/80-anos-de-pele-sigue-siendo-el-rey",
+      "status": "fetched",
+      "kind": "html",
+      "chars": 3022,
+      "sha256": "e85dd3b405562c1d318aff9d8e20c35f902adf0fd89e450bba0135a9e5770b58"
+    },
+    {
+      "id": "04",
+      "name": "FIFA",
+      "text": "\"Records being hunted in 2020\", 1 January 2020: table row \"Pele Santos 643 659 0.98\" (goals, matches, ratio), the record for goals for 1 club.",
+      "url": "https://inside.fifa.com/news/records-being-hunted-in-2020",
+      "status": "fetched",
+      "kind": "html",
+      "chars": 4643,
+      "sha256": "a53074401110c2d4662c5ed18ceb5286bd44919f02452bc486b7a5ce0673722c"
+    },
+    {
+      "id": "05",
+      "name": "FIFA",
+      "text": "\"Behind the World Cup record: Pele\", 19 June 2020: \"12 of his record 77 Brazil goals\" and \"1,000-plus strikes overall\". Supports what this FIFA page says; no FIFA page read for this exhibit gives an exact career total.",
+      "url": "https://inside.fifa.com/en/tournaments/mens/worldcup/1958sweden/news/behind-the-world-cup-record-pele",
+      "status": "fetched",
+      "kind": "html",
+      "chars": 6616,
+      "sha256": "bdd7a89163c2e6701d5b61d5419c6a83c653108bcc505d6688af9c230ff7b4f3"
+    },
+    {
+      "id": "06",
+      "name": "FIFA",
+      "text": "\"Happy 80th birthday to 'The King'\", 23 October 2020: \"Pele extraordinarily scored 127 goals for Santos in one calendar year: 1959.\"",
+      "url": "https://inside.fifa.com/tournaments/mens/worldcup/1970mexico/news/happy-80th-birthday-to-the-king",
+      "status": "fetched",
+      "kind": "html",
+      "chars": 9900,
+      "sha256": "10b7196fe6a8a91ae20195b7378f5251c8a99de71a73cd2e4d0446e44f821a6d"
+    },
+    {
+      "id": "07",
+      "name": "FC Barcelona",
+      "text": "\"Barça 2-2 Valencia: Points shared at Camp Nou\", 19 December 2020, embedding the club's tweet of the same day: \"Leo #Messi equals @Pele as the all time top goalscorer for one club WITH 643 goals!\"",
+      "url": "https://www.fcbarcelona.com/en/news/1946647/barca-2-2-valencia-points-shared-at-camp-nou",
+      "status": "fetched",
+      "kind": "html",
+      "chars": 4700,
+      "sha256": "523bc2b5f350e95425e531c01c48e314768bc285d74c9dfad9444d37f8ab0bb1"
+    },
+    {
+      "id": "08",
+      "name": "FC Barcelona",
+      "text": "\"Leo Messi surpasses Pelé as highest goalscorer ever for a single club\", 22 December 2020: \"After scoring against Valladolid he has moved past the legendary Pelé\"; \"644 goals, all wearing an FC Barcelona shirt, across 17 seasons and 749 games\"; \"That surpasses the 643 goals that the Brazilian scored for Santos\".",
+      "url": "https://www.fcbarcelona.com/en/football/first-team/news/1941432/leo-messi-matches-pele-as-highest-goalscorer-ever-for-a-single-club",
+      "status": "fetched",
+      "kind": "html",
+      "chars": 2930,
+      "sha256": "2d8171b258c28dd31a90e1be99f57a4b4d6516020b7da13646d6b3b9b0e51d94"
+    },
+    {
+      "id": "09",
+      "name": "Santos FC",
+      "text": "Statement of 26 December 2020, signed by Fernando Ribeiro of Assophis (Associação dos Pesquisadores e Historiadores do Santos FC). The club's site refuses scripts; the text was read through Gazeta Esportiva's reproduction, below. Supports: \"Pelé marcou 1.091 gols pelo Santos.\"; 643 in competitions and 448 goals in friendlies \"relegados ao ostracismo\"; \"Os números são absolutos.\"; the Transvaal and Bernabéu sentence; official kits, official rules and a match report; more than 1,000 days touring; skipping the 1967 Copa Libertadores despite qualifying; Pelé's congratulations to Messi, quoted in the statement. Translations are this site's.",
+      "url": "https://www.santosfc.com.br/rei-pele-1-091-gols-pelo-santos-fc/",
+      "status": "failed",
+      "error": "HTTP 403"
+    },
+    {
+      "id": "10",
+      "name": "Gazeta Esportiva",
+      "text": "\"Santos publica texto para defender Pelé após \"recorde\" de Messi: \"Números são absolutos\"\", 26 December 2020: reproduces the text of Santos's statement, introduced as \"publicado pelo Santos e assinado por Fernando Ribeiro, da Associação dos Pesquisadores e Historiadores do Santos FC (Assophis)\".",
+      "url": "https://www.gazetaesportiva.com/times/santos/santos-publica-texto-para-defender-pele-apos-recorde-de-messi-numeros-sao-absolutos/",
+      "status": "fetched",
+      "kind": "html",
+      "chars": 7854,
+      "sha256": "458ef009c9fcc907fac81f8fa5348d8d49ff969dcad1b842787cadf9cb543a9a"
+    },
+    {
+      "id": "11",
+      "name": "RSSSF (Rec.Sport.Soccer Statistics Foundation)",
+      "text": "\"Prolific Scorers Data\", compiled by Vladimir Kolos, last updated 3 August 2026: official matches, Pelé 11th with 778 goals in 851 matches; the legend of what official includes, among it \"all selections: A, B, Ol, U, league, armee, senior, regional, city, etc.\"; all matches, Pelé 8th with 1,324 in 1,413; official matches at the top level, a list marked \"NB: preliminary list\", Pelé 3rd with 770; all matches at the top level, also preliminary, \"containing: 1. Official goals in top level; 2. All international friendlies; 3. National friendlies against top-league teams; tournaments; select matches\", Pelé 1st with \"Pele 770 396 108 1274\"; 1 team, \"Pele 643 Santos\" (official) and \"Pele 1089 Santos\" (all); 1 season, \"Pele 1959 128 107\" (all matches) and \"Pele 1959 120 101\" (all matches, top level).",
+      "url": "https://www.rsssf.org/players/prolific.html",
+      "status": "fetched",
+      "kind": "html",
+      "chars": 16269,
+      "sha256": "09dabd900d30d743c2b0290f8e29ef05f28f14908fd21ef6872302f2692bafd6"
+    },
+    {
+      "id": "12",
+      "name": "RSSSF (Rec.Sport.Soccer Statistics Foundation)",
+      "text": "\"Prolific Scorers Data - Pelé - Additional Data\", last updated 25 August 2024: by team, FC Santos official 644 goals in 666 matches and 1,093 in 1,117 in total; career totals official 778 in 851, all 1,324 in 1,413.",
+      "url": "https://www.rsssf.org/players/ppeledata.html",
+      "status": "fetched",
+      "kind": "html",
+      "chars": 4951,
+      "sha256": "762893982b71ae1d7dccaa53ed917025b0f61af95097417e0e3c292c5ea528dc"
+    },
+    {
+      "id": "13",
+      "name": "Brazil, Câmara dos Deputados",
+      "text": "Lei nº 14.909, de 1º de julho de 2024, \"Institui o Dia do Rei Pelé.\" Art. 1º: the day is celebrated annually on 19 November, \"data em que marcou seu milésimo gol, no ano de 1969\".",
+      "url": "https://www2.camara.leg.br/legin/fed/lei/2024/lei-14909-1-julho-2024-795878-publicacaooriginal-172260-pl.html",
+      "status": "fetched",
+      "kind": "html",
+      "chars": 1048,
+      "sha256": "7b260611c8a9fecd8e33e330db4f9cdf0b1eade2db68f7fd260143c1fa23516a"
+    }
+  ]
+}

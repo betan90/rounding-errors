@@ -1,0 +1,390 @@
+{
+  "exhibit": "018",
+  "checkedAt": "2026-10-30T15:00:00Z",
+  "claims": [
+    {
+      "id": 1,
+      "claim": "title / status / ledger row 1 / body / chart DATA: Guinness's record page lists Pelé as the holder of \"Most career goals (football)\" at 1,279 goals, 7 Sep 1956 to 1 Oct 1977, in 1,363 games (\"Guinness still lists Pelé as the record holder\"; ledgerTitle \"1956 to 1977\")",
+      "source": "Guinness World Records, \"Most career goals (football)\", https://www.guinnessworldrecords.com/world-records/most-career-goals-football",
+      "passage": "Most career goals (football) ... Who Pelé ... The most goals scored in a specified period is 1,279 by Edson Arantes do Nascimento (Brazil) (b. 23 Oct 1940), known as Pelé, from 7 Sep 1956 to 1 Oct 1977 in 1,363 games.",
+      "verdict": "SUPPORTED",
+      "notes": "Read live on 30 October 2026: the page is titled Most career goals (football), its Who field is Pelé, and it gives 1,279 goals in 1,363 games for exactly those dates."
+    },
+    {
+      "id": 2,
+      "claim": "attribution and figure, title / status / ledger row 1 / body / chart DATA: Guinness's obituary, published 29 December 2022, gives 1,283 goals for the same dates (\"Its obituary, published 29 December 2022, gives the same dates and 1,283 goals.\")",
+      "source": "Guinness World Records, \"Pelé, Brazilian football legend, dies at 82\", https://www.guinnessworldrecords.com/news/2022/12/pele-brazilian-football-legend-dies-at-82-731330",
+      "passage": "Pelé, Brazilian football legend, dies at 82 By Guinness World Records Published 29 December 2022 ... Born Edson Arantes do Nascimento, during a playing career which stretched from 7 Sep 1956 to 1 Oct 1977, Pelé scored 1,283 goals.",
+      "verdict": "SUPPORTED",
+      "notes": "The page is bylined Guinness World Records, dated 29 December 2022, and gives 1,283 goals for the identical 7 Sep 1956 to 1 Oct 1977 span, so both the figure and the attribution to Guinness hold."
+    },
+    {
+      "id": 3,
+      "claim": "verdict: \"Its 2 pages differ by 4 goals for the same dates\"",
+      "source": "Guinness World Records record page and obituary (URLs above)",
+      "passage": "The most goals scored in a specified period is 1,279 by Edson Arantes do Nascimento (Brazil) (b. 23 Oct 1940), known as Pelé, from 7 Sep 1956 to 1 Oct 1977 in 1,363 games. / during a playing career which stretched from 7 Sep 1956 to 1 Oct 1977, Pelé scored 1,283 goals.",
+      "verdict": "SUPPORTED",
+      "notes": "Both inputs trace, the date ranges are identical, and 1,283 minus 1,279 is 4."
+    },
+    {
+      "id": 4,
+      "claim": "body / verdict: \"Neither page gives a reason for the difference.\" / \"neither gives a reason\"",
+      "source": "Guinness World Records record page (and obituary)",
+      "passage": "He later added two more goals in special appearances.",
+      "verdict": "SUPPORTED",
+      "notes": "The record page's only adjustment is 2 goals added later, outside its stated dates (1,279 plus 2 is 1,281, not 1,283), and the obituary offers no explanation, so neither page accounts for the 4-goal gap."
+    },
+    {
+      "id": 5,
+      "claim": "body quote: \"He later added two more goals in special appearances.\"",
+      "source": "Guinness World Records record page",
+      "passage": "He later added two more goals in special appearances.",
+      "verdict": "SUPPORTED",
+      "notes": "Verbatim, and the spelled-out number is the source's own wording, so the numerals rule does not apply."
+    },
+    {
+      "id": 6,
+      "claim": "ledgerNote / body / verdict / verdictNote / chart caption / source note: Guinness's record page \"does not say what its 1,363 games include\" / \"does not state its scope\"; its 1959 figure is \"scope unstated\"",
+      "source": "Guinness World Records record page",
+      "passage": "His best year was 1959 with 126, and the Milésimo (1000th) came from a penalty for his club Santos at the Maracanã Stadium, Rio de Janeiro, on 19 Nov 1969 when playing his 909th first-class match.",
+      "verdict": "SUPPORTED",
+      "notes": "The page never defines what its 1,363 games or its 126 include; its only scope cue is calling the 1,000th-goal match his '909th first-class match', an undefined term, so 'does not define' is exact and 'does not state its scope' is defensible but open to that objection."
+    },
+    {
+      "id": 7,
+      "claim": "ledger row 7 / body / source note: Guinness gives 126 for 1959 (best year 1959 \"with 126\")",
+      "source": "Guinness World Records record page",
+      "passage": "His best year was 1959 with 126",
+      "verdict": "SUPPORTED",
+      "notes": "Verbatim."
+    },
+    {
+      "id": 8,
+      "claim": "body, in the narrator's voice: \"His best year was 1959.\"",
+      "source": "Guinness World Records record page; RSSSF, \"Prolific Scorers Data\", https://www.rsssf.org/players/prolific.html",
+      "passage": "Pele 1958 75 53 ... Pele 1965 72 52",
+      "verdict": "PARTIALLY SUPPORTED",
+      "notes": "Guinness says 1959 was his best year and RSSSF's all-matches season list agrees, but RSSSF's official one-season list gives 1958 (75 in 53) and 1965 (72 in 52) and no 1959, so 'best year' is Guinness's framing and also depends on the counter."
+    },
+    {
+      "id": 9,
+      "claim": "source note: \"the Milésimo on 19 Nov 1969 at the Maracanã\"",
+      "source": "Guinness World Records record page",
+      "passage": "the Milésimo (1000th) came from a penalty for his club Santos at the Maracanã Stadium, Rio de Janeiro, on 19 Nov 1969",
+      "verdict": "SUPPORTED",
+      "notes": "Verbatim."
+    },
+    {
+      "id": 10,
+      "claim": "source note: \"In 2013, Pelé was presented with his Guinness World Records certificates for Most Career Goals and Most World Cup Winners' Medals.\"",
+      "source": "Guinness World Records obituary",
+      "passage": "In 2013, Pelé was presented with his Guinness World Records certificates for Most Career Goals and Most World Cup Winners' Medals .",
+      "verdict": "SUPPORTED",
+      "notes": "Verbatim; the page's space before the full stop is a link artifact."
+    },
+    {
+      "id": 11,
+      "claim": "ledger row 2 / ledgerNote / body / chart DATA: CONMEBOL gives 1,281 career goals in 1,363 matches \"which it calls 'oficiales'\" (\"CONMEBOL calls the same 1,363 official\"), 23 October 2020",
+      "source": "CONMEBOL, \"80 años de Pelé: ¡Sigue siendo el Rey!\", https://www.conmebol.com/es/80-anos-de-pele-sigue-siendo-el-rey",
+      "passage": "80 años de Pelé: ¡Sigue siendo el Rey! octubre 23, 2020 ... Un total de 1363 partidos oficiales disputados, 1281 goles convertidos y 24 títulos de clubes, Un verdadero hombre récord del deporte rey.",
+      "verdict": "SUPPORTED",
+      "notes": "Figures, date and the word 'oficiales' are verbatim; CONMEBOL does not say 'career', but the total is unqualified and set apart from his 77 for Brazil, so 'career' is a fair reading."
+    },
+    {
+      "id": 12,
+      "claim": "attribution, ledger row 2 / body: CONMEBOL published the figure \"with data from Opta\"",
+      "source": "CONMEBOL article (URL above)",
+      "passage": "Datos: OPTA Texto e ilustración: CONMEBOL.com",
+      "verdict": "SUPPORTED",
+      "notes": "The article credits its data to Opta and its text to CONMEBOL.com; the credit covers the whole article rather than that one sentence, which the exhibit's wording respects."
+    },
+    {
+      "id": 13,
+      "claim": "ledger row 3 / body / chart DATA / source note: RSSSF official matches, Pelé 11th with 778 goals in 851 matches",
+      "source": "RSSSF, \"Prolific Scorers Data\", https://www.rsssf.org/players/prolific.html",
+      "passage": "11 Pelé (Brazil) 1940 1956-1977 778 851",
+      "verdict": "SUPPORTED",
+      "notes": "Row 11 of 'Best Goalscorers All-Time (Official Matches)', columns G. then M."
+    },
+    {
+      "id": 14,
+      "claim": "ledger row 3 / body / chart DATA / source note: RSSSF all matches, Pelé 8th with 1,324 goals in 1,413 matches",
+      "source": "RSSSF Prolific Scorers Data",
+      "passage": "Deak, Ferenc 1374+ 839 Pele 1324 1413",
+      "verdict": "SUPPORTED",
+      "notes": "'Best Goalscorers All-Time (All Matches)' is unnumbered and sorted by goals, and Pelé is its 8th row (columns Goals, Matches)."
+    },
+    {
+      "id": 15,
+      "claim": "body: \"RSSSF publishes 2 career counts: 1,324 goals in 1,413 matches, all matches, and 778 in 851 official ones.\"",
+      "source": "RSSSF Prolific Scorers Data",
+      "passage": "Best Goalscorers All-Time (Official Matches - Top level) NB: preliminary list Ronaldo, Cristiano 978* Messi, Lionel 921* Pele 770 ... Best Goalscorers All-Time (All Matches - Top level) ... Pele 770 396 108 1274",
+      "verdict": "NOT SUPPORTED",
+      "notes": "Both numbers given are right but the count is not: the same page gives Pelé 2 further all-time totals in its top-level lists (770 official, 3rd; 1,274 all matches, 1st), both marked preliminary, plus 538 league goals."
+    },
+    {
+      "id": 16,
+      "claim": "teaser: \"1 career, 5 published goal totals from 3 counters, 2 of them from Guinness\"",
+      "source": "RSSSF Prolific Scorers Data (with the Guinness and CONMEBOL pages)",
+      "passage": "Pele 770 396 108 1274 ... NB: most likely only these 4 players scored over 1000 goals at this level in football history.",
+      "verdict": "NOT SUPPORTED",
+      "notes": "Guinness's 2 totals and CONMEBOL's 1 trace, but RSSSF's cited page gives Pelé 4 exact career totals (778, 1,324, 770, 1,274), so these 3 counters publish at least 7, not 5."
+    },
+    {
+      "id": 17,
+      "claim": "verdictNote (closing line): \"On RSSSF's all-matches list, the Guinness record holder is 8th.\"",
+      "source": "RSSSF Prolific Scorers Data",
+      "passage": "NB: preliminary list containing: 1. Official goals in top level; 2. All international friendlies; 3. National friendlies against top-league teams; tournaments; select matches. Pele 770 396 108 1274",
+      "verdict": "PARTIALLY SUPPORTED",
+      "notes": "He is 8th on 'Best Goalscorers All-Time (All Matches)', but the page has a second all-matches list, '(All Matches - Top level)', which he heads with 1,274, and the singular 'RSSSF's all-matches list' picks the one where he ranks lower."
+    },
+    {
+      "id": 18,
+      "claim": "ledgerNote / verdict / body: RSSSF's official count \"includes army and regional selections\"; \"RSSSF publishes what it counts as official\"",
+      "source": "RSSSF Prolific Scorers Data; RSSSF Pelé additional data",
+      "passage": "- all selections: A, B, Ol, U, league, armee, senior, regional, city, etc. - against the same selections",
+      "verdict": "SUPPORTED",
+      "notes": "The official list's 'included:' legend names army and regional selections (the exhibit drops the qualifier 'against the same selections' without misstating it), and the Pelé page's official column counts '1959 Army-teams 4 - 4**'."
+    },
+    {
+      "id": 19,
+      "claim": "ledgerNote / source note: \"RSSSF's main list gives Santos 643 official\" (\"Pele 643 Santos\")",
+      "source": "RSSSF Prolific Scorers Data",
+      "passage": "Pele 643 Santos",
+      "verdict": "SUPPORTED",
+      "notes": "Row in 'One team (official matches)'."
+    },
+    {
+      "id": 20,
+      "claim": "ledgerNote / source note: \"and 1,089 in all matches\" (\"Pele 1089 Santos\")",
+      "source": "RSSSF Prolific Scorers Data",
+      "passage": "Pele 1089 Santos",
+      "verdict": "SUPPORTED",
+      "notes": "Row in 'One team (all matches)'."
+    },
+    {
+      "id": 21,
+      "claim": "ledgerNote / source note: \"its separate Pelé page gives 644 and 1,093\"; \"FC Santos official 644 goals in 666 matches and 1,093 in 1,117 in total\"",
+      "source": "RSSSF, \"Prolific Scorers Data - Pelé - Additional Data\", https://www.rsssf.org/players/ppeledata.html",
+      "passage": "Official Friendlies Total 1956�1974 FC Santos 666 - 644 451 - 449 1117 -1093",
+      "verdict": "SUPPORTED",
+      "notes": "Each column is matches then goals, so official is 644 in 666 and total is 1,093 in 1,117; the replacement character is the page's own broken dash."
+    },
+    {
+      "id": 22,
+      "claim": "source note: RSSSF Pelé page \"last updated 25 August 2024\", \"career totals official 778 in 851, all 1,324 in 1,413\"",
+      "source": "RSSSF Pelé additional data",
+      "passage": "Total: 851 � 778 562 - 546 1413 -1324 ... Last updated: 25 Aug 2024",
+      "verdict": "SUPPORTED",
+      "notes": "Totals row and date match."
+    },
+    {
+      "id": 23,
+      "claim": "attribution, source note and chart DATA comment: RSSSF \"Prolific Scorers Data\", \"compiled by Vladimir Kolos, last updated 3 August 2026\"",
+      "source": "RSSSF Prolific Scorers Data",
+      "passage": "Prepared and maintained by Vladimir Kolos for the Rec.Sport.Soccer Statistics Foundation ... Author: Vladimir Kolos ... Last updated: 3 Aug 2026",
+      "verdict": "SUPPORTED",
+      "notes": "Author line and date match."
+    },
+    {
+      "id": 24,
+      "claim": "ledger row 7 / body / source note: \"RSSSF gives 128, all matches for all teams\" (\"Pele 1959 128 107\")",
+      "source": "RSSSF Prolific Scorers Data",
+      "passage": "Pele 1959 128 107",
+      "verdict": "SUPPORTED",
+      "notes": "Listed under 'One season (all matches)' as 128 goals in 107 matches; 'for all teams' is inferred but sound, since RSSSF's all-matches scope spans every team and its top-level 1959 row splits into 'Int', 'sel' and 'ag. clubs'."
+    },
+    {
+      "id": 25,
+      "claim": "body: \"3 counters, 3 totals.\" (1959: Guinness 126, FIFA 127, RSSSF 128)",
+      "source": "RSSSF Prolific Scorers Data",
+      "passage": "Pele 1959 120 101(68/55, 42/36 Int, 4/4 sel, 6/6 ag. clubs)",
+      "verdict": "PARTIALLY SUPPORTED",
+      "notes": "The 3 named figures trace, but RSSSF also publishes 1959 as 120 in 101 on its top-level season list, which Pelé heads, so the 3 counters give at least 4 totals for that year."
+    },
+    {
+      "id": 26,
+      "claim": "ledger row 7 / body / source note: \"FIFA gives 127, for Santos\" (23 October 2020)",
+      "source": "FIFA, \"Happy 80th birthday to 'The King'\", https://inside.fifa.com/tournaments/mens/worldcup/1970mexico/news/happy-80th-birthday-to-the-king",
+      "passage": "Friday 23 October 2020, 08:00 ... Pele extraordinarily scored 127 goals for Santos in one calendar year: 1959.",
+      "verdict": "SUPPORTED",
+      "notes": "Verbatim, dated 23 October 2020."
+    },
+    {
+      "id": 27,
+      "claim": "attribution and figures, ledger row 5 / body / chart DATA / source note: \"FIFA had the same 643 for Santos, in 659 matches, in a table dated 1 January 2020\"; table row \"Pele Santos 643 659 0.98\", the record for goals for 1 club",
+      "source": "FIFA, \"Records being hunted in 2020\", https://inside.fifa.com/news/records-being-hunted-in-2020",
+      "passage": "Wednesday 01 January 2020, 16:02 ... goals for one club is the world record held by Santos immortal Pele. ... Player Club Goals Appearances Ratio Pele Santos 643 659 0.98",
+      "verdict": "SUPPORTED",
+      "notes": "Date, row and record wording match; the column FIFA heads 'Appearances' is fairly glossed as matches."
+    },
+    {
+      "id": 28,
+      "claim": "attribution and figure, ledger row 4 / body / chart caption / source note: \"FIFA's career figure is '1,000-plus'\" (19 June 2020); \"12 of his record 77 Brazil goals\"; \"no FIFA page read gives an exact career total\"",
+      "source": "FIFA, \"Behind the World Cup record: Pele\", https://inside.fifa.com/en/tournaments/mens/worldcup/1958sweden/news/behind-the-world-cup-record-pele",
+      "passage": "This teenage sensation went on to claim a variety of World Cup records, and 12 of his record 77 Brazil goals – and 1,000-plus strikes overall – came at the beautiful game’s most celebrated tournament.",
+      "verdict": "SUPPORTED",
+      "notes": "Verbatim and dated 19 June 2020, and none of the 4 FIFA pages listed gives an exact total, but AP (29 December 2022) reported 'The governing body of soccer gives Pelé 1,281 goals in 1,363 matches', so the definite 'FIFA's career figure' is safe only as 'a FIFA page's figure' (no FIFA page giving 1,281 was found)."
+    },
+    {
+      "id": 29,
+      "claim": "attribution and quote, body / source note: \"FIFA places the 1,000th goal in Vasco 1-2 Santos, where 'nobody among the 65,000 in attendance cared that they had work or school the next day'\" (15 June 2020)",
+      "source": "FIFA, \"Maracana: Seven momentous matches from its 70 years\", https://inside.fifa.com/news/maracana-seven-momentous-matches-from-its-70-years",
+      "passage": "Monday 15 June 2020, 22:47 ... Vasco 1-2 Santos Robertão Tournament 1969 It was well past 11pm on a Wednesday, but nobody among the 65,000 in attendance cared that they had work or school the next day. ... Everybody had come to witness history, and with 12 minutes remaining, Pele become the first player in history to reach 1,000 career goals.",
+      "verdict": "SUPPORTED",
+      "notes": "Quote verbatim; FIFA puts the 1,000th career goal in that match, consistent with Guinness's Maracanã placing."
+    },
+    {
+      "id": 30,
+      "claim": "attribution and quote, body / source note: \"On 19 December 2020 FC Barcelona tweeted: 'Leo #Messi equals @Pele as the all time top goalscorer for one club WITH 643 goals!'\"",
+      "source": "FC Barcelona, \"Barça 2-2 Valencia: Points shared at Camp Nou\", https://www.fcbarcelona.com/en/news/1946647/barca-2-2-valencia-points-shared-at-camp-nou",
+      "passage": "Leo #Messi equals @Pele as the all time top goalscorer for one club WITH 643 goals! 🐐 ... FC Barcelona (@FCBarcelona) December 19, 2020",
+      "verdict": "SUPPORTED",
+      "notes": "The embed names the @FCBarcelona account and 19 December 2020, and the article is dated 19 Dec 20; the exhibit drops only a trailing goat emoji."
+    },
+    {
+      "id": 31,
+      "claim": "attribution and quotes, body / ledger row 8 / source note: on 22 December 2020, after Valladolid, the club said Messi had \"moved past the legendary Pelé\", with \"644 goals, all wearing an FC Barcelona shirt, across 17 seasons and 749 games\"",
+      "source": "FC Barcelona, \"Leo Messi surpasses Pelé as highest goalscorer ever for a single club\", https://www.fcbarcelona.com/en/football/first-team/news/1941432/leo-messi-matches-pele-as-highest-goalscorer-ever-for-a-single-club",
+      "passage": "After scoring against Valladolid he has moved past the legendary Pelé as the highest goalscorer ever for a single club. The Argentine ace has now scored an staggering 644 goals, all wearing an FC Barcelona shirt, across 17 seasons and 749 games.",
+      "verdict": "SUPPORTED",
+      "notes": "The club's own article, dated 22 Dec 20, and both quotes are verbatim."
+    },
+    {
+      "id": 32,
+      "claim": "source note: \"That surpasses the 643 goals that the Brazilian scored for Santos\"",
+      "source": "FC Barcelona, 22 December 2020 article (URL above)",
+      "passage": "That surpasses the 643 goals that the Brazilian scored for Santos, until now the world record and one that few people thought would ever been broken.",
+      "verdict": "SUPPORTED",
+      "notes": "Verbatim."
+    },
+    {
+      "id": 33,
+      "claim": "source: Santos FC statement at its own URL (the exhibit says it was read through Gazeta Esportiva)",
+      "source": "Santos FC, https://www.santosfc.com.br/rei-pele-1-091-gols-pelo-santos-fc/",
+      "passage": "",
+      "verdict": "NOT SUPPORTED",
+      "notes": "Not retrieved (HTTP 403 live, and the Wayback Machine refused), so nothing was checked against the club's own page; every statement claim below is checked against Gazeta Esportiva's reproduction, which the exhibit lists and names as its route."
+    },
+    {
+      "id": 34,
+      "claim": "attribution, body / source notes: \"On 26 December Santos published a statement, signed by Fernando Ribeiro of Assophis, an association of Santos historians\"",
+      "source": "Gazeta Esportiva, https://www.gazetaesportiva.com/times/santos/santos-publica-texto-para-defender-pele-apos-recorde-de-messi-numeros-sao-absolutos/ (reproducing the Santos FC statement)",
+      "passage": "Publicado 26/12/2020 às 16:45 ... O Santos publicou um texto na tarde deste sábado para defender Pelé após o \"recorde\" de Messi no Barcelona. ... Veja o texto publicado pelo Santos e assinado por Fernando Ribeiro, da Associação dos Pesquisadores e Historiadores do Santos FC (Assophis).",
+      "verdict": "SUPPORTED",
+      "notes": "Gazeta, dated Saturday 26 December 2020, says Santos published the text that afternoon and that Fernando Ribeiro of the Association of Researchers and Historians of Santos FC signed it."
+    },
+    {
+      "id": 35,
+      "claim": "body / chart DATA: \"Pelé marcou 1.091 gols pelo Santos.\" (Pelé scored 1,091 goals for Santos.)",
+      "source": "Gazeta Esportiva (reproducing the Santos FC statement)",
+      "passage": "Pelé marcou 1.091 gols pelo Santos.",
+      "verdict": "SUPPORTED",
+      "notes": "Verbatim inside the reproduced statement, and the gloss is accurate."
+    },
+    {
+      "id": 36,
+      "claim": "attribution and figures, body / ledger row 6 / source note: \"The specialist press, the statement said, counted 643 in competitions, and the 448 goals scored in friendlies were 'relegados ao ostracismo' (relegated to ostracism).\"",
+      "source": "Gazeta Esportiva (reproducing the Santos FC statement)",
+      "passage": "Nas contas da imprensa especializada, o Rei do Futebol marcou 643 em competições e os 448 gols anotados em partidas e competições amistosas foram relegados ao ostracismo, como se tivessem menos valor do que os demais.",
+      "verdict": "SUPPORTED",
+      "notes": "The statement credits the 643 to the specialist press's count and says the 448 friendly-match goals were 'relegados ao ostracismo', as the exhibit reports."
+    },
+    {
+      "id": 37,
+      "claim": "body / ledger row 6 / verdict / chart DATA: \"643 plus 448 is 1,091\"; \"Santos's 1,091 is 643 plus 448 goals from friendlies, and its statement gives both parts\"",
+      "source": "Gazeta Esportiva (reproducing the Santos FC statement)",
+      "passage": "Pelé marcou 1.091 gols pelo Santos. Nas contas da imprensa especializada, o Rei do Futebol marcou 643 em competições e os 448 gols anotados em partidas e competições amistosas",
+      "verdict": "SUPPORTED",
+      "notes": "Both parts appear in the statement and 643 plus 448 is 1,091."
+    },
+    {
+      "id": 38,
+      "claim": "body: \"Os números são absolutos.\" (The numbers are absolute.)",
+      "source": "Gazeta Esportiva (reproducing the Santos FC statement)",
+      "passage": "Os números são absolutos.",
+      "verdict": "SUPPORTED",
+      "notes": "Verbatim inside the statement."
+    },
+    {
+      "id": 39,
+      "claim": "attribution, body: \"Santos's statement says the friendlies were played in official kits, under the official rules, with a match report.\"",
+      "source": "Gazeta Esportiva (reproducing the Santos FC statement)",
+      "passage": "Ainda assim, as partidas foram disputadas com uniformes oficiais, com as regras oficiais do jogo e com súmula.",
+      "verdict": "SUPPORTED",
+      "notes": "An accurate paraphrase ('súmula' is the official match report), attributed to the statement rather than asserted."
+    },
+    {
+      "id": 40,
+      "claim": "body: \"Um gol diante do Transvaal (do Suriname) possui o mesmo valor de um anotado no Real Madrid, em pleno Santiago Bernabéu.\" with its English gloss",
+      "source": "Gazeta Esportiva (reproducing the Santos FC statement)",
+      "passage": "Um gol diante do Transvaal (do Suriname) possui o mesmo valor de um anotado no Real Madrid, em pleno Santiago Bernabéu.",
+      "verdict": "SUPPORTED",
+      "notes": "Verbatim, and the gloss keeps the meaning."
+    },
+    {
+      "id": 41,
+      "claim": "attribution, body / source note: \"By the club's count, Santos spent more than 1,000 days touring the planet\"",
+      "source": "Gazeta Esportiva (reproducing the Santos FC statement)",
+      "passage": "O alvinegro praiano passou mais de 1000 dias excursionando pelo planeta – que dá um pouco mais de dois anos fora de casa.",
+      "verdict": "SUPPORTED",
+      "notes": "The statement makes this claim, and the exhibit presents it as the club's count."
+    },
+    {
+      "id": 42,
+      "claim": "the underlying figure, body / disclosure: Santos spent more than 1,000 days touring",
+      "source": "Santos FC statement (self-reported)",
+      "passage": "",
+      "verdict": "NOT SUPPORTED",
+      "notes": "Self-reported by the club with no independent source, which the exhibit labels in the body ('By the club's count') and in the disclosure."
+    },
+    {
+      "id": 43,
+      "claim": "attribution, body / source note: Santos \"skipped the 1967 Copa Libertadores despite having qualified\" (by the club's count)",
+      "source": "Gazeta Esportiva (reproducing the Santos FC statement)",
+      "passage": "Chegou até ao ponto de ignorar a disputa da Copa Libertadores no ano de 1967, mesmo tendo obtido a vaga como vice-campeão brasileiro do ano anterior.",
+      "verdict": "SUPPORTED",
+      "notes": "The statement says the club passed up the 1967 Libertadores although it had qualified as the previous year's Brazilian runner-up."
+    },
+    {
+      "id": 44,
+      "claim": "the underlying fact, body: Santos skipped the 1967 Copa Libertadores despite qualifying",
+      "source": "Santos FC statement (self-reported)",
+      "passage": "",
+      "verdict": "NOT SUPPORTED",
+      "notes": "The club's own account with no independent source listed, presented in the exhibit under 'By the club's count'."
+    },
+    {
+      "id": 45,
+      "claim": "attribution and quote, body / source note: \"The statement also quotes Pelé congratulating Messi: stories like theirs, of love for the same club for so long, 'infelizmente serão cada vez mais raras no futebol' (will sadly be ever rarer in football).\"",
+      "source": "Gazeta Esportiva (reproducing the Santos FC statement)",
+      "passage": "Pelé já havia parabenizado o camisa 10 do Barcelona, “Histórias como a nossa, de amor ao mesmo clube por tanto tempo, infelizmente serão cada vez mais raras no futebol”, escreveu o Rei em suas redes sociais.",
+      "verdict": "SUPPORTED",
+      "notes": "The quote sits inside the reproduced statement, which says Pelé wrote it on his social media, and the exhibit correctly attributes it to the statement rather than to a post it read."
+    },
+    {
+      "id": 46,
+      "claim": "source notes: Gazeta Esportiva, 26 December 2020, \"reproduces Santos's statement in full\"; Santos source: \"the full text was read through Gazeta Esportiva's reproduction\"",
+      "source": "Gazeta Esportiva (URL above)",
+      "passage": "Santos publica texto para defender Pelé após \"recorde\" de Messi: \"Números são absolutos\" ... Publicado 26/12/2020 às 16:45 ... Veja o texto publicado pelo Santos e assinado por Fernando Ribeiro, da Associação dos Pesquisadores e Historiadores do Santos FC (Assophis).",
+      "verdict": "PARTIALLY SUPPORTED",
+      "notes": "Headline, date and introduction match, and the text runs between opening and closing quotation marks, but Gazeta never says 'na íntegra' and the original could not be retrieved, so 'in full' is unverified."
+    },
+    {
+      "id": 47,
+      "claim": "body / source note: \"Brazil's Lei nº 14.909, of 1 July 2024, makes every 19 November the Dia do Rei Pelé, 'data em que marcou seu milésimo gol, no ano de 1969' (the date he scored his 1,000th goal, in 1969)\"; \"Federal law dates the 1,000th goal.\"",
+      "source": "Brazil, Câmara dos Deputados, https://www2.camara.leg.br/legin/fed/lei/2024/lei-14909-1-julho-2024-795878-publicacaooriginal-172260-pl.html",
+      "passage": "LEI Nº 14.909, DE 1º DE JULHO DE 2024 Institui o Dia do Rei Pelé. ... Art. 1º Fica instituído o Dia do Rei Pelé, a ser comemorado, anualmente, no dia 19 de novembro, data em que marcou seu milésimo gol, no ano de 1969.",
+      "verdict": "SUPPORTED",
+      "notes": "Number, date, ementa and Art. 1º are verbatim; it is a federal law (the Câmara's federal legislation index, signed in Brasília by Luiz Inácio Lula da Silva), and the gloss is accurate."
+    },
+    {
+      "id": 48,
+      "claim": "chart DATA: group heading 'CAREER, ALL MATCHES OR SCOPE NOT STATED' holding the CONMEBOL bar; verdictNote: \"The chart above shows each counter's published total, grouped by scope.\"",
+      "source": "CONMEBOL article; RSSSF Prolific Scorers Data",
+      "passage": "Un total de 1363 partidos oficiales disputados, 1281 goles convertidos y 24 títulos de clubes",
+      "verdict": "PARTIALLY SUPPORTED",
+      "notes": "All 7 plotted values trace, but CONMEBOL states a scope word ('oficiales'), so its bar fits neither half of its group heading, and the chart omits RSSSF's 770 and 1,274 career totals, so it does not show 'each counter's published total'."
+    }
+  ]
+}

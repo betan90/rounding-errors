@@ -1,0 +1,146 @@
+---
+---
+
+<div class="chart-block">
+  <div class="legend">
+    <span><i class="swatch" style="background:var(--red-line)"></i> Guinness World Records</span>
+    <span><i class="swatch" style="background:var(--ink)"></i> Every other counter</span>
+  </div>
+  <figure>
+    <svg
+      id="chart"
+      viewBox="0 0 760 440"
+      role="img"
+      aria-label="Horizontal bar chart of 9 published goal totals for Pelé, 1 bar per total, in 2 groups, on 1 shared axis from 0 to 1,400 goals. Career, largest first: RSSSF all matches, 1,324 goals in 1,413 matches; Guinness obituary of 29 December 2022, 1,283; CONMEBOL, 1,281 in 1,363 matches it calls oficiales; Guinness record page, 1,279 in 1,363 games it does not define; RSSSF all matches at the top level, preliminary list, 1,274; RSSSF official matches, 778 in 851; RSSSF official matches at the top level, preliminary list, 770. Santos only: Santos FC statement of 26 December 2020, 1,091, made up of 643 in competitions and 448 in friendlies; FIFA table of 1 January 2020, 643 in 659 matches. The 2 Guinness bars are red and the other 7 are black. A FIFA page's 1,000-plus is not an exact total and is not plotted."
+    ></svg>
+    <figcaption class="cap">Each bar is 1 counter's published total, with the scope the counter gives it. The counters do not define their scopes the same way, and Guinness's record page does not define what its games include. RSSSF marks its top-level lists as preliminary. A FIFA page's "1,000-plus" is not an exact total and has no bar.</figcaption>
+  </figure>
+</div>
+
+<script is:inline>
+(function(){
+  // ---- DATA ----
+  // Pelé's goal totals as each counter publishes them: 1 bar per published total.
+  // Nothing is summed, converted to another counter's scope, interpolated or filled in.
+  // Source and vintage of each bar, in the order drawn:
+  //   RSSSF, "Prolific Scorers Data", compiled by Vladimir Kolos, last updated 3 August 2026.
+  //     https://www.rsssf.org/players/prolific.html
+  //     All matches: 1,324 goals in 1,413 matches. Official matches: 778 in 851.
+  //     Top level, both lists marked "preliminary": all matches "Pele 770 396 108 1274",
+  //     4 figures, the last the total, in a list "containing: 1. Official goals in top
+  //     level; 2. All international friendlies; 3. National friendlies against top-league
+  //     teams; tournaments; select matches"; official matches "Pele 770".
+  //   Guinness World Records, "Pelé, Brazilian football legend, dies at 82", 29 December 2022.
+  //     https://www.guinnessworldrecords.com/news/2022/12/pele-brazilian-football-legend-dies-at-82-731330
+  //     "Pelé scored 1,283 goals", 7 Sep 1956 to 1 Oct 1977.
+  //   CONMEBOL, "80 años de Pelé: ¡Sigue siendo el Rey!", 23 October 2020, data credited to Opta.
+  //     https://www.conmebol.com/noticias/80-anos-de-pele-sigue-siendo-el-rey/
+  //     "1363 partidos oficiales disputados, 1281 goles convertidos".
+  //   Guinness World Records, "Most career goals (football)", record page, read 30 October 2026.
+  //     https://www.guinnessworldrecords.com/world-records/most-career-goals-football
+  //     1,279 goals "from 7 Sep 1956 to 1 Oct 1977 in 1,363 games". The page does not say
+  //     what the games include.
+  //   Santos FC, statement of 26 December 2020 signed by Fernando Ribeiro of Assophis,
+  //     read through Gazeta Esportiva's reproduction.
+  //     https://www.santosfc.com.br/rei-pele-1-091-gols-pelo-santos-fc/
+  //     1,091 goals for Santos: 643 in competitions + 448 in friendlies.
+  //   FIFA, "Records being hunted in 2020", 1 January 2020, table row "Pele Santos 643 659 0.98"
+  //     (goals, matches, ratio).
+  //     https://inside.fifa.com/news/records-being-hunted-in-2020
+  // Not plotted: the "1,000-plus strikes overall" of 1 FIFA page ("Behind the World Cup
+  //   record: Pele", 19 June 2020), which is not an exact total.
+  // Axis: 1 shared scale from 0 to 1,400 for every bar. Group headings are this site's;
+  // each bar's note gives the scope as its counter states it.
+  var groups = [
+    { head:'CAREER, LARGEST FIRST', bars:[
+      { name:'RSSSF',                           note:'all matches: 1,413',                      v:1324, guinness:false },
+      { name:'Guinness, obituary, 29 Dec 2022', note:'',                                        v:1283, guinness:true  },
+      { name:'CONMEBOL',                        note:'1,363 matches it calls "oficiales"',      v:1281, guinness:false },
+      { name:'Guinness, record page',           note:'1,363 games, not defined',                v:1279, guinness:true  },
+      { name:'RSSSF, top level',                note:'all matches, preliminary',                v:1274, guinness:false },
+      { name:'RSSSF',                           note:'official matches: 851',                   v:778,  guinness:false },
+      { name:'RSSSF, top level',                note:'official matches, preliminary',           v:770,  guinness:false }
+    ]},
+    { head:'SANTOS ONLY', bars:[
+      { name:'Santos FC, 26 Dec 2020',          note:'643 in competitions + 448 in friendlies', v:1091, guinness:false },
+      { name:'FIFA, 1 Jan 2020',                note:'659 matches',                             v:643,  guinness:false }
+    ]}
+  ];
+
+  var INK='#17181A', SOFT='#5A5C55', RED='#C22B24', PAPER='#FBF9F4';
+  var MONO="'IBM Plex Mono',monospace";
+
+  var W=760, H=440;
+  var LX=262;                 // right edge of the label column
+  var x0=276, x1=W-24;        // bar origin and end of the axis
+  var xMax=1400;
+  function X(v){return x0 + (v/xMax)*(x1-x0);}
+
+  var barH=24, pitch=36;      // bar height, distance between bar tops
+  var headH=28, groupGap=18;  // heading band, space after a group
+
+  var svg=document.getElementById('chart');
+  var NS='http://www.w3.org/2000/svg';
+  function el(t,a){var e=document.createElementNS(NS,t);for(var k in a)e.setAttribute(k,a[k]);return e;}
+  function text(x,y,s,o){
+    o=o||{};
+    var e=el('text',{x:x,y:y,'text-anchor':o.anchor||'start','font-family':MONO,
+                     'font-size':o.size||11,fill:o.fill||SOFT});
+    if(o.weight) e.setAttribute('font-weight',o.weight);
+    if(o.spacing) e.setAttribute('letter-spacing',o.spacing);
+    e.textContent=s; svg.appendChild(e); return e;
+  }
+  function fmt(n){return String(n).replace(/\B(?=(\d{3})+(?!\d))/g,',');}
+
+  // ---- layout pass: where each group and bar sits ----
+  var blocks=[], y=6;
+  groups.forEach(function(gr){
+    var top=y+headH;
+    var rows=gr.bars.map(function(b,i){return {b:b, y:top+i*pitch};});
+    var bottom=top+(gr.bars.length-1)*pitch+barH;
+    blocks.push({gr:gr, rule:y, top:top, bottom:bottom, rows:rows});
+    y=bottom+groupGap;
+  });
+  var axisY=blocks[blocks.length-1].bottom+6;
+
+  // ---- gridlines, drawn per group so they never cross a heading ----
+  var ticks=[0,200,400,600,800,1000,1200,1400];
+  blocks.forEach(function(blk,bi){
+    var last=bi===blocks.length-1;
+    ticks.forEach(function(t){
+      svg.appendChild(el('line',{x1:X(t),y1:blk.top-4,x2:X(t),y2:last?axisY:blk.bottom+4,
+                                 stroke:SOFT,'stroke-width':1,'stroke-opacity':t===0?0.55:0.14}));
+    });
+  });
+
+  // ---- x axis, shared by every bar ----
+  svg.appendChild(el('line',{x1:x0,y1:axisY,x2:x1,y2:axisY,stroke:SOFT,'stroke-width':1,'stroke-opacity':0.55}));
+  ticks.forEach(function(t){
+    svg.appendChild(el('line',{x1:X(t),y1:axisY,x2:X(t),y2:axisY+5,stroke:SOFT,'stroke-width':1}));
+    text(X(t),axisY+20,fmt(t),{anchor:'middle',size:10.5});
+  });
+  text((x0+x1)/2,axisY+40,'GOALS, 1 SHARED AXIS FROM 0',{anchor:'middle',size:10.5,spacing:'0.06em'});
+
+  // ---- groups, labels and bars ----
+  blocks.forEach(function(blk){
+    svg.appendChild(el('line',{x1:14,y1:blk.rule,x2:x1,y2:blk.rule,stroke:SOFT,'stroke-width':1,'stroke-opacity':0.35}));
+    text(14,blk.rule+17,blk.gr.head,{size:10.5,weight:700,spacing:'0.06em'});
+
+    blk.rows.forEach(function(r){
+      var b=r.b, col=b.guinness?RED:INK;
+
+      // label column: name, and the counter's own scope detail when it gives one
+      if(b.note){
+        text(LX,r.y+10,b.name,{anchor:'end',size:12,weight:700,fill:col});
+        text(LX,r.y+22,b.note,{anchor:'end',size:10.5});
+      } else {
+        text(LX,r.y+barH/2+4,b.name,{anchor:'end',size:12,weight:700,fill:col});
+      }
+
+      // bar, with its value printed on it
+      svg.appendChild(el('rect',{x:x0,y:r.y,width:X(b.v)-x0,height:barH,fill:col}));
+      text(X(b.v)-10,r.y+barH/2+5,fmt(b.v),{anchor:'end',size:14,weight:700,fill:PAPER});
+    });
+  });
+})();
+</script>

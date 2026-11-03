@@ -1,0 +1,31 @@
+{
+  "run": "acaa855ffbcbc8583",
+  "date": "2026-10-30",
+  "task": "Draft exhibit 018 from the brief",
+  "models": [
+    "claude-opus-5-5"
+  ],
+  "effort": [
+    "medium"
+  ],
+  "claudeCode": "2.1.309",
+  "brief": {
+    "from": "C:\\Users\\betan\\AppData\\Local\\Temp\\claude\\C--Users-betan-OneDrive-Desktop-rounding-errors\\cc924be7-9db4-4675-8ac4-d290a8fdbf89\\scratchpad\\exhibit-018-brief.md",
+    "whole": true
+  },
+  "drafts": 2,
+  "editsNotApplied": [],
+  "opened": [
+    "C:\\Users\\betan\\AppData\\Local\\Temp\\claude\\C--Users-betan-OneDrive-Desktop-rounding-errors\\cc924be7-9db4-4675-8ac4-d290a8fdbf89\\scratchpad\\exhibit-018-brief.md",
+    "src/content/exhibits/015-police-recorded-crime.md",
+    "src/content/exhibits/017-illegal-gdp.md",
+    "exhibit-018-pele-goals.md"
+  ],
+  "searched": [
+    "Glob src/content/exhibits/01*.md"
+  ],
+  "wrote": [
+    "Write exhibit-018-pele-goals.md",
+    "Write exhibit-018-pele-goals.md"
+  ]
+}

@@ -1,0 +1,17 @@
+Draft exhibit 018 from the verified research brief at:
+C:\Users\betan\AppData\Local\Temp\claude\C--Users-betan-OneDrive-Desktop-rounding-errors\cc924be7-9db4-4675-8ac4-d290a8fdbf89\scratchpad\exhibit-018-brief.md
+
+Write it to the repo root as exhibit-018-pele-goals.md. Read CLAUDE.md first and follow it exactly; match the frontmatter shape of a recent live exhibit with a chart (src/content/exhibits/015-police-recorded-crime.md, which also has this exhibit's category).
+
+Constraints:
+- Use only the VERIFIED facts in the brief; nothing from the CUT section. Quotes must be verbatim from the brief. Santos's statement is in Portuguese: quote it in Portuguese with the brief's translation beside it, or paraphrase it without quotation marks. Never present a translation as a verbatim quote.
+- date: 2026-10-30. This exhibit HAS a chart (each counter's published total, by scope), built separately by the site-builder, so: no chartNote.
+- Category: reuse "the count depended on who was counting" (015). Tags: measurement-definitions, latin-america. Country: Brazil.
+- Voice: tight deadpan, terminally serious. The sources are already absurd, and the funniest lines are the literal ones: Guinness's 1,279 on its record page and 1,283 in its own obituary, for the same dates; "Os números são absolutos"; a goal against Transvaal of Suriname worth the same as one at the Bernabéu; more than 1,000 days touring; a federal law that dates the 1,000th goal; a best year with 3 totals; the Guinness record holder 8th on RSSSF's all-matches list. Do not wink at them. No em dashes. Numerals for all counts. Body max 500 words: ## The incident (Messi's 643rd and 644th goals, then Santos's 1,091), ## Who lied (nobody; each counter counts something different), then ## The bit continues (the counts still disagree; the law).
+- Attribution: nobody lied. Every claim about a total is attributed to the counter that published it. Attribute Santos's statement to the club. Barcelona's "equals" is Barcelona's tweet. Pelé's congratulations come from Santos's statement, which quotes him.
+- Traps, all from the brief: do not say Guinness counts friendlies or say anything about its "special appearances" beyond its own sentence; do not say FIFA's total is 1,281 (CONMEBOL's is); FIFA's 643 in 659 is dated 1 January 2020; the 3 totals for 1959 have different scopes (Guinness unstated, FIFA "for Santos", RSSSF all matches); RSSSF's official count includes army and regional selections; never mix the figures from RSSSF's 2 pages without saying so.
+- Exactly 1 ledger row with gap: true. Verdict: exactly 3 rows: Fraud detected, Rules broken, Usefulness of the headline figure.
+- Sources: the Guinness record page and obituary, CONMEBOL, the 4 FIFA pages, the 2 FC Barcelona pages, Santos's statement (give its original URL and say it was read through Gazeta Esportiva's reproduction, because the club's site refuses scripts), Gazeta Esportiva, the 2 RSSSF pages, and Lei 14.909. Never Wikipedia.
+- Disclosure: drafted with AI (Claude), editorial voice and errors are the author's, every figure checked against the linked primary source; note that Santos's statement was read through Gazeta Esportiva's reproduction.
+
+Run node scripts/check-house-rules.mjs exhibit-018-pele-goals.md after writing (the chart rule will warn because the chart isn't wired yet; that's expected). Report: path, word count, the title, and judgment calls.
