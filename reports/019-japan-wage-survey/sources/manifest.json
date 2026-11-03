@@ -1,0 +1,86 @@
+{
+  "exhibit": "019",
+  "fetchedAt": "2026-11-03T15:04:12.691Z",
+  "sources": [
+    {
+      "id": "01",
+      "name": "Ministry of Health, Labour and Welfare (MHLW)",
+      "text": "\"毎月勤労統計調査において全数調査するとしていたところを一部抽出調査で行っていたことについて\", fact sheet, 11 January 2019: the survey plan and published materials said establishments with 500 or more employees would be surveyed in full, but from 2004 MHLW sent Tokyo a sampled list; a full count for 2018 would have been 1,464 establishments, and the October 2018 survey covered 491, about a third (概ね３分の１); Tokyo was not reweighted up to 2017, so amounts such as regular pay (きまって支給する給与) for 2004 to 2017 came out low; tabulation from January 2018 onward has been reweighted; establishments surveyed about 10% fewer than published since 1996, as far as could be confirmed; in December 2018 MIC pointed out a discontinuity between 2017 and 2018; some staff knew before MIC raised it, and this was not shared across the organisation; in June 2018 MHLW told Kanagawa, Aichi and Osaka it planned to sample their 500+ establishments from 2019, since withdrawn; re-tabulated values for 2012 onward; for 2012 to 2017, re-tabulated regular pay differed from the published figures by 0.6% on average (平成24年から平成29年までの…かい離幅の平均（0.6％）); estimates for benefit purposes for 2004 to 2011, the 2004 published value plus 0.6%, grown at the published rates. Attachment 1 gives the monthly re-tabulated and published regular pay and the gap, January 2012 to October 2018, which supports the chart. The original page (mhlw.go.jp/stf/newpage_03207.html) now returns 404; read from the Wayback Machine's copy.",
+      "url": "https://web.archive.org/web/2019/https://www.mhlw.go.jp/content/10700000/000467631.pdf",
+      "status": "manual",
+      "error": "HTTP 429",
+      "chars": 7937,
+      "sha256": "f2802f9f235b919251262e3687b477bd35bb051d9e2075c6ca4df66ea7da95ea"
+    },
+    {
+      "id": "02",
+      "name": "Ministry of Health, Labour and Welfare (MHLW)",
+      "text": "\"雇用保険、労災保険等の追加給付について\", 11 January 2019: benefits were affected because a survey meant to be a full count was done as a partial sample and its wages came out low from 2004; estimate at that point for employment insurance, average about 1,400 yen per person, about 19 million person-cases (延べ), about 28 billion yen. The original page now returns 404; read from the Wayback Machine's copy.",
+      "url": "https://web.archive.org/web/2020/https://www.mhlw.go.jp/stf/newpage_03208.html",
+      "status": "manual",
+      "error": "HTTP 429",
+      "chars": 4219,
+      "sha256": "6e862b97b0db39747ab7e3532d5e00a632c25d771609d77b9b31848d2d7bdbbf"
+    },
+    {
+      "id": "03",
+      "name": "Ministry of Health, Labour and Welfare (MHLW)",
+      "text": "\"毎月勤労統計調査における不適切な事務処理に関する関係者の処分等について\", 22 January 2019: 22 officials listed, 6 serving and disciplined and 16 former officials judged to deserve the equivalent (相当), 1 of them on secondment and to be disciplined on return; those who had retired could not be disciplined, and those deserving a pay cut were asked to return the equivalent amount voluntarily (自主返納). The original PDF now returns 404; read from the Wayback Machine's copy.",
+      "url": "https://web.archive.org/web/2021/https://www.mhlw.go.jp/content/10108000/000472513.pdf",
+      "status": "manual",
+      "error": "HTTP 429",
+      "chars": 2013,
+      "sha256": "d844c4e6eb95544f4ab479c856d187af87ce235e7b050f78a73fb23495a2c73f"
+    },
+    {
+      "id": "04",
+      "name": "Special Inspection Committee on the Monthly Labour Survey (毎月勤労統計調査等に関する特別監察委員会)",
+      "text": "Report, 22 January 2019: the mismatch between the approved survey plan and the actual method is considered to violate Articles 9 and 11 of the Statistics Act (統計法第９条及び第１１条に違反するものと考えられる); because the 2018 reweighting was meant to improve accuracy, no intentional act of making a fundamental statistic untrue under Article 60 was found. The original PDF now returns 404; read from the Wayback Machine's copy.",
+      "url": "https://web.archive.org/web/2020/https://www.mhlw.go.jp/content/10108000/000472506.pdf",
+      "status": "manual",
+      "error": "HTTP 429",
+      "chars": 42862,
+      "sha256": "2df145a39158510b4c9e6cc3f78860800595d32d31994215133cbeacddad8288"
+    },
+    {
+      "id": "05",
+      "name": "Special Inspection Committee on the Monthly Labour Survey",
+      "text": "Supplementary report, 27 February 2019: at a 2015 study group an untrue explanation that the survey was a full count, and in the 2016 application to change the survey plan the same untrue statement; made in public settings, on the judgment of the head of the division, knowing it was untrue (真実に反することを認識しながら), as false statements; organised concealment, defined as knowingly and intentionally hiding a violation, not found, because the staff involved saw the problem as statistically harmless or within tolerance; at the Statistics Commission and its subcommittee, July to October 2018, asked to explain the gap in regular pay after the 2018 sampling change, the officials did not explain that Tokyo was being reweighted (これを説明しなかった). The original PDF now returns 404; read from the Wayback Machine's copy.",
+      "url": "https://web.archive.org/web/2020/https://www.mhlw.go.jp/content/10108000/000483640.pdf",
+      "status": "manual",
+      "error": "HTTP 429",
+      "chars": 32390,
+      "sha256": "8a01e7413bada52966e4a89510555051df17ac7202e5895eb75e7c3603bf7455"
+    },
+    {
+      "id": "06",
+      "name": "Statistics Commission (統計委員会)",
+      "text": "Opinion to the Minister of Health, Labour and Welfare, 22 January 2019: restates the 1,464 and 491 figures; regards the case, which raised doubts about the reliability of official statistics that underpin policy-making, as 極めて遺憾 (extremely regrettable); first demand, to carry out the full count of Tokyo's 500+ establishments as soon as possible.",
+      "url": "https://www.soumu.go.jp/main_content/000595715.pdf",
+      "status": "fetched",
+      "kind": "pdf",
+      "chars": 1157,
+      "sha256": "62691f1e25b8f248c6ec08a12b0f74e80b9c011484f0f96337d146259b4d2517"
+    },
+    {
+      "id": "07",
+      "name": "Ministry of Health, Labour and Welfare (MHLW)",
+      "text": "Monthly Labour Survey, FY2018 final results: from the November 2018 final release, figures for 2012 onward were changed to re-tabulated values (再集計値) that also reweight Tokyo's 500+ establishments, and do not connect to the previously published values.",
+      "url": "https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/30/30-2fr/dl/pdf30fr.pdf",
+      "status": "fetched",
+      "kind": "pdf",
+      "chars": 33834,
+      "sha256": "9d9fe25e49b7362ae4365fba2a1a7c8c5bd31ef717703fe7c4b225f9bc85e3a2"
+    },
+    {
+      "id": "08",
+      "name": "Ministry of Health, Labour and Welfare (MHLW)",
+      "text": "Monthly Labour Survey, June 2019 final results, 26 August 2019: from the June 2019 preliminary release, figures for 500+ establishments come from a full count (全数調査); the header's apology to the public and to everyone involved with the statistics (国民の皆さま、統計に関わる皆さまにご迷惑をおかけしたことをお詫び申し上げます).",
+      "url": "https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r01/0106r/dl/pdf0106r.pdf",
+      "status": "fetched",
+      "kind": "pdf",
+      "chars": 51908,
+      "sha256": "df63e0f31c5d1bcf07738ae53fc6dc6011980db615590e29cdb19497fe01ba21"
+    }
+  ]
+}

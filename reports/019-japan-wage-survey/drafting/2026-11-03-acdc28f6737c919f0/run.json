@@ -1,0 +1,32 @@
+{
+  "run": "acdc28f6737c919f0",
+  "date": "2026-11-03",
+  "task": "Draft exhibit 019 Japan wage survey",
+  "models": [
+    "claude-opus-5-5"
+  ],
+  "effort": [
+    "medium"
+  ],
+  "claudeCode": "2.1.312",
+  "brief": {
+    "from": "C:\\Users\\betan\\AppData\\Local\\Temp\\claude\\C--Users-betan-OneDrive-Desktop-rounding-errors\\a8afdc71-b029-45b2-9443-7432c41f1046\\scratchpad\\exhibit-019-brief.md",
+    "whole": true
+  },
+  "drafts": 2,
+  "editsNotApplied": [],
+  "opened": [
+    "C:\\Users\\betan\\AppData\\Local\\Temp\\claude\\C--Users-betan-OneDrive-Desktop-rounding-errors\\a8afdc71-b029-45b2-9443-7432c41f1046\\scratchpad\\exhibit-019-brief.md",
+    "src/content/exhibits/015-police-recorded-crime.md",
+    "src/content/exhibits/011-correction-needed-a-correction.md",
+    "src/content/exhibits/011-greece.md",
+    "exhibit-019-japan-wage-survey.md"
+  ],
+  "searched": [
+    "Glob src/content/exhibits/01*.md"
+  ],
+  "wrote": [
+    "Write exhibit-019-japan-wage-survey.md",
+    "Write exhibit-019-japan-wage-survey.md"
+  ]
+}

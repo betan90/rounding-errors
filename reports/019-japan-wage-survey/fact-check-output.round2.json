@@ -1,0 +1,326 @@
+{
+  "exhibit": "019",
+  "checkedAt": "2026-11-03T14:00:00Z",
+  "claims": [
+    {
+      "id": 1,
+      "claim": "Title / ledger gap row: a full count of 1,464 establishments, taken from 491; Tokyo 500+ establishments 2018 full count / surveyed October 2018: 1,464 / 491",
+      "source": "MHLW fact sheet, 11 January 2019 (Wayback 000467631.pdf, read from main-session extraction)",
+      "passage": "東京都における「500 人以上規模の事業所」の平成 30 年の調査対象として抽出した事業所数は、全数調査であれば 1,464 事業所でし たが、実際に平成 30 年 10 月分の調査対象事業所数は概ね３分の１の 491 事業所 でした。",
+      "verdict": "SUPPORTED",
+      "notes": "Unchanged since round 1, carried forward; the Statistics Commission opinion restates both figures."
+    },
+    {
+      "id": 2,
+      "claim": "Teaser: a full count of Tokyo's largest employers, taken from about a third of them",
+      "source": "MHLW fact sheet, 11 January 2019",
+      "passage": "実際に平成 30 年 10 月分の調査対象事業所数は概ね３分の１の 491 事業所 でした。",
+      "verdict": "SUPPORTED",
+      "notes": "Unchanged, carried forward; 'employers' is loose for establishments (事業所)."
+    },
+    {
+      "id": 3,
+      "claim": "Japan's Monthly Labour Survey is a fundamental statistic under the Statistics Act.",
+      "source": "MHLW fact sheet, 11 January 2019",
+      "passage": "厚生労働省で実施している「毎月勤労統計調査」（統計法に基づく基幹統計調査）",
+      "verdict": "SUPPORTED",
+      "notes": "Unchanged, carried forward."
+    },
+    {
+      "id": 4,
+      "claim": "Its published annual reports said every establishment with 500 or more employees was surveyed in full, listing the sampling rate as 1/1. From 2018 the approved survey plan said so too.",
+      "source": "Special Inspection Committee report, 22 January 2019",
+      "passage": "公表 されている年報において、規模５００人以上事業所については「抽出率１／１」及び「全数調 査」と明記されている / 平成３０（２０１８）年１月調査以降の毎月勤労統計については、「規模５００人以上事業 所については全数調査」である旨の記載を含む調査計画により、平成２８（２０１６）年１１ 月に統計委員会に諮問され、平成２９（２０１７）年２月に総務大臣から厚生労働大臣に承認 がなされている。",
+      "verdict": "SUPPORTED",
+      "notes": "Revised in round 2; it now matches the committee: the annual reports gave 抽出率１／１ and 全数調査, and the plan stated a full count only for surveys from January 2018."
+    },
+    {
+      "id": 5,
+      "claim": "From 2004 MHLW sent Tokyo a list of establishments it had sampled, and Tokyo surveyed the list. (Ledger: from 2004.)",
+      "source": "MHLW fact sheet, 11 January 2019",
+      "passage": "平成 16 年以降、厚生労働省から東京都に対し、厚生 労働省が抽出した事業所名簿を送付し、当該名簿に基づき抽出調査を行うことと していました。",
+      "verdict": "SUPPORTED",
+      "notes": "Unchanged, carried forward."
+    },
+    {
+      "id": 6,
+      "claim": "Tabulation up to 2017 assumed 1 sampling rate nationwide, so Tokyo was not reweighted.",
+      "source": "MHLW fact sheet, 11 January 2019",
+      "passage": "毎月勤労統計調査の平成 29 年までの集計は、同一産業・同一規模では 全国均一の抽出率という前提で行われており、前述の異なる抽出率の復元(※２) が行われない集計となっていました。このため東京都分の復元が行われていませ んでした。",
+      "verdict": "SUPPORTED",
+      "notes": "Unchanged, carried forward; the rate was uniform within each industry and size class."
+    },
+    {
+      "id": 7,
+      "claim": "MHLW's fact sheet says amounts such as regular pay for 2004 to 2017 came out low. (Ledger 2004 to 2017.)",
+      "source": "MHLW fact sheet, 11 January 2019",
+      "passage": "これらの結果、平成 16 年から平成 29 年までの調査分の「きまって支給する給 与」等の金額が、低めになっているという影響がありました。",
+      "verdict": "SUPPORTED",
+      "notes": "Unchanged, carried forward."
+    },
+    {
+      "id": 8,
+      "claim": "From January 2018 the tabulation reweighted Tokyo. (Ledger: January 2018.)",
+      "source": "MHLW fact sheet, 11 January 2019",
+      "passage": "（注）なお、平成 30 年１月以降の調査分の集計については、復元されています。",
+      "verdict": "SUPPORTED",
+      "notes": "Unchanged, carried forward."
+    },
+    {
+      "id": 9,
+      "claim": "Between July and October 2018 the Statistics Commission and its subcommittee discussed a gap in regular pay that came with a separate sampling change.",
+      "source": "Special Inspection Committee supplementary report, 27 February 2019",
+      "passage": "同年７月から 10 月にかけて、統計委 員会及びその部会において、ローテーション・サンプリング方式の導入に伴って生 じるギャップに関する報告・議論がなされた。その中で、当時の雇用・賃金福祉統 計室長Ｉ及び政策統括官Ｊは、ローテーション・サンプリング方式の導入後の「き まって支給する給与」のギャップについて説明を求められた際、",
+      "verdict": "SUPPORTED",
+      "notes": "Revised in round 2; the setting (Commission and 部会), the period and the gap tied to the rotation-sampling change all now match."
+    },
+    {
+      "id": 10,
+      "claim": "An inspection committee later found that the officials, asked to explain it, did not mention the reweighting.",
+      "source": "Special Inspection Committee supplementary report, 27 February 2019",
+      "passage": "説明を求められた際、客観的には、東京 都の大規模事業所について適切な復元処理をしていたにもかかわらず、これを説明 しなかった。",
+      "verdict": "SUPPORTED",
+      "notes": "Revised wording keeps the passive (asked) as the source does."
+    },
+    {
+      "id": 11,
+      "claim": "In December 2018 MIC pointed out a break between 2017 and 2018.",
+      "source": "MHLW fact sheet, 11 January 2019",
+      "passage": "総務省か ら平成 30 年 12 月に全数調査の「500 人以上規模の事業所」において平成 29 年と 平成 30 年に数値の不連続がある旨の指摘があり",
+      "verdict": "SUPPORTED",
+      "notes": "Unchanged, carried forward."
+    },
+    {
+      "id": 12,
+      "claim": "Some staff knew before MIC raised it, and this was not shared across the organisation.",
+      "source": "MHLW fact sheet, 11 January 2019",
+      "passage": "一部の職員は総務省から指摘を受 ける前に認識していましたが、これらを組織全体で共有してはいませんでした。",
+      "verdict": "SUPPORTED",
+      "notes": "Unchanged, carried forward."
+    },
+    {
+      "id": 13,
+      "claim": "In June 2018 MHLW had told Kanagawa, Aichi and Osaka it planned to sample their 500+ establishments from 2019. The plan has since been withdrawn.",
+      "source": "MHLW fact sheet, 11 January 2019",
+      "passage": "なお、平成 30 年６月に、神奈川県、愛知県、大阪府に対し、「500 人以上規模 の事業所」について、平成 31 年から抽出調査を行う予定である旨の連絡をして いましたが、既に撤回しました。",
+      "verdict": "SUPPORTED",
+      "notes": "Unchanged, carried forward."
+    },
+    {
+      "id": 14,
+      "claim": "Ledger: establishments surveyed vs published, since 1996 as far as confirmed: about 10% fewer",
+      "source": "MHLW fact sheet, 11 January 2019",
+      "passage": "調査対象事業所数が公表資料よりも概ね１割程度少なくなっていました。確認 できた範囲では、平成８年以降このような取扱いとなっていました。",
+      "verdict": "SUPPORTED",
+      "notes": "Unchanged, carried forward."
+    },
+    {
+      "id": 15,
+      "claim": "A Special Inspection Committee reported on 22 January 2019.",
+      "source": "Special Inspection Committee report (Wayback 000472506.pdf)",
+      "passage": "平成３１年１月２２日",
+      "verdict": "SUPPORTED",
+      "notes": "Unchanged, carried forward."
+    },
+    {
+      "id": 16,
+      "claim": "It found the gap between the approved plan and the actual method was considered to violate Articles 9 and 11 of the Statistics Act.",
+      "source": "Special Inspection Committee report, 22 January 2019",
+      "passage": "承認を受けた調査計画と実際 の調査方法との間に一部齟齬が生じることとなったものであり、統計法第９条及び第１１条 に違反するものと考えられる。",
+      "verdict": "SUPPORTED",
+      "notes": "Unchanged, carried forward."
+    },
+    {
+      "id": 17,
+      "claim": "Verdict 'Rules broken': Articles 9 and 11 of the Statistics Act, in the inspection committee's view: the survey departed from its approved plans, and from 2018 the plan said full count while the survey was a sample.",
+      "source": "Special Inspection Committee report, 22 January 2019",
+      "passage": "その承認を受けないまま、約 ３３，０００事業所よりも１割程度少ない調査対象事業所数で全国調査を行うとともに、東京 都の規模５００人以上事業所についてのみ抽出調査を実施し / 「規模５００人以上事業 所については全数調査」である旨の記載を含む調査計画により ... その承認を受けないまま同抽出調査を行った。これにより、承認を受けた調査計画と実際 の調査方法との間に一部齟齬が生じることとなったものであり、統計法第９条及び第１１条 に違反するものと考えられる。",
+      "verdict": "SUPPORTED",
+      "notes": "Revised in round 2; it now covers both the 2011-plan and the 2017-plan findings accurately."
+    },
+    {
+      "id": 18,
+      "claim": "It did not find an intentional act of making a fundamental statistic untrue under Article 60, because the 2018 reweighting was meant to improve accuracy.",
+      "source": "Special Inspection Committee report, 22 January 2019",
+      "passage": "これはより統計の精度を高め るためのものであるから、意図的に「基幹統計をして真実に反するものたらしめる行為」（統 計法第６０条第２号）をしたとまでは認められないものと考えられる。",
+      "verdict": "SUPPORTED",
+      "notes": "Unchanged, carried forward."
+    },
+    {
+      "id": 19,
+      "claim": "Verdict 'Fraud detected': not as the Statistics Act defines it ... no organised concealment as it defined the term. Its supplementary report found false statements made knowingly, in public settings, in 2015 and 2016.",
+      "source": "Special Inspection Committee report and supplementary report",
+      "passage": "公的な場で、課（室）の長の判断の下に、真実に反す ることを認識しながら、事実と異なる虚偽の申述を行った。 / 意図的に隠したとま では認められず、「隠蔽行為」があったとはいえない。",
+      "verdict": "SUPPORTED",
+      "notes": "Unchanged, carried forward."
+    },
+    {
+      "id": 20,
+      "claim": "Its supplementary report of 27 February went further.",
+      "source": "Special Inspection Committee supplementary report",
+      "passage": "平成３１年２月２７日",
+      "verdict": "SUPPORTED",
+      "notes": "Unchanged, carried forward."
+    },
+    {
+      "id": 21,
+      "claim": "At a 2015 study group the division explained that the survey was a full count. In its 2016 application to change the survey plan it wrote the same. The committee found these were false statements, made in public settings, on the judgment of the division head, 真実に反することを認識しながら (knowing it was untrue).",
+      "source": "Special Inspection Committee supplementary report",
+      "passage": "平成 27 年検討会において全数調査であ る旨の事実と異なる説明をしたこと、平成 28 年のローテーション・サンプリン グ方式導入の際の調査計画の変更申請においても事実と異なる全数調査である ことを記載したことなど、公的な場で、課（室）の長の判断の下に、真実に反す ることを認識しながら、事実と異なる虚偽の申述を行った。",
+      "verdict": "SUPPORTED",
+      "notes": "Unchanged, carried forward; the Japanese quote is verbatim apart from the extraction's line wrap."
+    },
+    {
+      "id": 22,
+      "claim": "It did not find organised concealment. It defined concealment as knowingly and intentionally hiding a violation, and found the staff involved had seen the problem as statistically harmless.",
+      "source": "Special Inspection Committee supplementary report",
+      "passage": "「隠蔽行為」とは、その事実を認識しながら意図的にこ れを隠そうとする行為（故意行為）であることを前提とした。 / 少なくとも主観的には統計数値上の問題はなく、あるいは、許容される 範囲内であるなどといった程度にしか捉えておらず",
+      "verdict": "SUPPORTED",
+      "notes": "Unchanged, carried forward."
+    },
+    {
+      "id": 23,
+      "claim": "MHLW's discipline notice listed 22 officials by post: 6 serving, 16 former. (Ledger: serving / former 6 / 16.)",
+      "source": "MHLW discipline notice, 22 January 2019 (Wayback 000472513.pdf)",
+      "passage": "厚生労働事務次官 訓 告 / 厚生労働審議官 訓 告 / 政策統括官（統計・情報政策、政策評価担当） 減給１月間（１／１０） / 統計管理官（雇用・賃金福祉統計室長） 減給３月間（１／１０） / 専門官（元雇用・賃金福祉統計室長） 減給６月間（１／１０） / 専門官（元雇用・賃金福祉統計課長） 減給３月間（１／１０） / 元雇用統計課長 減給６月間（１／１０）相当 ... 元統計情報部長 ５人 戒 告 相 当 / ※うち１人は、現在、出向中のため国復帰時に処分を実施予定。",
+      "verdict": "SUPPORTED",
+      "notes": "Revised in round 2; 22 is a sum of the rows (6 serving posts plus 16 posts marked 元, former), and 'by post' fits how the notice lists them; 1 of the 16 is on secondment, which the next sentence about retirees does not contradict."
+    },
+    {
+      "id": 24,
+      "claim": "Those who had retired could not be disciplined, so those judged to deserve a pay cut were asked to return the equivalent amount voluntarily.",
+      "source": "MHLW discipline notice, 22 January 2019",
+      "passage": "なお、退職しているため処分することはできないが減給処分相当の者については、相当する額の自主返納を求める。",
+      "verdict": "SUPPORTED",
+      "notes": "Unchanged, carried forward."
+    },
+    {
+      "id": 25,
+      "claim": "For 2012 onward, where the data still existed, MHLW published re-tabulated values.",
+      "source": "MHLW fact sheet, 11 January 2019; FY2018 final results",
+      "passage": "復元に必要なデータ等が存在する平成 24 年以降について復元し て「再集計値」として公表します",
+      "verdict": "SUPPORTED",
+      "notes": "Unchanged, carried forward."
+    },
+    {
+      "id": 26,
+      "claim": "Through 2017 they differed from published regular pay by 0.6% on average. (Ledger 2012 to 2017; verdict usefulness row; chart caption.)",
+      "source": "MHLW fact sheet, 11 January 2019",
+      "passage": "遡り試算が可能な平成 24 年から平成 29 年までの「再集計値」と公表値 のかい離幅の平均（0.6％）",
+      "verdict": "SUPPORTED",
+      "notes": "Every use is tied to 2012 to 2017 and attributed to MHLW; a simple mean of the 72 printed monthly gaps is 0.54%, so it must stay MHLW's figure, as it does."
+    },
+    {
+      "id": 27,
+      "claim": "Status: corrected figures for 2004 to 2011 exist only as estimates for benefit purposes, because the data to re-tabulate them no longer exists",
+      "source": "MHLW fact sheet, 11 January 2019",
+      "passage": "復元に必要なデータ等が存在する平成 24 年以降について復元し て「再集計値」として公表します / 平成 24 年から平成 29 年までの「再集計値」と公表値 のかい離幅の平均（0.6％）を平成 16 年の公表値に加え、それ以降の平成 17 年から平成 25 年３月までの期間は公表値の伸び率に合わせて推計しました。",
+      "verdict": "SUPPORTED",
+      "notes": "Revised in round 2; 'corrected figures' fixes the round 1 issue, and the missing data is implied by re-tabulation stopping at 平成24年."
+    },
+    {
+      "id": 28,
+      "claim": "Unemployment and workers' compensation benefits are indexed to the survey.",
+      "source": "MHLW release on additional benefits, 11 January 2019 (Wayback newpage_03208.html)",
+      "passage": "同調査の平均給与額の変動を基礎としてスライド率等を算定している雇用保険制度等における給付額に影響が生じております。",
+      "verdict": "SUPPORTED",
+      "notes": "Unchanged, carried forward."
+    },
+    {
+      "id": 29,
+      "claim": "MHLW's estimate for employment insurance alone was about 1,400 yen per person, across about 19 million person-cases, about 28 billion yen in top-ups. (Ledger.)",
+      "source": "MHLW release on additional benefits, 11 January 2019",
+      "passage": "一つの受給期間を通じて一人当たり平均約1,400円、延べ約1,900万人、給付費約280億円",
+      "verdict": "SUPPORTED",
+      "notes": "Unchanged, carried forward."
+    },
+    {
+      "id": 30,
+      "claim": "LedgerNote: 19 million are person-cases (延べ); no combined total given.",
+      "source": "MHLW release on additional benefits, 11 January 2019",
+      "passage": "【雇用保険】 一つの受給期間を通じて一人当たり平均約1,400円、延べ約1,900万人、給付費約280億円 【労災保険】 年金給付（特別支給金を含む）：一人当たり平均約9万円、延べ約27万人、給付費約240億円",
+      "verdict": "SUPPORTED",
+      "notes": "Unchanged, carried forward."
+    },
+    {
+      "id": 31,
+      "claim": "The Statistics Commission called the case 極めて遺憾 (extremely regrettable), on the grounds that it raised doubts about the reliability of official statistics that underpin policy-making.",
+      "source": "Statistics Commission opinion, 22 January 2019",
+      "passage": "統計委員会は、政策立案の基盤となり多方面に活用される公的統計の信頼に疑念を生じ させたこの事案を、極めて遺憾なことと認識する。",
+      "verdict": "SUPPORTED",
+      "notes": "Unchanged, carried forward."
+    },
+    {
+      "id": 32,
+      "claim": "Its first demand was that MHLW carry out the full count of Tokyo's establishments with 500 or more employees as soon as possible.",
+      "source": "Statistics Commission opinion, 22 January 2019",
+      "passage": "１）東京都の「500 人以上規模の事業所」の全数調査を可及的速やかに履行すること",
+      "verdict": "SUPPORTED",
+      "notes": "Unchanged, carried forward."
+    },
+    {
+      "id": 33,
+      "claim": "That was the method MHLW's annual reports had described.",
+      "source": "Special Inspection Committee report, 22 January 2019",
+      "passage": "公表 されている年報において、規模５００人以上事業所については「抽出率１／１」及び「全数調 査」と明記されている",
+      "verdict": "SUPPORTED",
+      "notes": "Revised in round 2; it replaces 'all along', which the round 1 check marked NOT SUPPORTED."
+    },
+    {
+      "id": 34,
+      "claim": "MHLW's own repair, from January 2018, had been to reweight the sample so that it stood in for the full count.",
+      "source": "MHLW fact sheet, 11 January 2019",
+      "passage": "（注）なお、平成 30 年１月以降の調査分の集計については、復元されています。 / ※２ 復元とは、抽出調査を行った際に行うべき統計的処理で、母集団の調査結果とし て扱うための計算。",
+      "verdict": "SUPPORTED",
+      "notes": "Revised in round 2; the clause about not mentioning it to the Commission is gone, and 復元 is defined as treating the sample as the population result."
+    },
+    {
+      "id": 35,
+      "claim": "The full count resumed with the June 2019 release, whose header apologised to the public and to everyone involved with the statistics (国民の皆さま、統計に関わる皆さまにご迷惑をおかけしたことをお詫び申し上げます).",
+      "source": "MHLW Monthly Labour Survey, June 2019 final results (pdf0106r.pdf)",
+      "passage": "国民の皆さま、統計に関わる 皆さまにご迷惑をおかけしたことをお詫び申し上げます。 / 令和元年６月分速報から、「500人以上規模の事業所」について全数調査による値（※）に変更しましたのでご注意ください。",
+      "verdict": "SUPPORTED",
+      "notes": "Unchanged, carried forward."
+    },
+    {
+      "id": 36,
+      "claim": "FY2018 final results source entry: re-tabulated values from the November 2018 final release, which do not connect to the previously published values.",
+      "source": "MHLW FY2018 final results (pdf30fr.pdf)",
+      "passage": "注１：平成30年11月分確報から、平成24年以降において東京都の「500人以上規模の事業所」についても再集計した値（再集計値）に変更しており、 　　　従来の公表値とは接続しないことに注意。",
+      "verdict": "SUPPORTED",
+      "notes": "Unchanged, carried forward."
+    },
+    {
+      "id": 37,
+      "claim": "Chart DATA: 82 monthly gapPct, retab and published values, January 2012 to October 2018",
+      "source": "MHLW fact sheet, Attachment 1 (別添1)",
+      "passage": "かい離 ％ 0.4 0.4 0.3 0.3 0.3 0.3 0.4 0.4 0.4 0.5 0.3 0.3 0.4 0.5 0.5 0.5 0.5 0.5 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.6 0.7 0.7 0.7 0.7 0.7 0.8 0.7 0.7 / ... 0.6 0.6 0.6 0.7 0.6 0.6 0.4 0.4 0.3 0.4 0.3 0.3 0.3 0.3 0.3 0.3",
+      "verdict": "SUPPORTED",
+      "notes": "Chart unchanged since round 1 (reweightIndex, caption and aria-label lines re-confirmed); all 3 arrays matched Attachment 1 value for value."
+    },
+    {
+      "id": 38,
+      "claim": "Chart: reweightIndex = 72 marks January 2018; 10 red bars",
+      "source": "MHLW fact sheet, Attachment 1",
+      "passage": "1月 2月 3月 平 4月 成 5月 30 6月 年 7月 8月 9月 10月",
+      "verdict": "SUPPORTED",
+      "notes": "Carried forward; 36 + 36 = 72 is January 2018."
+    },
+    {
+      "id": 39,
+      "claim": "Chart aria-label: 0.4 in January 2012, peak 0.8 in October 2014, 0.5 to 0.7 through 2017, 0.4 in January 2018, 0.3 in March 2018 and mostly 0.3 through October 2018",
+      "source": "MHLW fact sheet, Attachment 1",
+      "passage": "0.6 0.6 0.6 0.6 0.7 0.7 0.7 0.7 0.7 0.8 0.7 0.7 / 0.4 0.4 0.3 0.4 0.3 0.3 0.3 0.3 0.3 0.3",
+      "verdict": "SUPPORTED",
+      "notes": "Carried forward."
+    },
+    {
+      "id": 40,
+      "claim": "Verdict 'Usefulness': regular pay for 2004 to 2017 came out low, by 0.6% on average for 2012 to 2017, where it could be re-tabulated.",
+      "source": "MHLW fact sheet, 11 January 2019",
+      "passage": "平成 16 年から平成 29 年までの調査分の「きまって支給する給 与」等の金額が、低めになっているという影響がありました。 / 遡り試算が可能な平成 24 年から平成 29 年までの「再集計値」と公表値 のかい離幅の平均（0.6％）",
+      "verdict": "SUPPORTED",
+      "notes": "Unchanged, carried forward."
+    }
+  ]
+}

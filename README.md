@@ -41,3 +41,4 @@ npm run preview   # preview the production build
 - [x] Exhibit 014 — United Kingdom (15,841 cases, the file was too big)
 - [x] Exhibit 015 — United Kingdom (over 800,000 crimes a year, the count depended on who was counting)
 - [ ] Revision tracker — the same official number, as reported over time
+- [ ] Parked for 020: Everest (Nepal's 8,848 m snow height vs China's 8,844.43 m rock height, joint 8,848.86 m in 2020)

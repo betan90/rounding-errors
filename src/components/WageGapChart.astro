@@ -1,0 +1,91 @@
+---
+---
+
+<div class="chart-block">
+  <div class="legend">
+    <span><i class="swatch" style="background:var(--ink)"></i> Re-tabulated minus published regular pay, % of published</span>
+    <span><i class="swatch" style="background:var(--red-line)"></i> From January 2018, Tokyo reweighted</span>
+  </div>
+  <figure>
+    <svg
+      id="chart"
+      viewBox="0 0 760 380"
+      role="img"
+      aria-label="Bar chart of 82 monthly gaps, January 2012 to October 2018, between MHLW's re-tabulated and published regular pay (きまって支給する給与), as a percentage of published pay, on an axis from 0 to 1.0 percent. The gap rises from 0.4 percent in January 2012 to a peak of 0.8 percent in October 2014, runs between 0.5 and 0.7 percent through 2017, then falls to 0.4 percent in January 2018 and 0.3 percent in March 2018, where it mostly stays through October 2018. The 10 bars from January 2018 are red."
+    ></svg>
+    <figcaption class="cap">Each bar is 1 month's gap: re-tabulated regular pay minus published regular pay, as a percentage of published, as MHLW printed it to 1 decimal in Attachment 1 of its 11 January 2019 fact sheet. MHLW states that the gap averages 0.6% for 2012 to 2017. Source: MHLW, archived fact sheet.</figcaption>
+  </figure>
+</div>
+
+<script is:inline>
+(function(){
+  // ---- DATA ----
+  // Monthly regular pay (きまって支給する給与), Monthly Labour Survey: re-tabulated (再集計値)
+  // and published (公表値) in yen, and the gap MHLW printed, January 2012 to October 2018, 82 months.
+  // Source: Ministry of Health, Labour and Welfare, fact sheet of 11 January 2019,
+  //   "毎月勤労統計調査において全数調査するとしていたところを一部抽出調査で行っていたことについて",
+  //   Attachment 1 (別添1), read from the Wayback Machine's copy:
+  //   https://web.archive.org/web/2019/https://www.mhlw.go.jp/content/10700000/000467631.pdf
+  // Copied as printed; nothing is interpolated. The plotted gap is MHLW's printed value.
+  // To check it: (retab - published) / published * 100 rounds to the printed gap, month by month.
+  // Gap %, Jan 2012 to Dec 2014, then Jan 2015 to Oct 2018:
+  var gapPct = [0.4,0.4,0.3,0.3,0.3,0.3,0.4,0.4,0.4,0.5,0.3,0.3,0.4,0.5,0.5,0.5,0.5,0.5,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.7,0.7,0.7,0.7,0.7,0.8,0.7,0.7].concat(
+               [0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.6,0.7,0.6,0.6,0.4,0.4,0.3,0.4,0.3,0.3,0.3,0.3,0.3,0.3]);
+  // Re-tabulated yen, same order:
+  var retab = [260216,262775,264423,265288,261559,263166,262653,261320,261530,262870,262396,262299,258397,260596,262058,265220,261195,262353,261417,260661,261012,262716,262995,262349,259340,260727,263001,266105,262570,263941,263164,261786,262875,263632,263514,263315].concat(
+               [258024,258421,260604,264469,259682,261835,261250,259489,260062,261319,260825,260983,257651,259822,262380,264613,259541,262130,261829,259950,260600,261916,261732,262144,259004,260435,262377,265808,261197,263371,263231,261109,262587,262922,262997,263696,261131,261501,264897,267505,264095,265931,265232,263725,263688,265726]);
+  // Published yen, same order:
+  var published = [259230,261798,263557,264388,260653,262262,261695,260326,260493,261692,261543,261398,257253,259413,260853,263932,259835,261015,259950,259206,259504,261149,261354,260735,257735,259064,261351,264410,260686,262102,261290,259938,261019,261659,261571,261502].concat(
+               [256660,257074,259251,263065,258381,260547,259952,258158,258727,259928,259463,259702,256261,258570,261064,263178,258089,260632,260353,258464,259109,260363,260240,260521,257429,258975,260744,264214,259541,261765,261634,259426,260933,261128,261419,262041,260186,260571,263976,266570,263179,265087,264333,262846,262820,264863]);
+  var reweightIndex = 72; // January 2018 is month 73 counting from January 2012
+
+  var INK='#17181A', SOFT='#5A5C55', RED='#C22B24';
+  var MONO="'IBM Plex Mono',monospace";
+
+  var W=760, H=380;
+  var x0=56, x1=W-20;
+  var yTop=50, yBase=300;      // y of 1.0% and of 0
+  var yMax=1.0;
+  var n=gapPct.length;
+  var slot=(x1-x0)/n;
+  function X(i){return x0+i*slot;}
+  function Y(v){return yBase-(v/yMax)*(yBase-yTop);}
+
+  var svg=document.getElementById('chart');
+  var NS='http://www.w3.org/2000/svg';
+  function el(t,a){var e=document.createElementNS(NS,t);for(var k in a)e.setAttribute(k,a[k]);return e;}
+  function text(x,y,s,o){
+    o=o||{};
+    var e=el('text',{x:x,y:y,'text-anchor':o.anchor||'start','font-family':MONO,
+                     'font-size':o.size||11,fill:o.fill||SOFT});
+    if(o.weight) e.setAttribute('font-weight',o.weight);
+    if(o.spacing) e.setAttribute('letter-spacing',o.spacing);
+    e.textContent=s; svg.appendChild(e); return e;
+  }
+
+  // ---- y axis: 0 to 1.0% ----
+  [0,0.2,0.4,0.6,0.8,1.0].forEach(function(t){
+    svg.appendChild(el('line',{x1:x0,y1:Y(t),x2:x1,y2:Y(t),stroke:SOFT,'stroke-width':1,'stroke-opacity':t===0?0.55:0.14}));
+    text(x0-8,Y(t)+4,t.toFixed(1)+'%',{anchor:'end',size:10.5});
+  });
+
+  // ---- bars ----
+  gapPct.forEach(function(v,i){
+    svg.appendChild(el('rect',{x:X(i)+0.6,y:Y(v),width:slot-1.2,height:yBase-Y(v),fill:i>=reweightIndex?RED:INK}));
+  });
+
+  // ---- January 2018 marker ----
+  var mx=X(reweightIndex);
+  svg.appendChild(el('line',{x1:mx,y1:yTop-14,x2:mx,y2:yBase,stroke:RED,'stroke-width':1,'stroke-dasharray':'3 3'}));
+  text(mx-6,yTop-20,'Tokyo reweighted from January 2018',{anchor:'end',size:11,weight:700,fill:RED});
+
+  // ---- x axis: years ----
+  for(var yr=2012;yr<=2018;yr++){
+    var i=(yr-2012)*12;
+    svg.appendChild(el('line',{x1:X(i),y1:yBase,x2:X(i),y2:yBase+5,stroke:SOFT,'stroke-width':1}));
+    text(X(i)+2,yBase+20,String(yr),{size:10.5});
+  }
+  text((x0+x1)/2,yBase+48,'MONTH, JANUARY 2012 TO OCTOBER 2018 (82 MONTHS)',{anchor:'middle',size:10.5,spacing:'0.06em'});
+  text((x0+x1)/2,yBase+66,'GAP, % OF PUBLISHED REGULAR PAY, AS PRINTED BY MHLW',{anchor:'middle',size:10.5,spacing:'0.06em'});
+})();
+</script>
