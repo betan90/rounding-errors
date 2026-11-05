@@ -2,7 +2,7 @@
 title: "45 drafts, 9 models, 0 corrections"
 date: 2026-11-05
 teaser: "Method · exhibit 017 drafted again by 9 models across 4 generations, then by 7 of them at every effort level: what changed in the wording, the voice, the bill and the count, then a second brief to check it"
-disclosure: "Drafted with AI (Claude, in Claude Code), from the repository's own comparison files: reports/comparisons/2026-11-04-017-generations/ and reports/comparisons/2026-11-04-017-generations-effort/ and reports/comparisons/2026-11-05-016-generations/ (plan.json, prompts/, drafts/, runs/, results.json) and reports/comparisons/README.md, built by scripts/compare-drafts.mjs from Claude Code's transcripts on 4 and 5 November 2026. Every figure in this note was checked against those files. Costs are Claude Code's own estimates at list prices, not a bill. Runs that the usage limit stopped before they finished were run again; their first attempts are not in the files and are not counted. The 4 corrected claims in the 016 brief come from reports/016-spinach/fact-check-output.round1.json. The quoted sentences are copied from the drafts in each comparison's drafts/ folder. Editorial voice and errors are mine."
+disclosure: "Drafted with AI (Claude, in Claude Code), from the repository's own comparison files: reports/comparisons/2026-11-04-017-generations/ and reports/comparisons/2026-11-04-017-generations-effort/ and reports/comparisons/2026-11-05-016-generations/ and reports/comparisons/2026-11-05-016-corrected-brief/ (plan.json, prompts/, drafts/, runs/, results.json) and reports/comparisons/README.md, built by scripts/compare-drafts.mjs from Claude Code's transcripts on 4 and 5 November 2026. Every figure in this note was checked against those files. Costs are Claude Code's own estimates at list prices, not a bill. Runs that the usage limit stopped before they finished were run again; their first attempts are not in the files and are not counted. The 4 corrected claims in the 016 brief come from reports/016-spinach/fact-check-output.round1.json. The quoted sentences are copied from the drafts in each comparison's drafts/ folder. Editorial voice and errors are mine."
 ---
 
 ## The setup
@@ -161,6 +161,19 @@ Every draft repeated at least 1. None corrected any. By model, the average per d
 The rest held. 2 drafts by 1 model share 23.7% of their 3-word phrases, 2 by different models 15.7%; on 017 it was 23.0% and 15.5%. Opus 5.5 again drafted closest to the original, at 37% to 38%, and Sonnet 5 and Haiku 4.5 again furthest from it, at 9% to 15%.
 
 The 2 findings meet here. The models that follow the brief most closely carry the most of it, errors included. Opus 5.5 is the closest to the house voice and repeated every error in both drafts.
+
+## The brief, corrected
+
+Then the 016 brief went back with its 4 claims corrected to what the sources say, and nothing else changed. 2 drafts each from Opus 5.5 and Haiku 5.5, $1.32.
+
+| Model | Errors repeated, brief as written | Errors repeated, brief corrected |
+|---|---|---|
+| Opus 5.5 | 8 of 8 | 0 of 8 |
+| Haiku 5.5 | 4 of 8 | 0 of 8 |
+
+Opus 5.5 carried the corrections in. Both its drafts quote Hamblin's "particularly like to mention" and credit Taylor-Blake with finding Bender's lecture. Haiku 5.5 mostly left those points out, and 1 of its drafts ran to 299 words.
+
+The model that copied every error copied every correction. Whatever the drafter is given, it keeps.
 
 ## What it suggests
 

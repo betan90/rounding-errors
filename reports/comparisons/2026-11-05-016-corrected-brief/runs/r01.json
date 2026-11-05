@@ -1,0 +1,102 @@
+{
+  "duration_api_ms": 124152,
+  "stop_reason": "end_turn",
+  "session_id": "67f51d2e-32ae-4120-89e0-98447c6e65ff",
+  "total_cost_usd": 0.025534260000000007,
+  "usage": {
+    "input_tokens": 6,
+    "cache_creation_input_tokens": 52324,
+    "cache_read_input_tokens": 29386,
+    "output_tokens": 29550,
+    "output_tokens_details": {
+      "thinking_tokens": 25699
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 52324,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 800,
+        "cache_read_input_tokens": 23994,
+        "cache_creation_input_tokens": 28330,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 28330
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "modelUsage": {
+    "claude-haiku-5-5": {
+      "inputTokens": 6,
+      "outputTokens": 29550,
+      "cacheReadInputTokens": 29386,
+      "cacheCreationInputTokens": 52324,
+      "webSearchRequests": 0,
+      "costUSD": 0.025534260000000007,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 25699,
+      "cacheCreationEphemeral5mInputTokens": 0,
+      "cacheCreationEphemeral1hInputTokens": 52324,
+      "canonicalModel": "claude-haiku-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "safety_stops": 0,
+  "is_error": false,
+  "num_turns": 6,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "The draft is at `C:\\Users\\betan\\AppData\\Local\\Temp\\rounding-errors-bench\\2026-11-05-016-corrected-brief\\drafts\\r01\\exhibit-016-spinach.md`. The body is about 330 words by hand count, well under the 500 limit.\n\nChoices:\n- **Category and tags:** \"citation needed\", the same string as 013, since no source for the decimal error has ever been produced. Tags are `outlived-the-evidence`, `measurement-definitions`, and `europe`, all from the live vocabulary. Country is United Kingdom.\n- **Chart:** none, with a `chartNote` giving the reason: the decimal error has no traceable primary document, so there is no original and corrected pair to plot.\n- **Ledger:** four rows, one gap row (Hamblin 1981 references citing the error, 0 of 13, per Sutton's count). The 35 mg figure is labelled as von Bunge 1890 on dried spinach, quoted by Sutton from Coultate.\n- **Attribution:** Bender is quoted as hedged, Hamblin as stated without a source, and Larsson as repeating the story. Hamblin's denial comes only through \"Sutton reports.\" Bender 1972 is presented as predating Hamblin, not as the earliest version. Rekdal's \"opposite of what they are preaching\" line is the verdict note. Excluded: everything in the CUT list, the USDA figure, the 33% consumption claim, the BMJ correction question, and the Hamblin blog.\n- **Path mismatch (needs your attention):** the house-rules hook is keyed to root-level `exhibit-NNN-slug.md` files, and CLAUDE.md says drafts go at the repo root. I wrote only to the drafts/r01 path you specified. This means the PostToolUse check may not have run on this file. I also had no shell, so I could not run `check-house-rules.mjs` by hand. Please run it on this file before the site-builder picks it up.",
+  "ttft_ms": 4092,
+  "type": "result",
+  "duration_ms": 124276,
+  "uuid": "ae265efb-2523-424e-9113-fb31de06955c",
+  "ttft_stream_ms": 3646,
+  "time_to_request_ms": 85,
+  "first_content_frame_ms": 3646,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "credential_expires_at": "2026-12-02T23:39:32.238Z"
+}

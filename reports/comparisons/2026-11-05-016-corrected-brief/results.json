@@ -1,0 +1,1132 @@
+{
+  "name": "2026-11-05-016-corrected-brief",
+  "exhibit": "016",
+  "base": "df00590",
+  "method": "headless",
+  "collected": "2026-11-05T14:33:57.983Z",
+  "prices": {
+    "claude-fable-5-1": {
+      "in": 10,
+      "out": 50,
+      "cacheRead": 0.25
+    },
+    "claude-opus-5-5": {
+      "in": 4,
+      "out": 20,
+      "cacheRead": 0.2
+    },
+    "claude-sonnet-5-5": {
+      "in": 2,
+      "out": 10,
+      "cacheRead": 0.2
+    },
+    "claude-haiku-5-5": {
+      "in": 0.1,
+      "out": 0.5,
+      "cacheRead": 0.01
+    }
+  },
+  "runs": [
+    {
+      "run": "r01",
+      "model": "claude-haiku-5-5",
+      "effort": "medium",
+      "prompt": "reports/comparisons/2026-11-05-016-corrected-brief/prompts/r01.md",
+      "out": "C:\\Users\\betan\\AppData\\Local\\Temp\\rounding-errors-bench\\2026-11-05-016-corrected-brief\\drafts\\r01\\exhibit-016-spinach.md",
+      "draft": "reports/comparisons/2026-11-05-016-corrected-brief/drafts/r01/exhibit-016-spinach.md",
+      "session": "67f51d2e-32ae-4120-89e0-98447c6e65ff",
+      "ran": {
+        "model": "haiku",
+        "id": "claude-haiku-5-5",
+        "effort": "medium"
+      },
+      "status": "done",
+      "ended": "success",
+      "report": "The draft is at `C:\\Users\\betan\\AppData\\Local\\Temp\\rounding-errors-bench\\2026-11-05-016-corrected-brief\\drafts\\r01\\exhibit-016-spinach.md`. The body is about 330 words by hand count, well under the 500 limit.\n\nChoices:\n- **Category and tags:** \"citation needed\", the same string as 013, since no source for the decimal error has ever been produced. Tags are `outlived-the-evidence`, `measurement-definitions`, and `europe`, all from the live vocabulary. Country is United Kingdom.\n- **Chart:** none, with a `chartNote` giving the reason: the decimal error has no traceable primary document, so there is no original and corrected pair to plot.\n- **Ledger:** four rows, one gap row (Hamblin 1981 references citing the error, 0 of 13, per Sutton's count). The 35 mg figure is labelled as von Bunge 1890 on dried spinach, quoted by Sutton from Coultate.\n- **Attribution:** Bender is quoted as hedged, Hamblin as stated without a source, and Larsson as repeating the story. Hamblin's denial comes only through \"Sutton reports.\" Bender 1972 is presented as predating Hamblin, not as the earliest version. Rekdal's \"opposite of what they are preaching\" line is the verdict note. Excluded: everything in the CUT list, the USDA figure, the 33% consumption claim, the BMJ correction question, and the Hamblin blog.\n- **Path mismatch (needs your attention):** the house-rules hook is keyed to root-level `exhibit-NNN-slug.md` files, and CLAUDE.md says drafts go at the repo root. I wrote only to the drafts/r01 path you specified. This means the PostToolUse check may not have run on this file. I also had no shell, so I could not run `check-house-rules.mjs` by hand. Please run it on this file before the site-builder picks it up.",
+      "promptMatches": true,
+      "served": {
+        "models": [
+          "claude-haiku-5-5"
+        ],
+        "efforts": [
+          "medium"
+        ],
+        "held": true,
+        "turns": 10,
+        "told": [
+          "claude-haiku-5-5"
+        ],
+        "requested": [
+          "claude-haiku-5-5"
+        ]
+      },
+      "context": {
+        "claudeCode": "2.1.318",
+        "instructions": [],
+        "systemPrompt": "410f8b4bbd4d"
+      },
+      "toolCalls": 5,
+      "tokens": {
+        "input": 6,
+        "cacheWrite": 52324,
+        "cacheWrite1h": 52324,
+        "cacheRead": 29386,
+        "output": 29550,
+        "responses": 3
+      },
+      "costUsd": 0.0255,
+      "claudeCodeCostUsd": 0.025534260000000007,
+      "seconds": 120,
+      "versions": 1,
+      "firstRules": {
+        "blocking": [],
+        "checks": []
+      },
+      "outside": [],
+      "watched": [
+        {
+          "label": "Says Sutton could not answer the von Wolff question (his paper later says it answers question 1)",
+          "found": null
+        },
+        {
+          "label": "Cites Larsson as 238(5):445-450 (Rekdal gives the volume, Sutton the pages and volume 258)",
+          "found": null
+        },
+        {
+          "label": "Calls Bender 1972 the earliest version (Rekdal never says so; Taylor-Blake and Sutton found it)",
+          "found": null
+        },
+        {
+          "label": "Says Hamblin derived the article from the 13 publications (he lists them as ones he would particularly like to mention)",
+          "found": null
+        }
+      ],
+      "words": 299,
+      "voice": {
+        "sentences": 15,
+        "meanSentence": 19.9,
+        "longestSentence": 40,
+        "sentencesOver25": 4,
+        "typeToken": 0.557,
+        "asides": 0,
+        "parentheticals": 0,
+        "questions": 0,
+        "hedges": {
+          "count": 0,
+          "per1k": 0,
+          "words": []
+        },
+        "intensifiers": {
+          "count": 0,
+          "per1k": 0,
+          "words": []
+        },
+        "accusations": {
+          "count": 0,
+          "per1k": 0,
+          "words": []
+        }
+      },
+      "rules": {
+        "blocking": [],
+        "checks": []
+      },
+      "numbersNotInInputs": [],
+      "linksNotInInputs": [],
+      "choices": {
+        "title": "Popeye's iron, decimal point source not found",
+        "teaser": "Nutrition · a decimal point that became a fact, and the citations that carried it",
+        "category": "citation needed",
+        "tags": [
+          "outlived-the-evidence",
+          "measurement-definitions",
+          "europe"
+        ],
+        "status": "the 1930s German correction the story cites has no traceable source",
+        "ledgerTitle": "The numbers: the decimal point story, 1870 to 1981",
+        "ledger": [
+          {
+            "label": "Bender, 1972 inaugural lecture, as quoted by Rekdal",
+            "value": "\"may well have grown from\" a misplaced decimal point",
+            "gap": false
+          },
+          {
+            "label": "Iron per 100 g, von Bunge 1890, dried spinach (via Sutton, quoting Coultate 2009)",
+            "value": "35 mg",
+            "gap": false
+          },
+          {
+            "label": "Year given for the decimal point error, depending on the telling (Rekdal)",
+            "value": "1870, 1890s, or 1930s",
+            "gap": false
+          },
+          {
+            "label": "References in Hamblin 1981 that cite the decimal point error (Sutton's count)",
+            "value": "0 of 13",
+            "gap": true
+          }
+        ],
+        "ledgerNote": "The rows measure different things: a quotation, a measurement of dried spinach, a range of dates, and a count of references. The gap is the last row.",
+        "verdict": [
+          {
+            "key": "Fraud detected",
+            "value": "none documented. The story has no traceable source."
+          },
+          {
+            "key": "Rules broken",
+            "value": "none documented, though the papers that repeated the story were about citation."
+          },
+          {
+            "key": "Usefulness of the headline figure",
+            "value": "low. The 10 times figure has no traceable source. The 1890 value, as Sutton quotes it, was for dried spinach."
+          }
+        ],
+        "verdictNote": "Rekdal's sentence is the verdict. Using the \"non-existent, or at least undocumented, decimal point error\" to illustrate accuracy, Bender, Hamblin, Larsson, and Skrabanek and McCormick \"all end up doing the opposite of what they are preaching.\" Rekdal opens his paper by citing Larsson, then writes: \"In short, I have plagiarized the Hamblin reference from Larsson.\"",
+        "chartNote": "none. The decimal point error has no traceable primary document, so there is no original figure and corrected figure to plot side by side",
+        "sources": [
+          {
+            "name": "Hamblin TJ",
+            "text": "\"Fake!\" BMJ 1981;283(6307):1671-1674, Christmas issue, 19 December 1981: the decimal point passage, which carries no citation; the 1890s measurement and the 1930s German reinvestigation, stated as fact; \"Spinach is no better for you than cabbage, Brussels sprouts, or broccoli\"; the article's 13 references, as Sutton counts them.",
+            "url": "https://www.bmj.com/content/bmj/283/6307/1671.full.pdf"
+          },
+          {
+            "name": "Sutton M",
+            "text": "\"Spinach, Iron and Popeye: Ironic lessons from biochemistry and history on the importance of healthy eating, healthy scepticism and adequate citation,\" Internet Journal of Criminology, 2010. Read in a mirror PDF of the Internet Journal of Criminology paper (a mirror, not the journal's own site): Sutton's count of Hamblin's 13 references, none citing the decimal error; Hamblin's email to Sutton, as Sutton reports it (asked by the BMJ's editor for a humorous Christmas piece, asked not to provide references, \"sure that he had not made it up\"); von Bunge 1890, 35 mg per 100 g, on dried spinach, quoted from Coultate 2009, and \"Wherever lies the truth, the error was not picked up until 1937\"; the Thimble Theatre strips 1928 to 1935; the strip of 3 July 1932; \"Segar chose and promoted spinach for its vitamin A content alone.\"",
+            "url": "https://www.erwinmayer.com/wp-content/uploads/2010/10/Sutton_Spinach_Iron_and_Popeye_March_2010.pdf"
+          },
+          {
+            "name": "Rekdal OB",
+            "text": "\"Academic urban legends,\" Social Studies of Science 2014;44(4):638-654, doi:10.1177/0306312714535679: Bender's 1972 inaugural lecture, Queen Elizabeth College, University of London, \"the fame of spinach may well have grown from a misplaced decimal point\"; the dates 1870, 1890s, and 1930s given across tellings; Larsson's 1995 paper, \"The dissemination of false data through inadequate citation,\" repeating the story and citing Hamblin; the sentence on Bender, Hamblin, Larsson, and Skrabanek and McCormick; \"In short, I have plagiarized the Hamblin reference from Larsson.\"",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4232290/"
+          }
+        ],
+        "disclosure": "This entry was drafted with AI (Claude did the research sweeps and first draft). The editorial voice, the opinions, and any surviving errors are mine. Every figure was checked against the linked primary source before publishing. Provenance: Bender's 1972 lecture and Larsson's 1995 paper are read as Rekdal quotes them; Hamblin's email to Sutton is known only as Sutton reports it; the 1890 measurement is as Sutton quotes Coultate. No primary document for the decimal point error has been traced, so the story is treated here as a citation chain, not a documented event."
+      },
+      "body": "\n## The incident\n\nSpinach is rich in iron, the story goes, because somebody put a decimal point in the wrong place. Hamblin's 1981 article in the BMJ's Christmas issue states it as settled. He dates the original measurement to the 1890s and says German chemists showed in the 1930s that the original workers had overstated its iron by a factor of 10. \"Spinach is no better for you than cabbage, Brussels sprouts, or broccoli,\" he concludes.\n\nRekdal finds the claim earlier, in a 1972 inaugural lecture by Bender at Queen Elizabeth College, University of London.\n\n## Who lied\n\nBender hedged. The fame of spinach, he said, \"may well have grown from a misplaced decimal point.\"\n\nHamblin stated the German correction without a source. His passage carries no citation, and Sutton counts 13 references in the whole article, none of which cites the decimal error or the 1930s Germans.\n\nSutton reports that Hamblin, in an email, said he had been asked by the BMJ's editor for a humorous Christmas piece, and had been asked not to provide references. Hamblin, Sutton reports, closed by saying he was \"sure that he had not made it up.\"\n\n## The bit continues\n\nSutton read the Thimble Theatre strips from 1928 to 1935. In the strip of 3 July 1932, the first in which Popeye explains why he eats spinach, the credit goes to vitamin A. \"Segar chose and promoted spinach for its vitamin A content alone,\" Sutton writes.\n\nSutton also quotes a 2009 chemistry book on the 1890 measurement, which was made on dried spinach: \"Wherever lies the truth, the error was not picked up until 1937.\"\n\nThe textbook example of an uncorrected error has no traceable source. It was retold by writers warning about bad citation. Larsson's 1995 paper, \"The dissemination of false data through inadequate citation,\" repeated the story and cited Hamblin.\n"
+    },
+    {
+      "run": "r02",
+      "model": "claude-haiku-5-5",
+      "effort": "medium",
+      "prompt": "reports/comparisons/2026-11-05-016-corrected-brief/prompts/r02.md",
+      "out": "C:\\Users\\betan\\AppData\\Local\\Temp\\rounding-errors-bench\\2026-11-05-016-corrected-brief\\drafts\\r02\\exhibit-016-spinach.md",
+      "draft": "reports/comparisons/2026-11-05-016-corrected-brief/drafts/r02/exhibit-016-spinach.md",
+      "session": "6a880670-fe3d-4b35-bba9-f48f3079727d",
+      "ran": {
+        "model": "haiku",
+        "id": "claude-haiku-5-5",
+        "effort": "medium"
+      },
+      "status": "done",
+      "ended": "success",
+      "report": "The draft is at `C:\\Users\\betan\\AppData\\Local\\Temp\\rounding-errors-bench\\2026-11-05-016-corrected-brief\\drafts\\r02\\exhibit-016-spinach.md`.\n\n- **Word count:** about 415 body words by my count, under the 500 limit. I did not run a word counter or the house-rules checker.\n- **Date mismatch:** I used `date: 2026-10-23` as you specified, but today is 2026-11-05. CLAUDE.md says `date` must be the actual publish day, so this needs your call before publishing.\n- **Hook not confirmed:** The write returned no house-rules output. The hook matches root-level `exhibit-NNN-slug.md` files, and this draft sits under `drafts/r02/`, so the check may not have run on it.\n- **Category, tags, chart:** The category is \"citation needed\". Tags are `outlived-the-evidence`, `measurement-definitions` and `europe`, as the brief lists. I did not add `healthcare`, which would fit the subject. There is no chart, and the `chartNote` gives the reason: the original 19th-century measurement has not been traced to a primary document.\n- **Attribution and sourcing:** Bender and Larsson were not retrieved, so they are sourced through Rekdal and the disclosure says so. Hamblin's email is attributed to Sutton's report throughout. Skrabanek and McCormick appear only inside Rekdal's quoted closing line. The Sutton source is labelled as a mirror of the Internet Journal of Criminology paper.\n- **Excluded:** Everything in the brief's CUT list, including the 33% Popeye figure, the Reader's Digest claim, the Hamblin 2010 blog, Schupan, Kohler and Dagg. I also left out the USDA 2.71 mg figure, since no ledger row needed a modern value, and Sutton's unanswered questions, since his paper answers one of them.",
+      "promptMatches": true,
+      "served": {
+        "models": [
+          "claude-haiku-5-5"
+        ],
+        "efforts": [
+          "medium"
+        ],
+        "held": true,
+        "turns": 9,
+        "told": [
+          "claude-haiku-5-5"
+        ],
+        "requested": [
+          "claude-haiku-5-5"
+        ]
+      },
+      "context": {
+        "claudeCode": "2.1.318",
+        "instructions": [],
+        "systemPrompt": "410f8b4bbd4d"
+      },
+      "toolCalls": 5,
+      "tokens": {
+        "input": 6,
+        "cacheWrite": 52126,
+        "cacheWrite1h": 52126,
+        "cacheRead": 29272,
+        "output": 30790,
+        "responses": 3
+      },
+      "costUsd": 0.0261,
+      "claudeCodeCostUsd": 0.02611352,
+      "seconds": 124,
+      "versions": 1,
+      "firstRules": {
+        "blocking": [],
+        "checks": []
+      },
+      "outside": [],
+      "watched": [
+        {
+          "label": "Says Sutton could not answer the von Wolff question (his paper later says it answers question 1)",
+          "found": null
+        },
+        {
+          "label": "Cites Larsson as 238(5):445-450 (Rekdal gives the volume, Sutton the pages and volume 258)",
+          "found": null
+        },
+        {
+          "label": "Calls Bender 1972 the earliest version (Rekdal never says so; Taylor-Blake and Sutton found it)",
+          "found": null
+        },
+        {
+          "label": "Says Hamblin derived the article from the 13 publications (he lists them as ones he would particularly like to mention)",
+          "found": null
+        }
+      ],
+      "words": 402,
+      "voice": {
+        "sentences": 26,
+        "meanSentence": 15.5,
+        "longestSentence": 63,
+        "sentencesOver25": 3,
+        "typeToken": 0.541,
+        "asides": 0,
+        "parentheticals": 0,
+        "questions": 0,
+        "hedges": {
+          "count": 0,
+          "per1k": 0,
+          "words": []
+        },
+        "intensifiers": {
+          "count": 0,
+          "per1k": 0,
+          "words": []
+        },
+        "accusations": {
+          "count": 0,
+          "per1k": 0,
+          "words": []
+        }
+      },
+      "rules": {
+        "blocking": [],
+        "checks": []
+      },
+      "numbersNotInInputs": [],
+      "linksNotInInputs": [],
+      "choices": {
+        "title": "Popeye's iron, 13 references, 0 on the decimal point",
+        "teaser": "Nutrition · a 10-fold iron error, retold by papers about citation, with no source for the error",
+        "category": "citation needed",
+        "tags": [
+          "outlived-the-evidence",
+          "measurement-definitions",
+          "europe"
+        ],
+        "status": "no primary source for the decimal point; the 1981 BMJ article's 13 references do not cover it",
+        "ledgerTitle": "The numbers: the decimal point, 1972 to 1981",
+        "ledger": [
+          {
+            "label": "Bender 1972, inaugural lecture: spinach's fame 'may well have grown from a misplaced decimal point' (as quoted in Rekdal 2014)",
+            "value": "hedged",
+            "gap": false
+          },
+          {
+            "label": "Year of the error, as dated across tellings (Rekdal 2014)",
+            "value": "1870, the 1890s or the 1930s",
+            "gap": false
+          },
+          {
+            "label": "Hamblin 1981 (BMJ Christmas issue): the decimal error, as stated",
+            "value": "stated as fact",
+            "gap": false
+          },
+          {
+            "label": "References in Hamblin 1981 that cite the decimal error (Sutton's count of 13)",
+            "value": "0 of 13",
+            "gap": true
+          }
+        ],
+        "ledgerNote": "The first 3 rows describe the claim as each source told it. The gap row is Sutton's count of the 13 references in Hamblin's article.",
+        "verdict": [
+          {
+            "key": "Fraud detected",
+            "value": "none found. The 1930s German reinvestigation Hamblin credits is not cited by any of his 13 references, per Sutton."
+          },
+          {
+            "key": "Rules broken",
+            "value": "Rekdal finds Larsson doing 'exactly what he is criticizing others for' in a 1995 paper titled 'The dissemination of false data through inadequate citation', which repeated the story and cited Hamblin."
+          },
+          {
+            "key": "Usefulness of the headline figure",
+            "value": "low as a figure for fresh spinach. Sutton quotes an account in which the high figure came from dried spinach."
+          }
+        ],
+        "verdictNote": "The 1972 sentence that links spinach's fame to the decimal point is hedged. The 1981 paragraph that restated it has no citation. No source for the original figure appeared in any text checked for this exhibit.",
+        "chartNote": "none. The original 19th-century measurement the story says was wrong has not been traced to a primary document in any source checked for this exhibit, so there is no pair of figures to plot",
+        "sources": [
+          {
+            "name": "Hamblin TJ",
+            "text": "\"Fake!\", BMJ 1981;283(6307):1671-1674 (Christmas issue, 19 Dec 1981). Read in full. Supports: the 1890s discovery and the 1930s German reinvestigation of a 10-fold overestimate; the paragraph with no citation; the 13 references the article ends with; the framing line \"Frauds, hoaxes, fakes, and widely popularised mistakes.\"",
+            "url": "https://www.bmj.com/content/bmj/283/6307/1671.full.pdf"
+          },
+          {
+            "name": "Sutton M",
+            "text": "\"Spinach, Iron and Popeye: Ironic lessons from biochemistry and history on the importance of healthy eating, healthy scepticism and adequate citation,\" Internet Journal of Criminology, 2010. A mirror of the Internet Journal of Criminology paper; the journal's own site was not accessible. Supports: Sutton's count of Hamblin's 13 references, none citing the decimal error or the 1930s Germans; Sutton's email exchange with Hamblin, as Sutton reports it; the dried-spinach measurements of 44.8 mg and about 34 mg per 100 g; the Thimble Theatre strips from 1928 to 1935, the strip of 3 July 1932 crediting vitamin A, and \"Segar chose and promoted spinach for its vitamin A content alone.\"",
+            "url": "https://www.erwinmayer.com/wp-content/uploads/2010/10/Sutton_Spinach_Iron_and_Popeye_March_2010.pdf"
+          },
+          {
+            "name": "Rekdal OB",
+            "text": "\"Academic urban legends,\" Social Studies of Science 2014;44(4):638-654, doi:10.1177/0306312714535679. Supports: Bender's 1972 lecture as quoted; the dates 1870, the 1890s and the 1930s; \"a large number of apparently independent sources\"; Larsson 1995 as described and quoted; the closing line on Bender, Hamblin, Larsson, and Skrabanek and McCormick, quoted in the body.",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4232290/"
+          },
+          {
+            "name": "Bender, inaugural lecture, 1972",
+            "text": "Queen Elizabeth College, University of London. Not retrieved. Quoted as Rekdal 2014 reproduces it (p. 11): \"the fame of spinach may well have grown from a misplaced decimal point.\"",
+            "url": null
+          },
+          {
+            "name": "Larsson, 1995",
+            "text": "\"The dissemination of false data through inadequate citation,\" J Intern Med, 1995. Not retrieved. Described and quoted as Rekdal 2014 reports it. Sources disagree on volume and pages, so none are given.",
+            "url": null
+          }
+        ],
+        "disclosure": "This entry was drafted with AI (Claude). The editorial voice and errors are mine, and every figure was checked against the linked primary source before publishing. Provenance: Bender 1972 and Larsson 1995 were not retrieved and are quoted as Rekdal 2014 reproduces them. Sutton's account of his email with Hamblin is Sutton's report; the email itself was not seen."
+      },
+      "body": "\n## The incident\n\nIn December 1981 the BMJ's Christmas issue carried T. J. Hamblin's \"Fake!\", an article on \"frauds, hoaxes, fakes, and widely popularised mistakes\". It said spinach's reputation as an iron source rested on an error. The original workers, in the 1890s, put the decimal point in the wrong place, and German chemists in the 1930s found a 10-fold overestimate. The paragraph has no citation. The article ends with 13 references. Sutton counts none of them as citing the decimal error or the 1930s Germans.\n\nThe story predates him. In a 1972 inaugural lecture at Queen Elizabeth College, University of London, Bender wrote that \"the fame of spinach may well have grown from a misplaced decimal point.\" Rekdal finds \"a large number of apparently independent sources\" that have \"mutually confirmed\" the error, whether it was made \"in 1870, in the 1890s, or in the 1930s.\" Larsson's 1995 paper repeated it, citing Hamblin.\n\n## Who lied\n\nThe record is hedges, omissions and repetition. Bender hedged. Hamblin stated the figure without a source. Sutton reports Hamblin's reply to his email. Hamblin wrote that he had been asked about this before and that he \"honestly cannot remember\" it. He said the BMJ's editor had asked him for a humorous Christmas piece and had asked him not to provide references. He was, Sutton reports, \"sure that he had not made it up.\"\n\n## The bit continues\n\nSutton read the bound volumes of the Thimble Theatre strips from 1928 to 1935. The strip of 3 July 1932, the first in which Popeye explains why he eats spinach, credits vitamin A. Of the \"hundreds of Popeye cartoons\" he studied, none links spinach to iron. \"In fact, Segar chose and promoted spinach for its vitamin A content alone.\"\n\nThe measurement is disputed as well. An account Sutton quotes says the high figure came from dried spinach. He cites dried-spinach measurements of 44.8 mg and about 34 mg per 100 g. If that account is right, the figure measured something other than fresh spinach.\n\nThe story is offered as the classic example of an uncorrected error, and it has no traceable source. Several of the people who retold it were writing about accuracy and citation. Rekdal's line on them: \"By using the non-existent, or at least undocumented, decimal point error as an illustration of the importance of accuracy and critical investigation, Bender, Hamblin, Larsson, and Skrabanek and McCormick all end up doing the opposite of what they are preaching.\"\n"
+    },
+    {
+      "run": "r03",
+      "model": "claude-opus-5-5",
+      "effort": "medium",
+      "prompt": "reports/comparisons/2026-11-05-016-corrected-brief/prompts/r03.md",
+      "out": "C:\\Users\\betan\\AppData\\Local\\Temp\\rounding-errors-bench\\2026-11-05-016-corrected-brief\\drafts\\r03\\exhibit-016-spinach.md",
+      "draft": "reports/comparisons/2026-11-05-016-corrected-brief/drafts/r03/exhibit-016-spinach.md",
+      "session": "c63e7082-08f1-4682-bce6-d9eab9459f48",
+      "ran": {
+        "model": "opus",
+        "id": "claude-opus-5-5",
+        "effort": "medium"
+      },
+      "status": "done",
+      "ended": "success",
+      "report": "I've finished the draft and am now checking my own word count. The house-rules hook didn't report anything back.\n\n## Report\n\n**File:** `C:\\Users\\betan\\AppData\\Local\\Temp\\rounding-errors-bench\\2026-11-05-016-corrected-brief\\drafts\\r03\\exhibit-016-spinach.md`\n\n**Word count:** about 475 words of body text, about 480 counting the headings. That's under the 500 limit. I counted by hand because no hook output came back after either write. Please run `node scripts/check-house-rules.mjs` on the file before using it, since the hook may not have run at all.\n\n**Summary of choices:**\n1. **Category and country:** the category is \"citation needed\", reusing 013's because the shape is the same. The country is United Kingdom, as the brief recommends.\n2. **Tags:** `outlived-the-evidence`, `measurement-definitions` (dried versus fresh spinach) and `europe`. All three are already in use, so no new tags.\n3. **Chart:** none. The `chartNote` gives the brief's reason (the original measurement has never been traced, so there is nothing to plot), with no \"pending\" and no trailing period.\n4. **Ledger and verdict:** 6 ledger rows. The single gap row is the 3 different years given for the error (1870, the 1890s, the 1930s). The 35 mg dried-spinach figure and the 2.71 mg USDA raw figure are side by side, and the ledger note says they are different foods and does not divide one by the other. The verdict has exactly the 3 required rows. Rekdal's \"doing the opposite of what they are preaching\" line is in `verdictNote`.\n5. **Left out:**\n   - Everything in the CUT list (Schupan, Kohler, the 1937 date, the 33% figure, the blog, Reader's Digest, Dagg, anything about a BMJ correction).\n   - Skrabanek and McCormick appear only inside Rekdal's quote.\n   - I didn't say Sutton failed to answer his questions, and I didn't call Bender's version the earliest.\n   - I didn't use the \"0 original measurements\" row from the brief's ideas because it risked overstating what the sources show. The body says \"No source here produces the page with the misplaced decimal point.\"\n\n**Judgment calls to check:**\n- **Date:** I used 2026-10-23 as you asked. CLAUDE.md says `date` must be the day the exhibit is actually built into the site, and today is 2026-11-05. If it's built today, the date should change.\n- **Where the file is:** I wrote it to `drafts/r03/` as you asked, not the repo root my standing instructions name. The hook may only check root files matching `exhibit-NNN-slug.md`, which could be why it reported nothing.\n- **\"Who lied\":** it opens with \"Nobody, on the record.\" Hamblin's account comes only through Sutton (\"Sutton reports...\").\n- **Second-hand quotes:** this exhibit quotes several people it never read directly (Bender, Kronick and Larsson via Rekdal; Coultate, Jackson, and Oladele and Obarisaide via Sutton). Both the disclosure and the `verdictNote` say so. It suits a story about uncorrected citations, and it's true.\n- **Larsson:** cited without volume or pages, because Rekdal and Sutton give different volume numbers.\n- **Sources:** the Sutton entry uses the mirror PDF and is labelled as a mirror of the Internet Journal of Criminology paper. The USDA link redirects (301), so the link checker will flag it as a warning only.\n- **Tooling:** the Edit tool wasn't available, so I fixed one line (changing \"1 is dried spinach\" to \"the first is dried spinach\") by rewriting the whole file.",
+      "promptMatches": true,
+      "served": {
+        "models": [
+          "claude-opus-5-5"
+        ],
+        "efforts": [
+          "medium"
+        ],
+        "held": true,
+        "turns": 14,
+        "told": [
+          "claude-opus-5-5"
+        ],
+        "requested": [
+          "claude-opus-5-5"
+        ]
+      },
+      "context": {
+        "claudeCode": "2.1.318",
+        "instructions": [],
+        "systemPrompt": "410f8b4bbd4d"
+      },
+      "toolCalls": 8,
+      "tokens": {
+        "input": 12,
+        "cacheWrite": 36622,
+        "cacheWrite1h": 36622,
+        "cacheRead": 124777,
+        "output": 14961,
+        "responses": 6
+      },
+      "costUsd": 0.6172,
+      "claudeCodeCostUsd": 0.6171994000000001,
+      "seconds": 120,
+      "versions": 3,
+      "firstRules": {
+        "blocking": [],
+        "checks": []
+      },
+      "outside": [],
+      "watched": [
+        {
+          "label": "Says Sutton could not answer the von Wolff question (his paper later says it answers question 1)",
+          "found": null
+        },
+        {
+          "label": "Cites Larsson as 238(5):445-450 (Rekdal gives the volume, Sutton the pages and volume 258)",
+          "found": null
+        },
+        {
+          "label": "Calls Bender 1972 the earliest version (Rekdal never says so; Taylor-Blake and Sutton found it)",
+          "found": null
+        },
+        {
+          "label": "Says Hamblin derived the article from the 13 publications (he lists them as ones he would particularly like to mention)",
+          "found": null
+        }
+      ],
+      "words": 477,
+      "voice": {
+        "sentences": 25,
+        "meanSentence": 19.1,
+        "longestSentence": 56,
+        "sentencesOver25": 7,
+        "typeToken": 0.522,
+        "asides": 3,
+        "parentheticals": 3,
+        "questions": 0,
+        "hedges": {
+          "count": 1,
+          "per1k": 2.2,
+          "words": [
+            "may"
+          ]
+        },
+        "intensifiers": {
+          "count": 0,
+          "per1k": 0,
+          "words": []
+        },
+        "accusations": {
+          "count": 0,
+          "per1k": 0,
+          "words": []
+        }
+      },
+      "rules": {
+        "blocking": [],
+        "checks": []
+      },
+      "numbersNotInInputs": [],
+      "linksNotInInputs": [],
+      "choices": {
+        "title": "Spinach's misplaced decimal point, source not found",
+        "teaser": "Nutrition science · the classic uncorrected error vs the record of the error",
+        "category": "citation needed",
+        "tags": [
+          "outlived-the-evidence",
+          "measurement-definitions",
+          "europe"
+        ],
+        "status": "the decimal point has 3 dates in circulation and no document behind any of them",
+        "ledgerTitle": "The numbers: spinach, iron, and a decimal point, 1890 to 2014",
+        "ledger": [
+          {
+            "label": "Bender, 1972 lecture, as reported by Rekdal",
+            "value": "\"may well have grown from\" a misplaced decimal point",
+            "gap": false
+          },
+          {
+            "label": "Hamblin, BMJ 1981: citations for the decimal point / references in the article",
+            "value": "0 / 13",
+            "gap": false
+          },
+          {
+            "label": "Year the error was made, depending on the teller (Rekdal)",
+            "value": "1870, the 1890s, or the 1930s",
+            "gap": true
+          },
+          {
+            "label": "Iron found by von Bunge in 1890, in dried spinach (Coultate 2009, as quoted by Sutton)",
+            "value": "35 mg per 100 g",
+            "gap": false
+          },
+          {
+            "label": "Iron in raw spinach (USDA FoodData Central)",
+            "value": "2.71 mg per 100 g",
+            "gap": false
+          },
+          {
+            "label": "Reason Popeye gives for spinach, strip of 3 July 1932 (Sutton)",
+            "value": "vitamin A",
+            "gap": false
+          }
+        ],
+        "ledgerNote": "The 35 mg and 2.71 mg rows are not the same food: the first is dried spinach, the second raw. That difference is a candidate explanation for the whole story, and no division is offered here.",
+        "verdict": [
+          {
+            "key": "Fraud detected",
+            "value": "none found. Sutton reports Hamblin was sure he had not made it up."
+          },
+          {
+            "key": "Rules broken",
+            "value": "a claim printed as fact with 0 citations, then repeated, citing that article, in a 1995 paper about the dissemination of false data through inadequate citation."
+          },
+          {
+            "key": "Usefulness of the headline figure",
+            "value": "low. The tenfold error has 3 candidate dates and no traced original measurement."
+          }
+        ],
+        "verdictNote": "Rekdal, 2014: \"By using the non-existent, or at least undocumented, decimal point error as an illustration of the importance of accuracy and critical investigation, Bender, Hamblin, Larsson, and Skrabanek and McCormick all end up doing the opposite of what they are preaching.\" This exhibit quotes Bender, Kronick, and Larsson as Rekdal reports them, and Coultate as Sutton quotes him.",
+        "chartNote": "none. The original 19th-century measurement the story says was wrong has never been traced to a primary document, so there is no pair of figures to plot",
+        "sources": [
+          {
+            "name": "Hamblin TJ",
+            "text": "\"Fake!\" BMJ 1981;283(6307):1671-1674 (Christmas issue, 19 Dec 1981): the framing line \"Frauds, hoaxes, fakes, and widely popularised mistakes\"; the spinach paragraph, including the German chemists of the 1930s, the decimal point \"in the wrong place\", the \"tenfold overestimate\", and \"chewing the cans\"; no citation for the paragraph; the closing list of 13 publications Hamblin would \"particularly like to mention\".",
+            "url": "https://www.bmj.com/content/bmj/283/6307/1671.full.pdf"
+          },
+          {
+            "name": "Sutton M",
+            "text": "\"Spinach, Iron and Popeye: Ironic lessons from biochemistry and history on the importance of healthy eating, healthy scepticism and adequate citation,\" Internet Journal of Criminology, 2010, cited via a mirror PDF of the journal paper because the journal site refuses scripted access: the count of Hamblin's 13 references, \"none of which, however, cite the source of the decimal error or 1930's Germans\"; Hamblin's email as Sutton reports it (\"honestly cannot remember\", the request for a humorous Christmas piece, \"asked not to provide references\", \"sure that he had not made it up\"); Sutton's questions on von Wolff and the 1930s chemists; von Wolff's 1871 Aschen-analysen in his references; Coultate 2009 on von Bunge's 35 mg per 100 g in dried spinach; dried-spinach measurements of 44.8 mg per 100 g (Jackson 1938) and about 34 mg per 100 g (Oladele and Obarisaide 2009); the Thimble Theatre strips 1928 to 1935, the 3 July 1932 strip crediting vitamin A, and no spinach-iron link in \"hundreds of Popeye cartoons studied\".",
+            "url": "https://www.erwinmayer.com/wp-content/uploads/2010/10/Sutton_Spinach_Iron_and_Popeye_March_2010.pdf"
+          },
+          {
+            "name": "Rekdal OB",
+            "text": "\"Academic urban legends,\" Social Studies of Science 2014;44(4):638-654, doi:10.1177/0306312714535679: Bender's 1972 inaugural lecture at Queen Elizabeth College, University of London, found by Taylor-Blake and Sutton; Kronick 1985's \"It has been suggested\" version; Larsson 1995, \"The dissemination of false data through inadequate citation\", J Intern Med, repeating the story and citing Hamblin, and Rekdal's \"quite a spectacular way\" line; the 1870, 1890s, and 1930s datings; \"I have plagiarized the Hamblin reference from Larsson\"; the \"doing the opposite of what they are preaching\" conclusion.",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4232290/"
+          },
+          {
+            "name": "USDA FoodData Central",
+            "text": "\"Spinach, raw\", SR Legacy, FDC ID 168462 (publication date 1 April 2019): iron 2.71 mg per 100 g.",
+            "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/168462/nutrients"
+          }
+        ],
+        "disclosure": "This entry was drafted with AI (Claude did the research sweeps and first draft). The editorial voice, the opinions, and any surviving errors are mine. Every figure was checked against the linked primary source before publishing. Provenance: Bender's lecture, Kronick, and Larsson were not retrieved and are quoted as Rekdal reports them; Coultate, Jackson, and Oladele and Obarisaide are quoted as Sutton reports them; Hamblin's email is reported only through Sutton's account. Rekdal and Sutton give different volume numbers for Larsson's paper, so it is cited without volume or pages. The Sutton paper is linked through a mirror copy."
+      },
+      "body": "\n## The incident\n\nIn its Christmas issue of 19 December 1981, the BMJ published \"Fake!\" by T.J. Hamblin, an article about \"Frauds, hoaxes, fakes, and widely popularised mistakes\". A paragraph covered spinach: \"German chemists reinvestigating the iron content of spinach had shown in the 1930s that the original workers had put the decimal point in the wrong place and made a tenfold overestimate of its value.\" For iron, it added, Popeye \"would have been better off chewing the cans.\"\n\nThe paragraph has no citation. The article ends with 13 publications Hamblin would \"particularly like to mention\". In 2010 Mike Sutton, Reader in Criminology at Nottingham Trent University, counted the same 13: \"none of which, however, cite the source of the decimal error or 1930's Germans\".\n\n## Who lied\n\nNobody, on the record. The story predates the article. Rekdal (2014) reports a 1972 inaugural lecture at Queen Elizabeth College, University of London, in which Bender said \"the fame of spinach may well have grown from a misplaced decimal point.\" Bender hedged. Kronick, in 1985, also hedged: \"It has been suggested.\" Hamblin stated it as fact.\n\nSutton emailed Hamblin. Sutton reports that Hamblin \"honestly cannot remember\", that the BMJ's then editor had asked him for a humorous Christmas piece and \"asked not to provide references\", and that he \"was sure that he had not made it up.\"\n\nThe tellings do not agree on when the error happened. Rekdal: sources \"mutually confirmed the 'fact' that a decimal point error was made, whether it was in 1870, in the 1890s, or in the 1930s.\" Sutton asked: \"Who is von Wolff and where are his erroneous findings recorded?\" His references list von Wolff's 1871 Aschen-analysen. No source here produces the page with the misplaced decimal point.\n\nSutton quotes a second version, from a 2009 Royal Society of Chemistry book by Coultate: von Bunge in 1890 found 35 mg of iron per 100 g, but had analysed dried spinach. Dried spinach has since measured 44.8 mg (Jackson 1938) and about 34 mg (Oladele and Obarisaide 2009). USDA lists raw spinach at 2.71 mg. The high figure may be a correct measurement of a different food.\n\nAlso: Popeye. Sutton read the Thimble Theatre strips from 1928 to 1935. In the strip of 3 July 1932, the first in which Popeye explains his spinach, the reason is vitamin A. In \"hundreds of Popeye cartoons studied\", Sutton found none linking spinach to iron.\n\n## The bit continues\n\nIn 1995 Larsson published \"The dissemination of false data through inadequate citation\" in the Journal of Internal Medicine. It repeated the spinach story, citing Hamblin. Rekdal: \"Larsson obviously has an important message, but he manages to do exactly what he is criticizing others for in quite a spectacular way.\"\n\nRekdal opens his own paper by citing Larsson for the story. Later he discloses the method: \"In short, I have plagiarized the Hamblin reference from Larsson.\" It was a demonstration.\n"
+    },
+    {
+      "run": "r04",
+      "model": "claude-opus-5-5",
+      "effort": "medium",
+      "prompt": "reports/comparisons/2026-11-05-016-corrected-brief/prompts/r04.md",
+      "out": "C:\\Users\\betan\\AppData\\Local\\Temp\\rounding-errors-bench\\2026-11-05-016-corrected-brief\\drafts\\r04\\exhibit-016-spinach.md",
+      "draft": "reports/comparisons/2026-11-05-016-corrected-brief/drafts/r04/exhibit-016-spinach.md",
+      "session": "19b51db3-f6bf-4a1a-97ea-65621de5f046",
+      "ran": {
+        "model": "opus",
+        "id": "claude-opus-5-5",
+        "effort": "medium"
+      },
+      "status": "done",
+      "ended": "success",
+      "report": "I've written the draft to `drafts\\r04\\exhibit-016-spinach.md`. The body is about 478 words by my hand count, under the 500 limit. Nothing has checked it yet: the house-rules hook only watches root `exhibit-NNN-slug.md` files and the exhibits folder, so it didn't fire on a path under `drafts\\`. Run `node scripts/check-house-rules.mjs <path>` on it before it goes further.\n\n**Five-line summary of choices**\n1. **Category:** \"citation needed\", reused from 013. Everyone assumed a source behind the decimal point, and none has been produced.\n2. **Tags:** outlived-the-evidence, measurement-definitions (fresh vs dried spinach) and europe. All are existing tags, no new ones. Country is United Kingdom, as the brief recommends.\n3. **Chart:** none. The `chartNote` gives the reason: the original measurement has never been traced, and the only 2 real figures measure dried and raw spinach. No \"pending\" and no trailing period.\n4. **Excluded:** everything in the CUT list. I also dropped Sutton's 4 questions, which had pushed the body to about 535 words. Rather than shrink the beat, I cut it whole, because done properly it needed the caveat that Sutton later answers the first question. Bender, Kronick and Larsson have no URLs in the brief, so they appear only as reported by Rekdal, and the disclosure says so. Larsson's volume and pages are left out because Rekdal and Sutton disagree on them.\n5. **Twist and attribution:** \"Who lied\" opens \"Nobody, on the record.\" Bender hedged, Kronick kept the hedge, and Hamblin stated it as fact with no citation. Hamblin's email appears only as \"Sutton reports\". Rekdal's \"doing the opposite of what they are preaching\" line closes the verdict, and his deliberate \"plagiarized the Hamblin reference\" line sits in \"The bit continues\".\n\n**Other judgment calls**\n- **Date:** I used 2026-10-23 as you asked. CLAUDE.md says `date` must be the day the exhibit is actually built, though, and today is 2026-11-05. The brief's own wording is \"if built today: 2026-10-23\", which looks out of date. Whoever builds it should change the date to the real build day.\n- **Ledger:** 6 rows. The gap row is \"0\" of Hamblin's 13 listed publications citing the decimal error (Sutton's count). I kept the optional USDA raw figure (2.71 mg) next to Coultate's 35 mg for dried spinach, and the ledger note says they are not the same quantity.\n- **Narrator line:** the \"Fraud detected\" value is \"none\". It notes that the only \"fraudulent\" in the record is Hamblin's own word for the original propaganda, quoted, so the narrator accuses no one.\n- **Spelling:** I avoided naming the chemist in the Coultate paraphrase (\"a chemist about 20 years earlier\"). The brief spells the name \"von Wolf\" there and \"von Wolff\" elsewhere.\n- **Wording to check:** the ledger note says \"1 is dried spinach\". 015 sets a precedent with \"1 of them\", but a human may prefer different wording.\n- **Mismatches:** I found no disagreement between CLAUDE.md's template and the exemplar files. The frontmatter copies 013's shape key for key.",
+      "promptMatches": true,
+      "served": {
+        "models": [
+          "claude-opus-5-5"
+        ],
+        "efforts": [
+          "medium"
+        ],
+        "held": true,
+        "turns": 13,
+        "told": [
+          "claude-opus-5-5"
+        ],
+        "requested": [
+          "claude-opus-5-5"
+        ]
+      },
+      "context": {
+        "claudeCode": "2.1.318",
+        "instructions": [],
+        "systemPrompt": "410f8b4bbd4d"
+      },
+      "toolCalls": 7,
+      "tokens": {
+        "input": 10,
+        "cacheWrite": 34607,
+        "cacheWrite1h": 34607,
+        "cacheRead": 100302,
+        "output": 17778,
+        "responses": 5
+      },
+      "costUsd": 0.6525,
+      "claudeCodeCostUsd": 0.6525164,
+      "seconds": 145,
+      "versions": 2,
+      "firstRules": {
+        "blocking": [
+          "body is 523 words; the limit is 500"
+        ],
+        "checks": []
+      },
+      "outside": [],
+      "watched": [
+        {
+          "label": "Says Sutton could not answer the von Wolff question (his paper later says it answers question 1)",
+          "found": null
+        },
+        {
+          "label": "Cites Larsson as 238(5):445-450 (Rekdal gives the volume, Sutton the pages and volume 258)",
+          "found": null
+        },
+        {
+          "label": "Calls Bender 1972 the earliest version (Rekdal never says so; Taylor-Blake and Sutton found it)",
+          "found": null
+        },
+        {
+          "label": "Says Hamblin derived the article from the 13 publications (he lists them as ones he would particularly like to mention)",
+          "found": null
+        }
+      ],
+      "words": 474,
+      "voice": {
+        "sentences": 21,
+        "meanSentence": 22.6,
+        "longestSentence": 77,
+        "sentencesOver25": 8,
+        "typeToken": 0.517,
+        "asides": 1,
+        "parentheticals": 1,
+        "questions": 0,
+        "hedges": {
+          "count": 0,
+          "per1k": 0,
+          "words": []
+        },
+        "intensifiers": {
+          "count": 0,
+          "per1k": 0,
+          "words": []
+        },
+        "accusations": {
+          "count": 0,
+          "per1k": 0,
+          "words": []
+        }
+      },
+      "rules": {
+        "blocking": [],
+        "checks": []
+      },
+      "numbersNotInInputs": [
+        "1507475"
+      ],
+      "linksNotInInputs": [],
+      "choices": {
+        "title": "Spinach's misplaced decimal point, source not found",
+        "teaser": "Nutrition · a decimal point in spinach vs the search for its source",
+        "category": "citation needed",
+        "tags": [
+          "outlived-the-evidence",
+          "measurement-definitions",
+          "europe"
+        ],
+        "status": "still told as the classic uncorrected error; the tenfold mistake has not been shown in an original document",
+        "ledgerTitle": "The numbers: 1972, 1981, 2010",
+        "ledger": [
+          {
+            "label": "Bender, 1972 inaugural lecture (reported by Rekdal)",
+            "value": "spinach's fame \"may well have grown from\" a misplaced decimal point",
+            "gap": false
+          },
+          {
+            "label": "Publications listed at the end of Hamblin's 1981 BMJ article",
+            "value": "13",
+            "gap": false
+          },
+          {
+            "label": "Of those, citing the source of the decimal error or the 1930s German chemists (Sutton)",
+            "value": "0",
+            "gap": true
+          },
+          {
+            "label": "Year of the error, depending on who tells it (Rekdal)",
+            "value": "1870, the 1890s, or the 1930s",
+            "gap": false
+          },
+          {
+            "label": "Von Bunge, 1890, as given by Coultate 2009 (quoted by Sutton)",
+            "value": "35 mg iron per 100 g, dried spinach",
+            "gap": false
+          },
+          {
+            "label": "Raw spinach today (USDA FoodData Central)",
+            "value": "2.71 mg iron per 100 g",
+            "gap": false
+          }
+        ],
+        "ledgerNote": "The last 2 rows are not the same quantity: 1 is dried spinach, the other raw. Read as fresh, a correct measurement of dried spinach looks like an error.",
+        "verdict": [
+          {
+            "key": "Fraud detected",
+            "value": "none. The only fraud in the record is the story's own claim: Hamblin called the original propaganda \"fraudulent\"."
+          },
+          {
+            "key": "Rules broken",
+            "value": "citation. A factual claim ran in the BMJ with no reference, and was repeated in a 1995 paper on the dissemination of false data through inadequate citation."
+          },
+          {
+            "key": "Usefulness of the headline figure",
+            "value": "low. The tenfold error comes with 3 different dates."
+          }
+        ],
+        "verdictNote": "The story has served for decades as the textbook example of an error nobody checked. Its own source has not been produced. Rekdal's summary: \"By using the non-existent, or at least undocumented, decimal point error as an illustration of the importance of accuracy and critical investigation, Bender, Hamblin, Larsson, and Skrabanek and McCormick all end up doing the opposite of what they are preaching.\"",
+        "chartNote": "none. The 19th-century measurement the story says was wrong has never been traced to a primary document, and the 2 figures that do exist measure dried and raw spinach. A chart would plot a decimal error nobody has found",
+        "sources": [
+          {
+            "name": "Hamblin TJ",
+            "text": "\"Fake!\" BMJ 1981;283(6307):1671-1674 (Christmas issue, 19 December 1981; PubMed Central record PMC1507475): the framing line \"Frauds, hoaxes, fakes, and widely popularised mistakes\"; the spinach paragraph, quoted in the body, with no citation; the 13 publications Hamblin would \"particularly like to mention\".",
+            "url": "https://www.bmj.com/content/bmj/283/6307/1671.full.pdf"
+          },
+          {
+            "name": "Sutton M",
+            "text": "\"Spinach, Iron and Popeye: Ironic lessons from biochemistry and history on the importance of healthy eating, healthy scepticism and adequate citation\", Internet Journal of Criminology, 2010. Cited via a mirror of the Internet Journal of Criminology paper, because the journal site refuses scripted requests. Supports: the count of Hamblin's 13 references, none citing the decimal error; the email exchange with Hamblin as Sutton reports it; Coultate 2009 (Royal Society of Chemistry) on von Bunge's 35 mg per 100 g of dried spinach, the competing decimal-point version, and \"the error was not picked up until 1937\"; the Thimble Theatre strips 1928 to 1935, the 3 July 1932 strip crediting vitamin A, and no spinach-iron link in \"hundreds of Popeye cartoons studied\".",
+            "url": "https://www.erwinmayer.com/wp-content/uploads/2010/10/Sutton_Spinach_Iron_and_Popeye_March_2010.pdf"
+          },
+          {
+            "name": "Rekdal OB",
+            "text": "\"Academic urban legends\", Social Studies of Science 2014;44(4):638-654, doi:10.1177/0306312714535679: Bender's 1972 inaugural lecture at Queen Elizabeth College, University of London (found by Taylor-Blake and Sutton); Kronick's hedged 1985 version; Larsson's 1995 Journal of Internal Medicine paper, \"The dissemination of false data through inadequate citation\", repeating the story with Hamblin as its source (volume and pages omitted because Rekdal and Sutton disagree); the 1870, 1890s, and 1930s dates; the \"spectacular way\" and \"opposite of what they are preaching\" lines; the deliberate plagiarism of the Hamblin reference from Larsson.",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4232290/"
+          },
+          {
+            "name": "USDA FoodData Central",
+            "text": "\"Spinach, raw\", SR Legacy, FDC ID 168462 (publication date 1 April 2019): iron 2.71 mg per 100 g.",
+            "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/168462/nutrients"
+          }
+        ],
+        "disclosure": "This entry was drafted with AI (Claude did the research sweeps and first draft). The editorial voice, the opinions, and any surviving errors are mine. Every figure was checked against the linked primary source before publishing. Provenance: Bender's 1972 lecture, Kronick 1985, and Larsson 1995 were not retrieved and are quoted as Rekdal reproduces them; Coultate 2009 is quoted as Sutton reproduces it. Hamblin's email is known only through Sutton's account of it. Sutton's paper is cited via a mirror because the Internet Journal of Criminology site refused access."
+      },
+      "body": "\n## The incident\n\nThe BMJ's Christmas issue of 19 December 1981 carried \"Fake!\", an article by T.J. Hamblin on \"Frauds, hoaxes, fakes, and widely popularised mistakes\". A single paragraph covered spinach. The discovery that it was \"as valuable a source of iron as red meat\" was made in the 1890s, he wrote, but \"German chemists reinvestigating the iron content of spinach had shown in the 1930s that the original workers had put the decimal point in the wrong place and made a tenfold overestimate of its value.\" His conclusion: \"For a source of iron Popeye would have been better off chewing the cans.\"\n\nThe paragraph has no citation. The article ends with 13 publications Hamblin says he would \"particularly like to mention\". In 2010 Sutton, a Reader in Criminology at Nottingham Trent University, counted them: \"none of which, however, cite the source of the decimal error or 1930's Germans\".\n\n## Who lied\n\nNobody, on the record. The story is older than Hamblin's paragraph. In a 1972 inaugural lecture at Queen Elizabeth College, University of London, Bender said \"the fame of spinach may well have grown from a misplaced decimal point\". A 1985 version by Kronick kept the hedge: \"It has been suggested.\" Hamblin's version stated it as fact.\n\nSutton emailed Hamblin. Sutton reports that Hamblin \"honestly cannot remember\" the source, that the BMJ's then editor had asked him for \"a humorous piece\" and asked him \"not to provide references\", and that Hamblin \"was sure that he had not made it up.\"\n\nSutton also quotes a 2009 Royal Society of Chemistry book by Coultate, which offers 2 versions. Either von Bunge found 35 mg of iron per 100 g in 1890 but had analysed dried spinach, or a chemist about 20 years earlier misplaced the decimal point. \"Wherever lies the truth, the error was not picked up until 1937\". Raw spinach, per the USDA: 2.71 mg per 100 g.\n\nSutton read the Thimble Theatre strips from 1928 to 1935. He reports that the strip of 3 July 1932, the first in which Popeye explains why he eats spinach, credits vitamin A, and that none of the \"hundreds of Popeye cartoons studied\" links spinach to iron.\n\n## The bit continues\n\nIn 1995 Larsson published \"The dissemination of false data through inadequate citation\" in the Journal of Internal Medicine. It repeats the spinach story, citing Hamblin. Rekdal (2014): \"Larsson obviously has an important message, but he manages to do exactly what he is criticizing others for in quite a spectacular way.\"\n\nRekdal opens his own paper by citing Larsson, then explains, as a deliberate demonstration: \"In short, I have plagiarized the Hamblin reference from Larsson.\"\n\nThe tellings do not agree on when the error happened. Rekdal: \"a large number of apparently independent sources have mutually confirmed the 'fact' that a decimal point error was made, whether it was in 1870, in the 1890s, or in the 1930s.\"\n"
+    }
+  ],
+  "original": {
+    "run": "original",
+    "model": "claude-opus-5-5",
+    "effort": "medium",
+    "note": "The drafter run that made the published exhibit: same brief, its own choice of the second exemplar, CLAUDE.md as of that day, and the hook checking each write. Its first version.",
+    "watched": [
+      {
+        "label": "Says Sutton could not answer the von Wolff question (his paper later says it answers question 1)",
+        "found": "s findings recorded?\" After weeks of searching he could not answer it. He also read the Thimble Theatre strips from"
+      },
+      {
+        "label": "Cites Larsson as 238(5):445-450 (Rekdal gives the volume, Sutton the pages and volume 258)",
+        "found": "been suggested...\\\"); Larsson 1995, J Intern Med 238(5):445-450, \\\"The dissemination of false data throug"
+      },
+      {
+        "label": "Calls Bender 1972 the earliest version (Rekdal never says so; Taylor-Blake and Sutton found it)",
+        "found": "81, Sutton 2010, Rekdal 2014\" ledger: - label: \"Earliest telling found (Bender 1972, via Rekdal)\" valu"
+      },
+      {
+        "label": "Says Hamblin derived the article from the 13 publications (he lists them as ones he would particularly like to mention)",
+        "found": "e closing list of 13 publications the article was derived from, none about spinach. Also indexed on PubMed Centr"
+      }
+    ],
+    "words": 462,
+    "voice": {
+      "sentences": 20,
+      "meanSentence": 23.1,
+      "longestSentence": 62,
+      "sentencesOver25": 6,
+      "typeToken": 0.549,
+      "asides": 2,
+      "parentheticals": 0,
+      "questions": 0,
+      "hedges": {
+        "count": 1,
+        "per1k": 2.3,
+        "words": [
+          "may"
+        ]
+      },
+      "intensifiers": {
+        "count": 0,
+        "per1k": 0,
+        "words": []
+      },
+      "accusations": {
+        "count": 0,
+        "per1k": 0,
+        "words": []
+      }
+    },
+    "rules": {
+      "blocking": [],
+      "checks": []
+    },
+    "numbersNotInInputs": [
+      "1507475",
+      "5"
+    ],
+    "linksNotInInputs": [],
+    "choices": {
+      "title": "A misplaced decimal point, location unknown",
+      "teaser": "Nutrition · a tenfold spinach error vs the document it was supposedly in",
+      "category": "citation needed",
+      "tags": [
+        "outlived-the-evidence",
+        "measurement-definitions",
+        "europe"
+      ],
+      "status": "still retold as the classic uncorrected error; the original measurement has not been found",
+      "ledgerTitle": "The numbers: Bender 1972, Hamblin 1981, Sutton 2010, Rekdal 2014",
+      "ledger": [
+        {
+          "label": "Earliest telling found (Bender 1972, via Rekdal)",
+          "value": "\"may well have grown from\" a misplaced decimal point",
+          "gap": false
+        },
+        {
+          "label": "Hamblin 1981: citations for the spinach paragraph / references in the article",
+          "value": "0 / 13",
+          "gap": false
+        },
+        {
+          "label": "Year of the error, depending on who tells it (Rekdal)",
+          "value": "1870, the 1890s, or the 1930s",
+          "gap": false
+        },
+        {
+          "label": "Original erroneous measurement located (Sutton 2010, Rekdal 2014)",
+          "value": "0",
+          "gap": true
+        },
+        {
+          "label": "Iron in raw spinach, per 100 g (USDA)",
+          "value": "2.71 mg",
+          "gap": false
+        },
+        {
+          "label": "Iron in dried spinach, per 100 g (Jackson 1938, cited by Sutton)",
+          "value": "44.8 mg",
+          "gap": false
+        },
+        {
+          "label": "Reason Popeye gives for spinach, strip of 3 July 1932 (Sutton)",
+          "value": "vitamin A",
+          "gap": false
+        }
+      ],
+      "ledgerNote": "The 2 iron rows are not the same quantity: fresh spinach and dried spinach. A dried figure read as fresh is 1 candidate explanation for the legend; it is not a documented one.",
+      "verdict": [
+        {
+          "key": "Fraud detected",
+          "value": "none documented. The 1981 paragraph called the propaganda \"fraudulent\"; the measurement it described has never been located."
+        },
+        {
+          "key": "Rules broken",
+          "value": "citation. A paragraph stated as fact with 0 references, later cited in a paper titled \"The dissemination of false data through inadequate citation\"."
+        },
+        {
+          "key": "Usefulness of the headline figure",
+          "value": "none as a measurement, since no one has found it. Considerable as a teaching example, though not of the error it describes."
+        }
+      ],
+      "verdictNote": "Rekdal's summary, from a 2014 paper on academic urban legends: \"By using the non-existent, or at least undocumented, decimal point error as an illustration of the importance of accuracy and critical investigation, Bender, Hamblin, Larsson, and Skrabanek and McCormick all end up doing the opposite of what they are preaching.\" Exhibit 013's rule had a candidate origin and no study. This one has a study, of the citations, and no origin.",
+      "chartNote": "none. The 19th-century measurement the story says was wrong has never been traced to a primary document, so there is no pair of figures, original and corrected, to plot. The fresh and dried iron figures in the ledger measure different things and would not stand in for that pair",
+      "sources": [
+        {
+          "name": "Hamblin TJ",
+          "text": "\"Fake!\", BMJ 1981;283(6307):1671-1674 (Christmas issue, 19 Dec 1981): the \"Frauds, hoaxes, fakes, and widely popularised mistakes\" framing; the spinach paragraph, including the 1930s German chemists, the \"tenfold overestimate\", and \"chewing the cans\"; no citation for the paragraph; the closing list of 13 publications the article was derived from, none about spinach. Also indexed on PubMed Central as PMC1507475.",
+          "url": "https://www.bmj.com/content/bmj/283/6307/1671.full.pdf"
+        },
+        {
+          "name": "Sutton M",
+          "text": "\"Spinach, Iron and Popeye: Ironic lessons from biochemistry and history on the importance of healthy eating, healthy scepticism and adequate citation\", Internet Journal of Criminology, 2010. The link is a mirror of the Internet Journal of Criminology paper; the journal's site refuses scripted requests. Supports: the count of 13 references in Hamblin, none citing the source of the error; Sutton's email exchange with Hamblin, as Sutton reports it (\"honestly cannot remember\", \"asked not to provide references\", \"sure that he had not made it up\"); the question about von Wolff; the dried-spinach figure of 44.8 mg per 100 g (Jackson 1938); Coultate 2009 as quoted, giving von Bunge's 1890 figure of 35 mg per 100 g from dried spinach and the alternative von Wolf decimal version; the Thimble Theatre reading for 1928 to 1935, the strip of 3 July 1932 crediting vitamin A, and \"Segar chose and promoted spinach for its vitamin A content alone.\"",
+          "url": "https://www.erwinmayer.com/wp-content/uploads/2010/10/Sutton_Spinach_Iron_and_Popeye_March_2010.pdf"
+        },
+        {
+          "name": "Rekdal OB",
+          "text": "\"Academic urban legends\", Social Studies of Science 2014;44(4):638-654, doi:10.1177/0306312714535679: Bender's 1972 inaugural lecture at Queen Elizabeth College, University of London, as the earliest version found (\"may well have grown from a misplaced decimal point\"); Kronick 1985 (\"It has been suggested...\"); Larsson 1995, J Intern Med 238(5):445-450, \"The dissemination of false data through inadequate citation\", repeating the story and citing Hamblin; \"in quite a spectacular way\"; the dates 1870, the 1890s and the 1930s; \"I have plagiarized the Hamblin reference from Larsson\"; \"doing the opposite of what they are preaching.\"",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4232290/"
+        },
+        {
+          "name": "US Department of Agriculture",
+          "text": "FoodData Central, \"Spinach, raw\" (SR Legacy, FDC ID 168462, published 1 April 2019): iron, 2.71 mg per 100 g.",
+          "url": "https://fdc.nal.usda.gov/fdc-app.html#/food-details/168462/nutrients"
+        }
+      ],
+      "disclosure": "This entry was drafted with AI (Claude did the research sweeps and first draft). The editorial voice, the opinions, and any surviving errors are mine. Every figure was checked against the linked primary source before publishing. Provenance: Bender 1972, Kronick 1985 and Larsson 1995 are quoted as Rekdal reproduces them; Coultate 2009 and Jackson 1938 as Sutton reproduces them. Hamblin's email is reported only as Sutton describes it. The Popeye reading is Sutton's finding from the bound strips. The Sutton paper is cited via a mirror because the journal's site was unreachable by script."
+    },
+    "body": "\n## The incident\n\nIn the BMJ's 1981 Christmas issue, T.J. Hamblin published \"Fake!\", a survey of \"Frauds, hoaxes, fakes, and widely popularised mistakes\". 1 paragraph covered spinach: \"German chemists reinvestigating the iron content of spinach had shown in the 1930s that the original workers had put the decimal point in the wrong place and made a tenfold overestimate of its value.\" It closed: \"For a source of iron Popeye would have been better off chewing the cans.\"\n\nThe paragraph carries no citation. The article ends with 13 publications it was \"derived from\". None is about spinach.\n\nRaw spinach holds 2.71 mg of iron per 100 g, by the USDA's count. Sutton cites a 1938 measurement of dried spinach at 44.8 mg. A 2009 textbook by Coultate, as Sutton quotes it, offers 2 versions: von Bunge found 35 mg per 100 g in 1890 but had analysed dried spinach, or von Wolf misplaced the decimal point about 20 years earlier. The famous figure may be a correct measurement of a different thing.\n\n## Who lied\n\nNobody, on the record available. The earliest version Rekdal found is Bender's 1972 inaugural lecture at Queen Elizabeth College, London: \"the fame of spinach may well have grown from a misplaced decimal point.\" Kronick in 1985 also hedged: \"It has been suggested.\" Hamblin's version dropped the hedge and added the German chemists.\n\nMike Sutton, a Reader in Criminology at Nottingham Trent University, emailed Hamblin. Sutton reports that Hamblin \"honestly cannot remember\", that the BMJ's then editor had asked him for a humorous Christmas piece and asked him \"not to provide references\", and that Hamblin was \"sure that he had not made it up.\"\n\nSutton's questions included \"Who is von Wolff and where are his erroneous findings recorded?\" After weeks of searching he could not answer it. He also read the Thimble Theatre strips from 1928 to 1935. In the strip of 3 July 1932, the first in which Popeye explains his spinach, he credits vitamin A. Sutton's conclusion: \"Segar chose and promoted spinach for its vitamin A content alone.\"\n\nThe tellings also disagree on the year. Rekdal: sources had \"mutually confirmed the 'fact' that a decimal point error was made, whether it was in 1870, in the 1890s, or in the 1930s.\"\n\n## The bit continues\n\nIn 1995 the Journal of Internal Medicine published Larsson's \"The dissemination of false data through inadequate citation\". It repeated the spinach story, citing Hamblin. Rekdal: \"Larsson obviously has an important message, but he manages to do exactly what he is criticizing others for in quite a spectacular way.\"\n\nRekdal's own 2014 paper, \"Academic urban legends\", opens by citing Larsson for the story, then stops: \"In short, I have plagiarized the Hamblin reference from Larsson.\" The demonstration was deliberate. It is the only telling in this exhibit that announces its own citation chain.\n"
+  },
+  "distance": {
+    "ids": [
+      "r01",
+      "r02",
+      "r03",
+      "r04",
+      "original"
+    ],
+    "matrix": [
+      [
+        0,
+        0.857,
+        0.892,
+        0.872,
+        0.889
+      ],
+      [
+        0.857,
+        0,
+        0.872,
+        0.849,
+        0.878
+      ],
+      [
+        0.892,
+        0.872,
+        0,
+        0.581,
+        0.657
+      ],
+      [
+        0.872,
+        0.849,
+        0.581,
+        0,
+        0.677
+      ],
+      [
+        0.889,
+        0.878,
+        0.657,
+        0.677,
+        0
+      ]
+    ]
+  },
+  "distinctive": {
+    "claude-haiku-5-5": [
+      {
+        "word": "measurement",
+        "count": 3,
+        "elsewhere": 1,
+        "score": 0.89
+      },
+      {
+        "word": "an",
+        "count": 8,
+        "elsewhere": 4,
+        "score": 0.79
+      },
+      {
+        "word": "said",
+        "count": 4,
+        "elsewhere": 2,
+        "score": 0.71
+      },
+      {
+        "word": "vitamin",
+        "count": 4,
+        "elsewhere": 2,
+        "score": 0.71
+      },
+      {
+        "word": "no",
+        "count": 5,
+        "elsewhere": 3,
+        "score": 0.61
+      },
+      {
+        "word": "bender",
+        "count": 5,
+        "elsewhere": 3,
+        "score": 0.61
+      },
+      {
+        "word": "and",
+        "count": 17,
+        "elsewhere": 12,
+        "score": 0.53
+      },
+      {
+        "word": "hamblin's",
+        "count": 3,
+        "elsewhere": 2,
+        "score": 0.49
+      },
+      {
+        "word": "original",
+        "count": 3,
+        "elsewhere": 2,
+        "score": 0.49
+      },
+      {
+        "word": "german",
+        "count": 3,
+        "elsewhere": 2,
+        "score": 0.49
+      },
+      {
+        "word": "well",
+        "count": 3,
+        "elsewhere": 2,
+        "score": 0.49
+      },
+      {
+        "word": "bmj's",
+        "count": 4,
+        "elsewhere": 3,
+        "score": 0.42
+      }
+    ],
+    "claude-opus-5-5": [
+      {
+        "word": "but",
+        "count": 5,
+        "elsewhere": 0,
+        "score": 1.59
+      },
+      {
+        "word": "would",
+        "count": 4,
+        "elsewhere": 0,
+        "score": 1.41
+      },
+      {
+        "word": "do",
+        "count": 4,
+        "elsewhere": 0,
+        "score": 1.41
+      },
+      {
+        "word": "von",
+        "count": 4,
+        "elsewhere": 0,
+        "score": 1.41
+      },
+      {
+        "word": "larsson",
+        "count": 8,
+        "elsewhere": 1,
+        "score": 1.3
+      },
+      {
+        "word": "published",
+        "count": 3,
+        "elsewhere": 0,
+        "score": 1.19
+      },
+      {
+        "word": "then",
+        "count": 3,
+        "elsewhere": 0,
+        "score": 1.19
+      },
+      {
+        "word": "version",
+        "count": 3,
+        "elsewhere": 0,
+        "score": 1.19
+      },
+      {
+        "word": "paragraph",
+        "count": 5,
+        "elsewhere": 1,
+        "score": 0.9
+      },
+      {
+        "word": "rekdal",
+        "count": 7,
+        "elsewhere": 2,
+        "score": 0.78
+      },
+      {
+        "word": "per",
+        "count": 4,
+        "elsewhere": 1,
+        "score": 0.72
+      },
+      {
+        "word": "his",
+        "count": 6,
+        "elsewhere": 2,
+        "score": 0.65
+      }
+    ]
+  }
+}

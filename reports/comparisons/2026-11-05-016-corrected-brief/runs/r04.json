@@ -1,0 +1,102 @@
+{
+  "duration_api_ms": 145870,
+  "stop_reason": "end_turn",
+  "session_id": "19b51db3-f6bf-4a1a-97ea-65621de5f046",
+  "total_cost_usd": 0.6525164,
+  "usage": {
+    "input_tokens": 10,
+    "cache_creation_input_tokens": 34607,
+    "cache_read_input_tokens": 100302,
+    "output_tokens": 17778,
+    "output_tokens_details": {
+      "thinking_tokens": 9012
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 34607,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 3348,
+        "cache_read_input_tokens": 34324,
+        "cache_creation_input_tokens": 3792,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 3792
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "modelUsage": {
+    "claude-opus-5-5": {
+      "inputTokens": 10,
+      "outputTokens": 17778,
+      "cacheReadInputTokens": 100302,
+      "cacheCreationInputTokens": 34607,
+      "webSearchRequests": 0,
+      "costUSD": 0.6525164,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 9012,
+      "cacheCreationEphemeral5mInputTokens": 0,
+      "cacheCreationEphemeral1hInputTokens": 34607,
+      "canonicalModel": "claude-opus-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "safety_stops": 0,
+  "is_error": false,
+  "num_turns": 8,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "I've written the draft to `drafts\\r04\\exhibit-016-spinach.md`. The body is about 478 words by my hand count, under the 500 limit. Nothing has checked it yet: the house-rules hook only watches root `exhibit-NNN-slug.md` files and the exhibits folder, so it didn't fire on a path under `drafts\\`. Run `node scripts/check-house-rules.mjs <path>` on it before it goes further.\n\n**Five-line summary of choices**\n1. **Category:** \"citation needed\", reused from 013. Everyone assumed a source behind the decimal point, and none has been produced.\n2. **Tags:** outlived-the-evidence, measurement-definitions (fresh vs dried spinach) and europe. All are existing tags, no new ones. Country is United Kingdom, as the brief recommends.\n3. **Chart:** none. The `chartNote` gives the reason: the original measurement has never been traced, and the only 2 real figures measure dried and raw spinach. No \"pending\" and no trailing period.\n4. **Excluded:** everything in the CUT list. I also dropped Sutton's 4 questions, which had pushed the body to about 535 words. Rather than shrink the beat, I cut it whole, because done properly it needed the caveat that Sutton later answers the first question. Bender, Kronick and Larsson have no URLs in the brief, so they appear only as reported by Rekdal, and the disclosure says so. Larsson's volume and pages are left out because Rekdal and Sutton disagree on them.\n5. **Twist and attribution:** \"Who lied\" opens \"Nobody, on the record.\" Bender hedged, Kronick kept the hedge, and Hamblin stated it as fact with no citation. Hamblin's email appears only as \"Sutton reports\". Rekdal's \"doing the opposite of what they are preaching\" line closes the verdict, and his deliberate \"plagiarized the Hamblin reference\" line sits in \"The bit continues\".\n\n**Other judgment calls**\n- **Date:** I used 2026-10-23 as you asked. CLAUDE.md says `date` must be the day the exhibit is actually built, though, and today is 2026-11-05. The brief's own wording is \"if built today: 2026-10-23\", which looks out of date. Whoever builds it should change the date to the real build day.\n- **Ledger:** 6 rows. The gap row is \"0\" of Hamblin's 13 listed publications citing the decimal error (Sutton's count). I kept the optional USDA raw figure (2.71 mg) next to Coultate's 35 mg for dried spinach, and the ledger note says they are not the same quantity.\n- **Narrator line:** the \"Fraud detected\" value is \"none\". It notes that the only \"fraudulent\" in the record is Hamblin's own word for the original propaganda, quoted, so the narrator accuses no one.\n- **Spelling:** I avoided naming the chemist in the Coultate paraphrase (\"a chemist about 20 years earlier\"). The brief spells the name \"von Wolf\" there and \"von Wolff\" elsewhere.\n- **Wording to check:** the ledger note says \"1 is dried spinach\". 015 sets a precedent with \"1 of them\", but a human may prefer different wording.\n- **Mismatches:** I found no disagreement between CLAUDE.md's template and the exemplar files. The frontmatter copies 013's shape key for key.",
+  "ttft_ms": 1584,
+  "type": "result",
+  "duration_ms": 146150,
+  "uuid": "d94f7d51-8036-4f61-b0bb-2244e3014313",
+  "ttft_stream_ms": 1377,
+  "time_to_request_ms": 212,
+  "first_content_frame_ms": 1377,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "credential_expires_at": "2026-12-02T23:39:32.238Z"
+}

@@ -1,0 +1,76 @@
+{
+  "name": "2026-11-05-016-corrected-brief",
+  "exhibit": "016",
+  "base": "df00590",
+  "method": "headless",
+  "like": null,
+  "copy": "C:\\Users\\betan\\AppData\\Local\\Temp\\rounding-errors-bench\\2026-11-05-016-corrected-brief",
+  "original": "reports/016-spinach/drafting/2026-10-23-ab898647d806b0e33",
+  "draftName": "exhibit-016-spinach.md",
+  "exemplars": [
+    "C:\\Users\\betan\\AppData\\Local\\Temp\\rounding-errors-bench\\2026-11-05-016-corrected-brief\\src\\content\\exhibits\\013-8-glasses.md",
+    "C:\\Users\\betan\\AppData\\Local\\Temp\\rounding-errors-bench\\2026-11-05-016-corrected-brief\\src\\content\\exhibits\\015-police-recorded-crime.md"
+  ],
+  "created": "2026-11-05T14:28:25.353Z",
+  "cells": [
+    {
+      "run": "r01",
+      "model": "claude-haiku-5-5",
+      "effort": "medium",
+      "prompt": "reports/comparisons/2026-11-05-016-corrected-brief/prompts/r01.md",
+      "out": "C:\\Users\\betan\\AppData\\Local\\Temp\\rounding-errors-bench\\2026-11-05-016-corrected-brief\\drafts\\r01\\exhibit-016-spinach.md",
+      "draft": "reports/comparisons/2026-11-05-016-corrected-brief/drafts/r01/exhibit-016-spinach.md",
+      "session": "67f51d2e-32ae-4120-89e0-98447c6e65ff"
+    },
+    {
+      "run": "r02",
+      "model": "claude-haiku-5-5",
+      "effort": "medium",
+      "prompt": "reports/comparisons/2026-11-05-016-corrected-brief/prompts/r02.md",
+      "out": "C:\\Users\\betan\\AppData\\Local\\Temp\\rounding-errors-bench\\2026-11-05-016-corrected-brief\\drafts\\r02\\exhibit-016-spinach.md",
+      "draft": "reports/comparisons/2026-11-05-016-corrected-brief/drafts/r02/exhibit-016-spinach.md",
+      "session": "6a880670-fe3d-4b35-bba9-f48f3079727d"
+    },
+    {
+      "run": "r03",
+      "model": "claude-opus-5-5",
+      "effort": "medium",
+      "prompt": "reports/comparisons/2026-11-05-016-corrected-brief/prompts/r03.md",
+      "out": "C:\\Users\\betan\\AppData\\Local\\Temp\\rounding-errors-bench\\2026-11-05-016-corrected-brief\\drafts\\r03\\exhibit-016-spinach.md",
+      "draft": "reports/comparisons/2026-11-05-016-corrected-brief/drafts/r03/exhibit-016-spinach.md",
+      "session": "c63e7082-08f1-4682-bce6-d9eab9459f48"
+    },
+    {
+      "run": "r04",
+      "model": "claude-opus-5-5",
+      "effort": "medium",
+      "prompt": "reports/comparisons/2026-11-05-016-corrected-brief/prompts/r04.md",
+      "out": "C:\\Users\\betan\\AppData\\Local\\Temp\\rounding-errors-bench\\2026-11-05-016-corrected-brief\\drafts\\r04\\exhibit-016-spinach.md",
+      "draft": "reports/comparisons/2026-11-05-016-corrected-brief/drafts/r04/exhibit-016-spinach.md",
+      "session": "19b51db3-f6bf-4a1a-97ea-65621de5f046"
+    }
+  ],
+  "watch": [
+    {
+      "label": "Says Sutton could not answer the von Wolff question (his paper later says it answers question 1)",
+      "pattern": "(could not|couldn.t|unable to|never|failed to) (answer|find)|unanswered|answered none",
+      "flags": "i"
+    },
+    {
+      "label": "Cites Larsson as 238(5):445-450 (Rekdal gives the volume, Sutton the pages and volume 258)",
+      "pattern": "238\\s*\\(5\\)",
+      "flags": "i"
+    },
+    {
+      "label": "Calls Bender 1972 the earliest version (Rekdal never says so; Taylor-Blake and Sutton found it)",
+      "pattern": "earliest",
+      "flags": "i"
+    },
+    {
+      "label": "Says Hamblin derived the article from the 13 publications (he lists them as ones he would particularly like to mention)",
+      "pattern": "derived from",
+      "flags": "i"
+    }
+  ],
+  "note": "The 016 brief with its 4 fact-checked claims corrected before drafting. Compare with 2026-11-05-016-generations, which used the brief as written."
+}

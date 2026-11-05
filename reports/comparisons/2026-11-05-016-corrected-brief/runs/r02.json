@@ -1,0 +1,102 @@
+{
+  "duration_api_ms": 127648,
+  "stop_reason": "end_turn",
+  "session_id": "6a880670-fe3d-4b35-bba9-f48f3079727d",
+  "total_cost_usd": 0.02611352,
+  "usage": {
+    "input_tokens": 6,
+    "cache_creation_input_tokens": 52126,
+    "cache_read_input_tokens": 29272,
+    "output_tokens": 30790,
+    "output_tokens_details": {
+      "thinking_tokens": 26700
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 52126,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 2235,
+        "cache_read_input_tokens": 23880,
+        "cache_creation_input_tokens": 28246,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 28246
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "modelUsage": {
+    "claude-haiku-5-5": {
+      "inputTokens": 6,
+      "outputTokens": 30790,
+      "cacheReadInputTokens": 29272,
+      "cacheCreationInputTokens": 52126,
+      "webSearchRequests": 0,
+      "costUSD": 0.02611352,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 26700,
+      "cacheCreationEphemeral5mInputTokens": 0,
+      "cacheCreationEphemeral1hInputTokens": 52126,
+      "canonicalModel": "claude-haiku-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "safety_stops": 0,
+  "is_error": false,
+  "num_turns": 6,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "The draft is at `C:\\Users\\betan\\AppData\\Local\\Temp\\rounding-errors-bench\\2026-11-05-016-corrected-brief\\drafts\\r02\\exhibit-016-spinach.md`.\n\n- **Word count:** about 415 body words by my count, under the 500 limit. I did not run a word counter or the house-rules checker.\n- **Date mismatch:** I used `date: 2026-10-23` as you specified, but today is 2026-11-05. CLAUDE.md says `date` must be the actual publish day, so this needs your call before publishing.\n- **Hook not confirmed:** The write returned no house-rules output. The hook matches root-level `exhibit-NNN-slug.md` files, and this draft sits under `drafts/r02/`, so the check may not have run on it.\n- **Category, tags, chart:** The category is \"citation needed\". Tags are `outlived-the-evidence`, `measurement-definitions` and `europe`, as the brief lists. I did not add `healthcare`, which would fit the subject. There is no chart, and the `chartNote` gives the reason: the original 19th-century measurement has not been traced to a primary document.\n- **Attribution and sourcing:** Bender and Larsson were not retrieved, so they are sourced through Rekdal and the disclosure says so. Hamblin's email is attributed to Sutton's report throughout. Skrabanek and McCormick appear only inside Rekdal's quoted closing line. The Sutton source is labelled as a mirror of the Internet Journal of Criminology paper.\n- **Excluded:** Everything in the brief's CUT list, including the 33% Popeye figure, the Reader's Digest claim, the Hamblin 2010 blog, Schupan, Kohler and Dagg. I also left out the USDA 2.71 mg figure, since no ledger row needed a modern value, and Sutton's unanswered questions, since his paper answers one of them.",
+  "ttft_ms": 3962,
+  "type": "result",
+  "duration_ms": 127755,
+  "uuid": "4c1acb27-d4c2-47ed-a2d3-ba7f0a1ae8aa",
+  "ttft_stream_ms": 3743,
+  "time_to_request_ms": 74,
+  "first_content_frame_ms": 3743,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "credential_expires_at": "2026-12-02T23:39:32.238Z"
+}
