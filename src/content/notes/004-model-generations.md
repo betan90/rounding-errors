@@ -2,7 +2,7 @@
 title: "45 drafts, 9 models, 0 corrections"
 date: 2026-11-05
 teaser: "Method · exhibit 017 drafted again by 9 models across 4 generations, then by 7 of them at every effort level: what changed in the wording, the voice, the bill and the count"
-disclosure: "Drafted with AI (Claude, in Claude Code), from the repository's own comparison files: reports/comparisons/2026-11-04-017-generations/ and reports/comparisons/2026-11-04-017-generations-effort/ (plan.json, prompts/, drafts/, runs/, results.json) and reports/comparisons/README.md, built by scripts/compare-drafts.mjs from Claude Code's transcripts on 4 and 5 November 2026. Every figure in this note was checked against those files. Costs are Claude Code's own estimates at list prices, not a bill. Runs that the usage limit stopped before they finished were run again; their first attempts are not in the files and are not counted. Which model ids still answer was checked by hand with 1-word prompts and is not recorded in the repository. Editorial voice and errors are mine."
+disclosure: "Drafted with AI (Claude, in Claude Code), from the repository's own comparison files: reports/comparisons/2026-11-04-017-generations/ and reports/comparisons/2026-11-04-017-generations-effort/ (plan.json, prompts/, drafts/, runs/, results.json) and reports/comparisons/README.md, built by scripts/compare-drafts.mjs from Claude Code's transcripts on 4 and 5 November 2026. Every figure in this note was checked against those files. Costs are Claude Code's own estimates at list prices, not a bill. Runs that the usage limit stopped before they finished were run again; their first attempts are not in the files and are not counted. The quoted sentences are copied from the drafts in each comparison's drafts/ folder. Editorial voice and errors are mine."
 ---
 
 ## The setup
@@ -10,8 +10,6 @@ disclosure: "Drafted with AI (Claude, in Claude Code), from the repository's own
 Note 002 sent exhibit 017's brief to the drafter 11 times, on 3 models. This time it went to 9 models across 4 generations, 2 drafts each at medium effort, and then to 7 of them at low, high, xhigh and max: 46 runs, 45 drafts.
 
 Every run was a headless Claude Code session in a plain copy of this repository at commit 642dcbe, from before 017 shipped. None of this folder's CLAUDE.md or memory, no hooks, no connectors. Each got the same prompt, brief and 2 example exhibits. The original 017 draft, written by Opus 5.5 at medium, is the reference.
-
-Not every model asked for is a model you get. A 1-word prompt to `claude-opus-4-1` was answered by Opus 5.5, with no error. `claude-opus-4-9`, `claude-opus-5-0` and `claude-haiku-5` are not recognized. The 9 below are the ones that answered as themselves, and every draft is placed by the model id that answered each turn.
 
 ## By model, at medium
 
@@ -36,6 +34,38 @@ Mean sentence is words per sentence in the body. Shared with original is the sha
 2 drafts by 1 model share 23.0% of their 3-word phrases on average. 2 drafts by different models share 15.5%. The model leaves a mark in the wording, and 2 runs of 1 model still differ on most of it.
 
 The newest model in each family sits closest to the original: Opus 5.5 at 26% to 30%, Sonnet 5.5 at 25%, Haiku 5.5 at 16% to 19% against Haiku 4.5's 5% to 6%. Sonnet 5 sits below Sonnet 4.5. Opus 5.5 also wrote the original, so part of its lead is a model resembling itself.
+
+## 1 sentence, 45 times
+
+Every draft has a section called Who lied, and every draft answers it in its opening line. The original 017 draft: "Nobody. Every assumption was published, and most arrived labelled." 41 of the 45 drafts open with the same word, "Nobody.", and differ in what comes after it.
+
+By model, at medium, from the lower-numbered of each model's 2 drafts:
+
+| Model | Who lied |
+|---|---|
+| Opus 5.5 | Nobody. ONS printed every assumption beside its own assessment of it. |
+| Opus 5 | Nobody. The assumptions are published, numbered and graded by their authors. |
+| Opus 4.8 | Nobody. Every assumption is in the published article, labelled. |
+| Opus 4.5 | Nobody. ONS published its method, named its sources, and flagged its weaknesses. |
+| Sonnet 5.5 | Nobody. ONS published every assumption, with its own rating. |
+| Sonnet 5 | Nobody. ONS published the method next to the estimate, flaws labelled in its own words. |
+| Sonnet 4.5 | Nobody. The article lists its assumptions in Table 3. |
+| Haiku 5.5 | Nobody. ONS published each assumption, labelled the weak ones, and footnoted its price source. |
+| Haiku 4.5 | Nobody. ONS published the method as a peer-reviewed article, naming the assumptions and flagging their limitations. |
+
+Opus 4.5's 2 drafts wrote the same sentence, word for word. No other 2 of the 45 match.
+
+By effort, for 2 models:
+
+| Effort | Opus 5.5 | Sonnet 5.5 |
+|---|---|---|
+| low | Nobody. Every assumption was printed next to its weakness. | Nobody. ONS published every assumption and said what it thought of it. |
+| medium | Nobody. ONS graded its assumptions in print. | Nobody. The article labels its own inputs. |
+| high | Nobody. ONS published every assumption and graded several itself: "probably false" 3 times, "arbitrary" twice, also "weak" and "controversial". | Nobody. ONS published every assumption and labelled several itself: "probably false" appears 3 times in the article, "arbitrary" 2 times. |
+| xhigh | Nobody. ONS published every assumption and graded several itself. | Nobody. ONS published the assumptions and said what it thought of them. |
+| max | Nobody. The executive summary warned of "significant limitations in the availability of data" and estimates "partly based" on assumptions, "especially" for prostitution. | Nobody. The article labels its own assumptions. |
+
+Medium is the second draft of each pair, the one that does not repeat another row. At high, both models put the brief's wrong count into this sentence. At max, Opus 5.5 swapped the paraphrase for 3 quotes from the article. Sonnet 5.5 at max took 22 minutes 7 seconds and $3.16 to land 1 word from its medium draft, which took 46 seconds and $0.19.
 
 ## The voice
 
