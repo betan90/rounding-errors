@@ -87,6 +87,7 @@ sources:
     text: "economics (March 2026): Q4 2025 quarterly decline."
     url: "https://corporate-economy.bankofireland.com/irish-gdp-expands-by-12-in-2025/"
     urlLabel: "bankofireland.com"
+correctionNote: "This exhibit was corrected on 2026-08-03. Details on the corrections page."
 disclosure: "This entry was drafted with AI (Claude did the research sweeps, data pulls and first draft). The editorial voice, the opinions, and any surviving errors are mine. Every figure was checked against the linked primary source before publishing. No leprechauns were consulted."
 ---
 

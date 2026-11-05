@@ -1,0 +1,262 @@
+{
+  "exhibit": "010",
+  "checkedAt": "2026-11-05T12:00:00Z",
+  "claims": [
+    {
+      "id": 1,
+      "claim": "Title: \"9 exhibits, 127 figures, 3 of them wrong\"",
+      "source": "Rounding Errors repository, reports/001-ireland through reports/009-nigeria",
+      "passage": "\"claim\": \"From there it laundered upward, promoted in the United States by a former Surgeon General in the 1990s.\" ... \"verdict\": \"NOT SUPPORTED\"",
+      "verdict": "PARTIALLY SUPPORTED",
+      "notes": "127 claim checks across 9 files is correct, but 1 of the '3 wrong' (007 claim 11) was rated NOT SUPPORTED for lack of a source, not shown wrong, and 007 now cites a source confirming it (see claim 18)."
+    },
+    {
+      "id": 2,
+      "claim": "Ledger: Claims checked 127",
+      "source": "Rounding Errors repository, reports/001-ireland through reports/009-nigeria",
+      "passage": "\"exhibit\": \"001\", \"checkedAt\": \"2026-08-01T00:00:00Z\", \"claims\": [ ... \"id\": 20",
+      "verdict": "SUPPORTED",
+      "notes": "Verdict entries per file: 20, 12, 14, 10, 11, 14, 13, 16, 17, which sum to 127."
+    },
+    {
+      "id": 3,
+      "claim": "Ledger: Fully supported by the exhibit's own cited sources 84",
+      "source": "Rounding Errors repository, reports/001-ireland through reports/009-nigeria",
+      "passage": "\"claim\": \"The University of Michigan had already tried to reproduce Sandler's rabbit results in 1941 and failed.\", \"source\": \"Wikipedia, Benjamin P. Sandler (en.wikipedia.org)\", ... \"verdict\": \"SUPPORTED\", \"notes\": \"Fact confirmed by direct fetch, but the citation is to Wikipedia itself, which is a BLOCKING house-rule violation under SOURCING regardless of the claim's truth.\"",
+      "verdict": "PARTIALLY SUPPORTED",
+      "notes": "The SUPPORTED count is 84 (11+9+8+7+10+12+7+14+6), but the row label overstates it: 004 claim 6 is counted though its cited source was Wikipedia, and several others (002 claims 8 to 10, 004 claims 5, 7 to 9) were confirmed only through search caches after a 403."
+    },
+    {
+      "id": 4,
+      "claim": "Ledger: Not fully supported 43",
+      "source": "Rounding Errors repository, reports/001-ireland through reports/009-nigeria",
+      "passage": "\"verdict\": \"PARTIALLY SUPPORTED\" (29 entries across the 9 files); \"verdict\": \"NOT SUPPORTED\" (14 entries across the 9 files)",
+      "verdict": "SUPPORTED",
+      "notes": "29 + 14 = 43, and 84 + 43 = 127."
+    },
+    {
+      "id": 5,
+      "claim": "Ledger: Wrong on the facts 3",
+      "source": "Rounding Errors repository, reports/003-china and reports/007-10000-steps",
+      "passage": "\"notes\": \"The listed source has no URL and names no individual; independent search found no primary documentation of a 1990s Surgeon General promotion of the '10,000 steps' figure specifically, and the one well-documented Surgeon General walking initiative (\\\"Step It Up!\\\") dates to 2015, which cuts against the claim as stated.\"",
+      "verdict": "NOT SUPPORTED",
+      "notes": "003 claims 9 and 10 were wrong on timing, but 007 claim 11 was unsourced rather than shown false, and 007's current text sources it to Shape Up America!, founded 1994 by former Surgeon General C. Everett Koop, so the count of factual errors that hold up is 2."
+    },
+    {
+      "id": 6,
+      "claim": "ledgerNote: \"The 3 were 2 dates in exhibit 003\"",
+      "source": "Rounding Errors repository, reports/003-china",
+      "passage": "\"notes\": \"The 40% figure is correct, but the timing is wrong: Inner Mongolia's admission came in January 2018, about a year after Liaoning's, not 'within weeks.'\" ... \"notes\": \"The one-third figure is correct, but this admission was made in January 2018, not within weeks of the January 2017 Liaoning confession.\"",
+      "verdict": "SUPPORTED",
+      "notes": "003 claims 9 and 10 are both NOT SUPPORTED on timing alone."
+    },
+    {
+      "id": 7,
+      "claim": "ledgerNote: \"and 1 attribution in 007, all since fixed\"",
+      "source": "Rounding Errors repository, reports/007-10000-steps; commit f0c49f4",
+      "passage": "\"verdict\": \"NOT SUPPORTED\", \"notes\": \"The listed source has no URL and names no individual; independent search found no primary documentation of a 1990s Surgeon General promotion...\"",
+      "verdict": "PARTIALLY SUPPORTED",
+      "notes": "The line was fixed, since 007 now names Koop and Shape Up America! with a source, but the fix shows the attribution was substantively right and only unsourced, so calling it an error on the facts is not supported."
+    },
+    {
+      "id": 8,
+      "claim": "ledgerNote and body: 16 claims marked partially supported because the cited source could not be retrieved (403, 503, a paywall, a corrupted file, or in 1 case no URL)",
+      "source": "Rounding Errors repository, reports/001-ireland through reports/009-nigeria",
+      "passage": "\"notes\": \"CNN's page returned HTTP 503 on two direct fetch attempts...\" / \"both direct fetches of the Hollywood Reporter URL failed (403 then 402 paywall)\" / \"The linked BU Law Review PDF fetched as corrupted/garbled binary text\" / \"No URL is provided for this source\" / \"the listed source has no URL to verify directly\"",
+      "verdict": "PARTIALLY SUPPORTED",
+      "notes": "16 can be rebuilt (002-11; 003-6, 003-11; 005-11; 006-13; 007-1, 4, 9; 009-1, 2, 3, 4, 9, 10, 11, 13), but only by counting 009-11 and leaving out 004 claims 1 and 2, whose listed source also had no URL, which contradicts 'in 1 case'; the count depends on a classification the exhibit does not state."
+    },
+    {
+      "id": 9,
+      "claim": "ledgerNote and body: \"8 claims were true, independently verifiable, and cited to nothing in the exhibit's own source list\"",
+      "source": "Rounding Errors repository, reports/001-ireland and reports/002-argentina",
+      "passage": "\"notes\": \"Plausible institutional fact (Eurostat validates EU national accounts) but no source in the list documents this specific sign-off for Ireland's 2015/2016 revision.\" ... \"notes\": \"No source in the exhibit's list mentions provincial statistical offices; the claim is plausible and consistent with contemporaneous reporting but is not traceable to any of the six listed sources.\"",
+      "verdict": "PARTIALLY SUPPORTED",
+      "notes": "The 8 are 001 claims 4 to 10 plus 002 claim 7, but the reports call 2 of them only 'plausible' (001-8, 002-7), so only 6 were verified as true, and 001-5 was cited to a listed source that did not contain it rather than to nothing."
+    },
+    {
+      "id": 10,
+      "claim": "ledgerNote and body: \"1 published source URL returned 404\"",
+      "source": "Rounding Errors repository, reports/001-ireland",
+      "passage": "\"notes\": \"That exact URL returns HTTP 404; the correct live URL uses 'glitter' not 'glitters' in the slug, meaning the published citation link is broken.\"",
+      "verdict": "SUPPORTED",
+      "notes": "001 claim 19 is NOT SUPPORTED for exactly this reason."
+    },
+    {
+      "id": 11,
+      "claim": "Verdict: \"Rules broken: 1 of this museum's own. Every figure must trace to a source listed in the exhibit; 8 did not.\"",
+      "source": "Rounding Errors repository, reports/003-china, reports/006-dare, reports/004-icecream-polio",
+      "passage": "\"notes\": \"The claim is true and independently verifiable (WikiLeaks cable 07BEIJING1760_a, reported by CNBC/VOA/Bloomberg), but the exhibit's sources list contains no citation for it at all, so within the exhibit's own paper trail this claim is uncited.\" ... \"notes\": \"Confirmed true via independent web search (Britannica, CrimeSolutions/NIJ), but no entry in the exhibit's own sources list backs this specific date and origin, so it does not trace to a listed source as the FIGURES rule requires.\"",
+      "verdict": "PARTIALLY SUPPORTED",
+      "notes": "At least 2 more claims (003-4, 006-12) were also true and untraceable to the source list, but they were graded PARTIALLY rather than NOT SUPPORTED, so '8 did not' undercounts; 004-6's Wikipedia citation also broke a second house rule."
+    },
+    {
+      "id": 12,
+      "claim": "Verdict: \"84 of 127 cleared on the first pass, and all 3 outright errors were in a date or an attribution rather than an amount.\"",
+      "source": "Rounding Errors repository, reports/001-ireland through reports/009-nigeria",
+      "passage": "\"notes\": \"Independent state-history source (northcarolinahistory.org) gives 2,516, not 2,498; close but not an exact digit match, and the listed source has no URL to verify directly.\"",
+      "verdict": "PARTIALLY SUPPORTED",
+      "notes": "84 of 127 is right; the 'attribution' error is disputed (claim 5), and 004-1 records an amount discrepancy that the 3-error tally does not discuss."
+    },
+    {
+      "id": 13,
+      "claim": "verdictNote: \"this museum's own scoreboard records fraud twice: Argentina's IMF censure and Liaoning's party disciplinary ruling. The other 7 cases ...\"",
+      "source": "Rounding Errors repository, src/content/exhibits/001-ireland.md through 009-nigeria.md",
+      "passage": "002: value: \"disputed by no one at this point, including Argentina's own later government.\" 003: value: \"in Liaoning, confirmed, confessed to on the provincial record, and punished by China's own party disciplinary body.\" 001, 006, 008, 009: value: \"none.\" 004: \"none. A sincere doctor and a genuine correlation.\" 005: \"none required.\" 007: \"none. Ad copy is allowed to sound good.\"",
+      "verdict": "SUPPORTED",
+      "notes": "2 Fraud detected rows record a finding and 7 record none."
+    },
+    {
+      "id": 14,
+      "claim": "Source 2: DeepSeek verdicts on the same 127 claims establish every claim was reviewed twice",
+      "source": "Rounding Errors repository, reports/*/second-opinion.json",
+      "passage": "\"exhibit\": \"001\", \"reviewedAt\": \"2026-08-01T00:27:11.949Z\", \"model\": \"deepseek-chat\", \"claims\": [ { \"id\": 1, \"verdict\": \"SUPPORTED\"",
+      "verdict": "SUPPORTED",
+      "notes": "Verdict entries in the 9 second-opinion files total 20+12+14+10+11+14+13+16+17 = 127."
+    },
+    {
+      "id": 15,
+      "claim": "checkedAt timestamps are 2026-08-01 for exhibits 001 to 007, 2026-08-12 for 008 and 009; body: \"7 were written on 2026-08-01 and 2 on 2026-08-12\"",
+      "source": "Rounding Errors repository, reports/001-ireland through reports/009-nigeria",
+      "passage": "\"checkedAt\": \"2026-08-01T00:00:00Z\" (001 to 007); \"checkedAt\": \"2026-08-12T00:00:00Z\" (008); \"checkedAt\": \"2026-08-12T18:00:00Z\" (009)",
+      "verdict": "SUPPORTED",
+      "notes": "All 9 timestamps match."
+    },
+    {
+      "id": 16,
+      "claim": "Body: \"Every exhibit was checked before publishing: a fact-checker pass against each cited source, then a second reviewer on the same claims, with both verdict sets archived under reports/.\"",
+      "source": "Rounding Errors repository (git reflog .git/logs/HEAD; reports/*/second-opinion.json)",
+      "passage": "\"commit (initial): Initial commit: exhibit 001 (Ireland)\" [1783766393, 2026-07-11] ... \"commit: Add DeepSeek second-opinion reviewer for fact-checker output\" [1785543554, 2026-08-01]",
+      "verdict": "NOT SUPPORTED",
+      "notes": "Exhibits 001 to 006 were committed in July 2026, before the second reviewer existed (added 2026-08-01) and before the archived 2026-08-01 fact-checks, so their archived checks came after publishing."
+    },
+    {
+      "id": 17,
+      "claim": "Body: \"Exhibit 003 said 2 Chinese provincial admissions followed Liaoning's January 2017 confession within weeks, when both came in January 2018.\"",
+      "source": "Rounding Errors repository, reports/003-china",
+      "passage": "\"passage\": \"Inner Mongolia - January 7, 2018: Authorities disclosed that industrial data for 2016 was inflated by 40 percent\" ... \"notes\": \"... this admission was made in January 2018, not within weeks of the January 2017 Liaoning confession.\"",
+      "verdict": "SUPPORTED",
+      "notes": "Both 003 claims 9 and 10 are dated January 2018 in the report."
+    },
+    {
+      "id": 18,
+      "claim": "Body: \"Exhibit 007 credited the American promotion of the 10,000-step figure to a Surgeon General in the 1990s, and the only documented Surgeon General walking initiative dates to 2015.\"",
+      "source": "Rounding Errors repository, reports/007-10000-steps; cross-checked against src/content/exhibits/007-10000-steps.md and its cited scienceworldreport.com page",
+      "passage": "Report: \"the one well-documented Surgeon General walking initiative (\\\"Step It Up!\\\") dates to 2015\". Science World Report: \"Shape Up America! is a program that was founded in 1994 by Dr. C Everett Koop (a former U.S. Surgeon General)\"",
+      "verdict": "NOT SUPPORTED",
+      "notes": "The report said 'well-documented', not 'only documented', and the museum's own exhibit 007 now documents a 1994 initiative by a former Surgeon General promoting 10,000 steps, which directly contradicts this sentence."
+    },
+    {
+      "id": 19,
+      "claim": "Body: \"Exhibit 001 held 7 of them.\"",
+      "source": "Rounding Errors repository, reports/001-ireland",
+      "passage": "claims 4 to 10: \"verdict\": \"NOT SUPPORTED\" with sources \"None listed\" or a listed notice that \"contains neither '26.3%' nor a matching GDP growth figure\"",
+      "verdict": "SUPPORTED",
+      "notes": "001 claims 4 to 10 are 7 claims that do not trace to the source list."
+    },
+    {
+      "id": 20,
+      "claim": "Body: the 16 \"were confirmed by search corroboration instead of a quoted passage\"",
+      "source": "Rounding Errors repository, reports/003-china and reports/005-scared-straight",
+      "passage": "\"notes\": \"No URL is provided for this source and independent searches only corroborate the general 'zero tolerance' theme, not the specific 15-case/10-person figures\" ... \"notes\": \"... the specific 'unusual, lacked theatrical release' detail could not be verified because both direct fetches of the Hollywood Reporter URL failed (403 then 402 paywall) and search snippets did not reproduce that specific line.\"",
+      "verdict": "PARTIALLY SUPPORTED",
+      "notes": "Most of the 16 were corroborated by search, but at least 2 (003-11, 005-11) explicitly were not."
+    },
+    {
+      "id": 21,
+      "claim": "Body: \"A reader who followed a citation to the end would have failed to reach the source 16 times\"",
+      "source": "Rounding Errors repository, reports/009-nigeria; CLAUDE.md link-check note",
+      "passage": "\"notes\": \"Confirmed unchanged from the prior audit: africacheck.org returns 403 to automated fetchers with no Wayback fallback in the sources list, while AfDB does have one. Treated as advisory, not blocking, since the URL is live and presumed accessible to human readers\"",
+      "verdict": "NOT SUPPORTED",
+      "notes": "Most of the 16 failures were 403 bot walls hit by an automated fetcher, and the reports themselves presume human readers can reach those pages; 1 of the 16 had no URL at all."
+    },
+    {
+      "id": 22,
+      "claim": "Body: \"2 exhibits have been corrected since publishing.\"",
+      "source": "Rounding Errors repository, src/data/corrections.ts; commit f0c49f4",
+      "passage": "exhibit: '010', dateCorrected: new Date('2026-10-10') ... exhibit: '010', dateCorrected: new Date('2026-10-05') ... exhibit: '011', dateCorrected: new Date('2026-10-04') ... exhibit: '003', dateCorrected: new Date('2026-08-03') ... exhibit: '006', dateCorrected: new Date('2026-07-25')",
+      "verdict": "NOT SUPPORTED",
+      "notes": "As written, this is a standing claim, and the log now lists 4 corrected exhibits (003, 006, 010, 011); even limited to 001 to 009, 007 was published 2026-08-01 and its attribution was fixed in f0c49f4 on 2026-08-03, which this body itself reports ('Both have been fixed'), so the count is at least 3."
+    },
+    {
+      "id": 23,
+      "claim": "Body: \"Exhibit 006 attributed a finding to a 2003 GAO report that does not contain it. The claim traced to an uncited sentence on Wikipedia, which the exhibit's own source list had already routed it through, and the fact-checker caught it on a hostile read.\"",
+      "source": "Rounding Errors repository, src/data/corrections.ts",
+      "passage": "\"GAO-03-172R (2003) contains no such finding ... The claim traced only to an uncited sentence on Wikipedia, which the exhibit's own sources list had already silently routed it through.\" ... \"The fact-checker subagent, criterion 6 (hostile read: would a bad-faith reader screenshot this out of context?).\"",
+      "verdict": "SUPPORTED",
+      "notes": "Matches the 006 log entry."
+    },
+    {
+      "id": 24,
+      "claim": "Body: \"Exhibit 003 placed 2 provincial admissions 'within weeks' of Liaoning's, when its own source dated them about a year later.\"",
+      "source": "Rounding Errors repository, src/data/corrections.ts",
+      "passage": "\"The exhibit's own SinoInsider source, published January 2018, dates the Inner Mongolia disclosure to 7 January 2018. Liaoning's admission was January 2017. The gap was about a year, not weeks.\"",
+      "verdict": "SUPPORTED",
+      "notes": "Matches the 003 log entry."
+    },
+    {
+      "id": 25,
+      "claim": "Source 4 and body: commit f0c49f4, \"Fix fact-checker findings across exhibits 001, 003, 004, 007\", made after the archived reports, on 2026-08-03",
+      "source": "Rounding Errors repository, commit f0c49f4",
+      "passage": "\"23984b4efd6a519866541f550e88a0a155e5c19f f0c49f4a6709e1ccc553b81d683f2408cb77e434 betan90 <betan90@gmail.com> 1785734506 +0800\tcommit: Fix fact-checker findings across exhibits 001, 003, 004, 007\"",
+      "verdict": "SUPPORTED",
+      "notes": "Epoch 1785734506 is 2026-08-03 05:21 UTC, after the 2026-08-01 reports for 001 to 007; read from .git/logs/HEAD because git show was not available to this checker."
+    },
+    {
+      "id": 26,
+      "claim": "Body and disclosure: \"So 43 counts first-draft claims, not the text on the site today.\"",
+      "source": "Rounding Errors repository, commit f0c49f4 and git reflog",
+      "passage": "\"commit: Add exhibit 006: DARE, effect size 0.023 against $750M/year\" [1784955227, 2026-07-25] ... \"checkedAt\": \"2026-08-01T00:00:00Z\"",
+      "verdict": "PARTIALLY SUPPORTED",
+      "notes": "Correct that the reports predate later fixes, but for 001 to 006 the 2026-08-01 reports checked text that was already published, so those claims were not first drafts."
+    },
+    {
+      "id": 27,
+      "claim": "Source 3: when published on 2026-10-04 the corrections log held 1 entry (006); 003 had no entry until 2026-10-05",
+      "source": "Rounding Errors repository, src/data/corrections.ts (git history)",
+      "passage": "\"commit: Add exhibit 010: the museum's own fact-check record...\" [1791104854] ... \"commit: Fact-check exhibit 011, fix 3 findings, log the correction\" [1791108276] ... \"commit: Log the 003 and 010 corrections, fix About-page overstatements\" [1791184548]",
+      "verdict": "PARTIALLY SUPPORTED",
+      "notes": "Commit order is consistent: 010 on 2026-10-04, 011's entry logged later that day, and the 003 entry added 2026-10-05. The file content at a998be4 could not be shown without git, so the 1-entry state is inferred, not read."
+    },
+    {
+      "id": 28,
+      "claim": "correctionNote: \"This exhibit was corrected on 2026-10-05 and again on 2026-10-10.\"",
+      "source": "Rounding Errors repository, src/data/corrections.ts",
+      "passage": "exhibit: '010', dateCorrected: new Date('2026-10-10') ... exhibit: '010', dateCorrected: new Date('2026-10-05')",
+      "verdict": "SUPPORTED",
+      "notes": "Both 010 entries exist with those dates."
+    },
+    {
+      "id": 29,
+      "claim": "Source 5: 002 fraud finding \"no longer disputed by Argentina's own later government\"",
+      "source": "Rounding Errors repository, src/content/exhibits/002-argentina.md",
+      "passage": "value: \"disputed by no one at this point, including Argentina's own later government.\"",
+      "verdict": "SUPPORTED",
+      "notes": "Paraphrases the 002 verdict row faithfully."
+    },
+    {
+      "id": 30,
+      "claim": "Chart DATA rows: 001 [11,1,8], 002 [9,2,1], 003 [8,4,2], 004 [7,3,0], 005 [10,1,0], 006 [12,2,0], 007 [7,5,1], 008 [14,2,0], 009 [6,9,2]",
+      "source": "Rounding Errors repository, reports/001-ireland through reports/009-nigeria",
+      "passage": "Per-file verdict tallies from the \"verdict\" fields of each fact-check-output.json",
+      "verdict": "SUPPORTED",
+      "notes": "Each row matches the hand tally of its file, totals 84/29/14."
+    },
+    {
+      "id": 31,
+      "claim": "Chart aria-label and caption: \"Exhibits 004, 005, 006 and 008 have no unsupported claims\"; \"Exhibits 001 to 007 were checked on 2026-08-01, exhibits 008 and 009 on 2026-08-12\"",
+      "source": "Rounding Errors repository, reports/001-ireland through reports/009-nigeria",
+      "passage": "\"checkedAt\": \"2026-08-01T00:00:00Z\" (001 to 007); \"checkedAt\": \"2026-08-12...\" (008, 009); no \"NOT SUPPORTED\" entries in 004, 005, 006, 008",
+      "verdict": "SUPPORTED",
+      "notes": "Both statements match the files."
+    },
+    {
+      "id": 32,
+      "claim": "status: \"open; the audit reruns with every exhibit\"",
+      "source": "none listed",
+      "passage": "",
+      "verdict": "NOT SUPPORTED",
+      "notes": "No listed source supports a per-exhibit rerun; 010 still counts 9 exhibits although 019 has shipped, and CLAUDE.md schedules the repo audit every 4 sessions, not with every exhibit."
+    }
+  ]
+}

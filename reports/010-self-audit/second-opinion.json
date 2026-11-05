@@ -1,0 +1,235 @@
+{
+  "exhibit": "010",
+  "reviewedAt": "2026-11-05T14:40:18.331Z",
+  "model": "deepseek-chat",
+  "servedBy": [
+    "deepseek-flash"
+  ],
+  "sourceCharacters": 0,
+  "claims": [
+    {
+      "id": 1,
+      "mode": "passage",
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage discusses a claim about promotion by a former Surgeon General and contains no information about exhibits, figures, or any count of wrong figures.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 2,
+      "mode": "passage",
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage shows a ledger entry with an exhibit ID, timestamp, and a claims list, but never states that 127 claims were checked.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 3,
+      "mode": "passage",
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage states the citation is to Wikipedia and constitutes a blocking sourcing violation, which contradicts the claim that it is fully supported by the exhibit's own cited sources.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 4,
+      "mode": "passage",
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage reports counts of \"PARTIALLY SUPPORTED\" and \"NOT SUPPORTED\" verdicts but says nothing about a ledger or the figure 43, so it does not support the claim.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 5,
+      "mode": "passage",
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage discusses a source lacking a URL and the absence of documentation for a 1990s Surgeon General \"10,000 steps\" promotion, but says nothing about a \"Ledger\" or being \"wrong on the facts 3,\" so it does not support the claim.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 6,
+      "mode": "passage",
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage discusses timing corrections for Inner Mongolia's admission relative to Liaoning's, but says nothing about \"3 were 2 dates in exhibit 003.\"",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 7,
+      "mode": "passage",
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage discusses a source lacking a URL and a Surgeon General promotion, and never mentions \"ledgerNote,\" \"007,\" or any attribution being fixed.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 8,
+      "mode": "passage",
+      "verdict": "PARTIALLY SUPPORTED",
+      "reasoning": "The passage confirms the specific failure modes (503, 403/paywall, corrupted file, no URL) but never states that 16 claims were marked partially supported, so the count is unsupported.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 9,
+      "mode": "passage",
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage only notes that two specific claims lack sources in the exhibit's list; it does not state that 8 claims were true, independently verifiable, and cited to nothing.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 10,
+      "mode": "passage",
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states the exact URL returns HTTP 404 and that the published citation link is broken, which directly supports the claim that a published source URL returned 404.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 11,
+      "mode": "passage",
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage confirms that specific claims in the exhibit lack citations in its own sources list, supporting the claim that figures failed to trace to a listed source.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 12,
+      "mode": "passage",
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage discusses a different figure (2,516 vs 2,498) and source verification, with no mention of 127 cleared, first-pass counts, or errors in dates/attributions.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 13,
+      "mode": "passage",
+      "verdict": "PARTIALLY SUPPORTED",
+      "reasoning": "The passage confirms Argentina's censure and Liaoning's party disciplinary ruling as two recorded cases, but it does not mention a \"scoreboard,\" \"fraud,\" or the \"other 7 cases\" framing in the claim.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 14,
+      "mode": "passage",
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage only shows a single DeepSeek review entry for claim id 1 and does not establish that all 127 claims were reviewed twice.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 15,
+      "mode": "passage",
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage gives 2026-08-01 for exhibits 001–007 and 2026-08-12 (with a time component) for 008 and 009, matching the claim's dates.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 16,
+      "mode": "passage",
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage only shows commit messages about an initial exhibit and adding a second-opinion reviewer, with no mention of every exhibit being checked, fact-checker passes against cited sources, or archived verdict sets under reports/.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 17,
+      "mode": "passage",
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage states the Inner Mongolia admission was made in January 2018, not within weeks of the January 2017 Liaoning confession, contradicting the claim that two provincial admissions followed within weeks.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 18,
+      "mode": "passage",
+      "verdict": "PARTIALLY SUPPORTED",
+      "reasoning": "The passage confirms the 2015 Surgeon General walking initiative but does not mention Exhibit 007 or any credit to a 1990s Surgeon General for the 10,000-step figure.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 19,
+      "mode": "passage",
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage contains no statement that Exhibit 001 held 7 of anything, only unrelated verdict and source text.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 20,
+      "mode": "passage",
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage describes failed verification and only general thematic corroboration, not confirmation of 16 items by search corroboration.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 21,
+      "mode": "passage",
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage discusses a 403 error and Wayback fallback for a single source, but says nothing about a reader failing to reach sources 16 times.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 22,
+      "mode": "passage",
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage lists five exhibits with correction dates, not two, and does not state that any specific number of exhibits have been corrected since publishing.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 23,
+      "mode": "passage",
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage confirms the exhibit attributed an absent finding to a 2003 GAO report, traced it to an uncited Wikipedia sentence already in the exhibit's source list, and that the fact-checker caught it under a hostile-read criterion.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 24,
+      "mode": "passage",
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states the exhibit's source dates the Inner Mongolia disclosure to January 2018 while Liaoning's was January 2017, a gap of about a year, directly confirming the claim.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 25,
+      "mode": "passage",
+      "verdict": "PARTIALLY SUPPORTED",
+      "reasoning": "The passage confirms commit f0c49f4 with the stated message, but it does not establish that it was made after the archived reports or give the date 2026-08-03.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 26,
+      "mode": "passage",
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage only mentions a commit adding an exhibit and a checkedAt timestamp, with no reference to 43 counts, first-draft claims, or the text on the site today.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 27,
+      "mode": "passage",
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage lists commits with timestamps but never states what the corrections log contained on 2026-10-04, nor that 003 had no entry until 2026-10-05.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 28,
+      "mode": "passage",
+      "verdict": "PARTIALLY SUPPORTED",
+      "reasoning": "The passage shows two correction dates for exhibit '010' (2026-10-05 and 2026-10-10), but it does not contain the correctionNote text or state that the exhibit was corrected on those dates.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 29,
+      "mode": "passage",
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage states the finding is disputed by no one, including Argentina's later government, which matches the claim that it is no longer disputed by that government.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 30,
+      "mode": "passage",
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "The passage only describes per-file verdict tallies generally and provides no data rows or numeric values matching the claim.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 31,
+      "mode": "passage",
+      "verdict": "SUPPORTED",
+      "reasoning": "The passage confirms exhibits 001–007 were checked on 2026-08-01 and 008–009 on 2026-08-12, and states there are no \"NOT SUPPORTED\" entries in 004, 005, 006, and 008.",
+      "servedBy": "deepseek-flash"
+    },
+    {
+      "id": 32,
+      "mode": "passage",
+      "verdict": "NOT SUPPORTED",
+      "reasoning": "No passage was provided, so there is no text to support the claim about the status.",
+      "servedBy": "deepseek-flash"
+    }
+  ]
+}
