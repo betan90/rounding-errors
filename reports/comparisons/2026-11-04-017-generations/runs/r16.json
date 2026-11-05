@@ -1,0 +1,102 @@
+{
+  "duration_api_ms": 59374,
+  "stop_reason": "end_turn",
+  "session_id": "8d627320-a068-4b30-b38d-58af19bc7fa4",
+  "total_cost_usd": 0.2275972,
+  "usage": {
+    "input_tokens": 6,
+    "cache_creation_input_tokens": 33107,
+    "cache_read_input_tokens": 30972,
+    "output_tokens": 9206,
+    "output_tokens_details": {
+      "thinking_tokens": 4321
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 33107,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 1024,
+        "cache_read_input_tokens": 25202,
+        "cache_creation_input_tokens": 7905,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 7905
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "modelUsage": {
+    "claude-sonnet-5-5": {
+      "inputTokens": 6,
+      "outputTokens": 9206,
+      "cacheReadInputTokens": 30972,
+      "cacheCreationInputTokens": 33107,
+      "webSearchRequests": 0,
+      "costUSD": 0.2275972,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 4321,
+      "cacheCreationEphemeral5mInputTokens": 0,
+      "cacheCreationEphemeral1hInputTokens": 33107,
+      "canonicalModel": "claude-sonnet-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "safety_stops": 0,
+  "is_error": false,
+  "num_turns": 6,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "I wrote the draft, but I couldn't run `check-house-rules.mjs`. I have no shell tool in this session. Please run the script before it goes to the site-builder.\n\n- **Path:** `C:\\Users\\betan\\AppData\\Local\\Temp\\rounding-errors-bench\\2026-11-04-017-generations\\drafts\\r16\\exhibit-017-illegal-gdp.md`\n- **Word count:** about 440 by my hand count, against the 500 limit. Please confirm with the script.\n- **Title:** \"Up to £10 billion of GDP, assumptions as published\"\n\n**Judgment calls**\n1. **Category:** I used \"the assumptions were the data\". It names the gap's structure and carries no verdict. It must be added to the CLAUDE.md category list and the script's vocabulary at build time.\n2. **FOI date:** the brief says the FOI page's date (6 Nov 2015) is unconfirmed, so I left it out of the body and the source entry. Please confirm it before adding it.\n3. **Cuts:**\n   - The currency of the euro-based clothes and condom costs is unconfirmed, so I dropped them.\n   - I didn't say which of 20, 25 or 30 clients a week was used.\n   - I didn't quote Patterson's \"some 4%\" sentence because of the en dash; the body quotes only his £10 billion sentence.\n   - Everything in the CUT section is out.\n4. **Attribution and the 2010 gap:**\n   - Nobody lied. Abramsky and Drew appear only as the article's authors, and Patterson's quotes are reported as his blog.\n   - The text says ESA95 placed the rule in the production boundary and ONS found no change in ESA10.\n   - The 2010 figures (£5.6bn from the FOI response, £4,370m from series MNC8) are presented as 2 published figures. The 0.78 and 0.77 ratios are labelled as this site's arithmetic in the body and the disclosure.\n   - I gave no cause for the 2020 fall.\n5. **Schema:**\n   - Exactly 1 ledger row has `gap: true`: the 2010 FOI figure against the MNC8 figure.\n   - The verdict has the 3 required rows.\n   - There is no `chartNote`, and the `ledgerNote` says the series is modelled, not observed.\n   - The ONS article is cited as a mirror (UN SIAP), and its original URL is noted as dead.\n   - Wikipedia is never cited as a source. The footnote address appears only as ONS's own footnote 12.\n\nI didn't touch `src/content/`.",
+  "ttft_ms": 2023,
+  "type": "result",
+  "duration_ms": 60100,
+  "uuid": "9500143a-fa25-409d-99a7-4ac1c530d26a",
+  "ttft_stream_ms": 1629,
+  "time_to_request_ms": 604,
+  "first_content_frame_ms": 1630,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "credential_expires_at": "2026-12-02T23:39:25.830Z"
+}

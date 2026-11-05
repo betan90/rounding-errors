@@ -1,0 +1,102 @@
+{
+  "duration_api_ms": 253766,
+  "stop_reason": "end_turn",
+  "session_id": "5070b6bd-827a-4cb9-a47a-48b015c0eeea",
+  "total_cost_usd": 1.2363325,
+  "usage": {
+    "input_tokens": 18,
+    "cache_creation_input_tokens": 49440,
+    "cache_read_input_tokens": 270135,
+    "output_tokens": 24271,
+    "output_tokens_details": {
+      "thinking_tokens": 10019
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 49440,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 1248,
+        "cache_read_input_tokens": 47601,
+        "cache_creation_input_tokens": 5348,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 5348
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "modelUsage": {
+    "claude-opus-5": {
+      "inputTokens": 18,
+      "outputTokens": 24271,
+      "cacheReadInputTokens": 270135,
+      "cacheCreationInputTokens": 49440,
+      "webSearchRequests": 0,
+      "costUSD": 1.2363325,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 64000,
+      "thinkingTokens": 10019,
+      "cacheCreationEphemeral5mInputTokens": 0,
+      "cacheCreationEphemeral1hInputTokens": 49440,
+      "canonicalModel": "claude-opus-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "safety_stops": 0,
+  "is_error": false,
+  "num_turns": 12,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "Done.\n\n**Path:** `C:\\Users\\betan\\AppData\\Local\\Temp\\rounding-errors-bench\\2026-11-04-017-generations\\drafts\\r12\\exhibit-017-illegal-gdp.md`\n**Title:** \"58,000 prostitutes, 0 time series\"\n**Body word count:** 494 by hand count (headings excluded, matching `bodyWordCount`'s rule). First draft came in near 510, so I cut the full 2012-audit quote down to its operative clause, 1 of the 4 drugs assumptions, and a few connective words.\n\n**Checker:** I could not run `scripts/check-house-rules.mjs`. The Bash tool is disabled in this session and no shell/PowerShell tool was available, so there was no way to execute node. I verified its rules by reading the script: 3 verdict rows keyed Fraud detected / Rules broken / Usefulness of the headline figure; exactly 1 `gap: true` row (the 2 published 2010 figures); `exhibit: \"017\"` matching the file name; disclosure contains Claude, errors, checked; no `chartNote` (chart is wired separately); no em dashes anywhere (the only dash is the hyphen inside the verbatim ESA95 quote); all 4 tags in the live `TAGS` set. The one rule that would have fired is the chart rule, which is a warning in hook mode and is scoped to `src/content` files anyway. Please re-run it once a shell is available.\n\nFive lines on the choices:\n1. **Category:** used the brief's new line \"the assumptions were the data\". It describes the gap's shape (the published assumptions are the series), carries no moral verdict, and does not duplicate 008's \"the baseline did the work\"; it will need adding to CLAUDE.md's category list at build time.\n2. **Tags / country:** `gdp`, `national-accounts`, `measurement-definitions`, `europe`; country United Kingdom as its own field, never a tag.\n3. **Chart:** no `chartNote`, since MNC8 1985 to 2024 is wired separately. The modelled-not-observed caveat lives in `verdictNote`, which also states the 2019, 2020, 2022 and 2024 values with no cause offered for the 2020 fall.\n4. **The gap row:** £5.6bn (FOI) against £4,370m (MNC8) for the same year, presented as 2 ONS publications; the 0.78 vs 0.77 arithmetic is in `ledgerNote` and explicitly labelled as this site's, with a line saying ONS does not attribute the difference to the holiday factor.\n5. **Excluded:** everything in the CUT section (the 2009 split, 60,879, £67.16, \"25 clients\", Italy, the Ig Nobel, Eurostat's reservation, Ireland), the euro-denominated intermediate-consumption figures (currency basis unconfirmed), and any claim that ESA 2010 introduced the rule; the Wikipedia footnote is reported as ONS's own source and ONS is the cited source, with the 2014 article carried as a labelled mirror.",
+  "ttft_ms": 2757,
+  "type": "result",
+  "duration_ms": 254505,
+  "uuid": "6ecf605f-0797-4f57-8c63-3015f1ee57de",
+  "ttft_stream_ms": 1646,
+  "time_to_request_ms": 388,
+  "first_content_frame_ms": 1647,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "credential_expires_at": "2026-12-02T23:39:25.830Z"
+}

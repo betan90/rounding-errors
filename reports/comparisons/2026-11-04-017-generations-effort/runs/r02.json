@@ -1,0 +1,102 @@
+{
+  "duration_api_ms": 156413,
+  "stop_reason": "end_turn",
+  "session_id": "53224670-75b5-4e42-8d48-d65a2c09f04b",
+  "total_cost_usd": 0.4360317,
+  "usage": {
+    "input_tokens": 8,
+    "cache_creation_input_tokens": 45126,
+    "cache_read_input_tokens": 61117,
+    "output_tokens": 24940,
+    "output_tokens_details": {
+      "thinking_tokens": 19207
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 45126,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 1362,
+        "cache_read_input_tokens": 26547,
+        "cache_creation_input_tokens": 22088,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 22088
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "modelUsage": {
+    "claude-sonnet-5-5": {
+      "inputTokens": 8,
+      "outputTokens": 24940,
+      "cacheReadInputTokens": 61117,
+      "cacheCreationInputTokens": 45126,
+      "webSearchRequests": 0,
+      "costUSD": 0.4360317,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 19207,
+      "cacheCreationEphemeral5mInputTokens": 0,
+      "cacheCreationEphemeral1hInputTokens": 45126,
+      "canonicalModel": "claude-sonnet-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "safety_stops": 0,
+  "is_error": false,
+  "num_turns": 8,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "I wrote the draft, but I couldn't run `check-house-rules.mjs`. This session has no shell tool, only read, write and search. Nothing has been machine-checked. Please run `node scripts\\check-house-rules.mjs drafts\\r02\\exhibit-017-illegal-gdp.md` before relying on the draft. The chart rule should warn, as you expected.\n\n**Path:** `C:\\Users\\betan\\AppData\\Local\\Temp\\rounding-errors-bench\\2026-11-04-017-generations-effort\\drafts\\r02\\exhibit-017-illegal-gdp.md`\n\n**Word count:** about 465 by hand, headings included, against the 500 limit. This is not a script count.\n\n**Title:** \"This is an arbitrary assumption.\" Up to £10 billion of GDP\n\n**What I checked by reading:**\n- The frontmatter keys follow 015 and 016.\n- There is no `chartNote`.\n- There is exactly 1 ledger row with `gap: true`.\n- There are 3 verdict rows.\n- I found no em dashes.\n\n**Judgment calls**\n1. **Category.** I used \"the assumptions were the data\". It describes the gap's structure, not a verdict. It isn't in CLAUDE.md's category list yet, so it needs adding at build time. The script keeps its own copy of the tag list, and the category line isn't a tag, so I expect no tag warning.\n2. **The gap row.** The row is 2010 prostitution: £5.6bn (FOI) against £4,370m (MNC8 today). They are 2 published figures. The 0.78 and 0.77 ratios appear in the body, labelled \"this site's arithmetic\". The ledger note and sources also label the 31% fall as this site's arithmetic, and the disclosure labels all 3 calculations. No cause is given for the 2020 fall.\n3. **Cuts beyond your CUT list, for length.**\n   - The 2012 audit sentence.\n   - The \"probably false\" purity quote.\n   - Patterson's £50bn and 4% figures.\n   - The self-employment assumption.\n   - The clothes and condom figures, because the currency was unclear.\n   - The ONS \"retailer selling diluted alcohol\" analogy.\n   - Patterson's \"legally mandated through ESA 2010\" line, to avoid implying ESA 2010 introduced the rule.\n\n   Patterson's comparability line is in the verdict row and sources, not the body.\n4. **Which clients-per-week value was used.** The brief doesn't say, so the draft gives the 3 values tried (20, 25 and 30) and flags in the sources that the chosen one isn't stated.\n5. **The Wikipedia footnote.** The draft reports that ONS's footnote 12 points to a Wikipedia address. Wikipedia is not listed as a source.\n6. **Mirror.** The UN SIAP mirror is named as a mirror in both the sources and the disclosure.\n7. **ONS rating counts.** The \"probably false\" 3 times and \"arbitrary\" 2 times counts come from the brief's grep. The sources entry labels them as this site's text count.\n\n**For you to confirm**\n- **FOI date.** The brief says the FOI response is dated 6 Nov 2015 but asks for it to be confirmed on the page. I couldn't check the page, so the draft states no date for it.\n- **MNC8 method.** The line saying MNC8 varies a 2004 estimate by the male population and CPI is attributed to \"the 2014 method\". The brief doesn't verify that the post-2016 series still works that way.",
+  "ttft_ms": 1794,
+  "type": "result",
+  "duration_ms": 156906,
+  "uuid": "6f893065-a3e9-403a-a719-94f02e37ee16",
+  "ttft_stream_ms": 1571,
+  "time_to_request_ms": 269,
+  "first_content_frame_ms": 1571,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "credential_expires_at": "2026-12-02T23:39:25.830Z"
+}

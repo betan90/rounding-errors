@@ -1,0 +1,102 @@
+{
+  "duration_api_ms": 152226,
+  "stop_reason": "end_turn",
+  "session_id": "0c94eac3-6696-4100-89da-8d9f8d1ca301",
+  "total_cost_usd": 0.5459470000000001,
+  "usage": {
+    "input_tokens": 57,
+    "cache_creation_input_tokens": 29373,
+    "cache_read_input_tokens": 124814,
+    "output_tokens": 7581,
+    "output_tokens_details": {
+      "thinking_tokens": 3274
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 29373,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 8,
+        "output_tokens": 2053,
+        "cache_read_input_tokens": 26056,
+        "cache_creation_input_tokens": 3317,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 3317
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "modelUsage": {
+    "claude-opus-4-5": {
+      "inputTokens": 57,
+      "outputTokens": 7581,
+      "cacheReadInputTokens": 124814,
+      "cacheCreationInputTokens": 29373,
+      "webSearchRequests": 0,
+      "costUSD": 0.5459470000000001,
+      "contextWindow": 200000,
+      "maxOutputTokens": 32000,
+      "thinkingTokens": 3274,
+      "cacheCreationEphemeral5mInputTokens": 0,
+      "cacheCreationEphemeral1hInputTokens": 29373,
+      "canonicalModel": "claude-opus-4-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "safety_stops": 0,
+  "is_error": false,
+  "num_turns": 10,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "I don't have a shell execution tool available to run the check script directly. Let me verify the rules manually:\n\n**Manual verification of house rules:**\n\n1. **Em dashes**: None present. Only hyphens in compounds like \"off-street\", \"home-grown\".\n\n2. **Body word count**: Counting words in the three body sections (The incident, Who lied, The bit continues):\n   - The incident: ~327 words\n   - Who lied: ~67 words  \n   - The bit continues: ~70 words\n   - **Total: ~464 words** (under 500 limit) ✓\n\n3. **Verdict rows**: Exactly 3 rows (Fraud detected, Rules broken, Usefulness of the headline figure) ✓\n\n4. **Ledger gap row**: Exactly 1 row with `gap: true` (the £4,370m row) ✓\n\n5. **Exhibit number**: \"017\" matches filename `exhibit-017-illegal-gdp.md` ✓\n\n6. **Disclosure**: Contains all 3 required statements (Claude, errors mine, figures checked) ✓\n\n7. **Tags**: gdp, national-accounts, measurement-definitions, europe - all in CLAUDE.md vocabulary ✓\n\n8. **No chartNote**: Correct (exhibit has a chart) ✓\n\n9. **Chart wiring**: Will warn as expected (chart not yet wired in ExhibitLayout.astro)\n\n---\n\n**Summary of choices made:**\n\n| Element | Choice | Rationale |\n|---------|--------|-----------|\n| **Category** | \"the assumptions were the data\" (new) | Brief recommended it; describes the structural shape (modelled GDP from flagged assumptions) rather than a moral verdict. Must be added to CLAUDE.md vocabulary. |\n| **Tags** | gdp, national-accounts, measurement-definitions, europe | Per brief; all in existing vocabulary. |\n| **Chart** | Yes, no chartNote | ONS MNC8 series provides clean 1985-2024 data; site-builder will wire it separately. |\n| **Gap row** | £5.6bn vs £4,370m (both 2010) | Two published ONS figures for the same year showing the revision; arithmetic linking to holiday labelled as this site's. |\n| **Excluded** | 2020 fall cause, Italy/Ig Nobel, \"25 clients\" figure, 60,879 prostitute count | Brief marked as CUT/unverified; the 2020 fall is stated numerically without cause per instructions. |\n\n**Output file**: `C:\\Users\\betan\\AppData\\Local\\Temp\\rounding-errors-bench\\2026-11-04-017-generations-effort\\drafts\\r03\\exhibit-017-illegal-gdp.md`\n\n**Word count**: ~464 words (body)\n\n**Title**: \"A price source footnoted to Wikipedia\"",
+  "ttft_ms": 2234,
+  "type": "result",
+  "duration_ms": 152798,
+  "uuid": "674a77f2-0627-4be0-bfd2-d04ce31aa026",
+  "ttft_stream_ms": 1364,
+  "time_to_request_ms": 259,
+  "first_content_frame_ms": 1364,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "credential_expires_at": "2026-12-02T23:39:25.830Z"
+}

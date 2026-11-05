@@ -1,0 +1,102 @@
+{
+  "duration_api_ms": 1329456,
+  "stop_reason": "end_turn",
+  "session_id": "d6693f6d-08b0-42dd-a33e-09aa9ffd2b01",
+  "total_cost_usd": 3.1641109,
+  "usage": {
+    "input_tokens": 20,
+    "cache_creation_input_tokens": 240269,
+    "cache_read_input_tokens": 1366549,
+    "output_tokens": 206634,
+    "output_tokens_details": {
+      "thinking_tokens": 195707
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 240269,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 1331,
+        "cache_read_input_tokens": 235664,
+        "cache_creation_input_tokens": 4605,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 4605
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "modelUsage": {
+    "claude-sonnet-5-5": {
+      "inputTokens": 20,
+      "outputTokens": 206634,
+      "cacheReadInputTokens": 1366549,
+      "cacheCreationInputTokens": 240269,
+      "webSearchRequests": 0,
+      "costUSD": 3.1641109,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 195707,
+      "cacheCreationEphemeral5mInputTokens": 0,
+      "cacheCreationEphemeral1hInputTokens": 240269,
+      "canonicalModel": "claude-sonnet-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "safety_stops": 0,
+  "is_error": false,
+  "num_turns": 27,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "I wrote the draft, but I couldn't run `check-house-rules.mjs`: this session has no shell tool. Running it by hand on this path wouldn't prove much either. The script only applies its body-word, verdict, ledger and disclosure checks to files at the repo root or under `exhibits/`. In `drafts\\r23\\` it would only run the em-dash and number-word scans. Copy the file to the repo root and run it there for a real result.\n\nI reproduced the checks with grep instead:\n- **Dashes and number words:** no em or en dashes, and no spelled-out number words anywhere.\n- **Body length:** 476 words by the script's counting rule (headings excluded, tokens containing a letter or digit). I checked each of the 11 paragraphs with an exact token-count regex.\n- **Template rules:** the frontmatter keys are in the exemplar order, with exactly 1 `gap: true`, 3 verdict rows, no `chartNote` and no Wikipedia in any URL field. There are no stray backslashes or unbalanced quotes.\n- **Quotes and figures:** every quoted fragment and every series, FOI and arithmetic figure is a verbatim substring of the brief.\n\n**Path:** `C:\\Users\\betan\\AppData\\Local\\Temp\\rounding-errors-bench\\2026-11-04-017-generations-effort\\drafts\\r23\\exhibit-017-illegal-gdp.md`\n**Title:** \"An estimated 58,000 prostitutes, no time series data\"\n\n**Judgment calls**\n- **Category:** I used \"the assumptions were the data\". It describes the structure, not a verdict, and doesn't duplicate 008's line. It isn't in CLAUDE.md's category list yet, so the builder has to add it; I didn't touch CLAUDE.md.\n- **Tags and chart:** your 4 tags, and no `chartNote`. The builder's MNC8 caption needs to say the series is modelled, not observed. The body gives the 2019, 2020 and 2022 values with the 31% fall and no cause. The MNC8 source entry and the disclosure both say no ONS explanation was found.\n- **The gap row:** £5.6bn (FOI) vs £4,370m (MNC8) for 2010, stated as 2 published figures. The 0.78 vs 0.77 arithmetic is in `ledgerNote`, labelled as this site's, with \"ONS does not state that the 12 weeks are the whole difference.\"\n- **Attribution:**\n  - Abramsky and Drew appear only as authors.\n  - Patterson appears as \"wrote on the … blog\". The usefulness verdict row credits the comparability line to \"Patterson's blog\", not to ONS.\n  - \"ESA 2010 keeps the rule\" is the only ESA 2010 claim.\n  - The Wikipedia footnote is reported as \"its Wikipedia page\", with no URL printed, so the site doesn't link to it.\n  - The \"probably false\" (3) and \"arbitrary\" (2) counts are labelled as this site's counts.\n- **Left out:**\n  - The FOI date, which the brief marks \"confirm date on page\" and the local copies weren't available.\n  - The clothes and condoms figures, because the currency symbol was lost in extraction, so I can't quote them accurately.\n  - The \"25 clients\" value as the one ONS used.\n  - Patterson's \"legally mandated through ESA 2010\", because the brief doesn't say what it refers to, and the phrase risks implying ESA 2010 introduced the rule.\n  - The \"desk research\" parenthetical, the £18bn and £50bn figures, the diluted-alcohol analogy, and the GNI and 2012-audit background (cut for length).\n\n**Date:** I set `date: 2026-10-23` as you instructed. CLAUDE.md says the date must be the actual build day, and today's date in this session is 2026-11-05, so the builder should confirm it.\n\n**Fact-check:** the disclosure's \"every figure checked\" line only becomes true after the fact-check pass.",
+  "ttft_ms": 3288,
+  "type": "result",
+  "duration_ms": 1330586,
+  "uuid": "7c622247-d080-43a4-9411-193844bb82e3",
+  "ttft_stream_ms": 1711,
+  "time_to_request_ms": 736,
+  "first_content_frame_ms": 1711,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "credential_expires_at": "2026-12-02T23:39:30.637Z"
+}

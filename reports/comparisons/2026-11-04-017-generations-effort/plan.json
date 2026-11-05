@@ -1,0 +1,277 @@
+{
+  "name": "2026-11-04-017-generations-effort",
+  "exhibit": "017",
+  "base": "642dcbe",
+  "method": "headless",
+  "like": "2026-11-04-017-generations",
+  "copy": "C:\\Users\\betan\\AppData\\Local\\Temp\\rounding-errors-bench\\2026-11-04-017-generations-effort",
+  "original": "reports/017-illegal-gdp/drafting/2026-10-23-ab27d08abf36de5b3",
+  "draftName": "exhibit-017-illegal-gdp.md",
+  "exemplars": [
+    "C:\\Users\\betan\\AppData\\Local\\Temp\\rounding-errors-bench\\2026-11-04-017-generations-effort\\src\\content\\exhibits\\015-police-recorded-crime.md",
+    "C:\\Users\\betan\\AppData\\Local\\Temp\\rounding-errors-bench\\2026-11-04-017-generations-effort\\src\\content\\exhibits\\016-spinach.md"
+  ],
+  "created": "2026-11-04T04:51:07.865Z",
+  "cells": [
+    {
+      "run": "r01",
+      "model": "claude-sonnet-5",
+      "effort": "low",
+      "prompt": "reports/comparisons/2026-11-04-017-generations-effort/prompts/r01.md",
+      "out": "C:\\Users\\betan\\AppData\\Local\\Temp\\rounding-errors-bench\\2026-11-04-017-generations-effort\\drafts\\r01\\exhibit-017-illegal-gdp.md",
+      "draft": "reports/comparisons/2026-11-04-017-generations-effort/drafts/r01/exhibit-017-illegal-gdp.md",
+      "session": "5efb1b5e-1998-484e-802f-fececba235f4"
+    },
+    {
+      "run": "r02",
+      "model": "claude-sonnet-5-5",
+      "effort": "high",
+      "prompt": "reports/comparisons/2026-11-04-017-generations-effort/prompts/r02.md",
+      "out": "C:\\Users\\betan\\AppData\\Local\\Temp\\rounding-errors-bench\\2026-11-04-017-generations-effort\\drafts\\r02\\exhibit-017-illegal-gdp.md",
+      "draft": "reports/comparisons/2026-11-04-017-generations-effort/drafts/r02/exhibit-017-illegal-gdp.md",
+      "session": "53224670-75b5-4e42-8d48-d65a2c09f04b"
+    },
+    {
+      "run": "r03",
+      "model": "claude-opus-4-5",
+      "effort": "max",
+      "prompt": "reports/comparisons/2026-11-04-017-generations-effort/prompts/r03.md",
+      "out": "C:\\Users\\betan\\AppData\\Local\\Temp\\rounding-errors-bench\\2026-11-04-017-generations-effort\\drafts\\r03\\exhibit-017-illegal-gdp.md",
+      "draft": "reports/comparisons/2026-11-04-017-generations-effort/drafts/r03/exhibit-017-illegal-gdp.md",
+      "session": "0c94eac3-6696-4100-89da-8d9f8d1ca301"
+    },
+    {
+      "run": "r04",
+      "model": "claude-sonnet-5-5",
+      "effort": "xhigh",
+      "prompt": "reports/comparisons/2026-11-04-017-generations-effort/prompts/r04.md",
+      "out": "C:\\Users\\betan\\AppData\\Local\\Temp\\rounding-errors-bench\\2026-11-04-017-generations-effort\\drafts\\r04\\exhibit-017-illegal-gdp.md",
+      "draft": "reports/comparisons/2026-11-04-017-generations-effort/drafts/r04/exhibit-017-illegal-gdp.md",
+      "session": "d646e169-4877-4b4f-b6ee-ce84b605e3e7"
+    },
+    {
+      "run": "r05",
+      "model": "claude-opus-4-8",
+      "effort": "xhigh",
+      "prompt": "reports/comparisons/2026-11-04-017-generations-effort/prompts/r05.md",
+      "out": "C:\\Users\\betan\\AppData\\Local\\Temp\\rounding-errors-bench\\2026-11-04-017-generations-effort\\drafts\\r05\\exhibit-017-illegal-gdp.md",
+      "draft": "reports/comparisons/2026-11-04-017-generations-effort/drafts/r05/exhibit-017-illegal-gdp.md",
+      "session": "ca6faab7-ef1f-477f-add4-c1eeaaf5ac32"
+    },
+    {
+      "run": "r06",
+      "model": "claude-haiku-5-5",
+      "effort": "xhigh",
+      "prompt": "reports/comparisons/2026-11-04-017-generations-effort/prompts/r06.md",
+      "out": "C:\\Users\\betan\\AppData\\Local\\Temp\\rounding-errors-bench\\2026-11-04-017-generations-effort\\drafts\\r06\\exhibit-017-illegal-gdp.md",
+      "draft": "reports/comparisons/2026-11-04-017-generations-effort/drafts/r06/exhibit-017-illegal-gdp.md",
+      "session": "e0b26cae-db9d-4b5a-a181-122f06a04d99"
+    },
+    {
+      "run": "r07",
+      "model": "claude-haiku-5-5",
+      "effort": "low",
+      "prompt": "reports/comparisons/2026-11-04-017-generations-effort/prompts/r07.md",
+      "out": "C:\\Users\\betan\\AppData\\Local\\Temp\\rounding-errors-bench\\2026-11-04-017-generations-effort\\drafts\\r07\\exhibit-017-illegal-gdp.md",
+      "draft": "reports/comparisons/2026-11-04-017-generations-effort/drafts/r07/exhibit-017-illegal-gdp.md",
+      "session": "b19bb030-d8fc-443e-9521-337a15331879"
+    },
+    {
+      "run": "r08",
+      "model": "claude-opus-5-5",
+      "effort": "max",
+      "prompt": "reports/comparisons/2026-11-04-017-generations-effort/prompts/r08.md",
+      "out": "C:\\Users\\betan\\AppData\\Local\\Temp\\rounding-errors-bench\\2026-11-04-017-generations-effort\\drafts\\r08\\exhibit-017-illegal-gdp.md",
+      "draft": "reports/comparisons/2026-11-04-017-generations-effort/drafts/r08/exhibit-017-illegal-gdp.md",
+      "session": "493d5b06-2bfd-4157-bcaa-6095ae7a8372"
+    },
+    {
+      "run": "r09",
+      "model": "claude-haiku-5-5",
+      "effort": "high",
+      "prompt": "reports/comparisons/2026-11-04-017-generations-effort/prompts/r09.md",
+      "out": "C:\\Users\\betan\\AppData\\Local\\Temp\\rounding-errors-bench\\2026-11-04-017-generations-effort\\drafts\\r09\\exhibit-017-illegal-gdp.md",
+      "draft": "reports/comparisons/2026-11-04-017-generations-effort/drafts/r09/exhibit-017-illegal-gdp.md",
+      "session": "e0f71ed8-be3a-47d0-b244-e7e5cb22701f"
+    },
+    {
+      "run": "r10",
+      "model": "claude-sonnet-5-5",
+      "effort": "low",
+      "prompt": "reports/comparisons/2026-11-04-017-generations-effort/prompts/r10.md",
+      "out": "C:\\Users\\betan\\AppData\\Local\\Temp\\rounding-errors-bench\\2026-11-04-017-generations-effort\\drafts\\r10\\exhibit-017-illegal-gdp.md",
+      "draft": "reports/comparisons/2026-11-04-017-generations-effort/drafts/r10/exhibit-017-illegal-gdp.md",
+      "session": "12334976-ab50-45ad-828d-57530ac8741e"
+    },
+    {
+      "run": "r11",
+      "model": "claude-opus-5",
+      "effort": "high",
+      "prompt": "reports/comparisons/2026-11-04-017-generations-effort/prompts/r11.md",
+      "out": "C:\\Users\\betan\\AppData\\Local\\Temp\\rounding-errors-bench\\2026-11-04-017-generations-effort\\drafts\\r11\\exhibit-017-illegal-gdp.md",
+      "draft": "reports/comparisons/2026-11-04-017-generations-effort/drafts/r11/exhibit-017-illegal-gdp.md",
+      "session": "6a6a2e95-caaa-4ed7-94ec-b0fd6b975b49"
+    },
+    {
+      "run": "r12",
+      "model": "claude-opus-5-5",
+      "effort": "xhigh",
+      "prompt": "reports/comparisons/2026-11-04-017-generations-effort/prompts/r12.md",
+      "out": "C:\\Users\\betan\\AppData\\Local\\Temp\\rounding-errors-bench\\2026-11-04-017-generations-effort\\drafts\\r12\\exhibit-017-illegal-gdp.md",
+      "draft": "reports/comparisons/2026-11-04-017-generations-effort/drafts/r12/exhibit-017-illegal-gdp.md",
+      "session": "32568582-cb52-4c0b-806e-efcd1eb6fa94"
+    },
+    {
+      "run": "r13",
+      "model": "claude-opus-4-5",
+      "effort": "low",
+      "prompt": "reports/comparisons/2026-11-04-017-generations-effort/prompts/r13.md",
+      "out": "C:\\Users\\betan\\AppData\\Local\\Temp\\rounding-errors-bench\\2026-11-04-017-generations-effort\\drafts\\r13\\exhibit-017-illegal-gdp.md",
+      "draft": "reports/comparisons/2026-11-04-017-generations-effort/drafts/r13/exhibit-017-illegal-gdp.md",
+      "session": "cf2cdd3f-4433-4213-b0e7-4d534eb864df"
+    },
+    {
+      "run": "r14",
+      "model": "claude-opus-4-5",
+      "effort": "high",
+      "prompt": "reports/comparisons/2026-11-04-017-generations-effort/prompts/r14.md",
+      "out": "C:\\Users\\betan\\AppData\\Local\\Temp\\rounding-errors-bench\\2026-11-04-017-generations-effort\\drafts\\r14\\exhibit-017-illegal-gdp.md",
+      "draft": "reports/comparisons/2026-11-04-017-generations-effort/drafts/r14/exhibit-017-illegal-gdp.md",
+      "session": "0a7e3db2-a758-403d-8de4-b888ef47d2bb"
+    },
+    {
+      "run": "r15",
+      "model": "claude-opus-5",
+      "effort": "max",
+      "prompt": "reports/comparisons/2026-11-04-017-generations-effort/prompts/r15.md",
+      "out": "C:\\Users\\betan\\AppData\\Local\\Temp\\rounding-errors-bench\\2026-11-04-017-generations-effort\\drafts\\r15\\exhibit-017-illegal-gdp.md",
+      "draft": "reports/comparisons/2026-11-04-017-generations-effort/drafts/r15/exhibit-017-illegal-gdp.md",
+      "session": "e6a3c27c-d677-4f9e-9a7e-33dd042b0a66"
+    },
+    {
+      "run": "r16",
+      "model": "claude-opus-5-5",
+      "effort": "high",
+      "prompt": "reports/comparisons/2026-11-04-017-generations-effort/prompts/r16.md",
+      "out": "C:\\Users\\betan\\AppData\\Local\\Temp\\rounding-errors-bench\\2026-11-04-017-generations-effort\\drafts\\r16\\exhibit-017-illegal-gdp.md",
+      "draft": "reports/comparisons/2026-11-04-017-generations-effort/drafts/r16/exhibit-017-illegal-gdp.md",
+      "session": "644587db-1643-474d-af4b-fc55bafda913"
+    },
+    {
+      "run": "r17",
+      "model": "claude-opus-5",
+      "effort": "low",
+      "prompt": "reports/comparisons/2026-11-04-017-generations-effort/prompts/r17.md",
+      "out": "C:\\Users\\betan\\AppData\\Local\\Temp\\rounding-errors-bench\\2026-11-04-017-generations-effort\\drafts\\r17\\exhibit-017-illegal-gdp.md",
+      "draft": "reports/comparisons/2026-11-04-017-generations-effort/drafts/r17/exhibit-017-illegal-gdp.md",
+      "session": "7abaef22-73e0-4d6b-a254-33d810282f57"
+    },
+    {
+      "run": "r18",
+      "model": "claude-opus-4-8",
+      "effort": "high",
+      "prompt": "reports/comparisons/2026-11-04-017-generations-effort/prompts/r18.md",
+      "out": "C:\\Users\\betan\\AppData\\Local\\Temp\\rounding-errors-bench\\2026-11-04-017-generations-effort\\drafts\\r18\\exhibit-017-illegal-gdp.md",
+      "draft": "reports/comparisons/2026-11-04-017-generations-effort/drafts/r18/exhibit-017-illegal-gdp.md",
+      "session": "ac3c7211-5785-4225-b58b-72332631f4cb"
+    },
+    {
+      "run": "r19",
+      "model": "claude-sonnet-5",
+      "effort": "xhigh",
+      "prompt": "reports/comparisons/2026-11-04-017-generations-effort/prompts/r19.md",
+      "out": "C:\\Users\\betan\\AppData\\Local\\Temp\\rounding-errors-bench\\2026-11-04-017-generations-effort\\drafts\\r19\\exhibit-017-illegal-gdp.md",
+      "draft": "reports/comparisons/2026-11-04-017-generations-effort/drafts/r19/exhibit-017-illegal-gdp.md",
+      "session": "fcfd1b69-8a5a-43fe-bca3-dc1af22369a4"
+    },
+    {
+      "run": "r20",
+      "model": "claude-opus-5-5",
+      "effort": "low",
+      "prompt": "reports/comparisons/2026-11-04-017-generations-effort/prompts/r20.md",
+      "out": "C:\\Users\\betan\\AppData\\Local\\Temp\\rounding-errors-bench\\2026-11-04-017-generations-effort\\drafts\\r20\\exhibit-017-illegal-gdp.md",
+      "draft": "reports/comparisons/2026-11-04-017-generations-effort/drafts/r20/exhibit-017-illegal-gdp.md",
+      "session": "ee3b9d69-8046-4a56-b2b7-7ccd9817076d"
+    },
+    {
+      "run": "r21",
+      "model": "claude-opus-4-8",
+      "effort": "max",
+      "prompt": "reports/comparisons/2026-11-04-017-generations-effort/prompts/r21.md",
+      "out": "C:\\Users\\betan\\AppData\\Local\\Temp\\rounding-errors-bench\\2026-11-04-017-generations-effort\\drafts\\r21\\exhibit-017-illegal-gdp.md",
+      "draft": "reports/comparisons/2026-11-04-017-generations-effort/drafts/r21/exhibit-017-illegal-gdp.md",
+      "session": "d3488fe9-4b24-495e-a2df-16ad6374bda9"
+    },
+    {
+      "run": "r22",
+      "model": "claude-opus-4-5",
+      "effort": "xhigh",
+      "prompt": "reports/comparisons/2026-11-04-017-generations-effort/prompts/r22.md",
+      "out": "C:\\Users\\betan\\AppData\\Local\\Temp\\rounding-errors-bench\\2026-11-04-017-generations-effort\\drafts\\r22\\exhibit-017-illegal-gdp.md",
+      "draft": "reports/comparisons/2026-11-04-017-generations-effort/drafts/r22/exhibit-017-illegal-gdp.md",
+      "session": "faa2b17f-b233-482a-9148-6574242c23fe"
+    },
+    {
+      "run": "r23",
+      "model": "claude-sonnet-5-5",
+      "effort": "max",
+      "prompt": "reports/comparisons/2026-11-04-017-generations-effort/prompts/r23.md",
+      "out": "C:\\Users\\betan\\AppData\\Local\\Temp\\rounding-errors-bench\\2026-11-04-017-generations-effort\\drafts\\r23\\exhibit-017-illegal-gdp.md",
+      "draft": "reports/comparisons/2026-11-04-017-generations-effort/drafts/r23/exhibit-017-illegal-gdp.md",
+      "session": "d6693f6d-08b0-42dd-a33e-09aa9ffd2b01"
+    },
+    {
+      "run": "r24",
+      "model": "claude-haiku-5-5",
+      "effort": "max",
+      "prompt": "reports/comparisons/2026-11-04-017-generations-effort/prompts/r24.md",
+      "out": "C:\\Users\\betan\\AppData\\Local\\Temp\\rounding-errors-bench\\2026-11-04-017-generations-effort\\drafts\\r24\\exhibit-017-illegal-gdp.md",
+      "draft": "reports/comparisons/2026-11-04-017-generations-effort/drafts/r24/exhibit-017-illegal-gdp.md",
+      "session": "9eb5cc83-eb5d-49d6-afa3-28f8be0d01b3"
+    },
+    {
+      "run": "r25",
+      "model": "claude-opus-5",
+      "effort": "xhigh",
+      "prompt": "reports/comparisons/2026-11-04-017-generations-effort/prompts/r25.md",
+      "out": "C:\\Users\\betan\\AppData\\Local\\Temp\\rounding-errors-bench\\2026-11-04-017-generations-effort\\drafts\\r25\\exhibit-017-illegal-gdp.md",
+      "draft": "reports/comparisons/2026-11-04-017-generations-effort/drafts/r25/exhibit-017-illegal-gdp.md",
+      "session": "bd904de6-4f2e-495b-bf9a-8cf05aeeef63"
+    },
+    {
+      "run": "r26",
+      "model": "claude-sonnet-5",
+      "effort": "high",
+      "prompt": "reports/comparisons/2026-11-04-017-generations-effort/prompts/r26.md",
+      "out": "C:\\Users\\betan\\AppData\\Local\\Temp\\rounding-errors-bench\\2026-11-04-017-generations-effort\\drafts\\r26\\exhibit-017-illegal-gdp.md",
+      "draft": "reports/comparisons/2026-11-04-017-generations-effort/drafts/r26/exhibit-017-illegal-gdp.md",
+      "session": "fbd2a3a3-f561-4487-922c-e41ee6032fc1"
+    },
+    {
+      "run": "r27",
+      "model": "claude-sonnet-5",
+      "effort": "max",
+      "prompt": "reports/comparisons/2026-11-04-017-generations-effort/prompts/r27.md",
+      "out": "C:\\Users\\betan\\AppData\\Local\\Temp\\rounding-errors-bench\\2026-11-04-017-generations-effort\\drafts\\r27\\exhibit-017-illegal-gdp.md",
+      "draft": "reports/comparisons/2026-11-04-017-generations-effort/drafts/r27/exhibit-017-illegal-gdp.md",
+      "session": "85390ecb-3a80-4e00-9c8b-0b7f861632d7"
+    },
+    {
+      "run": "r28",
+      "model": "claude-opus-4-8",
+      "effort": "low",
+      "prompt": "reports/comparisons/2026-11-04-017-generations-effort/prompts/r28.md",
+      "out": "C:\\Users\\betan\\AppData\\Local\\Temp\\rounding-errors-bench\\2026-11-04-017-generations-effort\\drafts\\r28\\exhibit-017-illegal-gdp.md",
+      "draft": "reports/comparisons/2026-11-04-017-generations-effort/drafts/r28/exhibit-017-illegal-gdp.md",
+      "session": "5e08a9d2-923a-400f-b4d3-ab9cca766c1b"
+    }
+  ],
+  "watch": [
+    {
+      "label": "States how many times \"probably false\" appears in the 2014 article (the brief says 3; the article has 4)",
+      "pattern": "probably false[^.;\n]{0,60}?((\b[2-9]\b|three|four|five)s*(times|occurrences|uses|instances)|(s*[2-9]s*))",
+      "flags": "i",
+      "note": "Widened 2026-11-05: 2 effort-grid drafts wrote the count as \"probably false\" (3) in their sources, which the 017-model-effort pattern missed."
+    }
+  ]
+}

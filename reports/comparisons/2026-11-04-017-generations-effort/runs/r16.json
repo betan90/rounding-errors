@@ -1,0 +1,102 @@
+{
+  "duration_api_ms": 230278,
+  "stop_reason": "end_turn",
+  "session_id": "644587db-1643-474d-af4b-fc55bafda913",
+  "total_cost_usd": 1.0415727999999997,
+  "usage": {
+    "input_tokens": 10,
+    "cache_creation_input_tokens": 57304,
+    "cache_read_input_tokens": 119204,
+    "output_tokens": 27963,
+    "output_tokens_details": {
+      "thinking_tokens": 21787
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 57304,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 1107,
+        "cache_read_input_tokens": 56998,
+        "cache_creation_input_tokens": 306,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 306
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "modelUsage": {
+    "claude-opus-5-5": {
+      "inputTokens": 10,
+      "outputTokens": 27963,
+      "cacheReadInputTokens": 119204,
+      "cacheCreationInputTokens": 57304,
+      "webSearchRequests": 0,
+      "costUSD": 1.0415727999999997,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 21787,
+      "cacheCreationEphemeral5mInputTokens": 0,
+      "cacheCreationEphemeral1hInputTokens": 57304,
+      "canonicalModel": "claude-opus-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "safety_stops": 0,
+  "is_error": false,
+  "num_turns": 8,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "I've written the draft, but I couldn't run `check-house-rules.mjs`: there's no shell in this session. Running it on this path would also have checked less than you'd expect. The script only checks word count and frontmatter for files in `src/content/exhibits/` or a repo-root `exhibit-NNN-slug.md`. For `drafts/r16/` it only looks for em dashes and spelled-out numbers.\n\nI checked by hand instead:\n- **Dashes and numbers:** a search found no em dashes, no en dashes and no spelled-out numbers.\n- **Word count:** about 489, counted by hand. The limit is 500, so a scripted count could land a few words either way.\n- **Rows:** the ledger has exactly 1 row with `gap: true`, and the verdict has exactly 3 rows with the right keys.\n- **Other fields:** there's no `chartNote`, and the disclosure has all 3 required statements.\n\nPlease run the script once the file is at the repo root.\n\n**Path:** `C:\\Users\\betan\\AppData\\Local\\Temp\\rounding-errors-bench\\2026-11-04-017-generations-effort\\drafts\\r16\\exhibit-017-illegal-gdp.md`\n\n**Title:** \"Probably false, legally mandated\". \"Probably false\" is ONS grading its own drugs assumptions; \"legally mandated\" is from Patterson's blog.\n\n**Judgment calls:**\n1. **Category:** I used \"the assumptions were the data\". It describes the shape of the gap, not a verdict, so it passes the vocabulary rule. It still needs adding to the category list in CLAUDE.md at build time. Tags are gdp, national-accounts, measurement-definitions, europe; country is United Kingdom.\n2. **Chart:** there's no `chartNote`; the site-builder builds the MNC8 component. Its caption must say the series is modelled, not observed. The `ledgerNote` already says this: the series starts in 1985, 29 years before ONS's first estimate, and the method scales 2004 figures by the male population and the CPI.\n3. **Gap row and the 2020 fall:** the gap row is the 2 published 2010 figures, £5.6bn from the FOI reply and £4,370m from MNC8 today. The link to the 12-week holiday is labelled as this site's arithmetic (78% against 77%), next to the line \"ONS does not state that the holiday is the difference.\" The 2019, 2020 and 2024 figures appear with no cause given.\n4. **Left out:** the condom spending figures (the currency is uncertain), R&D's £18bn and the £50bn total (no space), and the alcohol-dilution analogy (no space). I didn't date the FOI reply, because the brief says the date isn't confirmed. Nothing from the CUT section is used. ESA 2010 appears only through ONS's \"no changes in this area\" footnote and Patterson's quote, so the draft never says ESA 2010 introduced the rule.\n5. **Date:** I used 2026-10-23 as you asked. Today is 2026-11-04, though, and CLAUDE.md says `date` must be the actual build day. It also ties with 016's date; ties sort by exhibit number, so 017 would still list first. Set it to the real build day when this is built.",
+  "ttft_ms": 2026,
+  "type": "result",
+  "duration_ms": 230668,
+  "uuid": "47f6e8dc-365c-45f5-aa27-ea3d5b30afae",
+  "ttft_stream_ms": 1472,
+  "time_to_request_ms": 227,
+  "first_content_frame_ms": 1476,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "credential_expires_at": "2026-12-02T23:39:30.637Z"
+}

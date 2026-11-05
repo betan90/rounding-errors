@@ -1,0 +1,102 @@
+{
+  "duration_api_ms": 327571,
+  "stop_reason": "end_turn",
+  "session_id": "ddbc4c08-391c-4673-b14c-c3f8166f4280",
+  "total_cost_usd": 0.5621067,
+  "usage": {
+    "input_tokens": 81,
+    "cache_creation_input_tokens": 41150,
+    "cache_read_input_tokens": 223829,
+    "output_tokens": 16521,
+    "output_tokens_details": {
+      "thinking_tokens": 5283
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 41150,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 8,
+        "output_tokens": 816,
+        "cache_read_input_tokens": 36992,
+        "cache_creation_input_tokens": 4158,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 4158
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "modelUsage": {
+    "claude-sonnet-4-5": {
+      "inputTokens": 81,
+      "outputTokens": 16521,
+      "cacheReadInputTokens": 223829,
+      "cacheCreationInputTokens": 41150,
+      "webSearchRequests": 0,
+      "costUSD": 0.5621067,
+      "contextWindow": 200000,
+      "maxOutputTokens": 32000,
+      "thinkingTokens": 5283,
+      "cacheCreationEphemeral5mInputTokens": 0,
+      "cacheCreationEphemeral1hInputTokens": 41150,
+      "canonicalModel": "claude-sonnet-4-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "safety_stops": 0,
+  "is_error": false,
+  "num_turns": 13,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "## Summary\n\n**File written:** `C:\\Users\\betan\\AppData\\Local\\Temp\\rounding-errors-bench\\2026-11-04-017-generations\\drafts\\r14\\exhibit-017-illegal-gdp.md`\n\n**Title:** \"The assumptions were the data\"\n\n**Word count:** Approximately 500 words (manually trimmed from initial 515)\n\n**Key decisions:**\n\n1. **Category:** Used the new line \"the assumptions were the data\" as recommended. This describes the structural gap: a published GDP series built entirely from modelled assumptions that ONS itself labelled weak, arbitrary, and probably false. The absurdity is that the institution published everything and still calls it official data.\n\n2. **Tags:** gdp, national-accounts, measurement-definitions, europe (as specified)\n\n3. **Chart decision:** Has a chart (MNC8 series, 1985-2024), so NO chartNote. The chart will plot the modelled prostitution series, which the brief notes is built by varying a 2004 point estimate by male population and CPI.\n\n4. **Attribution:** Nobody lied; ONS published everything. Abramsky and Drew named only as article authors. Patterson's quotes sourced to his blog. The literal ONS quotes carry the deadpan: \"arbitrary assumption\", \"probably false\", \"very unlikely to spend money on illegal drugs\", Wikipedia as a price source, and the 12 weeks' holiday from the Netherlands.\n\n5. **What was excluded:**\n   - No cause stated for the 2020 fall (as instructed; just report the numbers)\n   - £5.6bn vs £4,370m gap presented as 2 published figures; ledgerNote labels the arithmetic as this site's\n   - Wikipedia never cited as a source (only reported that ONS's footnote points to it)\n   - All unverified items from the CUT section in the brief\n\n**Compliance checks (manual, unable to run the checker script):**\n- ✓ Exactly 1 ledger row with `gap: true` (the 2010 prostitution figure discrepancy)\n- ✓ Exactly 3 verdict rows: Fraud detected, Rules broken, Usefulness of the headline figure\n- ✓ Exhibit number \"017\" matches filename\n- ✓ No em dashes\n- ✓ Disclosure includes: AI (Claude), voice/errors are author's, figures checked, notes the mirror\n- ✓ All numbers as numerals\n- ✓ Frontmatter structure matches exhibit 015 (with chart, no chartNote)\n- ✓ Body sections: The incident, Who lied, The bit continues\n\nNote: I don't have shell access to run `node scripts/check-house-rules.mjs`, but the file should pass all checks based on manual review against the CLAUDE.md requirements.",
+  "ttft_ms": 4378,
+  "type": "result",
+  "duration_ms": 328597,
+  "uuid": "f4cb935e-b305-444e-aed7-aa7044b4e647",
+  "ttft_stream_ms": 1719,
+  "time_to_request_ms": 532,
+  "first_content_frame_ms": 1719,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "credential_expires_at": "2026-12-02T23:39:25.830Z"
+}

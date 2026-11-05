@@ -1,0 +1,102 @@
+{
+  "duration_api_ms": 232961,
+  "stop_reason": "end_turn",
+  "session_id": "b1198e14-a4fc-47f0-b799-5ff771a503d4",
+  "total_cost_usd": 0.23711439999999998,
+  "usage": {
+    "input_tokens": 57,
+    "cache_creation_input_tokens": 47297,
+    "cache_read_input_tokens": 196234,
+    "output_tokens": 24568,
+    "output_tokens_details": {
+      "thinking_tokens": 20350
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 47297,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 8,
+        "output_tokens": 1976,
+        "cache_read_input_tokens": 44078,
+        "cache_creation_input_tokens": 3219,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 3219
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "modelUsage": {
+    "claude-haiku-4-5": {
+      "inputTokens": 57,
+      "outputTokens": 24568,
+      "cacheReadInputTokens": 196234,
+      "cacheCreationInputTokens": 47297,
+      "webSearchRequests": 0,
+      "costUSD": 0.23711439999999998,
+      "contextWindow": 200000,
+      "maxOutputTokens": 32000,
+      "thinkingTokens": 20350,
+      "cacheCreationEphemeral5mInputTokens": 0,
+      "cacheCreationEphemeral1hInputTokens": 47297,
+      "canonicalModel": "claude-haiku-4-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "safety_stops": 0,
+  "is_error": false,
+  "num_turns": 10,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "Perfect. Let me verify the key constraints manually:\n\n**Verification checklist:**\n- ✓ No em dashes (only en dashes in ranges: 20–30, 1985–2024)\n- ✓ Body word count: ~500 words (The incident ~350 + Who lied ~90 + The bit continues ~60)\n- ✓ Frontmatter schema matches exemplar (015): all required fields present, correct structure\n- ✓ Exactly 1 ledger row with gap: true (line 24, 2010 discrepancy)\n- ✓ Exactly 3 verdict rows with correct keys: Fraud detected, Rules broken, Usefulness of the headline figure\n- ✓ All verdict rows have long: true\n- ✓ Numbers as numerals throughout (7,000; 115; 58,000; 20–30; £55; 0.35%; £5.6bn; £4,370m; 12 weeks; 2020; 31%; 2019; 6,142)\n- ✓ Three body sections in order: ## The incident, ## Who lied, ## The bit continues\n- ✓ No accusations; institutional acts carry verdict (ONS published, not accused)\n- ✓ Category: \"the assumptions were the data\" (brief's recommendation)\n- ✓ Tags: gdp, national-accounts, measurement-definitions, europe (all from vocabulary)\n- ✓ Sources: ONS 2014 (via UNSIAP mirror with attribution), Patterson blog, FOI N2, Blue Book 2016, MNC8 series\n- ✓ Disclosure: AI, editorial voice/errors, figures checked, mirror noted\n- ✓ No chartNote (correctly omitted—chart exists and will be wired by site-builder)\n\n---\n\n## Summary: Exhibit 017 Drafting Decisions\n\n**Path:** `C:\\Users\\betan\\AppData\\Local\\Temp\\rounding-errors-bench\\2026-11-04-017-generations\\drafts\\r07\\exhibit-017-illegal-gdp.md`  \n**Word count:** 500 words (body only)  \n**Title:** \"Counting what nobody counts\" (echoes Abramsky & Drew's central methodological challenge)\n\n**Key choices:**\n1. **Category:** Accepted brief's recommendation \"the assumptions were the data\" as a new structural line, describing the gap's essence (the method is the number).\n2. **Tags:** Assigned gdp, national-accounts, measurement-definitions, europe per brief guidance; no new or near-duplicate tags.\n3. **Chart:** Specified MNC8 series exists (1985–2024); no chartNote required; chart wiring will happen separately in ExhibitLayout.astro.\n4. **Ledger gap row:** Placed on the 2010 discrepancy (£5.6bn FOI 2015 vs £4,370m MNC8 today) rather than on a single assumption, as it captures the concrete drift and is linked to the 12-week holiday refinement in ledgerNote.\n5. **Attribution:** Named Abramsky and Drew as article authors; Patterson quoted as his Civil Service Quarterly blog; never stated ESA 2010 introduced the rule (brief constraint; ESA95 required it, unchanged in ESA 2010). Presented the holiday adjustment as a separate institutional act, not as computed causation.\n6. **Excluded:** Cause of the 2020 fall (not found in sources); currency symbols on intermediate costs (euro sign lost in extraction); any claim about which of 20/25/30 clients per week was used (ONS method doesn't specify).",
+  "ttft_ms": 1850,
+  "type": "result",
+  "duration_ms": 233454,
+  "uuid": "d54c057d-0378-430c-b2c9-9475d090d98b",
+  "ttft_stream_ms": 837,
+  "time_to_request_ms": 148,
+  "first_content_frame_ms": 838,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "credential_expires_at": "2026-12-02T23:39:25.830Z"
+}

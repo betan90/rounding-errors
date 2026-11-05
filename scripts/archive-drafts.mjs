@@ -119,7 +119,9 @@ export function versions(calls) {
       edited = false;
     } else if (c.name === 'Edit' && current !== null) {
       const { old_string: from, new_string: to, replace_all: all } = c.input;
-      if (!current.includes(from)) notApplied.push(from.slice(0, 80));
+      // A malformed Edit (no old_string) was refused by Claude Code and changed nothing.
+      if (typeof from !== 'string' || typeof to !== 'string') notApplied.push(`malformed Edit: ${JSON.stringify(c.input).slice(0, 80)}`);
+      else if (!current.includes(from)) notApplied.push(from.slice(0, 80));
       else {
         current = all ? current.split(from).join(to) : current.replace(from, () => to);
         edited = true;

@@ -1,0 +1,102 @@
+{
+  "duration_api_ms": 47455,
+  "stop_reason": "end_turn",
+  "session_id": "c977ba81-10c2-40ea-9bd3-7ee70825d77c",
+  "total_cost_usd": 0.1877623,
+  "usage": {
+    "input_tokens": 6,
+    "cache_creation_input_tokens": 27828,
+    "cache_read_input_tokens": 34483,
+    "output_tokens": 7299,
+    "output_tokens_details": {
+      "thinking_tokens": 2548
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 27828,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 984,
+        "cache_read_input_tokens": 25204,
+        "cache_creation_input_tokens": 6133,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 6133
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "modelUsage": {
+    "claude-sonnet-5-5": {
+      "inputTokens": 6,
+      "outputTokens": 7299,
+      "cacheReadInputTokens": 34483,
+      "cacheCreationInputTokens": 27828,
+      "webSearchRequests": 0,
+      "costUSD": 0.1877623,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 2548,
+      "cacheCreationEphemeral5mInputTokens": 0,
+      "cacheCreationEphemeral1hInputTokens": 27828,
+      "canonicalModel": "claude-sonnet-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "safety_stops": 0,
+  "is_error": false,
+  "num_turns": 7,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "I wrote the draft, but I couldn't run `check-house-rules.mjs`. Bash and PowerShell aren't available in this session. I did no tool-based word count either.\n\nI estimate the body at about 420 words by hand, against the 500 limit. Please run the checker yourself. Expect the chart-rule warning, since the chart isn't wired yet.\n\n**Path:** `C:\\Users\\betan\\AppData\\Local\\Temp\\rounding-errors-bench\\2026-11-04-017-generations\\drafts\\r18\\exhibit-017-illegal-gdp.md`\n\n**Title:** \"An arbitrary assumption, included in GDP\"\n\n**Judgment calls:**\n1. **Category.** I used \"the assumptions were the data\". It describes the gap's structure, not a verdict. CLAUDE.md's category list needs the new line added at build time.\n2. **Frontmatter.** It copies the shape of 015. There is no `chartNote`. The ledger has 1 `gap: true` row (the 2010 prostitution figures, £5.6bn from the FOI reply vs £4,370m in today's series). The verdict has 3 rows.\n3. **FOI date.** The brief says \"6 Nov 2015 per researcher; confirm\". I couldn't confirm it, so the draft doesn't state it. The 2010 comparison appears as 2 published figures, with no cause given. The 0.78 and 0.77 arithmetic sits in `verdictNote` and the disclosure, labelled as this site's.\n4. **ESA rule.** The draft quotes ONS's \"no changes between ESA95 and ESA10\" and doesn't say ESA 2010 introduced the rule. The Wikipedia footnote is reported as ONS's own footnote 12 text.\n5. **Left out.**\n   - Everything in the CUT section.\n   - Patterson's \"some 4%\" line (it contains the en dash) and his £18 billion R&D figure, to save words.\n   - The condoms and clothes figures, because the currency is unconfirmed.\n   - Which client figure ONS used. The draft lists 20, 25 and 30 only.\n   - Any cause for the 2020 fall. The draft gives the 2019, 2020 and 2022 values only.\n\n**Open item:** the chart caption, to be written by the site-builder, must say the series is modelled, not observed. The MNC8 source entry already says so.",
+  "ttft_ms": 1885,
+  "type": "result",
+  "duration_ms": 47904,
+  "uuid": "b76d1284-9917-465b-81b9-fc4105cc745b",
+  "ttft_stream_ms": 1506,
+  "time_to_request_ms": 381,
+  "first_content_frame_ms": 1507,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "credential_expires_at": "2026-12-02T23:39:25.830Z"
+}

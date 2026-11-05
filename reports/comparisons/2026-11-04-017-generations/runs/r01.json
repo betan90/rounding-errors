@@ -1,0 +1,111 @@
+{
+  "duration_api_ms": 257047,
+  "stop_reason": "end_turn",
+  "session_id": "6822e822-ec1d-41a5-a2aa-4db029772f60",
+  "total_cost_usd": 0.23663769999999998,
+  "usage": {
+    "input_tokens": 105,
+    "cache_creation_input_tokens": 47620,
+    "cache_read_input_tokens": 393677,
+    "output_tokens": 20385,
+    "output_tokens_details": {
+      "thinking_tokens": 13202
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 47620,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 8,
+        "output_tokens": 883,
+        "cache_read_input_tokens": 46055,
+        "cache_creation_input_tokens": 1565,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 1565
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "modelUsage": {
+    "claude-haiku-4-5": {
+      "inputTokens": 105,
+      "outputTokens": 20385,
+      "cacheReadInputTokens": 393677,
+      "cacheCreationInputTokens": 47620,
+      "webSearchRequests": 0,
+      "costUSD": 0.23663769999999998,
+      "contextWindow": 200000,
+      "maxOutputTokens": 32000,
+      "thinkingTokens": 13202,
+      "cacheCreationEphemeral5mInputTokens": 0,
+      "cacheCreationEphemeral1hInputTokens": 47620,
+      "canonicalModel": "claude-haiku-4-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [
+    {
+      "tool_name": "Glob",
+      "tool_use_id": "toolu_01FNP4V55dK6J3xTYqGp2AnW",
+      "tool_input": {
+        "pattern": "node.exe",
+        "path": "C:\\Program Files"
+      }
+    }
+  ],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "safety_stops": 0,
+  "is_error": false,
+  "num_turns": 16,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "Excellent. The file is now clean. Here's my summary:\n\n---\n\n## Exhibit 017 Draft: Summary of Choices\n\n**File path:** `C:\\Users\\betan\\AppData\\Local\\Temp\\rounding-errors-bench\\2026-11-04-017-generations\\drafts\\r01\\exhibit-017-illegal-gdp.md`\n\n**Title:** \"All parties consent: prostitution in the national accounts\"\n\n**Word count:** ~440 words in body (under 500 limit across The incident, Who lied, The bit continues)\n\n### Judgment calls:\n\n**Category:** \"the assumptions were the data\" (new line, describes structural gap: published figures built entirely from flagged assumptions; fits vocabulary rule as structure not verdict).\n\n**Tags:** gdp, national-accounts, measurement-definitions, europe (all from recommended list; no new tags).\n\n**Chart decision:** No chartNote. Chart exists (MNC8 1985–2024, last release 31-10-2025) and will be wired separately by site-builder. The series is entirely modelled (no direct observations 1985–2003), so caption will reflect this.\n\n**Excluded from body:**\n- Drugs component (brief allows but brief notes it's secondary; prostitution is the clearer gap)\n- Cause of 2020 fall (instruction: do not state; ONS has not published explanation)\n- Specific client-per-week figure used (brief: \"not stated in what was read\")\n- \"25 clients\" and other secondary figures from CUT section\n- ESA 2010 introduction claim (brief: rule unchanged from ESA95)\n\n**Attribution/voice choices:**\n- Nobody lied: ONS disclosed all assumptions flagged as weak/arbitrary/probably false\n- Patterson quoted from blog, framed as his description, not accused\n- Fixed en dash in Patterson quote per brief warning: cut at \"a year\" to avoid the dash\n- Reported \"probably false\" appears 3 times using brief's grep count, not invented\n- Treated 2010 figures (£5.6bn FOI vs £4,370m MNC8) as published pair, arithmetic linking to holiday labelled as \"the change aligns with\" (not claimed as ONS confirmation)\n\n**Sources:**\n- ONS 2014 article via UN SIAP mirror (explicitly flagged as mirror per brief requirement; original ONS URL dead)\n- Patterson blog (not treated as accusation, reported as his framing)\n- ONS FOI page (verified figure)\n- ONS Blue Book 2016 revisions (refinement source)\n- ONS MNC8 series page (chart source)\n\n**Disclosure:** Includes Claude as drafter, editorial/errors ownership, figure verification, and mirror note.\n\n**House rules verification:** No em dashes, 440 words, all numerals, exactly 3 verdict rows (Fraud detected / Rules broken / Usefulness), exactly 1 ledger gap, exhibit \"017\" matches filename, disclosure complete, all tags in vocabulary. Chart rule will warn in hook mode (expected per instruction).",
+  "ttft_ms": 6044,
+  "type": "result",
+  "duration_ms": 257637,
+  "uuid": "d37d73a4-cf76-4eca-8bf2-f1b61cfa8094",
+  "ttft_stream_ms": 922,
+  "time_to_request_ms": 81,
+  "first_content_frame_ms": 922,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "credential_expires_at": "2026-12-02T23:39:25.830Z"
+}

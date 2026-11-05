@@ -1,0 +1,102 @@
+{
+  "duration_api_ms": 129746,
+  "stop_reason": "end_turn",
+  "session_id": "7abaef22-73e0-4d6b-a254-33d810282f57",
+  "total_cost_usd": 0.721874,
+  "usage": {
+    "input_tokens": 12,
+    "cache_creation_input_tokens": 36484,
+    "cache_read_input_tokens": 123248,
+    "output_tokens": 11814,
+    "output_tokens_details": {
+      "thinking_tokens": 1063
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 36484,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 725,
+        "cache_read_input_tokens": 31469,
+        "cache_creation_input_tokens": 5015,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 5015
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "modelUsage": {
+    "claude-opus-5": {
+      "inputTokens": 12,
+      "outputTokens": 11814,
+      "cacheReadInputTokens": 123248,
+      "cacheCreationInputTokens": 36484,
+      "webSearchRequests": 0,
+      "costUSD": 0.721874,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 64000,
+      "thinkingTokens": 1063,
+      "cacheCreationEphemeral5mInputTokens": 0,
+      "cacheCreationEphemeral1hInputTokens": 36484,
+      "canonicalModel": "claude-opus-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "safety_stops": 0,
+  "is_error": false,
+  "num_turns": 9,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "Written.\n\n- **Path:** `drafts\\r17\\exhibit-017-illegal-gdp.md`. **Title:** \"This is an arbitrary assumption\". **Body word count:** ~430 (hand-counted; the house-rules script could not be run because the Bash tool is disabled in this session, so the 500-word, em-dash, verdict-row and ledger-gap rules were checked by hand: 0 em dashes, 3 verdict rows keyed as required, exactly 1 `gap: true`, no `chartNote` since the chart is wired separately).\n- **Category:** \"the assumptions were the data\", as recommended; it describes the gap's shape, not a verdict, so it passes the vocabulary rule, and it needs adding to CLAUDE.md's category list at build time. **Tags:** gdp, national-accounts, measurement-definitions, europe.\n- **Chart:** none declared in frontmatter, per instruction; the verdictNote carries the series endpoints (1,078 in 1985 to 6,431 in 2024, 4,130 in 2020, 6,142 in 2022) and says the series is modelled, not observed. No cause given for 2020.\n- **Attribution:** nobody lied; every grading quote is ONS's own. Abramsky and Drew are named only in the source entry as authors; Patterson is quoted as his blog. The ESA95/ESA 2010 point appears only as the article's footnote wording, so nothing claims ESA 2010 introduced the rule. The £5.6bn vs £4,370m pair is presented as 2 published ONS figures, with the 0.78/0.77 ratio labelled in ledgerNote and disclosure as this site's arithmetic.\n- **Excluded:** everything in the brief's CUT list; the \"25 clients\" single value (all 3 estimates listed instead, flagged in disclosure); the 125-euro clothing and condom intermediate-consumption figures (currency basis uncertain); the self-employment and retailer-analogy beats and the \"probably false\" word counts were cut from the body for length (self-employment survives in the verdict, the counts in the ledger). Wikipedia appears only as ONS's footnote choice, never as a source.",
+  "ttft_ms": 2949,
+  "type": "result",
+  "duration_ms": 130210,
+  "uuid": "f10a1d97-3ebe-4e3d-892b-c9258521b5c7",
+  "ttft_stream_ms": 1679,
+  "time_to_request_ms": 378,
+  "first_content_frame_ms": 1679,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "credential_expires_at": "2026-12-02T23:39:30.637Z"
+}

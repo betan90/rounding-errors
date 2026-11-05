@@ -1,0 +1,102 @@
+{
+  "duration_api_ms": 123478,
+  "stop_reason": "end_turn",
+  "session_id": "8e660523-0ca9-457b-a748-20f8f19fe200",
+  "total_cost_usd": 0.4546,
+  "usage": {
+    "input_tokens": 49,
+    "cache_creation_input_tokens": 26880,
+    "cache_read_input_tokens": 96160,
+    "output_tokens": 5499,
+    "output_tokens_details": {
+      "thinking_tokens": 1647
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 26880,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 8,
+        "output_tokens": 1338,
+        "cache_read_input_tokens": 23984,
+        "cache_creation_input_tokens": 2896,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 2896
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "modelUsage": {
+    "claude-opus-4-5": {
+      "inputTokens": 49,
+      "outputTokens": 5499,
+      "cacheReadInputTokens": 96160,
+      "cacheCreationInputTokens": 26880,
+      "webSearchRequests": 0,
+      "costUSD": 0.4546,
+      "contextWindow": 200000,
+      "maxOutputTokens": 32000,
+      "thinkingTokens": 1647,
+      "cacheCreationEphemeral5mInputTokens": 0,
+      "cacheCreationEphemeral1hInputTokens": 26880,
+      "canonicalModel": "claude-opus-4-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "safety_stops": 0,
+  "is_error": false,
+  "num_turns": 9,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "I cannot run the node script directly as I don't have shell access in my available tools. Let me provide a manual validation and the summary:\n\n**File written to:** `C:\\Users\\betan\\AppData\\Local\\Temp\\rounding-errors-bench\\2026-11-04-017-generations\\drafts\\r17\\exhibit-017-illegal-gdp.md`\n\n**Manual validation:**\n- **Word count (body):** ~450 words (under 500 limit)\n- **Em dashes:** 0 (none present)\n- **Ledger gap rows:** 1 (drug purity assumption row)\n- **Verdict rows:** 3 (Fraud detected, Rules broken, Usefulness of the headline figure)\n- **exhibit:** \"017\" (zero-padded string matching filename)\n- **Disclosure:** Contains all 3 required statements + mirror note\n- **chartNote:** Absent (correct, since exhibit HAS a chart)\n- **No Wikipedia citation:** Correct (ONS's citation of Wikipedia is reported as ONS's source, not cited directly)\n\n**Title:** \"Probably false, with no data to challenge it\"\n\n---\n\n**Five-line summary of choices:**\n\n1. **Category:** \"the assumptions were the data\" (new structural line as recommended; describes the gap's shape where published assumptions form the basis of modelled data, distinct from \"the baseline did the work\")\n\n2. **Tags:** gdp, national-accounts, measurement-definitions, europe (all from existing vocabulary per CLAUDE.md)\n\n3. **Chart decision:** HAS a chart (ONS series MNC8, 1985-2024), no chartNote; verdictNote explains the chart plots assumptions, not observations\n\n4. **Excluded:** The 2020 fall cause (unverified); Italy/Ig Nobel (secondary only); the \"25 clients\" choice (CUT list); any claim that the 12-week holiday fully explains the £5.6bn→£4,370m difference (labeled as this site's arithmetic per brief instructions)\n\n5. **Attribution:** Patterson identified by role (Deputy Chief Economic Adviser) and quoted from his blog; Abramsky and Drew named only as article authors; no accusations—ONS published and labeled everything, verdict is \"none\" for fraud and rules",
+  "ttft_ms": 4126,
+  "type": "result",
+  "duration_ms": 124318,
+  "uuid": "ccfa26d6-9c65-493b-a0a3-b26324e53dd6",
+  "ttft_stream_ms": 2669,
+  "time_to_request_ms": 569,
+  "first_content_frame_ms": 2669,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "credential_expires_at": "2026-12-02T23:39:25.830Z"
+}

@@ -1,0 +1,102 @@
+{
+  "duration_api_ms": 116643,
+  "stop_reason": "end_turn",
+  "session_id": "0a7e3db2-a758-403d-8de4-b888ef47d2bb",
+  "total_cost_usd": 0.462191,
+  "usage": {
+    "input_tokens": 49,
+    "cache_creation_input_tokens": 26704,
+    "cache_read_input_tokens": 95262,
+    "output_tokens": 5891,
+    "output_tokens_details": {
+      "thinking_tokens": 2211
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 26704,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 8,
+        "output_tokens": 1587,
+        "cache_read_input_tokens": 23660,
+        "cache_creation_input_tokens": 3044,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 3044
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "modelUsage": {
+    "claude-opus-4-5": {
+      "inputTokens": 49,
+      "outputTokens": 5891,
+      "cacheReadInputTokens": 95262,
+      "cacheCreationInputTokens": 26704,
+      "webSearchRequests": 0,
+      "costUSD": 0.462191,
+      "contextWindow": 200000,
+      "maxOutputTokens": 32000,
+      "thinkingTokens": 2211,
+      "cacheCreationEphemeral5mInputTokens": 0,
+      "cacheCreationEphemeral1hInputTokens": 26704,
+      "canonicalModel": "claude-opus-4-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "safety_stops": 0,
+  "is_error": false,
+  "num_turns": 9,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "I don't have a shell tool available to run the node check script. Let me manually verify the key structural requirements and report:\n\n**File created:** `C:\\Users\\betan\\AppData\\Local\\Temp\\rounding-errors-bench\\2026-11-04-017-generations-effort\\drafts\\r14\\exhibit-017-illegal-gdp.md`\n\n**Manual verification:**\n- **Word count (body):** ~440 words (under 500 limit)\n- **Em dashes:** None present\n- **Ledger rows with gap: true:** Exactly 1 (line 22: \"Time series for the number of prostitutes (ONS)\")\n- **Verdict rows:** Exactly 3 (Fraud detected, Rules broken, Usefulness of the headline figure)\n- **Disclosure:** Contains all 3 required statements (AI drafted, voice/errors mine, figures checked against sources) plus notes the mirror\n- **No chartNote:** Correct, since this exhibit HAS a chart (the script will warn about wiring, expected)\n\n---\n\n**Summary of choices:**\n\n1. **Category:** \"the assumptions were the data\" (new line as brief recommended; describes the gap's structure where published assumptions are the only data).\n\n2. **Tags:** `gdp, national-accounts, measurement-definitions, europe` (all from existing vocabulary per brief).\n\n3. **Chart decision:** Yes, ONS MNC8 series 1985-2024; no chartNote since chart will be wired. VerdictNote notes the series plots assumptions, not observations.\n\n4. **Excluded:** All CUT items (Italy, Ig Nobel, 60,879 prostitute count, £67.16 price, 25 clients choice, 0.7% GDP, Eurostat reservation lift, Ireland). Did not state cause of 2020 fall. Did not assert the 12-week holiday explains the FOI/MNC8 gap (presented as 2 figures with this site's arithmetic labeled).\n\n5. **Title:** \"Probably false, arbitrary, and weak\" draws from ONS's own descriptors of its assumptions, keeping deadpan register without winking.",
+  "ttft_ms": 2754,
+  "type": "result",
+  "duration_ms": 117023,
+  "uuid": "fc5460fe-c828-49e0-9509-138b542b1387",
+  "ttft_stream_ms": 1367,
+  "time_to_request_ms": 241,
+  "first_content_frame_ms": 1367,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "credential_expires_at": "2026-12-02T23:39:30.637Z"
+}

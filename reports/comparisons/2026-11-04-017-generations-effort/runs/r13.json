@@ -1,0 +1,102 @@
+{
+  "duration_api_ms": 79017,
+  "stop_reason": "end_turn",
+  "session_id": "cf2cdd3f-4433-4213-b0e7-4d534eb864df",
+  "total_cost_usd": 0.34292200000000006,
+  "usage": {
+    "input_tokens": 33,
+    "cache_creation_input_tokens": 23013,
+    "cache_read_input_tokens": 47954,
+    "output_tokens": 3546,
+    "output_tokens_details": {
+      "thinking_tokens": 379
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 23013,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 8,
+        "output_tokens": 387,
+        "cache_read_input_tokens": 22713,
+        "cache_creation_input_tokens": 300,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 300
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "modelUsage": {
+    "claude-opus-4-5": {
+      "inputTokens": 33,
+      "outputTokens": 3546,
+      "cacheReadInputTokens": 47954,
+      "cacheCreationInputTokens": 23013,
+      "webSearchRequests": 0,
+      "costUSD": 0.34292200000000006,
+      "contextWindow": 200000,
+      "maxOutputTokens": 32000,
+      "thinkingTokens": 379,
+      "cacheCreationEphemeral5mInputTokens": 0,
+      "cacheCreationEphemeral1hInputTokens": 23013,
+      "canonicalModel": "claude-opus-4-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "safety_stops": 0,
+  "is_error": false,
+  "num_turns": 7,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "Let me use the proper shell tool if available, or report what I've written:\n\n**Report:**\n\n- **Path:** `C:\\Users\\betan\\AppData\\Local\\Temp\\rounding-errors-bench\\2026-11-04-017-generations-effort\\drafts\\r13\\exhibit-017-illegal-gdp.md`\n- **Word count (body):** ~490 words (under 500 limit)\n- **Title:** \"The UK's £10 billion of illegal services, footnoted to Wikipedia\"\n\n**Judgment calls:**\n1. **Category:** Used \"the assumptions were the data\" as the brief recommended; it describes the structural shape (assumptions openly label themselves as weak/arbitrary/probably false).\n2. **Tags:** gdp, national-accounts, measurement-definitions, europe per brief.\n3. **Chart:** Has chart (ONS MNC8 series 1985-2024), no chartNote field. The chart check will warn as expected since it's not wired yet.\n4. **Excluded:** All CUT items (Italy figures, Ig Nobel, 60,879 count, £67.16 price, \"25 clients\" value, cause of 2020 fall). Did not state ESA 2010 introduced the rule per brief's instruction.\n5. **Gap row:** The £5.6bn vs £4,370m discrepancy for 2010 prostitution, presented as 2 published figures with the 12-week holiday noted in ledgerNote but arithmetic labeled as consistent-with rather than causal.",
+  "ttft_ms": 2186,
+  "type": "result",
+  "duration_ms": 79299,
+  "uuid": "894ca9cf-b5af-4336-b386-d6b09b156ad7",
+  "ttft_stream_ms": 1307,
+  "time_to_request_ms": 240,
+  "first_content_frame_ms": 1307,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "credential_expires_at": "2026-12-02T23:39:30.637Z"
+}

@@ -1,0 +1,102 @@
+{
+  "duration_api_ms": 198823,
+  "stop_reason": "end_turn",
+  "session_id": "c61f76d0-77d5-481f-af99-e353d44c6e54",
+  "total_cost_usd": 0.6821815,
+  "usage": {
+    "input_tokens": 8,
+    "cache_creation_input_tokens": 32862,
+    "cache_read_input_tokens": 63593,
+    "output_tokens": 12869,
+    "output_tokens_details": {
+      "thinking_tokens": 7334
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 32862,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 5108,
+        "cache_read_input_tokens": 32542,
+        "cache_creation_input_tokens": 320,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 320
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "modelUsage": {
+    "claude-opus-4-8": {
+      "inputTokens": 8,
+      "outputTokens": 12869,
+      "cacheReadInputTokens": 63593,
+      "cacheCreationInputTokens": 32862,
+      "webSearchRequests": 0,
+      "costUSD": 0.6821815,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 64000,
+      "thinkingTokens": 7334,
+      "cacheCreationEphemeral5mInputTokens": 0,
+      "cacheCreationEphemeral1hInputTokens": 32862,
+      "canonicalModel": "claude-opus-4-8",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "safety_stops": 0,
+  "is_error": false,
+  "num_turns": 7,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "The `check-house-rules.mjs` script cannot be run: the Bash tool is disabled in this session, and the checker is a Node script with no non-Bash execution path available to me. I verified every mechanical rule by hand instead.\n\n**Report**\n\n- **Path:** `C:\\Users\\betan\\AppData\\Local\\Temp\\rounding-errors-bench\\2026-11-04-017-generations\\drafts\\r06\\exhibit-017-illegal-gdp.md`\n- **Word count (body, The incident + Who lied + The bit continues):** 445 (under the 500 cap)\n- **Title:** `A legally required GDP line, built from \"probably false\"`\n\n**Judgment calls**\n\n1. **Category** `\"the assumptions were the data\"` — used as the brief recommended. It describes the gap's structure (the estimates are the stated assumptions, with no underlying data), not a verdict, so it passes the vocabulary rule. Note: this is a new structural line; CLAUDE.md says a new category must be added to its list at build time, but I was told not to touch repo content, so that addition is left for the builder. Flagging it rather than silently relying on it.\n2. **Gap row** — the single `gap: true` row is the two published 2010 prostitution figures (£5.6bn FOI vs £4,370m MNC8). The 0.78/0.77 arithmetic linking them to the holiday is labelled \"this site's\" in both `ledgerNote` and the body, never attributed to ONS.\n3. **Chart** — no `chartNote` (the exhibit has a chart from MNC8, wired separately by the site-builder). The MNC8 source entry carries \"modelled, not observed.\" The 2020 fall is not mentioned at all, so no cause is implied.\n4. **Attribution** — nobody lied: ONS published and labelled every assumption. Abramsky and Drew appear only as the article's authors; Patterson's £10bn is reported as his blog. ESA 2010 is not credited with introducing the rule; the source entry carries ONS's \"no changes between ESA95 and ESA10\" footnote.\n5. **Excluded (CUT list):** the £5.3bn/£4.4bn 2009 split, 60,879, £67.16, \"25 clients\", Italy/ISTAT, the Ig Nobel, Eurostat's reservation lift, Ireland's CSO, and the intermediate-consumption clothes/condoms figures (currency basis unconfirmed per the brief). Sources use the UN SIAP mirror (flagged as a mirror; ONS original 404s) and never cite Wikipedia — ONS's Wikipedia footnote is reported as ONS's own source.\n\nVerdict is exactly 3 rows (Fraud detected / Rules broken / Usefulness of the headline figure); frontmatter shape matches `015-police-recorded-crime.md`. The chart rule would warn under the hook (chart not yet wired), which is expected.",
+  "ttft_ms": 1645,
+  "type": "result",
+  "duration_ms": 199040,
+  "uuid": "3369d658-6611-4181-a394-7264c993908c",
+  "ttft_stream_ms": 1348,
+  "time_to_request_ms": 91,
+  "first_content_frame_ms": 1349,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "credential_expires_at": "2026-12-02T23:39:25.830Z"
+}

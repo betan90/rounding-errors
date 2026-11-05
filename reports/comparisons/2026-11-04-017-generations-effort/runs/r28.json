@@ -1,0 +1,102 @@
+{
+  "duration_api_ms": 97520,
+  "stop_reason": "end_turn",
+  "session_id": "5e08a9d2-923a-400f-b4d3-ab9cca766c1b",
+  "total_cost_usd": 0.536758,
+  "usage": {
+    "input_tokens": 8,
+    "cache_creation_input_tokens": 29996,
+    "cache_read_input_tokens": 60816,
+    "output_tokens": 8254,
+    "output_tokens_details": {
+      "thinking_tokens": 2660
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 29996,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 3394,
+        "cache_read_input_tokens": 29683,
+        "cache_creation_input_tokens": 313,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 313
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "modelUsage": {
+    "claude-opus-4-8": {
+      "inputTokens": 8,
+      "outputTokens": 8254,
+      "cacheReadInputTokens": 60816,
+      "cacheCreationInputTokens": 29996,
+      "webSearchRequests": 0,
+      "costUSD": 0.536758,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 64000,
+      "thinkingTokens": 2660,
+      "cacheCreationEphemeral5mInputTokens": 0,
+      "cacheCreationEphemeral1hInputTokens": 29996,
+      "canonicalModel": "claude-opus-4-8",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "safety_stops": 0,
+  "is_error": false,
+  "num_turns": 7,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "I've written the draft. The house-rules checker requires the Bash/node runner, which is disabled in this session, so I could not execute it. Here is my report instead.\n\n**Path:** `C:\\Users\\betan\\...\\drafts\\r28\\exhibit-017-illegal-gdp.md`\n**Body word count:** ~435 words (manually counted across the 3 sections; under the 500 cap)\n**Title:** \"Sex, drugs and GDP, assumption by assumption\"\n\n**Checker status:** Could not run `check-house-rules.mjs` (Bash tool disabled this session). Manual verification against its blocking rules: no em dashes; exactly 1 ledger row with `gap: true`; exactly 3 verdict rows keyed `Fraud detected` / `Rules broken` / `Usefulness of the headline figure`; `exhibit: \"017\"` matches filename; disclosure carries all 3 required statements. The chart rule would warn (chart not yet wired in `ExhibitLayout.astro`), which is expected and intentional since the site-builder wires it separately; no `chartNote` is set, per instructions.\n\n**Judgment calls:**\n1. **Category** \"the assumptions were the data\" used as recommended; it describes the gap's structure (a figure whose inputs are its own disclosed assumptions), not a moral verdict, so it passes the vocabulary rule. Note: this is a new line that must be added to CLAUDE.md's category list at build time.\n2. **Attribution:** nobody lied; ONS flagged every weak assumption itself. Abramsky and Drew named only as authors; Patterson's £10bn reported as \"his blog\". No claim that ESA 2010 introduced the rule.\n3. **The £5.6bn vs £4,370m gap** presented as 2 published figures; the 0.78/0.77 arithmetic is explicitly labelled \"this site's, not ONS's\" in the ledgerNote and disclosure. The 2020 fall is stated as numbers only, no cause.\n4. **Mirror** flagged in source entry, disclosure, and verdict context; Wikipedia appears only as the object of ONS's footnote, never as a source.\n5. **Excluded:** all CUT items (the 25-clients value, the 2009 split, Italy/Ig Nobel, Eurostat reservation lift, the euro intermediate-consumption figures) since the brief flagged the currency basis as unconfirmed and the rest as secondary/unverified.",
+  "ttft_ms": 1639,
+  "type": "result",
+  "duration_ms": 97804,
+  "uuid": "e9108829-7951-49ec-9973-ad90fc57c712",
+  "ttft_stream_ms": 1443,
+  "time_to_request_ms": 233,
+  "first_content_frame_ms": 1443,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "credential_expires_at": "2026-12-02T23:39:30.637Z"
+}

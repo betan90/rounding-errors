@@ -1,0 +1,102 @@
+{
+  "duration_api_ms": 373610,
+  "stop_reason": "end_turn",
+  "session_id": "bd904de6-4f2e-495b-bf9a-8cf05aeeef63",
+  "total_cost_usd": 1.5923794999999998,
+  "usage": {
+    "input_tokens": 16,
+    "cache_creation_input_tokens": 62718,
+    "cache_read_input_tokens": 252239,
+    "output_tokens": 33560,
+    "output_tokens_details": {
+      "thinking_tokens": 25520
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 62718,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 1721,
+        "cache_read_input_tokens": 58422,
+        "cache_creation_input_tokens": 4296,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 4296
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "modelUsage": {
+    "claude-opus-5": {
+      "inputTokens": 16,
+      "outputTokens": 33560,
+      "cacheReadInputTokens": 252239,
+      "cacheCreationInputTokens": 62718,
+      "webSearchRequests": 0,
+      "costUSD": 1.5923794999999998,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 64000,
+      "thinkingTokens": 25520,
+      "cacheCreationEphemeral5mInputTokens": 0,
+      "cacheCreationEphemeral1hInputTokens": 62718,
+      "canonicalModel": "claude-opus-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "safety_stops": 0,
+  "is_error": false,
+  "num_turns": 11,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "Draft written. I could not execute the checker: both the Bash and PowerShell tools are disabled in this session, so I verified its rules by reading `scripts/check-house-rules.mjs` and checking each by hand.\n\n**Path:** `drafts/r25/exhibit-017-illegal-gdp.md`\n**Word count:** 482 (counted the way `bodyWordCount` does: heading lines dropped, punctuation-only tokens like `...` and `-` excluded; limit 500)\n**Title:** A £6,431m series built on \"no time series data\"\n\nManual pass against each blocking rule: 0 em dashes (grep confirms); body 482 words; verdict is exactly 3 rows keyed `Fraud detected`, `Rules broken`, `Usefulness of the headline figure`; exactly 1 ledger row with `gap: true` (the 0 / 40 row); `exhibit: \"017\"` matches the file name; disclosure contains Claude, errors, checked; no `chartNote` (chart is coming); all 4 tags are in the `TAGS` set; no spelled-out cardinals anywhere, including frontmatter.\n\nFive choices:\n1. **Category** \"the assumptions were the data\", as the brief recommends: it names the structure of the gap, not a verdict, and does not blur into 008's \"the baseline did the work\". Flag: it is not yet in CLAUDE.md's category list, which the brief says must be amended at build time. I did not edit CLAUDE.md.\n2. **Tags/country** exactly as specified: gdp, national-accounts, measurement-definitions, europe; United Kingdom. Frontmatter key order, nesting and types copied from 015, which matches CLAUDE.md's template; no mismatch between the two needed flagging.\n3. **Chart:** no `chartNote`, since MNC8 1985 to 2024 is wired separately. The \"modelled, not observed\" caveat the caption needs is carried in the MNC8 source entry and the disclosure so the site-builder has it.\n4. **The 2010 pair** is presented as 2 published ONS figures (£5.6bn in the FOI response, £4,370m in MNC8); the 0.78 and 0.77 ratios appear only in `ledgerNote`, labelled as this site's arithmetic with an explicit note that ONS does not say the holiday factor is the whole difference. Attribution: \"Nobody\" in Who lied, every grade of every assumption is ONS's own words, Abramsky and Drew appear only as the article's authors, and Patterson's figures are reported as his blog.\n5. **Excluded:** everything in CUT (the 2009 split, 60,879, £67.16, \"25 clients\", Italy, the Ig Nobel, Eurostat lifting the reservation, Ireland), the cause of the 2020 fall (values only, plus a line saying no ONS explanation was found), the 125-euro/condoms intermediate consumption line (currency basis unconfirmed), the R&D and £50bn figures (kept in sources, cut from the body for length), and the FOI response's date (brief said to confirm it on the page and I could not, so the exhibit gives no date and the disclosure says why). Wikipedia is never a source; ONS's footnote to it is reported as ONS's own citation.\n\nTwo notes for the pipeline: `isDraft` in the checker requires the draft to sit at the repo root, and `CONTENT` requires `src/content/{exhibits,notes}`, so a file under `drafts/r25/` would get only the em-dash and number-word passes even if the script could be run here. And the top-level drafter brief asks for the draft at the repo root; I followed the task's explicit path instead and wrote nothing else.",
+  "ttft_ms": 3819,
+  "type": "result",
+  "duration_ms": 373966,
+  "uuid": "3cfaaf2e-1bc7-4f21-917a-3ef9739b6dc6",
+  "ttft_stream_ms": 1863,
+  "time_to_request_ms": 221,
+  "first_content_frame_ms": 1863,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "credential_expires_at": "2026-12-02T23:39:30.637Z"
+}

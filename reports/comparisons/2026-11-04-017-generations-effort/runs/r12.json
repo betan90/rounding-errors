@@ -1,0 +1,102 @@
+{
+  "duration_api_ms": 463391,
+  "stop_reason": "end_turn",
+  "session_id": "32568582-cb52-4c0b-806e-efcd1eb6fa94",
+  "total_cost_usd": 1.7948730000000002,
+  "usage": {
+    "input_tokens": 14,
+    "cache_creation_input_tokens": 82428,
+    "cache_read_input_tokens": 220665,
+    "output_tokens": 54563,
+    "output_tokens_details": {
+      "thinking_tokens": 47332
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 82428,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 2290,
+        "cache_read_input_tokens": 85046,
+        "cache_creation_input_tokens": 891,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 891
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "modelUsage": {
+    "claude-opus-5-5": {
+      "inputTokens": 14,
+      "outputTokens": 54563,
+      "cacheReadInputTokens": 220665,
+      "cacheCreationInputTokens": 82428,
+      "webSearchRequests": 0,
+      "costUSD": 1.7948730000000002,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 47332,
+      "cacheCreationEphemeral5mInputTokens": 0,
+      "cacheCreationEphemeral1hInputTokens": 82428,
+      "canonicalModel": "claude-opus-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "safety_stops": 0,
+  "is_error": false,
+  "num_turns": 14,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "I've written the draft, but I couldn't run `check-house-rules.mjs`: this session has no shell tool. I ran its checks by hand instead. The script wouldn't have checked much at this path anyway (see the last section).\n\n**Path:** `C:\\Users\\betan\\AppData\\Local\\Temp\\rounding-errors-bench\\2026-11-04-017-generations-effort\\drafts\\r12\\exhibit-017-illegal-gdp.md`\n**Title:** \"About 58,000 prostitutes, 12 weeks' holiday\"\n**Word count:** 487 by the script's method (headings and `...` not counted), so it's under 500 but close.\n\n**Manual check results:**\n- No em or en dashes anywhere.\n- No spelled-out numbers.\n- Exactly 1 ledger row has `gap: true`: the 2010 pair, £5.6bn / £4,370m.\n- Exactly 3 verdict rows, in the required order.\n- `exhibit: \"017\"` matches the file name.\n- The disclosure names Claude, the errors and the figure check.\n- There is no `chartNote`.\n- All 4 tags are in the vocabulary.\n- The keys and nesting match 015 and `config.ts`.\n\n**Summary of choices**\n1. **Category:** I used \"the assumptions were the data\". It describes the shape of the gap and makes no moral judgment, so it passes the vocabulary rules. It's new, so someone needs to add it to the CLAUDE.md category list at build time.\n2. **Tags and country:** gdp, national-accounts, measurement-definitions, europe; United Kingdom. The date is 2026-10-23 as you asked. CLAUDE.md wants the actual publish day, though, and today is 5 November, so it should be updated if the build happens later.\n3. **Chart:** it's handled entirely by the site-builder, with no `chartNote`. The ledger note and the MNC8 source both say the series is modelled, not observed. The body gives the 2020 fall (31%) as numbers only, with no cause.\n4. **What I left out, and why:**\n   - The clothes and condoms costs: the currency symbol was lost in the brief.\n   - The \"probably false\" quote about drug production: word count. The count line in the body still says the phrase appears 3 times.\n   - Assumption 3b, the retailer analogy and Patterson's £18bn and £50bn figures: word count. The £50bn quote also contains a dash.\n   - Patterson's \"legally mandated through the European System of Accounts 2010\": it reads as if ESA 2010 introduced the rule.\n   - \"P\\*C\\*52\": the asterisks would render as italics in markdown.\n   - The FOI reply's date: the brief says \"confirm date on page\".\n   - The ESA95 rule paragraph: moved into the \"Rules broken\" verdict to save words.\n   - Everything in the CUT section.\n5. **Voice and attribution:** \"Who lied\" opens with \"Nobody\". Every judgment of the figures is ONS's own words or Blue Book 2016's \"GNI ESA 1995 reservation\". The 78% vs 77% comparison is labelled \"This site's arithmetic, not ONS's\", followed by \"None of the ONS sources here attributes the difference.\" The Wikipedia footnote is described in words, not as a URL, so the page won't link to Wikipedia.\n\n**Things to check before the build**\n- **The checker won't really test this file where it is.** It only runs the word count and the template checks on files in `src/content/exhibits/` or at the repo root. For a file in `drafts/r12/` it checks only dashes and spelled-out numbers. You won't see the expected chart warning, and the write-time hook won't fire either. Run it again once the file is at the root or in `src/content/`.\n- **The Patterson quote** includes \"(please note the italics for emphasis!)\", but the brief doesn't say which words were in italics, so none are shown. The fact-checker should find them on the blog and add them, or the line will look like a mistake.",
+  "ttft_ms": 3647,
+  "type": "result",
+  "duration_ms": 464026,
+  "uuid": "95cd4af4-4bdb-45f0-93db-d826fc5c7d2a",
+  "ttft_stream_ms": 2128,
+  "time_to_request_ms": 463,
+  "first_content_frame_ms": 2128,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "credential_expires_at": "2026-12-02T23:39:30.637Z"
+}

@@ -1,0 +1,102 @@
+{
+  "duration_api_ms": 79184,
+  "stop_reason": "end_turn",
+  "session_id": "5efb1b5e-1998-484e-802f-fececba235f4",
+  "total_cost_usd": 0.2447906,
+  "usage": {
+    "input_tokens": 10,
+    "cache_creation_input_tokens": 37774,
+    "cache_read_input_tokens": 101873,
+    "output_tokens": 7330,
+    "output_tokens_details": {
+      "thinking_tokens": 2512
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 37774,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 958,
+        "cache_read_input_tokens": 37500,
+        "cache_creation_input_tokens": 274,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 274
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "modelUsage": {
+    "claude-sonnet-5": {
+      "inputTokens": 10,
+      "outputTokens": 7330,
+      "cacheReadInputTokens": 101873,
+      "cacheCreationInputTokens": 37774,
+      "webSearchRequests": 0,
+      "costUSD": 0.2447906,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 64000,
+      "thinkingTokens": 2512,
+      "cacheCreationEphemeral5mInputTokens": 0,
+      "cacheCreationEphemeral1hInputTokens": 37774,
+      "canonicalModel": "claude-sonnet-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "safety_stops": 0,
+  "is_error": false,
+  "num_turns": 8,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "I don't have a Bash/shell tool available in this session (only Read, Write, Glob, Grep), so I could not execute `check-house-rules.mjs`. Here's what I can confirm manually:\n\n**Path:** `C:\\Users\\betan\\AppData\\Local\\Temp\\rounding-errors-bench\\2026-11-04-017-generations-effort\\drafts\\r01\\exhibit-017-illegal-gdp.md`\n\n**Title:** \"This is an arbitrary assumption.\"\n\n**Word count (body, \"The incident\" through \"The bit continues\"):** ~460 words, under the 500-word cap.\n\n**Judgment calls:**\n1. **Category:** used the brief's recommended new line, \"the assumptions were the data\" — it describes the gap's structure (published assumptions standing in for data), not a verdict, so it fits the vocabulary rule; flagging that CLAUDE.md's category list itself isn't updated, per task scope (not touching src/content).\n2. **Tags/chart:** used exactly the specified tags (gdp, national-accounts, measurement-definitions, europe) and omitted `chartNote` since the MNC8 chart is being wired separately, per instructions.\n3. **Patterson's \"legally mandated through ESA 2010\" quote:** kept it as his reported claim in \"Who lied,\" explicitly undercut by ONS's own footnote (reported in \"The incident\") that nothing changed between ESA95 and ESA 2010, so the narrator never asserts ESA 2010 introduced the rule.\n4. **2020 fall / £5.6bn vs £4,370m gap:** stated both 2010 figures and the 2020 drop as plain published numbers; the only arithmetic linking the gap to the 12-week holiday is isolated in `ledgerNote` and explicitly labeled as this site's division, not ONS's.\n5. **Excluded from CUT:** the 2009 £5.3bn/£4.4bn split, 60,879 figure, £67.16 price, \"25 clients,\" Italy/ISTAT, Ig Nobel, Eurostat reservation lift, and Ireland's CSO shares — all unverifiable or off-topic per the brief, so none appear.\n\nPlease run the house-rules check yourself (I lack shell execution here):\n`node scripts/check-house-rules.mjs \"C:\\Users\\betan\\AppData\\Local\\Temp\\rounding-errors-bench\\2026-11-04-017-generations-effort\\drafts\\r01\\exhibit-017-illegal-gdp.md\"`",
+  "ttft_ms": 2004,
+  "type": "result",
+  "duration_ms": 79813,
+  "uuid": "9bd5bba0-0fa2-4a95-b742-ea693e7848e5",
+  "ttft_stream_ms": 1562,
+  "time_to_request_ms": 449,
+  "first_content_frame_ms": 1564,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "credential_expires_at": "2026-12-02T23:39:25.830Z"
+}

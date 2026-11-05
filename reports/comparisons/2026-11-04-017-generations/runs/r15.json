@@ -1,0 +1,102 @@
+{
+  "duration_api_ms": 116166,
+  "stop_reason": "end_turn",
+  "session_id": "4a2117dd-2b04-4298-a870-af4c02c2bb9d",
+  "total_cost_usd": 0.02519197,
+  "usage": {
+    "input_tokens": 8,
+    "cache_creation_input_tokens": 50655,
+    "cache_read_input_tokens": 81317,
+    "output_tokens": 28494,
+    "output_tokens_details": {
+      "thinking_tokens": 23565
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 50655,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 2939,
+        "cache_read_input_tokens": 50233,
+        "cache_creation_input_tokens": 422,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 422
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "modelUsage": {
+    "claude-haiku-5-5": {
+      "inputTokens": 8,
+      "outputTokens": 28494,
+      "cacheReadInputTokens": 81317,
+      "cacheCreationInputTokens": 50655,
+      "webSearchRequests": 0,
+      "costUSD": 0.02519197,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 23565,
+      "cacheCreationEphemeral5mInputTokens": 0,
+      "cacheCreationEphemeral1hInputTokens": 50655,
+      "canonicalModel": "claude-haiku-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "safety_stops": 0,
+  "is_error": false,
+  "num_turns": 7,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "The draft is written, but I could not run the house-rules check. Bash is disabled in this session, so `check-house-rules.mjs` did not run and the em-dash and word-count checks are by hand.\n\n- **Path:** `C:\\Users\\betan\\AppData\\Local\\Temp\\rounding-errors-bench\\2026-11-04-017-generations\\drafts\\r15\\exhibit-017-illegal-gdp.md`\n- **Body word count:** about 434 by my manual count, under the 500 limit. I found no em dashes or en dashes in the file.\n- **Title:** \"Prostitution in GDP, on 12 weeks' holiday\"\n\n**Judgment calls**\n\n1. **Category and tags:** I used \"the assumptions were the data\", as the brief recommended. It describes the gap's structure, not a verdict, so it does not break the vocabulary rules. It is a new line, so it must be added to the CLAUDE.md category list at build time. Tags are as specified, and country is \"United Kingdom\".\n2. **Chart and ledger:** The ledger has 6 rows with exactly 1 gap row, the £4,370m series figure. The £5.6bn FOI figure is its own row, so the two published 2010 figures sit side by side. The 0.78 and 77% comparisons appear only in the body, labelled as this site's arithmetic. No `chartNote` is set, as instructed, and the body says the chart plots modelled values and that this site found no ONS note explaining the 2020 fall. The only 2020 numbers given are 4,130 and 5,993.\n3. **Excluded:** I left out the CUT items, the Ig Nobel and Italian figures, the 2009 split, the 25-client value, and the 0.7% share. I did not print the FOI date, because the brief marks it unconfirmed. I did not mention the ESA 2010 introduction, and I quoted the \"no changes\" footnote instead.\n4. **Attribution:** Nobody is said to have lied. Abramsky and Drew appear only as authors. Patterson is cited as his blog post. The Wikipedia footnote is reported as ONS's source, and Wikipedia is not cited.\n5. **Sources and disclosure:** The five sources are the ONS 2014 article (via the UN SIAP mirror, with the mirror noted in both its text and the disclosure), the Patterson blog, the ONS FOI page, the Blue Book 2016 article and the MNC8 series page. The disclosure carries the three required statements.",
+  "ttft_ms": 2657,
+  "type": "result",
+  "duration_ms": 116814,
+  "uuid": "e714e7e1-f9cd-448c-8ca7-6a4ff331923d",
+  "ttft_stream_ms": 2268,
+  "time_to_request_ms": 546,
+  "first_content_frame_ms": 2268,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "credential_expires_at": "2026-12-02T23:39:25.830Z"
+}

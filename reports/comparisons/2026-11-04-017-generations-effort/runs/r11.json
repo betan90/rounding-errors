@@ -1,0 +1,102 @@
+{
+  "duration_api_ms": 254197,
+  "stop_reason": "end_turn",
+  "session_id": "6a6a2e95-caaa-4ed7-94ec-b0fd6b975b49",
+  "total_cost_usd": 1.254736,
+  "usage": {
+    "input_tokens": 18,
+    "cache_creation_input_tokens": 53287,
+    "cache_read_input_tokens": 266502,
+    "output_tokens": 23541,
+    "output_tokens_details": {
+      "thinking_tokens": 11450
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 53287,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 1336,
+        "cache_read_input_tokens": 53050,
+        "cache_creation_input_tokens": 237,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 237
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "modelUsage": {
+    "claude-opus-5": {
+      "inputTokens": 18,
+      "outputTokens": 23541,
+      "cacheReadInputTokens": 266502,
+      "cacheCreationInputTokens": 53287,
+      "webSearchRequests": 0,
+      "costUSD": 1.254736,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 64000,
+      "thinkingTokens": 11450,
+      "cacheCreationEphemeral5mInputTokens": 0,
+      "cacheCreationEphemeral1hInputTokens": 53287,
+      "canonicalModel": "claude-opus-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "safety_stops": 0,
+  "is_error": false,
+  "num_turns": 12,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "Written. I could not execute the checker: **Bash is disabled in this session** (and Edit was unavailable, so revisions went through full rewrites). I verified every rule in `check-house-rules.mjs` by hand against the script source instead.\n\n**Path:** `drafts\\r11\\exhibit-017-illegal-gdp.md`\n**Word count:** 480 (body prose only, headings excluded, per `bodyWordCount`)\n**Title:** \"Up to £10 billion a year, and no time series\"\n\nManual check against the script, rule by rule: 0 em dashes (also 0 en dashes, so Patterson's \"around £50 billion a year\" quote was cut rather than mangled); body under 500; verdict exactly `Fraud detected` / `Rules broken` / `Usefulness of the headline figure`; exactly 1 `gap: true`; `exhibit: \"017\"` matches the filename; disclosure contains Claude, errors, checked; no `chartNote` since the chart is wired separately; all 4 tags in the `TAGS` set. Two caveats you should know: `isDraft()` only recognises drafts sitting in the repo root, so running the script on `drafts/r11/` would skip all the exhibit-template rules and check only dashes and spelled numbers; and the new category line needs adding to CLAUDE.md's category list at build time.\n\nFive decisions:\n1. **Category** \"the assumptions were the data\" as recommended: it describes the gap's shape (published assumptions standing in for data), carries no moral verdict, so it passes the vocabulary rule. Tags exactly as specified; country United Kingdom.\n2. **Gap row** is the 2 published 2010 figures, £5.6bn (FOI) vs £4,370m (MNC8). The 0.78 / 0.77 arithmetic sits in `ledgerNote` explicitly labelled as this site's, with a sentence saying ONS does not attribute the difference to the holiday factor.\n3. **Chart** kept, no `chartNote`; the MNC8 source entry carries the plotted values and states the series is modelled, not observed, plus that no ONS explanation of the 2020 fall was found. The body gives 1985 and 2024 endpoints only and never names a cause for 2020.\n4. **Excluded:** everything in the CUT list; the \"25 clients\" figure (the article gives 20, 25 and 30 without saying which was used); the 125 euro / 0.50 condom intermediate-consumption line (currency basis unconfirmed); R&D's £18 billion and the 4% total (off-topic and the latter's quote contains an en dash). Wikipedia appears only as the thing ONS's footnote 12 points to, never as a source.\n5. **Attribution:** nobody lied; Abramsky and Drew are named only as the article's authors, Patterson only as his gov.uk blog states it, and every damning phrase is ONS quoting itself. The Blue Book quote starts lowercase at \"allowance\" to stay verbatim, and the \"male population\" quote closes before the period for the same reason.",
+  "ttft_ms": 2914,
+  "type": "result",
+  "duration_ms": 254584,
+  "uuid": "4225f1e8-606e-43d7-ac53-f6e0929387a5",
+  "ttft_stream_ms": 1723,
+  "time_to_request_ms": 214,
+  "first_content_frame_ms": 1723,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "credential_expires_at": "2026-12-02T23:39:30.637Z"
+}

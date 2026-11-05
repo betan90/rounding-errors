@@ -1,0 +1,102 @@
+{
+  "duration_api_ms": 89931,
+  "stop_reason": "end_turn",
+  "session_id": "ee3b9d69-8046-4a56-b2b7-7ccd9817076d",
+  "total_cost_usd": 0.5005698,
+  "usage": {
+    "input_tokens": 10,
+    "cache_creation_input_tokens": 32029,
+    "cache_read_input_tokens": 96889,
+    "output_tokens": 11246,
+    "output_tokens_details": {
+      "thinking_tokens": 2053
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 32029,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 978,
+        "cache_read_input_tokens": 31574,
+        "cache_creation_input_tokens": 3964,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 3964
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "modelUsage": {
+    "claude-opus-5-5": {
+      "inputTokens": 10,
+      "outputTokens": 11246,
+      "cacheReadInputTokens": 96889,
+      "cacheCreationInputTokens": 32029,
+      "webSearchRequests": 0,
+      "costUSD": 0.5005698,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 2053,
+      "cacheCreationEphemeral5mInputTokens": 0,
+      "cacheCreationEphemeral1hInputTokens": 32029,
+      "canonicalModel": "claude-opus-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "safety_stops": 0,
+  "is_error": false,
+  "num_turns": 9,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "I wrote the draft for exhibit 017, but I couldn't run `check-house-rules.mjs` because there's no shell tool in this session. So it hasn't been through the house-rules checks: em dashes, the 500-word limit, verdict and ledger counts, disclosure, tags. Please run `node scripts/check-house-rules.mjs drafts/r20/exhibit-017-illegal-gdp.md` before handing it on. The only warning it should give is the chart one, since the chart isn't wired yet.\n\n- **Path:** `C:\\Users\\betan\\AppData\\Local\\Temp\\rounding-errors-bench\\2026-11-04-017-generations-effort\\drafts\\r20\\exhibit-017-illegal-gdp.md`\n- **Title:** \"58,000 estimated, 12 weeks off\"\n- **Word count:** about 480 words of body text by my own count, which is close to the 500 limit. The script will give the exact number.\n\n**Judgment calls:**\n1. **Category:** I used \"the assumptions were the data\". It describes how the figure was built, not a moral verdict, so it fits the vocabulary rules. It's a new line, so it needs adding to the category list in `CLAUDE.md` at build time.\n2. **Ledger:** the one gap row is \"Prostitution spending, 2010: £5.6bn (FOI reply) / £4,370m (series MNC8 today)\". The ledger note says ONS hasn't explained the difference. The 78% vs 77% comparison with the 12-week holiday appears once in the body as \"By this site's arithmetic\", is repeated in the disclosure, and is never presented as the cause.\n3. **Left out or softened:**\n   - The 125-per-year clothing figure, because the euro sign was lost in extraction and I couldn't confirm the currency.\n   - Patterson's \"£50 billion\" quote, which contains a dash.\n   - The FOI reply's date, which the brief marks \"confirm on page\". It's called \"later\".\n   - Which of the 20, 25 or 30 clients-per-week figures ONS used.\n   - Any cause for the 2020 fall.\n   - Everything in the CUT section.\n   - The ESA wording is \"no changes … between ESA95 and ESA10\", which avoids saying ESA 2010 introduced the rule.\n4. **Wikipedia:** it only comes up as ONS's own footnote for Punternet. The source entry is the ONS article, cited through the UN SIAP mirror, and the source text and disclosure both say it's a mirror.\n5. **Frontmatter:** it copies the shape of exhibit 015, with no `chartNote`. The verdict note's closing line (the series is \"a 2004 point estimate … less 12 weeks' holiday\") is my own summary. It combines the 2014 method with the Blue Book 2016 change, so the fact-checker should look at it.",
+  "ttft_ms": 2383,
+  "type": "result",
+  "duration_ms": 90253,
+  "uuid": "12772341-8257-4545-9e6c-768896ea0046",
+  "ttft_stream_ms": 1431,
+  "time_to_request_ms": 249,
+  "first_content_frame_ms": 1431,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "credential_expires_at": "2026-12-02T23:39:30.637Z"
+}

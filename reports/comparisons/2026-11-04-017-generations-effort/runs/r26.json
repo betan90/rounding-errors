@@ -1,0 +1,102 @@
+{
+  "duration_api_ms": 266603,
+  "stop_reason": "end_turn",
+  "session_id": "fbd2a3a3-f561-4487-922c-e41ee6032fc1",
+  "total_cost_usd": 0.5332482,
+  "usage": {
+    "input_tokens": 8,
+    "cache_creation_input_tokens": 54541,
+    "cache_read_input_tokens": 86491,
+    "output_tokens": 29777,
+    "output_tokens_details": {
+      "thinking_tokens": 24012
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 54541,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 1141,
+        "cache_read_input_tokens": 53881,
+        "cache_creation_input_tokens": 660,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 660
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "modelUsage": {
+    "claude-sonnet-5": {
+      "inputTokens": 8,
+      "outputTokens": 29777,
+      "cacheReadInputTokens": 86491,
+      "cacheCreationInputTokens": 54541,
+      "webSearchRequests": 0,
+      "costUSD": 0.5332482,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 64000,
+      "thinkingTokens": 24012,
+      "cacheCreationEphemeral5mInputTokens": 0,
+      "cacheCreationEphemeral1hInputTokens": 54541,
+      "canonicalModel": "claude-sonnet-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "safety_stops": 0,
+  "is_error": false,
+  "num_turns": 7,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "I don't have an execution tool available in this session (only Read/Write/Glob/Grep), so I could not actually run `check-house-rules.mjs`. I verified the blocking rules manually instead (no em dash found via grep; exactly one `gap: true` row; exactly 3 verdict rows keyed `Fraud detected`/`Rules broken`/`Usefulness of the headline figure`; 3-digit `exhibit: \"017\"` matches the filename; disclosure contains all 3 required statements plus the mirror note; body is markdown-only with `## The incident`, `## Who lied`, `## The bit continues`; manual word count of the body prose came to ~492 words, under the 500 cap). Flagging this gap rather than claiming I ran it.\n\n**Path:** `C:\\Users\\betan\\AppData\\Local\\Temp\\rounding-errors-bench\\2026-11-04-017-generations-effort\\drafts\\r26\\exhibit-017-illegal-gdp.md`\n**Word count (body, manual count):** ~492 words\n**Title:** \"£50 billion a year, footnoted to Wikipedia\"\n\n**Judgment calls:**\n1. Category: used the brief's new line \"the assumptions were the data\" as instructed; it's not yet in CLAUDE.md's vocabulary list, so the site-builder (per the brief) still needs to add it there — I did not touch CLAUDE.md myself.\n2. Ending heading: chose \"The bit continues\" (not \"The fix\") since MNC8 is still live, last released 31 Oct 2025, on the unrevised 2004-based method.\n3. Chart: no `chartNote` added, per instructions, since this exhibit has a real chart (MNC8, 1985–2024) to be wired separately; `check-house-rules.mjs` will warn about the missing wiring in hook mode, which is expected at draft stage.\n4. Excluded from the brief's VERIFIED set for space/focus: the retailer-diluting-alcohol analogy, the condoms/clothes intermediate-consumption figures, the euro-vs-sterling ambiguity on the €125 clothing assumption, and the \"no employment in prostitution\" self-employment assumption — all true but not needed to carry the four load-bearing quotes (ESA rule footnote, arbitrary cannabis split, \"government units... unlikely to spend money on illegal drugs,\" Wikipedia footnote, 12-week Dutch holiday) within 500 words.\n5. Attribution handling: narrator never accuses; stated plainly that \"Nobody\" lied, with ONS's own self-graded assumptions carrying the verdict. The £5.6bn vs £4,370m 2010 figures are presented as two separate published numbers, and the 0.78 ≈ 40/52 ratio is explicitly labeled \"this site's, not ONS's,\" per the constraint on the holiday arithmetic.",
+  "ttft_ms": 2154,
+  "type": "result",
+  "duration_ms": 267169,
+  "uuid": "4d442861-700c-4d27-baeb-926090a258b8",
+  "ttft_stream_ms": 1555,
+  "time_to_request_ms": 455,
+  "first_content_frame_ms": 1555,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "credential_expires_at": "2026-12-02T23:39:30.637Z"
+}

@@ -1,0 +1,102 @@
+{
+  "duration_api_ms": 100810,
+  "stop_reason": "end_turn",
+  "session_id": "dec7cb86-333a-4e7d-b12e-81980aacf2b3",
+  "total_cost_usd": 0.2713814,
+  "usage": {
+    "input_tokens": 8,
+    "cache_creation_input_tokens": 39897,
+    "cache_read_input_tokens": 66787,
+    "output_tokens": 9842,
+    "output_tokens_details": {
+      "thinking_tokens": 4834
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 39897,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 1211,
+        "cache_read_input_tokens": 34281,
+        "cache_creation_input_tokens": 5616,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 5616
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "modelUsage": {
+    "claude-sonnet-5": {
+      "inputTokens": 8,
+      "outputTokens": 9842,
+      "cacheReadInputTokens": 66787,
+      "cacheCreationInputTokens": 39897,
+      "webSearchRequests": 0,
+      "costUSD": 0.2713814,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 64000,
+      "thinkingTokens": 4834,
+      "cacheCreationEphemeral5mInputTokens": 0,
+      "cacheCreationEphemeral1hInputTokens": 39897,
+      "canonicalModel": "claude-sonnet-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "safety_stops": 0,
+  "is_error": false,
+  "num_turns": 7,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "I don't have an execution tool available in this session (only Read/Write/Glob/Grep), so I could not run `node scripts/check-house-rules.mjs`. I manually checked the draft against the rules the script enforces instead:\n\n- No em dashes anywhere (checked by eye).\n- Exactly 3 verdict rows keyed `Fraud detected`, `Rules broken`, `Usefulness of the headline figure`.\n- Exactly 1 ledger row with `gap: true` (the MNC8-today £4,370m row).\n- `exhibit: \"017\"` matches the filename.\n- Disclosure contains \"Claude\", \"errors\", \"checked\".\n- No `chartNote` present (chart is wired separately, per instructions — this will trigger the script's \"no chart wired and no chartNote\" warning in hook mode, as expected, since `ExhibitLayout.astro` hasn't been touched).\n- Body is three sections only: `## The incident`, `## Who lied`, `## The bit continues`.\n\n**Path:** `C:\\Users\\betan\\AppData\\Local\\Temp\\rounding-errors-bench\\2026-11-04-017-generations\\drafts\\r13\\exhibit-017-illegal-gdp.md`\n\n**Word count (body, headings excluded):** approx. 495 words (The incident ~255, Who lied ~140, The bit continues ~105) — under the 500 cap, cut close by design.\n\n**Title:** \"£6.4 billion of UK GDP, modelled, not measured\"\n\n**Judgment calls:**\n1. Used the brief's recommended new category \"the assumptions were the data\" rather than reusing 008's line, since the shape here is specifically the published assumptions, not a baseline choice.\n2. Put `gap: true` on the MNC8-today 2010 figure (£4,370m) rather than the FOI figure, treating it as \"the current official number\" against which the FOI figure is the discrepancy; ledgerNote explicitly labels the 0.78/0.77 arithmetic as this site's, not ONS's, per the brief's instruction not to assert causation.\n3. Omitted the \"25 clients\" value, the euro-denominated intermediate-consumption figures, and the cutting-drugs-as-retail analogy — all verified but not load-bearing, and cutting them kept the body under 500 words without losing the strongest literal quotes.\n4. Quoted Patterson's \"legally mandated through the European System of Accounts 2010\" claim but paired it immediately with ONS's own footnote contradicting it, attributing the claim to his blog only, never asserting it as fact myself.\n5. No chart component exists yet in this repo snapshot, so the file correctly has no `chartNote` and no wired chart; that mismatch is expected to surface as a warning until the site-builder wires `017` into `ExhibitLayout.astro`.",
+  "ttft_ms": 2367,
+  "type": "result",
+  "duration_ms": 101502,
+  "uuid": "3510ecf5-278e-47b3-a70c-dbfc6fab9ea3",
+  "ttft_stream_ms": 1865,
+  "time_to_request_ms": 583,
+  "first_content_frame_ms": 1865,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "credential_expires_at": "2026-12-02T23:39:25.830Z"
+}

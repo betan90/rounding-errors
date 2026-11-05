@@ -1,0 +1,102 @@
+{
+  "duration_api_ms": 937899,
+  "stop_reason": "end_turn",
+  "session_id": "493d5b06-2bfd-4157-bcaa-6095ae7a8372",
+  "total_cost_usd": 3.3561943999999997,
+  "usage": {
+    "input_tokens": 10,
+    "cache_creation_input_tokens": 136576,
+    "cache_read_input_tokens": 198932,
+    "output_tokens": 111188,
+    "output_tokens_details": {
+      "thinking_tokens": 103963
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 136576,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 5811,
+        "cache_read_input_tokens": 135649,
+        "cache_creation_input_tokens": 927,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 927
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "modelUsage": {
+    "claude-opus-5-5": {
+      "inputTokens": 10,
+      "outputTokens": 111188,
+      "cacheReadInputTokens": 198932,
+      "cacheCreationInputTokens": 136576,
+      "webSearchRequests": 0,
+      "costUSD": 3.3561943999999997,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 103963,
+      "cacheCreationEphemeral5mInputTokens": 0,
+      "cacheCreationEphemeral1hInputTokens": 136576,
+      "canonicalModel": "claude-opus-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "safety_stops": 0,
+  "is_error": false,
+  "num_turns": 11,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "I've written the exhibit to `drafts\\r08\\` (489 words). I couldn't run the house-rules script: this session has no shell tool, so I checked its rules by hand instead.\n\n- **Path:** `C:\\Users\\betan\\AppData\\Local\\Temp\\rounding-errors-bench\\2026-11-04-017-generations-effort\\drafts\\r08\\exhibit-017-illegal-gdp.md`\n- **Body:** 489 words (limit 500), counted by hand the way the script counts\n- **Title:** \"No time series, 1985 to 2024\". It pairs ONS's own words (\"As there is no time series, we vary the point estimates...\") with the years the series covers.\n\n**Hand checks:** no em dashes, no en dashes and no spelled-out numbers (searched the file). The exhibit number matches the file name, there is 1 `gap: true` row, the 3 verdict rows are in order, there is no chartNote, the disclosure has Claude, errors and checked, and all 4 tags are on the list. I checked the YAML by eye only.\n\n**The script won't check this file properly from this folder.** It only treats files in `src\\content\\exhibits\\` or at the repo root as exhibits. For `drafts\\r08\\` it checks dashes and spelled-out numbers, then prints `ok`, with no word count and no schema checks. The chart warning you expected also won't appear: that rule only runs on files in `src/content/`. For a real result, run it on a copy at the root or in `src/content/exhibits/`.\n\n**Choices**\n1. **Category:** \"the assumptions were the data\". It's flat and describes the gap's shape rather than giving a verdict, so it passes. It's new, so it needs adding to CLAUDE.md's category list at build time; I didn't touch CLAUDE.md.\n2. **Tags:** gdp, national-accounts, measurement-definitions, europe, all from the existing list.\n3. **Chart:** no chartNote. The MNC8 component and the `'017'` line in `ExhibitLayout.astro` still need building. One warning for the caption: the 2020 drop (£5,993m to £4,130m) can't come from the 2014 method alone (male population and CPI). So the draft dates that method to 2014 and never says today's series still uses it. The caption should say \"modelled\", not \"plots the assumptions\".\n4. **Gap row:** the FOI's £5.6bn and MNC8's £4,370m for 2010, shown as 2 published figures. The 78% vs 77% comparison (40 of 52 weeks) appears only in the ledger note, labelled as this site's arithmetic, with ONS's caveat.\n5. **Left out:**\n   - Everything in CUT, plus \"25 clients\".\n   - The 2020 drop from the body. The chart shows it, and no cause is given anywhere.\n   - The clothes and condoms costs, because the currency symbol was lost in extraction.\n   - Patterson's \"legally mandated\" and \"Comparability\" lines. The brief gives no context, so his \"it\" may mean the whole ESA 2010 package, R&D included.\n   - Patterson's R&D (£18bn) and overall (£50bn) figures: off-topic, and the £50bn quote contains an en dash.\n   - For length: the self-employed assumption, the second \"probably false\" and the retailer analogy.\n\n**Other flags**\n- I wrote to `drafts\\r08\\` as you asked, not the repo root my standing instructions name.\n- **Date:** I used 2026-10-23 as told. CLAUDE.md wants the actual build day (today is 2026-11-05), and 016 already has that date. The site-builder should set the real date.\n- **FOI date left out:** the brief says the 6 Nov 2015 date still needs confirming on the page. If it's confirmed, adding it to the gap row would show the reply came before the Blue Book 2016 holiday change.\n- **Phrase counts:** \"probably false\" 3 times and \"arbitrary\" 2 times come from a search of the PDF's extracted text. The fact-checker should recount in the PDF itself, since line breaks can hide matches.\n- Patterson's \"(please note the italics for emphasis!)\" is quoted without italics, because the brief doesn't say which words were italic.\n- I found no mismatch between CLAUDE.md's template and the 015/016 frontmatter.",
+  "ttft_ms": 4515,
+  "type": "result",
+  "duration_ms": 938289,
+  "uuid": "b11f1032-d21d-423e-9958-a4b857755913",
+  "ttft_stream_ms": 1786,
+  "time_to_request_ms": 232,
+  "first_content_frame_ms": 1786,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "credential_expires_at": "2026-12-02T23:39:30.637Z"
+}

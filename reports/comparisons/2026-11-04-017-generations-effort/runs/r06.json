@@ -1,0 +1,102 @@
+{
+  "duration_api_ms": 315967,
+  "stop_reason": "end_turn",
+  "session_id": "e0b26cae-db9d-4b5a-a181-122f06a04d99",
+  "total_cost_usd": 0.10297665,
+  "usage": {
+    "input_tokens": 16,
+    "cache_creation_input_tokens": 104583,
+    "cache_read_input_tokens": 518871,
+    "output_tokens": 80443,
+    "output_tokens_details": {
+      "thinking_tokens": 74336
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 104583,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 3491,
+        "cache_read_input_tokens": 100428,
+        "cache_creation_input_tokens": 7664,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 7664
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "modelUsage": {
+    "claude-haiku-5-5": {
+      "inputTokens": 16,
+      "outputTokens": 80443,
+      "cacheReadInputTokens": 518871,
+      "cacheCreationInputTokens": 104583,
+      "webSearchRequests": 0,
+      "costUSD": 0.10297665,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 74336,
+      "cacheCreationEphemeral5mInputTokens": 0,
+      "cacheCreationEphemeral1hInputTokens": 104583,
+      "canonicalModel": "claude-haiku-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "safety_stops": 0,
+  "is_error": false,
+  "num_turns": 12,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "The draft is at `C:\\Users\\betan\\AppData\\Local\\Temp\\rounding-errors-bench\\2026-11-04-017-generations-effort\\drafts\\r06\\exhibit-017-illegal-gdp.md`.\n\n**Title:** Illegal drugs and prostitution in UK GDP, on the authors' own assumptions\n**Body word count:** 456 (463 with the three headings). The limit is 500.\n\n**The house-rules script did not run.** I have no shell tool in this session, and `node_modules` is missing, so `js-yaml` won't load. The script also skips its schema and word-count checks for any path outside `src/content/exhibits/` or the repo root, so this path would only get the em-dash and number checks. I ran the equivalent checks by Grep and by hand:\n- No em or en dashes, and no spelled-out count words.\n- Exactly 3 verdict rows, in the required keys.\n- Exactly 1 ledger row with `gap: true`.\n- The disclosure names Claude, the errors, and the figure check, and notes the mirror.\n- All tags are in the vocabulary, the exhibit number matches the file name, and there is no `chartNote`.\n\n**Judgment calls and flags**\n1. **Path:** I followed your `drafts/r06` path. My brief said repo root, and the hook and prebuild won't check this file until it is at root.\n2. **Date:** I used 2026-10-23 as you asked. Today is 2026-11-04, and CLAUDE.md says the date is the build day. Correct it if this builds today.\n3. **Category:** \"the assumptions were the data.\" I read it as structural, not a verdict. It must be added to the CLAUDE.md category list at build.\n4. **Chart:** No `chartNote`. The site-builder needs to wire 017 into `ExhibitLayout.astro` and build the MNC8 component. The body and ledger note both say the series is modelled, not observed.\n5. **Gap row:** One row, \"£5.6bn vs £4,370m\" for 2010 (FOI reply vs current series), with no cause given.\n6. **Arithmetic:** The 78% and 77% lines are labeled as this site's arithmetic. \"40 of 52 weeks\" is 52 minus the verified 12, not a verified figure. Cut it if you want verified figures only.\n7. **FOI date:** Omitted. The brief's \"6 Nov 2015\" was never confirmed on the page, and the disclosure says so.\n8. **Excluded:** Every CUT item, including 60,879, £67.16, \"25 clients\", 0.7%, Italy, the Ig Nobel, Eurostat, and Ireland. The 20/25/30 client line is also gone, since the brief doesn't say which was used. The 31% fall is left out because it is derived rather than verified. The 2020 figures are stated as numbers only.\n9. **Check this:** \"No ONS source found explains the 2020 fall\" repeats the researcher's negative finding. It is worth a second look.\n10. **Provenance:** The Punternet footnote is flagged in the body as a provenance problem. Wikipedia appears nowhere in Sources.",
+  "ttft_ms": 4373,
+  "type": "result",
+  "duration_ms": 316694,
+  "uuid": "37ef475f-8da4-4582-bf1c-587aab40ea1e",
+  "ttft_stream_ms": 1456,
+  "time_to_request_ms": 239,
+  "first_content_frame_ms": 1457,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "credential_expires_at": "2026-12-02T23:39:25.830Z"
+}

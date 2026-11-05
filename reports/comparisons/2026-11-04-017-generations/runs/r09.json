@@ -1,0 +1,102 @@
+{
+  "duration_api_ms": 161829,
+  "stop_reason": "end_turn",
+  "session_id": "f6d5af20-3c39-4ea9-be90-83f02e20b4df",
+  "total_cost_usd": 0.7731861999999999,
+  "usage": {
+    "input_tokens": 16,
+    "cache_creation_input_tokens": 44948,
+    "cache_read_input_tokens": 207591,
+    "output_tokens": 18601,
+    "output_tokens_details": {
+      "thinking_tokens": 8245
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 44948,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 1299,
+        "cache_read_input_tokens": 44667,
+        "cache_creation_input_tokens": 281,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 281
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "modelUsage": {
+    "claude-opus-5-5": {
+      "inputTokens": 16,
+      "outputTokens": 18601,
+      "cacheReadInputTokens": 207591,
+      "cacheCreationInputTokens": 44948,
+      "webSearchRequests": 0,
+      "costUSD": 0.7731861999999999,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 8245,
+      "cacheCreationEphemeral5mInputTokens": 0,
+      "cacheCreationEphemeral1hInputTokens": 44948,
+      "canonicalModel": "claude-opus-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "safety_stops": 0,
+  "is_error": false,
+  "num_turns": 11,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "I've written the draft, but I couldn't run `check-house-rules.mjs`. This session has no shell tool, so I checked by hand instead:\n- **Word count:** the body is about 483 words, counted the way the script counts (headings left out).\n- **Em dashes and spelled-out numbers:** a search found none.\n- **Required counts:** there are exactly 3 verdict rows, 1 ledger row with `gap: true`, and a disclosure with all 3 required statements.\n\nPlease run the script yourself before the site-builder picks the file up. It should still warn that no chart is wired yet, as you expected.\n\n**Path:** `C:\\Users\\betan\\AppData\\Local\\Temp\\rounding-errors-bench\\2026-11-04-017-generations\\drafts\\r09\\exhibit-017-illegal-gdp.md`\n\n**Title:** \"An official GDP component, footnoted to Wikipedia\"\n\n**Judgment calls:**\n1. **Category and tags:** I used the new line \"the assumptions were the data\". It describes how the figure was built, not a verdict, so it fits the vocabulary rules. It still has to be added to the CLAUDE.md category list when the exhibit is built. Tags are gdp, national-accounts, measurement-definitions and europe. The date is 2026-10-23 and there is no `chartNote`, since this exhibit has a chart.\n2. **Chart:** there is no frontmatter chart key, because charts are wired by exhibit number. The ledger note says the MNC8 series is modelled, not observed, quoting ONS's \"there is no time series\". The 2020 fall is stated as numbers only (£5,993m, then £4,130m, then £6,431m in 2024), with no cause given.\n3. **The gap row:** £5.6bn (ONS's FOI reply) against £4,370m (MNC8 today) for 2010, shown as 2 published figures. The 78% and 77% comparison with the 12-week holiday is labelled \"this site's arithmetic, not ONS's\" in the body and the disclosure, along with \"ONS does not say the holiday is the whole difference\". I left the FOI reply's date out because the brief says it still needs confirming on the page. Without it, the body doesn't claim the FOI came before the 2016 change.\n4. **Left out:**\n   - The CUT section entirely.\n   - \"25 clients\" as the value ONS chose; the body lists 20, 25 and 30.\n   - The 125-per-year clothing cost, because the currency isn't confirmed.\n   - Patterson's £50bn and \"4%\" line, because it contains an en dash.\n   - The £18bn R&D figure and the cutting-drugs \"retailer\" analogy, both cut for length.\n   - The claim that ESA 2010 introduced the rule. The body quotes ONS's \"no changes in this area between ESA95 and ESA10\", and ESA 2010 appears only inside Patterson's quoted \"legally mandated\".\n5. **Quotes and sources:** every quote is a verbatim piece of the brief. I reworded the clients sentence so I didn't have to lower-case ONS's \"Following\". Abramsky and Drew are named only in the sources entry, as the article's authors, and Patterson only as the author of his blog. The ONS 2014 article is cited through the UN SIAP site and labelled as a mirror in both the source text and the disclosure. Wikipedia is never cited; it appears only as where ONS's footnote 12 points. I added Patterson's \"Comparability between nations\" quote to his source entry, because the Usefulness verdict relies on it.",
+  "ttft_ms": 3152,
+  "type": "result",
+  "duration_ms": 162694,
+  "uuid": "58afac5e-7f09-4591-998a-6d9681f9e970",
+  "ttft_stream_ms": 2171,
+  "time_to_request_ms": 486,
+  "first_content_frame_ms": 2171,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "credential_expires_at": "2026-12-02T23:39:25.830Z"
+}

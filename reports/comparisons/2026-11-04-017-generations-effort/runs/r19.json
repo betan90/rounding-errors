@@ -1,0 +1,102 @@
+{
+  "duration_api_ms": 471538,
+  "stop_reason": "end_turn",
+  "session_id": "fcfd1b69-8a5a-43fe-bca3-dc1af22369a4",
+  "total_cost_usd": 0.892568,
+  "usage": {
+    "input_tokens": 10,
+    "cache_creation_input_tokens": 83292,
+    "cache_read_input_tokens": 146750,
+    "output_tokens": 53003,
+    "output_tokens_details": {
+      "thinking_tokens": 46730
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 83292,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 1356,
+        "cache_read_input_tokens": 82354,
+        "cache_creation_input_tokens": 938,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 938
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "modelUsage": {
+    "claude-sonnet-5": {
+      "inputTokens": 10,
+      "outputTokens": 53003,
+      "cacheReadInputTokens": 146750,
+      "cacheCreationInputTokens": 83292,
+      "webSearchRequests": 0,
+      "costUSD": 0.892568,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 64000,
+      "thinkingTokens": 46730,
+      "cacheCreationEphemeral5mInputTokens": 0,
+      "cacheCreationEphemeral1hInputTokens": 83292,
+      "canonicalModel": "claude-sonnet-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "safety_stops": 0,
+  "is_error": false,
+  "num_turns": 9,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "I don't have a tool in this session that can execute shell/Node commands (only Read, Write, Glob, Grep are available to me), so I could not run `check-house-rules.mjs` myself. I did the equivalent checks by hand: no em dash in the file (confirmed via grep above), body word count tallied section-by-section at 489 words (under the 500 cap), exactly one ledger row with `gap: true`, exactly three verdict rows keyed `Fraud detected` / `Rules broken` / `Usefulness of the headline figure`, disclosure contains \"Claude\", \"errors\", and \"checked,\" and no Wikipedia entry in `sources` (it appears only as reported content of ONS's own footnote). Please run the script yourself to confirm; I'd expect only the chart-wiring warning, since the MNC8 chart component isn't wired into `ExhibitLayout.astro` yet.\n\n**Path:** `C:\\Users\\betan\\AppData\\Local\\Temp\\rounding-errors-bench\\2026-11-04-017-generations-effort\\drafts\\r19\\exhibit-017-illegal-gdp.md`\n**Word count (body, \"## The incident\" through end):** 489 words (manual count, three sections)\n**Title:** \"Up to £10 billion a year, footnoted to Wikipedia\"\n\nJudgment calls:\n1. **Category:** used the brief's recommended \"the assumptions were the data\" as instructed; it describes the gap's shape (published, self-flagged assumptions), not a verdict, so it doesn't violate the attribution rule. Flag: this line isn't yet in CLAUDE.md's category list — that addition is outside my scope (draft-only, no repo edits).\n2. **Tags:** used all four given (`gdp`, `national-accounts`, `measurement-definitions`, `europe`); all four already exist in the live vocabulary, so no new-tag flag needed.\n3. **Chart:** no `chartNote` (per instructions, the MNC8 chart is built separately). Added a `ledgerNote` instead stating the series is \"modelled, not observed,\" to carry the brief's caution about the chart plotting assumptions, since that caveat had nowhere else to live without a chartNote.\n4. **Excluded:** Patterson's R&D (+£18bn) and \"£50 billion a year, some 4%\" lines — off-topic (R&D, not drugs/prostitution) and the latter contains an en dash in the original, which the brief flagged as unquotable; Italy/ISTAT, Eurostat 2015, Ireland CSO, the 2009 £5.3bn/£4.4bn split, \"60,879,\" \"£67.16,\" and \"25 clients\" — all CUT/unverified in the brief. Also omitted Wikipedia as a source entry per the \"never cited\" rule, reporting it only as ONS's own footnoted choice.\n5. **Attribution handling:** kept \"nobody lied\" explicit in Who Lied; named Abramsky/Drew only as the 2014 article's authors and Patterson only as the blog's author; reported his \"legally mandated through ESA 2010\" phrase verbatim but immediately set it against ONS's own footnote that ESA 2010 changed nothing, without calling it a contradiction or a lie. Presented the £5.6bn/£4,370m 2010 figures as two separate ONS publications, with the 12-week-holiday arithmetic explicitly labeled \"this site's,\" per the brief.",
+  "ttft_ms": 2169,
+  "type": "result",
+  "duration_ms": 471895,
+  "uuid": "03fe1485-3b36-4463-8c92-73bbb4eaa81f",
+  "ttft_stream_ms": 1516,
+  "time_to_request_ms": 250,
+  "first_content_frame_ms": 1516,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "credential_expires_at": "2026-12-02T23:39:30.637Z"
+}

@@ -1,0 +1,102 @@
+{
+  "duration_api_ms": 114388,
+  "stop_reason": "end_turn",
+  "session_id": "b19bb030-d8fc-443e-9521-337a15331879",
+  "total_cost_usd": 0.027384969999999998,
+  "usage": {
+    "input_tokens": 14,
+    "cache_creation_input_tokens": 52429,
+    "cache_read_input_tokens": 222927,
+    "output_tokens": 29337,
+    "output_tokens_details": {
+      "thinking_tokens": 16214
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 52429,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 612,
+        "cache_read_input_tokens": 51931,
+        "cache_creation_input_tokens": 4007,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 4007
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "modelUsage": {
+    "claude-haiku-5-5": {
+      "inputTokens": 14,
+      "outputTokens": 29337,
+      "cacheReadInputTokens": 222927,
+      "cacheCreationInputTokens": 52429,
+      "webSearchRequests": 0,
+      "costUSD": 0.027384969999999998,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 16214,
+      "cacheCreationEphemeral5mInputTokens": 0,
+      "cacheCreationEphemeral1hInputTokens": 52429,
+      "canonicalModel": "claude-haiku-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "safety_stops": 0,
+  "is_error": false,
+  "num_turns": 16,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "I wrote the draft to `drafts/r07/exhibit-017-illegal-gdp.md`, but I could not run the house-rules check. The Bash tool is disabled in this session, so `check-house-rules.mjs` never ran. Please run `node scripts/check-house-rules.mjs <file>` before the site-builder picks it up.\n\n- **Title:** \"Prostitution in GDP, by assumption\"\n- **Word count:** about 470 to 480 body words by my manual count, under the 500 limit. I could not verify it with a script.\n- **Category and tags:** \"the assumptions were the data\" as recommended. It describes the gap's structure, so it passes the vocabulary rules. Tags are gdp, national-accounts, measurement-definitions, europe. Country is United Kingdom.\n- **Chart:** no chartNote, as instructed. Body text says the series is modelled, not observed, and gives the 2020 fall as numbers only, with no cause. The chart still needs wiring in `ExhibitLayout.astro` (exhibit 017) and a component.\n- **Ledger:** one `gap: true` row, the £5.6bn FOI figure against the £4,370m MNC8 figure for 2010. The 78% and 40-of-52 arithmetic is labelled as this site's in both the ledger note and the body. ONS is not credited with that link.\n- **Excluded or flagged:** nothing from the CUT list is used. I did not state a cause for 2020. I did not say ESA 2010 introduced the rule. Patterson is cited only as his blog. The FOI date (6 Nov 2015 in the research notes) is not printed anywhere, because the brief says to confirm it on the page first. The 2014 article is cited through the UN SIAP mirror and labelled as one. Wikipedia appears only as ONS's own footnote target, never as a source.",
+  "ttft_ms": 2108,
+  "type": "result",
+  "duration_ms": 114949,
+  "uuid": "f9ab1c47-9042-477c-909c-50caa192711f",
+  "ttft_stream_ms": 1711,
+  "time_to_request_ms": 427,
+  "first_content_frame_ms": 1711,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "credential_expires_at": "2026-12-02T23:39:25.830Z"
+}

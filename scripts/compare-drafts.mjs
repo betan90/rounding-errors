@@ -220,7 +220,12 @@ async function run(name) {
   const cap = Number(arg('--max-usd') ?? 20);
   const parallel = Number(arg('--parallel') ?? 4);
   const again = process.argv.includes('--again');
-  const queue = plan.cells.filter((c) => again || !c.session || !existsSync(path.join(projectDir(plan.copy), `${c.session}.jsonl`)));
+  // A cell is done when it wrote its draft. A transcript alone is not enough:
+  // on 4 November 2026, 14 runs hit the usage limit, left a transcript and no draft.
+  // --only r03,r07 runs just those cells: to redo a draft the limit cut short,
+  // or to leave out a cell whose failure is the result (it would rerun forever).
+  const only = arg('--only')?.split(',');
+  const queue = plan.cells.filter((c) => (only ? only.includes(c.run) : again || !c.session || !existsSync(c.out)));
   mkdirSync(path.join(dir, 'runs'), { recursive: true });
   const save = () => writeFileSync(planFile, `${JSON.stringify(plan, null, 2)}\n`);
   console.log(`${queue.length} of ${plan.cells.length} cells to run, ${parallel} at a time, at most $${cap} each.`);
@@ -232,8 +237,9 @@ async function run(name) {
         console.log(`${c.run}  ${c.model} ${c.effort}: started`);
         const r = await runOne(plan, c, cap);
         if (r.json) writeFileSync(path.join(dir, 'runs', `${c.run}.json`), `${JSON.stringify(r.json, null, 2)}\n`);
+        // Claude Code reports a usage-limit stop as subtype "success" with is_error set.
         const how = r.json
-          ? `${r.json.subtype}, ${r.seconds}s, $${(r.json.total_cost_usd ?? 0).toFixed(3)} by Claude Code's estimate`
+          ? `${r.json.is_error ? `ERROR: ${String(r.json.result).slice(0, 120)}` : r.json.subtype}, ${r.seconds}s, $${(r.json.total_cost_usd ?? 0).toFixed(3)} by Claude Code's estimate${existsSync(c.out) ? '' : ', no draft written'}`
           : `failed (exit ${r.code ?? '?'}): ${(r.error ?? r.err).slice(0, 200)}`;
         console.log(`${c.run}  ${c.model} ${c.effort}: ${how}`);
       }
@@ -298,6 +304,78 @@ function watched(text, watch) {
   });
 }
 
+// Word choice and tone, by counting: what a draft's prose leans on. Counts
+// are per 1,000 body words, so drafts of different lengths compare. They are
+// symptoms, not a verdict: the house voice wants short sentences, no hedges,
+// no intensifiers, and accusations only as documented acts.
+const VOICE = {
+  hedges: /\b(may|might|perhaps|arguably|likely|possibly|probably|seems?|appears?|somewhat|relatively|fairly|apparently|suggests?)\b/gi,
+  intensifiers: /\b(very|really|extremely|remarkably|notably|strikingly|crucially|importantly|indeed|simply|just|actually|entirely|precisely)\b/gi,
+  accusations: /\b(lie[sd]?|lying|liars?|fake[sd]?|faking|cooked|rigged|manipulat\w*|fraud\w*|dishonest\w*)\b/gi,
+};
+const proseWords = (body) => body.split(/\r?\n/).filter((l) => !/^\s*#/.test(l)).join(' ').toLowerCase().match(/[a-z][a-z'-]*/g) ?? [];
+function voice(body) {
+  const prose = body.split(/\r?\n/).filter((l) => !/^\s*#/.test(l)).join(' ').replace(/\s+/g, ' ').trim();
+  const sentences = prose.split(/(?<=[.!?])\s+(?=[A-Z0-9"'(])/).filter((s) => /[A-Za-z]/.test(s));
+  const lengths = sentences.map((s) => s.split(/\s+/).filter((w) => /[A-Za-z0-9]/.test(w)).length);
+  const words = proseWords(body);
+  const per1k = (n) => Number(((n / Math.max(words.length, 1)) * 1000).toFixed(1));
+  // Quoted text is the source's voice, not the narrator's: 017 quotes "probably false".
+  // Nor is the month May, or "appears 4 times", which counts rather than hedges.
+  const narrator = prose.replace(/["“][^"”]*["”]/g, ' ').replace(/\bMay\b/g, ' ').replace(/\bappears? (\d|once|twice)/gi, ' ');
+  const hits = (re) => (narrator.match(re) ?? []).map((w) => w.toLowerCase());
+  const out = {
+    sentences: sentences.length,
+    meanSentence: Number((lengths.reduce((a, b) => a + b, 0) / Math.max(lengths.length, 1)).toFixed(1)),
+    longestSentence: Math.max(0, ...lengths),
+    sentencesOver25: lengths.filter((n) => n > 25).length,
+    // Distinct words over all words: higher means a wider vocabulary.
+    typeToken: Number((new Set(words).size / Math.max(words.length, 1)).toFixed(3)),
+    // The aside beat: a sentence opening "Also:" or any 1-word label and a colon.
+    asides: sentences.filter((s) => /^[A-Z][a-z]+:\s/.test(s)).length,
+    parentheticals: (prose.match(/\([^)]*\)/g) ?? []).length,
+    questions: sentences.filter((s) => s.trim().endsWith('?')).length,
+  };
+  for (const [k, re] of Object.entries(VOICE)) {
+    const h = hits(re);
+    out[k] = { count: h.length, per1k: per1k(h.length), words: [...new Set(h)] };
+  }
+  return out;
+}
+
+// The words 1 model uses more than every other model in the grid: smoothed
+// log ratio of its rate to the rest's, counted only if the word is in every
+// draft that model wrote (so 1 draft's quirk doesn't count) and at least 3 times.
+function distinctive(runs, top = 12) {
+  const byModel = new Map();
+  for (const r of runs) byModel.set(r.ran.id, [...(byModel.get(r.ran.id) ?? []), proseWords(r.body)]);
+  const count = (lists) => {
+    const c = new Map();
+    for (const ws of lists) for (const w of ws) c.set(w, (c.get(w) ?? 0) + 1);
+    return c;
+  };
+  const all = count([...byModel.values()].flat());
+  const vocab = all.size;
+  const total = [...all.values()].reduce((a, b) => a + b, 0);
+  const out = {};
+  for (const [id, drafts] of byModel) {
+    const mine = count(drafts);
+    const n = [...mine.values()].reduce((a, b) => a + b, 0);
+    const sets = drafts.map((ws) => new Set(ws));
+    out[id] = [...mine]
+      .filter(([w, c]) => c >= 3 && sets.every((s) => s.has(w)))
+      .map(([w, c]) => {
+        const rest = (all.get(w) ?? 0) - c;
+        const score = Math.log((c + 1) / (n + vocab)) - Math.log((rest + 1) / (total - n + vocab));
+        return { word: w, count: c, elsewhere: rest, score: Number(score.toFixed(2)) };
+      })
+      .filter((x) => x.score > 0)
+      .sort((a, b) => b.score - a.score)
+      .slice(0, top);
+  }
+  return out;
+}
+
 function measure(text, inputs, draftName, watch = []) {
   const { data, body } = split(text);
   const d = data ?? {};
@@ -305,6 +383,7 @@ function measure(text, inputs, draftName, watch = []) {
   return {
     watched: watched(text, watch),
     words: bodyWords(body),
+    voice: voice(body),
     rules: rules(text, draftName),
     numbersNotInInputs: [...new Set(numbersIn(text))].filter((n) => !known.has(n)),
     linksNotInInputs: [...new Set(linksIn(text))].filter((u) => !inputs.includes(u)),
@@ -484,7 +563,7 @@ function collect(name) {
   const all = [...done, original];
   const grams = all.map((r) => trigrams(r.body));
   const matrix = grams.map((a) => grams.map((b) => distance(a, b)));
-  const results = { name, exhibit: plan.exhibit, base: plan.base, method: plan.method ?? 'agents', collected: new Date().toISOString(), prices: PRICES, runs, original, distance: { ids: all.map((r) => r.run), matrix } };
+  const results = { name, exhibit: plan.exhibit, base: plan.base, method: plan.method ?? 'agents', collected: new Date().toISOString(), prices: PRICES, runs, original, distance: { ids: all.map((r) => r.run), matrix }, distinctive: distinctive(done) };
   writeFileSync(path.join(dir, 'results.json'), `${JSON.stringify(results, null, 2)}\n`);
 
   console.log(`run  asked               ran                     $est     sec  words  rules(first>last)  new numbers  new links  outside  watched`);
@@ -497,6 +576,15 @@ function collect(name) {
       `${r.run}  ${`${r.model} ${r.effort}`.padEnd(18)}  ${`${r.ran.id} ${r.ran.effort}`.padEnd(22)}  ${r.costUsd === null ? '   n/a' : r.costUsd.toFixed(3).padStart(6)}  ${String(r.seconds).padStart(4)}  ${String(r.words).padStart(5)}  ${String(r.firstRules.blocking.length).padStart(3)} > ${r.rules.blocking.length}           ${String(r.numbersNotInInputs.length).padStart(3)}          ${String(r.linksNotInInputs.length).padStart(3)}      ${String(r.outside.length).padStart(3)}  ${r.watched.map((w) => (w.found ? 'found' : '-')).join(' ')}`,
     );
   }
+  console.log(`\nvoice (per 1,000 words)  sentences  mean len  >25 words  type/token  asides  parens  hedges  intensifiers  accusations`);
+  for (const r of [...done, original]) {
+    const v = r.voice;
+    console.log(
+      `${r.run.padEnd(8)} ${(r.ran?.id ?? 'original').padEnd(17)} ${String(v.sentences).padStart(5)}  ${String(v.meanSentence).padStart(8)}  ${String(v.sentencesOver25).padStart(9)}  ${v.typeToken.toFixed(3).padStart(10)}  ${String(v.asides).padStart(6)}  ${String(v.parentheticals).padStart(6)}  ${String(v.hedges.per1k).padStart(6)}  ${String(v.intensifiers.per1k).padStart(12)}  ${String(v.accusations.per1k).padStart(11)}`,
+    );
+  }
+  console.log('\nWords each model uses more than the rest (in every one of its drafts):');
+  for (const [id, ws] of Object.entries(results.distinctive)) console.log(`  ${id.padEnd(18)} ${ws.map((w) => `${w.word} ${w.count}/${w.elsewhere}`).join(', ') || '(none)'}`);
   for (const id of unpriced) console.log(`No price for ${id}: add it to PRICES in scripts/compare-drafts.mjs and collect again.`);
   console.log(`${done.length} of ${runs.length} runs collected into ${rel(path.join(dir, 'results.json'))}`);
 }
@@ -577,4 +665,4 @@ if (cmd === 'setup' && name) setup(name);
 else if (cmd === 'run' && name) await run(name);
 else if (cmd === 'collect' && name) collect(name);
 else if (cmd === 'history') history(name);
-else console.log('usage: node scripts/compare-drafts.mjs setup <name> (--like <comparison> | --exhibit NNN --base <commit>) [--cells model:effort,...] | run <name> [--parallel 4] [--max-usd 20] [--again] | collect <name> | history [NNN]');
+else console.log('usage: node scripts/compare-drafts.mjs setup <name> (--like <comparison> | --exhibit NNN --base <commit>) [--cells model:effort,...] | run <name> [--parallel 4] [--max-usd 20] [--again] [--only r01,r02] | collect <name> | history [NNN]');

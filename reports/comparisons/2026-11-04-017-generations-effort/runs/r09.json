@@ -1,0 +1,102 @@
+{
+  "duration_api_ms": 284830,
+  "stop_reason": "end_turn",
+  "session_id": "e0f71ed8-be3a-47d0-b244-e7e5cb22701f",
+  "total_cost_usd": 0.08818213,
+  "usage": {
+    "input_tokens": 10,
+    "cache_creation_input_tokens": 101338,
+    "cache_read_input_tokens": 211121,
+    "output_tokens": 72652,
+    "output_tokens_details": {
+      "thinking_tokens": 67531
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 101338,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 1868,
+        "cache_read_input_tokens": 100960,
+        "cache_creation_input_tokens": 378,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 378
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "modelUsage": {
+    "claude-haiku-5-5": {
+      "inputTokens": 10,
+      "outputTokens": 72652,
+      "cacheReadInputTokens": 211121,
+      "cacheCreationInputTokens": 101338,
+      "webSearchRequests": 0,
+      "costUSD": 0.08818213,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 67531,
+      "cacheCreationEphemeral5mInputTokens": 0,
+      "cacheCreationEphemeral1hInputTokens": 101338,
+      "canonicalModel": "claude-haiku-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "safety_stops": 0,
+  "is_error": false,
+  "num_turns": 8,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "The draft is at `C:\\Users\\betan\\AppData\\Local\\Temp\\rounding-errors-bench\\2026-11-04-017-generations-effort\\drafts\\r09\\exhibit-017-illegal-gdp.md`.\n\n**Checker not run.** This session has no shell, so I could not run `check-house-rules.mjs`. Even with a shell, the script only applies its body-length and schema checks to `src/content/` files and root `exhibit-NNN-*.md` drafts. This path gets only the em-dash and number-word checks. I checked the rest by hand. There are no em dashes and no spelled-out counts. The verdict keys are right, exactly 1 ledger row has `gap: true`, all four tags are in the vocabulary, and the disclosure has the three required statements.\n\n**Word count:** about 480 by hand, headings excluded (limit 500). Please confirm with the checker.\n\n**Title:** \"A 12-week annual holiday, taken from the Netherlands\"\n\n**Judgment calls:**\n1. **Location.** The system prompt asks for a root file named `exhibit-017-slug.md`. I followed your explicit drafts path and wrote nothing else. Without a root copy, the hook will not run its full checks on this draft.\n2. **Category and tags.** Category is \"the assumptions were the data\", which describes the gap's structure and is not a verdict. It still has to be added to the CLAUDE.md list at build time. Tags are gdp, national-accounts, measurement-definitions, europe. No chartNote; the chart is the site-builder's.\n3. **Figures.** The gap row is the £4,370m MNC8 figure, set against the £5.6bn FOI figure. The 78% and 77% are labelled as this site's arithmetic in the body, the ledger note and the disclosure. The 2020 fall is given as numbers only. I left out the £50bn overall effect and the £18bn R&D figure because they would blur the drugs-and-prostitution line. I also left out the CUT items, the 25-clients choice and the per-user drug line.\n4. **Unconfirmed date.** The FOI page date (6 Nov 2015) is not confirmed, so the source entry carries no date. Someone needs to check it on the page.\n5. **Disclosure before fact-check.** The disclosure says every figure was checked before publishing. That is only true after the fact-check pass, so the file should not be built before that pass runs.",
+  "ttft_ms": 2083,
+  "type": "result",
+  "duration_ms": 285129,
+  "uuid": "b848a455-3833-4332-9c4a-873af8a850f1",
+  "ttft_stream_ms": 1620,
+  "time_to_request_ms": 206,
+  "first_content_frame_ms": 1620,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "credential_expires_at": "2026-12-02T23:39:30.637Z"
+}

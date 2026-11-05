@@ -1,0 +1,102 @@
+{
+  "duration_api_ms": 421284,
+  "stop_reason": "end_turn",
+  "session_id": "ca6faab7-ef1f-477f-add4-c1eeaaf5ac32",
+  "total_cost_usd": 1.545299,
+  "usage": {
+    "input_tokens": 10,
+    "cache_creation_input_tokens": 58905,
+    "cache_read_input_tokens": 120898,
+    "output_tokens": 35830,
+    "output_tokens_details": {
+      "thinking_tokens": 29444
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 58905,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 7523,
+        "cache_read_input_tokens": 58570,
+        "cache_creation_input_tokens": 335,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 335
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "modelUsage": {
+    "claude-opus-4-8": {
+      "inputTokens": 10,
+      "outputTokens": 35830,
+      "cacheReadInputTokens": 120898,
+      "cacheCreationInputTokens": 58905,
+      "webSearchRequests": 0,
+      "costUSD": 1.545299,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 64000,
+      "thinkingTokens": 29444,
+      "cacheCreationEphemeral5mInputTokens": 0,
+      "cacheCreationEphemeral1hInputTokens": 58905,
+      "canonicalModel": "claude-opus-4-8",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "safety_stops": 0,
+  "is_error": false,
+  "num_turns": 8,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "I attempted to run the checker, but execution tools are unavailable in this session (the Bash tool is disabled and there is no PowerShell tool exposed), so I could not invoke `node`. I verified every mechanical rule the script enforces by hand against the script source instead. Everything passes.\n\n**Path:** `C:\\Users\\betan\\AppData\\Local\\Temp\\rounding-errors-bench\\2026-11-04-017-generations-effort\\drafts\\r05\\exhibit-017-illegal-gdp.md`\n**Body word count:** 478 (under the 500 cap; headings excluded, per the script's counting)\n**Title:** `Illegal drugs and prostitution in GDP, built on an \"arbitrary assumption\"`\n\n**Manual check against `check-house-rules.mjs` (could not auto-run):**\n- No em dashes anywhere (only hyphens and \"...\" ellipses).\n- Body 478 words < 500.\n- verdict = exactly `Fraud detected`, `Rules broken`, `Usefulness of the headline figure`.\n- exactly 1 ledger row with `gap: true` (the MNC8 2010 £4,370m row).\n- `exhibit: \"017\"` matches filename.\n- disclosure contains Claude / errors / checked.\n- No `chartNote` (chart exists, built separately); for a root draft the script skips the chart check entirely, so no warning fires here (the task expected a warning; it only triggers once the file is in `src/content/`).\n- All 4 tags in vocabulary; no spelled-out cardinals outside quotes.\n\n**Five-line summary of choices:**\n1. **Category:** used the brief's recommended new line `the assumptions were the data` (describes the gap's structure, not a verdict, so it passes the vocabulary rules). Note: it is not yet in CLAUDE.md's category list or the checker; adding it there is a build-time step for whoever promotes the draft, which I left untouched.\n2. **Tags:** `gdp, national-accounts, measurement-definitions, europe`; country `United Kingdom` (as a field, not a tag).\n3. **Chart:** no `chartNote` and no chart spec in the file; the MNC8 1985 to 2024 series is wired separately by the site-builder. Sources entry flags the series as modelled, not observed.\n4. **Gap row:** the single discrepancy is the two ONS-published 2010 prostitution figures (£5.6bn FOI vs £4,370m MNC8); the £4,370m row carries `gap: true`. The holiday-to-ratio arithmetic is explicitly labelled \"this site's arithmetic,\" and I do not claim ONS attributes the whole difference to it.\n5. **Excluded (all CUT or risk):** the £5.3bn/£4.4bn 2009 split, \"25 clients\" as chosen, 60,879, £67.16, Italy/Ig Nobel, Eurostat lifting the reservation, Ireland CSO, and any cause for the 2020 fall. I also dropped Patterson's \"European System of Accounts 2010\" line to avoid implying ESA 2010 introduced the rule (ONS states nothing changed between ESA95 and ESA 2010), and cut the clients-per-week range for length.\n\nJudgment calls worth flagging: the FOI publication date (6 November 2015) comes from the brief's researcher with a \"confirm on page\" caveat; I used it only to anchor the pre-/post-Blue Book 2016 timeline and attributed it as the brief gave it. The 2014 ONS article is cited via the UN SIAP mirror and labelled as a mirror in both the source text and the disclosure, since the ONS original URL is dead.",
+  "ttft_ms": 1717,
+  "type": "result",
+  "duration_ms": 421697,
+  "uuid": "939b58d7-980a-4520-a0c4-7299c2959528",
+  "ttft_stream_ms": 1241,
+  "time_to_request_ms": 232,
+  "first_content_frame_ms": 1241,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "credential_expires_at": "2026-12-02T23:39:25.830Z"
+}

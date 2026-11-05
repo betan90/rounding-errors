@@ -1,0 +1,102 @@
+{
+  "duration_api_ms": 634948,
+  "stop_reason": "end_turn",
+  "session_id": "9eb5cc83-eb5d-49d6-afa3-28f8be0d01b3",
+  "total_cost_usd": 0.3899363799999999,
+  "usage": {
+    "input_tokens": 14,
+    "cache_creation_input_tokens": 186078,
+    "cache_read_input_tokens": 548934,
+    "output_tokens": 165612,
+    "output_tokens_details": {
+      "thinking_tokens": 159689
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 186078,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 10265,
+        "cache_read_input_tokens": 185214,
+        "cache_creation_input_tokens": 864,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 864
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "modelUsage": {
+    "claude-haiku-5-5": {
+      "inputTokens": 14,
+      "outputTokens": 165612,
+      "cacheReadInputTokens": 548934,
+      "cacheCreationInputTokens": 186078,
+      "webSearchRequests": 0,
+      "costUSD": 0.3899363799999999,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 159689,
+      "cacheCreationEphemeral5mInputTokens": 0,
+      "cacheCreationEphemeral1hInputTokens": 186078,
+      "canonicalModel": "claude-haiku-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "safety_stops": 0,
+  "is_error": false,
+  "num_turns": 10,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "The draft is at `C:\\Users\\betan\\AppData\\Local\\Temp\\rounding-errors-bench\\2026-11-04-017-generations-effort\\drafts\\r24\\exhibit-017-illegal-gdp.md`.\n\n**Title:** Illegal drugs and prostitution in GDP, built on published assumptions\n**Body:** 459 words by my count (headings excluded; limit 500)\n\n**The house-rules check did not run as you expected.**\n- This session has no shell tool, so I could not run `check-house-rules.mjs`.\n- On a `drafts/` path the script skips the exhibit checks: word count, verdict, ledger, disclosure, tags and chart. It applies those only to `src/content/exhibits/` and to a repo-root `exhibit-NNN-slug.md`. So the chart warning you expected will not appear, and the only blocking check that runs is em dashes.\n- I ran the em-dash and spelled-number checks by search: no em or en dashes, and no number words outside quotes. I checked the rest by hand against the script's rules: three verdict rows with the required keys, one gap row, `\"017\"` matches the filename, the disclosure contains Claude, errors and checked, and all four tags are in the vocabulary.\n\n**Judgment calls**\n1. **Category:** \"the assumptions were the data\", as the brief recommends. It describes the structure and is flat, so I kept it. It is not in CLAUDE.md's category list yet; the brief says to add it at build.\n2. **Tags and chart:** gdp, national-accounts, measurement-definitions, europe; country United Kingdom. No `chartNote`. The body says the line is modelled, not observed, so the caption can match. Wiring the chart into `ExhibitLayout.astro` is the site-builder's job.\n3. **Gap row:** today's series, 2010, £4,370m, sits beside the FOI's £5.6bn. I left out the 78% and 77% arithmetic because it reads as a cause, and the brief says to present the two figures only. No cause is given for the 2020 fall.\n4. **Excluded:** every CUT item, the Wikipedia citation (its footnote is reported as ONS's), Patterson's £50bn and £18bn figures (their composition is unverified), and the \"please note the italics\" aside. Abramsky and Drew appear only in the source entry.\n5. **\"Rules broken\":** the row reads \"no breach recorded\" and mentions the GNI reservation, because the source calls it a reservation rather than a breach.\n\nI also read `check-house-rules.mjs` to match the disclosure wording. It sits under the working directory.\n\n**Needs a human before publishing**\n- **Date:** I used 2026-10-23 as you specified. Today is 2026-11-05, and CLAUDE.md requires the day the exhibit is built, so the builder should set it then.\n- **FOI date:** I left the reply undated because the brief's \"6 Nov 2015\" is unconfirmed on the page.\n- **Release date:** 31 October 2025 is as the brief reports it. Recheck the MNC8 page at build time.\n- **Location:** the operator convention is a root-level `exhibit-017-illegal-gdp.md`. I wrote only the drafts path, as you asked. Copying the file to the root is what makes the full check and the hook apply. I did not copy it, because you limited writes to one file.\n\nI did not touch `src/content/`, build, or commit.",
+  "ttft_ms": 16082,
+  "type": "result",
+  "duration_ms": 635335,
+  "uuid": "32a3262e-af0c-4537-86d7-869b955548db",
+  "ttft_stream_ms": 1278,
+  "time_to_request_ms": 219,
+  "first_content_frame_ms": 1278,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "credential_expires_at": "2026-12-02T23:39:30.637Z"
+}
