@@ -115,4 +115,24 @@ The 45 drafts came to $35.43. Sonnet 5's failed max run adds $2.75. The cheapest
 
 The model changes the wording. Effort changes the time. Neither changes what the brief got wrong. A newer model drafts closer to the house voice, and Haiku 4.5 is the only one that hedged. Higher effort bought longer sentences and a longer wait. A check of the brief before drafting is still the only step that would have caught the count.
 
+## Choosing a model and an effort level
+
+For drafting from a finished brief, on this evidence:
+
+| If you want | Choose | The evidence |
+|---|---|---|
+| The house voice | The newest model in a family | Opus 5.5, Sonnet 5.5 and Haiku 5.5 each drafted closest to the original in their family |
+| The lowest bill | Haiku 5.5 at low or medium | $0.02 to $0.03 a draft and no rule broken in a final version. It also titled 1 draft "Sex, drugs and GDP" |
+| Speed | Sonnet 5.5 at low or medium | 46 seconds to 1 minute 11 seconds. 1 of its 3 drafts at those levels ended over 500 words |
+| A different draft | A different model | 2 models share 15.5% of their phrases, 1 model's 2 drafts 23.0%. Sonnet 5.5 at max and at medium opened Who lied 1 word apart |
+| Fewer errors | No model and no effort level | 37 of 45 drafts repeated the brief's wrong count |
+
+Effort above medium did not pay for drafting. Max cost 6 times low, took 9 times as long, left the count where it was, and 1 of the 6 runs asked for max ended with nothing. Low cost $0.38 on average, broke no rule, and gave up a little of the original's wording: 18.6% shared, against 20.6% at medium.
+
+The money is better spent before the draft than on it. Every setting copied the brief. The fact-checker, which had the article, caught the count. A check of the brief would have caught it once, before 37 drafts repeated it.
+
+This site's drafter runs on Opus, launched at medium. Nothing here argues for raising it. Sonnet 5.5 at medium cost $0.19 to $0.23 against Opus 5.5's $0.68 to $0.77, and came within 1 to 5 points of its share with the original. That makes it the setting to put in front of a blind read next.
+
+1 brief, 1 exhibit and 1 or 2 drafts per setting is a narrow base. Closeness to the original also favours Opus 5.5, which wrote it.
+
 Nobody has read the 45 blind. Until someone does, none of these numbers says which draft is best.
