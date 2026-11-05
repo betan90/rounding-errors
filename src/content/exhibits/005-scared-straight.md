@@ -49,7 +49,7 @@ sources:
     urlLabel: "hollywoodreporter.com"
   - name: "Robinson and Slowikowski"
     text: "Baltimore Sun op-ed (Jan 31, 2011), confirmed by direct fetch: authors Laurie O. Robinson (Assistant Attorney General, Office of Justice Programs) and Jeff Slowikowski (Acting Administrator, Office of Juvenile Justice and Delinquency Prevention): \"scared straight is not only ineffective but is potentially harmful\"; \"the study strongly suggested the program caused harm.\""
-    url: "https://www.baltimoresun.com/opinion/bs-xpm-2011-01-31-bs-ed-scared-straight-20110131-story.html"
+    url: "https://www.baltimoresun.com/2011/01/31/scary-and-ineffective/"
     urlLabel: "baltimoresun.com"
   - name: "US DOJ COPS Office"
     text: "publication on juvenile awareness programs: the film's 9-of-10 claim, congressional hearings, randomization caveats in Finckenauer and Yarborough."

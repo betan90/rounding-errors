@@ -5,7 +5,8 @@ import NoteCard from '../../components/NoteCard.astro';
 import { withBase } from '../../lib/paths';
 
 const notes = (await getCollection('notes')).sort(
-  (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
+  // Same-day notes: higher number first, as same-day exhibits are.
+  (a, b) => b.data.date.valueOf() - a.data.date.valueOf() || b.slug.localeCompare(a.slug)
 );
 ---
 

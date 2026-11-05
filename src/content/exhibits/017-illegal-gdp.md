@@ -44,7 +44,7 @@ sources:
     url: "https://unsiap.or.jp/sites/default/files/pdf/e-learning_el_material_4_eco_4_1_eco_stat_1508_gdp_kor_reference_materialillegal_activities_in_the_uk_national_accounts.pdf"
     urlLabel: "unsiap.or.jp, mirror PDF of the ONS article"
   - name: "Peter Patterson, ONS Deputy Chief Economic Adviser"
-    text: "\"Sex, Drugs and GDP\", Civil Service Quarterly blog, 15 October 2014: \"ONS desk research (please note the italics for emphasis!)\"; illegal activities contributing \"up to £10 billion a year to the level of GDP\"; \"legally mandated through the European System of Accounts 2010\"; \"Comparability between nations dictates that all countries include it in their GDP figures.\""
+    text: "\"Sex, Drugs and GDP\", Civil Service Quarterly blog, 15 October 2014: \"ONS desk research (please note the italics for emphasis!)\"; illegal activities contributing \"up to £10 billion a year to the level of GDP\"; \"legally mandated through the European System of Accounts 2010\"; \"Comparability between nations dictates that all countries include it in their GDP figures.\"; the first estimates entered the accounts with the main national accounts dataset: \"The main national accounts dataset was published on 30 September\"."
     url: "https://quarterly.blog.gov.uk/2014/10/15/sex-drugs-and-gdp/"
     urlLabel: "quarterly.blog.gov.uk, 15 Oct 2014"
   - name: "Office for National Statistics"

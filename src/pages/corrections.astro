@@ -5,11 +5,17 @@ import { withBase } from '../lib/paths';
 import { correctionsByDateDesc } from '../data/corrections';
 
 const exhibits = await getCollection('exhibits');
+const notes = await getCollection('notes');
 const corrections = correctionsByDateDesc();
 
 function exhibitHref(exhibitNumber: string): string | null {
   const entry = exhibits.find((e) => e.data.exhibit === exhibitNumber);
   return entry ? withBase(`/exhibits/${entry.slug}/`) : null;
+}
+
+function noteHref(noteNumber: string): string | null {
+  const entry = notes.find((n) => n.slug.startsWith(`${noteNumber}-`));
+  return entry ? withBase(`/notes/${entry.slug}/`) : null;
 }
 
 const rows: Array<[string, string]> = [
@@ -30,13 +36,15 @@ const rows: Array<[string, string]> = [
     <h1>Corrections</h1>
   </div>
   <p class="corrections-framing">
-    A museum about institutions correcting themselves runs on the same rule. Every fix made to a published exhibit is logged here, not folded quietly into an edit.
+    A museum about institutions correcting themselves runs on the same rule. Every fix made to a published exhibit or note is logged here, not folded quietly into an edit.
   </p>
 
   <div class="corrections-log">
     {
       corrections.map((c) => {
-        const href = exhibitHref(c.exhibit);
+        const kind = c.note ? 'Note' : 'Exhibit';
+        const number = (c.note ?? c.exhibit) as string;
+        const href = c.note ? noteHref(c.note) : exhibitHref(number);
         const formattedDate = c.dateCorrected.toLocaleDateString('en-US', {
           year: 'numeric',
           month: 'long',
@@ -46,13 +54,13 @@ const rows: Array<[string, string]> = [
           <article class="correction">
             <div class="correction-head">
               <span>
-                Exhibit{' '}
+                {kind}{' '}
                 {href ? (
                   <a class="inline" href={href}>
-                    <b>{c.exhibit}</b>
+                    <b>{number}</b>
                   </a>
                 ) : (
-                  <b>{c.exhibit}</b>
+                  <b>{number}</b>
                 )}
               </span>
               <span>

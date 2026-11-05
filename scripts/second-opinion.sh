@@ -3,8 +3,10 @@
 #
 # Pipeline:
 #   1. In Claude Code: run the fact-checker agent on an exhibit -> writes fact-check-output.json
-#   2. bash scripts/second-opinion.sh        -> writes second-opinion.json
-#   3. bash scripts/compare-reviews.sh       -> prints the comparison
+#   2. node scripts/fetch-sources.mjs NNN    -> saves each source's full text in reports/NNN-slug/sources/
+#      (without it, every claim falls back to the fact-checker's passage)
+#   3. bash scripts/second-opinion.sh        -> writes second-opinion.json
+#   4. node scripts/compare-reviews.mjs      -> prints the comparison
 #
 # Usage: scripts/second-opinion.sh [path/to/fact-check-output.json] [path/to/second-opinion.json]
 set -euo pipefail

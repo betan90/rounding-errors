@@ -40,5 +40,10 @@ npm run preview   # preview the production build
 - [x] Exhibit 013 — United States (8 glasses of water, citation needed)
 - [x] Exhibit 014 — United Kingdom (15,841 cases, the file was too big)
 - [x] Exhibit 015 — United Kingdom (over 800,000 crimes a year, the count depended on who was counting)
+- [x] Exhibit 016 — United Kingdom (the spinach decimal point, citation needed)
+- [x] Exhibit 017 — United Kingdom (prostitution and drugs in GDP, the assumptions were the data)
+- [x] Exhibit 018 — Brazil (Pelé's goals, the count depended on who was counting)
+- [x] Exhibit 019 — Japan (the monthly wage survey, the census was a sample)
+- [ ] Exhibit 020 — the meta-analysis: every tenth exhibit turns the method on the collection (About page)
 - [ ] Revision tracker — the same official number, as reported over time
-- [ ] Parked for 020: Everest (Nepal's 8,848 m snow height vs China's 8,844.43 m rock height, joint 8,848.86 m in 2020)
+- [ ] Parked for 021: Everest (Nepal's 8,848 m snow height vs China's 8,844.43 m rock height, joint 8,848.86 m in 2020)

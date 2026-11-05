@@ -7,7 +7,8 @@ import { withBase } from '../lib/paths';
 import { sortExhibits } from '../lib/sortExhibits';
 
 const exhibits = sortExhibits(await getCollection('exhibits'));
-const notes = (await getCollection('notes')).sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+// Same-day notes: higher number first, as same-day exhibits are.
+const notes = (await getCollection('notes')).sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf() || b.slug.localeCompare(a.slug));
 const noteNumber = (slug: string) => slug.split('-')[0];
 
 // One feed, newest first: the 2 sorted lists merged by date. On the same day

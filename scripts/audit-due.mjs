@@ -23,9 +23,21 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const AUDITS = path.join(ROOT, 'reports', 'audits');
 const STATE = path.join(ROOT, '.claude', 'audit-state.json');
 
+// By date, then by the same-day suffix: a plain sort puts 2026-11-04-2.md
+// before 2026-11-04.md, because "-" sorts before ".".
+function byAuditOrder(a, b) {
+  const key = (f) => {
+    const [, date, n] = f.match(/^(\d{4}-\d{2}-\d{2})(?:-(\d+))?\.md$/);
+    return [date, Number(n ?? 1)];
+  };
+  const [da, na] = key(a);
+  const [db, nb] = key(b);
+  return da.localeCompare(db) || na - nb;
+}
+
 function lastAudit() {
   if (!existsSync(AUDITS)) return null;
-  const file = readdirSync(AUDITS).filter((f) => /^\d{4}-\d{2}-\d{2}(-\d+)?\.md$/.test(f)).sort().at(-1);
+  const file = readdirSync(AUDITS).filter((f) => /^\d{4}-\d{2}-\d{2}(-\d+)?\.md$/.test(f)).sort(byAuditOrder).at(-1);
   if (!file) return null;
   const commit = readFileSync(path.join(AUDITS, file), 'utf8').match(/^Audited commit:\s*([0-9a-f]{7,40})/m)?.[1] ?? null;
   return { file, commit };
