@@ -67,6 +67,40 @@ By effort, for 2 models:
 
 Medium is the second draft of each pair, the one that does not repeat another row. At high, both models put the brief's wrong count into this sentence. At max, Opus 5.5 swapped the paraphrase for 3 quotes from the article. Sonnet 5.5 at max took 22 minutes 7 seconds and $3.16 to land 1 word from its medium draft, which took 46 seconds and $0.19.
 
+## 3 more beats
+
+The title, by model, from the same drafts as the table above. The original: "c. 58,000 prostitutes, minus 12 weeks' holiday".
+
+| Model | Title |
+|---|---|
+| Opus 5.5 | An official GDP component, footnoted to Wikipedia |
+| Opus 5 | Up to £10 billion of GDP, from desk research |
+| Opus 4.8 | A legally required GDP line, built from "probably false" |
+| Opus 4.5 | Probably false, arbitrary, weak, and mandatory |
+| Sonnet 5.5 | Up to £10 billion of GDP, assumptions as published |
+| Sonnet 5 | This is an arbitrary assumption |
+| Sonnet 4.5 | The price of sex, via Wikipedia |
+| Haiku 5.5 | Sex, drugs and GDP |
+| Haiku 4.5 | All parties consent: prostitution in the national accounts |
+
+Across all 45, 7 titles mention Wikipedia. 1 title carries the wrong number: Sonnet 5 at high called its draft "£50 billion a year, footnoted to Wikipedia". £50 billion is Patterson's figure for the overall effect of all the 2014 changes, research and development among them. Its own body gives the illegal activities "up to £10 billion a year".
+
+The holiday. ONS's sentence on it runs to 29 words: "As a further refinement, allowance was made to reduce the estimates made for prostitution in household final consumption expenditure by a factor to reflect the holiday taken by prostitutes." Who quoted it from "allowance was made":
+
+| Model | Drafts |
+|---|---|
+| Opus 4.5 | 5 of 6 |
+| Sonnet 4.5 | 2 of 2 |
+| Opus 5 | 3 of 6 |
+| Sonnet 5 | 2 of 5 |
+| Opus 4.8 | 1 of 6 |
+| Opus 5.5, Sonnet 5.5, Haiku 5.5 | 0 of 18 |
+| Haiku 4.5 | 0 of 2 |
+
+The 5.5 models start the quote at "by a factor" or "to reflect", as the original did, and once at "the holiday". The older models paste.
+
+The Fraud detected verdict. The original: "none. Every assumption was published, most with a grade from its authors". Sonnet 5.5 kept it to 9 to 17 words. Haiku 4.5 ran to 56 in 1 draft, ending "No evidence suggests misrepresentation: the limitations are stated in every release." That is the narrator offering a judgment of its own, which the house rules keep to documented institutional acts.
+
 ## The voice
 
 The house voice asks for short sentences, no hedges and no accusations. The counts, across the 18 drafts at medium:
