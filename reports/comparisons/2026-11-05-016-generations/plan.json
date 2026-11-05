@@ -1,0 +1,201 @@
+{
+  "name": "2026-11-05-016-generations",
+  "exhibit": "016",
+  "base": "df00590",
+  "method": "headless",
+  "like": null,
+  "copy": "C:\\Users\\betan\\AppData\\Local\\Temp\\rounding-errors-bench\\2026-11-05-016-generations",
+  "original": "reports/016-spinach/drafting/2026-10-23-ab898647d806b0e33",
+  "draftName": "exhibit-016-spinach.md",
+  "exemplars": [
+    "C:\\Users\\betan\\AppData\\Local\\Temp\\rounding-errors-bench\\2026-11-05-016-generations\\src\\content\\exhibits\\013-8-glasses.md",
+    "C:\\Users\\betan\\AppData\\Local\\Temp\\rounding-errors-bench\\2026-11-05-016-generations\\src\\content\\exhibits\\015-police-recorded-crime.md"
+  ],
+  "created": "2026-11-05T08:55:20.369Z",
+  "cells": [
+    {
+      "run": "r01",
+      "model": "claude-haiku-4-5",
+      "effort": "medium",
+      "prompt": "reports/comparisons/2026-11-05-016-generations/prompts/r01.md",
+      "out": "C:\\Users\\betan\\AppData\\Local\\Temp\\rounding-errors-bench\\2026-11-05-016-generations\\drafts\\r01\\exhibit-016-spinach.md",
+      "draft": "reports/comparisons/2026-11-05-016-generations/drafts/r01/exhibit-016-spinach.md",
+      "session": "e825fcce-259c-446b-8bff-f36ce58629ea"
+    },
+    {
+      "run": "r02",
+      "model": "claude-haiku-5-5",
+      "effort": "medium",
+      "prompt": "reports/comparisons/2026-11-05-016-generations/prompts/r02.md",
+      "out": "C:\\Users\\betan\\AppData\\Local\\Temp\\rounding-errors-bench\\2026-11-05-016-generations\\drafts\\r02\\exhibit-016-spinach.md",
+      "draft": "reports/comparisons/2026-11-05-016-generations/drafts/r02/exhibit-016-spinach.md",
+      "session": "f414509d-0e83-4d54-9007-85a8e8b0aa10"
+    },
+    {
+      "run": "r03",
+      "model": "claude-opus-5",
+      "effort": "medium",
+      "prompt": "reports/comparisons/2026-11-05-016-generations/prompts/r03.md",
+      "out": "C:\\Users\\betan\\AppData\\Local\\Temp\\rounding-errors-bench\\2026-11-05-016-generations\\drafts\\r03\\exhibit-016-spinach.md",
+      "draft": "reports/comparisons/2026-11-05-016-generations/drafts/r03/exhibit-016-spinach.md",
+      "session": "9efa76eb-2e4d-4922-a72e-ebaa7388f8c7"
+    },
+    {
+      "run": "r04",
+      "model": "claude-haiku-4-5",
+      "effort": "medium",
+      "prompt": "reports/comparisons/2026-11-05-016-generations/prompts/r04.md",
+      "out": "C:\\Users\\betan\\AppData\\Local\\Temp\\rounding-errors-bench\\2026-11-05-016-generations\\drafts\\r04\\exhibit-016-spinach.md",
+      "draft": "reports/comparisons/2026-11-05-016-generations/drafts/r04/exhibit-016-spinach.md",
+      "session": "a90dd262-0274-4010-9e30-4f1062386852"
+    },
+    {
+      "run": "r05",
+      "model": "claude-opus-5",
+      "effort": "medium",
+      "prompt": "reports/comparisons/2026-11-05-016-generations/prompts/r05.md",
+      "out": "C:\\Users\\betan\\AppData\\Local\\Temp\\rounding-errors-bench\\2026-11-05-016-generations\\drafts\\r05\\exhibit-016-spinach.md",
+      "draft": "reports/comparisons/2026-11-05-016-generations/drafts/r05/exhibit-016-spinach.md",
+      "session": "f6cab137-e8ab-48fd-959d-b34f83099757"
+    },
+    {
+      "run": "r06",
+      "model": "claude-sonnet-5",
+      "effort": "medium",
+      "prompt": "reports/comparisons/2026-11-05-016-generations/prompts/r06.md",
+      "out": "C:\\Users\\betan\\AppData\\Local\\Temp\\rounding-errors-bench\\2026-11-05-016-generations\\drafts\\r06\\exhibit-016-spinach.md",
+      "draft": "reports/comparisons/2026-11-05-016-generations/drafts/r06/exhibit-016-spinach.md",
+      "session": "58a5a1b9-0c15-4980-958a-00425cbe058d"
+    },
+    {
+      "run": "r07",
+      "model": "claude-sonnet-5-5",
+      "effort": "medium",
+      "prompt": "reports/comparisons/2026-11-05-016-generations/prompts/r07.md",
+      "out": "C:\\Users\\betan\\AppData\\Local\\Temp\\rounding-errors-bench\\2026-11-05-016-generations\\drafts\\r07\\exhibit-016-spinach.md",
+      "draft": "reports/comparisons/2026-11-05-016-generations/drafts/r07/exhibit-016-spinach.md",
+      "session": "087b5fc3-4ce5-49b0-a355-6c0f96f1336f"
+    },
+    {
+      "run": "r08",
+      "model": "claude-haiku-5-5",
+      "effort": "medium",
+      "prompt": "reports/comparisons/2026-11-05-016-generations/prompts/r08.md",
+      "out": "C:\\Users\\betan\\AppData\\Local\\Temp\\rounding-errors-bench\\2026-11-05-016-generations\\drafts\\r08\\exhibit-016-spinach.md",
+      "draft": "reports/comparisons/2026-11-05-016-generations/drafts/r08/exhibit-016-spinach.md",
+      "session": "dd03e122-f07e-4dae-9329-0e498181cb45"
+    },
+    {
+      "run": "r09",
+      "model": "claude-opus-4-5",
+      "effort": "medium",
+      "prompt": "reports/comparisons/2026-11-05-016-generations/prompts/r09.md",
+      "out": "C:\\Users\\betan\\AppData\\Local\\Temp\\rounding-errors-bench\\2026-11-05-016-generations\\drafts\\r09\\exhibit-016-spinach.md",
+      "draft": "reports/comparisons/2026-11-05-016-generations/drafts/r09/exhibit-016-spinach.md",
+      "session": "08a5b600-1f66-457f-bf51-c2a8539946b2"
+    },
+    {
+      "run": "r10",
+      "model": "claude-opus-4-5",
+      "effort": "medium",
+      "prompt": "reports/comparisons/2026-11-05-016-generations/prompts/r10.md",
+      "out": "C:\\Users\\betan\\AppData\\Local\\Temp\\rounding-errors-bench\\2026-11-05-016-generations\\drafts\\r10\\exhibit-016-spinach.md",
+      "draft": "reports/comparisons/2026-11-05-016-generations/drafts/r10/exhibit-016-spinach.md",
+      "session": "24bd7be5-98a0-4c41-ae76-cdb35b81eed7"
+    },
+    {
+      "run": "r11",
+      "model": "claude-opus-5-5",
+      "effort": "medium",
+      "prompt": "reports/comparisons/2026-11-05-016-generations/prompts/r11.md",
+      "out": "C:\\Users\\betan\\AppData\\Local\\Temp\\rounding-errors-bench\\2026-11-05-016-generations\\drafts\\r11\\exhibit-016-spinach.md",
+      "draft": "reports/comparisons/2026-11-05-016-generations/drafts/r11/exhibit-016-spinach.md",
+      "session": "6fe99acc-b8e5-4613-816a-f9c88c7b7dd3"
+    },
+    {
+      "run": "r12",
+      "model": "claude-opus-4-8",
+      "effort": "medium",
+      "prompt": "reports/comparisons/2026-11-05-016-generations/prompts/r12.md",
+      "out": "C:\\Users\\betan\\AppData\\Local\\Temp\\rounding-errors-bench\\2026-11-05-016-generations\\drafts\\r12\\exhibit-016-spinach.md",
+      "draft": "reports/comparisons/2026-11-05-016-generations/drafts/r12/exhibit-016-spinach.md",
+      "session": "f2661b56-66f9-44a2-939b-439a6307fc16"
+    },
+    {
+      "run": "r13",
+      "model": "claude-sonnet-4-5",
+      "effort": "medium",
+      "prompt": "reports/comparisons/2026-11-05-016-generations/prompts/r13.md",
+      "out": "C:\\Users\\betan\\AppData\\Local\\Temp\\rounding-errors-bench\\2026-11-05-016-generations\\drafts\\r13\\exhibit-016-spinach.md",
+      "draft": "reports/comparisons/2026-11-05-016-generations/drafts/r13/exhibit-016-spinach.md",
+      "session": "7bff936c-7eb2-4c6a-9c90-46529d1f8fa3"
+    },
+    {
+      "run": "r14",
+      "model": "claude-opus-5-5",
+      "effort": "medium",
+      "prompt": "reports/comparisons/2026-11-05-016-generations/prompts/r14.md",
+      "out": "C:\\Users\\betan\\AppData\\Local\\Temp\\rounding-errors-bench\\2026-11-05-016-generations\\drafts\\r14\\exhibit-016-spinach.md",
+      "draft": "reports/comparisons/2026-11-05-016-generations/drafts/r14/exhibit-016-spinach.md",
+      "session": "9851930c-370a-4f53-b0a0-5c011733a42c"
+    },
+    {
+      "run": "r15",
+      "model": "claude-opus-4-8",
+      "effort": "medium",
+      "prompt": "reports/comparisons/2026-11-05-016-generations/prompts/r15.md",
+      "out": "C:\\Users\\betan\\AppData\\Local\\Temp\\rounding-errors-bench\\2026-11-05-016-generations\\drafts\\r15\\exhibit-016-spinach.md",
+      "draft": "reports/comparisons/2026-11-05-016-generations/drafts/r15/exhibit-016-spinach.md",
+      "session": "ce3946ed-0ebf-4720-9d5b-3bc4e49bce13"
+    },
+    {
+      "run": "r16",
+      "model": "claude-sonnet-4-5",
+      "effort": "medium",
+      "prompt": "reports/comparisons/2026-11-05-016-generations/prompts/r16.md",
+      "out": "C:\\Users\\betan\\AppData\\Local\\Temp\\rounding-errors-bench\\2026-11-05-016-generations\\drafts\\r16\\exhibit-016-spinach.md",
+      "draft": "reports/comparisons/2026-11-05-016-generations/drafts/r16/exhibit-016-spinach.md",
+      "session": "cc29d2c2-1c5d-4ce6-a69a-8526e1963ae7"
+    },
+    {
+      "run": "r17",
+      "model": "claude-sonnet-5",
+      "effort": "medium",
+      "prompt": "reports/comparisons/2026-11-05-016-generations/prompts/r17.md",
+      "out": "C:\\Users\\betan\\AppData\\Local\\Temp\\rounding-errors-bench\\2026-11-05-016-generations\\drafts\\r17\\exhibit-016-spinach.md",
+      "draft": "reports/comparisons/2026-11-05-016-generations/drafts/r17/exhibit-016-spinach.md",
+      "session": "0342fb25-b135-4ed3-b8af-f697ee061db4"
+    },
+    {
+      "run": "r18",
+      "model": "claude-sonnet-5-5",
+      "effort": "medium",
+      "prompt": "reports/comparisons/2026-11-05-016-generations/prompts/r18.md",
+      "out": "C:\\Users\\betan\\AppData\\Local\\Temp\\rounding-errors-bench\\2026-11-05-016-generations\\drafts\\r18\\exhibit-016-spinach.md",
+      "draft": "reports/comparisons/2026-11-05-016-generations/drafts/r18/exhibit-016-spinach.md",
+      "session": "6cfa1252-bab8-404d-abdc-b7c194e0be1d"
+    }
+  ],
+  "watch": [
+    {
+      "label": "Says Sutton could not answer the von Wolff question (his paper later says it answers question 1)",
+      "pattern": "(could not|couldn.t|unable to|never|failed to) (answer|find)|unanswered|answered none",
+      "flags": "i"
+    },
+    {
+      "label": "Cites Larsson as 238(5):445-450 (Rekdal gives the volume, Sutton the pages and volume 258)",
+      "pattern": "238\\s*\\(5\\)",
+      "flags": "i"
+    },
+    {
+      "label": "Calls Bender 1972 the earliest version (Rekdal never says so; Taylor-Blake and Sutton found it)",
+      "pattern": "earliest",
+      "flags": "i"
+    },
+    {
+      "label": "Says Hamblin derived the article from the 13 publications (he lists them as ones he would particularly like to mention)",
+      "pattern": "derived from",
+      "flags": "i"
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "duration_api_ms": 99528,
+  "stop_reason": "end_turn",
+  "session_id": "f414509d-0e83-4d54-9007-85a8e8b0aa10",
+  "total_cost_usd": 0.02177561,
+  "usage": {
+    "input_tokens": 6,
+    "cache_creation_input_tokens": 46421,
+    "cache_read_input_tokens": 28981,
+    "output_tokens": 24402,
+    "output_tokens_details": {
+      "thinking_tokens": 19902
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 46421,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 1316,
+        "cache_read_input_tokens": 23629,
+        "cache_creation_input_tokens": 22792,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 22792
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "modelUsage": {
+    "claude-haiku-5-5": {
+      "inputTokens": 6,
+      "outputTokens": 24402,
+      "cacheReadInputTokens": 28981,
+      "cacheCreationInputTokens": 46421,
+      "webSearchRequests": 0,
+      "costUSD": 0.02177561,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 19902,
+      "cacheCreationEphemeral5mInputTokens": 0,
+      "cacheCreationEphemeral1hInputTokens": 46421,
+      "canonicalModel": "claude-haiku-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "safety_stops": 0,
+  "is_error": false,
+  "num_turns": 6,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "The draft is written to `C:\\Users\\betan\\AppData\\Local\\Temp\\rounding-errors-bench\\2026-11-05-016-generations\\drafts\\r02\\exhibit-016-spinach.md`.\n\n- **Word count:** about 455 in the body, from my manual count. I did not run `check-house-rules.mjs`, and the Write returned no hook output, so I can't confirm the house-rules check ran. The `drafts/r02` path also isn't a root `exhibit-NNN-slug.md`, so the hook may not have matched it.\n- **Category, tags, country:** \"citation needed\", with tags `outlived-the-evidence`, `measurement-definitions`, `europe`, and country \"United Kingdom\". I left out `healthcare`, which exhibit 013 uses, because the brief specified the three tags.\n- **Chart:** none. The `chartNote` gives the reason: the 1890s measurement has never been traced to a primary document, so there is no pair of figures to plot. It has no \"pending\" and no trailing period.\n- **Ledger and verdict:** five ledger rows, with `gap: true` on the 0 row for the original measurement. The verdict has the three required keys. Fraud and rules rows say \"none documented\", and the usefulness row uses Sutton's quotation of Coultate on dried spinach, hedged with \"may\".\n- **Attribution and twist:** Hamblin's email is reported only through Sutton. Bender and Kronick are described as hedging, and Larsson's paper is named without characterization. Rekdal's \"doing the opposite of what they are preaching\" line closes the body, and the body ends there. No claim says Hamblin invented the story.\n- **Excluded:** nothing from CUT. I left out the 33% figure, the Schupan and Kohler citations, the Hamblin blog, the Reader's Digest claim, and any BMJ correction. I also omitted the Dagg dispute and the Jackson 1938 dried-spinach figure. The one modern figure is USDA's 2.71 mg per 100 g, in a ledger row labeled \"for scale\".\n- **Sources:** the Hamblin entry links the PMC record rather than the BMJ PDF, since both URLs were in the brief. The Sutton entry uses the mirror PDF and says in its text that it mirrors the Internet Journal of Criminology paper. The disclosure notes that the Hamblin email, the 1972 lecture, the 1995 paper, and the Coultate book were not seen directly.",
+  "ttft_ms": 1584,
+  "type": "result",
+  "duration_ms": 99623,
+  "uuid": "e3fd8256-5536-457f-aa52-f5f5d12543b6",
+  "ttft_stream_ms": 1287,
+  "time_to_request_ms": 64,
+  "first_content_frame_ms": 1287,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "credential_expires_at": "2026-12-02T23:39:32.238Z"
+}

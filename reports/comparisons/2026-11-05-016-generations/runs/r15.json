@@ -1,0 +1,102 @@
+{
+  "duration_api_ms": 128506,
+  "stop_reason": "end_turn",
+  "session_id": "ce3946ed-0ebf-4720-9d5b-3bc4e49bce13",
+  "total_cost_usd": 0.6224525000000001,
+  "usage": {
+    "input_tokens": 6,
+    "cache_creation_input_tokens": 31006,
+    "cache_read_input_tokens": 32475,
+    "output_tokens": 11845,
+    "output_tokens_details": {
+      "thinking_tokens": 7360
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 31006,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 660,
+        "cache_read_input_tokens": 23609,
+        "cache_creation_input_tokens": 10910,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 10910
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "modelUsage": {
+    "claude-opus-4-8": {
+      "inputTokens": 6,
+      "outputTokens": 11845,
+      "cacheReadInputTokens": 32475,
+      "cacheCreationInputTokens": 31006,
+      "webSearchRequests": 0,
+      "costUSD": 0.6224525000000001,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 64000,
+      "thinkingTokens": 7360,
+      "cacheCreationEphemeral5mInputTokens": 0,
+      "cacheCreationEphemeral1hInputTokens": 31006,
+      "canonicalModel": "claude-opus-4-8",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "safety_stops": 0,
+  "is_error": false,
+  "num_turns": 6,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "Done. File written to `drafts\\r15\\exhibit-016-spinach.md`. The PostToolUse house-rules check ran on write and reported nothing blocking.\n\n**Body word count:** 433 (under the 500 cap), ending at the verdict.\n\n**Judgment calls:**\n1. **Category / tags / country:** Used \"citation needed\" (reusing 013, the explicit twin), tags `outlived-the-evidence, measurement-definitions, europe`, country United Kingdom, all per the brief. No new tags.\n2. **Chart:** None, with a `chartNote` giving the reason (the untraced original measurement means no pair of figures exists), no \"pending\" and no trailing period.\n3. **Attribution:** Bender \"hedged\" (\"may well have grown from\"), Hamblin \"stated it as fact and gave no source,\" Larsson \"repeated it, citing Hamblin.\" Hamblin's email is all \"Sutton reports that Hamblin wrote...\" Nothing says anyone lied or invented it; Bender 1972 is shown preceding Hamblin. Rekdal's own \"doing the opposite of what they are preaching\" line carries the verdict, and his self-plagiarism admission closes the body.\n4. **Ledger:** 5 rows, exactly 1 `gap: true` (the year disagreeing across tellings: 1870 / 1890s / 1930s). Verdict is exactly the 3 required keys. Sutton's URL is the mirror PDF, labeled as a mirror of the 403ing journal paper.\n5. **Excluded (CUT list):** von Wolff's original figure, Schupan/Kohler reanalyses, Hamblin's blog and Reader's Digest claim, the garbled 33% consumption figure, and any BMJ correction/retraction. USDA 2.71 mg kept only as the modern contrast figure; \"tenfold\" appears only inside Hamblin's quoted passage.",
+  "ttft_ms": 1990,
+  "type": "result",
+  "duration_ms": 128782,
+  "uuid": "c7ae71ee-9319-442a-a1ae-2b861bc48c94",
+  "ttft_stream_ms": 1390,
+  "time_to_request_ms": 241,
+  "first_content_frame_ms": 1390,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "credential_expires_at": "2026-12-02T23:39:32.238Z"
+}

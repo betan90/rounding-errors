@@ -1,0 +1,102 @@
+{
+  "duration_api_ms": 62600,
+  "stop_reason": "end_turn",
+  "session_id": "087b5fc3-4ce5-49b0-a355-6c0f96f1336f",
+  "total_cost_usd": 0.20153790000000002,
+  "usage": {
+    "input_tokens": 6,
+    "cache_creation_input_tokens": 28792,
+    "cache_read_input_tokens": 28879,
+    "output_tokens": 8347,
+    "output_tokens_details": {
+      "thinking_tokens": 3632
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 28792,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 2821,
+        "cache_read_input_tokens": 23548,
+        "cache_creation_input_tokens": 5244,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 5244
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "modelUsage": {
+    "claude-sonnet-5-5": {
+      "inputTokens": 6,
+      "outputTokens": 8347,
+      "cacheReadInputTokens": 28879,
+      "cacheCreationInputTokens": 28792,
+      "webSearchRequests": 0,
+      "costUSD": 0.20153790000000002,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 3632,
+      "cacheCreationEphemeral5mInputTokens": 0,
+      "cacheCreationEphemeral1hInputTokens": 28792,
+      "canonicalModel": "claude-sonnet-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "safety_stops": 0,
+  "is_error": false,
+  "num_turns": 6,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "I wrote the draft to `C:\\Users\\betan\\AppData\\Local\\Temp\\rounding-errors-bench\\2026-11-05-016-generations\\drafts\\r07\\exhibit-016-spinach.md`. The hook reported nothing, so I assume it found nothing blocking, but I never saw its output. I can't run it myself.\n\n**Word count:** the body is about 488 words by hand count, or about 496 if the section headings are counted. That is under 500 but tight. Hand counts can be off by a few words, so check it against the script.\n\n**Judgment calls**\n- **Attribution:**\n  - The \"Who lied\" section opens \"No institution has said anyone did\". It never says anyone lied or made it up.\n  - Hamblin's email to Sutton is reported only as \"Sutton reports that Hamblin replied…\".\n  - The draft says Bender's 1972 lecture precedes Hamblin, so the trail does not start in 1981.\n  - Rekdal's \"doing the opposite of what they are preaching\" line is the verdictNote opener. His \"I have plagiarized the Hamblin reference from Larsson\" line is in the body.\n- **Ledger:**\n  - It has 6 rows, and the gap row is \"Original measurement or document found by Sutton or Rekdal: 0\".\n  - I added the USDA raw-spinach figure of 2.71 mg per 100 g as a dried-versus-fresh contrast, with a ledgerNote saying the rows measure different things.\n  - The USDA link redirects, so `check-links` will warn on it. The brief already flagged this.\n- **Verdict:** I wrote \"none documented\" for fraud. It rests on Sutton's report of Hamblin's email that the BMJ piece was a humorous Christmas article written without references. The verdictNote says no BMJ correction was found and states none.\n- **Sources:**\n  - There are 4, all URLs from the brief.\n  - The Sutton entry uses the mirror PDF and says in the source text that it is a mirror of the Internet Journal of Criminology paper.\n  - The Sutton entry uses the actual subtitle ending \"adequate citation\".\n- **Disclosure:** it carries the three required statements. It also notes that the Bender, Kronick, Larsson, Coultate and Thimble Theatre material is reported as Rekdal and Sutton give it, and that the 33% Popeye figure is omitted.\n- **Excluded:** everything in the CUT list, plus any count of papers that repeated the story, because Rekdal gives none. The verdictNote says so.\n- **Frontmatter:** it matches the shape of 013.\n  - `chartNote` has a stated reason, no \"pending\" and no trailing period.\n  - `date` is 2026-10-23.\n  - Tags are `outlived-the-evidence`, `measurement-definitions` and `europe`.\n  - The category is `citation needed`, reused from 013.\n  - The country is United Kingdom.\n- **Mismatch flagged:** none between CLAUDE.md and the exemplar files.",
+  "ttft_ms": 5252,
+  "type": "result",
+  "duration_ms": 62875,
+  "uuid": "3d8482f9-208a-42b1-a1c7-cfe8ec510eda",
+  "ttft_stream_ms": 4489,
+  "time_to_request_ms": 232,
+  "first_content_frame_ms": 4489,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "credential_expires_at": "2026-12-02T23:39:32.238Z"
+}

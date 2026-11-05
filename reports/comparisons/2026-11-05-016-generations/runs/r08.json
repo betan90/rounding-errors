@@ -1,0 +1,102 @@
+{
+  "duration_api_ms": 103592,
+  "stop_reason": "end_turn",
+  "session_id": "dd03e122-f07e-4dae-9329-0e498181cb45",
+  "total_cost_usd": 0.02187074,
+  "usage": {
+    "input_tokens": 8,
+    "cache_creation_input_tokens": 43508,
+    "cache_read_input_tokens": 77934,
+    "output_tokens": 24778,
+    "output_tokens_details": {
+      "thinking_tokens": 20596
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 43508,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 1187,
+        "cache_read_input_tokens": 45442,
+        "cache_creation_input_tokens": 1575,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 1575
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "modelUsage": {
+    "claude-haiku-5-5": {
+      "inputTokens": 8,
+      "outputTokens": 24778,
+      "cacheReadInputTokens": 77934,
+      "cacheCreationInputTokens": 43508,
+      "webSearchRequests": 0,
+      "costUSD": 0.02187074,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 20596,
+      "cacheCreationEphemeral5mInputTokens": 0,
+      "cacheCreationEphemeral1hInputTokens": 43508,
+      "canonicalModel": "claude-haiku-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "safety_stops": 0,
+  "is_error": false,
+  "num_turns": 7,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "The draft is written to `C:\\Users\\betan\\AppData\\Local\\Temp\\rounding-errors-bench\\2026-11-05-016-generations\\drafts\\r08\\exhibit-016-spinach.md`.\n\n**Word count:** the body is about 360 words by my count, under the 500 limit. I did not get a house-rules hook report back after the write. The hook only checks root `exhibit-NNN-slug.md` files, so it probably did not run on this path. I grepped by hand: no em dashes, no \"pending\", and no \"lied\" or \"invent\" in narrator voice outside the required \"## Who lied\" heading.\n\n**Judgment calls:**\n- **Category and tags:** \"citation needed\", since no source has ever been produced for the decimal point. Tags are `outlived-the-evidence`, `measurement-definitions`, and `europe`, all from the live list. Country is United Kingdom, following the brief.\n- **Chart:** none. The `chartNote` gives the reason: the original measurement has never been traced to a primary document, so there is no pair of figures to plot. It contains no \"pending\" and no trailing period.\n- **Ledger:** four rows, one with `gap: true` (the 0 original documents Sutton could locate). The other rows are Hamblin's 0 of 13 references, the 1870/1890s/1930s dates, and the 35 mg dried-spinach figure. The 35 mg figure is reported through Coultate as Sutton quotes him.\n- **Attribution:** Hamblin's email appears only as Sutton reports it. Bender and Kronick are hedged, Hamblin is described as stating the story without a source, and Larsson is described as repeating it while citing Hamblin. Rekdal's line closes the verdict note. The disclosure says that Bender, Kronick, Larsson and Coultate were not read directly and are quoted as Rekdal and Sutton give them.\n- **Excluded:** everything in the CUT list, including Hamblin's 33% figure, the von Wolff 1870 figure, Schupan, Kohler, the blog, the Reader's Digest claim, Dagg, and any claim about a BMJ correction. I also left out the USDA source because its link returns a 301 and the ledger does not need a modern figure. Wikipedia is not cited.\n- **Sources:** only URLs from the brief. The Sutton entry names the mirror PDF and says it is a mirror of the Internet Journal of Criminology paper.",
+  "ttft_ms": 2066,
+  "type": "result",
+  "duration_ms": 104114,
+  "uuid": "72b74a71-d78a-476b-b63f-c2a776f6719f",
+  "ttft_stream_ms": 1776,
+  "time_to_request_ms": 419,
+  "first_content_frame_ms": 1776,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "credential_expires_at": "2026-12-02T23:39:32.238Z"
+}

@@ -1,0 +1,102 @@
+{
+  "duration_api_ms": 186804,
+  "stop_reason": "end_turn",
+  "session_id": "a90dd262-0274-4010-9e30-4f1062386852",
+  "total_cost_usd": 0.1894755,
+  "usage": {
+    "input_tokens": 33,
+    "cache_creation_input_tokens": 40436,
+    "cache_read_input_tokens": 61505,
+    "output_tokens": 20484,
+    "output_tokens_details": {
+      "thinking_tokens": 17297
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 40436,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 8,
+        "output_tokens": 857,
+        "cache_read_input_tokens": 37775,
+        "cache_creation_input_tokens": 2661,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 2661
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "modelUsage": {
+    "claude-haiku-4-5": {
+      "inputTokens": 33,
+      "outputTokens": 20484,
+      "cacheReadInputTokens": 61505,
+      "cacheCreationInputTokens": 40436,
+      "webSearchRequests": 0,
+      "costUSD": 0.1894755,
+      "contextWindow": 200000,
+      "maxOutputTokens": 32000,
+      "thinkingTokens": 17297,
+      "cacheCreationEphemeral5mInputTokens": 0,
+      "cacheCreationEphemeral1hInputTokens": 40436,
+      "canonicalModel": "claude-haiku-4-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "safety_stops": 0,
+  "is_error": false,
+  "num_turns": 7,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "**Summary of exhibit-016-spinach.md**\n\n**Category choice**: \"citation needed\" (reuse of 013) — the structural problem is that everyone assumes a source exists; none has ever been produced.\n\n**Tags**: outlived-the-evidence (story retold by people warning against citation errors), measurement-definitions (fresh vs dried spinach distinction), europe. No new tags invented.\n\n**Chart decision**: No chart; chartNote states that the original measurement the story claims was wrong has never been traced to a primary document, eliminating any pair of figures to plot.\n\n**Excluded material**: USDA modern spinach figure (optional, not needed for narrative); Popeye as major plot point (mentioned only Sutton's finding that 1932 strip credits vitamin A); Rekdal's citing-paper count (he gives none); Hamblin's 33% consumption claim (garbled in PDF source).\n\n**Attribution judgments**: Never say Hamblin \"invented\" it; noted Bender 1972 precedes him (hedged). Used \"Sutton reports...\" for Hamblin's email. Positioned Rekdal's key verdict line (\"doing the opposite of what they are preaching\") as the narrative climax, per brief.\n\n---\n\n**File path**: C:\\Users\\betan\\AppData\\Local\\Temp\\rounding-errors-bench\\2026-11-05-016-generations\\drafts\\r04\\exhibit-016-spinach.md\n\n**Word count**: 428 words (body only, under 500 limit)\n\n**Status**: Ready for house-rules check. All verified facts from brief, no unverifiable claims, no em dashes, attribution intact, frontmatter schema matches exemplars (013 and 015), exactly 1 gap row, exactly 3 verdict rows with correct keys.",
+  "ttft_ms": 3074,
+  "type": "result",
+  "duration_ms": 187102,
+  "uuid": "674c2265-8782-42c8-a8e9-49170b0befd9",
+  "ttft_stream_ms": 1011,
+  "time_to_request_ms": 219,
+  "first_content_frame_ms": 1011,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "credential_expires_at": "2026-12-02T23:39:32.238Z"
+}

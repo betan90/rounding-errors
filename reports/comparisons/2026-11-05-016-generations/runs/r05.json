@@ -1,0 +1,102 @@
+{
+  "duration_api_ms": 153396,
+  "stop_reason": "end_turn",
+  "session_id": "f6cab137-e8ab-48fd-959d-b34f83099757",
+  "total_cost_usd": 0.759778,
+  "usage": {
+    "input_tokens": 12,
+    "cache_creation_input_tokens": 33627,
+    "cache_read_input_tokens": 126246,
+    "output_tokens": 14413,
+    "output_tokens_details": {
+      "thinking_tokens": 5120
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 33627,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 962,
+        "cache_read_input_tokens": 33025,
+        "cache_creation_input_tokens": 4111,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 4111
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "modelUsage": {
+    "claude-opus-5": {
+      "inputTokens": 12,
+      "outputTokens": 14413,
+      "cacheReadInputTokens": 126246,
+      "cacheCreationInputTokens": 33627,
+      "webSearchRequests": 0,
+      "costUSD": 0.759778,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 64000,
+      "thinkingTokens": 5120,
+      "cacheCreationEphemeral5mInputTokens": 0,
+      "cacheCreationEphemeral1hInputTokens": 33627,
+      "canonicalModel": "claude-opus-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "safety_stops": 0,
+  "is_error": false,
+  "num_turns": 9,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "File written: `C:\\Users\\betan\\AppData\\Local\\Temp\\rounding-errors-bench\\2026-11-05-016-generations\\drafts\\r05\\exhibit-016-spinach.md`\n\nBody word count: approximately 430 across the 3 sections (hand-counted; the PostToolUse hook did not fire for this path and Bash is disabled in this session, so `check-house-rules.mjs` could not be run. Checked by hand against every blocking rule: 0 em dashes, 3 verdict rows keyed `Fraud detected` / `Rules broken` / `Usefulness of the headline figure`, exactly 1 `gap: true`, `exhibit: \"016\"` matching the filename, disclosure carrying all 3 required statements, `chartNote` giving a reason with no \"pending\" and no trailing period, body under 500 words. No template/file mismatch found: frontmatter shape copied from 013 and 015.)\n\nFive-line summary:\n1. **Category** \"citation needed\", reused from 013 as the taxonomy item 3 shape; **country** United Kingdom (BMJ, Bender in London, Sutton at Nottingham Trent), **date** 2026-10-23.\n2. **Tags** outlived-the-evidence, measurement-definitions, europe. No new tags; `europe` rather than any near-duplicate.\n3. **No chart**, with a `chartNote` stating the reason: the 19th-century measurement said to be wrong has never been traced to a primary document, so there is no pair of figures to plot.\n4. **Excluded**, all from the CUT list: any von Wolff 1870 figure, Schupan 1937, Kohler 1936, Hamblin's blog and the Reader's Digest line, the garbled 33% consumption figure (flagged in the disclosure as omitted), Dagg 2015, and any claim of a BMJ correction. The USDA figure is used only as a ledger row plus 1 body clause.\n5. **Attribution calls**: Bender is quoted hedging, Hamblin \"stated it, and gave no source\", Larsson \"repeats the story and cites Hamblin\", and Hamblin's email appears only as \"Sutton reports\"; the \"Who lied\" section never answers with a person, and Rekdal's \"doing the opposite of what they are preaching\" line carries the verdictNote. \"Drying to raw is already a factor of roughly 10\" is arithmetic on 2 verified figures (2.71 mg raw, about 34 mg dried), not a claim about the original error.",
+  "ttft_ms": 2678,
+  "type": "result",
+  "duration_ms": 153843,
+  "uuid": "08bf9124-1b0a-4638-bf13-da9b1f196216",
+  "ttft_stream_ms": 1585,
+  "time_to_request_ms": 345,
+  "first_content_frame_ms": 1585,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "credential_expires_at": "2026-12-02T23:39:32.238Z"
+}

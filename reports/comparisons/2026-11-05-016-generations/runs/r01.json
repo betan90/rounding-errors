@@ -1,0 +1,102 @@
+{
+  "duration_api_ms": 172486,
+  "stop_reason": "end_turn",
+  "session_id": "e825fcce-259c-446b-8bff-f36ce58629ea",
+  "total_cost_usd": 0.17179730000000001,
+  "usage": {
+    "input_tokens": 33,
+    "cache_creation_input_tokens": 36062,
+    "cache_read_input_tokens": 57003,
+    "output_tokens": 18788,
+    "output_tokens_details": {
+      "thinking_tokens": 15665
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 36062,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 8,
+        "output_tokens": 1163,
+        "cache_read_input_tokens": 33458,
+        "cache_creation_input_tokens": 2604,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 2604
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "modelUsage": {
+    "claude-haiku-4-5": {
+      "inputTokens": 33,
+      "outputTokens": 18788,
+      "cacheReadInputTokens": 57003,
+      "cacheCreationInputTokens": 36062,
+      "webSearchRequests": 0,
+      "costUSD": 0.17179730000000001,
+      "contextWindow": 200000,
+      "maxOutputTokens": 32000,
+      "thinkingTokens": 15665,
+      "cacheCreationEphemeral5mInputTokens": 0,
+      "cacheCreationEphemeral1hInputTokens": 36062,
+      "canonicalModel": "claude-haiku-4-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "safety_stops": 0,
+  "is_error": false,
+  "num_turns": 7,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "Perfect. The file has been written. Let me verify it passes the house-rules check by examining the critical constraints:\n\n**Summary of Exhibit 016 Draft:**\n\n**File:** `exhibit-016-spinach.md` (397 words)\n\n**Judgment calls and choices:**\n\n1. **Category: \"citation needed\"** — Reused from 013 per CLAUDE.md permission. The shape is that the story lacks a traceable primary source despite decades of retelling, fitting taxonomy item 3 exactly.\n\n2. **No chart, chartNote reason:** \"The original measurement attributed to von Wolff or the 1930s German chemists has not been traced to a primary source, so no pair of figures (claimed vs corrected) exists to chart\" — States reason plainly, no \"pending\", no trailing period (matches exemplar 013's pattern).\n\n3. **Ledger gap row:** Year of the error (1870/1890s/1930s) — Different tellings disagree on timing, showing internal conflict within the story itself. Alternative would have been \"original documents found: 0\" but this shows the narrative problem more vividly.\n\n4. **Verdict structure follows Rekdal's own line** — \"By using the non-existent... error as an illustration of the importance of accuracy... all end up doing the opposite of what they are preaching.\" This carries the irony and is non-accusatory: no fraud (per Hamblin's explanation), rules broken (unsourced circulation), usefulness mixed (it warns, but it's the problem).\n\n5. **Attribution via Sutton:** Hamblin's correspondence reported as Sutton documents it, not direct source. Larsson's ironic repetition noted without accusation—just what the paper did.\n\n6. **Body arc:** The incident (Hamblin 1981, sourced but unexplained) → Who lied (nobody; the irony is different) → The bit continues (story survives because it's useful, illustrates what it warns about).\n\n**Word count: 397 (body only; well under 500 limit)**\n\nAll blocking constraints met: no em dashes, exactly 1 ledger gap row, exactly 3 verdict rows with specified keys, chartNote without period, frontmatter schema match, disclosure includes all 3 required statements.",
+  "ttft_ms": 2500,
+  "type": "result",
+  "duration_ms": 172591,
+  "uuid": "561f90fa-a8e4-4939-95a0-77a520bd8aed",
+  "ttft_stream_ms": 1434,
+  "time_to_request_ms": 61,
+  "first_content_frame_ms": 1434,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "credential_expires_at": "2026-12-02T23:39:32.238Z"
+}

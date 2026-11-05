@@ -1,0 +1,102 @@
+{
+  "duration_api_ms": 94386,
+  "stop_reason": "end_turn",
+  "session_id": "0342fb25-b135-4ed3-b8af-f697ee061db4",
+  "total_cost_usd": 0.2372734,
+  "usage": {
+    "input_tokens": 10,
+    "cache_creation_input_tokens": 31422,
+    "cache_read_input_tokens": 97027,
+    "output_tokens": 9216,
+    "output_tokens_details": {
+      "thinking_tokens": 3064
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 31422,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 562,
+        "cache_read_input_tokens": 32655,
+        "cache_creation_input_tokens": 2912,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 2912
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "modelUsage": {
+    "claude-sonnet-5": {
+      "inputTokens": 10,
+      "outputTokens": 9216,
+      "cacheReadInputTokens": 97027,
+      "cacheCreationInputTokens": 31422,
+      "webSearchRequests": 0,
+      "costUSD": 0.2372734,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 64000,
+      "thinkingTokens": 3064,
+      "cacheCreationEphemeral5mInputTokens": 0,
+      "cacheCreationEphemeral1hInputTokens": 31422,
+      "canonicalModel": "claude-sonnet-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed",
+  "fast_mode_state": "off",
+  "fast_mode_disabled_reason": "sdk_opt_in_required",
+  "subagent_stats": {
+    "spawned": 0,
+    "requested": {
+      "background": 0,
+      "foreground": 0,
+      "unset": 0
+    },
+    "started_in_background": 0,
+    "max_depth": 0,
+    "spawned_by_subagents": 0,
+    "completed": 0,
+    "failed": 0,
+    "killed": {
+      "parent": 0,
+      "user": 0,
+      "system": 0
+    },
+    "refused": {
+      "depth_limit": 0,
+      "concurrency_limit": 0,
+      "budget": 0
+    },
+    "by_type": {}
+  },
+  "safety_stops": 0,
+  "is_error": false,
+  "num_turns": 8,
+  "subtype": "success",
+  "api_error_status": null,
+  "result": "Body word count: ~390 words (well under the 500 cap).\n\nFile written to: `C:\\Users\\betan\\AppData\\Local\\Temp\\rounding-errors-bench\\2026-11-05-016-generations\\drafts\\r17\\exhibit-016-spinach.md`\n\nFive-line summary:\n1. Category: \"citation needed\" (reused from 013, matches the taxonomy's item 3 since no source has ever surfaced). Tags: outlived-the-evidence, measurement-definitions, europe — all pre-existing, no new vocabulary.\n2. Chart: skipped, with a `chartNote` explaining there's no primary document for the original measurement to plot against the retellings (no chart component wired, matches the no-chart path).\n3. Gap row: placed on \"Original measurement or reanalysis document traced by Sutton or Rekdal: 0\", since that absence is the actual discrepancy, not the Hamblin-citation-count row.\n4. Excluded per brief's CUT list: von Wolff's original figure, Schupan 1937, Kohler et al. 1936, Hamblin's blog post, the Reader's Digest claim, the 33% Popeye-consumption figure (garbled in source), Dagg 2015, any BMJ correction claim, and Wikipedia.\n5. Attribution handled per instruction: Bender/Kronick hedged, Hamblin stated flatly with no citation, Larsson repeated it in a paper about false citation, and Hamblin's \"didn't make it up\" line is reported via Sutton (\"Sutton reports...\"), never asserted by the narrator; Rekdal's own \"doing the opposite of what they are preaching\" line carries the verdict instead of an accusation.",
+  "ttft_ms": 1940,
+  "type": "result",
+  "duration_ms": 94677,
+  "uuid": "8ac95edf-87c9-454e-84b5-17db108ea981",
+  "ttft_stream_ms": 1753,
+  "time_to_request_ms": 227,
+  "first_content_frame_ms": 1753,
+  "queued_turn_count": 0,
+  "result_index": 0,
+  "credential_expires_at": "2026-12-02T23:39:32.238Z"
+}

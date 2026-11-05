@@ -1,8 +1,8 @@
 ---
 title: "45 drafts, 9 models, 0 corrections"
 date: 2026-11-05
-teaser: "Method · exhibit 017 drafted again by 9 models across 4 generations, then by 7 of them at every effort level: what changed in the wording, the voice, the bill and the count"
-disclosure: "Drafted with AI (Claude, in Claude Code), from the repository's own comparison files: reports/comparisons/2026-11-04-017-generations/ and reports/comparisons/2026-11-04-017-generations-effort/ (plan.json, prompts/, drafts/, runs/, results.json) and reports/comparisons/README.md, built by scripts/compare-drafts.mjs from Claude Code's transcripts on 4 and 5 November 2026. Every figure in this note was checked against those files. Costs are Claude Code's own estimates at list prices, not a bill. Runs that the usage limit stopped before they finished were run again; their first attempts are not in the files and are not counted. The quoted sentences are copied from the drafts in each comparison's drafts/ folder. Editorial voice and errors are mine."
+teaser: "Method · exhibit 017 drafted again by 9 models across 4 generations, then by 7 of them at every effort level: what changed in the wording, the voice, the bill and the count, then a second brief to check it"
+disclosure: "Drafted with AI (Claude, in Claude Code), from the repository's own comparison files: reports/comparisons/2026-11-04-017-generations/ and reports/comparisons/2026-11-04-017-generations-effort/ and reports/comparisons/2026-11-05-016-generations/ (plan.json, prompts/, drafts/, runs/, results.json) and reports/comparisons/README.md, built by scripts/compare-drafts.mjs from Claude Code's transcripts on 4 and 5 November 2026. Every figure in this note was checked against those files. Costs are Claude Code's own estimates at list prices, not a bill. Runs that the usage limit stopped before they finished were run again; their first attempts are not in the files and are not counted. The 4 corrected claims in the 016 brief come from reports/016-spinach/fact-check-output.round1.json. The quoted sentences are copied from the drafts in each comparison's drafts/ folder. Editorial voice and errors are mine."
 ---
 
 ## The setup
@@ -143,9 +143,28 @@ No model, generation or effort level checked the brief, because no drafter could
 
 The 45 drafts came to $35.43. Sonnet 5's failed max run adds $2.75. The cheapest draft, Haiku 5.5 at medium, cost $0.02 and left the count out. The most expensive, Opus 5.5 at max, cost $3.36, took 15 minutes 34 seconds and repeated it.
 
+## A second brief
+
+To see whether any of this was 017's doing, the same 9 models at medium drafted exhibit 016 from its brief, in a copy of the repository at commit df00590, from before 016 shipped. 18 drafts, $6.50.
+
+016's brief carried 4 claims that the fact-checker later corrected. The original 016 draft, by Opus 5.5 at medium, repeated all 4.
+
+| Claim in the brief | What the sources say | Drafts repeating it |
+|---|---|---|
+| Bender's 1972 lecture is the earliest version | Rekdal never calls it the earliest | 17 of 18 |
+| Sutton could not answer his question about von Wolff | Sutton later says his paper answers it | 15 of 18 |
+| Hamblin's article was "derived from" 13 publications | Hamblin lists them as ones he would "particularly like to mention" | 8 of 18 |
+| Larsson 1995 is J Intern Med 238(5):445-450 | Rekdal and Sutton give different volumes | 7 of 18 |
+
+Every draft repeated at least 1. None corrected any. By model, the average per draft: Opus 5.5 and Opus 5, 4 of 4. Opus 4.8, 3. Opus 4.5, Sonnet 4.5 and Sonnet 5, 2.5. Haiku 5.5 and Sonnet 5.5, 2. Haiku 4.5, 1.
+
+The rest held. 2 drafts by 1 model share 23.7% of their 3-word phrases, 2 by different models 15.7%; on 017 it was 23.0% and 15.5%. Opus 5.5 again drafted closest to the original, at 37% to 38%, and Sonnet 5 and Haiku 4.5 again furthest from it, at 9% to 15%.
+
+The 2 findings meet here. The models that follow the brief most closely carry the most of it, errors included. Opus 5.5 is the closest to the house voice and repeated every error in both drafts.
+
 ## What it suggests
 
-2 drafts per model at medium and 1 per effort level make a small sample. These are leads, not findings.
+2 briefs, 2 drafts per model at medium and 1 per effort level make a small sample. These are leads, not findings.
 
 The model changes the wording. Effort changes the time. Neither changes what the brief got wrong. A newer model drafts closer to the house voice, and Haiku 4.5 is the only one that hedged. Higher effort bought longer sentences and a longer wait. A check of the brief before drafting is still the only step that would have caught the count.
 
@@ -159,7 +178,7 @@ For drafting from a finished brief, on this evidence:
 | The lowest bill | Haiku 5.5 at low or medium | $0.02 to $0.03 a draft and no rule broken in a final version. It also titled 1 draft "Sex, drugs and GDP" |
 | Speed | Sonnet 5.5 at low or medium | 46 seconds to 1 minute 11 seconds. 1 of its 3 drafts at those levels ended over 500 words |
 | A different draft | A different model | 2 models share 15.5% of their phrases, 1 model's 2 drafts 23.0%. Sonnet 5.5 at max and at medium opened Who lied 1 word apart |
-| Fewer errors | No model and no effort level | 37 of 45 drafts repeated the brief's wrong count |
+| Fewer errors | No model and no effort level | 37 of 45 drafts repeated 017's wrong count; all 18 on 016 repeated at least 1 of its 4 errors |
 
 Effort above medium did not pay for drafting. Max cost 6 times low, took 9 times as long, left the count where it was, and 1 of the 6 runs asked for max ended with nothing. Low cost $0.38 on average, broke no rule, and gave up a little of the original's wording: 18.6% shared, against 20.6% at medium.
 
@@ -167,6 +186,6 @@ The money is better spent before the draft than on it. Every setting copied the 
 
 This site's drafter runs on Opus, launched at medium. Nothing here argues for raising it. Sonnet 5.5 at medium cost $0.19 to $0.23 against Opus 5.5's $0.68 to $0.77, and came within 1 to 5 points of its share with the original. That makes it the setting to put in front of a blind read next.
 
-1 brief, 1 exhibit and 1 or 2 drafts per setting is a narrow base. Closeness to the original also favours Opus 5.5, which wrote it.
+2 briefs and 1 or 2 drafts per setting is a narrow base. Closeness to the original also favours Opus 5.5, which wrote it.
 
 Nobody has read the 45 blind. Until someone does, none of these numbers says which draft is best.
